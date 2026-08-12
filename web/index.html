@@ -1980,53 +1980,30 @@
   function stampISO(s) { var p = String(s).split("T"); return p[0].replace(/-/g, "") + "T" + (p[1] ? p[1].slice(0, 5).replace(":", "") : "0900") + "00"; }
 
   /* ---------------- escolha do calendário ----------------
-     Baixar .ics resolve no computador, mas no celular muita gente não sabe
-     o que fazer com o arquivo. Então o app pergunta: abrir direto no app de
-     calendário (link de agenda) ou baixar o arquivo. */
-  function paraGoogle(titulo, quando, fim, detalhes, local) {
-    function z(s) { return String(s).replace(/[-:]/g, "").slice(0, 15); }
-    var q = ["action=TEMPLATE",
-      "text=" + encodeURIComponent(titulo),
-      "dates=" + z(quando) + "00/" + z(fim) + "00",
-      "details=" + encodeURIComponent(detalhes || ""),
-      "location=" + encodeURIComponent(local || "")];
-    return "https://calendar.google.com/calendar/render?" + q.join("&");
-  }
-  function maisUmaHora(quando) {
-    var p = String(quando).split("T");
-    var hm = (p[1] || "09:00").split(":");
-    var d = pISO(p[0]);
-    d.setHours(+hm[0] + 1, +hm[1] || 0, 0, 0);
-    return iso(d) + "T" + String(d.getHours()).padStart(2, "0") + ":" +
-           String(d.getMinutes()).padStart(2, "0");
-  }
-
+     Duas saídas: abrir no app de agenda do aparelho (o caminho normal) ou
+     baixar o arquivo, para quando o sistema não reconhecer o tipo. */
   function escolherCalendario(ev, tipo) {
     var i = ev.inscricao || {};
-    var quando, titulo, detalhes;
+    var quando, titulo;
     if (tipo === "inscricao") {
       quando = i.inscricao || ev.vendaOnline || ev.vendaPresencial;
       titulo = "Abrem as inscrições: " + ev.tit;
-      var f = fimInscricao(ev);
-      detalhes = (f ? "Encerra " + curta(f.dia) + (f.presumido ? " (estimado)" : "") + ". " : "") +
-        (i.sorteio ? "Resultado " + dh(i.sorteio) + ". " : "") + (ev.link || "");
     } else {
       var prox = (ev.dias || []).filter(function (d) { return d >= HOJE; })[0] || (ev.dias || [])[0];
       quando = ev.sessoes && ev.sessoes.length
         ? (ev.sessoes.filter(function (s) { return s.quando.slice(0, 10) >= HOJE; })[0] || ev.sessoes[0]).quando
         : (prox ? prox + "T" + (ev.hora || "09:00") : null);
       titulo = ev.tit;
-      detalhes = (ev.sub ? ev.sub + " — " : "") + (ev.link || "");
     }
     if (!quando) { toast("Sem data para agendar"); return; }
 
     // fecha a folha atual e só então monta a nova, senão o corpo é
     // sobrescrito antes da animação terminar
     fecharSheet(true);
-    trocarPara(function () { montarEscolha(ev, tipo, quando, titulo, detalhes); });
+    trocarPara(function () { montarEscolha(ev, tipo, quando, titulo); });
   }
 
-  function montarEscolha(ev, tipo, quando, titulo, detalhes) {
+  function montarEscolha(ev, tipo, quando, titulo) {
     var i = ev.inscricao || {};
     var b = $("#sheetBody"); b.innerHTML = "";
     b.appendChild(el("div", "u-label", "Calendário"));
@@ -2124,31 +2101,6 @@
     }
     acts.appendChild(app);
 
-    // webcal:// é o esquema registrado pelos apps de calendário; em alguns
-    // aparelhos é o único que pula o navegador de vez
-    if (arquivoPronto) {
-      var wc = el("a", "btn ghost", "Não abriu? Forçar o app de calendário");
-      wc.href = "webcal://" + location.host +
-        location.pathname.replace(/[^/]*$/, "") + urlIcs;
-      wc.rel = "noopener";
-      acts.appendChild(wc);
-    }
-
-    var g = el("a", "btn ghost", "Google Agenda (abre no navegador)");
-    function alvoGoogle() {
-      if (tipo === "evento" && opcoes.length > 1) {
-        var q = Object.keys(escolhidas).sort()[0];
-        if (q) return q;
-      }
-      return quando;
-    }
-    g.addEventListener("click", function () {
-      var q = alvoGoogle();
-      g.href = paraGoogle(titulo, q, maisUmaHora(q), detalhes, "Sesc " + ev.uni);
-    });
-    g.href = paraGoogle(titulo, quando, maisUmaHora(quando), detalhes, "Sesc " + ev.uni);
-    g.target = "_blank"; g.rel = "noopener noreferrer";
-    acts.appendChild(g);
 
     var volta = el("button", "btn ghost", "Voltar ao evento");
     volta.type = "button";
@@ -2172,13 +2124,21 @@
     });
     acts.insertBefore(arq, volta);
 
-    b.appendChild(el("p", "desc", arquivoPronto
-      ? "“Abrir no calendário” entrega o evento com " + oQue +
+    // três situações distintas, cada uma com o seu porquê
+    var explica;
+    if (arquivoPronto) {
+      explica = "“Abrir no calendário” entrega o evento com " + oQue +
         " ao app de agenda do aparelho — você confere e salva. No iPhone o Calendário abre na hora; " +
-        "no Android o arquivo passa pela lista de downloads e o toque nele abre a agenda."
-      : "Esta cópia não tem servidor ao lado, então o arquivo é montado no próprio aparelho e o " +
-        "navegador o trata como download — abra o arquivo baixado para o app de agenda assumir. " +
-        "Na versão hospedada, o botão abre a agenda direto."));
+        "no Android o arquivo passa pela lista de downloads e o toque nele abre a agenda.";
+    } else if (origemDados !== "servidor") {
+      explica = "Esta cópia não tem servidor ao lado, então o arquivo é montado no próprio aparelho " +
+        "e o navegador o trata como download — abra o arquivo baixado para o app de agenda assumir. " +
+        "Na versão hospedada, o botão abre a agenda direto.";
+    } else {
+      explica = "Esta atividade tem muitas datas, então o arquivo é montado aqui na hora com " + oQue +
+        " — o navegador vai baixá-lo, e abrir o arquivo entrega ao app de agenda.";
+    }
+    b.appendChild(el("p", "desc", explica));
     abrirSheet();
   }
 
