@@ -246,11 +246,18 @@ def datas_do_texto(texto, ano_ref, dia_evento):
                 return
             trecho = texto[m.end():m.end() + janela]
 
-            # "Inscrições de 6 a 10/8": sem tirar o "de", o match ancorado
-            # falha, e o 10/8 (que é o FIM) seria lido como início
-            inicio_limpo = re.sub(r"^\s*(?:de|a\s+partir\s+de|entre|no\s+per[íi]odo\s+de)\s+",
-                                  "", trecho.strip(), flags=re.I)
-            curto = RE_RANGE_CURTO.match(inicio_limpo)
+            # "de 6 a 10/8", "a partir das 14h do dia 08 até 13/07": o
+            # intervalo pode vir depois de qualquer preâmbulo, então é busca
+            # — mas só vale se aparecer ANTES da primeira data solta, senão
+            # estaríamos capturando um intervalo de outro rótulo.
+            curto = RE_RANGE_CURTO.search(trecho[:80])
+            solta, _ = primeira_data(trecho, ano_ref)
+            if curto and solta:
+                pos_solta = min(
+                    [m2.start() for m2 in [RE_DATA_HORA.search(trecho), RE_DATA_EXT.search(trecho)]
+                     if m2] or [10 ** 6])
+                if curto.start() > pos_solta:
+                    curto = None
             if curto:
                 d1, d2, mes, ano = curto.groups()
                 a = (int(ano) + 2000 if ano and int(ano) < 100 else int(ano)) if ano else ano_ref
@@ -285,9 +292,12 @@ def datas_do_texto(texto, ano_ref, dia_evento):
         achar(r"Resultado[^.]{0,40}?no\s+dia", "sorteio")
         achar(r"Resultado\s*(?:do\s+sorteio)?\s*:", "sorteio")
         achar(r"Sorteio\s*:", "sorteio")
-        achar(r"Inscri[çc][ãa]o\s+para\s+sorteio\s*(?:de)?", "inscricao")
-        achar(r"Pr[ée]-?inscri[çc][õo]es?[^.]{0,30}?(?:a partir das?\s*\d{1,2}h\s*)?(?:de)?", "inscricao")
-        achar(r"Inscri[çc][õo]es?\s*:?", "inscricao")
+        # "Inscrição" (ã) e "Inscrições" (õ) precisam dos dois acentos: com
+        # [õo] apenas, o singular nunca casava e a data se perdia
+        INSCR = r"Inscri[çc](?:[ãa]o|[õo]es)"
+        achar(INSCR + r"\s+para\s+sorteio\s*(?:de)?", "inscricao")
+        achar(r"Pr[ée]-?" + INSCR + r"[^.]{0,30}?(?:a partir das?\s*\d{1,2}h\s*)?(?:de)?", "inscricao")
+        achar(INSCR + r"\s*:?", "inscricao")
         achar(r"1[ªa]?\s*chamada\s*(?:de\s*)?pagamento\s*:?", "pagamento")
         achar(r"Pagamentos?\s*:?\s*(?:De)?", "pagamento")
 
@@ -298,6 +308,34 @@ def datas_do_texto(texto, ano_ref, dia_evento):
 
         out["temSorteio"] = bool(re.search(r"sorteio|sortead[oa]", texto, re.I))
 
+    return out
+
+
+RE_PAR_PRECO = re.compile(
+    r'<span class="valor">(.*?)</span>\s*<span class="label">(.*?)</span>', re.S)
+
+
+def precos_do_html(pagina):
+    """Preços na página, para quem não passa pela bilheteria.
+
+    Turismo Social não tem `idJava` — os passeios não são vendidos como
+    ingresso —, então o valor só existe no HTML. Sem isto, 95 passeios
+    apareciam sem preço nenhum.
+    """
+    out, vistos = [], set()
+    for valor, label in RE_PAR_PRECO.findall(pagina):
+        v, rot = limpar(valor), limpar(label)
+        if "R$" not in v or not rot:
+            continue
+        num = re.sub(r"[^\d,]", "", v).replace(",", ".")
+        try:
+            n = round(float(num), 2)
+        except ValueError:
+            continue
+        if (rot, n) in vistos:
+            continue
+        vistos.add((rot, n))
+        out.append({"label": rot, "valor": n})
     return out
 
 
@@ -384,12 +422,15 @@ def da_pagina(pagina, ano_ref, dia_evento):
     blocos = [limpar(b) for b in RE_INFO_LOCAL.findall(pagina)]
     texto = " · ".join([b for b in blocos if b])
 
-    # algumas páginas (turismo) põem as inscrições no corpo, não no info_local
+    # Algumas páginas põem tudo no corpo, não no info_local. Além de
+    # "INSCRIÇÕES", o Turismo Social usa "Cronograma:" seguido de
+    # "Inscrição: … Sorteio: … Pagamento: …".
+    # A captura inclui o rótulo: sem ele o texto começaria em ":" e nenhum
+    # padrão casaria depois.
     if not re.search(r"Inscri[çc]|Sorteio|Venda", texto, re.I):
         corpo = limpar(pagina)
-        # captura COM o rótulo: sem ele o texto começa em ":" e nenhum
-        # padrão de "Inscrições:" casa depois
-        m = re.search(r"(INSCRI[ÇC][ÕO]ES.{0,600})", corpo, re.I)
+        m = re.search(r"((?:Cronograma|INSCRI[ÇC][ÕO]ES|Inscri[çc][ãa]o)\s*:?.{0,600})",
+                      corpo, re.I)
         if m:
             texto = (texto + " · " if texto else "") + m.group(1).strip()
 
@@ -472,6 +513,12 @@ def main():
         if desc:
             ev["desc"] = desc
             n_desc += 1
+
+        if not ev.get("precos"):          # bilheteria tem prioridade
+            p = precos_do_html(pagina)
+            if p:
+                ev["precos"] = p
+                n_preco += 1
 
         info = da_pagina(pagina, int((ev.get("inicio") or "2026")[:4]), ev.get("inicio"))
         if info:
