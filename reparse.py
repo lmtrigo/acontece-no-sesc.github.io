@@ -15,7 +15,9 @@ Uso:
 import argparse
 import json
 import os
+from datetime import datetime
 
+import coletor
 import detalhes
 
 
@@ -63,6 +65,10 @@ def main():
             mudou += 1
             if len(amostras) < args.mostrar:
                 amostras.append((ev["tit"], ins["texto"][:120], antes, depois))
+
+    de = datetime.strptime(d["janela"]["de"], "%Y-%m-%d").date()
+    ate = datetime.strptime(d["janela"]["ate"], "%Y-%m-%d").date()
+    viagens = coletor.expandir_viagens(d["eventos"], de, ate)
 
     with open(args.dados, "w", encoding="utf-8") as f:
         json.dump(d, f, ensure_ascii=False, separators=(",", ":"))

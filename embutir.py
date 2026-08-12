@@ -33,7 +33,7 @@ CAMPOS = ("id", "tit", "sub", "uni", "reg", "cat", "subcat", "publico",
           "temporada", "hora", "inicio", "fim", "link", "dias",
           # segunda passada (detalhes.py)
           "precos", "sessoes", "vendaOnline", "vendaPresencial", "vendaOnlineFim",
-          "urlCompra", "maxPorPessoa", "classificacao", "endereco", "geo",
+          "urlCompra", "maxPorPessoa", "classificacao", "endereco", "geo", "continuo",
           "inscricao", "sorteados")
 # `desc` fica de fora de propósito: 2,5 mil textos pesariam no download de
 # todo mundo para serem lidos um de cada vez. O app busca por evento, em

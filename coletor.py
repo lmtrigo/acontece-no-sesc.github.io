@@ -164,6 +164,45 @@ def normalizar(a, unidades):
     }
 
 
+CONTINUOS = ("Turismo Social",)
+
+
+def expandir_viagens(lista, de, ate):
+    """Preenche os dias do meio de um passeio de vários dias.
+
+    Uma viagem de 11 a 16/8 acontece nos seis dias, mas a listagem devolve o
+    evento em uns dias e não em outros — resultado: o passeio aparecia só na
+    primeira data da agenda.
+
+    Só vale para categorias contínuas por natureza. Uma exposição também tem
+    início e fim distantes, mas fecha às segundas: ali os dias coletados é
+    que estão certos, e preencher o intervalo seria inventar.
+    """
+    n = 0
+    for e in lista:
+        if e["cat"] not in CONTINUOS:
+            continue
+        ini, fim = e.get("inicio"), e.get("fim")
+        if not ini or not fim or ini == fim:
+            continue
+        d0 = datetime.strptime(ini, "%Y-%m-%d").date()
+        d1 = datetime.strptime(fim, "%Y-%m-%d").date()
+        if (d1 - d0).days > 60:      # não é viagem, é engano de cadastro
+            continue
+        todos = []
+        d = max(d0, de)
+        while d <= min(d1, ate):
+            todos.append(d.isoformat())
+            d += timedelta(days=1)
+        if todos and todos != e["dias"]:
+            e["dias"] = todos
+            e["continuo"] = True
+            n += 1
+    if n:
+        print("Preenchido o intervalo de %d passeios de vários dias" % n)
+    return n
+
+
 def coletar(de, ate, regioes):
     unidades = carregar_unidades()
     print("Unidades: %d (%s)" % (
@@ -269,6 +308,8 @@ def coletar(de, ate, regioes):
 
     for e in lista:
         e["dias"].sort()
+
+    expandir_viagens(lista, de, ate)
 
     lista.sort(key=lambda e: (e["dias"][0] if e["dias"] else "9999", e["tit"]))
     return lista, unidades
