@@ -80,6 +80,14 @@ def carregar_unidades():
     return mapa
 
 
+def url_geral(page):
+    """Listagem sem filtro de data — a rede de segurança."""
+    q = urllib.parse.urlencode({
+        "tipo": "atividade", "dinamico": "true", "ppp": PPP, "page": page,
+    })
+    return API_ATIVIDADES + "?" + q
+
+
 def url_dia(dia, page):
     q = urllib.parse.urlencode({
         "local": "", "categoria": "", "gratuito": "", "online": "",
@@ -200,6 +208,50 @@ def coletar(de, ate, regioes):
               % (n, total_dias, iso, do_dia, len(eventos)))
         dia += timedelta(days=1)
         time.sleep(PAUSA)
+
+    # ------------------------------------------------------------------
+    # Rede de segurança: o filtro de data da API deixa eventos de fora.
+    # "Ecos da Independência" (12/09) não volta na consulta de 12/09, mas
+    # aparece na listagem sem filtro. Então varremos tudo e recuperamos o
+    # que ficou faltando, usando as datas do próprio registro.
+    # ------------------------------------------------------------------
+    print("Varredura de segurança (listagem sem filtro de data)…")
+    page, recuperados = 1, 0
+    while True:
+        envelope = buscar(url_geral(page))
+        itens = envelope.get("atividade") or []
+        total = (envelope.get("total") or {}).get("value", 0)
+
+        for a in itens:
+            if not isinstance(a, dict):
+                continue
+            eid = a.get("id")
+            if eid is None or eid in eventos:
+                continue
+            ini = dia_de(a.get("dataPrimeiraSessao"))
+            fim = dia_de(a.get("dataUltimaSessao")) or ini
+            if not ini:
+                continue
+            if fim < de.isoformat() or ini > ate.isoformat():
+                continue
+
+            ev = normalizar(a, unidades)
+            # não sabemos os dias intermediários de uma temporada; ficam a
+            # primeira e a última, e detalhes.py corrige quando há bilheteria
+            dias = {ini} if ini == fim else {ini, fim}
+            ev["dias"] = sorted(d for d in dias if de.isoformat() <= d <= ate.isoformat())
+            if not ev["dias"]:
+                continue
+            ev["parcial"] = ini != fim
+            eventos[eid] = ev
+            recuperados += 1
+
+        if page * PPP >= total or not itens:
+            break
+        page += 1
+        time.sleep(PAUSA)
+
+    print("  recuperados %d eventos que o filtro de data não devolveu" % recuperados)
 
     lista = list(eventos.values())
 

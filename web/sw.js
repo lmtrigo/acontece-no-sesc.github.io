@@ -1,7 +1,7 @@
 /* Service worker do Agenda Sesc SP.
    Casca: cache primeiro (abre offline e instantâneo).
    Dados: rede primeiro, cache como reserva (sempre o mais novo que houver). */
-const VERSAO = 'agenda-sesc-20260811183242';
+const VERSAO = 'agenda-sesc-20260812072457';
 const CASCA = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', (e) => {

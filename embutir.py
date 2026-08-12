@@ -31,7 +31,7 @@ CAMPOS = ("id", "tit", "sub", "uni", "reg", "cat", "subcat", "publico",
           # segunda passada (detalhes.py)
           "precos", "sessoes", "vendaOnline", "vendaPresencial", "vendaOnlineFim",
           "urlCompra", "maxPorPessoa", "classificacao", "endereco", "geo",
-          "inscricao", "sorteados")
+          "inscricao", "sorteados", "desc")
 
 
 def enxugar(ev, limite_sub=170):

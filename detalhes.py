@@ -47,6 +47,8 @@ UA = "agenda-sesc-prototipo/1.0 (agregador de programacao publica; uso pessoal)"
 
 RE_TAG = re.compile(r"<[^>]+>")
 RE_COMENTARIO = re.compile(r"<!--.*?-->", re.S)
+# tags cujo CONTEÚDO precisa sumir: remover só as marcas deixaria o código solto
+RE_INVISIVEL = re.compile(r"<(script|style|noscript|svg)\b[^>]*>.*?</\1>", re.S | re.I)
 RE_ESPACO = re.compile(r"\s+")
 
 # Trechos de cromo do portal que vazam quando o bloco tem div aninhada.
@@ -68,7 +70,8 @@ RE_DATA_HORA = re.compile(
 
 
 def limpar(fragmento):
-    sem = RE_COMENTARIO.sub(" ", fragmento)
+    sem = RE_INVISIVEL.sub(" ", fragmento)
+    sem = RE_COMENTARIO.sub(" ", sem)
     return RE_ESPACO.sub(" ", html.unescape(RE_TAG.sub(" ", sem))).strip()
 
 
@@ -231,8 +234,9 @@ def datas_do_texto(texto, ano_ref, dia_evento):
         out["texto"] = texto[:400]
 
         # "de 2 a 9/6/2026" — o primeiro dia vem sem mês, herda do segundo
+        # "de 2 a 9/6/2026" e também "dias 27 e 28/8"
         RE_RANGE_CURTO = re.compile(
-            r"(\d{1,2})\s*(?:a|at[ée]|-)\s*(\d{1,2})/(\d{1,2})(?:/(\d{2,4}))?")
+            r"(\d{1,2})\s*(?:e|a|at[ée]|-)\s*(\d{1,2})/(\d{1,2})(?:/(\d{2,4}))?")
 
         def achar(rot, chave, janela=90):
             if chave in out:      # o rótulo mais específico já resolveu
@@ -273,6 +277,7 @@ def datas_do_texto(texto, ano_ref, dia_evento):
 
         # do rótulo mais específico para o mais genérico: "Inscrição para
         # sorteio de 2 a 9/6" não pode ser lido como a data do resultado
+        achar(r"Divulga[çc][ãa]o\s+dos?\s+sortead[oa]s\s*:?(?:\s*dia)?", "sorteio")
         achar(r"Resultado[^.]{0,40}?no\s+dia", "sorteio")
         achar(r"Resultado\s*(?:do\s+sorteio)?\s*:", "sorteio")
         achar(r"Sorteio\s*:", "sorteio")
@@ -292,6 +297,58 @@ def datas_do_texto(texto, ano_ref, dia_evento):
     return out
 
 
+RE_DESC = re.compile(
+    r'class="(?:evento--descricao|conteudo-evento|texto-evento|entry-content)"[^>]*>(.*?)</div>',
+    re.S | re.I)
+RE_PARAGRAFO = re.compile(r"<p[^>]*>(.*?)</p>", re.S)
+
+
+# Onde a descrição começa e onde termina, no texto corrido da página.
+# "Compartilhe:" fecha o cabeçalho do evento em todas as páginas conferidas.
+RE_ABERTURA = re.compile(r"Compartilhe\s*:?", re.I)
+FIM_DESC = ("Ficha técnica", "FICHA TÉCNICA", "INSCRIÇÕES", "Inscrições:",
+            "Inscrição para sorteio", "Classificação", "Serviço Social do Comércio",
+            "Programação relacionada", "Você também pode gostar",
+            "Utilizamos cookies", "Resultado do Sorteio", "Sesc São Paulo por aí")
+
+
+def extrair_descricao(pagina, limite=700):
+    """O texto de apresentação do evento.
+
+    O portal não marca a descrição com uma classe própria, então o recorte é
+    pelo texto: começa depois de "Compartilhe:" (que encerra o cabeçalho) e
+    termina no primeiro bloco de serviço (ficha técnica, inscrições, rodapé).
+    """
+    corpo = limpar(pagina)
+
+    m = RE_ABERTURA.search(corpo)
+    if m:
+        corpo = corpo[m.end():]
+    else:
+        # sem a âncora, cai nos parágrafos e descarta o que é serviço
+        partes = []
+        for p in RE_PARAGRAFO.findall(pagina):
+            t = limpar(p)
+            if len(t) < 60 or any(mk in t for mk in CORTES):
+                continue
+            partes.append(t)
+            if sum(len(x) for x in partes) > limite:
+                break
+        corpo = " ".join(partes)
+
+    for marca in FIM_DESC:
+        i = corpo.find(marca)
+        if i > 0:
+            corpo = corpo[:i]
+
+    corpo = corpo.strip(" ·-–—")
+    if len(corpo) < 60:
+        return None
+    if len(corpo) > limite:
+        corpo = corpo[:limite].rsplit(" ", 1)[0] + "…"
+    return corpo
+
+
 def da_pagina(pagina, ano_ref, dia_evento):
     """Inscrição/sorteio no texto e os códigos contemplados."""
     blocos = [limpar(b) for b in RE_INFO_LOCAL.findall(pagina)]
@@ -300,7 +357,9 @@ def da_pagina(pagina, ano_ref, dia_evento):
     # algumas páginas (turismo) põem as inscrições no corpo, não no info_local
     if not re.search(r"Inscri[çc]|Sorteio|Venda", texto, re.I):
         corpo = limpar(pagina)
-        m = re.search(r"INSCRI[ÇC][ÕO]ES(.{0,600})", corpo, re.I)
+        # captura COM o rótulo: sem ele o texto começa em ":" e nenhum
+        # padrão de "Inscrições:" casa depois
+        m = re.search(r"(INSCRI[ÇC][ÕO]ES.{0,600})", corpo, re.I)
         if m:
             texto = (texto + " · " if texto else "") + m.group(1).strip()
 
@@ -328,6 +387,8 @@ def main():
     p.add_argument("--dados", default=os.path.join("dados", "eventos.json"))
     p.add_argument("--max", type=int, default=0)
     p.add_argument("--html", action="store_true", help="varrer HTML de todos")
+    p.add_argument("--faltantes", action="store_true",
+                   help="só os que ainda não têm descrição — enriquecimento incremental")
     p.add_argument("--html-cats", nargs="*", default=["Turismo Social"],
                    help="categorias que também levam varredura de HTML")
     args = p.parse_args()
@@ -338,6 +399,9 @@ def main():
     if args.max:
         eventos = eventos[:args.max]
 
+    if args.faltantes:
+        eventos = [e for e in eventos if not e.get("desc")]
+
     com_java = [e for e in eventos if e.get("idJava")]
     quer_html = [e for e in eventos
                  if args.html or e.get("cat") in set(args.html_cats)]
@@ -346,7 +410,7 @@ def main():
           % (len(eventos), len(com_java), len(quer_html)))
 
     inicio = time.time()
-    n_preco = n_sessao = n_venda = n_insc = n_sorteio = 0
+    n_preco = n_sessao = n_venda = n_insc = n_sorteio = n_desc = 0
 
     for i, ev in enumerate(com_java, 1):
         b = da_bilheteria(ev["idJava"])
@@ -374,24 +438,29 @@ def main():
         pagina = buscar(ev["link"])
         if not pagina:
             continue
+        desc = extrair_descricao(pagina)
+        if desc:
+            ev["desc"] = desc
+            n_desc += 1
+
         info = da_pagina(pagina, int((ev.get("inicio") or "2026")[:4]), ev.get("inicio"))
         if info:
             if info.get("sorteados"):
                 ev["sorteados"] = info.pop("sorteados"); n_sorteio += 1
             if info:
                 ev["inscricao"] = info; n_insc += 1
-        if i % 25 == 0 or i == len(quer_html):
-            print("  html %4d/%d · inscrições=%d sorteios=%d"
-                  % (i, len(quer_html), n_insc, n_sorteio))
+        if i % 100 == 0 or i == len(quer_html):
+            print("  html %4d/%d · descrições=%d inscrições=%d sorteios=%d"
+                  % (i, len(quer_html), n_desc, n_insc, n_sorteio))
         time.sleep(PAUSA)
 
     d["enriquecidoEm"] = datetime.now().isoformat(timespec="seconds")
     with open(args.dados, "w", encoding="utf-8") as f:
         json.dump(d, f, ensure_ascii=False, separators=(",", ":"))
 
-    print("\nPronto em %.0fs · %.0f KB · preços=%d sessões=%d vendas=%d inscrições=%d sorteios=%d"
+    print("\nPronto em %.0fs · %.0f KB · preços=%d sessões=%d vendas=%d descrições=%d inscrições=%d sorteios=%d"
           % (time.time() - inicio, os.path.getsize(args.dados) / 1024,
-             n_preco, n_sessao, n_venda, n_insc, n_sorteio))
+             n_preco, n_sessao, n_venda, n_desc, n_insc, n_sorteio))
 
 
 if __name__ == "__main__":
