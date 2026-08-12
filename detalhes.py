@@ -341,12 +341,38 @@ def extrair_descricao(pagina, limite=700):
         if i > 0:
             corpo = corpo[:i]
 
-    corpo = corpo.strip(" ·-–—")
+    corpo = limpar_servico(corpo)
     if len(corpo) < 60:
         return None
     if len(corpo) > limite:
         corpo = corpo[:limite].rsplit(" ", 1)[0] + "…"
     return corpo
+
+
+# Frases de serviço que não são descrição: data, hora, local, preço, sorteio.
+RE_SERVICO = re.compile(
+    r"\d{1,2}/\d{1,2}"                       # 12/09
+    r"|\d{1,2}h\d{0,2}\b"                    # 20h, 20h30
+    r"|\b\d{1,2}\s*de\s+(janeiro|fevereiro|mar[çc]o|abril|maio|junho|julho|"
+    r"agosto|setembro|outubro|novembro|dezembro)"
+    r"|R\$"
+    r"|\b(Local|Sa[íi]da|Retorno|Embarque|Dura[çc][ãa]o|Hor[áa]rio|Vagas|"
+    r"Ingressos?|Inscri[çc][õoã][eo]s?|Sorteio|Sortead[oa]s|Pagamento|"
+    r"Credencial|Classifica[çc][ãa]o|Bilheteria|Portal Sesc)\b",
+    re.I)
+
+
+def limpar_servico(texto):
+    """Tira as frases de serviço, deixando só a apresentação do evento.
+
+    O pedido é que a descrição não repita data, local, horário e sorteio —
+    isso já aparece nos campos próprios do app, e em prosa só atrapalha.
+    """
+    frases = re.split(r"(?<=[.!?])\s+", texto)
+    ficam = [f for f in frases if f.strip() and not RE_SERVICO.search(f)]
+    if not ficam:
+        return ""
+    return " ".join(ficam).strip(" ·-–—")
 
 
 def da_pagina(pagina, ano_ref, dia_evento):

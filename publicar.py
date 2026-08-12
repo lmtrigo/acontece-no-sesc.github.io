@@ -30,6 +30,9 @@ import re
 import shutil
 import struct
 import zlib
+from datetime import date
+
+import regras
 
 NOME = "Agenda Sesc SP"
 NOME_CURTO = "Agenda Sesc"
@@ -178,6 +181,8 @@ def main():
     p.add_argument("--saida", default="web")
     p.add_argument("--base", default="./",
                    help="caminho onde o app vai morar; use /repo/ no GitHub Pages")
+    p.add_argument("--horizonte", type=int, default=60,
+                   help="dias à frente para a regra de retenção")
     args = p.parse_args()
 
     base = args.base if args.base.endswith("/") else args.base + "/"
@@ -195,7 +200,33 @@ def main():
     with open(os.path.join(args.saida, "index.html"), "w", encoding="utf-8", newline="\n") as f:
         f.write(html)
 
-    shutil.copyfile(args.dados, os.path.join(args.saida, "dados", "eventos.json"))
+    # eventos.json sem descrição; cada descrição vira um arquivo próprio,
+    # buscado só quando alguém abre aquele evento
+    with open(args.dados, encoding="utf-8") as f:
+        bruto = json.load(f)
+
+    hoje = max(date.today().isoformat(), bruto["janela"]["de"])
+    bruto["eventos"] = regras.aplicar(bruto["eventos"], hoje, args.horizonte)
+
+    dir_desc = os.path.join(args.saida, "dados", "desc")
+    if os.path.isdir(dir_desc):
+        shutil.rmtree(dir_desc)
+    os.makedirs(dir_desc, exist_ok=True)
+
+    n_desc = 0
+    magro = dict(bruto)
+    magro["eventos"] = []
+    for ev in bruto["eventos"]:
+        d = ev.pop("desc", None)
+        if d:
+            with open(os.path.join(dir_desc, "%s.json" % ev["id"]), "w", encoding="utf-8") as f:
+                json.dump({"desc": d}, f, ensure_ascii=False, separators=(",", ":"))
+            n_desc += 1
+        magro["eventos"].append(ev)
+
+    with open(os.path.join(args.saida, "dados", "eventos.json"), "w", encoding="utf-8") as f:
+        json.dump(magro, f, ensure_ascii=False, separators=(",", ":"))
+    print("%d descrições em arquivos separados" % n_desc)
 
     with open(os.path.join(args.saida, "manifest.webmanifest"), "w", encoding="utf-8") as f:
         f.write(manifest(base))
@@ -204,8 +235,7 @@ def main():
     png(os.path.join(args.saida, "icon-512.png"), 512)
     png(os.path.join(args.saida, "icon-maskable.png"), 512, maskable=True)
 
-    with open(args.dados, encoding="utf-8") as f:
-        d = json.load(f)
+    d = magro
     versao = (d.get("geradoEm") or "0").replace(":", "").replace("-", "").replace("T", "")
 
     casca = ", ".join("'%s%s'" % (base, n) for n in

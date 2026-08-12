@@ -29,9 +29,20 @@ def main():
         d = json.load(f)
 
     mudou = 0
+    limpas = 0
     amostras = []
 
     for ev in d["eventos"]:
+        # a limpeza da descrição também roda sobre o texto já guardado
+        if ev.get("desc"):
+            nova = detalhes.limpar_servico(ev["desc"])
+            if nova != ev["desc"]:
+                if len(nova) >= 60:
+                    ev["desc"] = nova
+                else:
+                    ev.pop("desc", None)
+                limpas += 1
+
         ins = ev.get("inscricao")
         if not ins or not ins.get("texto"):
             continue
@@ -56,8 +67,8 @@ def main():
     with open(args.dados, "w", encoding="utf-8") as f:
         json.dump(d, f, ensure_ascii=False, separators=(",", ":"))
 
-    print("Reprocessados %d eventos · %d com datas alteradas\n"
-          % (sum(1 for e in d["eventos"] if e.get("inscricao")), mudou))
+    print("Reprocessados %d eventos · %d com datas alteradas · %d descrições limpas\n"
+          % (sum(1 for e in d["eventos"] if e.get("inscricao")), mudou, limpas))
     for tit, txt, a, b in amostras:
         print("• %s" % tit)
         print("  texto : %s…" % txt)

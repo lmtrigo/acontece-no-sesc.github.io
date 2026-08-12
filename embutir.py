@@ -17,6 +17,9 @@ import argparse
 import json
 import os
 import re
+from datetime import date
+
+import regras
 
 MARCADOR = re.compile(
     r"/\* DADOS:INICIO \*/.*?/\* DADOS:FIM \*/",
@@ -31,16 +34,25 @@ CAMPOS = ("id", "tit", "sub", "uni", "reg", "cat", "subcat", "publico",
           # segunda passada (detalhes.py)
           "precos", "sessoes", "vendaOnline", "vendaPresencial", "vendaOnlineFim",
           "urlCompra", "maxPorPessoa", "classificacao", "endereco", "geo",
-          "inscricao", "sorteados", "desc")
+          "inscricao", "sorteados")
+# `desc` fica de fora de propósito: 2,5 mil textos pesariam no download de
+# todo mundo para serem lidos um de cada vez. O app busca por evento, em
+# dados/desc/<id>.json, e descarta ao fechar.
+#
+# Exceção: o arquivo único (prévia por link) não tem servidor ao lado, então
+# lá a busca falha e o evento fica sem descrição. `--com-descricao` embute
+# mesmo assim, para quando a prévia é o que vai ser mostrado.
 
 
-def enxugar(ev, limite_sub=170):
+def enxugar(ev, limite_sub=170, com_desc=False):
     """Mantém só o necessário e corta o complemento longo.
 
     O complemento é texto do portal; guardamos um resumo curto e mandamos
     o leitor para a página oficial pelo link.
     """
     out = {}
+    if com_desc and ev.get("desc"):
+        out["desc"] = ev["desc"]
     for c in CAMPOS:
         v = ev.get(c)
         if v is None or v == "" or v is False:
@@ -62,6 +74,13 @@ def main():
     p.add_argument("--manter", nargs="*", default=[],
                    help="projetos a preservar mesmo com a remoção ligada, "
                         'ex: --manter "Palco Giratório" "Agosto Indígena"')
+    p.add_argument("--com-descricao", action="store_true",
+                   help="embute as descrições no arquivo único (a prévia por "
+                        "link não tem servidor para buscá-las sob demanda)")
+    p.add_argument("--horizonte", type=int, default=60,
+                   help="dias à frente para a regra de retenção")
+    p.add_argument("--sem-retencao", action="store_true",
+                   help="mantém tudo o que foi coletado, sem aplicar a regra")
     p.add_argument("--sem-excecao-sorteio", action="store_true",
                    help="remove também os eventos de projeto que têm sorteio "
                         "(por padrão eles ficam, senão a aba Meus Sorteios "
@@ -72,6 +91,10 @@ def main():
         d = json.load(f)
 
     eventos = d["eventos"]
+
+    if not args.sem_retencao:
+        hoje = max(date.today().isoformat(), d["janela"]["de"])
+        eventos = regras.aplicar(eventos, hoje, args.horizonte)
 
     # Eventos de projeto são temporadas e programas recorrentes que repetem a
     # mesma atividade dezenas de vezes; fora da agenda, a lista fica navegável.
@@ -116,7 +139,7 @@ def main():
         "geradoEm": d.get("geradoEm"),
         "janela": d.get("janela"),
         "unidades": d.get("unidades"),
-        "eventos": [enxugar(e) for e in eventos],
+        "eventos": [enxugar(e, com_desc=args.com_descricao) for e in eventos],
     }
 
     js = "/* DADOS:INICIO */\n  var DADOS = " + json.dumps(
