@@ -206,6 +206,7 @@ def main():
         bruto = json.load(f)
 
     hoje = max(date.today().isoformat(), bruto["janela"]["de"])
+    bruto["sorteaveis"] = regras.indice_sorteios(bruto["eventos"])
     bruto["eventos"] = regras.aplicar(bruto["eventos"], hoje, args.horizonte)
 
     dir_desc = os.path.join(args.saida, "dados", "desc")

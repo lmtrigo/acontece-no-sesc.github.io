@@ -91,6 +91,7 @@ def main():
         d = json.load(f)
 
     eventos = d["eventos"]
+    sorteaveis = regras.indice_sorteios(eventos)
 
     if not args.sem_retencao:
         hoje = max(date.today().isoformat(), d["janela"]["de"])
@@ -140,6 +141,7 @@ def main():
         "janela": d.get("janela"),
         "unidades": d.get("unidades"),
         "eventos": [enxugar(e, com_desc=args.com_descricao) for e in eventos],
+        "sorteaveis": sorteaveis,
     }
 
     js = "/* DADOS:INICIO */\n  var DADOS = " + json.dumps(

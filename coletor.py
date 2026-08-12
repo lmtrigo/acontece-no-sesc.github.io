@@ -194,10 +194,14 @@ def expandir_viagens(lista, de, ate):
         while d <= min(d1, ate):
             todos.append(d.isoformat())
             d += timedelta(days=1)
-        if todos and todos != e["dias"]:
+        if not todos or len(todos) < 2:
+            continue
+        # marca como contínuo mesmo quando a listagem já trouxe todos os dias:
+        # é a marca que faz o app tratar a viagem como um intervalo só
+        if todos != e["dias"]:
             e["dias"] = todos
-            e["continuo"] = True
             n += 1
+        e["continuo"] = True
     if n:
         print("Preenchido o intervalo de %d passeios de vários dias" % n)
     return n

@@ -52,7 +52,8 @@ def main():
         antes = {k: ins.get(k) for k in
                  ("inscricao", "inscricaoFim", "sorteio", "pagamento", "pagamentoFim")}
         novo = detalhes.datas_do_texto(
-            ins["texto"], int((ev.get("inicio") or "2026")[:4]), ev.get("inicio"))
+            ins["texto"], int((ev.get("inicio") or "2026")[:4]),
+            ev.get("fim") or ev.get("inicio"))
         if not novo:
             continue
 

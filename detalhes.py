@@ -188,6 +188,14 @@ def data_iso(m, ano_ref):
     return s
 
 
+def diferenca_dias(a, b):
+    from datetime import date as _d
+    try:
+        return abs((_d.fromisoformat(b[:10]) - _d.fromisoformat(a[:10])).days)
+    except ValueError:
+        return 0
+
+
 def primeira_data(trecho, ano_ref):
     """Acha a primeira data do trecho, seja 7/8 ou '7 de agosto'.
 
@@ -238,13 +246,24 @@ def datas_do_texto(texto, ano_ref, dia_evento):
         RE_RANGE_CURTO = re.compile(
             r"(\d{1,2})\s*(?:e|a|at[ée]|-)\s*(\d{1,2})/(\d{1,2})(?:/(\d{2,4}))?")
 
-        def achar(rot, chave, janela=90):
+        # onde um rótulo termina: no começo do próximo
+        RE_PROX_ROTULO = re.compile(
+            r"\b(Sorteio|Resultado|Divulga[çc][ãa]o|Pagamento|Confirma[çc][ãa]o|"
+            r"Hospedagem|Pens[ãa]o|Observa[çc]|Cronograma)\b", re.I)
+
+        def achar(rot, chave, janela=260):
             if chave in out:      # o rótulo mais específico já resolveu
                 return
             m = re.search(rot, texto, re.I)
             if not m:
                 return
             trecho = texto[m.end():m.end() + janela]
+            # A data pode vir bem depois do rótulo ("Inscrições pelo Portal
+            # … de 19/06, às 14h, até 24/06"), então a janela é larga. Para
+            # não pegar a data do rótulo seguinte, ela é cortada nele.
+            corte = RE_PROX_ROTULO.search(trecho)
+            if corte and corte.start() > 0:
+                trecho = trecho[:corte.start()]
 
             # "de 6 a 10/8", "a partir das 14h do dia 08 até 13/07": o
             # intervalo pode vir depois de qualquer preâmbulo, então é busca
@@ -273,8 +292,10 @@ def datas_do_texto(texto, ano_ref, dia_evento):
                 return
             out[chave] = iso
             # "… até o dia 09/08", "… a 12/8", "… até 9 de agosto"
-            depois = trecho[fim:fim + 40]
-            m2 = re.match(r"\s*(?:e|a|at[ée]|-)\s*(?:o\s+dia\s+)?", depois)
+            # "de 19/06, às 14h, até 24/06": a vírgula depois da hora fica
+            # entre a data e o conector, então ela também precisa ser pulada
+            depois = trecho[fim:fim + 44];
+            m2 = re.match(r"[\s,]*(?:e|a|at[ée]|-)\s*(?:o\s+dia\s+)?", depois)
             if m2:
                 iso2, _ = primeira_data(depois[m2.end():], ano_ref)
                 if iso2 and iso2[:10] < iso[:10]:
@@ -288,23 +309,33 @@ def datas_do_texto(texto, ano_ref, dia_evento):
 
         # do rótulo mais específico para o mais genérico: "Inscrição para
         # sorteio de 2 a 9/6" não pode ser lido como a data do resultado
-        achar(r"Divulga[çc][ãa]o\s+dos?\s+sortead[oa]s\s*:?(?:\s*dia)?", "sorteio")
+        achar(r"Divulga[çc][ãa]o\s+dos?\s+(?:sortead[oa]s|contemplad[oa]s)\s*:?(?:\s*a\s+partir\s+d[eo]s?)?(?:\s*dia)?", "sorteio")
         achar(r"Resultado[^.]{0,40}?no\s+dia", "sorteio")
         achar(r"Resultado\s*(?:do\s+sorteio)?\s*:", "sorteio")
-        achar(r"Sorteio\s*:", "sorteio")
+        # "Inscrição para o sorteio:" contém "sorteio:" — sem o guarda, o
+        # período de INSCRIÇÃO era lido como data do sorteio
+        achar(r"(?<!para )(?<!para o )Sorteio\s*:", "sorteio")
+        # "Sorteio e divulgação do resultado em 25/06" — sem dois-pontos
+        achar(r"(?<!para )(?<!para o )Sorteio[^.]{0,40}?\bem\b", "sorteio")
+        achar(r"Divulga[çc][ãa]o[^.]{0,40}?\bem\b", "sorteio")
         # "Inscrição" (ã) e "Inscrições" (õ) precisam dos dois acentos: com
         # [õo] apenas, o singular nunca casava e a data se perdia
         INSCR = r"Inscri[çc](?:[ãa]o|[õo]es)"
-        achar(INSCR + r"\s+para\s+sorteio\s*(?:de)?", "inscricao")
+        # "Inscrição para sorteio" e "Inscrição para o sorteio"
+        achar(INSCR + r"\s+para\s+(?:o\s+)?sorteio\s*:?\s*(?:de|a\s+partir\s+d[eo]s?)?", "inscricao")
         achar(r"Pr[ée]-?" + INSCR + r"[^.]{0,30}?(?:a partir das?\s*\d{1,2}h\s*)?(?:de)?", "inscricao")
         achar(INSCR + r"\s*:?", "inscricao")
         achar(r"1[ªa]?\s*chamada\s*(?:de\s*)?pagamento\s*:?", "pagamento")
         achar(r"Pagamentos?\s*:?\s*(?:De)?", "pagamento")
 
-        # inscrição não acontece depois do evento: se der, é do ano anterior
+        # Inscrição não acontece depois do evento: quando dá, é virada de ano
+        # (a página escreve só "19/06" e o evento é em janeiro). Exijo folga
+        # grande — perto da data é inconsistência da página, não outro ano, e
+        # recuar um ano ali criaria um erro maior do que o que corrige.
         for k in ("inscricao", "sorteio"):
             if k in out and dia_evento and out[k][:10] > dia_evento:
-                out[k] = str(int(out[k][:4]) - 1) + out[k][4:]
+                if diferenca_dias(dia_evento, out[k][:10]) > 60:
+                    out[k] = str(int(out[k][:4]) - 1) + out[k][4:]
 
         out["temSorteio"] = bool(re.search(r"sorteio|sortead[oa]", texto, re.I))
 
@@ -520,7 +551,11 @@ def main():
                 ev["precos"] = p
                 n_preco += 1
 
-        info = da_pagina(pagina, int((ev.get("inicio") or "2026")[:4]), ev.get("inicio"))
+        # o parâmetro é o ÚLTIMO dia do evento: comparar com o início faria a
+        # correção de ano disparar em temporada longa, cuja inscrição abre
+        # meses depois do primeiro encontro
+        info = da_pagina(pagina, int((ev.get("inicio") or "2026")[:4]),
+                         ev.get("fim") or ev.get("inicio"))
         if info:
             if info.get("sorteados"):
                 ev["sorteados"] = info.pop("sorteados"); n_sorteio += 1

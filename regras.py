@@ -68,9 +68,19 @@ def aberta_agora(ev, hoje):
     return False
 
 
+SO_COM_INSCRICAO = ("Turismo Social",)
+
+
 def manter(ev, hoje, horizonte):
     """`hoje` e `horizonte` são strings YYYY-MM-DD."""
     i = ev.get("inscricao") or {}
+
+    # Passeio sem data de inscrição publicada não é oferta: ou já passou da
+    # fase (caso dos que só têm o resultado do sorteio na página) ou não dá
+    # para saber como entrar. Mostrar isso só gera expectativa vazia.
+    if ev.get("cat") in SO_COM_INSCRICAO and not i.get("inscricao"):
+        return False
+
     aberturas = [d for d in (_dia(i.get("inscricao")),
                              _dia(ev.get("vendaOnline")),
                              _dia(ev.get("vendaPresencial"))) if d]
@@ -90,6 +100,36 @@ def manter(ev, hoje, horizonte):
                 return True
 
     return False
+
+
+def indice_sorteios(eventos):
+    """Passeios sorteáveis, mesmo os que a retenção descarta.
+
+    Quem já se inscreveu num sorteio precisa registrar o código depois que a
+    inscrição fechou — que é exatamente quando o evento sai da agenda. Sem
+    este índice, o formulário não reconhece o link.
+    """
+    out = []
+    for e in eventos:
+        i = e.get("inscricao") or {}
+        if not (i.get("temSorteio") or e.get("sorteados")):
+            continue
+        if not e.get("link"):
+            continue
+        out.append({
+            "id": e["id"],
+            "tit": e["tit"],
+            "uni": e.get("uni"),
+            "cat": e.get("cat"),
+            "link": e["link"],
+            "precos": e.get("precos"),
+            "sorteio": i.get("sorteio"),
+            "inscricao": i.get("inscricao"),
+            "inscricaoFim": i.get("inscricaoFim"),
+            "sorteados": e.get("sorteados"),
+        })
+    out.sort(key=lambda x: x["tit"])
+    return out
 
 
 def aplicar(eventos, hoje, dias=60, verboso=True):
