@@ -1,7 +1,7 @@
 name: Atualizar programação
 
-# Roda de madrugada (05:10 BRT = 08:10 UTC) e também sob demanda pelo botão
-# "Run workflow" na aba Actions.
+# Roda de madrugada (05:10 no horário de Brasília = 08:10 UTC) e também sob
+# demanda, pelo botão "Run workflow" na aba Actions.
 on:
   schedule:
     - cron: "10 8 * * *"
@@ -9,9 +9,9 @@ on:
     inputs:
       dias:
         description: "Janela em dias a coletar"
-        default: "30"
-      detalhes:
-        description: "Buscar preços, sessões e sorteios (mais lento)"
+        default: "60"
+      descricoes:
+        description: "Buscar descrições de todos os eventos (mais lento)"
         type: boolean
         default: true
 
@@ -27,7 +27,7 @@ concurrency:
 jobs:
   coletar:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
 
@@ -36,25 +36,29 @@ jobs:
           python-version: "3.12"
 
       - name: Coletar a listagem
-        run: python coletor.py --dias "${{ inputs.dias || '30' }}"
+        run: python coletor.py --dias "${{ inputs.dias || '60' }}"
 
-      - name: Enriquecer com bilheteria e sorteios
-        if: ${{ inputs.detalhes != 'false' }}
-        run: python detalhes.py --html-cats "Turismo Social" "Cursos e Oficinas"
+      - name: Enriquecer com bilheteria, preços, inscrições e descrições
+        run: |
+          if [ "${{ inputs.descricoes }}" = "false" ]; then
+            python detalhes.py --html-cats "Turismo Social" "Cursos e Oficinas"
+          else
+            python detalhes.py --html
+          fi
 
-      - name: Reprocessar datas de inscrição
+      - name: Reprocessar datas e intervalos de viagem
         run: python reparse.py --mostrar 0
 
-      - name: Montar o site
+      - name: Montar o arquivo único e o site
         run: |
-          python embutir.py
-          python publicar.py --base "/${{ github.event.repository.name }}/"
+          python embutir.py --com-descricao
+          python publicar.py --base "/${GITHUB_REPOSITORY#*/}/"
 
       - name: Guardar os dados no repositório
         run: |
-          git config user.name "robô da agenda"
+          git config user.name "robo da agenda"
           git config user.email "actions@github.com"
-          git add dados/eventos.json prototipo.html web/
+          git add dados/eventos.json prototipo.html
           if git diff --staged --quiet; then
             echo "Nada mudou desde a última coleta."
           else

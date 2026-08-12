@@ -1,3 +1,9 @@
 __pycache__/
 *.pyc
 .claude/
+
+# Gerado por publicar.py a cada atualização (~8 mil arquivos). O site no ar
+# vem do artefato da Action, não do repositório — versionar isso faria o
+# repositório crescer alguns MB por dia sem necessidade.
+web/
+web.zip
