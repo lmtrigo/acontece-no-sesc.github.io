@@ -1,0 +1,398 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Segunda passada: preços, datas de venda/inscrição, sessões exatas e sorteios.
+
+Duas fontes, nessa ordem de preferência:
+
+1. API DE BILHETERIA (JSON, estruturada) — para eventos com `idJava`:
+       https://portal.sescsp.org.br/bilheteria/atividade.action?idAtividade=<idJava>
+   Entrega por sessão:
+       valorComerciario / valorMeia / valorInteira   → as três faixas
+       dataInicialSessaoFmt                          → data e hora EXATAS
+       dataInicialVendaOnlineFmt                     → abertura da venda on-line
+       dataInicialVendaRedeFmt                       → abertura da venda presencial
+       statusSessaoSesc, qtdeIngressosWeb/Rede, urlCompra, maxTicketSessao
+   E no evento: classificacaoMinina, unidadePrincipal (endereço + lat/lng).
+
+   Isso confirma a regra das 24h: para Rachel Reis, on-line 04/08 17h e
+   presencial 05/08 17h. A regra não precisa ser suposta — vem no dado.
+
+2. HTML DA PÁGINA — só para o que a bilheteria não cobre:
+       .info_local                → "Inscrições: 7/8 às 14h a 12/8 · Sorteio: 13/8 às 15h"
+       "Resultado do Sorteio:"    → lista de códigos contemplados
+
+Uso:
+    python detalhes.py                    # bilheteria em todos que têm idJava
+    python detalhes.py --html             # + varredura de HTML (sorteios e inscrições)
+    python detalhes.py --html-cats "Turismo Social" "Cursos e Oficinas"
+    python detalhes.py --max 300
+"""
+
+import argparse
+import html
+import json
+import os
+import re
+import time
+import urllib.error
+import urllib.request
+from datetime import datetime
+
+BILHETERIA = "https://portal.sescsp.org.br/bilheteria/atividade.action?idAtividade=%s"
+PAUSA = 0.25
+TIMEOUT = 30
+TENTATIVAS = 2
+UA = "agenda-sesc-prototipo/1.0 (agregador de programacao publica; uso pessoal)"
+
+RE_TAG = re.compile(r"<[^>]+>")
+RE_COMENTARIO = re.compile(r"<!--.*?-->", re.S)
+RE_ESPACO = re.compile(r"\s+")
+
+# Trechos de cromo do portal que vazam quando o bloco tem div aninhada.
+CORTES = ("Serviço Social do Comércio", "Escolha o evento", "Compartilhe:",
+          "Adicionar à agenda", "Sesc São Paulo por aí")
+
+MESES_TXT = {"janeiro": 1, "fevereiro": 2, "marco": 3, "março": 3, "abril": 4,
+             "maio": 5, "junho": 6, "julho": 7, "agosto": 8, "setembro": 9,
+             "outubro": 10, "novembro": 11, "dezembro": 12}
+RE_DATA_EXT = re.compile(
+    r"(\d{1,2})\s*[ºo°]?\s*de\s+(janeiro|fevereiro|mar[çc]o|abril|maio|junho|julho|"
+    r"agosto|setembro|outubro|novembro|dezembro)(?:\s+de\s+(\d{4}))?"
+    r"(?:\s*,)?(?:\s*[àa]s\s*(\d{1,2})(?:h|:)(\d{2})?)?", re.I)
+RE_INFO_LOCAL = re.compile(r'class="info_local"[^>]*>(.*?)</div>', re.S)
+RE_RESULTADO = re.compile(r"Resultado do Sorteio\s*:?", re.I)
+RE_CODIGO = re.compile(r"[A-Z]{6,12}")
+RE_DATA_HORA = re.compile(
+    r"(\d{1,2})/(\d{1,2})(?:/(\d{2,4}))?(?:\s*,)?(?:\s*[àa]s\s*(\d{1,2})(?:h|:)(\d{2})?)?")
+
+
+def limpar(fragmento):
+    sem = RE_COMENTARIO.sub(" ", fragmento)
+    return RE_ESPACO.sub(" ", html.unescape(RE_TAG.sub(" ", sem))).strip()
+
+
+def cortar_cromo(texto):
+    """Descarta o rodapé do portal que às vezes vem junto do bloco."""
+    for marca in CORTES:
+        i = texto.find(marca)
+        if i > 0:
+            texto = texto[:i]
+    return texto.strip(" ·-")
+
+
+def buscar(url, json_esperado=False, tentativa=1):
+    req = urllib.request.Request(url, headers={
+        "User-Agent": UA,
+        "Accept": "application/json" if json_esperado else "text/html",
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+            bruto = r.read().decode("utf-8", "replace")
+        return json.loads(bruto) if json_esperado else bruto
+    except Exception:
+        if tentativa >= TENTATIVAS:
+            return None
+        time.sleep(2 ** tentativa)
+        return buscar(url, json_esperado, tentativa + 1)
+
+
+# ---------------------------------------------------------------- bilheteria
+def faixas(sessao):
+    """As três faixas do Sesc, só as que existem."""
+    mapa = [("Credencial Plena", "valorComerciario"),
+            ("Meia entrada", "valorMeia"),
+            ("Inteira", "valorInteira")]
+    out = []
+    for rotulo, campo in mapa:
+        v = sessao.get(campo)
+        if isinstance(v, (int, float)) and v > 0:
+            out.append({"label": rotulo, "valor": round(float(v), 2)})
+    if sessao.get("gratuito") and not out:
+        out.append({"label": "Gratuito", "valor": 0.0})
+    return out
+
+
+def da_bilheteria(idjava):
+    d = buscar(BILHETERIA % idjava, json_esperado=True)
+    if not isinstance(d, dict) or not d.get("sessoes"):
+        return None
+
+    sessoes = [s for s in d["sessoes"] if isinstance(s, dict)]
+    if not sessoes:
+        return None
+
+    out = {"idAtividade": d.get("idAtividade")}
+
+    precos = faixas(sessoes[0])
+    if precos:
+        out["precos"] = precos
+
+    cls = d.get("classificacaoMinina")
+    if cls:
+        out["classificacao"] = cls
+
+    uni = d.get("unidadePrincipal") or {}
+    if uni.get("endereco"):
+        out["endereco"] = uni["endereco"]
+    if uni.get("lat") and uni.get("lng"):
+        out["geo"] = [uni["lat"], uni["lng"]]
+
+    prim = sessoes[0]
+    if prim.get("dataInicialVendaOnlineFmt"):
+        out["vendaOnline"] = prim["dataInicialVendaOnlineFmt"]
+    if prim.get("dataInicialVendaRedeFmt"):
+        out["vendaPresencial"] = prim["dataInicialVendaRedeFmt"]
+    if prim.get("dataFinalVendaOnlineFmt"):
+        out["vendaOnlineFim"] = prim["dataFinalVendaOnlineFmt"]
+    if prim.get("urlCompra"):
+        out["urlCompra"] = html.unescape(prim["urlCompra"])
+    if prim.get("maxTicketSessao"):
+        out["maxPorPessoa"] = prim["maxTicketSessao"]
+
+    # sessões exatas: resolve o buraco da listagem, que só dava o intervalo
+    ses = []
+    for s in sessoes:
+        ini = s.get("dataInicialSessaoFmt")
+        if not ini:
+            continue
+        ses.append({
+            "quando": ini,
+            "status": s.get("statusSessaoSesc") or s.get("dscStatusEvento"),
+            "web": s.get("qtdeIngressosWeb"),
+            "rede": s.get("qtdeIngressosRede"),
+        })
+    if ses:
+        ses.sort(key=lambda x: x["quando"])
+        out["sessoes"] = ses
+
+    return out
+
+
+# ---------------------------------------------------------------------- HTML
+def data_iso(m, ano_ref):
+    dia, mes, ano, hh, mm = m.groups()
+    try:
+        dia, mes = int(dia), int(mes)
+        if not (1 <= dia <= 31 and 1 <= mes <= 12):
+            return None
+    except (TypeError, ValueError):
+        return None
+    a = (int(ano) + 2000 if ano and int(ano) < 100 else int(ano)) if ano else ano_ref
+    s = "%04d-%02d-%02d" % (a, mes, dia)
+    if hh:
+        s += "T%02d:%02d" % (int(hh), int(mm or 0))
+    return s
+
+
+def primeira_data(trecho, ano_ref):
+    """Acha a primeira data do trecho, seja 7/8 ou '7 de agosto'.
+
+    Devolve (iso, posicao_final) — a posição serve para procurar o fim do
+    período logo em seguida.
+    """
+    cands = []
+    m1 = RE_DATA_HORA.search(trecho)
+    if m1 and m1.group(1) and m1.group(2):
+        cands.append((m1.start(), "num", m1))
+    m2 = RE_DATA_EXT.search(trecho)
+    if m2:
+        cands.append((m2.start(), "ext", m2))
+    if not cands:
+        return None, 0
+    cands.sort(key=lambda c: c[0])
+    _, tipo, m = cands[0]
+
+    if tipo == "num":
+        return data_iso(m, ano_ref), m.end()
+
+    try:
+        dia = int(m.group(1))
+        mes = MESES_TXT[m.group(2).lower().replace("ç", "c")]
+    except (KeyError, ValueError, TypeError):
+        return None, 0
+    ano = int(m.group(3)) if m.group(3) else ano_ref
+    s = "%04d-%02d-%02d" % (ano, mes, dia)
+    if m.group(4):
+        s += "T%02d:%02d" % (int(m.group(4)), int(m.group(5) or 0))
+    return s, m.end()
+
+
+def datas_do_texto(texto, ano_ref, dia_evento):
+    """Extrai inscrição / sorteio / pagamento de um trecho em prosa.
+
+    Separado de `da_pagina` de propósito: o texto bruto fica guardado no
+    eventos.json, então dá para reprocessar as datas sem baixar nada de novo
+    (é o que `reparse.py` faz).
+    """
+    out = {}
+    texto = cortar_cromo(texto or "")
+    if texto:
+        out["texto"] = texto[:400]
+
+        # "de 2 a 9/6/2026" — o primeiro dia vem sem mês, herda do segundo
+        RE_RANGE_CURTO = re.compile(
+            r"(\d{1,2})\s*(?:a|at[ée]|-)\s*(\d{1,2})/(\d{1,2})(?:/(\d{2,4}))?")
+
+        def achar(rot, chave, janela=90):
+            if chave in out:      # o rótulo mais específico já resolveu
+                return
+            m = re.search(rot, texto, re.I)
+            if not m:
+                return
+            trecho = texto[m.end():m.end() + janela]
+
+            curto = RE_RANGE_CURTO.match(trecho.strip())
+            if curto:
+                d1, d2, mes, ano = curto.groups()
+                a = (int(ano) + 2000 if ano and int(ano) < 100 else int(ano)) if ano else ano_ref
+                try:
+                    out[chave] = "%04d-%02d-%02d" % (a, int(mes), int(d1))
+                    out[chave + "Fim"] = "%04d-%02d-%02d" % (a, int(mes), int(d2))
+                    return
+                except ValueError:
+                    pass
+
+            iso, fim = primeira_data(trecho, ano_ref)
+            if not iso:
+                return
+            out[chave] = iso
+            # "… até o dia 09/08", "… a 12/8", "… até 9 de agosto"
+            depois = trecho[fim:fim + 40]
+            m2 = re.match(r"\s*(?:e|a|at[ée]|-)\s*(?:o\s+dia\s+)?", depois)
+            if m2:
+                iso2, _ = primeira_data(depois[m2.end():], ano_ref)
+                if iso2 and iso2[:10] < iso[:10]:
+                    # a página às vezes digita o ano errado no fim do período
+                    # ("de 29/07 às 14h até 14/08/2025"); alinhar ao início
+                    tentativa = iso[:4] + iso2[4:]
+                    if tentativa[:10] >= iso[:10]:
+                        iso2 = tentativa
+                if iso2 and iso2[:10] >= iso[:10]:
+                    out[chave + "Fim"] = iso2
+
+        # do rótulo mais específico para o mais genérico: "Inscrição para
+        # sorteio de 2 a 9/6" não pode ser lido como a data do resultado
+        achar(r"Resultado[^.]{0,40}?no\s+dia", "sorteio")
+        achar(r"Resultado\s*(?:do\s+sorteio)?\s*:", "sorteio")
+        achar(r"Sorteio\s*:", "sorteio")
+        achar(r"Inscri[çc][ãa]o\s+para\s+sorteio\s*(?:de)?", "inscricao")
+        achar(r"Pr[ée]-?inscri[çc][õo]es?[^.]{0,30}?(?:a partir das?\s*\d{1,2}h\s*)?(?:de)?", "inscricao")
+        achar(r"Inscri[çc][õo]es?\s*:?", "inscricao")
+        achar(r"1[ªa]?\s*chamada\s*(?:de\s*)?pagamento\s*:?", "pagamento")
+        achar(r"Pagamentos?\s*:?\s*(?:De)?", "pagamento")
+
+        # inscrição não acontece depois do evento: se der, é do ano anterior
+        for k in ("inscricao", "sorteio"):
+            if k in out and dia_evento and out[k][:10] > dia_evento:
+                out[k] = str(int(out[k][:4]) - 1) + out[k][4:]
+
+        out["temSorteio"] = bool(re.search(r"sorteio|sortead[oa]", texto, re.I))
+
+    return out
+
+
+def da_pagina(pagina, ano_ref, dia_evento):
+    """Inscrição/sorteio no texto e os códigos contemplados."""
+    blocos = [limpar(b) for b in RE_INFO_LOCAL.findall(pagina)]
+    texto = " · ".join([b for b in blocos if b])
+
+    # algumas páginas (turismo) põem as inscrições no corpo, não no info_local
+    if not re.search(r"Inscri[çc]|Sorteio|Venda", texto, re.I):
+        corpo = limpar(pagina)
+        m = re.search(r"INSCRI[ÇC][ÕO]ES(.{0,600})", corpo, re.I)
+        if m:
+            texto = (texto + " · " if texto else "") + m.group(1).strip()
+
+    out = datas_do_texto(texto, ano_ref, dia_evento)
+
+    corpo = limpar(pagina)
+    m = RE_RESULTADO.search(corpo)
+    if m:
+        codigos = []
+        for tok in corpo[m.end():m.end() + 4000].split():
+            t = tok.strip(".,;:")
+            if RE_CODIGO.fullmatch(t):
+                codigos.append(t)
+            elif codigos:
+                break
+        if codigos:
+            out["sorteados"] = codigos
+
+    return out or None
+
+
+# --------------------------------------------------------------------- main
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument("--dados", default=os.path.join("dados", "eventos.json"))
+    p.add_argument("--max", type=int, default=0)
+    p.add_argument("--html", action="store_true", help="varrer HTML de todos")
+    p.add_argument("--html-cats", nargs="*", default=["Turismo Social"],
+                   help="categorias que também levam varredura de HTML")
+    args = p.parse_args()
+
+    with open(args.dados, encoding="utf-8") as f:
+        d = json.load(f)
+    eventos = d["eventos"]
+    if args.max:
+        eventos = eventos[:args.max]
+
+    com_java = [e for e in eventos if e.get("idJava")]
+    quer_html = [e for e in eventos
+                 if args.html or e.get("cat") in set(args.html_cats)]
+
+    print("%d eventos · %d com bilheteria · %d para varrer HTML"
+          % (len(eventos), len(com_java), len(quer_html)))
+
+    inicio = time.time()
+    n_preco = n_sessao = n_venda = n_insc = n_sorteio = 0
+
+    for i, ev in enumerate(com_java, 1):
+        b = da_bilheteria(ev["idJava"])
+        if b:
+            if b.get("precos"):
+                ev["precos"] = b["precos"]; n_preco += 1
+            if b.get("sessoes"):
+                ev["sessoes"] = b["sessoes"]; n_sessao += 1
+                # datas exatas substituem a inferência dia-a-dia
+                ev["dias"] = sorted({s["quando"][:10] for s in b["sessoes"]})
+            for k in ("vendaOnline", "vendaPresencial", "vendaOnlineFim",
+                      "urlCompra", "maxPorPessoa", "classificacao", "endereco", "geo"):
+                if b.get(k):
+                    ev[k] = b[k]
+            if b.get("vendaPresencial") or b.get("vendaOnline"):
+                n_venda += 1
+        if i % 50 == 0 or i == len(com_java):
+            print("  bilheteria %4d/%d · preços=%d sessões=%d vendas=%d"
+                  % (i, len(com_java), n_preco, n_sessao, n_venda))
+        time.sleep(PAUSA)
+
+    for i, ev in enumerate(quer_html, 1):
+        if not ev.get("link"):
+            continue
+        pagina = buscar(ev["link"])
+        if not pagina:
+            continue
+        info = da_pagina(pagina, int((ev.get("inicio") or "2026")[:4]), ev.get("inicio"))
+        if info:
+            if info.get("sorteados"):
+                ev["sorteados"] = info.pop("sorteados"); n_sorteio += 1
+            if info:
+                ev["inscricao"] = info; n_insc += 1
+        if i % 25 == 0 or i == len(quer_html):
+            print("  html %4d/%d · inscrições=%d sorteios=%d"
+                  % (i, len(quer_html), n_insc, n_sorteio))
+        time.sleep(PAUSA)
+
+    d["enriquecidoEm"] = datetime.now().isoformat(timespec="seconds")
+    with open(args.dados, "w", encoding="utf-8") as f:
+        json.dump(d, f, ensure_ascii=False, separators=(",", ":"))
+
+    print("\nPronto em %.0fs · %.0f KB · preços=%d sessões=%d vendas=%d inscrições=%d sorteios=%d"
+          % (time.time() - inicio, os.path.getsize(args.dados) / 1024,
+             n_preco, n_sessao, n_venda, n_insc, n_sorteio))
+
+
+if __name__ == "__main__":
+    main()

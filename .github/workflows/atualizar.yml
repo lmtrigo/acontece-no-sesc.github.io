@@ -1,0 +1,77 @@
+name: Atualizar programação
+
+# Roda de madrugada (05:10 BRT = 08:10 UTC) e também sob demanda pelo botão
+# "Run workflow" na aba Actions.
+on:
+  schedule:
+    - cron: "10 8 * * *"
+  workflow_dispatch:
+    inputs:
+      dias:
+        description: "Janela em dias a coletar"
+        default: "30"
+      detalhes:
+        description: "Buscar preços, sessões e sorteios (mais lento)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: atualizar
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Coletar a listagem
+        run: python coletor.py --dias "${{ inputs.dias || '30' }}"
+
+      - name: Enriquecer com bilheteria e sorteios
+        if: ${{ inputs.detalhes != 'false' }}
+        run: python detalhes.py --html-cats "Turismo Social" "Cursos e Oficinas"
+
+      - name: Reprocessar datas de inscrição
+        run: python reparse.py --mostrar 0
+
+      - name: Montar o site
+        run: |
+          python embutir.py
+          python publicar.py --base "/${{ github.event.repository.name }}/"
+
+      - name: Guardar os dados no repositório
+        run: |
+          git config user.name "robô da agenda"
+          git config user.email "actions@github.com"
+          git add dados/eventos.json prototipo.html web/
+          if git diff --staged --quiet; then
+            echo "Nada mudou desde a última coleta."
+          else
+            git commit -m "dados: coleta de $(date -u +%d/%m/%Y)"
+            git push
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+  publicar:
+    needs: coletar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
