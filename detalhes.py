@@ -246,7 +246,11 @@ def datas_do_texto(texto, ano_ref, dia_evento):
                 return
             trecho = texto[m.end():m.end() + janela]
 
-            curto = RE_RANGE_CURTO.match(trecho.strip())
+            # "Inscrições de 6 a 10/8": sem tirar o "de", o match ancorado
+            # falha, e o 10/8 (que é o FIM) seria lido como início
+            inicio_limpo = re.sub(r"^\s*(?:de|a\s+partir\s+de|entre|no\s+per[íi]odo\s+de)\s+",
+                                  "", trecho.strip(), flags=re.I)
+            curto = RE_RANGE_CURTO.match(inicio_limpo)
             if curto:
                 d1, d2, mes, ano = curto.groups()
                 a = (int(ano) + 2000 if ano and int(ano) < 100 else int(ano)) if ano else ano_ref
