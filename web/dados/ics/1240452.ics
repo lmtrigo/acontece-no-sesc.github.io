@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240452-0@agenda-sesc
+DTSTART:20260829T190000
+SUMMARY:Douglas Germano
+LOCATION:Sesc Jundiaí — Av. Antônio Frederico Ozanan\, 6600 | Jardim Botânico | JUNDIAI  | SP | Cep: 13214-206
+DESCRIPTION:Show do álbum Branco — https://www.sescsp.org.br/programacao/douglas-germano-jundiai
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Douglas Germano
+END:VALARM
+END:VEVENT
+END:VCALENDAR

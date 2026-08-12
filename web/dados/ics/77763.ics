@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:77763-0@agenda-sesc
+DTSTART:20260811T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77763-1@agenda-sesc
+DTSTART:20260813T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77763-2@agenda-sesc
+DTSTART:20260818T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77763-3@agenda-sesc
+DTSTART:20260820T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77763-4@agenda-sesc
+DTSTART:20260825T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77763-5@agenda-sesc
+DTSTART:20260827T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77763-6@agenda-sesc
+DTSTART:20260901T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77763-7@agenda-sesc
+DTSTART:20260903T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77763-8@agenda-sesc
+DTSTART:20260908T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77763-9@agenda-sesc
+DTSTART:20260910T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77763-10@agenda-sesc
+DTSTART:20260915T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77763-11@agenda-sesc
+DTSTART:20260917T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77763-12@agenda-sesc
+DTSTART:20260922T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77763-13@agenda-sesc
+DTSTART:20260924T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77763-14@agenda-sesc
+DTSTART:20260929T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77763-15@agenda-sesc
+DTSTART:20261001T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77763-16@agenda-sesc
+DTSTART:20261006T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77763-17@agenda-sesc
+DTSTART:20261008T110000
+SUMMARY:Tai Chi Chuan
+LOCATION:Sesc Sorocaba
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/tai-chi-chuan-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tai Chi Chuan
+END:VALARM
+END:VEVENT
+END:VCALENDAR

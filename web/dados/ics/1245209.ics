@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245209-0@agenda-sesc
+DTSTART:20260829T140000
+SUMMARY:Cartas de Botão e o Homem que Aparecia e Desaparecia
+LOCATION:Sesc Campo Limpo
+DESCRIPTION:com Cia Dona Conceição — https://www.sescsp.org.br/programacao/cartas-de-botao-e-o-homem-que-aparecia-e-desaparecia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cartas de Botão e o Homem que Aparecia e Desaparecia
+END:VALARM
+END:VEVENT
+END:VCALENDAR

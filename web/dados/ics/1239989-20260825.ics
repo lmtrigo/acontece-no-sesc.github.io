@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239989-20260825T200000@agenda-sesc
+DTSTART:20260825T200000
+SUMMARY:Aula aberta de Boxe
+LOCATION:Sesc Santo Amaro
+DESCRIPTION:com Lais Carnevale — https://www.sescsp.org.br/programacao/aula-aberta-de-boxe-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Aula aberta de Boxe
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239763-0@agenda-sesc
+DTSTART:20260815T200000
+SUMMARY:Quarteto Muriti
+LOCATION:Sesc Santana — Avenida Luiz Dumont Villares\, 579 | Santana | SAO PAULO  | SP | Cep: 02085-100
+DESCRIPTION:Entre Tempos: Um Brasil — https://www.sescsp.org.br/programacao/quarteto-muriti-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Quarteto Muriti
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249932-0@agenda-sesc
+DTSTART:20260901T193000
+SUMMARY:Mutações: Autoritarismo e totalitarismo
+LOCATION:Sesc Centro de Pesquisa e Formação
+DESCRIPTION:Com João Almino — https://www.sescsp.org.br/programacao/mutacoes-autoritarismo-e-totalitarismo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mutações: Autoritarismo e totalitarismo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

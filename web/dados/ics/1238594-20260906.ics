@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238594-20260906T100000@agenda-sesc
+DTSTART:20260906T100000
+SUMMARY:Ateliê de Fabricação Digital
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com orientação de Bruno Fiorelli e Mary Ellen Cruz — https://www.sescsp.org.br/programacao/atelie-de-fabricacao-digital
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê de Fabricação Digital
+END:VALARM
+END:VEVENT
+END:VCALENDAR

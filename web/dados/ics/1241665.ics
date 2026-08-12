@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241665-0@agenda-sesc
+DTSTART:20260829T140000
+SUMMARY:Criando com elementos da natureza
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Educadores de Atividades Infantojuvenis — https://www.sescsp.org.br/programacao/criando-com-elementos-da-natureza-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Criando com elementos da natureza
+END:VALARM
+END:VEVENT
+END:VCALENDAR

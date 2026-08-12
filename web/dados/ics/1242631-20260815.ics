@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242631-20260815T110000@agenda-sesc
+DTSTART:20260815T110000
+SUMMARY:Corpinhos Dançantes para Bebês
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Bel Droppa\, bailarina\, arte-educadora e professora de dança — https://www.sescsp.org.br/programacao/corpinhos-dancantes-para-bebes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Corpinhos Dançantes para Bebês
+END:VALARM
+END:VEVENT
+END:VCALENDAR

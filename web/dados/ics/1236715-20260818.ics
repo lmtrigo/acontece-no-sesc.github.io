@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1236715-20260818T190000@agenda-sesc
+DTSTART:20260818T190000
+SUMMARY:Foco Narrativo: Várias vozes\, mesma cena
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com Augusto Figliaggi — https://www.sescsp.org.br/programacao/foco-narrativo-varias-vozes-mesma-cena
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Foco Narrativo: Várias vozes\, mesma cena
+END:VALARM
+END:VEVENT
+END:VCALENDAR

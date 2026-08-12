@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243447-0@agenda-sesc
+DTSTART:20260812T140000
+SUMMARY:Oficina Trajeto Aspiral Performativo - COM COLETIVO CROA (PA)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:50 vagas — https://www.sescsp.org.br/programacao/oficina-trajeto-aspiral-performativo-com-coletivo-croa-pa
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Oficina Trajeto Aspiral Performativo - COM COLETIVO CROA (PA)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1243447-1@agenda-sesc
+DTSTART:20260813T140000
+SUMMARY:Oficina Trajeto Aspiral Performativo - COM COLETIVO CROA (PA)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:50 vagas — https://www.sescsp.org.br/programacao/oficina-trajeto-aspiral-performativo-com-coletivo-croa-pa
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Oficina Trajeto Aspiral Performativo - COM COLETIVO CROA (PA)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

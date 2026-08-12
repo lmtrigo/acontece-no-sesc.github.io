@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237215-0@agenda-sesc
+DTSTART:20260823T110000
+SUMMARY:Dança Indiana com Tabla e Sitar ao vivo
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Mariana Grifo e Michele Bonifácio — https://www.sescsp.org.br/programacao/danca-indiana-com-tabla-e-sitar-ao-vivo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Dança Indiana com Tabla e Sitar ao vivo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

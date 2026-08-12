@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1043410-0@agenda-sesc
+DTSTART:20260815T093000
+SUMMARY:Feira de Pequenos Produtores
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:Com agricultoras(es) e produtoras(es) de Presidente Prudente e região. — https://www.sescsp.org.br/programacao/feira-de-pequenos-produtores-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Feira de Pequenos Produtores
+END:VALARM
+END:VEVENT
+END:VCALENDAR

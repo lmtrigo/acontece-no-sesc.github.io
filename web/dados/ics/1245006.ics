@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245006-0@agenda-sesc
+DTSTART:20260827T190000
+SUMMARY:Narratividades: Práticas De Mediação De Leitura e Oralidades
+LOCATION:Sesc Franca
+DESCRIPTION:Com Mafuane Oliveira\, contadora de histórias\, atriz\, educadora e escritora — https://www.sescsp.org.br/programacao/narratividades-praticas-de-mediacao-de-leitura-e-oralidades
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Narratividades: Práticas De Mediação De Leitura e Oralidades
+END:VALARM
+END:VEVENT
+END:VCALENDAR

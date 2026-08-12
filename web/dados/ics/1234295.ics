@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1234295-0@agenda-sesc
+DTSTART:20260828T200000
+SUMMARY:Estrela Leminski
+LOCATION:Sesc Santo André — Rua Tamarutaca\, 302 | Vila Guiomar | SANTO ANDRE  | SP | Cep: 09071-130
+DESCRIPTION:Leminskanções — https://www.sescsp.org.br/programacao/estrela-leminski
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Estrela Leminski
+END:VALARM
+END:VEVENT
+END:VCALENDAR

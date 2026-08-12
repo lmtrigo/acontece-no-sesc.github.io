@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242951-0@agenda-sesc
+DTSTART:20260830T160000
+SUMMARY:Jovem Dionísio
+LOCATION:Sesc São Carlos
+DESCRIPTION:Turnê Ônibus-Palco — https://www.sescsp.org.br/programacao/jovem-dionisio-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Jovem Dionísio
+END:VALARM
+END:VEVENT
+END:VCALENDAR

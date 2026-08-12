@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:586155-0@agenda-sesc
+DTSTART:20260811T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:586155-1@agenda-sesc
+DTSTART:20260813T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:586155-2@agenda-sesc
+DTSTART:20260818T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:586155-3@agenda-sesc
+DTSTART:20260820T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:586155-4@agenda-sesc
+DTSTART:20260825T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:586155-5@agenda-sesc
+DTSTART:20260827T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:586155-6@agenda-sesc
+DTSTART:20260901T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:586155-7@agenda-sesc
+DTSTART:20260903T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:586155-8@agenda-sesc
+DTSTART:20260908T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:586155-9@agenda-sesc
+DTSTART:20260910T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:586155-10@agenda-sesc
+DTSTART:20260915T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:586155-11@agenda-sesc
+DTSTART:20260917T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:586155-12@agenda-sesc
+DTSTART:20260922T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:586155-13@agenda-sesc
+DTSTART:20260924T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:586155-14@agenda-sesc
+DTSTART:20260929T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:586155-15@agenda-sesc
+DTSTART:20261001T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:586155-16@agenda-sesc
+DTSTART:20261006T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:586155-17@agenda-sesc
+DTSTART:20261008T170000
+SUMMARY:Práticas aquáticas | 6 a 12 anos
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

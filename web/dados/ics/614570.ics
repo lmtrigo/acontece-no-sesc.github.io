@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:614570-0@agenda-sesc
+DTSTART:20260811T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:614570-1@agenda-sesc
+DTSTART:20260813T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:614570-2@agenda-sesc
+DTSTART:20260818T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:614570-3@agenda-sesc
+DTSTART:20260820T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:614570-4@agenda-sesc
+DTSTART:20260825T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:614570-5@agenda-sesc
+DTSTART:20260827T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:614570-6@agenda-sesc
+DTSTART:20260901T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:614570-7@agenda-sesc
+DTSTART:20260903T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:614570-8@agenda-sesc
+DTSTART:20260908T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:614570-9@agenda-sesc
+DTSTART:20260910T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:614570-10@agenda-sesc
+DTSTART:20260915T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:614570-11@agenda-sesc
+DTSTART:20260917T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:614570-12@agenda-sesc
+DTSTART:20260922T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:614570-13@agenda-sesc
+DTSTART:20260924T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:614570-14@agenda-sesc
+DTSTART:20260929T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:614570-15@agenda-sesc
+DTSTART:20261001T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:614570-16@agenda-sesc
+DTSTART:20261006T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:614570-17@agenda-sesc
+DTSTART:20261008T153000
+SUMMARY:Práticas Aquáticas - 3 a 6 anos
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-3-a-6-anos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas - 3 a 6 anos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

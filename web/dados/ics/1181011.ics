@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1181011-0@agenda-sesc
+DTSTART:20260819T190000
+SUMMARY:Lab Têxtil: costura para todas as pessoas
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Gab e Lola\, pessoas educadoras em Tecnologias e Artes — https://www.sescsp.org.br/programacao/lab-textil-costura-para-todas-as-pessoas-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Lab Têxtil: costura para todas as pessoas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248421-0@agenda-sesc
+DTSTART:20260830T160000
+SUMMARY:Rumo à World Cosplay Summit: Seletiva GEEKARR
+LOCATION:Sesc Araraquara
+DESCRIPTION:Com Atômica Produções — https://www.sescsp.org.br/programacao/rumo-a-world-cosplay-summit-seletiva-geekarr
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rumo à World Cosplay Summit: Seletiva GEEKARR
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1232040-0@agenda-sesc
+DTSTART:20260912T150000
+SUMMARY:Mediação de Jogos Afro-brasileiros e Africanos
+LOCATION:Sesc Santo André
+DESCRIPTION:com Juliana Thomaz\, Patricia Santos e Tatiane Ramos — https://www.sescsp.org.br/programacao/mediacao-de-jogos-afro-brasileiros-e-africanos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mediação de Jogos Afro-brasileiros e Africanos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

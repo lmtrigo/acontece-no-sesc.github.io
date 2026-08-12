@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1218299-20260825T190000@agenda-sesc
+DTSTART:20260825T190000
+SUMMARY:Aulas Abertas de Basquete 3x3 Feminino
+LOCATION:Sesc Campo Limpo
+DESCRIPTION:Com a professora e ex-jogadora da seleção brasileira de basquete\, Kátia Denise — https://www.sescsp.org.br/programacao/aulas-abertas-de-basquete-3x3-feminino-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Aulas Abertas de Basquete 3x3 Feminino
+END:VALARM
+END:VEVENT
+END:VCALENDAR

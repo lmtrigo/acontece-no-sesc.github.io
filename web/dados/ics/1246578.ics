@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246578-0@agenda-sesc
+DTSTART:20260815T150000
+SUMMARY:Mitã Hanga: Boneca de Cabaça
+LOCATION:Sesc Registro
+DESCRIPTION:Com Lu Ahamy e Awa Mbarete do Nhande Pame Cultura Indígena — https://www.sescsp.org.br/programacao/mita-hanga-boneca-de-cabaca-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mitã Hanga: Boneca de Cabaça
+END:VALARM
+END:VEVENT
+END:VCALENDAR

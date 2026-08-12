@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1094427-0@agenda-sesc
+DTSTART:20260815T140000
+SUMMARY:Clube da Horta
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com Flávio de Oliveira Fernandes — https://www.sescsp.org.br/programacao/clube-da-horta-7
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clube da Horta
+END:VALARM
+END:VEVENT
+END:VCALENDAR

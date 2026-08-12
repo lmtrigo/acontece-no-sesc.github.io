@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244376-0@agenda-sesc
+DTSTART:20260816T153000
+SUMMARY:Cinema Guarani - Território\, Memória e Ficção
+LOCATION:Sesc Santos
+DESCRIPTION:https://www.sescsp.org.br/programacao/cinema-guarani-territorio-memoria-e-ficcao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cinema Guarani - Território\, Memória e Ficção
+END:VALARM
+END:VEVENT
+END:VCALENDAR

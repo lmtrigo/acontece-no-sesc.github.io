@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238240-0@agenda-sesc
+DTSTART:20260820T150000
+SUMMARY:Dez perguntas do MAM Educativo para a mediação cultural
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:https://www.sescsp.org.br/programacao/dez-perguntas-do-mam-educativo-para-a-mediacao-cultural
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Dez perguntas do MAM Educativo para a mediação cultural
+END:VALARM
+END:VEVENT
+END:VCALENDAR

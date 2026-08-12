@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239393-0@agenda-sesc
+DTSTART:20260827T110000
+SUMMARY:Trio Beijo de Moça e Banda
+LOCATION:Sesc Itaquera
+DESCRIPTION:Turnê Acontecimento — https://www.sescsp.org.br/programacao/trio-beijo-de-moca-e-banda
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Trio Beijo de Moça e Banda
+END:VALARM
+END:VEVENT
+END:VCALENDAR

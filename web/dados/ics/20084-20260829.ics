@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:20084-20260829T100000@agenda-sesc
+DTSTART:20260829T100000
+SUMMARY:Recreação de Vôlei
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/recreacao-de-volei-rede-243
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação de Vôlei
+END:VALARM
+END:VEVENT
+END:VCALENDAR

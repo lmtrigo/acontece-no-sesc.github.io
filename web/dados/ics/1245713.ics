@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245713-0@agenda-sesc
+DTSTART:20260816T103000
+SUMMARY:Cine Aconchego: Valor Sentimental
+LOCATION:Sesc Franca
+DESCRIPTION:Dir.: Joachim Trier. NOR/DEU/DNK/FRA/SWE/GBR/TUR\, 2025\, 133 min. — https://www.sescsp.org.br/programacao/valor-sentimental-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cine Aconchego: Valor Sentimental
+END:VALARM
+END:VEVENT
+END:VCALENDAR

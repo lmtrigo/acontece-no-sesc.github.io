@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246341-20260827T093000@agenda-sesc
+DTSTART:20260827T093000
+SUMMARY:Iniciação em Gravura em Metal
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Kika Levy — https://www.sescsp.org.br/programacao/iniciacao-em-gravura-em-metal-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Iniciação em Gravura em Metal
+END:VALARM
+END:VEVENT
+END:VCALENDAR

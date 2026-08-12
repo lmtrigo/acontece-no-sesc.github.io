@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248136-20260912T160000@agenda-sesc
+DTSTART:20260912T160000
+SUMMARY:Eleguá\, Menino e Malandro
+LOCATION:Sesc Consolação
+DESCRIPTION:com Cia Clã do Jabuti — https://www.sescsp.org.br/programacao/elegua-menino-e-malandro-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Eleguá\, Menino e Malandro
+END:VALARM
+END:VEVENT
+END:VCALENDAR

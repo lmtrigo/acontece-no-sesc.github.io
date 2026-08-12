@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1079720-0@agenda-sesc
+DTSTART:20260905T160000
+SUMMARY:Inscrições para o Palco Aberto Jovem de Setembro
+LOCATION:Sesc Sorocaba
+DESCRIPTION:De 13 a 29 anos — https://www.sescsp.org.br/programacao/palco-aberto-jovem
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inscrições para o Palco Aberto Jovem de Setembro
+END:VALARM
+END:VEVENT
+END:VCALENDAR

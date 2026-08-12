@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243817-0@agenda-sesc
+DTSTART:20260815T100000
+SUMMARY:Quintal Lúdico – Quintal de Inverno
+LOCATION:Sesc Rio Preto
+DESCRIPTION:Com Cia. In'verso — https://www.sescsp.org.br/programacao/quintal-ludico-quintal-de-inverno
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Quintal Lúdico – Quintal de Inverno
+END:VALARM
+END:VEVENT
+END:VCALENDAR

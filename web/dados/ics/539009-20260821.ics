@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:539009-20260821T173000@agenda-sesc
+DTSTART:20260821T173000
+SUMMARY:Laboratório Aberto e Compartilhado
+LOCATION:Sesc Santos
+DESCRIPTION:https://www.sescsp.org.br/programacao/laboratorio-aberto-e-compartilhado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Laboratório Aberto e Compartilhado
+END:VALARM
+END:VEVENT
+END:VCALENDAR

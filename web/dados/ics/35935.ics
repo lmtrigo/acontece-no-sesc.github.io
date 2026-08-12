@@ -1,0 +1,533 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:35935-0@agenda-sesc
+DTSTART:20260811T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-1@agenda-sesc
+DTSTART:20260812T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-2@agenda-sesc
+DTSTART:20260813T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-3@agenda-sesc
+DTSTART:20260814T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-4@agenda-sesc
+DTSTART:20260815T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-5@agenda-sesc
+DTSTART:20260818T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-6@agenda-sesc
+DTSTART:20260819T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-7@agenda-sesc
+DTSTART:20260820T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-8@agenda-sesc
+DTSTART:20260821T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-9@agenda-sesc
+DTSTART:20260822T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-10@agenda-sesc
+DTSTART:20260825T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-11@agenda-sesc
+DTSTART:20260826T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-12@agenda-sesc
+DTSTART:20260827T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-13@agenda-sesc
+DTSTART:20260828T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-14@agenda-sesc
+DTSTART:20260829T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-15@agenda-sesc
+DTSTART:20260901T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-16@agenda-sesc
+DTSTART:20260902T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-17@agenda-sesc
+DTSTART:20260903T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-18@agenda-sesc
+DTSTART:20260904T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-19@agenda-sesc
+DTSTART:20260905T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-20@agenda-sesc
+DTSTART:20260908T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-21@agenda-sesc
+DTSTART:20260909T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-22@agenda-sesc
+DTSTART:20260910T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-23@agenda-sesc
+DTSTART:20260911T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-24@agenda-sesc
+DTSTART:20260912T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-25@agenda-sesc
+DTSTART:20260915T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-26@agenda-sesc
+DTSTART:20260916T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-27@agenda-sesc
+DTSTART:20260917T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-28@agenda-sesc
+DTSTART:20260918T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-29@agenda-sesc
+DTSTART:20260919T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-30@agenda-sesc
+DTSTART:20260922T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-31@agenda-sesc
+DTSTART:20260923T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-32@agenda-sesc
+DTSTART:20260924T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-33@agenda-sesc
+DTSTART:20260925T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-34@agenda-sesc
+DTSTART:20260926T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-35@agenda-sesc
+DTSTART:20260929T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-36@agenda-sesc
+DTSTART:20260930T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-37@agenda-sesc
+DTSTART:20261001T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-38@agenda-sesc
+DTSTART:20261002T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-39@agenda-sesc
+DTSTART:20261003T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-40@agenda-sesc
+DTSTART:20261006T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-41@agenda-sesc
+DTSTART:20261007T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-42@agenda-sesc
+DTSTART:20261008T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35935-43@agenda-sesc
+DTSTART:20261009T162500
+SUMMARY:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadores fisico-esportivos — https://www.sescsp.org.br/programacao/praticas-corporais-yoga-tai-chi-chuan-e-lian-gong
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Corporais - Lian Gong\, Tai Chi Chuan\, Yoga\, Movimento Consciente e GPT
+END:VALARM
+END:VEVENT
+END:VCALENDAR

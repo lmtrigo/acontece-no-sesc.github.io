@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245147-0@agenda-sesc
+DTSTART:20260811T093000
+SUMMARY:Aprendendo a Pular Corda
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Lezizz Jump Dance — https://www.sescsp.org.br/programacao/aprendendo-a-pular-corda-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Aprendendo a Pular Corda
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245147-1@agenda-sesc
+DTSTART:20260818T093000
+SUMMARY:Aprendendo a Pular Corda
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Lezizz Jump Dance — https://www.sescsp.org.br/programacao/aprendendo-a-pular-corda-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Aprendendo a Pular Corda
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245147-2@agenda-sesc
+DTSTART:20260825T093000
+SUMMARY:Aprendendo a Pular Corda
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Lezizz Jump Dance — https://www.sescsp.org.br/programacao/aprendendo-a-pular-corda-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Aprendendo a Pular Corda
+END:VALARM
+END:VEVENT
+END:VCALENDAR

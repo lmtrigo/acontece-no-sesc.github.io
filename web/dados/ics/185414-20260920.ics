@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:185414-20260920T101500@agenda-sesc
+DTSTART:20260920T101500
+SUMMARY:Recreação de Vôlei Adaptado para Pessoas Idosas | Recreação Esportiva
+LOCATION:Sesc Pinheiros
+DESCRIPTION:https://www.sescsp.org.br/programacao/volei-adaptado-para-idosos-recreacao-esportiva
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação de Vôlei Adaptado para Pessoas Idosas | Recreação Esportiva
+END:VALARM
+END:VEVENT
+END:VCALENDAR

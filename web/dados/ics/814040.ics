@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:814040-0@agenda-sesc
+DTSTART:20260912T080000
+SUMMARY:Re-Conhecendo Piracicaba - Mapa Afrocultural
+LOCATION:Sesc Piracicaba
+DESCRIPTION:https://www.sescsp.org.br/programacao/re-conhecendo-piracicaba-mapa-afrocultural
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Re-Conhecendo Piracicaba - Mapa Afrocultural
+END:VALARM
+END:VEVENT
+END:VCALENDAR

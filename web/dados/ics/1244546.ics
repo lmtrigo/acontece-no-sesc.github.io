@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244546-0@agenda-sesc
+DTSTART:20260830T143000
+SUMMARY:Brinquedos de natureza: Bonecos de cabaça
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:Com a Cia. Bambuzal. — https://www.sescsp.org.br/programacao/brinquedos-de-natureza-bonecos-de-cabaca-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Brinquedos de natureza: Bonecos de cabaça
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1210760-20260813T140000@agenda-sesc
+DTSTART:20260813T140000
+SUMMARY:Tecnologias Assistivas - Laboratório de Práticas Inclusivas
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:Com educador do Espaço de Tecnologias e Artes do Sesc — https://www.sescsp.org.br/programacao/tecnologias-assistivas-laboratorio-de-praticas-inclusivas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tecnologias Assistivas - Laboratório de Práticas Inclusivas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

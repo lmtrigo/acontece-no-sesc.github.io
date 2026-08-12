@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249790-0@agenda-sesc
+DTSTART:20260911T200000
+SUMMARY:Epidemia Prata
+LOCATION:Sesc Jundiaí — Av. Antônio Frederico Ozanan\, 6600 | Jardim Botânico | JUNDIAI  | SP | Cep: 13214-206
+DESCRIPTION:Com Cia. Mungunzá de Teatro — https://www.sescsp.org.br/programacao/epidemia-prata-jundiai
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Epidemia Prata
+END:VALARM
+END:VEVENT
+END:VCALENDAR

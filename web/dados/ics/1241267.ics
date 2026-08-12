@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241267-0@agenda-sesc
+DTSTART:20260816T110000
+SUMMARY:Construções naturais com argila
+LOCATION:Sesc Santo Amaro
+DESCRIPTION:Com Coletivo Sementores — https://www.sescsp.org.br/programacao/construcoes-naturais-com-argila
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Construções naturais com argila
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1241267-1@agenda-sesc
+DTSTART:20260823T110000
+SUMMARY:Construções naturais com argila
+LOCATION:Sesc Santo Amaro
+DESCRIPTION:Com Coletivo Sementores — https://www.sescsp.org.br/programacao/construcoes-naturais-com-argila
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Construções naturais com argila
+END:VALARM
+END:VEVENT
+END:VCALENDAR

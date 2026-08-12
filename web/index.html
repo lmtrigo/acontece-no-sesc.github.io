@@ -601,6 +601,7 @@
      ================================================================== */
   var FONTE_JSON = "dados/eventos.json";
   var FONTE_DESC = "dados/desc/";     // um arquivo por evento
+  var FONTE_ICS = "dados/ics/";       // .ics servido por URL real
   var origemDados = "embutido";
 
   /* A descrição não vem no pacote principal: são 2,5 mil textos que pesariam
@@ -2078,19 +2079,60 @@
     // O .ics é o que o sistema entrega ao app de calendário. Um link do
     // Google Agenda abre o NAVEGADOR, não o aplicativo — por isso ele é a
     // opção secundária, e nomeada pelo que faz de verdade.
-    var app = el("button", "btn", "Abrir no calendário");
-    app.type = "button";
-    app.addEventListener("click", function () {
-      if (tipo === "inscricao") { icsInscricao(ev); return; }
-      if (opcoes.length > 1) {
-        var quais = Object.keys(escolhidas);
-        if (!quais.length) { toast("Escolha ao menos uma data"); return; }
-        icsEvento(ev, quais.sort());
-      } else {
-        icsEvento(ev);
+    /* O arquivo servido é o caminho que abre o app de calendário: tem
+       endereço de verdade e Content-Type text/calendar, então o sistema
+       reconhece. Vale quando o app está hospedado e a escolha é a padrão —
+       para uma seleção parcial de datas o arquivo é montado na hora. */
+    function urlDoIcs() {
+      if (origemDados !== "servidor") return null;
+      if (tipo === "inscricao") return FONTE_ICS + ev.id + "-insc.ics";
+      if (opcoes.length <= 1) return FONTE_ICS + ev.id + ".ics";
+      // várias sessões: existe um arquivo por data quando a lista é curta
+      var q = Object.keys(escolhidas);
+      if (ev.icsd && q.length === 1) {
+        return FONTE_ICS + ev.id + "-" + q[0].slice(0, 10).replace(/-/g, "") + ".ics";
       }
-    });
+      return null;
+    }
+    var arquivoPronto = !!urlDoIcs();
+    var urlIcs = urlDoIcs();
+
+    var app;
+    if (arquivoPronto) {
+      app = el("a", "btn", "Abrir no calendário");
+      app.href = urlIcs;
+      app.setAttribute("type", "text/calendar");
+      app.rel = "noopener";
+      app.addEventListener("click", function () {
+        var u = urlDoIcs();      // a escolha pode ter mudado
+        if (u) app.href = u;
+        toast("Abrindo na agenda — confira os dados e salve");
+      });
+    } else {
+      app = el("button", "btn", "Abrir no calendário");
+      app.type = "button";
+      app.addEventListener("click", function () {
+        if (tipo === "inscricao") { icsInscricao(ev); return; }
+        if (opcoes.length > 1) {
+          var quais = Object.keys(escolhidas);
+          if (!quais.length) { toast("Escolha ao menos uma data"); return; }
+          icsEvento(ev, quais.sort());
+        } else {
+          icsEvento(ev);
+        }
+      });
+    }
     acts.appendChild(app);
+
+    // webcal:// é o esquema registrado pelos apps de calendário; em alguns
+    // aparelhos é o único que pula o navegador de vez
+    if (arquivoPronto) {
+      var wc = el("a", "btn ghost", "Não abriu? Forçar o app de calendário");
+      wc.href = "webcal://" + location.host +
+        location.pathname.replace(/[^/]*$/, "") + urlIcs;
+      wc.rel = "noopener";
+      acts.appendChild(wc);
+    }
 
     var g = el("a", "btn ghost", "Google Agenda (abre no navegador)");
     function alvoGoogle() {
@@ -2130,11 +2172,13 @@
     });
     acts.insertBefore(arq, volta);
 
-    b.appendChild(el("p", "desc",
-      "“Abrir no calendário” entrega o evento com " + oQue +
-      " direto ao app de agenda do aparelho — Google, Apple, Outlook — para você conferir e salvar. " +
-      "Se o aparelho não reconhecer, use o download do arquivo. " +
-      "O Google Agenda pela web abre uma data só."));
+    b.appendChild(el("p", "desc", arquivoPronto
+      ? "“Abrir no calendário” entrega o evento com " + oQue +
+        " ao app de agenda do aparelho — você confere e salva. No iPhone o Calendário abre na hora; " +
+        "no Android o arquivo passa pela lista de downloads e o toque nele abre a agenda."
+      : "Esta cópia não tem servidor ao lado, então o arquivo é montado no próprio aparelho e o " +
+        "navegador o trata como download — abra o arquivo baixado para o app de agenda assumir. " +
+        "Na versão hospedada, o botão abre a agenda direto."));
     abrirSheet();
   }
 

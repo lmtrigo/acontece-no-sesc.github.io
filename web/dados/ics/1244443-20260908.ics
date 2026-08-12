@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244443-20260908T160000@agenda-sesc
+DTSTART:20260908T160000
+SUMMARY:Letramento digital: informação\, desinformação e verificação
+LOCATION:Sesc Ipiranga
+DESCRIPTION:com Vitrine Sem Rótulos — https://www.sescsp.org.br/programacao/letramento-digital-informacao-desinformacao-e-verificacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Letramento digital: informação\, desinformação e verificação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240384-0@agenda-sesc
+DTSTART:20260820T210000
+SUMMARY:Tasha e Tracie
+LOCATION:Sesc Pompeia — Rua Clélia\, 93 | Pompeia | SAO PAULO  | SP | Cep: 05042-000
+DESCRIPTION:Part. Tati Quebra Barraco — https://www.sescsp.org.br/programacao/tasha-e-tracie-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tasha e Tracie
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240384-1@agenda-sesc
+DTSTART:20260821T210000
+SUMMARY:Tasha e Tracie
+LOCATION:Sesc Pompeia — Rua Clélia\, 93 | Pompeia | SAO PAULO  | SP | Cep: 05042-000
+DESCRIPTION:Part. Tati Quebra Barraco — https://www.sescsp.org.br/programacao/tasha-e-tracie-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tasha e Tracie
+END:VALARM
+END:VEVENT
+END:VCALENDAR

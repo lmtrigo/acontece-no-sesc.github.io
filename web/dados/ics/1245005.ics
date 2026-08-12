@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245005-0@agenda-sesc
+DTSTART:20260814T203000
+SUMMARY:Baile de pífano
+LOCATION:Sesc Presidente Prudente — Rua Alberto Peters\, 111 | Jardim das Rosas | PRESIDENTE PRUDENTE  | SP | Cep: 19060-310
+DESCRIPTION:Com Alexandre Rodrigues — https://www.sescsp.org.br/programacao/baile-de-pifano
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Baile de pífano
+END:VALARM
+END:VEVENT
+END:VCALENDAR

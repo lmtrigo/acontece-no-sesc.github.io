@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243217-20260813T093000@agenda-sesc
+DTSTART:20260813T093000
+SUMMARY:Costura solidária: pequenos reparos em bolsas\, mochilas e calçados para doação
+LOCATION:Sesc Jundiaí
+DESCRIPTION:Adriano Calsone\, educador do Sesc — https://www.sescsp.org.br/programacao/costura-solidaria-pequenos-reparos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Costura solidária: pequenos reparos em bolsas\, mochilas e calçados para doação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

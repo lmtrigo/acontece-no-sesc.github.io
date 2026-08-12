@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243655-0@agenda-sesc
+DTSTART:20260815T140000
+SUMMARY:Escultura de Aves com Retalhos
+LOCATION:Sesc Ipiranga
+DESCRIPTION:Ateliê FonFinFan — https://www.sescsp.org.br/programacao/escultura-de-aves-com-retalhos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Escultura de Aves com Retalhos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1243655-1@agenda-sesc
+DTSTART:20260829T140000
+SUMMARY:Escultura de Aves com Retalhos
+LOCATION:Sesc Ipiranga
+DESCRIPTION:Ateliê FonFinFan — https://www.sescsp.org.br/programacao/escultura-de-aves-com-retalhos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Escultura de Aves com Retalhos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

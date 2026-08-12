@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242672-0@agenda-sesc
+DTSTART:20260829T143000
+SUMMARY:Desenho para crianças
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com XTO\, educador em tecnologias e artes — https://www.sescsp.org.br/programacao/desenho-para-criancas-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Desenho para crianças
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242672-1@agenda-sesc
+DTSTART:20260912T143000
+SUMMARY:Desenho para crianças
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com XTO\, educador em tecnologias e artes — https://www.sescsp.org.br/programacao/desenho-para-criancas-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Desenho para crianças
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242672-2@agenda-sesc
+DTSTART:20260926T143000
+SUMMARY:Desenho para crianças
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com XTO\, educador em tecnologias e artes — https://www.sescsp.org.br/programacao/desenho-para-criancas-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Desenho para crianças
+END:VALARM
+END:VEVENT
+END:VCALENDAR

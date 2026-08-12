@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1236743-20260812T190000@agenda-sesc
+DTSTART:20260812T190000
+SUMMARY:Cianotipia em Diferentes Suportes
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com Priscila Bellotti — https://www.sescsp.org.br/programacao/cianotipia-em-diferentes-suportes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cianotipia em Diferentes Suportes
+END:VALARM
+END:VEVENT
+END:VCALENDAR

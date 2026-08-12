@@ -1,0 +1,113 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240025-0@agenda-sesc
+DTSTART:20260813T181500
+SUMMARY:Experimentações em Artes Visuais
+LOCATION:Sesc Campo Limpo
+DESCRIPTION:https://www.sescsp.org.br/programacao/experimentacoes-em-artes-visuais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Experimentações em Artes Visuais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240025-1@agenda-sesc
+DTSTART:20260820T181500
+SUMMARY:Experimentações em Artes Visuais
+LOCATION:Sesc Campo Limpo
+DESCRIPTION:https://www.sescsp.org.br/programacao/experimentacoes-em-artes-visuais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Experimentações em Artes Visuais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240025-2@agenda-sesc
+DTSTART:20260827T181500
+SUMMARY:Experimentações em Artes Visuais
+LOCATION:Sesc Campo Limpo
+DESCRIPTION:https://www.sescsp.org.br/programacao/experimentacoes-em-artes-visuais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Experimentações em Artes Visuais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240025-3@agenda-sesc
+DTSTART:20260903T181500
+SUMMARY:Experimentações em Artes Visuais
+LOCATION:Sesc Campo Limpo
+DESCRIPTION:https://www.sescsp.org.br/programacao/experimentacoes-em-artes-visuais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Experimentações em Artes Visuais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240025-4@agenda-sesc
+DTSTART:20260910T181500
+SUMMARY:Experimentações em Artes Visuais
+LOCATION:Sesc Campo Limpo
+DESCRIPTION:https://www.sescsp.org.br/programacao/experimentacoes-em-artes-visuais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Experimentações em Artes Visuais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240025-5@agenda-sesc
+DTSTART:20260917T181500
+SUMMARY:Experimentações em Artes Visuais
+LOCATION:Sesc Campo Limpo
+DESCRIPTION:https://www.sescsp.org.br/programacao/experimentacoes-em-artes-visuais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Experimentações em Artes Visuais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240025-6@agenda-sesc
+DTSTART:20260924T181500
+SUMMARY:Experimentações em Artes Visuais
+LOCATION:Sesc Campo Limpo
+DESCRIPTION:https://www.sescsp.org.br/programacao/experimentacoes-em-artes-visuais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Experimentações em Artes Visuais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240025-7@agenda-sesc
+DTSTART:20261001T181500
+SUMMARY:Experimentações em Artes Visuais
+LOCATION:Sesc Campo Limpo
+DESCRIPTION:https://www.sescsp.org.br/programacao/experimentacoes-em-artes-visuais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Experimentações em Artes Visuais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240025-8@agenda-sesc
+DTSTART:20261008T181500
+SUMMARY:Experimentações em Artes Visuais
+LOCATION:Sesc Campo Limpo
+DESCRIPTION:https://www.sescsp.org.br/programacao/experimentacoes-em-artes-visuais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Experimentações em Artes Visuais
+END:VALARM
+END:VEVENT
+END:VCALENDAR

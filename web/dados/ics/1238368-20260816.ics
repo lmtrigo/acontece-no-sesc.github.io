@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238368-20260816T180000@agenda-sesc
+DTSTART:20260816T180000
+SUMMARY:Juliana Linhares
+LOCATION:Sesc Pompeia — Rua Clélia\, 93 | Pompeia | SAO PAULO  | SP | Cep: 05042-000
+DESCRIPTION:Lançamento do álbum Até Cansar o Cansaço — https://www.sescsp.org.br/programacao/juliana-linhares-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Juliana Linhares
+END:VALARM
+END:VEVENT
+END:VCALENDAR

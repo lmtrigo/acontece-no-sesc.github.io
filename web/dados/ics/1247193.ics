@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247193-0@agenda-sesc
+DTSTART:20260913T073000
+SUMMARY:Perto da gente - Entre Itu e Salto\, uma viagem pela história e arte!
+LOCATION:Sesc Sorocaba
+DESCRIPTION:https://www.sescsp.org.br/programacao/perto-da-gente-entre-itu-e-salto-uma-viagem-pela-historia-e-arte
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Perto da gente - Entre Itu e Salto\, uma viagem pela história e arte!
+END:VALARM
+END:VEVENT
+END:VCALENDAR

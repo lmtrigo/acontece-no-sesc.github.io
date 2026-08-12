@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249281-20260813T100000@agenda-sesc
+DTSTART:20260813T100000
+SUMMARY:Campanha de Vacinação contra o Sarampo
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:Com equipe de profissionais do SUS — https://www.sescsp.org.br/programacao/campanha-de-vacinacao-contra-o-sarampo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Campanha de Vacinação contra o Sarampo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

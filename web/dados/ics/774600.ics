@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:774600-0@agenda-sesc
+DTSTART:20260814T093000
+SUMMARY:Mobilidade Articular
+LOCATION:Sesc Bertioga
+DESCRIPTION:https://www.sescsp.org.br/programacao/mobilidade-articular-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mobilidade Articular
+END:VALARM
+END:VEVENT
+END:VCALENDAR

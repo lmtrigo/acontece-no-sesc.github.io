@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1236739-0@agenda-sesc
+DTSTART:20260818T140000
+SUMMARY:Pulseiras de Macramê
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com educadores do Espaço de Tecnologias e Artes — https://www.sescsp.org.br/programacao/pulseiras-de-macrame
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pulseiras de Macramê
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1236739-1@agenda-sesc
+DTSTART:20260819T140000
+SUMMARY:Pulseiras de Macramê
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com educadores do Espaço de Tecnologias e Artes — https://www.sescsp.org.br/programacao/pulseiras-de-macrame
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pulseiras de Macramê
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1236739-2@agenda-sesc
+DTSTART:20260820T140000
+SUMMARY:Pulseiras de Macramê
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com educadores do Espaço de Tecnologias e Artes — https://www.sescsp.org.br/programacao/pulseiras-de-macrame
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pulseiras de Macramê
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245046-0@agenda-sesc
+DTSTART:20260818T200000
+SUMMARY:Blade Runner: o caçador de andróides
+LOCATION:Sesc Presidente Prudente — Rua Alberto Peters\, 111 | Jardim das Rosas | PRESIDENTE PRUDENTE  | SP | Cep: 19060-310
+DESCRIPTION:Dir.: Ridley Scott | Estados Unidos/ Inglaterra/ Hong Kong | 1982 | 117 min. — https://www.sescsp.org.br/programacao/blade-runner-o-cacador-de-androides-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Blade Runner: o caçador de andróides
+END:VALARM
+END:VEVENT
+END:VCALENDAR

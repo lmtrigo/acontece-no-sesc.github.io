@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1234791-0@agenda-sesc
+DTSTART:20260828T100000
+SUMMARY:As Cores da América Latina
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com Coletivo Cênico Amazonense — https://www.sescsp.org.br/programacao/as-cores-da-america-latina-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:As Cores da América Latina
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1234791-1@agenda-sesc
+DTSTART:20260830T100000
+SUMMARY:As Cores da América Latina
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com Coletivo Cênico Amazonense — https://www.sescsp.org.br/programacao/as-cores-da-america-latina-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:As Cores da América Latina
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248675-20260811T190000@agenda-sesc
+DTSTART:20260811T190000
+SUMMARY:Amplia-AÇÃO - técnicas de ampliação para pinturas e murais
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Jorge Buffalo — https://www.sescsp.org.br/programacao/amplia-acao-tecnicas-de-ampliacao-para-pinturas-e-murais-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Amplia-AÇÃO - técnicas de ampliação para pinturas e murais
+END:VALARM
+END:VEVENT
+END:VCALENDAR

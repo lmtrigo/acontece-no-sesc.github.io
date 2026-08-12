@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245470-20260924T100000@agenda-sesc
+DTSTART:20260924T100000
+SUMMARY:Stop Motion: Curta Metragem
+LOCATION:Sesc Franca
+DESCRIPTION:Com Natascha Vital\, educadora em tecnologias e artes do Sesc — https://www.sescsp.org.br/programacao/stop-motion-curta-metragem
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Stop Motion: Curta Metragem
+END:VALARM
+END:VEVENT
+END:VCALENDAR

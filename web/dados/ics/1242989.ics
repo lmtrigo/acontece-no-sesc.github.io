@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242989-0@agenda-sesc
+DTSTART:20260829T140000
+SUMMARY:Mini OVNIs 3D com Led
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Lucas Lopes e Lucas Cunha\, educadores — https://www.sescsp.org.br/programacao/mini-ovnis-3d-com-led
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mini OVNIs 3D com Led
+END:VALARM
+END:VEVENT
+END:VCALENDAR

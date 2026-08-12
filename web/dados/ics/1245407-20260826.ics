@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245407-20260826T190000@agenda-sesc
+DTSTART:20260826T190000
+SUMMARY:Do desenho à estampa: processos de estêncil têxtil
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com Priscila Sena\, educadora em Tecnologias e Artes — https://www.sescsp.org.br/programacao/do-desenho-a-estampa-processos-de-estencil-textil
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Do desenho à estampa: processos de estêncil têxtil
+END:VALARM
+END:VEVENT
+END:VCALENDAR

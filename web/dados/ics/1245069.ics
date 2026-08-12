@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245069-0@agenda-sesc
+DTSTART:20260811T193000
+SUMMARY:Ler e Ouvir Poesia
+LOCATION:Sesc Santos
+DESCRIPTION:Com Angélica Freitas — https://www.sescsp.org.br/programacao/ler-e-ouvir-poesia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ler e Ouvir Poesia
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245069-1@agenda-sesc
+DTSTART:20260818T193000
+SUMMARY:Ler e Ouvir Poesia
+LOCATION:Sesc Santos
+DESCRIPTION:Com Angélica Freitas — https://www.sescsp.org.br/programacao/ler-e-ouvir-poesia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ler e Ouvir Poesia
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245069-2@agenda-sesc
+DTSTART:20260825T193000
+SUMMARY:Ler e Ouvir Poesia
+LOCATION:Sesc Santos
+DESCRIPTION:Com Angélica Freitas — https://www.sescsp.org.br/programacao/ler-e-ouvir-poesia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ler e Ouvir Poesia
+END:VALARM
+END:VEVENT
+END:VCALENDAR

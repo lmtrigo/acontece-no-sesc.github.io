@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247125-0@agenda-sesc
+DTSTART:20260919T200000
+SUMMARY:Crizin da Z.O.
+LOCATION:Sesc 24 de Maio — Rua 24 de Maio\, 109 | Centro | SAO PAULO  | SP | Cep: 01041-001
+DESCRIPTION:part. Keila e Jup do Bairro — https://www.sescsp.org.br/programacao/crizin-da-z-o-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Crizin da Z.O.
+END:VALARM
+END:VEVENT
+END:VCALENDAR

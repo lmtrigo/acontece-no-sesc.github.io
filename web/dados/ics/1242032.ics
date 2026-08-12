@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242032-0@agenda-sesc
+DTSTART:20260811T140000
+SUMMARY:Letramento Digital: Entre Cliques - Foto no Smartphone
+LOCATION:Sesc São Caetano 
+DESCRIPTION:Com Weslley Silva (Lelo)\, educador de Tecnologias e Artes — https://www.sescsp.org.br/programacao/letramento-digital-entre-cliques-foto-no-smartphone
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Letramento Digital: Entre Cliques - Foto no Smartphone
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242032-1@agenda-sesc
+DTSTART:20260825T140000
+SUMMARY:Letramento Digital: Entre Cliques - Foto no Smartphone
+LOCATION:Sesc São Caetano 
+DESCRIPTION:Com Weslley Silva (Lelo)\, educador de Tecnologias e Artes — https://www.sescsp.org.br/programacao/letramento-digital-entre-cliques-foto-no-smartphone
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Letramento Digital: Entre Cliques - Foto no Smartphone
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239503-20260811T140000@agenda-sesc
+DTSTART:20260811T140000
+SUMMARY:Mini hortas de temperos - cultivo e uso de ervas na cozinha
+LOCATION:Sesc Piracicaba
+DESCRIPTION:Com Ivo Racca\, da Amazonita — https://www.sescsp.org.br/programacao/mini-hortas-de-temperos-cultivo-e-uso-de-ervas-na-cozinha
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mini hortas de temperos - cultivo e uso de ervas na cozinha
+END:VALARM
+END:VEVENT
+END:VCALENDAR

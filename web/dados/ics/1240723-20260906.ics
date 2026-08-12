@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240723-20260906T120000@agenda-sesc
+DTSTART:20260906T120000
+SUMMARY:E Se Fosse Uma Bomba?
+LOCATION:Sesc Santana — Avenida Luiz Dumont Villares\, 579 | Santana | SAO PAULO  | SP | Cep: 02085-100
+DESCRIPTION:Com Luiza Moreira Salles\, Diego Chilio e Zenaide. Direção de Rhena de Faria e dramaturgia de Sofia Fransolin. Idealização de Luiza Moreira Salles — https://www.sescsp.org.br/programacao/e-se-fosse-uma-bomba
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:E Se Fosse Uma Bomba?
+END:VALARM
+END:VEVENT
+END:VCALENDAR

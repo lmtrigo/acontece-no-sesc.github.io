@@ -1,0 +1,89 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246282-0@agenda-sesc
+DTSTART:20260826T143000
+SUMMARY:Joalheria Contemporânea
+LOCATION:Sesc Pompeia
+DESCRIPTION:Dandara Sevilha — https://www.sescsp.org.br/programacao/joalheria-contemporanea
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Joalheria Contemporânea
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246282-1@agenda-sesc
+DTSTART:20260902T143000
+SUMMARY:Joalheria Contemporânea
+LOCATION:Sesc Pompeia
+DESCRIPTION:Dandara Sevilha — https://www.sescsp.org.br/programacao/joalheria-contemporanea
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Joalheria Contemporânea
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246282-2@agenda-sesc
+DTSTART:20260909T143000
+SUMMARY:Joalheria Contemporânea
+LOCATION:Sesc Pompeia
+DESCRIPTION:Dandara Sevilha — https://www.sescsp.org.br/programacao/joalheria-contemporanea
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Joalheria Contemporânea
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246282-3@agenda-sesc
+DTSTART:20260916T143000
+SUMMARY:Joalheria Contemporânea
+LOCATION:Sesc Pompeia
+DESCRIPTION:Dandara Sevilha — https://www.sescsp.org.br/programacao/joalheria-contemporanea
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Joalheria Contemporânea
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246282-4@agenda-sesc
+DTSTART:20260923T143000
+SUMMARY:Joalheria Contemporânea
+LOCATION:Sesc Pompeia
+DESCRIPTION:Dandara Sevilha — https://www.sescsp.org.br/programacao/joalheria-contemporanea
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Joalheria Contemporânea
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246282-5@agenda-sesc
+DTSTART:20260930T143000
+SUMMARY:Joalheria Contemporânea
+LOCATION:Sesc Pompeia
+DESCRIPTION:Dandara Sevilha — https://www.sescsp.org.br/programacao/joalheria-contemporanea
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Joalheria Contemporânea
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246282-6@agenda-sesc
+DTSTART:20261007T143000
+SUMMARY:Joalheria Contemporânea
+LOCATION:Sesc Pompeia
+DESCRIPTION:Dandara Sevilha — https://www.sescsp.org.br/programacao/joalheria-contemporanea
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Joalheria Contemporânea
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,149 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1198739-0@agenda-sesc
+DTSTART:20260822T130000
+SUMMARY:Praça de Esportes
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/praca-de-esportes-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Praça de Esportes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1198739-1@agenda-sesc
+DTSTART:20260829T130000
+SUMMARY:Praça de Esportes
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/praca-de-esportes-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Praça de Esportes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1198739-2@agenda-sesc
+DTSTART:20260830T130000
+SUMMARY:Praça de Esportes
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/praca-de-esportes-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Praça de Esportes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1198739-3@agenda-sesc
+DTSTART:20260905T130000
+SUMMARY:Praça de Esportes
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/praca-de-esportes-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Praça de Esportes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1198739-4@agenda-sesc
+DTSTART:20260906T130000
+SUMMARY:Praça de Esportes
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/praca-de-esportes-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Praça de Esportes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1198739-5@agenda-sesc
+DTSTART:20260912T130000
+SUMMARY:Praça de Esportes
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/praca-de-esportes-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Praça de Esportes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1198739-6@agenda-sesc
+DTSTART:20260913T130000
+SUMMARY:Praça de Esportes
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/praca-de-esportes-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Praça de Esportes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1198739-7@agenda-sesc
+DTSTART:20260919T130000
+SUMMARY:Praça de Esportes
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/praca-de-esportes-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Praça de Esportes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1198739-8@agenda-sesc
+DTSTART:20260920T130000
+SUMMARY:Praça de Esportes
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/praca-de-esportes-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Praça de Esportes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1198739-9@agenda-sesc
+DTSTART:20260926T130000
+SUMMARY:Praça de Esportes
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/praca-de-esportes-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Praça de Esportes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1198739-10@agenda-sesc
+DTSTART:20260927T130000
+SUMMARY:Praça de Esportes
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/praca-de-esportes-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Praça de Esportes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1198739-11@agenda-sesc
+DTSTART:20261003T130000
+SUMMARY:Praça de Esportes
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/praca-de-esportes-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Praça de Esportes
+END:VALARM
+END:VEVENT
+END:VCALENDAR

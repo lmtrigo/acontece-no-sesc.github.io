@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245344-0@agenda-sesc
+DTSTART:20260822T113000
+SUMMARY:O Sorriso Mágico de Oz
+LOCATION:Sesc Franca
+DESCRIPTION:Com Cia. Cambaio — https://www.sescsp.org.br/programacao/o-sorriso-magico-de-oz-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Sorriso Mágico de Oz
+END:VALARM
+END:VEVENT
+END:VCALENDAR

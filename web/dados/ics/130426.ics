@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:130426-0@agenda-sesc
+DTSTART:20260825T140000
+SUMMARY:Ponto de encontro - Trabalho Social com Pessoas Idosas
+LOCATION:Sesc Jundiaí
+DESCRIPTION:https://www.sescsp.org.br/programacao/ponto-de-encontro-jundiai
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ponto de encontro - Trabalho Social com Pessoas Idosas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

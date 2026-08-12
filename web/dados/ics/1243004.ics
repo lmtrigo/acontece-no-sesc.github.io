@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243004-0@agenda-sesc
+DTSTART:20260821T190000
+SUMMARY:Sarau Disco de Ouro
+LOCATION:Sesc Birigui
+DESCRIPTION:Com artistas da região — https://www.sescsp.org.br/programacao/sarau-disco-de-ouro
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sarau Disco de Ouro
+END:VALARM
+END:VEVENT
+END:VCALENDAR

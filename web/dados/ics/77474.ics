@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:77474-0@agenda-sesc
+DTSTART:20260811T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77474-1@agenda-sesc
+DTSTART:20260813T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77474-2@agenda-sesc
+DTSTART:20260818T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77474-3@agenda-sesc
+DTSTART:20260820T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77474-4@agenda-sesc
+DTSTART:20260825T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77474-5@agenda-sesc
+DTSTART:20260827T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77474-6@agenda-sesc
+DTSTART:20260901T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77474-7@agenda-sesc
+DTSTART:20260903T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77474-8@agenda-sesc
+DTSTART:20260908T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77474-9@agenda-sesc
+DTSTART:20260910T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77474-10@agenda-sesc
+DTSTART:20260915T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77474-11@agenda-sesc
+DTSTART:20260917T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77474-12@agenda-sesc
+DTSTART:20260922T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77474-13@agenda-sesc
+DTSTART:20260924T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77474-14@agenda-sesc
+DTSTART:20260929T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77474-15@agenda-sesc
+DTSTART:20261001T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77474-16@agenda-sesc
+DTSTART:20261006T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77474-17@agenda-sesc
+DTSTART:20261008T080000
+SUMMARY:Esporte Criança - 6 a 10 anos
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-crianca-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Criança - 6 a 10 anos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

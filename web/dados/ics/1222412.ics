@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1222412-0@agenda-sesc
+DTSTART:20260814T140000
+SUMMARY:amor correSPondido - escrita de cartas
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:Com Carmen Garcia e artistas educadores convidades — https://www.sescsp.org.br/programacao/amor-correspondido-escrita-de-cartas-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:amor correSPondido - escrita de cartas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1222412-1@agenda-sesc
+DTSTART:20260821T140000
+SUMMARY:amor correSPondido - escrita de cartas
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:Com Carmen Garcia e artistas educadores convidades — https://www.sescsp.org.br/programacao/amor-correspondido-escrita-de-cartas-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:amor correSPondido - escrita de cartas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1222412-2@agenda-sesc
+DTSTART:20260828T140000
+SUMMARY:amor correSPondido - escrita de cartas
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:Com Carmen Garcia e artistas educadores convidades — https://www.sescsp.org.br/programacao/amor-correspondido-escrita-de-cartas-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:amor correSPondido - escrita de cartas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1222412-3@agenda-sesc
+DTSTART:20260904T140000
+SUMMARY:amor correSPondido - escrita de cartas
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:Com Carmen Garcia e artistas educadores convidades — https://www.sescsp.org.br/programacao/amor-correspondido-escrita-de-cartas-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:amor correSPondido - escrita de cartas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1222412-4@agenda-sesc
+DTSTART:20260911T140000
+SUMMARY:amor correSPondido - escrita de cartas
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:Com Carmen Garcia e artistas educadores convidades — https://www.sescsp.org.br/programacao/amor-correspondido-escrita-de-cartas-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:amor correSPondido - escrita de cartas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1222412-5@agenda-sesc
+DTSTART:20260918T140000
+SUMMARY:amor correSPondido - escrita de cartas
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:Com Carmen Garcia e artistas educadores convidades — https://www.sescsp.org.br/programacao/amor-correspondido-escrita-de-cartas-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:amor correSPondido - escrita de cartas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1222412-6@agenda-sesc
+DTSTART:20260925T140000
+SUMMARY:amor correSPondido - escrita de cartas
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:Com Carmen Garcia e artistas educadores convidades — https://www.sescsp.org.br/programacao/amor-correspondido-escrita-de-cartas-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:amor correSPondido - escrita de cartas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1222412-7@agenda-sesc
+DTSTART:20261002T140000
+SUMMARY:amor correSPondido - escrita de cartas
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:Com Carmen Garcia e artistas educadores convidades — https://www.sescsp.org.br/programacao/amor-correspondido-escrita-de-cartas-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:amor correSPondido - escrita de cartas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

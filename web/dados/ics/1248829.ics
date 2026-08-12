@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248829-0@agenda-sesc
+DTSTART:20260820T160000
+SUMMARY:Bateria para Jovens - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Matheus Coelho\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/bateria-para-jovens-iniciacao-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bateria para Jovens - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248829-1@agenda-sesc
+DTSTART:20260827T160000
+SUMMARY:Bateria para Jovens - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Matheus Coelho\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/bateria-para-jovens-iniciacao-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bateria para Jovens - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248829-2@agenda-sesc
+DTSTART:20260903T160000
+SUMMARY:Bateria para Jovens - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Matheus Coelho\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/bateria-para-jovens-iniciacao-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bateria para Jovens - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248829-3@agenda-sesc
+DTSTART:20260910T160000
+SUMMARY:Bateria para Jovens - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Matheus Coelho\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/bateria-para-jovens-iniciacao-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bateria para Jovens - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248829-4@agenda-sesc
+DTSTART:20260917T160000
+SUMMARY:Bateria para Jovens - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Matheus Coelho\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/bateria-para-jovens-iniciacao-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bateria para Jovens - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248829-5@agenda-sesc
+DTSTART:20260924T160000
+SUMMARY:Bateria para Jovens - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Matheus Coelho\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/bateria-para-jovens-iniciacao-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bateria para Jovens - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248829-6@agenda-sesc
+DTSTART:20261001T160000
+SUMMARY:Bateria para Jovens - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Matheus Coelho\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/bateria-para-jovens-iniciacao-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bateria para Jovens - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248829-7@agenda-sesc
+DTSTART:20261008T160000
+SUMMARY:Bateria para Jovens - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Matheus Coelho\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/bateria-para-jovens-iniciacao-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bateria para Jovens - Iniciação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

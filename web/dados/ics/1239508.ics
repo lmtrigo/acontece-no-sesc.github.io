@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239508-0@agenda-sesc
+DTSTART:20260815T120000
+SUMMARY:Porta-chaves criativo em tela
+LOCATION:Sesc Piracicaba
+DESCRIPTION:https://www.sescsp.org.br/programacao/porta-chaves-criativo-em-tela
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Porta-chaves criativo em tela
+END:VALARM
+END:VEVENT
+END:VCALENDAR

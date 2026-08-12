@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248905-20260923T130000@agenda-sesc
+DTSTART:20260923T130000
+SUMMARY:Piano para pessoas Idosas 60+ | Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Fernanda Dias\, Educadora em Atividades Musicais — https://www.sescsp.org.br/programacao/piano-para-pessoas-idosas-60-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Piano para pessoas Idosas 60+ | Iniciação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

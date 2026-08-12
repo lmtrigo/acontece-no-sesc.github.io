@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237178-20260827T113000@agenda-sesc
+DTSTART:20260827T113000
+SUMMARY:Dança do Ventre
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Karina Piazentin e Mariana Grifo\, educadoras de atividades físicas do Sesc — https://www.sescsp.org.br/programacao/danca-do-ventre-17
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Dança do Ventre
+END:VALARM
+END:VEVENT
+END:VCALENDAR

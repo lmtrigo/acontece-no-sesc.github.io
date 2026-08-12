@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242628-0@agenda-sesc
+DTSTART:20260812T143000
+SUMMARY:Práticas de desenho: expressão e movimento
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Thiago Ruiz\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/praticas-de-desenho-expressao-e-movimento
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas de desenho: expressão e movimento
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242628-1@agenda-sesc
+DTSTART:20260819T143000
+SUMMARY:Práticas de desenho: expressão e movimento
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Thiago Ruiz\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/praticas-de-desenho-expressao-e-movimento
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas de desenho: expressão e movimento
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242628-2@agenda-sesc
+DTSTART:20260826T143000
+SUMMARY:Práticas de desenho: expressão e movimento
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Thiago Ruiz\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/praticas-de-desenho-expressao-e-movimento
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas de desenho: expressão e movimento
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242628-3@agenda-sesc
+DTSTART:20260902T143000
+SUMMARY:Práticas de desenho: expressão e movimento
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Thiago Ruiz\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/praticas-de-desenho-expressao-e-movimento
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas de desenho: expressão e movimento
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242628-4@agenda-sesc
+DTSTART:20260909T143000
+SUMMARY:Práticas de desenho: expressão e movimento
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Thiago Ruiz\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/praticas-de-desenho-expressao-e-movimento
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas de desenho: expressão e movimento
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242628-5@agenda-sesc
+DTSTART:20260916T143000
+SUMMARY:Práticas de desenho: expressão e movimento
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Thiago Ruiz\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/praticas-de-desenho-expressao-e-movimento
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas de desenho: expressão e movimento
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242628-6@agenda-sesc
+DTSTART:20260923T143000
+SUMMARY:Práticas de desenho: expressão e movimento
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Thiago Ruiz\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/praticas-de-desenho-expressao-e-movimento
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas de desenho: expressão e movimento
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242628-7@agenda-sesc
+DTSTART:20260930T143000
+SUMMARY:Práticas de desenho: expressão e movimento
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Thiago Ruiz\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/praticas-de-desenho-expressao-e-movimento
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas de desenho: expressão e movimento
+END:VALARM
+END:VEVENT
+END:VCALENDAR

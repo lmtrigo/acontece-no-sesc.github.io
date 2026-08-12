@@ -1,0 +1,53 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237807-0@agenda-sesc
+DTSTART:20260820T143000
+SUMMARY:Jardim de Bolso: chaveiros de plantinhas em biscuit
+LOCATION:Sesc Consolação
+DESCRIPTION:com Bruna Nóbrega — https://www.sescsp.org.br/programacao/jardim-de-bolso-chaveiros-de-plantinhas-em-biscuit-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Jardim de Bolso: chaveiros de plantinhas em biscuit
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237807-1@agenda-sesc
+DTSTART:20260827T143000
+SUMMARY:Jardim de Bolso: chaveiros de plantinhas em biscuit
+LOCATION:Sesc Consolação
+DESCRIPTION:com Bruna Nóbrega — https://www.sescsp.org.br/programacao/jardim-de-bolso-chaveiros-de-plantinhas-em-biscuit-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Jardim de Bolso: chaveiros de plantinhas em biscuit
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237807-2@agenda-sesc
+DTSTART:20260903T143000
+SUMMARY:Jardim de Bolso: chaveiros de plantinhas em biscuit
+LOCATION:Sesc Consolação
+DESCRIPTION:com Bruna Nóbrega — https://www.sescsp.org.br/programacao/jardim-de-bolso-chaveiros-de-plantinhas-em-biscuit-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Jardim de Bolso: chaveiros de plantinhas em biscuit
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237807-3@agenda-sesc
+DTSTART:20260910T143000
+SUMMARY:Jardim de Bolso: chaveiros de plantinhas em biscuit
+LOCATION:Sesc Consolação
+DESCRIPTION:com Bruna Nóbrega — https://www.sescsp.org.br/programacao/jardim-de-bolso-chaveiros-de-plantinhas-em-biscuit-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Jardim de Bolso: chaveiros de plantinhas em biscuit
+END:VALARM
+END:VEVENT
+END:VCALENDAR

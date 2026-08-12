@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238825-0@agenda-sesc
+DTSTART:20260819T190000
+SUMMARY:Papo Entre Livros | Gení lê Linda Tuhiwai Smith
+LOCATION:Sesc Santo Amaro
+DESCRIPTION:com Geni Núñez — https://www.sescsp.org.br/programacao/papo-entre-livros-geni-le-linda-tuhiwai-smith
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Papo Entre Livros | Gení lê Linda Tuhiwai Smith
+END:VALARM
+END:VEVENT
+END:VCALENDAR

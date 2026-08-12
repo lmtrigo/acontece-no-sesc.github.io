@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:140473-0@agenda-sesc
+DTSTART:20260811T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:140473-1@agenda-sesc
+DTSTART:20260812T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:140473-2@agenda-sesc
+DTSTART:20260813T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:140473-3@agenda-sesc
+DTSTART:20260814T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:140473-4@agenda-sesc
+DTSTART:20260815T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:140473-5@agenda-sesc
+DTSTART:20260816T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:140473-6@agenda-sesc
+DTSTART:20260818T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:140473-7@agenda-sesc
+DTSTART:20260819T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:140473-8@agenda-sesc
+DTSTART:20260820T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:140473-9@agenda-sesc
+DTSTART:20260821T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:140473-10@agenda-sesc
+DTSTART:20260822T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:140473-11@agenda-sesc
+DTSTART:20260823T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:140473-12@agenda-sesc
+DTSTART:20260825T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:140473-13@agenda-sesc
+DTSTART:20260826T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:140473-14@agenda-sesc
+DTSTART:20260827T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:140473-15@agenda-sesc
+DTSTART:20260828T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:140473-16@agenda-sesc
+DTSTART:20260829T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:140473-17@agenda-sesc
+DTSTART:20260830T083000
+SUMMARY:Espaço de Brincar
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/espaco-de-brincar-campinas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço de Brincar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

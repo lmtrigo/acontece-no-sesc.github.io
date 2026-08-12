@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1149734-20260916T190000@agenda-sesc
+DTSTART:20260916T190000
+SUMMARY:Fundamento em Libras para espaços de cultura e educação
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com Integra\, Profissionalização e Sociabilização do Deficiente Auditivo de Sorocaba — https://www.sescsp.org.br/programacao/fundamento-em-libras-para-espacos-de-cultura-e-educacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Fundamento em Libras para espaços de cultura e educação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

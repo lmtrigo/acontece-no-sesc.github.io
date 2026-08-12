@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238712-0@agenda-sesc
+DTSTART:20260812T190000
+SUMMARY:Lançamento do livro "O Feitiço do Fio: A Busca Pelo Manto Tupinambá"
+LOCATION:Sesc 14 Bis
+DESCRIPTION:Com Glicéria Tupinambá. Mediação: Rita Carelli. — https://www.sescsp.org.br/programacao/lancamento-do-livro-o-feitico-do-fio-a-busca-pelo-manto-tupinamba
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Lançamento do livro "O Feitiço do Fio: A Busca Pelo Manto Tupinambá"
+END:VALARM
+END:VEVENT
+END:VCALENDAR

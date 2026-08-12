@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:320048-20260909T194500@agenda-sesc
+DTSTART:20260909T194500
+SUMMARY:Canto - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Solange Assumpção — https://www.sescsp.org.br/programacao/canto-para-jovens
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Canto - Continuidade
+END:VALARM
+END:VEVENT
+END:VCALENDAR

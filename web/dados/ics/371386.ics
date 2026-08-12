@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:371386-0@agenda-sesc
+DTSTART:20260814T160000
+SUMMARY:Vivi Sant´Ana - Vem Pro Baile!
+LOCATION:Sesc Rio Preto
+DESCRIPTION:Vem Pro Baile! — https://www.sescsp.org.br/programacao/vivi-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Vivi Sant´Ana - Vem Pro Baile!
+END:VALARM
+END:VEVENT
+END:VCALENDAR

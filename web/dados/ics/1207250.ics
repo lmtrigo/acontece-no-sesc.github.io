@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1207250-0@agenda-sesc
+DTSTART:20260811T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1207250-1@agenda-sesc
+DTSTART:20260813T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1207250-2@agenda-sesc
+DTSTART:20260818T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1207250-3@agenda-sesc
+DTSTART:20260820T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1207250-4@agenda-sesc
+DTSTART:20260825T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1207250-5@agenda-sesc
+DTSTART:20260827T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1207250-6@agenda-sesc
+DTSTART:20260901T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1207250-7@agenda-sesc
+DTSTART:20260903T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1207250-8@agenda-sesc
+DTSTART:20260908T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1207250-9@agenda-sesc
+DTSTART:20260910T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1207250-10@agenda-sesc
+DTSTART:20260915T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1207250-11@agenda-sesc
+DTSTART:20260917T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1207250-12@agenda-sesc
+DTSTART:20260922T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1207250-13@agenda-sesc
+DTSTART:20260924T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1207250-14@agenda-sesc
+DTSTART:20260929T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1207250-15@agenda-sesc
+DTSTART:20261001T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1207250-16@agenda-sesc
+DTSTART:20261006T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1207250-17@agenda-sesc
+DTSTART:20261008T073000
+SUMMARY:Esporte Adulto – Futebol Soçaite Feminino
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esporte-adulto-futebol-socaite-feminino-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto – Futebol Soçaite Feminino
+END:VALARM
+END:VEVENT
+END:VCALENDAR

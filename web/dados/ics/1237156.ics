@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237156-0@agenda-sesc
+DTSTART:20260822T100000
+SUMMARY:Como Conversar Sobre Raça e Racismo com Crianças
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com a pedagoga e especialista em relações étnico-raciais\, Clélia Rosa — https://www.sescsp.org.br/programacao/como-conversar-sobre-raca-e-racismo-com-criancas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Como Conversar Sobre Raça e Racismo com Crianças
+END:VALARM
+END:VEVENT
+END:VCALENDAR

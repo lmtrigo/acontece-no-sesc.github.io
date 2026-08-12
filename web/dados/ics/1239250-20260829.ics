@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239250-20260829T150000@agenda-sesc
+DTSTART:20260829T150000
+SUMMARY:Sábados brincantes: Capoeira
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:Com Ericah Azeviche e Ítalo dos Anjos — https://www.sescsp.org.br/programacao/sabados-brincantes-capoeira
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sábados brincantes: Capoeira
+END:VALARM
+END:VEVENT
+END:VCALENDAR

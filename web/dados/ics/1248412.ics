@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248412-0@agenda-sesc
+DTSTART:20260829T123000
+SUMMARY:Portal de jogos: Fliperamas
+LOCATION:Sesc Araraquara
+DESCRIPTION:com RETROGAMESRP — https://www.sescsp.org.br/programacao/portal-de-jogos-fliperamas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Portal de jogos: Fliperamas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248412-1@agenda-sesc
+DTSTART:20260830T123000
+SUMMARY:Portal de jogos: Fliperamas
+LOCATION:Sesc Araraquara
+DESCRIPTION:com RETROGAMESRP — https://www.sescsp.org.br/programacao/portal-de-jogos-fliperamas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Portal de jogos: Fliperamas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

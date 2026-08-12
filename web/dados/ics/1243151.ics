@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243151-0@agenda-sesc
+DTSTART:20260821T183000
+SUMMARY:Bate-Papo: Funk\, Rap e a Criminalização da Cultura Periférica
+LOCATION:Sesc Pompeia
+DESCRIPTION:Com Brisa Flow\, Eduardo Taddeo\, Kric Cruz\, Renata Prado e Thiago Torres (Chavoso da USP). Mediação de Layne Gabriele — https://www.sescsp.org.br/programacao/bate-papo-funk-rap-e-a-criminalizacao-da-cultura-periferica
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bate-Papo: Funk\, Rap e a Criminalização da Cultura Periférica
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1236953-0@agenda-sesc
+DTSTART:20260814T200000
+SUMMARY:Jadsa
+LOCATION:Sesc Bom Retiro — Alameda Nothmann\, 185 | Bom Retiro | SAO PAULO  | SP | Cep: 01216-000
+DESCRIPTION:Show do álbum big buraco — https://www.sescsp.org.br/programacao/jadsa-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Jadsa
+END:VALARM
+END:VEVENT
+END:VCALENDAR

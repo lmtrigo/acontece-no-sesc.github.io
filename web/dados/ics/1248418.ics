@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248418-0@agenda-sesc
+DTSTART:20260829T153000
+SUMMARY:Sailor Moon Ballroom
+LOCATION:Sesc Araraquara
+DESCRIPTION:Com House of Hands Up — https://www.sescsp.org.br/programacao/sailor-moon-ballroom
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sailor Moon Ballroom
+END:VALARM
+END:VEVENT
+END:VCALENDAR

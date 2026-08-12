@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239172-0@agenda-sesc
+DTSTART:20260822T143000
+SUMMARY:Mulheres em Movimento - Saúde e direitos das mulheres surdas
+LOCATION:Sesc Campinas
+DESCRIPTION:Com Luana Bruzasco de Oliveira\, advogada\, Profa. Dra. Marilda Soares (USP) e Profa. Dra. Sylvia Lia (USP) — https://www.sescsp.org.br/programacao/mulheres-em-movimento-saude-e-direitos-das-mulheres-surdas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mulheres em Movimento - Saúde e direitos das mulheres surdas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

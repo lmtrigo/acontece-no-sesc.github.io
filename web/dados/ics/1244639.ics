@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244639-0@agenda-sesc
+DTSTART:20260823T160000
+SUMMARY:Trio Macambira com part. de Ju Strassacapa
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:https://www.sescsp.org.br/programacao/trio-macambira-com-part-de-ju-strassacapa
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Trio Macambira com part. de Ju Strassacapa
+END:VALARM
+END:VEVENT
+END:VCALENDAR

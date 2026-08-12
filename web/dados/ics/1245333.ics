@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245333-0@agenda-sesc
+DTSTART:20260822T100000
+SUMMARY:Estação - Por Dentro Da Boca
+LOCATION:Sesc Franca
+DESCRIPTION:Com equipe de saúde bucal do Sesc e Vers\, produtora de cultura imersiva — https://www.sescsp.org.br/programacao/estacao-por-dentro-da-boca
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Estação - Por Dentro Da Boca
+END:VALARM
+END:VEVENT
+END:VCALENDAR

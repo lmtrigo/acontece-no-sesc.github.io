@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242598-20260826T133000@agenda-sesc
+DTSTART:20260826T133000
+SUMMARY:Formação Cérebro Ativo
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Marina Bernardes\, Terapeuta ocupacional. — https://www.sescsp.org.br/programacao/formacao-cerebro-ativo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Formação Cérebro Ativo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

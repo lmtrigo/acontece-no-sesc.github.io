@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239843-20260812T140000@agenda-sesc
+DTSTART:20260812T140000
+SUMMARY:Chaveiro divertido em macramê
+LOCATION:Sesc Campinas
+DESCRIPTION:Com Fabriciana Silva\, educadora em tecnologias e artes — https://www.sescsp.org.br/programacao/chaveiro-divertido-em-macrame
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chaveiro divertido em macramê
+END:VALARM
+END:VEVENT
+END:VCALENDAR

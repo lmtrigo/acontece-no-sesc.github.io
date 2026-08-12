@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243805-0@agenda-sesc
+DTSTART:20260813T203000
+SUMMARY:O Delírio do Verbo: Manoel de Barros em Canções
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Júlia Tygel (piano)\, Tatiana Parra (voz) e Neymar Dias (viola caipira) — https://www.sescsp.org.br/programacao/o-delirio-do-verbo-manoel-de-barros-em-cancoes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Delírio do Verbo: Manoel de Barros em Canções
+END:VALARM
+END:VEVENT
+END:VCALENDAR

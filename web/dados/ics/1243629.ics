@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243629-0@agenda-sesc
+DTSTART:20260926T073000
+SUMMARY:Caminhos de Taubaté: Rota Social - Circuito a pé
+LOCATION:Sesc Taubaté
+DESCRIPTION:https://www.sescsp.org.br/programacao/caminhos-de-taubate-rota-social-circuito-a-pe
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Caminhos de Taubaté: Rota Social - Circuito a pé
+END:VALARM
+END:VEVENT
+END:VCALENDAR

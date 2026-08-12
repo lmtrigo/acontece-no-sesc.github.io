@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1224870-0@agenda-sesc
+DTSTART:20260930T190000
+SUMMARY:Cultura Alimentar da Região Sudeste
+LOCATION:Sesc Campinas
+DESCRIPTION:Com José Guerra\, chef de cozinha — https://www.sescsp.org.br/programacao/cultura-alimentar-da-regiao-sudeste
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cultura Alimentar da Região Sudeste
+END:VALARM
+END:VEVENT
+END:VCALENDAR

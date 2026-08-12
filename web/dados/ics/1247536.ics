@@ -1,0 +1,113 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247536-0@agenda-sesc
+DTSTART:20260814T180000
+SUMMARY:Encontro de Pandeiros
+LOCATION:Sesc Santos
+DESCRIPTION:Com Educadores Musicais do Sesc — https://www.sescsp.org.br/programacao/encontro-de-pandeiros-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Encontro de Pandeiros
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1247536-1@agenda-sesc
+DTSTART:20260821T180000
+SUMMARY:Encontro de Pandeiros
+LOCATION:Sesc Santos
+DESCRIPTION:Com Educadores Musicais do Sesc — https://www.sescsp.org.br/programacao/encontro-de-pandeiros-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Encontro de Pandeiros
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1247536-2@agenda-sesc
+DTSTART:20260828T180000
+SUMMARY:Encontro de Pandeiros
+LOCATION:Sesc Santos
+DESCRIPTION:Com Educadores Musicais do Sesc — https://www.sescsp.org.br/programacao/encontro-de-pandeiros-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Encontro de Pandeiros
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1247536-3@agenda-sesc
+DTSTART:20260904T180000
+SUMMARY:Encontro de Pandeiros
+LOCATION:Sesc Santos
+DESCRIPTION:Com Educadores Musicais do Sesc — https://www.sescsp.org.br/programacao/encontro-de-pandeiros-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Encontro de Pandeiros
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1247536-4@agenda-sesc
+DTSTART:20260911T180000
+SUMMARY:Encontro de Pandeiros
+LOCATION:Sesc Santos
+DESCRIPTION:Com Educadores Musicais do Sesc — https://www.sescsp.org.br/programacao/encontro-de-pandeiros-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Encontro de Pandeiros
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1247536-5@agenda-sesc
+DTSTART:20260918T180000
+SUMMARY:Encontro de Pandeiros
+LOCATION:Sesc Santos
+DESCRIPTION:Com Educadores Musicais do Sesc — https://www.sescsp.org.br/programacao/encontro-de-pandeiros-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Encontro de Pandeiros
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1247536-6@agenda-sesc
+DTSTART:20260925T180000
+SUMMARY:Encontro de Pandeiros
+LOCATION:Sesc Santos
+DESCRIPTION:Com Educadores Musicais do Sesc — https://www.sescsp.org.br/programacao/encontro-de-pandeiros-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Encontro de Pandeiros
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1247536-7@agenda-sesc
+DTSTART:20261002T180000
+SUMMARY:Encontro de Pandeiros
+LOCATION:Sesc Santos
+DESCRIPTION:Com Educadores Musicais do Sesc — https://www.sescsp.org.br/programacao/encontro-de-pandeiros-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Encontro de Pandeiros
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1247536-8@agenda-sesc
+DTSTART:20261009T180000
+SUMMARY:Encontro de Pandeiros
+LOCATION:Sesc Santos
+DESCRIPTION:Com Educadores Musicais do Sesc — https://www.sescsp.org.br/programacao/encontro-de-pandeiros-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Encontro de Pandeiros
+END:VALARM
+END:VEVENT
+END:VCALENDAR

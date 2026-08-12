@@ -1,0 +1,77 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1216059-0@agenda-sesc
+DTSTART:20260811T100000
+SUMMARY:Ocupação Balas Futebol na Banca
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Curadoria de Aira Bonfim — https://www.sescsp.org.br/programacao/ocupacao-balas-futebol-na-banca
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ocupação Balas Futebol na Banca
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1216059-1@agenda-sesc
+DTSTART:20260812T100000
+SUMMARY:Ocupação Balas Futebol na Banca
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Curadoria de Aira Bonfim — https://www.sescsp.org.br/programacao/ocupacao-balas-futebol-na-banca
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ocupação Balas Futebol na Banca
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1216059-2@agenda-sesc
+DTSTART:20260813T100000
+SUMMARY:Ocupação Balas Futebol na Banca
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Curadoria de Aira Bonfim — https://www.sescsp.org.br/programacao/ocupacao-balas-futebol-na-banca
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ocupação Balas Futebol na Banca
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1216059-3@agenda-sesc
+DTSTART:20260814T100000
+SUMMARY:Ocupação Balas Futebol na Banca
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Curadoria de Aira Bonfim — https://www.sescsp.org.br/programacao/ocupacao-balas-futebol-na-banca
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ocupação Balas Futebol na Banca
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1216059-4@agenda-sesc
+DTSTART:20260815T100000
+SUMMARY:Ocupação Balas Futebol na Banca
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Curadoria de Aira Bonfim — https://www.sescsp.org.br/programacao/ocupacao-balas-futebol-na-banca
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ocupação Balas Futebol na Banca
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1216059-5@agenda-sesc
+DTSTART:20260816T100000
+SUMMARY:Ocupação Balas Futebol na Banca
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Curadoria de Aira Bonfim — https://www.sescsp.org.br/programacao/ocupacao-balas-futebol-na-banca
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ocupação Balas Futebol na Banca
+END:VALARM
+END:VEVENT
+END:VCALENDAR

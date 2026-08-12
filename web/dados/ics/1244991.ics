@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244991-0@agenda-sesc
+DTSTART:20260813T183000
+SUMMARY:ETA\, Astronomia! - Corpos celestes\, Lua e os Cometas
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:Com educador do Espaço de Tecnologia e Artes do Sesc — https://www.sescsp.org.br/programacao/eta-astronomia-corpos-celestes-lua-e-os-cometas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:ETA\, Astronomia! - Corpos celestes\, Lua e os Cometas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244991-1@agenda-sesc
+DTSTART:20260820T183000
+SUMMARY:ETA\, Astronomia! - Corpos celestes\, Lua e os Cometas
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:Com educador do Espaço de Tecnologia e Artes do Sesc — https://www.sescsp.org.br/programacao/eta-astronomia-corpos-celestes-lua-e-os-cometas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:ETA\, Astronomia! - Corpos celestes\, Lua e os Cometas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244991-2@agenda-sesc
+DTSTART:20260827T183000
+SUMMARY:ETA\, Astronomia! - Corpos celestes\, Lua e os Cometas
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:Com educador do Espaço de Tecnologia e Artes do Sesc — https://www.sescsp.org.br/programacao/eta-astronomia-corpos-celestes-lua-e-os-cometas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:ETA\, Astronomia! - Corpos celestes\, Lua e os Cometas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

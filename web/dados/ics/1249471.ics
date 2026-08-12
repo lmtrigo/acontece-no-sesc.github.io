@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249471-0@agenda-sesc
+DTSTART:20260916T100000
+SUMMARY:Sorriso é Coisa Séria
+LOCATION:Sesc Consolação
+DESCRIPTION:Com a Palhaça Olga — https://www.sescsp.org.br/programacao/sorriso-e-coisa-seria-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sorriso é Coisa Séria
+END:VALARM
+END:VEVENT
+END:VCALENDAR

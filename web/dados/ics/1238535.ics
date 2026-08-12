@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238535-0@agenda-sesc
+DTSTART:20260819T193000
+SUMMARY:Amazônia\, Arqueologia da Floresta | Episódio 3
+LOCATION:Sesc Santo Amaro
+DESCRIPTION:Dir.: Tatiana Toffoli | Brasil\, 2022 — https://www.sescsp.org.br/programacao/amazonia-arqueologia-da-floresta-episodio-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Amazônia\, Arqueologia da Floresta | Episódio 3
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238836-0@agenda-sesc
+DTSTART:20260822T110000
+SUMMARY:Viva as Grandes Figuras: Protagonismo Negro nas Artes do Sudeste
+LOCATION:Sesc Santo André
+DESCRIPTION:com Diásporas — https://www.sescsp.org.br/programacao/viva-as-grandes-figuras-protagonismo-negro-nas-artes-do-sudeste-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Viva as Grandes Figuras: Protagonismo Negro nas Artes do Sudeste
+END:VALARM
+END:VEVENT
+END:VCALENDAR

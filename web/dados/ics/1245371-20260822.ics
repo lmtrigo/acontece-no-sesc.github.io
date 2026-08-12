@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245371-20260822T140000@agenda-sesc
+DTSTART:20260822T140000
+SUMMARY:Marcenaria Lúdica para Iniciantes
+LOCATION:Sesc Pompeia
+DESCRIPTION:Com Luis Guimarães — https://www.sescsp.org.br/programacao/marcenaria-ludica-para-iniciantes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Marcenaria Lúdica para Iniciantes
+END:VALARM
+END:VEVENT
+END:VCALENDAR

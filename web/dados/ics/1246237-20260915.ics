@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246237-20260915T143000@agenda-sesc
+DTSTART:20260915T143000
+SUMMARY:Laboratório PB Iniciante para fotógrafos
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Ricardo Ferreira — https://www.sescsp.org.br/programacao/laboratorio-pb-iniciante-para-fotografos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Laboratório PB Iniciante para fotógrafos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

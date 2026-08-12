@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247996-0@agenda-sesc
+DTSTART:20260815T170000
+SUMMARY:Benefícios Emocionais da Rede de Apoio
+LOCATION:Sesc Araraquara
+DESCRIPTION:com Edi Holanda — https://www.sescsp.org.br/programacao/beneficios-emocionais-da-rede-de-apoio-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Benefícios Emocionais da Rede de Apoio
+END:VALARM
+END:VEVENT
+END:VCALENDAR

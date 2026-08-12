@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:575581-20260912T100000@agenda-sesc
+DTSTART:20260912T100000
+SUMMARY:Práticas Aquáticas | 6 a 12 anos
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/praticas-aquaticas-6-a-12-anos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas Aquáticas | 6 a 12 anos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

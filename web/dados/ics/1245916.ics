@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245916-0@agenda-sesc
+DTSTART:20260815T100000
+SUMMARY:Faça sua pulseira de nó náutico
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:com Eric Fonseca — https://www.sescsp.org.br/programacao/faca-sua-pulseira-de-no-nautico
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Faça sua pulseira de nó náutico
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245916-1@agenda-sesc
+DTSTART:20260816T100000
+SUMMARY:Faça sua pulseira de nó náutico
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:com Eric Fonseca — https://www.sescsp.org.br/programacao/faca-sua-pulseira-de-no-nautico
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Faça sua pulseira de nó náutico
+END:VALARM
+END:VEVENT
+END:VCALENDAR

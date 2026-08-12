@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239175-20260822T200000@agenda-sesc
+DTSTART:20260822T200000
+SUMMARY:Luedji Luna
+LOCATION:Sesc Pinheiros — Rua Paes Leme\, 195 | Pinheiros | SAO PAULO  | SP | Cep: 05424-150
+DESCRIPTION:show de lançamento do projeto Acústico Luedji Luna — https://www.sescsp.org.br/programacao/luedji-luna-16
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Luedji Luna
+END:VALARM
+END:VEVENT
+END:VCALENDAR

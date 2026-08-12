@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243144-20260816T143000@agenda-sesc
+DTSTART:20260816T143000
+SUMMARY:Estampando lenços com padrões afro-brasileiros
+LOCATION:Sesc Jundiaí
+DESCRIPTION:Com Tranquilo Studio — https://www.sescsp.org.br/programacao/estampando-lencos-com-padroes-afro-brasileiros
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Estampando lenços com padrões afro-brasileiros
+END:VALARM
+END:VEVENT
+END:VCALENDAR

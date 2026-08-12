@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243544-0@agenda-sesc
+DTSTART:20260829T140000
+SUMMARY:Bate- papo com a escritora e roteirista Flavia Lins
+LOCATION:Sesc Rio Preto
+DESCRIPTION:mediação de João Victor Boni\, ator e jornalista — https://www.sescsp.org.br/programacao/bate-papo-com-a-escritora-e-roteirista-flavia-lins
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bate- papo com a escritora e roteirista Flavia Lins
+END:VALARM
+END:VEVENT
+END:VCALENDAR

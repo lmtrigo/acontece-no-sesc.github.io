@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:859865-20260829T130000@agenda-sesc
+DTSTART:20260829T130000
+SUMMARY:Choro da Consolação
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Pedro Beviláqua e Kaique Iritsu — https://www.sescsp.org.br/programacao/choro-da-consolacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Choro da Consolação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

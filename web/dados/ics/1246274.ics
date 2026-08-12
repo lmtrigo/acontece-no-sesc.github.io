@@ -1,0 +1,89 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246274-0@agenda-sesc
+DTSTART:20260827T093000
+SUMMARY:Escultura figurativa - Modelagem da Figura Humana - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Newton Santana — https://www.sescsp.org.br/programacao/escultura-figurativa-modelagem-da-figura-humana-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Escultura figurativa - Modelagem da Figura Humana - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246274-1@agenda-sesc
+DTSTART:20260903T093000
+SUMMARY:Escultura figurativa - Modelagem da Figura Humana - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Newton Santana — https://www.sescsp.org.br/programacao/escultura-figurativa-modelagem-da-figura-humana-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Escultura figurativa - Modelagem da Figura Humana - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246274-2@agenda-sesc
+DTSTART:20260910T093000
+SUMMARY:Escultura figurativa - Modelagem da Figura Humana - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Newton Santana — https://www.sescsp.org.br/programacao/escultura-figurativa-modelagem-da-figura-humana-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Escultura figurativa - Modelagem da Figura Humana - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246274-3@agenda-sesc
+DTSTART:20260917T093000
+SUMMARY:Escultura figurativa - Modelagem da Figura Humana - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Newton Santana — https://www.sescsp.org.br/programacao/escultura-figurativa-modelagem-da-figura-humana-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Escultura figurativa - Modelagem da Figura Humana - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246274-4@agenda-sesc
+DTSTART:20260924T093000
+SUMMARY:Escultura figurativa - Modelagem da Figura Humana - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Newton Santana — https://www.sescsp.org.br/programacao/escultura-figurativa-modelagem-da-figura-humana-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Escultura figurativa - Modelagem da Figura Humana - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246274-5@agenda-sesc
+DTSTART:20261001T093000
+SUMMARY:Escultura figurativa - Modelagem da Figura Humana - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Newton Santana — https://www.sescsp.org.br/programacao/escultura-figurativa-modelagem-da-figura-humana-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Escultura figurativa - Modelagem da Figura Humana - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246274-6@agenda-sesc
+DTSTART:20261008T093000
+SUMMARY:Escultura figurativa - Modelagem da Figura Humana - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Newton Santana — https://www.sescsp.org.br/programacao/escultura-figurativa-modelagem-da-figura-humana-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Escultura figurativa - Modelagem da Figura Humana - Avançado
+END:VALARM
+END:VEVENT
+END:VCALENDAR

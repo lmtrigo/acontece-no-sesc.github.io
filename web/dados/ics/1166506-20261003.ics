@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1166506-20261003T140000@agenda-sesc
+DTSTART:20261003T140000
+SUMMARY:Geleia Geral
+LOCATION:Sesc Jundiaí
+DESCRIPTION:Com Caroline Cristina e Felipe Okaeda\, educadores do Sesc — https://www.sescsp.org.br/programacao/geleia-geral
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Geleia Geral
+END:VALARM
+END:VEVENT
+END:VCALENDAR

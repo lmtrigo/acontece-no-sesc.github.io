@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244932-0@agenda-sesc
+DTSTART:20260812T193000
+SUMMARY:Literatura perto de nós: Encontro com Stefano Volp
+LOCATION:Sesc São Carlos
+DESCRIPTION:Mediação de Róbson Pereira da Silva — https://www.sescsp.org.br/programacao/literatura-perto-de-nos-encontro-com-stefano-volp
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Literatura perto de nós: Encontro com Stefano Volp
+END:VALARM
+END:VEVENT
+END:VCALENDAR

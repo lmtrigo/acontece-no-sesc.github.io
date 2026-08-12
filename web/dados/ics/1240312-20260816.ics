@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240312-20260816T100000@agenda-sesc
+DTSTART:20260816T100000
+SUMMARY:Jobim-Açu - Tom Jobim: O Maestro da Natureza
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Curadoria de Daniela Thomas e Hugo Sukman — https://www.sescsp.org.br/programacao/jobim-acu-tom-jobim-o-maestro-da-natureza
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Jobim-Açu - Tom Jobim: O Maestro da Natureza
+END:VALARM
+END:VEVENT
+END:VCALENDAR

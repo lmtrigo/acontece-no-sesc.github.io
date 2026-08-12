@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243174-0@agenda-sesc
+DTSTART:20260822T170000
+SUMMARY:Cuidado\, Vínculo e Pertencimento: O Papel dos Grupos na Qualidade de Vida
+LOCATION:Sesc Campinas
+DESCRIPTION:Com Flavia Arbex Borim\, fisioterapeuta e Rosangela Barbalacco\, assistente técnica GEPROS. Mediação Suellyn Ortiz\, técnica do Sesc Campinas. — https://www.sescsp.org.br/programacao/cuidado-vinculo-e-pertencimento-o-papel-dos-grupos-na-qualidade-de-vida
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cuidado\, Vínculo e Pertencimento: O Papel dos Grupos na Qualidade de Vida
+END:VALARM
+END:VEVENT
+END:VCALENDAR

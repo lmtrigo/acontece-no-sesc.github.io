@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241968-0@agenda-sesc
+DTSTART:20260821T143000
+SUMMARY:Envelhecer Ativamente: Esporte e Conexão Social na Qualidade de Vida
+LOCATION:Sesc Campinas
+DESCRIPTION:Com Dra. Paula Fernandes\, da FEF\, e Dra. Thaís Sporkens\, gerontóloga. Mediação: Neide Alessandra\, assistente técnica do Sesc SP — https://www.sescsp.org.br/programacao/envelhecer-ativamente-esporte-e-conexao-social-na-qualidade-de-vida
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Envelhecer Ativamente: Esporte e Conexão Social na Qualidade de Vida
+END:VALARM
+END:VEVENT
+END:VCALENDAR

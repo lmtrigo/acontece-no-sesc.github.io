@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246001-20260820T190000@agenda-sesc
+DTSTART:20260820T190000
+SUMMARY:Poéticas jovens
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Isabela Mota e Editora Quelônio — https://www.sescsp.org.br/programacao/poeticas-jovens-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Poéticas jovens
+END:VALARM
+END:VEVENT
+END:VCALENDAR

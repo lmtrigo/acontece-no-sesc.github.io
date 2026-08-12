@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242490-0@agenda-sesc
+DTSTART:20260815T170000
+SUMMARY:Canções para Afastar o Medo - cantos e acalantos latino americanos
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Qinti Companhia — https://www.sescsp.org.br/programacao/cancoes-para-afastar-o-medo-cantos-e-acalantos-latino-americanos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Canções para Afastar o Medo - cantos e acalantos latino americanos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245656-20260830T150000@agenda-sesc
+DTSTART:20260830T150000
+SUMMARY:BrincaTabuleiro: Luderia Em Família
+LOCATION:Sesc Franca
+DESCRIPTION:Com educadores em atividades infantojuvenis do Sesc — https://www.sescsp.org.br/programacao/brincatabuleiro-luderia-em-familia-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BrincaTabuleiro: Luderia Em Família
+END:VALARM
+END:VEVENT
+END:VCALENDAR

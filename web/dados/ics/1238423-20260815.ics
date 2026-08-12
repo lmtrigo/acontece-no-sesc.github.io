@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238423-20260815T140000@agenda-sesc
+DTSTART:20260815T140000
+SUMMARY:Danças do Mundo: Afro Grooves
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:Com Com Adriano Batista\, dançarino\, professor e coreógrafo de Danças Urbanas e Afro Urbanas — https://www.sescsp.org.br/programacao/dancas-do-mundo-afro-grooves
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Danças do Mundo: Afro Grooves
+END:VALARM
+END:VEVENT
+END:VCALENDAR

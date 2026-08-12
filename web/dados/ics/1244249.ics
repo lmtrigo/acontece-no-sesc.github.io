@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244249-0@agenda-sesc
+DTSTART:20260830T110000
+SUMMARY:O Circo Mambembe do Rogério Piva - A Vida de Um Saltimbanco
+LOCATION:Sesc São Caetano 
+DESCRIPTION:Com Rogério Piva — https://www.sescsp.org.br/programacao/o-circo-mambembe-do-rogerio-piva-a-vida-de-um-saltimbanco
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Circo Mambembe do Rogério Piva - A Vida de Um Saltimbanco
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243492-0@agenda-sesc
+DTSTART:20260820T193000
+SUMMARY:Mutações: A super ação da anarquia (ou da anarquia do abandono)
+LOCATION:Sesc Centro de Pesquisa e Formação
+DESCRIPTION:Com Márcia Sá Cavalcante Schuback — https://www.sescsp.org.br/programacao/mutacoes-a-super-acao-da-anarquia-ou-da-anarquia-do-abandono
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mutações: A super ação da anarquia (ou da anarquia do abandono)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240646-20260814T150000@agenda-sesc
+DTSTART:20260814T150000
+SUMMARY:Sancho Pança\, O fiel escudeiro
+LOCATION:Sesc São Bento
+DESCRIPTION:Com Palhaço Piruá (RN) — https://www.sescsp.org.br/programacao/sancho-panca-o-fiel-escudeiro
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sancho Pança\, O fiel escudeiro
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240451-20260821T200000@agenda-sesc
+DTSTART:20260821T200000
+SUMMARY:Eduardo\, O Rei Da Praça
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Eduardo Show da Vida e Alysson Lemos — https://www.sescsp.org.br/programacao/eduardo-o-rei-da-praca
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Eduardo\, O Rei Da Praça
+END:VALARM
+END:VEVENT
+END:VCALENDAR

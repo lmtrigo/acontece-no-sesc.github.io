@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1203866-20260830T150000@agenda-sesc
+DTSTART:20260830T150000
+SUMMARY:Vôlei de Areia
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:Com a orientação da professora Sidineia Cardoso — https://www.sescsp.org.br/programacao/volei-de-areia-7
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Vôlei de Areia
+END:VALARM
+END:VEVENT
+END:VCALENDAR

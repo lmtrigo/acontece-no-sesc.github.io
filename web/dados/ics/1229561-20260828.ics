@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1229561-20260828T110000@agenda-sesc
+DTSTART:20260828T110000
+SUMMARY:Corpo e Movimento: Ritmos Nordestinos
+LOCATION:Sesc Pinheiros
+DESCRIPTION:com Ellen Trizi e Thamyra Miranda — https://www.sescsp.org.br/programacao/corpo-e-movimento-ritmos-nordestinos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Corpo e Movimento: Ritmos Nordestinos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

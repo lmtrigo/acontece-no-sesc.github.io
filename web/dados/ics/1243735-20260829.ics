@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243735-20260829T103000@agenda-sesc
+DTSTART:20260829T103000
+SUMMARY:"Ukulelê em Família" - Musicalização familiar com canções tradicionais
+LOCATION:Sesc Catanduva
+DESCRIPTION:com Samuel Moret — https://www.sescsp.org.br/programacao/ukulele-em-familia-musicalizacao-familiar-com-cancoes-tradicionais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:"Ukulelê em Família" - Musicalização familiar com canções tradicionais
+END:VALARM
+END:VEVENT
+END:VCALENDAR

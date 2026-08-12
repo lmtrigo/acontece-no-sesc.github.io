@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:628705-20260913T110000@agenda-sesc
+DTSTART:20260913T110000
+SUMMARY:Domingo de Brincar
+LOCATION:Sesc Santo André
+DESCRIPTION:com Educadoras do Sesc Santo André — https://www.sescsp.org.br/programacao/domingo-de-brincar
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Domingo de Brincar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

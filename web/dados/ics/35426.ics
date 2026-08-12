@@ -1,0 +1,365 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:35426-0@agenda-sesc
+DTSTART:20260811T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-1@agenda-sesc
+DTSTART:20260813T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-2@agenda-sesc
+DTSTART:20260815T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-3@agenda-sesc
+DTSTART:20260818T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-4@agenda-sesc
+DTSTART:20260819T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-5@agenda-sesc
+DTSTART:20260820T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-6@agenda-sesc
+DTSTART:20260822T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-7@agenda-sesc
+DTSTART:20260825T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-8@agenda-sesc
+DTSTART:20260827T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-9@agenda-sesc
+DTSTART:20260829T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-10@agenda-sesc
+DTSTART:20260901T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-11@agenda-sesc
+DTSTART:20260902T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-12@agenda-sesc
+DTSTART:20260903T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-13@agenda-sesc
+DTSTART:20260905T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-14@agenda-sesc
+DTSTART:20260908T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-15@agenda-sesc
+DTSTART:20260910T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-16@agenda-sesc
+DTSTART:20260912T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-17@agenda-sesc
+DTSTART:20260915T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-18@agenda-sesc
+DTSTART:20260916T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-19@agenda-sesc
+DTSTART:20260917T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-20@agenda-sesc
+DTSTART:20260919T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-21@agenda-sesc
+DTSTART:20260922T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-22@agenda-sesc
+DTSTART:20260924T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-23@agenda-sesc
+DTSTART:20260926T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-24@agenda-sesc
+DTSTART:20260929T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-25@agenda-sesc
+DTSTART:20260930T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-26@agenda-sesc
+DTSTART:20261001T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-27@agenda-sesc
+DTSTART:20261003T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-28@agenda-sesc
+DTSTART:20261006T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:35426-29@agenda-sesc
+DTSTART:20261008T100000
+SUMMARY:BiblioSesc | Santana
+LOCATION:Sesc Santana
+DESCRIPTION:Literatura — https://www.sescsp.org.br/programacao/bibliosesc-santana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BiblioSesc | Santana
+END:VALARM
+END:VEVENT
+END:VCALENDAR

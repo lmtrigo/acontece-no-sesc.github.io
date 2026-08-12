@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238104-20260829T200000@agenda-sesc
+DTSTART:20260829T200000
+SUMMARY:Cidadão Instigado
+LOCATION:Sesc Bom Retiro — Alameda Nothmann\, 185 | Bom Retiro | SAO PAULO  | SP | Cep: 01216-000
+DESCRIPTION:Show do álbum Cidadão Instigado — https://www.sescsp.org.br/programacao/cidadao-instigado-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cidadão Instigado
+END:VALARM
+END:VEVENT
+END:VCALENDAR

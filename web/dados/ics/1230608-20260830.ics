@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1230608-20260830T113000@agenda-sesc
+DTSTART:20260830T113000
+SUMMARY:Jogando na Praça
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Com educadoras e educadores do Sesc Bom Retiro — https://www.sescsp.org.br/programacao/jogando-na-praca
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Jogando na Praça
+END:VALARM
+END:VEVENT
+END:VCALENDAR

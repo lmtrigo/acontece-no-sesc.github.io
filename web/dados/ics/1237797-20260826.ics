@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237797-20260826T103000@agenda-sesc
+DTSTART:20260826T103000
+SUMMARY:Ateliê Aberto: Experimentações em Colagem
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Andressa Nishiyama — https://www.sescsp.org.br/programacao/atelie-aberto-experimentacoes-em-colagem
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê Aberto: Experimentações em Colagem
+END:VALARM
+END:VEVENT
+END:VCALENDAR

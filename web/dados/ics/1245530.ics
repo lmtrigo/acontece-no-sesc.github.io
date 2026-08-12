@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245530-0@agenda-sesc
+DTSTART:20260812T190000
+SUMMARY:Caminho do Peabiru: memória ancestral marcando as indígenas identidades em SP
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com Casé Angatu\, indígena e morador no Território Tupinambá em Olivença - Ilhéus/Bahia\, na Aldeia Gwarini Taba Atã — https://www.sescsp.org.br/programacao/o-caminho-do-peabiru
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Caminho do Peabiru: memória ancestral marcando as indígenas identidades em SP
+END:VALARM
+END:VEVENT
+END:VCALENDAR

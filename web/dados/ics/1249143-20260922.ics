@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249143-20260922T143000@agenda-sesc
+DTSTART:20260922T143000
+SUMMARY:Pintura de Letras Tradicionais Brasileiras: Da profissão à arte
+LOCATION:Sesc Consolação
+DESCRIPTION:com Wil Letrando — https://www.sescsp.org.br/programacao/pintura-de-letras-tradicionais-brasileiras-da-profissao-a-arte
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pintura de Letras Tradicionais Brasileiras: Da profissão à arte
+END:VALARM
+END:VEVENT
+END:VCALENDAR

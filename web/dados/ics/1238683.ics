@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238683-0@agenda-sesc
+DTSTART:20260825T190000
+SUMMARY:O amor nunca vem só
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com Andreone Medrado e Rita von Hunty — https://www.sescsp.org.br/programacao/o-amor-nunca-vem-so
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O amor nunca vem só
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,65 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244623-0@agenda-sesc
+DTSTART:20260818T160000
+SUMMARY:Violão Descomplicado - Módulo 2
+LOCATION:Sesc Santos
+DESCRIPTION:Com Educadores Musicais do Sesc — https://www.sescsp.org.br/programacao/violao-descomplicado-modulo-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violão Descomplicado - Módulo 2
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244623-1@agenda-sesc
+DTSTART:20260825T160000
+SUMMARY:Violão Descomplicado - Módulo 2
+LOCATION:Sesc Santos
+DESCRIPTION:Com Educadores Musicais do Sesc — https://www.sescsp.org.br/programacao/violao-descomplicado-modulo-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violão Descomplicado - Módulo 2
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244623-2@agenda-sesc
+DTSTART:20260922T160000
+SUMMARY:Violão Descomplicado - Módulo 2
+LOCATION:Sesc Santos
+DESCRIPTION:Com Educadores Musicais do Sesc — https://www.sescsp.org.br/programacao/violao-descomplicado-modulo-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violão Descomplicado - Módulo 2
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244623-3@agenda-sesc
+DTSTART:20260929T160000
+SUMMARY:Violão Descomplicado - Módulo 2
+LOCATION:Sesc Santos
+DESCRIPTION:Com Educadores Musicais do Sesc — https://www.sescsp.org.br/programacao/violao-descomplicado-modulo-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violão Descomplicado - Módulo 2
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244623-4@agenda-sesc
+DTSTART:20261006T160000
+SUMMARY:Violão Descomplicado - Módulo 2
+LOCATION:Sesc Santos
+DESCRIPTION:Com Educadores Musicais do Sesc — https://www.sescsp.org.br/programacao/violao-descomplicado-modulo-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violão Descomplicado - Módulo 2
+END:VALARM
+END:VEVENT
+END:VCALENDAR

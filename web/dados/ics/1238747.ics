@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238747-0@agenda-sesc
+DTSTART:20260823T160000
+SUMMARY:Amazônia\, a nova Minamata
+LOCATION:Sesc Piracicaba
+DESCRIPTION:https://www.sescsp.org.br/programacao/amazonia-a-nova-minamata-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Amazônia\, a nova Minamata
+END:VALARM
+END:VEVENT
+END:VCALENDAR

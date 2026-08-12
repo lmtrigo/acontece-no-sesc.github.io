@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238831-0@agenda-sesc
+DTSTART:20260827T193000
+SUMMARY:Mutações: Kant\, Nietzsche\, Marx\, Heidegger e o fim da metafísica
+LOCATION:Sesc Centro de Pesquisa e Formação
+DESCRIPTION:Com Oswaldo Giacoia Junior — https://www.sescsp.org.br/programacao/mutacoes-kant-nietzsche-marx-heidegger-e-o-fim-da-metafisica
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mutações: Kant\, Nietzsche\, Marx\, Heidegger e o fim da metafísica
+END:VALARM
+END:VEVENT
+END:VCALENDAR

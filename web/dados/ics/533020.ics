@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:533020-0@agenda-sesc
+DTSTART:20260815T110000
+SUMMARY:Recreação de Futsal Feminino
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com Educadores (as) Sesc — https://www.sescsp.org.br/programacao/recreacao-orientada-de-futsal-feminino-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação de Futsal Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:533020-1@agenda-sesc
+DTSTART:20260822T110000
+SUMMARY:Recreação de Futsal Feminino
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com Educadores (as) Sesc — https://www.sescsp.org.br/programacao/recreacao-orientada-de-futsal-feminino-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação de Futsal Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:533020-2@agenda-sesc
+DTSTART:20260829T110000
+SUMMARY:Recreação de Futsal Feminino
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com Educadores (as) Sesc — https://www.sescsp.org.br/programacao/recreacao-orientada-de-futsal-feminino-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação de Futsal Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:533020-3@agenda-sesc
+DTSTART:20260905T110000
+SUMMARY:Recreação de Futsal Feminino
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com Educadores (as) Sesc — https://www.sescsp.org.br/programacao/recreacao-orientada-de-futsal-feminino-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação de Futsal Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:533020-4@agenda-sesc
+DTSTART:20260912T110000
+SUMMARY:Recreação de Futsal Feminino
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com Educadores (as) Sesc — https://www.sescsp.org.br/programacao/recreacao-orientada-de-futsal-feminino-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação de Futsal Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:533020-5@agenda-sesc
+DTSTART:20260919T110000
+SUMMARY:Recreação de Futsal Feminino
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com Educadores (as) Sesc — https://www.sescsp.org.br/programacao/recreacao-orientada-de-futsal-feminino-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação de Futsal Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:533020-6@agenda-sesc
+DTSTART:20260926T110000
+SUMMARY:Recreação de Futsal Feminino
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com Educadores (as) Sesc — https://www.sescsp.org.br/programacao/recreacao-orientada-de-futsal-feminino-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação de Futsal Feminino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:533020-7@agenda-sesc
+DTSTART:20261003T110000
+SUMMARY:Recreação de Futsal Feminino
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com Educadores (as) Sesc — https://www.sescsp.org.br/programacao/recreacao-orientada-de-futsal-feminino-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação de Futsal Feminino
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243338-0@agenda-sesc
+DTSTART:20260821T200000
+SUMMARY:Nelson Ayres & Chano Domínguez
+LOCATION:Sesc Sorocaba — Rua Barão de Piratininga\, 555 | Jardim Faculdade | SOROCABA  | SP | Cep: 18030-160
+DESCRIPTION:Duas Culturas/Dois Pianos. Intervenção coreográfica: Ana Marzagão — https://www.sescsp.org.br/programacao/nelson-ayres-chano-dominguez
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nelson Ayres & Chano Domínguez
+END:VALARM
+END:VEVENT
+END:VCALENDAR

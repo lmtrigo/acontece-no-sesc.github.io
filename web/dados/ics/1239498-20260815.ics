@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239498-20260815T210000@agenda-sesc
+DTSTART:20260815T210000
+SUMMARY:FBC
+LOCATION:Sesc Pompeia — Rua Clélia\, 93 | Pompeia | SAO PAULO  | SP | Cep: 05042-000
+DESCRIPTION:Lançamento do álbum Tambores\, Cafezais\, Fuzis\, Guaranás e Outras Brasilidades — https://www.sescsp.org.br/programacao/fbc-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:FBC
+END:VALARM
+END:VEVENT
+END:VCALENDAR

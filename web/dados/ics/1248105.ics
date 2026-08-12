@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248105-0@agenda-sesc
+DTSTART:20260812T193000
+SUMMARY:A Queda do Céu
+LOCATION:Sesc Guarulhos
+DESCRIPTION:Dir. Eryk Rocha e Gabriela Cunha\, Brasil\, França e Itália\, 2024 — https://www.sescsp.org.br/programacao/a-queda-do-ceu-10
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A Queda do Céu
+END:VALARM
+END:VEVENT
+END:VCALENDAR

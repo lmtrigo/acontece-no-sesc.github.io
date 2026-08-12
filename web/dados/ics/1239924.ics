@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239924-0@agenda-sesc
+DTSTART:20260818T093000
+SUMMARY:Violino e Viola - Iniciação - Turma A
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Nicole Reis — https://www.sescsp.org.br/programacao/violino-e-viola-iniciacao-turma-a
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino e Viola - Iniciação - Turma A
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239924-1@agenda-sesc
+DTSTART:20260825T093000
+SUMMARY:Violino e Viola - Iniciação - Turma A
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Nicole Reis — https://www.sescsp.org.br/programacao/violino-e-viola-iniciacao-turma-a
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino e Viola - Iniciação - Turma A
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239924-2@agenda-sesc
+DTSTART:20260901T093000
+SUMMARY:Violino e Viola - Iniciação - Turma A
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Nicole Reis — https://www.sescsp.org.br/programacao/violino-e-viola-iniciacao-turma-a
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino e Viola - Iniciação - Turma A
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239924-3@agenda-sesc
+DTSTART:20260908T093000
+SUMMARY:Violino e Viola - Iniciação - Turma A
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Nicole Reis — https://www.sescsp.org.br/programacao/violino-e-viola-iniciacao-turma-a
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino e Viola - Iniciação - Turma A
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239924-4@agenda-sesc
+DTSTART:20260915T093000
+SUMMARY:Violino e Viola - Iniciação - Turma A
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Nicole Reis — https://www.sescsp.org.br/programacao/violino-e-viola-iniciacao-turma-a
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino e Viola - Iniciação - Turma A
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239924-5@agenda-sesc
+DTSTART:20260922T093000
+SUMMARY:Violino e Viola - Iniciação - Turma A
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Nicole Reis — https://www.sescsp.org.br/programacao/violino-e-viola-iniciacao-turma-a
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino e Viola - Iniciação - Turma A
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239924-6@agenda-sesc
+DTSTART:20260929T093000
+SUMMARY:Violino e Viola - Iniciação - Turma A
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Nicole Reis — https://www.sescsp.org.br/programacao/violino-e-viola-iniciacao-turma-a
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino e Viola - Iniciação - Turma A
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239924-7@agenda-sesc
+DTSTART:20261006T093000
+SUMMARY:Violino e Viola - Iniciação - Turma A
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Nicole Reis — https://www.sescsp.org.br/programacao/violino-e-viola-iniciacao-turma-a
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino e Viola - Iniciação - Turma A
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239612-20260819T190000@agenda-sesc
+DTSTART:20260819T190000
+SUMMARY:Ler as Literaturas Africanas em Língua Portuguesa
+LOCATION:Sesc Campinas
+DESCRIPTION:Com Profa. Dra. Marcia Valeria Zamboni — https://www.sescsp.org.br/programacao/ler-as-literaturas-africanas-em-lingua-portuguesa
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ler as Literaturas Africanas em Língua Portuguesa
+END:VALARM
+END:VEVENT
+END:VCALENDAR

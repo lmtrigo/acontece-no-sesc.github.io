@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240380-0@agenda-sesc
+DTSTART:20260829T203000
+SUMMARY:PQP! Palhaça Que Pariu
+LOCATION:Sesc Bauru — Avenida Aureliano Cardia\, 6-71 | Vila Cardia | BAURU  | SP | Cep: 17013-411
+DESCRIPTION:Com Julia Bertollini — https://www.sescsp.org.br/programacao/pqp-palhaca-que-pariu-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:PQP! Palhaça Que Pariu
+END:VALARM
+END:VEVENT
+END:VCALENDAR

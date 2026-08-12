@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248892-0@agenda-sesc
+DTSTART:20260819T160000
+SUMMARY:Cavaquinho - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Guilherme dos Santos\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/cavaquinho-iniciacao-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cavaquinho - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248892-1@agenda-sesc
+DTSTART:20260826T160000
+SUMMARY:Cavaquinho - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Guilherme dos Santos\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/cavaquinho-iniciacao-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cavaquinho - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248892-2@agenda-sesc
+DTSTART:20260902T160000
+SUMMARY:Cavaquinho - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Guilherme dos Santos\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/cavaquinho-iniciacao-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cavaquinho - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248892-3@agenda-sesc
+DTSTART:20260909T160000
+SUMMARY:Cavaquinho - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Guilherme dos Santos\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/cavaquinho-iniciacao-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cavaquinho - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248892-4@agenda-sesc
+DTSTART:20260916T160000
+SUMMARY:Cavaquinho - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Guilherme dos Santos\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/cavaquinho-iniciacao-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cavaquinho - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248892-5@agenda-sesc
+DTSTART:20260923T160000
+SUMMARY:Cavaquinho - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Guilherme dos Santos\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/cavaquinho-iniciacao-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cavaquinho - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248892-6@agenda-sesc
+DTSTART:20260930T160000
+SUMMARY:Cavaquinho - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Guilherme dos Santos\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/cavaquinho-iniciacao-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cavaquinho - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248892-7@agenda-sesc
+DTSTART:20261007T160000
+SUMMARY:Cavaquinho - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Guilherme dos Santos\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/cavaquinho-iniciacao-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cavaquinho - Iniciação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

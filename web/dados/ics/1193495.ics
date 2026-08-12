@@ -1,0 +1,77 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1193495-0@agenda-sesc
+DTSTART:20260811T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:https://www.sescsp.org.br/programacao/movimento-consciente-93
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1193495-1@agenda-sesc
+DTSTART:20260813T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:https://www.sescsp.org.br/programacao/movimento-consciente-93
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1193495-2@agenda-sesc
+DTSTART:20260818T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:https://www.sescsp.org.br/programacao/movimento-consciente-93
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1193495-3@agenda-sesc
+DTSTART:20260820T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:https://www.sescsp.org.br/programacao/movimento-consciente-93
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1193495-4@agenda-sesc
+DTSTART:20260825T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:https://www.sescsp.org.br/programacao/movimento-consciente-93
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1193495-5@agenda-sesc
+DTSTART:20260827T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:https://www.sescsp.org.br/programacao/movimento-consciente-93
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:129982-0@agenda-sesc
+DTSTART:20260827T190000
+SUMMARY:Ilustradoria
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com Sophia Andreazza\, designer\, ilustradora e artista visual | Mediação: Michell Ed\, ilustrador\, quadrinista e físico — https://www.sescsp.org.br/programacao/ilustradoria
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ilustradoria
+END:VALARM
+END:VEVENT
+END:VCALENDAR

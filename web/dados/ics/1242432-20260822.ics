@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242432-20260822T190000@agenda-sesc
+DTSTART:20260822T190000
+SUMMARY:Oficina de bumba-meu-boi do Maranhão
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Jhonathan Azevedo - Caboclo de Pena do Boi de Maracanã - São Luís do Maranhão - MA e Kelson Barros\, Coreógrafo e Diretor da Clarin Cia. de Dança — https://www.sescsp.org.br/programacao/oficina-de-bumba-meu-boi-do-maranhao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Oficina de bumba-meu-boi do Maranhão
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237166-0@agenda-sesc
+DTSTART:20260811T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237166-1@agenda-sesc
+DTSTART:20260813T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237166-2@agenda-sesc
+DTSTART:20260818T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237166-3@agenda-sesc
+DTSTART:20260820T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237166-4@agenda-sesc
+DTSTART:20260825T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237166-5@agenda-sesc
+DTSTART:20260827T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237166-6@agenda-sesc
+DTSTART:20260901T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237166-7@agenda-sesc
+DTSTART:20260903T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237166-8@agenda-sesc
+DTSTART:20260908T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237166-9@agenda-sesc
+DTSTART:20260910T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237166-10@agenda-sesc
+DTSTART:20260915T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237166-11@agenda-sesc
+DTSTART:20260917T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237166-12@agenda-sesc
+DTSTART:20260922T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237166-13@agenda-sesc
+DTSTART:20260924T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237166-14@agenda-sesc
+DTSTART:20260929T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237166-15@agenda-sesc
+DTSTART:20261001T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237166-16@agenda-sesc
+DTSTART:20261006T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237166-17@agenda-sesc
+DTSTART:20261008T160000
+SUMMARY:Chi Kung
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Ellaine Del boni e Alessandra Paz — https://www.sescsp.org.br/programacao/chi-kung-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Chi Kung
+END:VALARM
+END:VEVENT
+END:VCALENDAR

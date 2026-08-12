@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241318-20260823T150000@agenda-sesc
+DTSTART:20260823T150000
+SUMMARY:No Coração da Lua
+LOCATION:Sesc Santo Amaro — Rua Amador Bueno\, 505 | Santo Amaro | SAO PAULO  | SP | Cep: 04752-005
+DESCRIPTION:com Grupo Estação de Teatro (RN) — https://www.sescsp.org.br/programacao/no-coracao-da-lua
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:No Coração da Lua
+END:VALARM
+END:VEVENT
+END:VCALENDAR

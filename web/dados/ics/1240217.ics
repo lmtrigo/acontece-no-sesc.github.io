@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240217-0@agenda-sesc
+DTSTART:20260818T160000
+SUMMARY:Canto Coral - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Suelen Aureo - Educadora do Centro de Música Vila Mariana — https://www.sescsp.org.br/programacao/canto-coral-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Canto Coral - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240217-1@agenda-sesc
+DTSTART:20260825T160000
+SUMMARY:Canto Coral - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Suelen Aureo - Educadora do Centro de Música Vila Mariana — https://www.sescsp.org.br/programacao/canto-coral-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Canto Coral - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240217-2@agenda-sesc
+DTSTART:20260901T160000
+SUMMARY:Canto Coral - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Suelen Aureo - Educadora do Centro de Música Vila Mariana — https://www.sescsp.org.br/programacao/canto-coral-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Canto Coral - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240217-3@agenda-sesc
+DTSTART:20260908T160000
+SUMMARY:Canto Coral - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Suelen Aureo - Educadora do Centro de Música Vila Mariana — https://www.sescsp.org.br/programacao/canto-coral-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Canto Coral - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240217-4@agenda-sesc
+DTSTART:20260915T160000
+SUMMARY:Canto Coral - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Suelen Aureo - Educadora do Centro de Música Vila Mariana — https://www.sescsp.org.br/programacao/canto-coral-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Canto Coral - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240217-5@agenda-sesc
+DTSTART:20260922T160000
+SUMMARY:Canto Coral - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Suelen Aureo - Educadora do Centro de Música Vila Mariana — https://www.sescsp.org.br/programacao/canto-coral-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Canto Coral - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240217-6@agenda-sesc
+DTSTART:20260929T160000
+SUMMARY:Canto Coral - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Suelen Aureo - Educadora do Centro de Música Vila Mariana — https://www.sescsp.org.br/programacao/canto-coral-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Canto Coral - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240217-7@agenda-sesc
+DTSTART:20261006T160000
+SUMMARY:Canto Coral - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Suelen Aureo - Educadora do Centro de Música Vila Mariana — https://www.sescsp.org.br/programacao/canto-coral-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Canto Coral - Iniciação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

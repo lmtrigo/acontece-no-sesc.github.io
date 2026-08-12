@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:60274-0@agenda-sesc
+DTSTART:20260811T140000
+SUMMARY:Violão: básico e intermediário
+LOCATION:Sesc Rio Preto
+DESCRIPTION:Com Antonio Miguel\, músico — https://www.sescsp.org.br/programacao/curso-de-violao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violão: básico e intermediário
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:60274-1@agenda-sesc
+DTSTART:20260818T140000
+SUMMARY:Violão: básico e intermediário
+LOCATION:Sesc Rio Preto
+DESCRIPTION:Com Antonio Miguel\, músico — https://www.sescsp.org.br/programacao/curso-de-violao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violão: básico e intermediário
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:60274-2@agenda-sesc
+DTSTART:20260825T140000
+SUMMARY:Violão: básico e intermediário
+LOCATION:Sesc Rio Preto
+DESCRIPTION:Com Antonio Miguel\, músico — https://www.sescsp.org.br/programacao/curso-de-violao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violão: básico e intermediário
+END:VALARM
+END:VEVENT
+END:VCALENDAR

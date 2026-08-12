@@ -1,0 +1,245 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248078-0@agenda-sesc
+DTSTART:20260828T200000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-1@agenda-sesc
+DTSTART:20260829T200000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-2@agenda-sesc
+DTSTART:20260830T180000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-3@agenda-sesc
+DTSTART:20260904T200000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-4@agenda-sesc
+DTSTART:20260905T200000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-5@agenda-sesc
+DTSTART:20260906T180000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-6@agenda-sesc
+DTSTART:20260911T200000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-7@agenda-sesc
+DTSTART:20260912T200000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-8@agenda-sesc
+DTSTART:20260913T180000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-9@agenda-sesc
+DTSTART:20260918T200000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-10@agenda-sesc
+DTSTART:20260919T150000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-11@agenda-sesc
+DTSTART:20260919T200000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-12@agenda-sesc
+DTSTART:20260920T180000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-13@agenda-sesc
+DTSTART:20260924T200000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-14@agenda-sesc
+DTSTART:20260925T200000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-15@agenda-sesc
+DTSTART:20260926T200000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-16@agenda-sesc
+DTSTART:20260927T180000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-17@agenda-sesc
+DTSTART:20261001T200000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-18@agenda-sesc
+DTSTART:20261002T200000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248078-19@agenda-sesc
+DTSTART:20261003T200000
+SUMMARY:Nossa Conquista
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Núcleo Negro de Pesquisa e Criação — https://www.sescsp.org.br/programacao/nossa-conquista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nossa Conquista
+END:VALARM
+END:VEVENT
+END:VCALENDAR

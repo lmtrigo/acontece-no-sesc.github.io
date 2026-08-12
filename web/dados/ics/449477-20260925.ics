@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:449477-20260925T183000@agenda-sesc
+DTSTART:20260925T183000
+SUMMARY:Prática Coletiva de Cordas
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Pedro Beviláqua e Raimundo Damasceno — https://www.sescsp.org.br/programacao/teste-para-o-curso-pratica-coletiva-de-cordas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Prática Coletiva de Cordas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

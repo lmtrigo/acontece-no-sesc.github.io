@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244319-20260811T190000@agenda-sesc
+DTSTART:20260811T190000
+SUMMARY:Fotografia: do Analógico a Inteligência Artificial
+LOCATION:Sesc Pinheiros
+DESCRIPTION:com Roger Sassaki e Leo Saldanha — https://www.sescsp.org.br/programacao/fotografia-do-analogico-a-inteligencia-artificial
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Fotografia: do Analógico a Inteligência Artificial
+END:VALARM
+END:VEVENT
+END:VCALENDAR

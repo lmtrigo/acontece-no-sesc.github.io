@@ -1,0 +1,53 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249235-0@agenda-sesc
+DTSTART:20260922T100000
+SUMMARY:Hóquei subaquático
+LOCATION:Sesc Consolação
+DESCRIPTION:https://www.sescsp.org.br/programacao/hoquei-subaquatico
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Hóquei subaquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1249235-1@agenda-sesc
+DTSTART:20260923T100000
+SUMMARY:Hóquei subaquático
+LOCATION:Sesc Consolação
+DESCRIPTION:https://www.sescsp.org.br/programacao/hoquei-subaquatico
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Hóquei subaquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1249235-2@agenda-sesc
+DTSTART:20260924T100000
+SUMMARY:Hóquei subaquático
+LOCATION:Sesc Consolação
+DESCRIPTION:https://www.sescsp.org.br/programacao/hoquei-subaquatico
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Hóquei subaquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1249235-3@agenda-sesc
+DTSTART:20260925T100000
+SUMMARY:Hóquei subaquático
+LOCATION:Sesc Consolação
+DESCRIPTION:https://www.sescsp.org.br/programacao/hoquei-subaquatico
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Hóquei subaquático
+END:VALARM
+END:VEVENT
+END:VCALENDAR

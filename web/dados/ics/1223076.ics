@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1223076-0@agenda-sesc
+DTSTART:20260820T143000
+SUMMARY:Mãos que criam: Feira de economia criativa feita por pessoas idosas
+LOCATION:Sesc Campo Limpo
+DESCRIPTION:Produção Vitrine sem Rótulos — https://www.sescsp.org.br/programacao/maos-que-criam-feira-de-economia-criativa-feita-por-pessoas-idosas-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mãos que criam: Feira de economia criativa feita por pessoas idosas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

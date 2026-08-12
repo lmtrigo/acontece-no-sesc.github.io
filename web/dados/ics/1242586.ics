@@ -1,0 +1,53 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242586-0@agenda-sesc
+DTSTART:20260812T140000
+SUMMARY:Começando nas Artes: Guache
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Bruno Müller\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/comecando-nas-artes-guache
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Começando nas Artes: Guache
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242586-1@agenda-sesc
+DTSTART:20260819T140000
+SUMMARY:Começando nas Artes: Guache
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Bruno Müller\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/comecando-nas-artes-guache
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Começando nas Artes: Guache
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242586-2@agenda-sesc
+DTSTART:20260826T140000
+SUMMARY:Começando nas Artes: Guache
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Bruno Müller\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/comecando-nas-artes-guache
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Começando nas Artes: Guache
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242586-3@agenda-sesc
+DTSTART:20260902T140000
+SUMMARY:Começando nas Artes: Guache
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Bruno Müller\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/comecando-nas-artes-guache
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Começando nas Artes: Guache
+END:VALARM
+END:VEVENT
+END:VCALENDAR

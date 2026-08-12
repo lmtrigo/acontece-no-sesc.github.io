@@ -1,0 +1,53 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239964-0@agenda-sesc
+DTSTART:20260813T143000
+SUMMARY:Ateliê aberto: simulações físicas com programação
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Alexandre Villares\, educador de Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-aberto-simulacoes-fisicas-com-programacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê aberto: simulações físicas com programação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239964-1@agenda-sesc
+DTSTART:20260820T143000
+SUMMARY:Ateliê aberto: simulações físicas com programação
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Alexandre Villares\, educador de Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-aberto-simulacoes-fisicas-com-programacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê aberto: simulações físicas com programação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239964-2@agenda-sesc
+DTSTART:20260827T143000
+SUMMARY:Ateliê aberto: simulações físicas com programação
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Alexandre Villares\, educador de Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-aberto-simulacoes-fisicas-com-programacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê aberto: simulações físicas com programação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239964-3@agenda-sesc
+DTSTART:20260903T143000
+SUMMARY:Ateliê aberto: simulações físicas com programação
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Alexandre Villares\, educador de Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-aberto-simulacoes-fisicas-com-programacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê aberto: simulações físicas com programação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

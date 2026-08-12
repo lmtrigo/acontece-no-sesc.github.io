@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237577-0@agenda-sesc
+DTSTART:20260830T150000
+SUMMARY:Literatura Coreana
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com Denise Nobre (Sarangbang) e Yara Hwang. Mediação de Melissa Veludo — https://www.sescsp.org.br/programacao/literatura-coreana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Literatura Coreana
+END:VALARM
+END:VEVENT
+END:VCALENDAR

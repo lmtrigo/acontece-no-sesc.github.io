@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1144897-0@agenda-sesc
+DTSTART:20260815T090000
+SUMMARY:Bocha Paralímpica
+LOCATION:Sesc Bertioga
+DESCRIPTION:Com Onda BGF e Vinícius Camargo — https://www.sescsp.org.br/programacao/mar-de-acesso-bocha-paralimpica
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bocha Paralímpica
+END:VALARM
+END:VEVENT
+END:VCALENDAR

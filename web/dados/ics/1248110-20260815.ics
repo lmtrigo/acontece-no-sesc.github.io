@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248110-20260815T150000@agenda-sesc
+DTSTART:20260815T150000
+SUMMARY:Pedra da Calma: Worry Stone
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras do Programa Juventudes — https://www.sescsp.org.br/programacao/pedra-da-calma-worry-stone
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pedra da Calma: Worry Stone
+END:VALARM
+END:VEVENT
+END:VCALENDAR

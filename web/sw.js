@@ -22,6 +22,22 @@ self.addEventListener('fetch', (e) => {
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
 
+  // Um .ics só abre o app de calendario se chegar como text/calendar.
+  // Nem todo host declara esse tipo (o http.server do Python manda
+  // application/octet-stream), entao o proprio worker corrige o cabecalho.
+  if (url.pathname.endsWith('.ics')) {
+    e.respondWith(
+      fetch(req).then((r) => r.blob().then((b) => new Response(b, {
+        status: r.status,
+        headers: {
+          'Content-Type': 'text/calendar; charset=utf-8',
+          'Content-Disposition': 'inline'
+        }
+      })))
+    );
+    return;
+  }
+
   if (url.pathname.endsWith('eventos.json')) {
     e.respondWith(
       fetch(req)

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244442-20260905T140000@agenda-sesc
+DTSTART:20260905T140000
+SUMMARY:Descarte de Medicamentos: da Política Pública à Organização Doméstica
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com Cláudia Araújo\, farmacêutica bioquímica e coordenadora do Grupo Técnico de Ações Afirmativas para Promoção da Igualdade Racial do CRFSP — https://www.sescsp.org.br/programacao/descarte-de-medicamentos-da-politica-publica-a-organizacao-domestica
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Descarte de Medicamentos: da Política Pública à Organização Doméstica
+END:VALARM
+END:VEVENT
+END:VCALENDAR

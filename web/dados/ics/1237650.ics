@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237650-0@agenda-sesc
+DTSTART:20260902T170000
+SUMMARY:Meu Odiado Crítico
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com Miguel De Almeida e Romulo Fróes. Mediação de Adriana Ferreira Silva — https://www.sescsp.org.br/programacao/meu-odiado-critico-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Meu Odiado Crítico
+END:VALARM
+END:VEVENT
+END:VCALENDAR

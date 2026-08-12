@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246242-20260915T190000@agenda-sesc
+DTSTART:20260915T190000
+SUMMARY:LIVRO-LIVRE: Experiências em gravura e livro de artista
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Gráfica Experimental (André Bonani e Roger Beatjesus) — https://www.sescsp.org.br/programacao/livro-livre-experiencias-em-gravura-e-livro-de-artista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:LIVRO-LIVRE: Experiências em gravura e livro de artista
+END:VALARM
+END:VEVENT
+END:VCALENDAR

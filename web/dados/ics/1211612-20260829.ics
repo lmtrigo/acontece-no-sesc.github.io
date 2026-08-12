@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1211612-20260829T150000@agenda-sesc
+DTSTART:20260829T150000
+SUMMARY:Clube de Leitura Próxima Página
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Camilla Dias (@camillaeseuslivros)\, mediadora e curadora literária — https://www.sescsp.org.br/programacao/clube-de-leitura-proxima-pagina
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clube de Leitura Próxima Página
+END:VALARM
+END:VEVENT
+END:VCALENDAR

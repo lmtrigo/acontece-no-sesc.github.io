@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247793-20260820T083000@agenda-sesc
+DTSTART:20260820T083000
+SUMMARY:Plantio de Ervas aromáticas e compostagem de resíduos alimentares
+LOCATION:Sesc Araraquara
+DESCRIPTION:com a bióloga Mariana Crespo — https://www.sescsp.org.br/programacao/plantio-de-ervas-aromaticas-e-compostagem-de-residuos-alimentares
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Plantio de Ervas aromáticas e compostagem de resíduos alimentares
+END:VALARM
+END:VEVENT
+END:VCALENDAR

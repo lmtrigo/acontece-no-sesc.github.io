@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243176-0@agenda-sesc
+DTSTART:20260822T140000
+SUMMARY:Vivência da Comicidade\, Dê o Seu Ridículo!
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Ana Luiza Bellacosta — https://www.sescsp.org.br/programacao/vivencia-da-comicidade-de-o-seu-ridiculo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Vivência da Comicidade\, Dê o Seu Ridículo!
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,113 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245389-0@agenda-sesc
+DTSTART:20260812T183000
+SUMMARY:Esporte Adulto - Clube do Vôlei
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-volei-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Vôlei
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245389-1@agenda-sesc
+DTSTART:20260819T183000
+SUMMARY:Esporte Adulto - Clube do Vôlei
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-volei-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Vôlei
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245389-2@agenda-sesc
+DTSTART:20260826T183000
+SUMMARY:Esporte Adulto - Clube do Vôlei
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-volei-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Vôlei
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245389-3@agenda-sesc
+DTSTART:20260902T183000
+SUMMARY:Esporte Adulto - Clube do Vôlei
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-volei-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Vôlei
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245389-4@agenda-sesc
+DTSTART:20260909T183000
+SUMMARY:Esporte Adulto - Clube do Vôlei
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-volei-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Vôlei
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245389-5@agenda-sesc
+DTSTART:20260916T183000
+SUMMARY:Esporte Adulto - Clube do Vôlei
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-volei-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Vôlei
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245389-6@agenda-sesc
+DTSTART:20260923T183000
+SUMMARY:Esporte Adulto - Clube do Vôlei
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-volei-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Vôlei
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245389-7@agenda-sesc
+DTSTART:20260930T183000
+SUMMARY:Esporte Adulto - Clube do Vôlei
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-volei-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Vôlei
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245389-8@agenda-sesc
+DTSTART:20261007T183000
+SUMMARY:Esporte Adulto - Clube do Vôlei
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-volei-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Vôlei
+END:VALARM
+END:VEVENT
+END:VCALENDAR

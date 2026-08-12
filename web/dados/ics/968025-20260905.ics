@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:968025-20260905T160000@agenda-sesc
+DTSTART:20260905T160000
+SUMMARY:Traquinartes
+LOCATION:Sesc Santana
+DESCRIPTION:com educadores infantojuvenis do Sesc — https://www.sescsp.org.br/programacao/traquinartes-brincadeiras-de-quintal
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Traquinartes
+END:VALARM
+END:VEVENT
+END:VCALENDAR

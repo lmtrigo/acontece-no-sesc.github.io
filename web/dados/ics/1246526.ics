@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246526-0@agenda-sesc
+DTSTART:20260905T110000
+SUMMARY:Mercado de Pinheiros | Festival de Turismo - Perto da Gente
+LOCATION:Sesc Pinheiros
+DESCRIPTION:https://www.sescsp.org.br/programacao/mercado-de-pinheiros-festival-de-turismo-perto-da-gente
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mercado de Pinheiros | Festival de Turismo - Perto da Gente
+END:VALARM
+END:VEVENT
+END:VCALENDAR

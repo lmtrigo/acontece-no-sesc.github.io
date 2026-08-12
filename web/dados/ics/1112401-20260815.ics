@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1112401-20260815T103000@agenda-sesc
+DTSTART:20260815T103000
+SUMMARY:Basquete
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:Com o professor Luiz Waldemar. — https://www.sescsp.org.br/programacao/basquete-iniciacao-esportiva
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Basquete
+END:VALARM
+END:VEVENT
+END:VCALENDAR

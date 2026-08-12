@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242738-0@agenda-sesc
+DTSTART:20260816T150000
+SUMMARY:Hocus Pocus: Um pai de presente
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:apresentação de Kiara Terra\, seguida de bate-papo com a ilustradora Ionit Zilberman — https://www.sescsp.org.br/programacao/hocus-pocus-um-pai-de-presente
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Hocus Pocus: Um pai de presente
+END:VALARM
+END:VEVENT
+END:VCALENDAR

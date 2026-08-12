@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245826-0@agenda-sesc
+DTSTART:20260827T200000
+SUMMARY:EIN - Encontros Instrumentais 4\, em Araçatuba
+LOCATION:Sesc Birigui — Rua Manoel Domingues Ventura\, 121 | Vila Xavier | BIRIGUI  | SP | Cep: 16203-009
+DESCRIPTION:Com Sthe Araujo\, Diego Estevam e Richard Fermino — https://www.sescsp.org.br/programacao/ein-encontros-instrumentais-4-em-aracatuba
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:EIN - Encontros Instrumentais 4\, em Araçatuba
+END:VALARM
+END:VEVENT
+END:VCALENDAR

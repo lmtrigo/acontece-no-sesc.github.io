@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243910-0@agenda-sesc
+DTSTART:20260812T160000
+SUMMARY:Educação midiática na prática
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com a autora Januária Cristina Alves - mediação João Paulo Paladino\, educador. — https://www.sescsp.org.br/programacao/educacao-midiatica-na-pratica-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Educação midiática na prática
+END:VALARM
+END:VEVENT
+END:VCALENDAR

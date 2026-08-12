@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240019-20260911T143000@agenda-sesc
+DTSTART:20260911T143000
+SUMMARY:Clarinete  - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Suelen Aureo - Educadora do Centro de Música Vila Mariana — https://www.sescsp.org.br/programacao/clarinete-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clarinete  - Iniciação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

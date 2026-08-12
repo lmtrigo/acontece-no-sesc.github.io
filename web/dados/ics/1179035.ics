@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1179035-0@agenda-sesc
+DTSTART:20260815T140000
+SUMMARY:Leis de Incentivo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Lab17 - Incubadora de Projetos Socioculturais\, com Cris Anovazzi. — https://www.sescsp.org.br/programacao/leis-de-incentivo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Leis de Incentivo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

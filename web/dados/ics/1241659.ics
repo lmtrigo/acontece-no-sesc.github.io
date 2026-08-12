@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241659-0@agenda-sesc
+DTSTART:20260815T103000
+SUMMARY:Jardim de Mandacaru: semeaduras brincantes para colher novos tempos
+LOCATION:Sesc Ipiranga
+DESCRIPTION:https://www.sescsp.org.br/programacao/jardim-de-mandacaru-semeaduras-brincantes-para-colher-novos-tempos-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Jardim de Mandacaru: semeaduras brincantes para colher novos tempos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1241659-1@agenda-sesc
+DTSTART:20260822T103000
+SUMMARY:Jardim de Mandacaru: semeaduras brincantes para colher novos tempos
+LOCATION:Sesc Ipiranga
+DESCRIPTION:https://www.sescsp.org.br/programacao/jardim-de-mandacaru-semeaduras-brincantes-para-colher-novos-tempos-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Jardim de Mandacaru: semeaduras brincantes para colher novos tempos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1241659-2@agenda-sesc
+DTSTART:20260829T103000
+SUMMARY:Jardim de Mandacaru: semeaduras brincantes para colher novos tempos
+LOCATION:Sesc Ipiranga
+DESCRIPTION:https://www.sescsp.org.br/programacao/jardim-de-mandacaru-semeaduras-brincantes-para-colher-novos-tempos-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Jardim de Mandacaru: semeaduras brincantes para colher novos tempos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241857-20260815T120000@agenda-sesc
+DTSTART:20260815T120000
+SUMMARY:Pé de Manacá
+LOCATION:Sesc Santana
+DESCRIPTION:com Alice Vaz\, Beatriz da Matta\, Maria Carolina\, Sofia Baroukh. Mediação dançante de Escola das Bonita — https://www.sescsp.org.br/programacao/pe-de-manaca-10
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pé de Manacá
+END:VALARM
+END:VEVENT
+END:VCALENDAR

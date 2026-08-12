@@ -1,0 +1,197 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1203947-0@agenda-sesc
+DTSTART:20260811T133000
+SUMMARY:Divino: Duzentos
+LOCATION:Sesc Piracicaba
+DESCRIPTION:por Julia Benetton — https://www.sescsp.org.br/programacao/entreparedes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Divino: Duzentos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1203947-1@agenda-sesc
+DTSTART:20260812T133000
+SUMMARY:Divino: Duzentos
+LOCATION:Sesc Piracicaba
+DESCRIPTION:por Julia Benetton — https://www.sescsp.org.br/programacao/entreparedes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Divino: Duzentos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1203947-2@agenda-sesc
+DTSTART:20260813T133000
+SUMMARY:Divino: Duzentos
+LOCATION:Sesc Piracicaba
+DESCRIPTION:por Julia Benetton — https://www.sescsp.org.br/programacao/entreparedes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Divino: Duzentos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1203947-3@agenda-sesc
+DTSTART:20260814T133000
+SUMMARY:Divino: Duzentos
+LOCATION:Sesc Piracicaba
+DESCRIPTION:por Julia Benetton — https://www.sescsp.org.br/programacao/entreparedes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Divino: Duzentos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1203947-4@agenda-sesc
+DTSTART:20260815T133000
+SUMMARY:Divino: Duzentos
+LOCATION:Sesc Piracicaba
+DESCRIPTION:por Julia Benetton — https://www.sescsp.org.br/programacao/entreparedes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Divino: Duzentos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1203947-5@agenda-sesc
+DTSTART:20260816T133000
+SUMMARY:Divino: Duzentos
+LOCATION:Sesc Piracicaba
+DESCRIPTION:por Julia Benetton — https://www.sescsp.org.br/programacao/entreparedes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Divino: Duzentos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1203947-6@agenda-sesc
+DTSTART:20260818T133000
+SUMMARY:Divino: Duzentos
+LOCATION:Sesc Piracicaba
+DESCRIPTION:por Julia Benetton — https://www.sescsp.org.br/programacao/entreparedes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Divino: Duzentos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1203947-7@agenda-sesc
+DTSTART:20260819T133000
+SUMMARY:Divino: Duzentos
+LOCATION:Sesc Piracicaba
+DESCRIPTION:por Julia Benetton — https://www.sescsp.org.br/programacao/entreparedes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Divino: Duzentos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1203947-8@agenda-sesc
+DTSTART:20260820T133000
+SUMMARY:Divino: Duzentos
+LOCATION:Sesc Piracicaba
+DESCRIPTION:por Julia Benetton — https://www.sescsp.org.br/programacao/entreparedes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Divino: Duzentos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1203947-9@agenda-sesc
+DTSTART:20260821T133000
+SUMMARY:Divino: Duzentos
+LOCATION:Sesc Piracicaba
+DESCRIPTION:por Julia Benetton — https://www.sescsp.org.br/programacao/entreparedes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Divino: Duzentos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1203947-10@agenda-sesc
+DTSTART:20260822T133000
+SUMMARY:Divino: Duzentos
+LOCATION:Sesc Piracicaba
+DESCRIPTION:por Julia Benetton — https://www.sescsp.org.br/programacao/entreparedes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Divino: Duzentos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1203947-11@agenda-sesc
+DTSTART:20260823T133000
+SUMMARY:Divino: Duzentos
+LOCATION:Sesc Piracicaba
+DESCRIPTION:por Julia Benetton — https://www.sescsp.org.br/programacao/entreparedes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Divino: Duzentos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1203947-12@agenda-sesc
+DTSTART:20260825T133000
+SUMMARY:Divino: Duzentos
+LOCATION:Sesc Piracicaba
+DESCRIPTION:por Julia Benetton — https://www.sescsp.org.br/programacao/entreparedes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Divino: Duzentos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1203947-13@agenda-sesc
+DTSTART:20260826T133000
+SUMMARY:Divino: Duzentos
+LOCATION:Sesc Piracicaba
+DESCRIPTION:por Julia Benetton — https://www.sescsp.org.br/programacao/entreparedes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Divino: Duzentos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1203947-14@agenda-sesc
+DTSTART:20260827T133000
+SUMMARY:Divino: Duzentos
+LOCATION:Sesc Piracicaba
+DESCRIPTION:por Julia Benetton — https://www.sescsp.org.br/programacao/entreparedes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Divino: Duzentos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1203947-15@agenda-sesc
+DTSTART:20260828T133000
+SUMMARY:Divino: Duzentos
+LOCATION:Sesc Piracicaba
+DESCRIPTION:por Julia Benetton — https://www.sescsp.org.br/programacao/entreparedes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Divino: Duzentos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

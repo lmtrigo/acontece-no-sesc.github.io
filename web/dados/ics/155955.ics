@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:155955-0@agenda-sesc
+DTSTART:20260813T133000
+SUMMARY:Iniciando no Smartphone – Trabalho Social com Pessoas Idosas
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Bruno Müller\, educador em Tecnologias e Artes do Sesc. — https://www.sescsp.org.br/programacao/iniciando-no-smartphone-um-be-a-ba-para-pessoas-idosas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Iniciando no Smartphone – Trabalho Social com Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:155955-1@agenda-sesc
+DTSTART:20260820T133000
+SUMMARY:Iniciando no Smartphone – Trabalho Social com Pessoas Idosas
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Bruno Müller\, educador em Tecnologias e Artes do Sesc. — https://www.sescsp.org.br/programacao/iniciando-no-smartphone-um-be-a-ba-para-pessoas-idosas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Iniciando no Smartphone – Trabalho Social com Pessoas Idosas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245406-0@agenda-sesc
+DTSTART:20260818T190000
+SUMMARY:O beijo no asfalto
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Direção: Murilo Benício | Drama | Brasil | 2017 — https://www.sescsp.org.br/programacao/o-beijo-no-asfalto-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O beijo no asfalto
+END:VALARM
+END:VEVENT
+END:VCALENDAR

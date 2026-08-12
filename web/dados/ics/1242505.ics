@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242505-0@agenda-sesc
+DTSTART:20260815T140000
+SUMMARY:Jogo do Sîni e Tamukú: Estratégia para Vencer
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Kleber Terena\, artista e agente cultural — https://www.sescsp.org.br/programacao/jogo-do-sini-e-tamuku-estrategia-para-vencer
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Jogo do Sîni e Tamukú: Estratégia para Vencer
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242505-1@agenda-sesc
+DTSTART:20260822T140000
+SUMMARY:Jogo do Sîni e Tamukú: Estratégia para Vencer
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Kleber Terena\, artista e agente cultural — https://www.sescsp.org.br/programacao/jogo-do-sini-e-tamuku-estrategia-para-vencer
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Jogo do Sîni e Tamukú: Estratégia para Vencer
+END:VALARM
+END:VEVENT
+END:VCALENDAR

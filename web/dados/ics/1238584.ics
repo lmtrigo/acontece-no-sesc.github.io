@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238584-0@agenda-sesc
+DTSTART:20260907T130000
+SUMMARY:Era uma vez um cartaz que virou fanzine
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com La Bici Press — https://www.sescsp.org.br/programacao/era-uma-vez-um-cartaz-que-virou-fanzine
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Era uma vez um cartaz que virou fanzine
+END:VALARM
+END:VEVENT
+END:VCALENDAR

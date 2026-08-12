@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1236908-20260906T093000@agenda-sesc
+DTSTART:20260906T093000
+SUMMARY:Skate Para Todas as Pessoas
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com Associação das Minas — https://www.sescsp.org.br/programacao/skate-para-todas-as-pessoas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Skate Para Todas as Pessoas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

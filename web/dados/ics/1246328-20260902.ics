@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246328-20260902T190000@agenda-sesc
+DTSTART:20260902T190000
+SUMMARY:Tecelagem artística avançada
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Tiyoko Tomikawa — https://www.sescsp.org.br/programacao/tecelagem-artistica-avancada-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tecelagem artística avançada
+END:VALARM
+END:VEVENT
+END:VCALENDAR

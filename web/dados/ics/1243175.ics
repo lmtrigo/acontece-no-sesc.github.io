@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243175-0@agenda-sesc
+DTSTART:20260822T142000
+SUMMARY:O Esporte como Ferramenta de Empoderamento para Mulheres Idosas
+LOCATION:Sesc Campinas
+DESCRIPTION:Com Fabienne Guttin\, nadadora master e Profa. Dra. Grace Gomes. Mediação: Marta Fontenele\, gerontóloga. — https://www.sescsp.org.br/programacao/o-esporte-como-ferramenta-de-empoderamento-para-mulheres-idosas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Esporte como Ferramenta de Empoderamento para Mulheres Idosas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

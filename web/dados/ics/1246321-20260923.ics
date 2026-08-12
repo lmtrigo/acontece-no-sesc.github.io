@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246321-20260923T190000@agenda-sesc
+DTSTART:20260923T190000
+SUMMARY:Intervenções e Contrastes na Fotografia Preto e Branco - Intermediário
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Edison Angeloni — https://www.sescsp.org.br/programacao/intervencoes-e-contrastes-na-fotografia-preto-e-branco-intermediario-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Intervenções e Contrastes na Fotografia Preto e Branco - Intermediário
+END:VALARM
+END:VEVENT
+END:VCALENDAR

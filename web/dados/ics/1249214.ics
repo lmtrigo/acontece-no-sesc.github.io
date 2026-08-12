@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249214-0@agenda-sesc
+DTSTART:20260927T160000
+SUMMARY:Baile do Cha - Edição Semana MOVE 2026
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Andarilho Cha — https://www.sescsp.org.br/programacao/baile-do-cha-edicao-semana-move-2026
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Baile do Cha - Edição Semana MOVE 2026
+END:VALARM
+END:VEVENT
+END:VCALENDAR

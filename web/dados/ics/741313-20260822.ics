@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:741313-20260822T103000@agenda-sesc
+DTSTART:20260822T103000
+SUMMARY:Nadando Sem Medo
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com educadores(as) de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/nadando-sem-medo-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nadando Sem Medo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238669-0@agenda-sesc
+DTSTART:20260815T173000
+SUMMARY:Aulas de Black Charme
+LOCATION:Sesc 14 Bis
+DESCRIPTION:Com Thay Ohana — https://www.sescsp.org.br/programacao/aulas-de-black-charme
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Aulas de Black Charme
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238669-1@agenda-sesc
+DTSTART:20260822T173000
+SUMMARY:Aulas de Black Charme
+LOCATION:Sesc 14 Bis
+DESCRIPTION:Com Thay Ohana — https://www.sescsp.org.br/programacao/aulas-de-black-charme
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Aulas de Black Charme
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238669-2@agenda-sesc
+DTSTART:20260829T173000
+SUMMARY:Aulas de Black Charme
+LOCATION:Sesc 14 Bis
+DESCRIPTION:Com Thay Ohana — https://www.sescsp.org.br/programacao/aulas-de-black-charme
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Aulas de Black Charme
+END:VALARM
+END:VEVENT
+END:VCALENDAR

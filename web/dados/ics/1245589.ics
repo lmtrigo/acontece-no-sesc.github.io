@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245589-0@agenda-sesc
+DTSTART:20260821T180000
+SUMMARY:Meteoritos\, em Birigui.
+LOCATION:Sesc Birigui
+DESCRIPTION:Com equipe de educadores Fundeb de Bauru — https://www.sescsp.org.br/programacao/meteoritos-em-birigui
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Meteoritos\, em Birigui.
+END:VALARM
+END:VEVENT
+END:VCALENDAR

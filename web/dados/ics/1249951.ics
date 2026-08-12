@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249951-0@agenda-sesc
+DTSTART:20260902T193000
+SUMMARY:A Forma da Água
+LOCATION:Sesc Registro
+DESCRIPTION:Dir. Guillermo del Toro\, EUA\, Fantasia\, 2018. — https://www.sescsp.org.br/programacao/a-forma-da-agua-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A Forma da Água
+END:VALARM
+END:VEVENT
+END:VCALENDAR

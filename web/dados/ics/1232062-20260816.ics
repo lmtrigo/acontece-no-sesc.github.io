@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1232062-20260816T183000@agenda-sesc
+DTSTART:20260816T183000
+SUMMARY:Volúvel
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Com Jota Silva. Direção Venâncio Cruz. Criação do Coletivo Corpo de Macumba. — https://www.sescsp.org.br/programacao/voluvel
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Volúvel
+END:VALARM
+END:VEVENT
+END:VCALENDAR

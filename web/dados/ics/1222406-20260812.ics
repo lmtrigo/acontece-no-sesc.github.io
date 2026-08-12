@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1222406-20260812T100000@agenda-sesc
+DTSTART:20260812T100000
+SUMMARY:Rua em Cores
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:Com Projeto Psicanálise de Rua e Derek Souza\, arte-educador — https://www.sescsp.org.br/programacao/rua-em-cores-7
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rua em Cores
+END:VALARM
+END:VEVENT
+END:VCALENDAR

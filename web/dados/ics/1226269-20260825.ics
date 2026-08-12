@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1226269-20260825T160000@agenda-sesc
+DTSTART:20260825T160000
+SUMMARY:Basquete para mulheres idosas
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:Com Lika Chagas — https://www.sescsp.org.br/programacao/basquete-para-mulheres-idosas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Basquete para mulheres idosas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

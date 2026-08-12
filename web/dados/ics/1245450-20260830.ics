@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245450-20260830T140000@agenda-sesc
+DTSTART:20260830T140000
+SUMMARY:Isopo - Moda\, Cultura E Ancestralidade: Colar
+LOCATION:Sesc Franca
+DESCRIPTION:Com Ojire Ventura\, designer e Mariana Rocha\, produtora cultural — https://www.sescsp.org.br/programacao/isopo-moda-cultura-e-ancestralidade-colar
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Isopo - Moda\, Cultura E Ancestralidade: Colar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

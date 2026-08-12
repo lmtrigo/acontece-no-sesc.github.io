@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243543-20260829T143000@agenda-sesc
+DTSTART:20260829T143000
+SUMMARY:Ocupação Brincante: Brincadeiras Quentinhas
+LOCATION:Sesc Taubaté
+DESCRIPTION:Com Cia. VerdeRosa — https://www.sescsp.org.br/programacao/ocupacao-brincante-brincadeiras-quentinhas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ocupação Brincante: Brincadeiras Quentinhas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

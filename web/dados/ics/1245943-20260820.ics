@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245943-20260820T190000@agenda-sesc
+DTSTART:20260820T190000
+SUMMARY:Literatura & cinema: Das páginas às telas
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com Cacau Braga\, escritora e roteirista e Victor Trovike\, cineasta — https://www.sescsp.org.br/programacao/literatura-cinema-das-paginas-as-telas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Literatura & cinema: Das páginas às telas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239902-0@agenda-sesc
+DTSTART:20260819T160000
+SUMMARY:Sanfona para Mulheres - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Jac Oshima - educadora do Centro de Música — https://www.sescsp.org.br/programacao/sanfona-para-mulheres-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sanfona para Mulheres - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239902-1@agenda-sesc
+DTSTART:20260826T160000
+SUMMARY:Sanfona para Mulheres - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Jac Oshima - educadora do Centro de Música — https://www.sescsp.org.br/programacao/sanfona-para-mulheres-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sanfona para Mulheres - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239902-2@agenda-sesc
+DTSTART:20260902T160000
+SUMMARY:Sanfona para Mulheres - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Jac Oshima - educadora do Centro de Música — https://www.sescsp.org.br/programacao/sanfona-para-mulheres-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sanfona para Mulheres - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239902-3@agenda-sesc
+DTSTART:20260909T160000
+SUMMARY:Sanfona para Mulheres - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Jac Oshima - educadora do Centro de Música — https://www.sescsp.org.br/programacao/sanfona-para-mulheres-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sanfona para Mulheres - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239902-4@agenda-sesc
+DTSTART:20260916T160000
+SUMMARY:Sanfona para Mulheres - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Jac Oshima - educadora do Centro de Música — https://www.sescsp.org.br/programacao/sanfona-para-mulheres-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sanfona para Mulheres - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239902-5@agenda-sesc
+DTSTART:20260923T160000
+SUMMARY:Sanfona para Mulheres - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Jac Oshima - educadora do Centro de Música — https://www.sescsp.org.br/programacao/sanfona-para-mulheres-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sanfona para Mulheres - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239902-6@agenda-sesc
+DTSTART:20260930T160000
+SUMMARY:Sanfona para Mulheres - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Jac Oshima - educadora do Centro de Música — https://www.sescsp.org.br/programacao/sanfona-para-mulheres-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sanfona para Mulheres - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239902-7@agenda-sesc
+DTSTART:20261007T160000
+SUMMARY:Sanfona para Mulheres - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Jac Oshima - educadora do Centro de Música — https://www.sescsp.org.br/programacao/sanfona-para-mulheres-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sanfona para Mulheres - Iniciação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

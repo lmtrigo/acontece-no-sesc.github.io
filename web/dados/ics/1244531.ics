@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244531-0@agenda-sesc
+DTSTART:20260829T150000
+SUMMARY:Ninho cantante: um colo pra sonhar
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:Contação de história | Com a Cia Bambuzal — https://www.sescsp.org.br/programacao/ninho-cantante-um-colo-pra-sonhar-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ninho cantante: um colo pra sonhar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

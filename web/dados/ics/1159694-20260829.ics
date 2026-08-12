@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1159694-20260829T140000@agenda-sesc
+DTSTART:20260829T140000
+SUMMARY:Ritmos do Carnaval na Percussão - Continuidade
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Beto Araujo\, Educador do Centro de Música do Sesc Vila Mariana — https://www.sescsp.org.br/programacao/ritmos-do-carnaval-na-percussao-continuidade
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ritmos do Carnaval na Percussão - Continuidade
+END:VALARM
+END:VEVENT
+END:VCALENDAR

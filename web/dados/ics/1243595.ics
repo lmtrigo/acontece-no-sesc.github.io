@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243595-0@agenda-sesc
+DTSTART:20260830T153000
+SUMMARY:Texturização com Sal em Pintura Aquarela
+LOCATION:Sesc Taubaté
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/texturizacao-com-sal-em-pintura-aquarela
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Texturização com Sal em Pintura Aquarela
+END:VALARM
+END:VEVENT
+END:VCALENDAR

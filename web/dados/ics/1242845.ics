@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242845-0@agenda-sesc
+DTSTART:20260825T130000
+SUMMARY:Quadradinhos de crochê\, em Araçatuba
+LOCATION:Sesc Birigui
+DESCRIPTION:Com Deva Bhakta\, educador em tecnologias e Artes — https://www.sescsp.org.br/programacao/quadradinhos-de-croche-em-aracatuba
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Quadradinhos de crochê\, em Araçatuba
+END:VALARM
+END:VEVENT
+END:VCALENDAR

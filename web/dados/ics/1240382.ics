@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240382-0@agenda-sesc
+DTSTART:20260826T200000
+SUMMARY:Duo Saxofonando
+LOCATION:Sesc Bauru — Avenida Aureliano Cardia\, 6-71 | Vila Cardia | BAURU  | SP | Cep: 17013-411
+DESCRIPTION:BATUTA! — https://www.sescsp.org.br/programacao/duo-saxofonando
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Duo Saxofonando
+END:VALARM
+END:VEVENT
+END:VCALENDAR

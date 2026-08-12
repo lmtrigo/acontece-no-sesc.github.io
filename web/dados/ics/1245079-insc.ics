@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245079-insc@agenda-sesc
+DTSTART:20260804T100000
+SUMMARY:Abrem as inscrições: Escrita Criativa: Exercícios de Imaginação Poética
+LOCATION:Sesc Santos
+DESCRIPTION:Encerra em 2026-08-15. https://www.sescsp.org.br/programacao/escrita-criativa-exercicios-de-imaginacao-poetica
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Inscrições abrem em 1h
+END:VALARM
+END:VEVENT
+END:VCALENDAR

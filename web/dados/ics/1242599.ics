@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242599-0@agenda-sesc
+DTSTART:20260827T190000
+SUMMARY:Lançamento - Revista Brasileira\, da Academia Brasileira de Letras
+LOCATION:Sesc Campinas
+DESCRIPTION:Com Rosiska Darcy\, escritora e integrante da Academia Brasileira de Letras e Dra. Margareth Dalcolmo\, pesquisadora da Fundação Oswaldo Cruz (Fiocruz). Mediação: Cristina Aragão\, jornalista. — https://www.sescsp.org.br/programacao/lancamento-revista-brasileira-da-academia-brasileira-de-letras
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Lançamento - Revista Brasileira\, da Academia Brasileira de Letras
+END:VALARM
+END:VEVENT
+END:VCALENDAR

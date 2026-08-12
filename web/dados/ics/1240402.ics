@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240402-0@agenda-sesc
+DTSTART:20260830T110000
+SUMMARY:Histórias indígenas: a onça e o fogo
+LOCATION:Sesc Jundiaí
+DESCRIPTION:Com Makunaícontos — https://www.sescsp.org.br/programacao/a-onca-e-o-fogo-jundiai
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Histórias indígenas: a onça e o fogo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

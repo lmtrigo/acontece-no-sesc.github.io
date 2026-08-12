@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243923-20260822T140000@agenda-sesc
+DTSTART:20260822T140000
+SUMMARY:Se essa terra fosse minha
+LOCATION:Sesc Campo Limpo
+DESCRIPTION:com coletivo Entreoito — https://www.sescsp.org.br/programacao/se-essa-terra-fosse-minha
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Se essa terra fosse minha
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240840-20261008T140000@agenda-sesc
+DTSTART:20261008T140000
+SUMMARY:Sopros - Madeiras (Flauta Transversal\, Clarinete e Saxofone) - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Kaique Iritsu — https://www.sescsp.org.br/programacao/sopros-madeiras-flauta-transversal-clarinete-e-saxofone-continuidade
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sopros - Madeiras (Flauta Transversal\, Clarinete e Saxofone) - Continuidade
+END:VALARM
+END:VEVENT
+END:VCALENDAR

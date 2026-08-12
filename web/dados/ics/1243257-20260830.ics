@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243257-20260830T110000@agenda-sesc
+DTSTART:20260830T110000
+SUMMARY:A Caixinha de Música da Purezempla
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Tetê Purezempla — https://www.sescsp.org.br/programacao/a-caixinha-de-musica-da-purezempla-7
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A Caixinha de Música da Purezempla
+END:VALARM
+END:VEVENT
+END:VCALENDAR

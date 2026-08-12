@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240339-0@agenda-sesc
+DTSTART:20260813T193000
+SUMMARY:Filme Replikka
+LOCATION:Sesc Pinheiros
+DESCRIPTION:bate-papo com Heloisa Passos e Piratá Waurá — https://www.sescsp.org.br/programacao/filme-replikka
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Filme Replikka
+END:VALARM
+END:VEVENT
+END:VCALENDAR

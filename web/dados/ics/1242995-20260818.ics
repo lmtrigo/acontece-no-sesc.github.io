@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242995-20260818T140000@agenda-sesc
+DTSTART:20260818T140000
+SUMMARY:Autômatos espaciais
+LOCATION:Sesc Birigui
+DESCRIPTION:Com Deva Bhakta\, educador em tecnologias e artes — https://www.sescsp.org.br/programacao/automatos-espaciais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Autômatos espaciais
+END:VALARM
+END:VEVENT
+END:VCALENDAR

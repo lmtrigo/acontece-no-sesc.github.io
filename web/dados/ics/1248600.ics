@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248600-viagem@agenda-sesc
+DTSTART;VALUE=DATE:20260902
+DTEND;VALUE=DATE:20260908
+SUMMARY:História e natureza na região serrana do RJ: Petrópolis e Teresópolis
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Excursão — https://www.sescsp.org.br/programacao/historia-e-natureza-na-regiao-serrana-do-rj-petropolis-e-teresopolis
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Amanhã: História e natureza na região serrana do RJ: Petrópolis e Teresópolis
+END:VALARM
+END:VEVENT
+END:VCALENDAR

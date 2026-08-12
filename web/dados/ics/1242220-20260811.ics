@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242220-20260811T143000@agenda-sesc
+DTSTART:20260811T143000
+SUMMARY:Pintura e Ilustração em Azulejos
+LOCATION:Sesc Taubaté
+DESCRIPTION:Com Daniê Sena\, educadora do Sesc — https://www.sescsp.org.br/programacao/pintura-e-ilustracao-em-azulejos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pintura e Ilustração em Azulejos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

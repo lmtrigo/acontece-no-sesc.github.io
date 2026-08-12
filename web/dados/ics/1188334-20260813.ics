@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1188334-20260813T143000@agenda-sesc
+DTSTART:20260813T143000
+SUMMARY:Hoje é dia de arte\, bebê!
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com Alan Pablo\, educador do Programa Espaço de Brincar — https://www.sescsp.org.br/programacao/hoje-e-dia-de-arte-bebe-12
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Hoje é dia de arte\, bebê!
+END:VALARM
+END:VEVENT
+END:VCALENDAR

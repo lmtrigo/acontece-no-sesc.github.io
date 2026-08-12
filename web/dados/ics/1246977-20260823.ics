@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246977-20260823T160000@agenda-sesc
+DTSTART:20260823T160000
+SUMMARY:O Passarinho que Não Sabia Voar
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Cia. Barracão Cultural — https://www.sescsp.org.br/programacao/o-passarinho-que-nao-sabia-voar-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Passarinho que Não Sabia Voar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

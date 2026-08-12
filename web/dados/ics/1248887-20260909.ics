@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248887-20260909T160000@agenda-sesc
+DTSTART:20260909T160000
+SUMMARY:Percussão Afro-Brasileira
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Alessandra Noronha — https://www.sescsp.org.br/programacao/percussao-afro-brasileira
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Percussão Afro-Brasileira
+END:VALARM
+END:VEVENT
+END:VCALENDAR

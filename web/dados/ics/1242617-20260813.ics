@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242617-20260813T190000@agenda-sesc
+DTSTART:20260813T190000
+SUMMARY:Criação de websites anos 2000
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com XTO\, educador em tecnologias e artes — https://www.sescsp.org.br/programacao/criacao-de-websites-anos-2000
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Criação de websites anos 2000
+END:VALARM
+END:VEVENT
+END:VCALENDAR

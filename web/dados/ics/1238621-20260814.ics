@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238621-20260814T170000@agenda-sesc
+DTSTART:20260814T170000
+SUMMARY:Caquinhos
+LOCATION:Sesc 14 Bis
+DESCRIPTION:Com Rafael Pelvini e Maurício Pudenzi\, educadores de atividades infanto-juvenis — https://www.sescsp.org.br/programacao/caquinhos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Caquinhos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

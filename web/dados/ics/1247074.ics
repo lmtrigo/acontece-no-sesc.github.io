@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247074-0@agenda-sesc
+DTSTART:20260820T133000
+SUMMARY:Arte do envelhecer: memórias afetivas (sachê aromático)
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com Atlântica Produções Criativas - Projeto Tiê-Sangue — https://www.sescsp.org.br/programacao/arte-do-envelhecer-memorias-afetivas-sache-aromatico
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Arte do envelhecer: memórias afetivas (sachê aromático)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

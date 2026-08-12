@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247872-0@agenda-sesc
+DTSTART:20260830T170000
+SUMMARY:Quintal da Xika
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Roda de samba que celebra memória. — https://www.sescsp.org.br/programacao/quintal-da-xika
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Quintal da Xika
+END:VALARM
+END:VEVENT
+END:VCALENDAR

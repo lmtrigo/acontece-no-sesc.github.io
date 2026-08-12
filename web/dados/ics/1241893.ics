@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241893-0@agenda-sesc
+DTSTART:20260813T190000
+SUMMARY:As pedras de Javier
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com Grupo XPTO — https://www.sescsp.org.br/programacao/as-pedras-de-javier-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:As pedras de Javier
+END:VALARM
+END:VEVENT
+END:VCALENDAR

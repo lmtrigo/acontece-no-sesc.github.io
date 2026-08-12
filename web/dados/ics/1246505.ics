@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246505-0@agenda-sesc
+DTSTART:20260816T120000
+SUMMARY:Praticando! Aperfeiçoando os nados
+LOCATION:Sesc Campinas
+DESCRIPTION:https://www.sescsp.org.br/programacao/praticando-aperfeicoando-os-nados
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Praticando! Aperfeiçoando os nados
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246505-1@agenda-sesc
+DTSTART:20260823T120000
+SUMMARY:Praticando! Aperfeiçoando os nados
+LOCATION:Sesc Campinas
+DESCRIPTION:https://www.sescsp.org.br/programacao/praticando-aperfeicoando-os-nados
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Praticando! Aperfeiçoando os nados
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246505-2@agenda-sesc
+DTSTART:20260830T120000
+SUMMARY:Praticando! Aperfeiçoando os nados
+LOCATION:Sesc Campinas
+DESCRIPTION:https://www.sescsp.org.br/programacao/praticando-aperfeicoando-os-nados
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Praticando! Aperfeiçoando os nados
+END:VALARM
+END:VEVENT
+END:VCALENDAR

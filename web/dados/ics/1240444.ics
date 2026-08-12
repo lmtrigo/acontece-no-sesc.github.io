@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240444-0@agenda-sesc
+DTSTART:20260830T173000
+SUMMARY:Geisa Mel e banda
+LOCATION:Sesc Jundiaí
+DESCRIPTION:Elas no Rock e Blues — https://www.sescsp.org.br/programacao/geisa-mel-e-banda
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Geisa Mel e banda
+END:VALARM
+END:VEVENT
+END:VCALENDAR

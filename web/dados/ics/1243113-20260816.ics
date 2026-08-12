@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243113-20260816T120000@agenda-sesc
+DTSTART:20260816T120000
+SUMMARY:Feira de Troca de Livros
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com Sebo Pura Poesia\, Agentes de Educação Ambiental e BiblioSesc — https://www.sescsp.org.br/programacao/feira-de-troca-de-livros-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Feira de Troca de Livros
+END:VALARM
+END:VEVENT
+END:VCALENDAR

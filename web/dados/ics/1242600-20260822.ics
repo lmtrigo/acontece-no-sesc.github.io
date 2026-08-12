@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242600-20260822T100000@agenda-sesc
+DTSTART:20260822T100000
+SUMMARY:Hatha Yoga
+LOCATION:Sesc Bauru
+DESCRIPTION:Com educadores em atividades físico-esportivas do Sesc — https://www.sescsp.org.br/programacao/hatha-yoga-58
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Hatha Yoga
+END:VALARM
+END:VEVENT
+END:VCALENDAR

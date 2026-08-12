@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245700-20260825T110000@agenda-sesc
+DTSTART:20260825T110000
+SUMMARY:Yoga\, em Araçatuba
+LOCATION:Sesc Birigui
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/yoga-em-aracatuba
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Yoga\, em Araçatuba
+END:VALARM
+END:VEVENT
+END:VCALENDAR

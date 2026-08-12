@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244318-0@agenda-sesc
+DTSTART:20260811T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244318-1@agenda-sesc
+DTSTART:20260812T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244318-2@agenda-sesc
+DTSTART:20260813T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244318-3@agenda-sesc
+DTSTART:20260814T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244318-4@agenda-sesc
+DTSTART:20260815T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244318-5@agenda-sesc
+DTSTART:20260816T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244318-6@agenda-sesc
+DTSTART:20260818T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244318-7@agenda-sesc
+DTSTART:20260819T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244318-8@agenda-sesc
+DTSTART:20260820T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244318-9@agenda-sesc
+DTSTART:20260821T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244318-10@agenda-sesc
+DTSTART:20260822T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244318-11@agenda-sesc
+DTSTART:20260823T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244318-12@agenda-sesc
+DTSTART:20260825T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244318-13@agenda-sesc
+DTSTART:20260826T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244318-14@agenda-sesc
+DTSTART:20260827T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244318-15@agenda-sesc
+DTSTART:20260828T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244318-16@agenda-sesc
+DTSTART:20260829T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244318-17@agenda-sesc
+DTSTART:20260830T100000
+SUMMARY:Memórias Do Território
+LOCATION:Sesc Franca
+DESCRIPTION:Com André Hullk e Elô Silveira\, artistas visuais — https://www.sescsp.org.br/programacao/memorias-do-territorio
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Do Território
+END:VALARM
+END:VEVENT
+END:VCALENDAR

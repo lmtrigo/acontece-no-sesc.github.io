@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245509-20260816T130000@agenda-sesc
+DTSTART:20260816T130000
+SUMMARY:Futsal Masculino - Copa Sesc do Comércio - Fase Local
+LOCATION:Sesc Interlagos
+DESCRIPTION:Educadores do Físico Esportivo — https://www.sescsp.org.br/programacao/futsal-masculino-copa-sesc-do-comercio-fase-local
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Futsal Masculino - Copa Sesc do Comércio - Fase Local
+END:VALARM
+END:VEVENT
+END:VCALENDAR

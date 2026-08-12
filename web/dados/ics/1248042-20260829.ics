@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248042-20260829T150000@agenda-sesc
+DTSTART:20260829T150000
+SUMMARY:Memórias nas Pontas dos Dedos
+LOCATION:Sesc Santana
+DESCRIPTION:com Mínimo Diário — https://www.sescsp.org.br/programacao/memorias-nas-pontas-dos-dedos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias nas Pontas dos Dedos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

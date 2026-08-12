@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240786-20260814T203000@agenda-sesc
+DTSTART:20260814T203000
+SUMMARY:Zeca Baleiro em Turnê
+LOCATION:Sesc Osasco — Travessa Gilmar de Franca Crispim\, 9 | Jardim das Flores | OSASCO  | SP | Cep: 06132-380
+DESCRIPTION:https://www.sescsp.org.br/programacao/zeca-baleiro-em-turne
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Zeca Baleiro em Turnê
+END:VALARM
+END:VEVENT
+END:VCALENDAR

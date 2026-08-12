@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237647-0@agenda-sesc
+DTSTART:20260902T153000
+SUMMARY:O mundo é seu. Mas será que você sabe <br> o que fazer com ele?
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com Rodrigo Dib — https://www.sescsp.org.br/programacao/o-mundo-e-seu
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O mundo é seu. Mas será que você sabe <br> o que fazer com ele?
+END:VALARM
+END:VEVENT
+END:VCALENDAR

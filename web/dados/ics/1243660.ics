@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243660-0@agenda-sesc
+DTSTART:20260825T200000
+SUMMARY:Banda Sinfônica De Taubaté
+LOCATION:Sesc Taubaté — Avenida Engenheiro Milton de Alvarenga Peixoto\, 1264 | Esplanada Santa Terezinha | TAUBATE  | SP | Cep: 12052-230
+DESCRIPTION:https://www.sescsp.org.br/programacao/banda-sinfonica-de-taubat
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Banda Sinfônica De Taubaté
+END:VALARM
+END:VEVENT
+END:VCALENDAR

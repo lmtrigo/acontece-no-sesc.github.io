@@ -1,0 +1,53 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246813-0@agenda-sesc
+DTSTART:20261006T190000
+SUMMARY:Curso de Atuações
+LOCATION:Sesc Consolação
+DESCRIPTION:com Luaa Gabanini\, Naruna Costa e Diego Moschkovich — https://www.sescsp.org.br/programacao/curso-de-atuacoes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Curso de Atuações
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246813-1@agenda-sesc
+DTSTART:20261007T190000
+SUMMARY:Curso de Atuações
+LOCATION:Sesc Consolação
+DESCRIPTION:com Luaa Gabanini\, Naruna Costa e Diego Moschkovich — https://www.sescsp.org.br/programacao/curso-de-atuacoes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Curso de Atuações
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246813-2@agenda-sesc
+DTSTART:20261008T190000
+SUMMARY:Curso de Atuações
+LOCATION:Sesc Consolação
+DESCRIPTION:com Luaa Gabanini\, Naruna Costa e Diego Moschkovich — https://www.sescsp.org.br/programacao/curso-de-atuacoes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Curso de Atuações
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246813-3@agenda-sesc
+DTSTART:20261009T190000
+SUMMARY:Curso de Atuações
+LOCATION:Sesc Consolação
+DESCRIPTION:com Luaa Gabanini\, Naruna Costa e Diego Moschkovich — https://www.sescsp.org.br/programacao/curso-de-atuacoes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Curso de Atuações
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240543-0@agenda-sesc
+DTSTART:20260813T193000
+SUMMARY:Mutações: Pensamentos an-árquicos: Paul Valéry e o desejo do neutro
+LOCATION:Sesc Centro de Pesquisa e Formação
+DESCRIPTION:Com Roberto Zular — https://www.sescsp.org.br/programacao/mutacoes-pensamentos-an-arquicos-paul-valery-e-o-desejo-do-neutro
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mutações: Pensamentos an-árquicos: Paul Valéry e o desejo do neutro
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247889-0@agenda-sesc
+DTSTART:20260815T180000
+SUMMARY:Dentro\, Fora e Cruza
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com grupo Unity Warriors — https://www.sescsp.org.br/programacao/dentro-fora-e-cruza-7
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Dentro\, Fora e Cruza
+END:VALARM
+END:VEVENT
+END:VCALENDAR

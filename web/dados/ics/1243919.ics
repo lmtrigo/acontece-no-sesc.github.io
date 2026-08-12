@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243919-0@agenda-sesc
+DTSTART:20260828T190000
+SUMMARY:Segue o Baile com The Beat
+LOCATION:Sesc Campo Limpo
+DESCRIPTION:Com The Beat — https://www.sescsp.org.br/programacao/segue-o-baile-com-the-beat
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Segue o Baile com The Beat
+END:VALARM
+END:VEVENT
+END:VCALENDAR

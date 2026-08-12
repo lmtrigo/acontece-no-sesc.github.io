@@ -1,0 +1,113 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:896295-0@agenda-sesc
+DTSTART:20260813T140000
+SUMMARY:Esporte Jovem | Basquete
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores físico-esportivos do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-13-a-16-anos-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:896295-1@agenda-sesc
+DTSTART:20260820T140000
+SUMMARY:Esporte Jovem | Basquete
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores físico-esportivos do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-13-a-16-anos-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:896295-2@agenda-sesc
+DTSTART:20260827T140000
+SUMMARY:Esporte Jovem | Basquete
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores físico-esportivos do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-13-a-16-anos-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:896295-3@agenda-sesc
+DTSTART:20260903T140000
+SUMMARY:Esporte Jovem | Basquete
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores físico-esportivos do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-13-a-16-anos-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:896295-4@agenda-sesc
+DTSTART:20260910T140000
+SUMMARY:Esporte Jovem | Basquete
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores físico-esportivos do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-13-a-16-anos-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:896295-5@agenda-sesc
+DTSTART:20260917T140000
+SUMMARY:Esporte Jovem | Basquete
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores físico-esportivos do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-13-a-16-anos-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:896295-6@agenda-sesc
+DTSTART:20260924T140000
+SUMMARY:Esporte Jovem | Basquete
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores físico-esportivos do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-13-a-16-anos-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:896295-7@agenda-sesc
+DTSTART:20261001T140000
+SUMMARY:Esporte Jovem | Basquete
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores físico-esportivos do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-13-a-16-anos-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:896295-8@agenda-sesc
+DTSTART:20261008T140000
+SUMMARY:Esporte Jovem | Basquete
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores físico-esportivos do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-13-a-16-anos-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Basquete
+END:VALARM
+END:VEVENT
+END:VCALENDAR

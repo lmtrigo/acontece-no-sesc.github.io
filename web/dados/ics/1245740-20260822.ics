@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245740-20260822T100000@agenda-sesc
+DTSTART:20260822T100000
+SUMMARY:Realidade Virtual Cósmica\, em Birigui.
+LOCATION:Sesc Birigui
+DESCRIPTION:Com VERS Experiências Imersivas — https://www.sescsp.org.br/programacao/realidade-virtual-cosmica-em-birigui
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Realidade Virtual Cósmica\, em Birigui.
+END:VALARM
+END:VEVENT
+END:VCALENDAR

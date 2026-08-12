@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240173-0@agenda-sesc
+DTSTART:20260812T193000
+SUMMARY:Oeste Outra Vez
+LOCATION:Sesc Taubaté — Avenida Engenheiro Milton de Alvarenga Peixoto\, 1264 | Esplanada Santa Terezinha | TAUBATE  | SP | Cep: 12052-230
+DESCRIPTION:Brasil / 2024 / 97 min. / Ficção / Dir.: Érico Rassi. — https://www.sescsp.org.br/programacao/oeste-outra-vez-10
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Oeste Outra Vez
+END:VALARM
+END:VEVENT
+END:VCALENDAR

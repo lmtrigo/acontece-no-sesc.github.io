@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:555985-20260920T100000@agenda-sesc
+DTSTART:20260920T100000
+SUMMARY:Recreação de Futsal para Mulheres
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadores(as) do Sesc — https://www.sescsp.org.br/programacao/recreacao-de-futsal-para-mulheres
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação de Futsal para Mulheres
+END:VALARM
+END:VEVENT
+END:VCALENDAR

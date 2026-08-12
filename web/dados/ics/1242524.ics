@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242524-0@agenda-sesc
+DTSTART:20260819T190000
+SUMMARY:Ciclo Mutações: Sem retorno\, caminhar à sombra das ideias
+LOCATION:Sesc Campinas
+DESCRIPTION:Com Vladimir Safatle\, filósofo e psicanalista\, e Thomás Zicman de Barros\, cientista político e pesquisador. Mediação: Danilo Cymrot. — https://www.sescsp.org.br/programacao/ciclo-mutacoes-sem-retorno-caminhar-a-sombra-das-ideias
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ciclo Mutações: Sem retorno\, caminhar à sombra das ideias
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246494-insc@agenda-sesc
+DTSTART:20260804T100000
+SUMMARY:Abrem as inscrições: Printa.ai - Laboratório Criativo de Inteligência Artificial\,Imagem e Impressão
+LOCATION:Sesc Santos
+DESCRIPTION:Encerra em 2026-08-12. https://www.sescsp.org.br/programacao/printa-ai-laboratorio-criativo-de-inteligencia-artificialimagem-e-impressao
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Inscrições abrem em 1h
+END:VALARM
+END:VEVENT
+END:VCALENDAR

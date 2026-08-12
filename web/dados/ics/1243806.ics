@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243806-0@agenda-sesc
+DTSTART:20260825T140000
+SUMMARY:Pequenos Jardineiros
+LOCATION:Sesc Campo Limpo
+DESCRIPTION:Com Educadores Ambientais de diferentes unidades — https://www.sescsp.org.br/programacao/pequenos-jardineiros
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pequenos Jardineiros
+END:VALARM
+END:VEVENT
+END:VCALENDAR

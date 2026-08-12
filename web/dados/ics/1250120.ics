@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1250120-0@agenda-sesc
+DTSTART:20260815T163000
+SUMMARY:Abrir Clareiras: Cuidado e Saúde Mental da População LGBTQIAPN+
+LOCATION:Sesc Registro
+DESCRIPTION:https://www.sescsp.org.br/programacao/abrir-clareiras-cuidado-e-saude-mental-da-populacao-lgbtqiapn
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Abrir Clareiras: Cuidado e Saúde Mental da População LGBTQIAPN+
+END:VALARM
+END:VEVENT
+END:VCALENDAR

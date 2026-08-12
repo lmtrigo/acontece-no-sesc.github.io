@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243069-0@agenda-sesc
+DTSTART:20260821T180000
+SUMMARY:Observação astronômica
+LOCATION:Sesc Birigui
+DESCRIPTION:Com Ivo Costa e educadores do FUNDEB/Bauru — https://www.sescsp.org.br/programacao/observacao-astronomica-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Observação astronômica
+END:VALARM
+END:VEVENT
+END:VCALENDAR

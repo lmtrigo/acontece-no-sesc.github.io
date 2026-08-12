@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237435-20260823T150000@agenda-sesc
+DTSTART:20260823T150000
+SUMMARY:Criando Sacis e Iaras
+LOCATION:Sesc Registro
+DESCRIPTION:Com Daiana e Ana Paula da Diversos Ateliê — https://www.sescsp.org.br/programacao/criando-sacis-e-iaras
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Criando Sacis e Iaras
+END:VALARM
+END:VEVENT
+END:VCALENDAR

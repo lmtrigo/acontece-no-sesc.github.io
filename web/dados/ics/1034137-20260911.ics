@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1034137-20260911T170000@agenda-sesc
+DTSTART:20260911T170000
+SUMMARY:XVI Congresso Internacional de Direito e Processo do Trabalho
+LOCATION:Sesc Pinheiros
+DESCRIPTION:Promovido pela Academia Brasileira de Direito do Trabalho (ABDT) — https://www.sescsp.org.br/programacao/congresso-internacional-de-direito-e-processo-do-trabalho
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:XVI Congresso Internacional de Direito e Processo do Trabalho
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237712-0@agenda-sesc
+DTSTART:20260903T120000
+SUMMARY:Voz Marginal
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com Bakari\, Bianca Falcão\, Fabrício Alves\, Luis\, Nivas\, Paína e Martims — https://www.sescsp.org.br/programacao/voz-marginal
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Voz Marginal
+END:VALARM
+END:VEVENT
+END:VCALENDAR

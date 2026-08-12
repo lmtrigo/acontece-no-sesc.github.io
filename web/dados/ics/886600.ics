@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:886600-0@agenda-sesc
+DTSTART:20260811T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:886600-1@agenda-sesc
+DTSTART:20260813T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:886600-2@agenda-sesc
+DTSTART:20260818T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:886600-3@agenda-sesc
+DTSTART:20260820T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:886600-4@agenda-sesc
+DTSTART:20260825T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:886600-5@agenda-sesc
+DTSTART:20260827T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:886600-6@agenda-sesc
+DTSTART:20260901T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:886600-7@agenda-sesc
+DTSTART:20260903T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:886600-8@agenda-sesc
+DTSTART:20260908T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:886600-9@agenda-sesc
+DTSTART:20260910T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:886600-10@agenda-sesc
+DTSTART:20260915T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:886600-11@agenda-sesc
+DTSTART:20260917T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:886600-12@agenda-sesc
+DTSTART:20260922T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:886600-13@agenda-sesc
+DTSTART:20260924T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:886600-14@agenda-sesc
+DTSTART:20260929T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:886600-15@agenda-sesc
+DTSTART:20261001T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:886600-16@agenda-sesc
+DTSTART:20261006T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:886600-17@agenda-sesc
+DTSTART:20261008T070000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-70
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+END:VCALENDAR

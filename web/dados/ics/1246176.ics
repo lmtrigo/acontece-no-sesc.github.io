@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246176-0@agenda-sesc
+DTSTART:20260830T160000
+SUMMARY:A Maravilhosa Princesa das Bolinhas
+LOCATION:Sesc Jundiaí — Av. Antônio Frederico Ozanan\, 6600 | Jardim Botânico | JUNDIAI  | SP | Cep: 13214-206
+DESCRIPTION:Com Téspis Cia. de Teatro — https://www.sescsp.org.br/programacao/a-maravilhosa-princesa
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A Maravilhosa Princesa das Bolinhas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

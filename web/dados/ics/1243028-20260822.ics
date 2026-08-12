@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243028-20260822T140000@agenda-sesc
+DTSTART:20260822T140000
+SUMMARY:Origami: Da Dobra à Forma
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Marcos Sanches\, hobby modelista — https://www.sescsp.org.br/programacao/origami-da-dobra-a-forma
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Origami: Da Dobra à Forma
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239206-0@agenda-sesc
+DTSTART:20260815T103000
+SUMMARY:Pranchinhas táteis para bebês
+LOCATION:Sesc Itaquera
+DESCRIPTION:Com Equipe Educativa do Espaço de Brincar — https://www.sescsp.org.br/programacao/pranchinhas-tateis-para-bebes-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pranchinhas táteis para bebês
+END:VALARM
+END:VEVENT
+END:VCALENDAR

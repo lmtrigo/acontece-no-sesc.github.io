@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1236987-0@agenda-sesc
+DTSTART:20260822T103000
+SUMMARY:Que Lugar é Esse? Novos Olhares Sobre Ribeirão Preto
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com Denis Tchepelentyky\, Denis William Esteves\, Adriana Capretz\, Tania Registro e Rogério Gomes. Mediação de Flavia Lima — https://www.sescsp.org.br/programacao/que-lugar-e-esse-novos-olhares-sobre-ribeirao-preto
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Que Lugar é Esse? Novos Olhares Sobre Ribeirão Preto
+END:VALARM
+END:VEVENT
+END:VCALENDAR

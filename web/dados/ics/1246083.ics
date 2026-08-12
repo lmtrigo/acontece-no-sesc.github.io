@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246083-0@agenda-sesc
+DTSTART:20260826T193000
+SUMMARY:Arte da Palavra - Bate-Papo
+LOCATION:Sesc Taubaté
+DESCRIPTION:Com Estrela Leminski e Renato Negrão — https://www.sescsp.org.br/programacao/arte-da-palavra-bate-papo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Arte da Palavra - Bate-Papo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240554-0@agenda-sesc
+DTSTART:20260825T193000
+SUMMARY:Mutações: Foucault e a anarquia
+LOCATION:Sesc Centro de Pesquisa e Formação
+DESCRIPTION:Com Frédéric Gros — https://www.sescsp.org.br/programacao/mutacoes-foucault-e-a-anarquia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mutações: Foucault e a anarquia
+END:VALARM
+END:VEVENT
+END:VCALENDAR

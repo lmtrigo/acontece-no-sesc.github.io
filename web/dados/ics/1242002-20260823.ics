@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242002-20260823T160000@agenda-sesc
+DTSTART:20260823T160000
+SUMMARY:Dança esportiva em cadeira de rodas
+LOCATION:Sesc Campinas
+DESCRIPTION:Com Marcio Folha e Ana Bia\, Cia AYA de dança — https://www.sescsp.org.br/programacao/danca-esportiva-em-cadeira-de-rodas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Dança esportiva em cadeira de rodas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

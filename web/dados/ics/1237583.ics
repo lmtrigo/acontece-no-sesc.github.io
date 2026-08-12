@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237583-0@agenda-sesc
+DTSTART:20260818T140000
+SUMMARY:Palavra Andarilha
+LOCATION:Sesc Osasco
+DESCRIPTION:Com O Casulo — https://www.sescsp.org.br/programacao/palavra-andarilha-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Palavra Andarilha
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237583-1@agenda-sesc
+DTSTART:20260819T140000
+SUMMARY:Palavra Andarilha
+LOCATION:Sesc Osasco
+DESCRIPTION:Com O Casulo — https://www.sescsp.org.br/programacao/palavra-andarilha-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Palavra Andarilha
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237583-2@agenda-sesc
+DTSTART:20260820T140000
+SUMMARY:Palavra Andarilha
+LOCATION:Sesc Osasco
+DESCRIPTION:Com O Casulo — https://www.sescsp.org.br/programacao/palavra-andarilha-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Palavra Andarilha
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237583-3@agenda-sesc
+DTSTART:20260824T140000
+SUMMARY:Palavra Andarilha
+LOCATION:Sesc Osasco
+DESCRIPTION:Com O Casulo — https://www.sescsp.org.br/programacao/palavra-andarilha-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Palavra Andarilha
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237583-4@agenda-sesc
+DTSTART:20260825T140000
+SUMMARY:Palavra Andarilha
+LOCATION:Sesc Osasco
+DESCRIPTION:Com O Casulo — https://www.sescsp.org.br/programacao/palavra-andarilha-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Palavra Andarilha
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237583-5@agenda-sesc
+DTSTART:20260826T140000
+SUMMARY:Palavra Andarilha
+LOCATION:Sesc Osasco
+DESCRIPTION:Com O Casulo — https://www.sescsp.org.br/programacao/palavra-andarilha-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Palavra Andarilha
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237583-6@agenda-sesc
+DTSTART:20260827T140000
+SUMMARY:Palavra Andarilha
+LOCATION:Sesc Osasco
+DESCRIPTION:Com O Casulo — https://www.sescsp.org.br/programacao/palavra-andarilha-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Palavra Andarilha
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237583-7@agenda-sesc
+DTSTART:20260831T140000
+SUMMARY:Palavra Andarilha
+LOCATION:Sesc Osasco
+DESCRIPTION:Com O Casulo — https://www.sescsp.org.br/programacao/palavra-andarilha-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Palavra Andarilha
+END:VALARM
+END:VEVENT
+END:VCALENDAR

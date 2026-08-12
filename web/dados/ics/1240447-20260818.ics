@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240447-20260818T110000@agenda-sesc
+DTSTART:20260818T110000
+SUMMARY:Imagem e movimento - ilusão de óptica e animação 2D
+LOCATION:Sesc Pinheiros
+DESCRIPTION:com Erika Kogui\, educadora em Tecnologias e Artes — https://www.sescsp.org.br/programacao/imagem-e-movimento-ilusao-de-optica-e-animacao-2d
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Imagem e movimento - ilusão de óptica e animação 2D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

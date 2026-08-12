@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245465-20260902T183000@agenda-sesc
+DTSTART:20260902T183000
+SUMMARY:Costura: Mochila Com Upcycling
+LOCATION:Sesc Franca
+DESCRIPTION:Com Estúdio Oca — https://www.sescsp.org.br/programacao/costura-mochila-com-upcycling
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Costura: Mochila Com Upcycling
+END:VALARM
+END:VEVENT
+END:VCALENDAR

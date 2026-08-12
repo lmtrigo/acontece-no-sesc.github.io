@@ -1,0 +1,149 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238252-0@agenda-sesc
+DTSTART:20260811T103000
+SUMMARY:Desafio Boulder - parede de escalada
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Altitude Escalada — https://www.sescsp.org.br/programacao/desafio-boulder-parede-de-escalada
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Desafio Boulder - parede de escalada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238252-1@agenda-sesc
+DTSTART:20260812T103000
+SUMMARY:Desafio Boulder - parede de escalada
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Altitude Escalada — https://www.sescsp.org.br/programacao/desafio-boulder-parede-de-escalada
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Desafio Boulder - parede de escalada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238252-2@agenda-sesc
+DTSTART:20260813T103000
+SUMMARY:Desafio Boulder - parede de escalada
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Altitude Escalada — https://www.sescsp.org.br/programacao/desafio-boulder-parede-de-escalada
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Desafio Boulder - parede de escalada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238252-3@agenda-sesc
+DTSTART:20260814T103000
+SUMMARY:Desafio Boulder - parede de escalada
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Altitude Escalada — https://www.sescsp.org.br/programacao/desafio-boulder-parede-de-escalada
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Desafio Boulder - parede de escalada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238252-4@agenda-sesc
+DTSTART:20260815T103000
+SUMMARY:Desafio Boulder - parede de escalada
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Altitude Escalada — https://www.sescsp.org.br/programacao/desafio-boulder-parede-de-escalada
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Desafio Boulder - parede de escalada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238252-5@agenda-sesc
+DTSTART:20260816T103000
+SUMMARY:Desafio Boulder - parede de escalada
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Altitude Escalada — https://www.sescsp.org.br/programacao/desafio-boulder-parede-de-escalada
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Desafio Boulder - parede de escalada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238252-6@agenda-sesc
+DTSTART:20260818T103000
+SUMMARY:Desafio Boulder - parede de escalada
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Altitude Escalada — https://www.sescsp.org.br/programacao/desafio-boulder-parede-de-escalada
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Desafio Boulder - parede de escalada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238252-7@agenda-sesc
+DTSTART:20260819T103000
+SUMMARY:Desafio Boulder - parede de escalada
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Altitude Escalada — https://www.sescsp.org.br/programacao/desafio-boulder-parede-de-escalada
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Desafio Boulder - parede de escalada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238252-8@agenda-sesc
+DTSTART:20260820T103000
+SUMMARY:Desafio Boulder - parede de escalada
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Altitude Escalada — https://www.sescsp.org.br/programacao/desafio-boulder-parede-de-escalada
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Desafio Boulder - parede de escalada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238252-9@agenda-sesc
+DTSTART:20260821T103000
+SUMMARY:Desafio Boulder - parede de escalada
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Altitude Escalada — https://www.sescsp.org.br/programacao/desafio-boulder-parede-de-escalada
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Desafio Boulder - parede de escalada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238252-10@agenda-sesc
+DTSTART:20260822T103000
+SUMMARY:Desafio Boulder - parede de escalada
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Altitude Escalada — https://www.sescsp.org.br/programacao/desafio-boulder-parede-de-escalada
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Desafio Boulder - parede de escalada
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238252-11@agenda-sesc
+DTSTART:20260823T103000
+SUMMARY:Desafio Boulder - parede de escalada
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Altitude Escalada — https://www.sescsp.org.br/programacao/desafio-boulder-parede-de-escalada
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Desafio Boulder - parede de escalada
+END:VALARM
+END:VEVENT
+END:VCALENDAR

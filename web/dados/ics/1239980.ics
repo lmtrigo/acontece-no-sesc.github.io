@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239980-0@agenda-sesc
+DTSTART:20260820T183000
+SUMMARY:Varal de Histórias: contar é brincar junto!
+LOCATION:Sesc Piracicaba
+DESCRIPTION:com Priscila Cabral\, educadora infantojuvenil do Sesc — https://www.sescsp.org.br/programacao/varal-de-historias-contar-e-brincar-junto
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Varal de Histórias: contar é brincar junto!
+END:VALARM
+END:VEVENT
+END:VCALENDAR

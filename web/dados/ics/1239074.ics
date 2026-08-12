@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239074-0@agenda-sesc
+DTSTART:20260820T200000
+SUMMARY:Performance lítero-musical 'Minha Carne: Diário de uma Prisão'
+LOCATION:Sesc Pompeia
+DESCRIPTION:Com Preta Ferreira e Radio Diaspora — https://www.sescsp.org.br/programacao/performance-litero-musical-minha-carne-diario-de-uma-prisao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Performance lítero-musical 'Minha Carne: Diário de uma Prisão'
+END:VALARM
+END:VEVENT
+END:VCALENDAR

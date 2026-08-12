@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240881-0@agenda-sesc
+DTSTART:20260829T173000
+SUMMARY:Brasa: uma dança show de bola
+LOCATION:Sesc Jundiaí
+DESCRIPTION:Com Unity Warriors — https://www.sescsp.org.br/programacao/brasa
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Brasa: uma dança show de bola
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248751-20260906T140000@agenda-sesc
+DTSTART:20260906T140000
+SUMMARY:Plataforma flutuante e outras brincadeiras
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/plataforma-flutuante-e-outras-brincadeiras
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Plataforma flutuante e outras brincadeiras
+END:VALARM
+END:VEVENT
+END:VCALENDAR

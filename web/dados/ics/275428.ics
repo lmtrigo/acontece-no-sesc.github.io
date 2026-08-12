@@ -1,0 +1,437 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:275428-0@agenda-sesc
+DTSTART:20260811T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-1@agenda-sesc
+DTSTART:20260812T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-2@agenda-sesc
+DTSTART:20260813T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-3@agenda-sesc
+DTSTART:20260814T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-4@agenda-sesc
+DTSTART:20260818T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-5@agenda-sesc
+DTSTART:20260819T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-6@agenda-sesc
+DTSTART:20260820T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-7@agenda-sesc
+DTSTART:20260821T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-8@agenda-sesc
+DTSTART:20260825T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-9@agenda-sesc
+DTSTART:20260826T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-10@agenda-sesc
+DTSTART:20260827T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-11@agenda-sesc
+DTSTART:20260828T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-12@agenda-sesc
+DTSTART:20260901T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-13@agenda-sesc
+DTSTART:20260902T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-14@agenda-sesc
+DTSTART:20260903T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-15@agenda-sesc
+DTSTART:20260904T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-16@agenda-sesc
+DTSTART:20260908T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-17@agenda-sesc
+DTSTART:20260909T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-18@agenda-sesc
+DTSTART:20260910T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-19@agenda-sesc
+DTSTART:20260911T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-20@agenda-sesc
+DTSTART:20260915T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-21@agenda-sesc
+DTSTART:20260916T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-22@agenda-sesc
+DTSTART:20260917T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-23@agenda-sesc
+DTSTART:20260918T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-24@agenda-sesc
+DTSTART:20260922T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-25@agenda-sesc
+DTSTART:20260923T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-26@agenda-sesc
+DTSTART:20260924T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-27@agenda-sesc
+DTSTART:20260925T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-28@agenda-sesc
+DTSTART:20260929T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-29@agenda-sesc
+DTSTART:20260930T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-30@agenda-sesc
+DTSTART:20261001T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-31@agenda-sesc
+DTSTART:20261002T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-32@agenda-sesc
+DTSTART:20261006T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-33@agenda-sesc
+DTSTART:20261007T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-34@agenda-sesc
+DTSTART:20261008T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:275428-35@agenda-sesc
+DTSTART:20261009T151500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc Mogi das Cruzes — https://www.sescsp.org.br/programacao/hidroginastica-20
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247944-0@agenda-sesc
+DTSTART:20260825T140000
+SUMMARY:Mulheres em Cena
+LOCATION:Sesc Santana
+DESCRIPTION:com Aline Fanju — https://www.sescsp.org.br/programacao/mulheres-em-cena
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mulheres em Cena
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1247944-1@agenda-sesc
+DTSTART:20260826T140000
+SUMMARY:Mulheres em Cena
+LOCATION:Sesc Santana
+DESCRIPTION:com Aline Fanju — https://www.sescsp.org.br/programacao/mulheres-em-cena
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mulheres em Cena
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1247944-2@agenda-sesc
+DTSTART:20260827T140000
+SUMMARY:Mulheres em Cena
+LOCATION:Sesc Santana
+DESCRIPTION:com Aline Fanju — https://www.sescsp.org.br/programacao/mulheres-em-cena
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mulheres em Cena
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238830-20260822T140000@agenda-sesc
+DTSTART:20260822T140000
+SUMMARY:Construção de Óculos de Realidade Virtual
+LOCATION:Sesc Santo André
+DESCRIPTION:com Camila Cardoso e Anderson Segundo — https://www.sescsp.org.br/programacao/construcao-de-oculos-de-realidade-virtual
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Construção de Óculos de Realidade Virtual
+END:VALARM
+END:VEVENT
+END:VCALENDAR

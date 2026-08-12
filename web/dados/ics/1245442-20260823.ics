@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245442-20260823T143000@agenda-sesc
+DTSTART:20260823T143000
+SUMMARY:Traço\, Técnica E Cuidado
+LOCATION:Sesc Franca
+DESCRIPTION:Com Aruanda Leonel — https://www.sescsp.org.br/programacao/traco-tecnica-e-cuidado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Traço\, Técnica E Cuidado
+END:VALARM
+END:VEVENT
+END:VCALENDAR

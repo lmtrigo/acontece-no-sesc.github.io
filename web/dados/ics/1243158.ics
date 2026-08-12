@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243158-0@agenda-sesc
+DTSTART:20260823T110000
+SUMMARY:O Esporte como Projeto de Vida
+LOCATION:Sesc Campinas
+DESCRIPTION:Com Dra. Mariana Reis\, gerontóloga\, e Jussara Miller\, coreógrafa. Mediação: Rosângela Barbalacco\, assistente técnica do Sesc SP. — https://www.sescsp.org.br/programacao/o-esporte-como-projeto-de-vida
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Esporte como Projeto de Vida
+END:VALARM
+END:VEVENT
+END:VCALENDAR

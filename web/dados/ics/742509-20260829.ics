@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:742509-20260829T120000@agenda-sesc
+DTSTART:20260829T120000
+SUMMARY:Aula Aberta de Condicionamento Físico Aquático
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com educadores em atividades físicoesportivas do Sesc — https://www.sescsp.org.br/programacao/aula-aberta-de-condicionamento-fisico-aquatico-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Aula Aberta de Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247676-0@agenda-sesc
+DTSTART:20260816T160000
+SUMMARY:Forró de Mala e Cuia encontra Deivid Vieira
+LOCATION:Sesc Araraquara
+DESCRIPTION:Morada do Som — https://www.sescsp.org.br/programacao/forro-de-mala-e-cuia-encontra-deivid-vieira
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Forró de Mala e Cuia encontra Deivid Vieira
+END:VALARM
+END:VEVENT
+END:VCALENDAR

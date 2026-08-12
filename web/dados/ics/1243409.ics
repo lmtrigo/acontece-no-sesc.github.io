@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243409-0@agenda-sesc
+DTSTART:20260814T193000
+SUMMARY:Curta São Carlos - Verso Livre
+LOCATION:Sesc São Carlos
+DESCRIPTION:BRA\, 2024. Cor. Dir.: Marina Eduarda. Documentário. — https://www.sescsp.org.br/programacao/curta-sao-carlos-verso-livre
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Curta São Carlos - Verso Livre
+END:VALARM
+END:VEVENT
+END:VCALENDAR

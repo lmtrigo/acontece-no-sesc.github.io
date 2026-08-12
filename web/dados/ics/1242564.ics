@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242564-0@agenda-sesc
+DTSTART:20260829T200000
+SUMMARY:Na Luneta do Tempo\, no Caleidoscópio da Rua
+LOCATION:Sesc Rio Preto — Avenida Francisco das Chagas Oliveira\, 1333  | Chácara Municipal | SAO JOSE DO RIO PRETO  | SP | Cep: 15090-190
+DESCRIPTION:com Circo de Ébanos. Direção Geral: Bel Toledo. Direção Artística e Dramaturgia: Laruama Alves — https://www.sescsp.org.br/programacao/na-luneta-do-tempo-no-caleidoscopio-da-rua-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Na Luneta do Tempo\, no Caleidoscópio da Rua
+END:VALARM
+END:VEVENT
+END:VCALENDAR

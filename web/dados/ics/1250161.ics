@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1250161-0@agenda-sesc
+DTSTART:20260816T160000
+SUMMARY:Ninhos iscas
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Ana Clara de Almeida\, Aline Negromonte e Maria Cecília Ortis\, Labbees - USP Leste — https://www.sescsp.org.br/programacao/ninhos-iscas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ninhos iscas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

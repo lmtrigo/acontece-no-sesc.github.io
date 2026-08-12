@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238380-0@agenda-sesc
+DTSTART:20260823T160000
+SUMMARY:Banda Sankyo
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Show Karii! Festa de Okinawa — https://www.sescsp.org.br/programacao/banda-sankyo-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Banda Sankyo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239097-0@agenda-sesc
+DTSTART:20260823T113000
+SUMMARY:Rupestre - O Que a Terra Conta
+LOCATION:Sesc Santo André
+DESCRIPTION:com Cia. 2 mililitros — https://www.sescsp.org.br/programacao/rupestre-o-que-a-terra-conta-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rupestre - O Que a Terra Conta
+END:VALARM
+END:VEVENT
+END:VCALENDAR

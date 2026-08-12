@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:602559-20260829T103000@agenda-sesc
+DTSTART:20260829T103000
+SUMMARY:Violino para crianças - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Regiane Dias — https://www.sescsp.org.br/programacao/violino-para-criancas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino para crianças - Continuidade
+END:VALARM
+END:VEVENT
+END:VCALENDAR

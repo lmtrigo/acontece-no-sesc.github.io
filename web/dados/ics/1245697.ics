@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245697-0@agenda-sesc
+DTSTART:20260827T200000
+SUMMARY:Na surdina: performance literária em Libras e em Português
+LOCATION:Sesc Birigui
+DESCRIPTION:Com Elinilson Soares e Lucas Sol — https://www.sescsp.org.br/programacao/na-surdina-performance-literaria-em-libras-e-em-portugues
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Na surdina: performance literária em Libras e em Português
+END:VALARM
+END:VEVENT
+END:VCALENDAR

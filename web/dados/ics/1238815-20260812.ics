@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238815-20260812T103000@agenda-sesc
+DTSTART:20260812T103000
+SUMMARY:AteliArte: Introdução ao Pontilhismo
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Com Ógbá — https://www.sescsp.org.br/programacao/ateliarte-introducao-ao-pontilhismo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:AteliArte: Introdução ao Pontilhismo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

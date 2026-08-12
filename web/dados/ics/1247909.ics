@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247909-0@agenda-sesc
+DTSTART:20260826T180000
+SUMMARY:O Último Azul
+LOCATION:Sesc Ipiranga — Rua Bom Pastor\, 822 | Ipiranga | SAO PAULO  | SP | Cep: 04203-000
+DESCRIPTION:Dir. Gabriel Mascaro. Brasil\, 2025 — https://www.sescsp.org.br/programacao/o-ultimo-azul-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Último Azul
+END:VALARM
+END:VEVENT
+END:VCALENDAR

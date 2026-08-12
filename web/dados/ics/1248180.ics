@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248180-0@agenda-sesc
+DTSTART:20260919T100000
+SUMMARY:Personalize seu skate
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Radamés Gois\, artesão e skatista — https://www.sescsp.org.br/programacao/personalize-seu-skate
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Personalize seu skate
+END:VALARM
+END:VEVENT
+END:VCALENDAR

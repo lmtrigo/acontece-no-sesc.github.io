@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249136-insc@agenda-sesc
+DTSTART:20260902T100000
+SUMMARY:Abrem as inscrições: Figuração Negra: da cor ao simbólico na pele da arte contemporânea
+LOCATION:Sesc Consolação
+DESCRIPTION:https://www.sescsp.org.br/programacao/figuracao-negra-da-cor-ao-simbolico-na-pele-da-arte-contemporanea
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Inscrições abrem em 1h
+END:VALARM
+END:VEVENT
+END:VCALENDAR

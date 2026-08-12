@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1235746-20260821T192000@agenda-sesc
+DTSTART:20260821T192000
+SUMMARY:Copa Sesc 2026 | Futsal Feminino e Masculino
+LOCATION:Sesc Consolação
+DESCRIPTION:Feminino e Masculino — https://www.sescsp.org.br/programacao/copa-sesc-2026-futsal-feminino-e-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Copa Sesc 2026 | Futsal Feminino e Masculino
+END:VALARM
+END:VEVENT
+END:VCALENDAR

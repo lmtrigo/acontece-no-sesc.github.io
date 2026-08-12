@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:579014-20260813T170000@agenda-sesc
+DTSTART:20260813T170000
+SUMMARY:CosturETA | Ateliê aberto de costura
+LOCATION:Sesc Santo Amaro
+DESCRIPTION:com Karina Rhomberg — https://www.sescsp.org.br/programacao/costureta-atelie-aberto-de-costura
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:CosturETA | Ateliê aberto de costura
+END:VALARM
+END:VEVENT
+END:VCALENDAR

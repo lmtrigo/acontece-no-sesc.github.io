@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1236652-20260829T140000@agenda-sesc
+DTSTART:20260829T140000
+SUMMARY:Autômato com Palito de Sorvete
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com Bruno Perê — https://www.sescsp.org.br/programacao/automato-com-palito-de-sorvete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Autômato com Palito de Sorvete
+END:VALARM
+END:VEVENT
+END:VCALENDAR

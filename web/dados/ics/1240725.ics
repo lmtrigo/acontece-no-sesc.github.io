@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240725-0@agenda-sesc
+DTSTART:20260823T170000
+SUMMARY:Sessão Tripla: Sara Gómez (Cuba)
+LOCATION:Sesc Santana — Avenida Luiz Dumont Villares\, 579 | Santana | SAO PAULO  | SP | Cep: 02085-100
+DESCRIPTION:Filmes: — https://www.sescsp.org.br/programacao/sessao-tripla-sara-gomez-cuba
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sessão Tripla: Sara Gómez (Cuba)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

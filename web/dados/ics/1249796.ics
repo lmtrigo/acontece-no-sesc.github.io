@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249796-0@agenda-sesc
+DTSTART:20260912T190000
+SUMMARY:Cena Ouro - Epide(r)mia
+LOCATION:Sesc Jundiaí — Av. Antônio Frederico Ozanan\, 6600 | Jardim Botânico | JUNDIAI  | SP | Cep: 13214-206
+DESCRIPTION:Com Cia. Mungunzá de Teatro — https://www.sescsp.org.br/programacao/cena-ouro-epidermia-jundiai
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cena Ouro - Epide(r)mia
+END:VALARM
+END:VEVENT
+END:VCALENDAR

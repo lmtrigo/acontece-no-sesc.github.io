@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242115-0@agenda-sesc
+DTSTART:20260813T180000
+SUMMARY:Bolhas Aquática
+LOCATION:Sesc Taubaté
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/bolhas-aquatica
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bolhas Aquática
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242115-1@agenda-sesc
+DTSTART:20260820T180000
+SUMMARY:Bolhas Aquática
+LOCATION:Sesc Taubaté
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/bolhas-aquatica
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bolhas Aquática
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242115-2@agenda-sesc
+DTSTART:20260827T180000
+SUMMARY:Bolhas Aquática
+LOCATION:Sesc Taubaté
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/bolhas-aquatica
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bolhas Aquática
+END:VALARM
+END:VEVENT
+END:VCALENDAR

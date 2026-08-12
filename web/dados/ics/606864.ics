@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:606864-0@agenda-sesc
+DTSTART:20260811T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:606864-1@agenda-sesc
+DTSTART:20260813T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:606864-2@agenda-sesc
+DTSTART:20260818T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:606864-3@agenda-sesc
+DTSTART:20260820T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:606864-4@agenda-sesc
+DTSTART:20260825T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:606864-5@agenda-sesc
+DTSTART:20260827T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:606864-6@agenda-sesc
+DTSTART:20260901T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:606864-7@agenda-sesc
+DTSTART:20260903T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:606864-8@agenda-sesc
+DTSTART:20260908T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:606864-9@agenda-sesc
+DTSTART:20260910T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:606864-10@agenda-sesc
+DTSTART:20260915T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:606864-11@agenda-sesc
+DTSTART:20260917T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:606864-12@agenda-sesc
+DTSTART:20260922T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:606864-13@agenda-sesc
+DTSTART:20260924T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:606864-14@agenda-sesc
+DTSTART:20260929T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:606864-15@agenda-sesc
+DTSTART:20261001T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:606864-16@agenda-sesc
+DTSTART:20261006T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:606864-17@agenda-sesc
+DTSTART:20261008T201000
+SUMMARY:Contrabaixo Acústico - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-continuidade-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Continuidade
+END:VALARM
+END:VEVENT
+END:VCALENDAR

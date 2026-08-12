@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:606896-20260925T190000@agenda-sesc
+DTSTART:20260925T190000
+SUMMARY:Prática Instrumental
+LOCATION:Sesc Consolação
+DESCRIPTION:com Kaique Iritsu — https://www.sescsp.org.br/programacao/pratica-instrumental
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Prática Instrumental
+END:VALARM
+END:VEVENT
+END:VCALENDAR

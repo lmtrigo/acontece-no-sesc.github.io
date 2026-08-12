@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1162433-0@agenda-sesc
+DTSTART:20260820T150000
+SUMMARY:Música e Movimento para Bebês
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Tali Alcalá — https://www.sescsp.org.br/programacao/musica-e-movimento-para-bebes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Música e Movimento para Bebês
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1162433-1@agenda-sesc
+DTSTART:20260827T150000
+SUMMARY:Música e Movimento para Bebês
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Tali Alcalá — https://www.sescsp.org.br/programacao/musica-e-movimento-para-bebes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Música e Movimento para Bebês
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1162433-2@agenda-sesc
+DTSTART:20260903T150000
+SUMMARY:Música e Movimento para Bebês
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Tali Alcalá — https://www.sescsp.org.br/programacao/musica-e-movimento-para-bebes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Música e Movimento para Bebês
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1162433-3@agenda-sesc
+DTSTART:20260910T150000
+SUMMARY:Música e Movimento para Bebês
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Tali Alcalá — https://www.sescsp.org.br/programacao/musica-e-movimento-para-bebes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Música e Movimento para Bebês
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1162433-4@agenda-sesc
+DTSTART:20260917T150000
+SUMMARY:Música e Movimento para Bebês
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Tali Alcalá — https://www.sescsp.org.br/programacao/musica-e-movimento-para-bebes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Música e Movimento para Bebês
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1162433-5@agenda-sesc
+DTSTART:20260924T150000
+SUMMARY:Música e Movimento para Bebês
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Tali Alcalá — https://www.sescsp.org.br/programacao/musica-e-movimento-para-bebes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Música e Movimento para Bebês
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1162433-6@agenda-sesc
+DTSTART:20261001T150000
+SUMMARY:Música e Movimento para Bebês
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Tali Alcalá — https://www.sescsp.org.br/programacao/musica-e-movimento-para-bebes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Música e Movimento para Bebês
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1162433-7@agenda-sesc
+DTSTART:20261008T150000
+SUMMARY:Música e Movimento para Bebês
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Tali Alcalá — https://www.sescsp.org.br/programacao/musica-e-movimento-para-bebes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Música e Movimento para Bebês
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,113 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241997-0@agenda-sesc
+DTSTART:20260812T180000
+SUMMARY:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com XTO\, educador em tecnologias e artes — https://www.sescsp.org.br/programacao/l-a-t-a-laboratorio-aberto-de-tecnologias-e-artes-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1241997-1@agenda-sesc
+DTSTART:20260819T180000
+SUMMARY:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com XTO\, educador em tecnologias e artes — https://www.sescsp.org.br/programacao/l-a-t-a-laboratorio-aberto-de-tecnologias-e-artes-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1241997-2@agenda-sesc
+DTSTART:20260826T180000
+SUMMARY:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com XTO\, educador em tecnologias e artes — https://www.sescsp.org.br/programacao/l-a-t-a-laboratorio-aberto-de-tecnologias-e-artes-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1241997-3@agenda-sesc
+DTSTART:20260902T180000
+SUMMARY:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com XTO\, educador em tecnologias e artes — https://www.sescsp.org.br/programacao/l-a-t-a-laboratorio-aberto-de-tecnologias-e-artes-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1241997-4@agenda-sesc
+DTSTART:20260909T180000
+SUMMARY:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com XTO\, educador em tecnologias e artes — https://www.sescsp.org.br/programacao/l-a-t-a-laboratorio-aberto-de-tecnologias-e-artes-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1241997-5@agenda-sesc
+DTSTART:20260916T180000
+SUMMARY:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com XTO\, educador em tecnologias e artes — https://www.sescsp.org.br/programacao/l-a-t-a-laboratorio-aberto-de-tecnologias-e-artes-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1241997-6@agenda-sesc
+DTSTART:20260923T180000
+SUMMARY:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com XTO\, educador em tecnologias e artes — https://www.sescsp.org.br/programacao/l-a-t-a-laboratorio-aberto-de-tecnologias-e-artes-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1241997-7@agenda-sesc
+DTSTART:20260930T180000
+SUMMARY:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com XTO\, educador em tecnologias e artes — https://www.sescsp.org.br/programacao/l-a-t-a-laboratorio-aberto-de-tecnologias-e-artes-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1241997-8@agenda-sesc
+DTSTART:20261007T180000
+SUMMARY:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com XTO\, educador em tecnologias e artes — https://www.sescsp.org.br/programacao/l-a-t-a-laboratorio-aberto-de-tecnologias-e-artes-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:L.A.T.A. - Laboratório Aberto de Tecnologias e Artes
+END:VALARM
+END:VEVENT
+END:VCALENDAR

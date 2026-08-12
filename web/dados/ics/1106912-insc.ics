@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1106912-insc@agenda-sesc
+DTSTART:20260715T100000
+SUMMARY:Abrem as inscrições: Pré-Inscrição do Programa Juventudes 2026 no Sesc Vila Mariana
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Encerra em 2026-08-15. https://www.sescsp.org.br/programacao/pre-inscricao-do-programa-juventudes-2026-no-sesc-vila-mariana
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Inscrições abrem em 1h
+END:VALARM
+END:VEVENT
+END:VCALENDAR

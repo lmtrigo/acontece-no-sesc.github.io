@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238489-0@agenda-sesc
+DTSTART:20260816T110000
+SUMMARY:Indígenas Identidades Paulistas
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Casé Angatu — https://www.sescsp.org.br/programacao/indigenas-identidades-paulistas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Indígenas Identidades Paulistas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

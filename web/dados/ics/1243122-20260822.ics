@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243122-20260822T140000@agenda-sesc
+DTSTART:20260822T140000
+SUMMARY:Brincadeiras do Povo Guarani
+LOCATION:Sesc Pompeia
+DESCRIPTION:Karai Valcenir Tibes\, Eliane da Silva\, Cleison Tibes — https://www.sescsp.org.br/programacao/brincadeiras-do-povo-guarani-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Brincadeiras do Povo Guarani
+END:VALARM
+END:VEVENT
+END:VCALENDAR

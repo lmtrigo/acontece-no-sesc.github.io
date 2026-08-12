@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248807-20260917T193000@agenda-sesc
+DTSTART:20260917T193000
+SUMMARY:Canto Adulto - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Hellen Sabino\, Educadora em Atividades Musicais — https://www.sescsp.org.br/programacao/canto-adulto-iniciacao-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Canto Adulto - Iniciação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

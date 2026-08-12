@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1227528-20260820T140000@agenda-sesc
+DTSTART:20260820T140000
+SUMMARY:Seu caderno em costura Japonesa
+LOCATION:Sesc Catanduva
+DESCRIPTION:Humberto Borghi Filippini\, encadernador\, designer e arquiteto — https://www.sescsp.org.br/programacao/seu-caderno-em-costura-japonesa
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Seu caderno em costura Japonesa
+END:VALARM
+END:VEVENT
+END:VCALENDAR

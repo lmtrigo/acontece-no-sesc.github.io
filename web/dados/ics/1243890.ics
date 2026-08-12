@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243890-0@agenda-sesc
+DTSTART:20260820T200000
+SUMMARY:Juçara Marçal
+LOCATION:Sesc São Carlos — Avenida Comendador Alfredo Maffei\, 700 | Jardim Gibertoni | SAO CARLOS  | SP | Cep: 13560-649
+DESCRIPTION:Elizeth sobe o morro — https://www.sescsp.org.br/programacao/jucara-marcal-17
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Juçara Marçal
+END:VALARM
+END:VEVENT
+END:VCALENDAR

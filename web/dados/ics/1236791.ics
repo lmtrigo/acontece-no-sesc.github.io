@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1236791-0@agenda-sesc
+DTSTART:20260815T160000
+SUMMARY:O Reino Quilombo de Dodô
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com Maria Baú — https://www.sescsp.org.br/programacao/o-reino-quilombo-de-dodo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Reino Quilombo de Dodô
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1236791-1@agenda-sesc
+DTSTART:20260816T160000
+SUMMARY:O Reino Quilombo de Dodô
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com Maria Baú — https://www.sescsp.org.br/programacao/o-reino-quilombo-de-dodo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Reino Quilombo de Dodô
+END:VALARM
+END:VEVENT
+END:VCALENDAR

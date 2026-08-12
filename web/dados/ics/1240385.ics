@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240385-0@agenda-sesc
+DTSTART:20260814T190000
+SUMMARY:Mostra Bauru Na Tela
+LOCATION:Sesc Bauru — Avenida Aureliano Cardia\, 6-71 | Vila Cardia | BAURU  | SP | Cep: 17013-411
+DESCRIPTION:Com diretoras e diretores da Mostra Bauru na Tela — https://www.sescsp.org.br/programacao/mostra-bauru-na-tela
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mostra Bauru Na Tela
+END:VALARM
+END:VEVENT
+END:VCALENDAR

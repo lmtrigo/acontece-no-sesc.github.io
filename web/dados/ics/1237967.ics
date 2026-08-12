@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237967-0@agenda-sesc
+DTSTART:20260821T193000
+SUMMARY:Pensamento Giratório: Teatro Relacional e Primeira Infância
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Eranos Círculo de Arte — https://www.sescsp.org.br/programacao/pensamento-giratorio-teatro-relacional-e-primeira-infancia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pensamento Giratório: Teatro Relacional e Primeira Infância
+END:VALARM
+END:VEVENT
+END:VCALENDAR

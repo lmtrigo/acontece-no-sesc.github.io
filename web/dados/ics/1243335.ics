@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243335-0@agenda-sesc
+DTSTART:20260917T200000
+SUMMARY:Hereditária
+LOCATION:Sesc Piracicaba — Rua Ipiranga\, 155  | Centro | PIRACICABA  | SP | Cep: 13400-480
+DESCRIPTION:Com Isadora Medella\, Luize Mendes Dias e Moira Braga — https://www.sescsp.org.br/programacao/hereditaria-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Hereditária
+END:VALARM
+END:VEVENT
+END:VCALENDAR

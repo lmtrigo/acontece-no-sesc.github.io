@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1236789-0@agenda-sesc
+DTSTART:20260823T100000
+SUMMARY:Da Escuta à Intervenção: Papel do Adulto na Construção da Identidade da Criança
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com a pedagoga e especialista em relações étnico-raciais\, Clélia Rosa — https://www.sescsp.org.br/programacao/da-escuta-a-intervencao-papel-do-adulto-na-construcao-da-identidade-da-crianca
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Da Escuta à Intervenção: Papel do Adulto na Construção da Identidade da Criança
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239928-0@agenda-sesc
+DTSTART:20260820T093000
+SUMMARY:Violino e Viola - Continuidade
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Nicole Reis — https://www.sescsp.org.br/programacao/violino-e-viola-continuidade
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino e Viola - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239928-1@agenda-sesc
+DTSTART:20260827T093000
+SUMMARY:Violino e Viola - Continuidade
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Nicole Reis — https://www.sescsp.org.br/programacao/violino-e-viola-continuidade
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino e Viola - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239928-2@agenda-sesc
+DTSTART:20260903T093000
+SUMMARY:Violino e Viola - Continuidade
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Nicole Reis — https://www.sescsp.org.br/programacao/violino-e-viola-continuidade
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino e Viola - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239928-3@agenda-sesc
+DTSTART:20260910T093000
+SUMMARY:Violino e Viola - Continuidade
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Nicole Reis — https://www.sescsp.org.br/programacao/violino-e-viola-continuidade
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino e Viola - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239928-4@agenda-sesc
+DTSTART:20260917T093000
+SUMMARY:Violino e Viola - Continuidade
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Nicole Reis — https://www.sescsp.org.br/programacao/violino-e-viola-continuidade
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino e Viola - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239928-5@agenda-sesc
+DTSTART:20260924T093000
+SUMMARY:Violino e Viola - Continuidade
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Nicole Reis — https://www.sescsp.org.br/programacao/violino-e-viola-continuidade
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino e Viola - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239928-6@agenda-sesc
+DTSTART:20261001T093000
+SUMMARY:Violino e Viola - Continuidade
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Nicole Reis — https://www.sescsp.org.br/programacao/violino-e-viola-continuidade
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino e Viola - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239928-7@agenda-sesc
+DTSTART:20261008T093000
+SUMMARY:Violino e Viola - Continuidade
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Nicole Reis — https://www.sescsp.org.br/programacao/violino-e-viola-continuidade
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino e Viola - Continuidade
+END:VALARM
+END:VEVENT
+END:VCALENDAR

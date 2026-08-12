@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1236685-0@agenda-sesc
+DTSTART:20260819T200000
+SUMMARY:Teatro William Shakespeare: Leitura Dramática com Julia Lemmertz e Gabriel Braga
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Fernando Medeiros e Ricardo Cardoso | Leitura dramática com Julia Lemmertz e Caio Blat — https://www.sescsp.org.br/programacao/o-teatro-de-william-shakespeare-leitura-dramatica-aula-e-bate-papo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Teatro William Shakespeare: Leitura Dramática com Julia Lemmertz e Gabriel Braga
+END:VALARM
+END:VEVENT
+END:VCALENDAR

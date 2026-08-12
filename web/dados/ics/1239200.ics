@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239200-0@agenda-sesc
+DTSTART:20260815T110000
+SUMMARY:Festival Entendidas
+LOCATION:Sesc Itaquera
+DESCRIPTION:Com Coletivo Alternativa - L — https://www.sescsp.org.br/programacao/festival-entendidas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Festival Entendidas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239200-1@agenda-sesc
+DTSTART:20260816T110000
+SUMMARY:Festival Entendidas
+LOCATION:Sesc Itaquera
+DESCRIPTION:Com Coletivo Alternativa - L — https://www.sescsp.org.br/programacao/festival-entendidas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Festival Entendidas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

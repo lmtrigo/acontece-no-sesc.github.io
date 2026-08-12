@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239475-0@agenda-sesc
+DTSTART:20260828T203000
+SUMMARY:Hércules Gomes
+LOCATION:Sesc Belenzinho — Rua Padre Adelino\, 1.000 | Belenzinho | SAO PAULO  | SP | Cep: 03303-000
+DESCRIPTION:Bremen Solo — https://www.sescsp.org.br/programacao/hercules-gomes-12
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Hércules Gomes
+END:VALARM
+END:VEVENT
+END:VCALENDAR

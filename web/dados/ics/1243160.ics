@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243160-0@agenda-sesc
+DTSTART:20260823T110000
+SUMMARY:Histórias que inspiram
+LOCATION:Sesc Campinas
+DESCRIPTION:Com pessoas idosas do TSPI\, GPT e GMF. Mediação: Tatiana Anjos. — https://www.sescsp.org.br/programacao/historias-que-inspiram
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Histórias que inspiram
+END:VALARM
+END:VEVENT
+END:VCALENDAR

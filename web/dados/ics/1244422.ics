@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244422-0@agenda-sesc
+DTSTART:20260828T203000
+SUMMARY:Velha Guarda Musical da Mangueira
+LOCATION:Sesc Franca
+DESCRIPTION:70 anos — https://www.sescsp.org.br/programacao/velha-guarda-da-mangueira
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Velha Guarda Musical da Mangueira
+END:VALARM
+END:VEVENT
+END:VCALENDAR

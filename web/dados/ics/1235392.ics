@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1235392-0@agenda-sesc
+DTSTART:20260811T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235392-1@agenda-sesc
+DTSTART:20260812T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235392-2@agenda-sesc
+DTSTART:20260813T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235392-3@agenda-sesc
+DTSTART:20260814T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235392-4@agenda-sesc
+DTSTART:20260815T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235392-5@agenda-sesc
+DTSTART:20260816T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235392-6@agenda-sesc
+DTSTART:20260818T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235392-7@agenda-sesc
+DTSTART:20260819T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235392-8@agenda-sesc
+DTSTART:20260820T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235392-9@agenda-sesc
+DTSTART:20260821T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235392-10@agenda-sesc
+DTSTART:20260822T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235392-11@agenda-sesc
+DTSTART:20260823T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235392-12@agenda-sesc
+DTSTART:20260825T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235392-13@agenda-sesc
+DTSTART:20260826T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235392-14@agenda-sesc
+DTSTART:20260827T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235392-15@agenda-sesc
+DTSTART:20260828T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235392-16@agenda-sesc
+DTSTART:20260829T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235392-17@agenda-sesc
+DTSTART:20260830T100000
+SUMMARY:Inventário (Ordinário)
+LOCATION:Sesc Belenzinho
+DESCRIPTION:Com JAMAC — https://www.sescsp.org.br/programacao/inventario-ordinario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Inventário (Ordinário)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

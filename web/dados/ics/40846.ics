@@ -1,0 +1,209 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:40846-0@agenda-sesc
+DTSTART:20260813T093000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-14
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40846-1@agenda-sesc
+DTSTART:20260815T093000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-14
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40846-2@agenda-sesc
+DTSTART:20260820T093000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-14
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40846-3@agenda-sesc
+DTSTART:20260822T093000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-14
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40846-4@agenda-sesc
+DTSTART:20260827T093000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-14
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40846-5@agenda-sesc
+DTSTART:20260829T093000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-14
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40846-6@agenda-sesc
+DTSTART:20260903T093000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-14
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40846-7@agenda-sesc
+DTSTART:20260905T093000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-14
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40846-8@agenda-sesc
+DTSTART:20260910T093000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-14
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40846-9@agenda-sesc
+DTSTART:20260912T093000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-14
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40846-10@agenda-sesc
+DTSTART:20260917T093000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-14
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40846-11@agenda-sesc
+DTSTART:20260919T093000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-14
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40846-12@agenda-sesc
+DTSTART:20260924T093000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-14
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40846-13@agenda-sesc
+DTSTART:20260926T093000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-14
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40846-14@agenda-sesc
+DTSTART:20261001T093000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-14
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40846-15@agenda-sesc
+DTSTART:20261003T093000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-14
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:40846-16@agenda-sesc
+DTSTART:20261008T093000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/movimento-consciente-14
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+END:VCALENDAR

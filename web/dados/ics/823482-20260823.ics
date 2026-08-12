@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:823482-20260823T101500@agenda-sesc
+DTSTART:20260823T101500
+SUMMARY:Pilates de solo
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Edmeris Silva\, Juliana Pires\, Alexandre Corrêa — https://www.sescsp.org.br/programacao/pilates-de-solo-21
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pilates de solo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

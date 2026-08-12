@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241141-0@agenda-sesc
+DTSTART:20260814T200000
+SUMMARY:KOFF – Festival de Cinema Coreano
+LOCATION:Sesc Piracicaba
+DESCRIPTION:Libera - the time waiting for you / On the Way to Kill the Kick Scooter / The Game of Sisyphus / Illusory Dream — https://www.sescsp.org.br/programacao/koff-festival-de-cinema-coreano-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:KOFF – Festival de Cinema Coreano
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243623-0@agenda-sesc
+DTSTART:20260812T160000
+SUMMARY:Cérebro Ativo: estimulação e vivência cognitiva para longevidade saudável
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Sandra Kruppa\, Terapeuta Cognitiva e pedagoga — https://www.sescsp.org.br/programacao/cerebro-ativo-estimulacao-e-vivencia-cognitiva-para-longevidade-saudavel
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cérebro Ativo: estimulação e vivência cognitiva para longevidade saudável
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1243623-1@agenda-sesc
+DTSTART:20260819T160000
+SUMMARY:Cérebro Ativo: estimulação e vivência cognitiva para longevidade saudável
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Sandra Kruppa\, Terapeuta Cognitiva e pedagoga — https://www.sescsp.org.br/programacao/cerebro-ativo-estimulacao-e-vivencia-cognitiva-para-longevidade-saudavel
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cérebro Ativo: estimulação e vivência cognitiva para longevidade saudável
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1243623-2@agenda-sesc
+DTSTART:20260826T160000
+SUMMARY:Cérebro Ativo: estimulação e vivência cognitiva para longevidade saudável
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Sandra Kruppa\, Terapeuta Cognitiva e pedagoga — https://www.sescsp.org.br/programacao/cerebro-ativo-estimulacao-e-vivencia-cognitiva-para-longevidade-saudavel
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cérebro Ativo: estimulação e vivência cognitiva para longevidade saudável
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1243623-3@agenda-sesc
+DTSTART:20260902T160000
+SUMMARY:Cérebro Ativo: estimulação e vivência cognitiva para longevidade saudável
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Sandra Kruppa\, Terapeuta Cognitiva e pedagoga — https://www.sescsp.org.br/programacao/cerebro-ativo-estimulacao-e-vivencia-cognitiva-para-longevidade-saudavel
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cérebro Ativo: estimulação e vivência cognitiva para longevidade saudável
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1243623-4@agenda-sesc
+DTSTART:20260909T160000
+SUMMARY:Cérebro Ativo: estimulação e vivência cognitiva para longevidade saudável
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Sandra Kruppa\, Terapeuta Cognitiva e pedagoga — https://www.sescsp.org.br/programacao/cerebro-ativo-estimulacao-e-vivencia-cognitiva-para-longevidade-saudavel
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cérebro Ativo: estimulação e vivência cognitiva para longevidade saudável
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1243623-5@agenda-sesc
+DTSTART:20260916T160000
+SUMMARY:Cérebro Ativo: estimulação e vivência cognitiva para longevidade saudável
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Sandra Kruppa\, Terapeuta Cognitiva e pedagoga — https://www.sescsp.org.br/programacao/cerebro-ativo-estimulacao-e-vivencia-cognitiva-para-longevidade-saudavel
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cérebro Ativo: estimulação e vivência cognitiva para longevidade saudável
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1243623-6@agenda-sesc
+DTSTART:20260923T160000
+SUMMARY:Cérebro Ativo: estimulação e vivência cognitiva para longevidade saudável
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Sandra Kruppa\, Terapeuta Cognitiva e pedagoga — https://www.sescsp.org.br/programacao/cerebro-ativo-estimulacao-e-vivencia-cognitiva-para-longevidade-saudavel
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cérebro Ativo: estimulação e vivência cognitiva para longevidade saudável
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1243623-7@agenda-sesc
+DTSTART:20260930T160000
+SUMMARY:Cérebro Ativo: estimulação e vivência cognitiva para longevidade saudável
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Sandra Kruppa\, Terapeuta Cognitiva e pedagoga — https://www.sescsp.org.br/programacao/cerebro-ativo-estimulacao-e-vivencia-cognitiva-para-longevidade-saudavel
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cérebro Ativo: estimulação e vivência cognitiva para longevidade saudável
+END:VALARM
+END:VEVENT
+END:VCALENDAR

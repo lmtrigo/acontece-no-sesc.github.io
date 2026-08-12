@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242697-0@agenda-sesc
+DTSTART:20260812T190000
+SUMMARY:Diásporas e Territorialidades na Arte Contemporânea
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Erica Malunguinho — https://www.sescsp.org.br/programacao/diasporas-e-territorialidades-na-arte-contemporanea
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Diásporas e Territorialidades na Arte Contemporânea
+END:VALARM
+END:VEVENT
+END:VCALENDAR

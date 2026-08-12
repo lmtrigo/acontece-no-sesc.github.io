@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249892-0@agenda-sesc
+DTSTART:20260816T180000
+SUMMARY:Maria Esmeralda
+LOCATION:Sesc Pinheiros — Rua Paes Leme\, 195 | Pinheiros | SAO PAULO  | SP | Cep: 05424-150
+DESCRIPTION:https://www.sescsp.org.br/programacao/maria-esmeralda-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Maria Esmeralda
+END:VALARM
+END:VEVENT
+END:VCALENDAR

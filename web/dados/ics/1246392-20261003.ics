@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246392-20261003T103000@agenda-sesc
+DTSTART:20261003T103000
+SUMMARY:Práticas de Revelação Fotográfica com métodos Alternativos*
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Maurício Sapata — https://www.sescsp.org.br/programacao/praticas-de-revelacao-fotografica-com-metodos-alternativos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Práticas de Revelação Fotográfica com métodos Alternativos*
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245563-0@agenda-sesc
+DTSTART:20260819T190000
+SUMMARY:Ser político
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Direção: Victor Trovike | Documentário | Brasil | 2026 | Com equipe Constelação Filmes — https://www.sescsp.org.br/programacao/ser-politico
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ser político
+END:VALARM
+END:VEVENT
+END:VCALENDAR

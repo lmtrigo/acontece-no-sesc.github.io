@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241139-0@agenda-sesc
+DTSTART:20260815T160000
+SUMMARY:Encanto
+LOCATION:Sesc Jundiaí
+DESCRIPTION:Dir. Byron Howard\, Jared Bush\, Chasire Castro Smith\, EUA\, MEX\, Animação\, 2021 — https://www.sescsp.org.br/programacao/encanto-jundiai
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Encanto
+END:VALARM
+END:VEVENT
+END:VCALENDAR

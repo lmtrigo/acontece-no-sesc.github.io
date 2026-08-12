@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240827-0@agenda-sesc
+DTSTART:20260819T140000
+SUMMARY:Estruturação e Percepção Musical - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Kaique Iritsu — https://www.sescsp.org.br/programacao/continuidade-estruturacao-e-percepcao-musical
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Estruturação e Percepção Musical - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240827-1@agenda-sesc
+DTSTART:20260826T140000
+SUMMARY:Estruturação e Percepção Musical - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Kaique Iritsu — https://www.sescsp.org.br/programacao/continuidade-estruturacao-e-percepcao-musical
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Estruturação e Percepção Musical - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240827-2@agenda-sesc
+DTSTART:20260902T140000
+SUMMARY:Estruturação e Percepção Musical - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Kaique Iritsu — https://www.sescsp.org.br/programacao/continuidade-estruturacao-e-percepcao-musical
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Estruturação e Percepção Musical - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240827-3@agenda-sesc
+DTSTART:20260909T140000
+SUMMARY:Estruturação e Percepção Musical - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Kaique Iritsu — https://www.sescsp.org.br/programacao/continuidade-estruturacao-e-percepcao-musical
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Estruturação e Percepção Musical - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240827-4@agenda-sesc
+DTSTART:20260916T140000
+SUMMARY:Estruturação e Percepção Musical - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Kaique Iritsu — https://www.sescsp.org.br/programacao/continuidade-estruturacao-e-percepcao-musical
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Estruturação e Percepção Musical - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240827-5@agenda-sesc
+DTSTART:20260923T140000
+SUMMARY:Estruturação e Percepção Musical - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Kaique Iritsu — https://www.sescsp.org.br/programacao/continuidade-estruturacao-e-percepcao-musical
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Estruturação e Percepção Musical - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240827-6@agenda-sesc
+DTSTART:20260930T140000
+SUMMARY:Estruturação e Percepção Musical - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Kaique Iritsu — https://www.sescsp.org.br/programacao/continuidade-estruturacao-e-percepcao-musical
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Estruturação e Percepção Musical - Continuidade
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240827-7@agenda-sesc
+DTSTART:20261007T140000
+SUMMARY:Estruturação e Percepção Musical - Continuidade
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Kaique Iritsu — https://www.sescsp.org.br/programacao/continuidade-estruturacao-e-percepcao-musical
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Estruturação e Percepção Musical - Continuidade
+END:VALARM
+END:VEVENT
+END:VCALENDAR

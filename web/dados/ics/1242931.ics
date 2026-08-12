@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242931-0@agenda-sesc
+DTSTART:20260821T190000
+SUMMARY:Discos voadores e fenômenos aéreos não identificados
+LOCATION:Sesc Birigui — Rua Manoel Domingues Ventura\, 121 | Vila Xavier | BIRIGUI  | SP | Cep: 16203-009
+DESCRIPTION:Com Kevin Franco dos Santos\, doutorando em história (PPGH/UFGD) — https://www.sescsp.org.br/programacao/discos-voadores-e-fenomenos-aereos-nao-identificados-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Discos voadores e fenômenos aéreos não identificados
+END:VALARM
+END:VEVENT
+END:VCALENDAR

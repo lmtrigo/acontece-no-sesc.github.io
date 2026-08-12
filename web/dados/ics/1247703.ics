@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247703-0@agenda-sesc
+DTSTART:20260926T080000
+SUMMARY:Jundiaí: os caminhos das águas
+LOCATION:Sesc Jundiaí
+DESCRIPTION:Com Alexandre Oliveira — https://www.sescsp.org.br/programacao/jundiai-os-caminhos-das-aguas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Jundiaí: os caminhos das águas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

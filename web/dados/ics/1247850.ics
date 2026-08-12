@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247850-0@agenda-sesc
+DTSTART:20260829T180000
+SUMMARY:Claudio Lacerda
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:No show Baile Caipira — https://www.sescsp.org.br/programacao/claudio-lacerda-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Claudio Lacerda
+END:VALARM
+END:VEVENT
+END:VCALENDAR

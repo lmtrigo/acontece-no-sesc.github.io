@@ -1,0 +1,77 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242482-0@agenda-sesc
+DTSTART:20260813T190000
+SUMMARY:Na Batida do Coração: Confecção do Bumbo Grave
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Mestre Tico — https://www.sescsp.org.br/programacao/na-batida-do-coracao-confeccao-do-bumbo-grave
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Na Batida do Coração: Confecção do Bumbo Grave
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242482-1@agenda-sesc
+DTSTART:20260820T190000
+SUMMARY:Na Batida do Coração: Confecção do Bumbo Grave
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Mestre Tico — https://www.sescsp.org.br/programacao/na-batida-do-coracao-confeccao-do-bumbo-grave
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Na Batida do Coração: Confecção do Bumbo Grave
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242482-2@agenda-sesc
+DTSTART:20260827T190000
+SUMMARY:Na Batida do Coração: Confecção do Bumbo Grave
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Mestre Tico — https://www.sescsp.org.br/programacao/na-batida-do-coracao-confeccao-do-bumbo-grave
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Na Batida do Coração: Confecção do Bumbo Grave
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242482-3@agenda-sesc
+DTSTART:20260903T190000
+SUMMARY:Na Batida do Coração: Confecção do Bumbo Grave
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Mestre Tico — https://www.sescsp.org.br/programacao/na-batida-do-coracao-confeccao-do-bumbo-grave
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Na Batida do Coração: Confecção do Bumbo Grave
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242482-4@agenda-sesc
+DTSTART:20260910T190000
+SUMMARY:Na Batida do Coração: Confecção do Bumbo Grave
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Mestre Tico — https://www.sescsp.org.br/programacao/na-batida-do-coracao-confeccao-do-bumbo-grave
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Na Batida do Coração: Confecção do Bumbo Grave
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242482-5@agenda-sesc
+DTSTART:20260917T190000
+SUMMARY:Na Batida do Coração: Confecção do Bumbo Grave
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Mestre Tico — https://www.sescsp.org.br/programacao/na-batida-do-coracao-confeccao-do-bumbo-grave
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Na Batida do Coração: Confecção do Bumbo Grave
+END:VALARM
+END:VEVENT
+END:VCALENDAR

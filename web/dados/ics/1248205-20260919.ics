@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248205-20260919T100000@agenda-sesc
+DTSTART:20260919T100000
+SUMMARY:Aulas Abertas de Basquetebol
+LOCATION:Sesc Consolação
+DESCRIPTION:Jogando com Capivarinhas — https://www.sescsp.org.br/programacao/aulas-abertas-de-basquetebol
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Aulas Abertas de Basquetebol
+END:VALARM
+END:VEVENT
+END:VCALENDAR

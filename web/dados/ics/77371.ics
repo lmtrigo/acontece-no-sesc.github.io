@@ -1,0 +1,437 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:77371-0@agenda-sesc
+DTSTART:20260811T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-1@agenda-sesc
+DTSTART:20260812T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-2@agenda-sesc
+DTSTART:20260813T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-3@agenda-sesc
+DTSTART:20260814T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-4@agenda-sesc
+DTSTART:20260818T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-5@agenda-sesc
+DTSTART:20260819T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-6@agenda-sesc
+DTSTART:20260820T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-7@agenda-sesc
+DTSTART:20260821T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-8@agenda-sesc
+DTSTART:20260825T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-9@agenda-sesc
+DTSTART:20260826T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-10@agenda-sesc
+DTSTART:20260827T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-11@agenda-sesc
+DTSTART:20260828T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-12@agenda-sesc
+DTSTART:20260901T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-13@agenda-sesc
+DTSTART:20260902T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-14@agenda-sesc
+DTSTART:20260903T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-15@agenda-sesc
+DTSTART:20260904T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-16@agenda-sesc
+DTSTART:20260908T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-17@agenda-sesc
+DTSTART:20260909T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-18@agenda-sesc
+DTSTART:20260910T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-19@agenda-sesc
+DTSTART:20260911T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-20@agenda-sesc
+DTSTART:20260915T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-21@agenda-sesc
+DTSTART:20260916T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-22@agenda-sesc
+DTSTART:20260917T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-23@agenda-sesc
+DTSTART:20260918T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-24@agenda-sesc
+DTSTART:20260922T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-25@agenda-sesc
+DTSTART:20260923T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-26@agenda-sesc
+DTSTART:20260924T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-27@agenda-sesc
+DTSTART:20260925T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-28@agenda-sesc
+DTSTART:20260929T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-29@agenda-sesc
+DTSTART:20260930T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-30@agenda-sesc
+DTSTART:20261001T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-31@agenda-sesc
+DTSTART:20261002T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-32@agenda-sesc
+DTSTART:20261006T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-33@agenda-sesc
+DTSTART:20261007T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-34@agenda-sesc
+DTSTART:20261008T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:77371-35@agenda-sesc
+DTSTART:20261009T081500
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/hidroginastica-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+END:VCALENDAR

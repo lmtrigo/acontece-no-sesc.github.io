@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242311-20260903T103000@agenda-sesc
+DTSTART:20260903T103000
+SUMMARY:Projetos Fotográficos e Processos Analógicos
+LOCATION:Sesc Pinheiros
+DESCRIPTION:com Beth Lee — https://www.sescsp.org.br/programacao/projetos-fotograficos-e-processos-analogicos-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Projetos Fotográficos e Processos Analógicos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

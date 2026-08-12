@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237161-0@agenda-sesc
+DTSTART:20260822T200000
+SUMMARY:Ayrton Montarroyos
+LOCATION:Sesc Bom Retiro — Alameda Nothmann\, 185 | Bom Retiro | SAO PAULO  | SP | Cep: 01216-000
+DESCRIPTION:Show Confissões de um Sofredor: Ayrton Montarroyos canta Lupicínio Rodrigues. Part. Verônica Ferriani — https://www.sescsp.org.br/programacao/ayrton-montarroyos-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ayrton Montarroyos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1237161-1@agenda-sesc
+DTSTART:20260823T180000
+SUMMARY:Ayrton Montarroyos
+LOCATION:Sesc Bom Retiro — Alameda Nothmann\, 185 | Bom Retiro | SAO PAULO  | SP | Cep: 01216-000
+DESCRIPTION:Show Confissões de um Sofredor: Ayrton Montarroyos canta Lupicínio Rodrigues. Part. Verônica Ferriani — https://www.sescsp.org.br/programacao/ayrton-montarroyos-13
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ayrton Montarroyos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

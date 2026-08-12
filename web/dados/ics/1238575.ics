@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238575-0@agenda-sesc
+DTSTART:20260811T103000
+SUMMARY:Ilustração Digital com mesa digitalizadora
+LOCATION:Sesc Casa Verde
+DESCRIPTION:com Tatiane Colevati\, educadora em Tecnologias e Artes do Sesc — https://www.sescsp.org.br/programacao/ilustracao-digital-com-mesa-digitalizadora-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ilustração Digital com mesa digitalizadora
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238575-1@agenda-sesc
+DTSTART:20260818T103000
+SUMMARY:Ilustração Digital com mesa digitalizadora
+LOCATION:Sesc Casa Verde
+DESCRIPTION:com Tatiane Colevati\, educadora em Tecnologias e Artes do Sesc — https://www.sescsp.org.br/programacao/ilustracao-digital-com-mesa-digitalizadora-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ilustração Digital com mesa digitalizadora
+END:VALARM
+END:VEVENT
+END:VCALENDAR

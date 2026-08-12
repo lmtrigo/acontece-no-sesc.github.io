@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1236064-20260816T153000@agenda-sesc
+DTSTART:20260816T153000
+SUMMARY:Vivência de Samba Rock: Da Batucada ao Groove
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Bruno Magnata e Cia Samba Rocker´s — https://www.sescsp.org.br/programacao/vivencia-de-samba-rock-da-batucada-ao-groove
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Vivência de Samba Rock: Da Batucada ao Groove
+END:VALARM
+END:VEVENT
+END:VCALENDAR

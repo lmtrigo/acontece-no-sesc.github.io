@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243235-0@agenda-sesc
+DTSTART:20260827T183000
+SUMMARY:Viver do Riso: Caminhos para Tornar a Palhaçaria por Mulheres Sustentável
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Fernanda Soto\, Loi Lima e Mariana Ferrari\, mediação de Marisa Riso — https://www.sescsp.org.br/programacao/viver-do-riso-caminhos-para-tornar-a-palhacaria-por-mulheres-sustentavel
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Viver do Riso: Caminhos para Tornar a Palhaçaria por Mulheres Sustentável
+END:VALARM
+END:VEVENT
+END:VCALENDAR

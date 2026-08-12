@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249029-20260926T101500@agenda-sesc
+DTSTART:20260926T101500
+SUMMARY:Nadando com Estilo | Medley
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/nadando-com-estilo-medley
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nadando com Estilo | Medley
+END:VALARM
+END:VEVENT
+END:VCALENDAR

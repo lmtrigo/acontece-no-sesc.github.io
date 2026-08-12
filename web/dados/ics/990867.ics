@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:990867-0@agenda-sesc
+DTSTART:20260823T140000
+SUMMARY:Bora Jogar? O Jogo Como uma Expressão da Cultura Humana
+LOCATION:Sesc Santos
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/bora-jogar-o-jogo-como-uma-expressao-da-cultura-humana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bora Jogar? O Jogo Como uma Expressão da Cultura Humana
+END:VALARM
+END:VEVENT
+END:VCALENDAR

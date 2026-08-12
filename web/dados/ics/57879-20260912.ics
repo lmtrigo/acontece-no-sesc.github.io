@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:57879-20260912T160000@agenda-sesc
+DTSTART:20260912T160000
+SUMMARY:Vôlei Jovem | Recreação Esportiva
+LOCATION:Sesc Pinheiros
+DESCRIPTION:Recreação de Volei Jovem - 13 a 16 anos — https://www.sescsp.org.br/programacao/esporte-jovem-volei-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Vôlei Jovem | Recreação Esportiva
+END:VALARM
+END:VEVENT
+END:VCALENDAR

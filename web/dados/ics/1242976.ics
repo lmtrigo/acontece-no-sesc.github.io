@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242976-0@agenda-sesc
+DTSTART:20260818T150000
+SUMMARY:Sabonete Massinha de Modelar
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Ivana Xeres\, artesã — https://www.sescsp.org.br/programacao/sabonete-massinha-de-modelar-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sabonete Massinha de Modelar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

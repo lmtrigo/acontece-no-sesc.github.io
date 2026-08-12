@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242589-20260821T190000@agenda-sesc
+DTSTART:20260821T190000
+SUMMARY:Suporte de Vasos com Macramê
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Diego Pessoa\, educador de Tecnologias e Artes — https://www.sescsp.org.br/programacao/suporte-de-vasos-com-macrame-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Suporte de Vasos com Macramê
+END:VALARM
+END:VEVENT
+END:VCALENDAR

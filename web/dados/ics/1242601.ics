@@ -1,0 +1,77 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242601-0@agenda-sesc
+DTSTART:20260826T140000
+SUMMARY:Letramento Digital:  IA e Redes Sociais
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Ismael Moro\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/letramento-digital-ia-e-redes-sociais-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Letramento Digital:  IA e Redes Sociais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242601-1@agenda-sesc
+DTSTART:20260902T140000
+SUMMARY:Letramento Digital:  IA e Redes Sociais
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Ismael Moro\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/letramento-digital-ia-e-redes-sociais-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Letramento Digital:  IA e Redes Sociais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242601-2@agenda-sesc
+DTSTART:20260909T140000
+SUMMARY:Letramento Digital:  IA e Redes Sociais
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Ismael Moro\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/letramento-digital-ia-e-redes-sociais-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Letramento Digital:  IA e Redes Sociais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242601-3@agenda-sesc
+DTSTART:20260916T140000
+SUMMARY:Letramento Digital:  IA e Redes Sociais
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Ismael Moro\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/letramento-digital-ia-e-redes-sociais-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Letramento Digital:  IA e Redes Sociais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242601-4@agenda-sesc
+DTSTART:20260923T140000
+SUMMARY:Letramento Digital:  IA e Redes Sociais
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Ismael Moro\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/letramento-digital-ia-e-redes-sociais-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Letramento Digital:  IA e Redes Sociais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1242601-5@agenda-sesc
+DTSTART:20260930T140000
+SUMMARY:Letramento Digital:  IA e Redes Sociais
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Ismael Moro\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/letramento-digital-ia-e-redes-sociais-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Letramento Digital:  IA e Redes Sociais
+END:VALARM
+END:VEVENT
+END:VCALENDAR

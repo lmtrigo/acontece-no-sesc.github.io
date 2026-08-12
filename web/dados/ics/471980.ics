@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:471980-0@agenda-sesc
+DTSTART:20260811T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:471980-1@agenda-sesc
+DTSTART:20260813T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:471980-2@agenda-sesc
+DTSTART:20260818T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:471980-3@agenda-sesc
+DTSTART:20260820T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:471980-4@agenda-sesc
+DTSTART:20260825T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:471980-5@agenda-sesc
+DTSTART:20260827T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:471980-6@agenda-sesc
+DTSTART:20260901T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:471980-7@agenda-sesc
+DTSTART:20260903T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:471980-8@agenda-sesc
+DTSTART:20260908T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:471980-9@agenda-sesc
+DTSTART:20260910T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:471980-10@agenda-sesc
+DTSTART:20260915T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:471980-11@agenda-sesc
+DTSTART:20260917T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:471980-12@agenda-sesc
+DTSTART:20260922T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:471980-13@agenda-sesc
+DTSTART:20260924T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:471980-14@agenda-sesc
+DTSTART:20260929T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:471980-15@agenda-sesc
+DTSTART:20261001T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:471980-16@agenda-sesc
+DTSTART:20261006T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:471980-17@agenda-sesc
+DTSTART:20261008T153000
+SUMMARY:Ginástica para Todos
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/ginastica-para-todos-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ginástica para Todos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

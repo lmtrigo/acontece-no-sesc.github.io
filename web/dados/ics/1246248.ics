@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246248-0@agenda-sesc
+DTSTART:20260822T170000
+SUMMARY:Cantaê - Karaokê Jovem
+LOCATION:Sesc Franca
+DESCRIPTION:Com educadores em atividades infantojuvenis do Sesc — https://www.sescsp.org.br/programacao/cantae-karaoke-jovem-7
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cantaê - Karaokê Jovem
+END:VALARM
+END:VEVENT
+END:VCALENDAR

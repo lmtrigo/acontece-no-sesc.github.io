@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:608219-0@agenda-sesc
+DTSTART:20260811T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:608219-1@agenda-sesc
+DTSTART:20260813T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:608219-2@agenda-sesc
+DTSTART:20260818T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:608219-3@agenda-sesc
+DTSTART:20260820T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:608219-4@agenda-sesc
+DTSTART:20260825T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:608219-5@agenda-sesc
+DTSTART:20260827T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:608219-6@agenda-sesc
+DTSTART:20260901T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:608219-7@agenda-sesc
+DTSTART:20260903T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:608219-8@agenda-sesc
+DTSTART:20260908T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:608219-9@agenda-sesc
+DTSTART:20260910T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:608219-10@agenda-sesc
+DTSTART:20260915T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:608219-11@agenda-sesc
+DTSTART:20260917T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:608219-12@agenda-sesc
+DTSTART:20260922T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:608219-13@agenda-sesc
+DTSTART:20260924T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:608219-14@agenda-sesc
+DTSTART:20260929T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:608219-15@agenda-sesc
+DTSTART:20261001T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:608219-16@agenda-sesc
+DTSTART:20261006T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:608219-17@agenda-sesc
+DTSTART:20261008T183000
+SUMMARY:Recreação orientada de Futebol Soçaite - Adulto Masculino
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/recreacao-orientada-de-futebol-society-adulto-masculino
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação orientada de Futebol Soçaite - Adulto Masculino
+END:VALARM
+END:VEVENT
+END:VCALENDAR

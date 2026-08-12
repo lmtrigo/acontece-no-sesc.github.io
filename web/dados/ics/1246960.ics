@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246960-0@agenda-sesc
+DTSTART:20260822T113000
+SUMMARY:Repenso\, Reutilizo e Destino. Mas qual é Destino Final?
+LOCATION:Sesc Santos
+DESCRIPTION:Com Agente de Educação Ambiental — https://www.sescsp.org.br/programacao/repenso-reutilizo-e-destino-mas-qual-e-destino-final
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Repenso\, Reutilizo e Destino. Mas qual é Destino Final?
+END:VALARM
+END:VEVENT
+END:VCALENDAR

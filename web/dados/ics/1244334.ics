@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244334-0@agenda-sesc
+DTSTART:20260829T150000
+SUMMARY:Fotografia de Cena: Captando a Poesia em Movimento
+LOCATION:Sesc Pinheiros
+DESCRIPTION:com Jamil Kubruk\, fotógrafo e produtor cultural — https://www.sescsp.org.br/programacao/fotografia-de-cena-captando-a-poesia-em-movimento
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Fotografia de Cena: Captando a Poesia em Movimento
+END:VALARM
+END:VEVENT
+END:VCALENDAR

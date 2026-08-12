@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238814-0@agenda-sesc
+DTSTART:20260812T190000
+SUMMARY:Papo Entre Livros | Gení lê Davi Kopenawa e Bruce Albert
+LOCATION:Sesc Santo Amaro
+DESCRIPTION:com Geni Núñez — https://www.sescsp.org.br/programacao/papo-entre-livros-geni-le-davi-kopenawa-e-bruce-albert
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Papo Entre Livros | Gení lê Davi Kopenawa e Bruce Albert
+END:VALARM
+END:VEVENT
+END:VCALENDAR

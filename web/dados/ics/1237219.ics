@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237219-0@agenda-sesc
+DTSTART:20260829T143000
+SUMMARY:Educação Profissional e Tecnológica
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com Lucila Mara Sbrana Sciotti — https://www.sescsp.org.br/programacao/educacao-profissional-e-tecnologica
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Educação Profissional e Tecnológica
+END:VALARM
+END:VEVENT
+END:VCALENDAR

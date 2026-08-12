@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239846-20260918T140000@agenda-sesc
+DTSTART:20260918T140000
+SUMMARY:Introdução à pintura de agulha
+LOCATION:Sesc Santo Amaro
+DESCRIPTION:com Rochele Beatriz — https://www.sescsp.org.br/programacao/introducao-a-pintura-de-agulha
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Introdução à pintura de agulha
+END:VALARM
+END:VEVENT
+END:VCALENDAR

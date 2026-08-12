@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245789-0@agenda-sesc
+DTSTART:20260823T160000
+SUMMARY:Sesc na Praça Mário Turrini\, em Araçatuba
+LOCATION:Sesc Birigui
+DESCRIPTION:Bairro Claudionor Cinti — https://www.sescsp.org.br/programacao/sesc-na-praca-mario-turrini-em-aracatuba
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sesc na Praça Mário Turrini\, em Araçatuba
+END:VALARM
+END:VEVENT
+END:VCALENDAR

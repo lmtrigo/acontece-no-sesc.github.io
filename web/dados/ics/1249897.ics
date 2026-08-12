@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249897-0@agenda-sesc
+DTSTART:20260815T140000
+SUMMARY:Espalhando sementes: poesia\, música e oralidade indígena
+LOCATION:Sesc Ipiranga
+DESCRIPTION:Com Coletiva Ayrumã — https://www.sescsp.org.br/programacao/espalhando-sementes-poesia-musica-e-oralidade-indigena
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espalhando sementes: poesia\, música e oralidade indígena
+END:VALARM
+END:VEVENT
+END:VCALENDAR

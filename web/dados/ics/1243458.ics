@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243458-0@agenda-sesc
+DTSTART:20260815T130000
+SUMMARY:Triangulo da Várzea: Memória\, Cultura e Comunidade
+LOCATION:Sesc Campo Limpo
+DESCRIPTION:Jornada do Patrimonio — https://www.sescsp.org.br/programacao/triangulo-da-varzea-memoria-cultura-e-comunidade
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Triangulo da Várzea: Memória\, Cultura e Comunidade
+END:VALARM
+END:VEVENT
+END:VCALENDAR

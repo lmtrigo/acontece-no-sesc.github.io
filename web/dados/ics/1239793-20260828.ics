@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239793-20260828T170000@agenda-sesc
+DTSTART:20260828T170000
+SUMMARY:Roda de Histórias
+LOCATION:Sesc Campinas
+DESCRIPTION:Com educadoras do Sesc — https://www.sescsp.org.br/programacao/roda-de-historias-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Roda de Histórias
+END:VALARM
+END:VEVENT
+END:VCALENDAR

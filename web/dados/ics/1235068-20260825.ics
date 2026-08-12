@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1235068-20260825T203000@agenda-sesc
+DTSTART:20260825T203000
+SUMMARY:Cine-Concerto: Corra\, Lola\, Corra
+LOCATION:Sesc Avenida Paulista — Avenida Paulista\, 119 | Bela Vista | SAO PAULO  | SP | Cep: 01311-903
+DESCRIPTION:LOLA RENNT. Tom Tykwer. ALE. 1998. 81 min. Sonorização por: DJ Zé Pedro — https://www.sescsp.org.br/programacao/cine-concerto-corra-lola-corra
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cine-Concerto: Corra\, Lola\, Corra
+END:VALARM
+END:VEVENT
+END:VCALENDAR

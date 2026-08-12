@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242915-0@agenda-sesc
+DTSTART:20260823T160000
+SUMMARY:Cidade de Brinquedo
+LOCATION:Sesc Taubaté
+DESCRIPTION:Com Grupo Esparrama — https://www.sescsp.org.br/programacao/cidade-de-brinquedo-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cidade de Brinquedo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

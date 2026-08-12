@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:76421-0@agenda-sesc
+DTSTART:20260811T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:76421-1@agenda-sesc
+DTSTART:20260813T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:76421-2@agenda-sesc
+DTSTART:20260818T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:76421-3@agenda-sesc
+DTSTART:20260820T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:76421-4@agenda-sesc
+DTSTART:20260825T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:76421-5@agenda-sesc
+DTSTART:20260827T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:76421-6@agenda-sesc
+DTSTART:20260901T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:76421-7@agenda-sesc
+DTSTART:20260903T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:76421-8@agenda-sesc
+DTSTART:20260908T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:76421-9@agenda-sesc
+DTSTART:20260910T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:76421-10@agenda-sesc
+DTSTART:20260915T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:76421-11@agenda-sesc
+DTSTART:20260917T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:76421-12@agenda-sesc
+DTSTART:20260922T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:76421-13@agenda-sesc
+DTSTART:20260924T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:76421-14@agenda-sesc
+DTSTART:20260929T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:76421-15@agenda-sesc
+DTSTART:20261001T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:76421-16@agenda-sesc
+DTSTART:20261006T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:76421-17@agenda-sesc
+DTSTART:20261008T113000
+SUMMARY:Esporte para Pessoas Idosas
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Acima de 60 anos — https://www.sescsp.org.br/programacao/esporte-para-idosos-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte para Pessoas Idosas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

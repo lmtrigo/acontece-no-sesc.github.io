@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242828-0@agenda-sesc
+DTSTART:20260820T140000
+SUMMARY:A arte de Rir de Si: Palhaçaria para a Vida
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Bárbara Salomé — https://www.sescsp.org.br/programacao/a-arte-de-rir-de-si-palhacaria-para-a-vida
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A arte de Rir de Si: Palhaçaria para a Vida
+END:VALARM
+END:VEVENT
+END:VCALENDAR

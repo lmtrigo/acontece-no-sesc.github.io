@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243505-20260823T143000@agenda-sesc
+DTSTART:20260823T143000
+SUMMARY:Construções do Imaginário: Brincar e Criar em Família
+LOCATION:Sesc Taubaté
+DESCRIPTION:Com Mércia Morais e Luciano Tito\, da Cia. Corpo no Espaço — https://www.sescsp.org.br/programacao/construcoes-do-imaginario-brincar-e-criar-em-familia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Construções do Imaginário: Brincar e Criar em Família
+END:VALARM
+END:VEVENT
+END:VCALENDAR

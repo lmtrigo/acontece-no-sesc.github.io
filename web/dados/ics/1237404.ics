@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237404-0@agenda-sesc
+DTSTART:20260816T140000
+SUMMARY:Vale uma Rimada!
+LOCATION:Sesc Registro
+DESCRIPTION:com Asael e TK\, MC's da Batalha da Guerra de Cajati-SP — https://www.sescsp.org.br/programacao/vale-uma-rimada
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Vale uma Rimada!
+END:VALARM
+END:VEVENT
+END:VCALENDAR

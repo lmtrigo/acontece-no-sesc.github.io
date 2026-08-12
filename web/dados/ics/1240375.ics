@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240375-0@agenda-sesc
+DTSTART:20260820T203000
+SUMMARY:Não Aprendi Dizer Adeus
+LOCATION:Sesc Bauru — Avenida Aureliano Cardia\, 6-71 | Vila Cardia | BAURU  | SP | Cep: 17013-411
+DESCRIPTION:Com Bárbara Salomé — https://www.sescsp.org.br/programacao/nao-aprendi-dizer-adeus-12
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Não Aprendi Dizer Adeus
+END:VALARM
+END:VEVENT
+END:VCALENDAR

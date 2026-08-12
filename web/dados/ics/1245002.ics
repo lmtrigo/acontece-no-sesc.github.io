@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245002-0@agenda-sesc
+DTSTART:20260822T140000
+SUMMARY:Batalha No Topo
+LOCATION:Sesc Franca
+DESCRIPTION:Parceria Casa do Hip Hop — https://www.sescsp.org.br/programacao/batalha-no-topo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Batalha No Topo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

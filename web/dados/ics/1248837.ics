@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248837-0@agenda-sesc
+DTSTART:20260825T190000
+SUMMARY:Clube do livro: O quarto de Giovanni
+LOCATION:Sesc 14 Bis
+DESCRIPTION:Com mediação de Maria Carolina Casati\, mediadora e doutora. — https://www.sescsp.org.br/programacao/clube-do-livro-o-quarto-de-giovanni
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clube do livro: O quarto de Giovanni
+END:VALARM
+END:VEVENT
+END:VCALENDAR

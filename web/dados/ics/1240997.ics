@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240997-0@agenda-sesc
+DTSTART:20260814T200000
+SUMMARY:Juliana Linhares
+LOCATION:Sesc Ribeirão Preto — Rua Tibiriça\, 50 | Centro | RIBEIRAO PRETO  | SP | Cep: 14010-090
+DESCRIPTION:Até Cansar o Cansaço — https://www.sescsp.org.br/programacao/juliana-linhares-7
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Juliana Linhares
+END:VALARM
+END:VEVENT
+END:VCALENDAR

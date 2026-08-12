@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1230711-0@agenda-sesc
+DTSTART:20260819T150000
+SUMMARY:Esfera Efervescente para Banho
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Ivana Xeres\, artesã — https://www.sescsp.org.br/programacao/esfera-efervescente-para-banho
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esfera Efervescente para Banho
+END:VALARM
+END:VEVENT
+END:VCALENDAR

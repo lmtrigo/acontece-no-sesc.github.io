@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244469-0@agenda-sesc
+DTSTART:20260829T153000
+SUMMARY:Discotecagem de vinil: Agulhas e balanço
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:Com Thi Lima\, de Presidente Prudente (SP). — https://www.sescsp.org.br/programacao/discotecagem-de-vinil-agulhas-e-balanco
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Discotecagem de vinil: Agulhas e balanço
+END:VALARM
+END:VEVENT
+END:VCALENDAR

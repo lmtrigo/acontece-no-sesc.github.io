@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242298-20260820T143000@agenda-sesc
+DTSTART:20260820T143000
+SUMMARY:Construindo Luminária de Cabaça
+LOCATION:Sesc Pinheiros
+DESCRIPTION:com Miguel Alonso\, Educador do Espaço de Tecnologias e Artes — https://www.sescsp.org.br/programacao/construindo-luminaria-de-cabaca-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Construindo Luminária de Cabaça
+END:VALARM
+END:VEVENT
+END:VCALENDAR

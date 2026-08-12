@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248391-20260829T123000@agenda-sesc
+DTSTART:20260829T123000
+SUMMARY:Entre Mundos: Missão Parkour
+LOCATION:Sesc Araraquara
+DESCRIPTION:Com RasTracer Parkour — https://www.sescsp.org.br/programacao/entre-mundos-missao-parkour
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Entre Mundos: Missão Parkour
+END:VALARM
+END:VEVENT
+END:VCALENDAR

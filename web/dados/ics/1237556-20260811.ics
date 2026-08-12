@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237556-20260811T100000@agenda-sesc
+DTSTART:20260811T100000
+SUMMARY:Nosso norte é o sul - contos da América daqui
+LOCATION:Sesc Osasco
+DESCRIPTION:Com O Casulo — https://www.sescsp.org.br/programacao/nosso-norte-e-o-sul-contos-da-america-daqui-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nosso norte é o sul - contos da América daqui
+END:VALARM
+END:VEVENT
+END:VCALENDAR

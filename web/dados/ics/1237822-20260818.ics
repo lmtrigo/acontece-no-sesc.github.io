@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237822-20260818T130000@agenda-sesc
+DTSTART:20260818T130000
+SUMMARY:Joalheria Contemporânea Brasileira
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Lisete de Carvalho e Sérgio Augusto — https://www.sescsp.org.br/programacao/joalheria-contemporanea-brasileira
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Joalheria Contemporânea Brasileira
+END:VALARM
+END:VEVENT
+END:VCALENDAR

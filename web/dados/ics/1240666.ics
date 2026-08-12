@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240666-0@agenda-sesc
+DTSTART:20260812T203000
+SUMMARY:O Porto
+LOCATION:Sesc CineSesc — Rua Augusta\, 2075 | Cerqueira César | SAO PAULO  | SP | Cep: 01413-000
+DESCRIPTION:Retrospectiva Aki Kaurismäki — https://www.sescsp.org.br/programacao/o-porto
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Porto
+END:VALARM
+END:VEVENT
+END:VCALENDAR

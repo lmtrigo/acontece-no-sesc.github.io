@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:52557-0@agenda-sesc
+DTSTART:20260813T183000
+SUMMARY:Juventudes - Colaê
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Ricardo Silva — https://www.sescsp.org.br/programacao/colae-no-teatro
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Juventudes - Colaê
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:52557-1@agenda-sesc
+DTSTART:20260820T183000
+SUMMARY:Juventudes - Colaê
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Ricardo Silva — https://www.sescsp.org.br/programacao/colae-no-teatro
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Juventudes - Colaê
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:52557-2@agenda-sesc
+DTSTART:20260827T183000
+SUMMARY:Juventudes - Colaê
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Ricardo Silva — https://www.sescsp.org.br/programacao/colae-no-teatro
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Juventudes - Colaê
+END:VALARM
+END:VEVENT
+END:VCALENDAR

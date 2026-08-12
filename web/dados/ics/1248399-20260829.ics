@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248399-20260829T123000@agenda-sesc
+DTSTART:20260829T123000
+SUMMARY:Clubinho Gráfico - Portais Magnéticos
+LOCATION:Sesc Araraquara
+DESCRIPTION:Com Noelodran — https://www.sescsp.org.br/programacao/clubinho-grafico-portais-magneticos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clubinho Gráfico - Portais Magnéticos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,53 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245731-0@agenda-sesc
+DTSTART:20260818T180000
+SUMMARY:Realidade Virtual Cósmica\, em Araçatuba
+LOCATION:Sesc Birigui
+DESCRIPTION:Com VERS Experiências Imersivas — https://www.sescsp.org.br/programacao/realidade-virtual-cosmica-em-aracatuba
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Realidade Virtual Cósmica\, em Araçatuba
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245731-1@agenda-sesc
+DTSTART:20260819T180000
+SUMMARY:Realidade Virtual Cósmica\, em Araçatuba
+LOCATION:Sesc Birigui
+DESCRIPTION:Com VERS Experiências Imersivas — https://www.sescsp.org.br/programacao/realidade-virtual-cosmica-em-aracatuba
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Realidade Virtual Cósmica\, em Araçatuba
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245731-2@agenda-sesc
+DTSTART:20260820T180000
+SUMMARY:Realidade Virtual Cósmica\, em Araçatuba
+LOCATION:Sesc Birigui
+DESCRIPTION:Com VERS Experiências Imersivas — https://www.sescsp.org.br/programacao/realidade-virtual-cosmica-em-aracatuba
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Realidade Virtual Cósmica\, em Araçatuba
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245731-3@agenda-sesc
+DTSTART:20260821T180000
+SUMMARY:Realidade Virtual Cósmica\, em Araçatuba
+LOCATION:Sesc Birigui
+DESCRIPTION:Com VERS Experiências Imersivas — https://www.sescsp.org.br/programacao/realidade-virtual-cosmica-em-aracatuba
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Realidade Virtual Cósmica\, em Araçatuba
+END:VALARM
+END:VEVENT
+END:VCALENDAR

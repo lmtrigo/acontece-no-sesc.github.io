@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1222373-0@agenda-sesc
+DTSTART:20260830T120000
+SUMMARY:Amor CorreSPondido
+LOCATION:Sesc Santo André
+DESCRIPTION:com Carmen Garcia\, Camila Ribeiro e Tatiana Solimeo — https://www.sescsp.org.br/programacao/amor-correspondido-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Amor CorreSPondido
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239882-0@agenda-sesc
+DTSTART:20260825T190000
+SUMMARY:Cristina Azuma e Marcia Taborda
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Novos Retratos — https://www.sescsp.org.br/programacao/cristina-azuma-e-marcia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cristina Azuma e Marcia Taborda
+END:VALARM
+END:VEVENT
+END:VCALENDAR

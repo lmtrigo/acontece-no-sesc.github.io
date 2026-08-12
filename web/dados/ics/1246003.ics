@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246003-0@agenda-sesc
+DTSTART:20260815T143000
+SUMMARY:Agrofloresta em Movimento: Descomplicando a Agrofloresta
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:Com agroflorestores Anderson Arcanjoleto e Angélica Facirolli\, do Sítio Santa Terra. — https://www.sescsp.org.br/programacao/agrofloresta-em-movimento-descomplicando-a-agrofloresta
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Agrofloresta em Movimento: Descomplicando a Agrofloresta
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242682-20260830T140000@agenda-sesc
+DTSTART:20260830T140000
+SUMMARY:O Caderno dos Borrichos
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Bruno Müller\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/o-caderno-dos-borrichos-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Caderno dos Borrichos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:377051-20260816T093000@agenda-sesc
+DTSTART:20260816T093000
+SUMMARY:Nado Orientado
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/nado-orientado-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nado Orientado
+END:VALARM
+END:VEVENT
+END:VCALENDAR

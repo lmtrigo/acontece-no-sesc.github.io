@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237726-0@agenda-sesc
+DTSTART:20260903T203000
+SUMMARY:(Um) Ensaio Sobre a Cegueira
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com o Grupo Galpão — https://www.sescsp.org.br/programacao/um-ensaio-sobre-a-cegueira-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:(Um) Ensaio Sobre a Cegueira
+END:VALARM
+END:VEVENT
+END:VCALENDAR

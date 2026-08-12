@@ -1,0 +1,89 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239925-0@agenda-sesc
+DTSTART:20260815T140000
+SUMMARY:Amuletos Luminosos
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Gustavo Saulle — https://www.sescsp.org.br/programacao/amuletos-luminosos-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Amuletos Luminosos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239925-1@agenda-sesc
+DTSTART:20260822T140000
+SUMMARY:Amuletos Luminosos
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Gustavo Saulle — https://www.sescsp.org.br/programacao/amuletos-luminosos-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Amuletos Luminosos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239925-2@agenda-sesc
+DTSTART:20260829T140000
+SUMMARY:Amuletos Luminosos
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Gustavo Saulle — https://www.sescsp.org.br/programacao/amuletos-luminosos-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Amuletos Luminosos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239925-3@agenda-sesc
+DTSTART:20260905T140000
+SUMMARY:Amuletos Luminosos
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Gustavo Saulle — https://www.sescsp.org.br/programacao/amuletos-luminosos-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Amuletos Luminosos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239925-4@agenda-sesc
+DTSTART:20260912T140000
+SUMMARY:Amuletos Luminosos
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Gustavo Saulle — https://www.sescsp.org.br/programacao/amuletos-luminosos-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Amuletos Luminosos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239925-5@agenda-sesc
+DTSTART:20260919T140000
+SUMMARY:Amuletos Luminosos
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Gustavo Saulle — https://www.sescsp.org.br/programacao/amuletos-luminosos-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Amuletos Luminosos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239925-6@agenda-sesc
+DTSTART:20260926T140000
+SUMMARY:Amuletos Luminosos
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Gustavo Saulle — https://www.sescsp.org.br/programacao/amuletos-luminosos-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Amuletos Luminosos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

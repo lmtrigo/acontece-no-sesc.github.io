@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248789-20261008T193000@agenda-sesc
+DTSTART:20261008T193000
+SUMMARY:Bateria - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Matheus Coelho\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/bateria-iniciacao-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bateria - Iniciação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

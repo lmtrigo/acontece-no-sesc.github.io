@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239467-0@agenda-sesc
+DTSTART:20260829T203000
+SUMMARY:Hamilton De Holanda Trio
+LOCATION:Sesc Belenzinho — Rua Padre Adelino\, 1.000 | Belenzinho | SAO PAULO  | SP | Cep: 03303-000
+DESCRIPTION:Lançamento do álbum NOVA — https://www.sescsp.org.br/programacao/hamilton-de-holanda-trio-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Hamilton De Holanda Trio
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239467-1@agenda-sesc
+DTSTART:20260830T180000
+SUMMARY:Hamilton De Holanda Trio
+LOCATION:Sesc Belenzinho — Rua Padre Adelino\, 1.000 | Belenzinho | SAO PAULO  | SP | Cep: 03303-000
+DESCRIPTION:Lançamento do álbum NOVA — https://www.sescsp.org.br/programacao/hamilton-de-holanda-trio-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Hamilton De Holanda Trio
+END:VALARM
+END:VEVENT
+END:VCALENDAR

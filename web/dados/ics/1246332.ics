@@ -1,0 +1,89 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246332-0@agenda-sesc
+DTSTART:20260826T190000
+SUMMARY:Técnicas tradicionais de marcenaria - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Cadu Valadão — https://www.sescsp.org.br/programacao/tecnicas-tradicionais-de-marcenaria-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Técnicas tradicionais de marcenaria - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246332-1@agenda-sesc
+DTSTART:20260902T190000
+SUMMARY:Técnicas tradicionais de marcenaria - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Cadu Valadão — https://www.sescsp.org.br/programacao/tecnicas-tradicionais-de-marcenaria-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Técnicas tradicionais de marcenaria - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246332-2@agenda-sesc
+DTSTART:20260909T190000
+SUMMARY:Técnicas tradicionais de marcenaria - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Cadu Valadão — https://www.sescsp.org.br/programacao/tecnicas-tradicionais-de-marcenaria-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Técnicas tradicionais de marcenaria - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246332-3@agenda-sesc
+DTSTART:20260916T190000
+SUMMARY:Técnicas tradicionais de marcenaria - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Cadu Valadão — https://www.sescsp.org.br/programacao/tecnicas-tradicionais-de-marcenaria-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Técnicas tradicionais de marcenaria - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246332-4@agenda-sesc
+DTSTART:20260923T190000
+SUMMARY:Técnicas tradicionais de marcenaria - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Cadu Valadão — https://www.sescsp.org.br/programacao/tecnicas-tradicionais-de-marcenaria-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Técnicas tradicionais de marcenaria - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246332-5@agenda-sesc
+DTSTART:20260930T190000
+SUMMARY:Técnicas tradicionais de marcenaria - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Cadu Valadão — https://www.sescsp.org.br/programacao/tecnicas-tradicionais-de-marcenaria-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Técnicas tradicionais de marcenaria - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246332-6@agenda-sesc
+DTSTART:20261007T190000
+SUMMARY:Técnicas tradicionais de marcenaria - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Cadu Valadão — https://www.sescsp.org.br/programacao/tecnicas-tradicionais-de-marcenaria-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Técnicas tradicionais de marcenaria - Avançado
+END:VALARM
+END:VEVENT
+END:VCALENDAR

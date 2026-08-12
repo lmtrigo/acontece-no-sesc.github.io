@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238336-20260915T140000@agenda-sesc
+DTSTART:20260915T140000
+SUMMARY:O Tempo em Nós: Ritmos da Nossa História
+LOCATION:Sesc 14 Bis
+DESCRIPTION:Com Lidiane Alves e Allan Kardec educadores físico-esportivos — https://www.sescsp.org.br/programacao/o-tempo-em-nos-ritmos-da-nossa-historia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Tempo em Nós: Ritmos da Nossa História
+END:VALARM
+END:VEVENT
+END:VCALENDAR

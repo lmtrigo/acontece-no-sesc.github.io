@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245976-0@agenda-sesc
+DTSTART:20260828T160000
+SUMMARY:Roda de Parentalidade
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com Janaina Mendes e Graça Ribeiro — https://www.sescsp.org.br/programacao/roda-de-parentalidade
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Roda de Parentalidade
+END:VALARM
+END:VEVENT
+END:VCALENDAR

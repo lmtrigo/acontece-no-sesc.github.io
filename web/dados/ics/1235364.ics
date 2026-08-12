@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1235364-0@agenda-sesc
+DTSTART:20260819T143000
+SUMMARY:Descompressão: Encaderna
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Fernando Ogushi\, educador do Sesc Avenida Paulista — https://www.sescsp.org.br/programacao/descompressao-encaderna
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Descompressão: Encaderna
+END:VALARM
+END:VEVENT
+END:VCALENDAR

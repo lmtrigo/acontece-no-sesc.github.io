@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248168-0@agenda-sesc
+DTSTART:20260815T140000
+SUMMARY:Como conversar sobre menstruação com crianças e adolescentes
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Isa Graciano — https://www.sescsp.org.br/programacao/como-conversar-sobre-menstruacao-com-criancas-e-adolescentes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Como conversar sobre menstruação com crianças e adolescentes
+END:VALARM
+END:VEVENT
+END:VCALENDAR

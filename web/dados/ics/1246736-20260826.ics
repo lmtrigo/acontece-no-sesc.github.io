@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246736-20260826T150000@agenda-sesc
+DTSTART:20260826T150000
+SUMMARY:60naRede: Conhecendo os Aplicativos do Celular
+LOCATION:Sesc Registro
+DESCRIPTION:com os educadores do Espaço de Tecnologias e Artes — https://www.sescsp.org.br/programacao/60narede-conhecendo-os-aplicativos-do-celular
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:60naRede: Conhecendo os Aplicativos do Celular
+END:VALARM
+END:VEVENT
+END:VCALENDAR

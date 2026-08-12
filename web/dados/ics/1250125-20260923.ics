@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1250125-20260923T190000@agenda-sesc
+DTSTART:20260923T190000
+SUMMARY:Pratos de Memória: Afeto e Ancestralidade
+LOCATION:Sesc Registro
+DESCRIPTION:com Diellen Souza\, educadora em Tecnologia e Artes — https://www.sescsp.org.br/programacao/pratos-de-memoria-afeto-e-ancestralidade
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pratos de Memória: Afeto e Ancestralidade
+END:VALARM
+END:VEVENT
+END:VCALENDAR

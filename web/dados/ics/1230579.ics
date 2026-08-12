@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1230579-0@agenda-sesc
+DTSTART:20260815T130000
+SUMMARY:Recreação Esportiva: Basquete
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Com Educadores e Educadoras do Sesc Bom Retiro — https://www.sescsp.org.br/programacao/recreacao-esportiva-basquete-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação Esportiva: Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1230579-1@agenda-sesc
+DTSTART:20260822T130000
+SUMMARY:Recreação Esportiva: Basquete
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Com Educadores e Educadoras do Sesc Bom Retiro — https://www.sescsp.org.br/programacao/recreacao-esportiva-basquete-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação Esportiva: Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1230579-2@agenda-sesc
+DTSTART:20260829T130000
+SUMMARY:Recreação Esportiva: Basquete
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Com Educadores e Educadoras do Sesc Bom Retiro — https://www.sescsp.org.br/programacao/recreacao-esportiva-basquete-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação Esportiva: Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1230579-3@agenda-sesc
+DTSTART:20260905T130000
+SUMMARY:Recreação Esportiva: Basquete
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Com Educadores e Educadoras do Sesc Bom Retiro — https://www.sescsp.org.br/programacao/recreacao-esportiva-basquete-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação Esportiva: Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1230579-4@agenda-sesc
+DTSTART:20260912T130000
+SUMMARY:Recreação Esportiva: Basquete
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Com Educadores e Educadoras do Sesc Bom Retiro — https://www.sescsp.org.br/programacao/recreacao-esportiva-basquete-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação Esportiva: Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1230579-5@agenda-sesc
+DTSTART:20260919T130000
+SUMMARY:Recreação Esportiva: Basquete
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Com Educadores e Educadoras do Sesc Bom Retiro — https://www.sescsp.org.br/programacao/recreacao-esportiva-basquete-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação Esportiva: Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1230579-6@agenda-sesc
+DTSTART:20260926T130000
+SUMMARY:Recreação Esportiva: Basquete
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Com Educadores e Educadoras do Sesc Bom Retiro — https://www.sescsp.org.br/programacao/recreacao-esportiva-basquete-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação Esportiva: Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1230579-7@agenda-sesc
+DTSTART:20261003T130000
+SUMMARY:Recreação Esportiva: Basquete
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Com Educadores e Educadoras do Sesc Bom Retiro — https://www.sescsp.org.br/programacao/recreacao-esportiva-basquete-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação Esportiva: Basquete
+END:VALARM
+END:VEVENT
+END:VCALENDAR

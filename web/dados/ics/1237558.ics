@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237558-0@agenda-sesc
+DTSTART:20260830T103000
+SUMMARY:Ciranda em Flor
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com a Cia. do Acaso — https://www.sescsp.org.br/programacao/ciranda-em-flor-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ciranda em Flor
+END:VALARM
+END:VEVENT
+END:VCALENDAR

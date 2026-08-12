@@ -1,0 +1,77 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1235872-0@agenda-sesc
+DTSTART:20260811T100000
+SUMMARY:Ateliê de Carimbos para Tecido com Impressão 3D
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Francisco Arlindo Alves\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-de-carimbos-para-tecido-com-impressao-3d
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê de Carimbos para Tecido com Impressão 3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235872-1@agenda-sesc
+DTSTART:20260813T100000
+SUMMARY:Ateliê de Carimbos para Tecido com Impressão 3D
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Francisco Arlindo Alves\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-de-carimbos-para-tecido-com-impressao-3d
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê de Carimbos para Tecido com Impressão 3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235872-2@agenda-sesc
+DTSTART:20260818T100000
+SUMMARY:Ateliê de Carimbos para Tecido com Impressão 3D
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Francisco Arlindo Alves\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-de-carimbos-para-tecido-com-impressao-3d
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê de Carimbos para Tecido com Impressão 3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235872-3@agenda-sesc
+DTSTART:20260820T100000
+SUMMARY:Ateliê de Carimbos para Tecido com Impressão 3D
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Francisco Arlindo Alves\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-de-carimbos-para-tecido-com-impressao-3d
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê de Carimbos para Tecido com Impressão 3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235872-4@agenda-sesc
+DTSTART:20260825T100000
+SUMMARY:Ateliê de Carimbos para Tecido com Impressão 3D
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Francisco Arlindo Alves\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-de-carimbos-para-tecido-com-impressao-3d
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê de Carimbos para Tecido com Impressão 3D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235872-5@agenda-sesc
+DTSTART:20260827T100000
+SUMMARY:Ateliê de Carimbos para Tecido com Impressão 3D
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Francisco Arlindo Alves\, educador em Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-de-carimbos-para-tecido-com-impressao-3d
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê de Carimbos para Tecido com Impressão 3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

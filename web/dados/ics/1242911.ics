@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242911-0@agenda-sesc
+DTSTART:20260830T080000
+SUMMARY:De Bike: Estrada do "Calipeiro" e Caçapava Velha
+LOCATION:Sesc Taubaté
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/de-bike-estrada-do-calipeiro-e-cacapava-velha
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:De Bike: Estrada do "Calipeiro" e Caçapava Velha
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243329-20260830T090000@agenda-sesc
+DTSTART:20260830T090000
+SUMMARY:Manhãs de práticas corporais: mobilidade articular
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com educadores de atividades físico-esportivas. — https://www.sescsp.org.br/programacao/manhas-de-praticas-corporais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Manhãs de práticas corporais: mobilidade articular
+END:VALARM
+END:VEVENT
+END:VCALENDAR

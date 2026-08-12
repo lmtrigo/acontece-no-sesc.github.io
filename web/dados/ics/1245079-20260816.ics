@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245079-20260816T100000@agenda-sesc
+DTSTART:20260816T100000
+SUMMARY:Escrita Criativa: Exercícios de Imaginação Poética
+LOCATION:Sesc Santos
+DESCRIPTION:Com Angélica Freitas — https://www.sescsp.org.br/programacao/escrita-criativa-exercicios-de-imaginacao-poetica
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Escrita Criativa: Exercícios de Imaginação Poética
+END:VALARM
+END:VEVENT
+END:VCALENDAR

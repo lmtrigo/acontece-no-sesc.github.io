@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248920-0@agenda-sesc
+DTSTART:20260905T140000
+SUMMARY:Uma viagem no tempo: no mundo dos dinossauros
+LOCATION:Sesc Santo Amaro
+DESCRIPTION:com Tati Tagarela — https://www.sescsp.org.br/programacao/uma-viagem-no-tempo-no-mundo-dos-dinossauros
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Uma viagem no tempo: no mundo dos dinossauros
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243339-0@agenda-sesc
+DTSTART:20260822T200000
+SUMMARY:Fjalla: Segunda parte\, o vulcão
+LOCATION:Sesc Sorocaba — Rua Barão de Piratininga\, 555 | Jardim Faculdade | SOROCABA  | SP | Cep: 18030-160
+DESCRIPTION:Com Multifoco Cia. de Teatro — https://www.sescsp.org.br/programacao/fjalla-segunda-parte-o-vulcao-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Fjalla: Segunda parte\, o vulcão
+END:VALARM
+END:VEVENT
+END:VCALENDAR

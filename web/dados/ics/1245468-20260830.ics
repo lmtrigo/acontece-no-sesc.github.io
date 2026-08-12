@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245468-20260830T100000@agenda-sesc
+DTSTART:20260830T100000
+SUMMARY:Futsal Feminino - Copa Sesc do Comércio - Fase Local
+LOCATION:Sesc Interlagos
+DESCRIPTION:com Educadores do Físico Esportivo — https://www.sescsp.org.br/programacao/futsal-feminino-copa-sesc-do-comercio-fase-local
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Futsal Feminino - Copa Sesc do Comércio - Fase Local
+END:VALARM
+END:VEVENT
+END:VCALENDAR

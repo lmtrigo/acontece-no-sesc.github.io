@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245917-0@agenda-sesc
+DTSTART:20260812T190000
+SUMMARY:Cerimônia de Abertura Oficial do 2º Festival de Cinema Itapety
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:https://www.sescsp.org.br/programacao/cerimonia-de-abertura-oficial-do-2o-festival-de-cinema-itapety
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cerimônia de Abertura Oficial do 2º Festival de Cinema Itapety
+END:VALARM
+END:VEVENT
+END:VCALENDAR

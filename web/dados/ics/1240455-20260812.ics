@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240455-20260812T143000@agenda-sesc
+DTSTART:20260812T143000
+SUMMARY:Fuja do Fake: uso do celular
+LOCATION:Sesc Pinheiros
+DESCRIPTION:com Erika Kogui e Miguel Alonso\, educadores em Tecnologias e Artes — https://www.sescsp.org.br/programacao/fuja-do-fake-uso-do-celular
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Fuja do Fake: uso do celular
+END:VALARM
+END:VEVENT
+END:VCALENDAR

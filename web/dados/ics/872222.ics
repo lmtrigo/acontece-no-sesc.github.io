@@ -1,0 +1,113 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:872222-0@agenda-sesc
+DTSTART:20260813T100000
+SUMMARY:Ateliê Aberto
+LOCATION:Sesc Itaquera
+DESCRIPTION:Com os Educadores de Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-aberto-12
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê Aberto
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:872222-1@agenda-sesc
+DTSTART:20260820T100000
+SUMMARY:Ateliê Aberto
+LOCATION:Sesc Itaquera
+DESCRIPTION:Com os Educadores de Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-aberto-12
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê Aberto
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:872222-2@agenda-sesc
+DTSTART:20260827T100000
+SUMMARY:Ateliê Aberto
+LOCATION:Sesc Itaquera
+DESCRIPTION:Com os Educadores de Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-aberto-12
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê Aberto
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:872222-3@agenda-sesc
+DTSTART:20260903T100000
+SUMMARY:Ateliê Aberto
+LOCATION:Sesc Itaquera
+DESCRIPTION:Com os Educadores de Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-aberto-12
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê Aberto
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:872222-4@agenda-sesc
+DTSTART:20260910T100000
+SUMMARY:Ateliê Aberto
+LOCATION:Sesc Itaquera
+DESCRIPTION:Com os Educadores de Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-aberto-12
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê Aberto
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:872222-5@agenda-sesc
+DTSTART:20260917T100000
+SUMMARY:Ateliê Aberto
+LOCATION:Sesc Itaquera
+DESCRIPTION:Com os Educadores de Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-aberto-12
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê Aberto
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:872222-6@agenda-sesc
+DTSTART:20260924T100000
+SUMMARY:Ateliê Aberto
+LOCATION:Sesc Itaquera
+DESCRIPTION:Com os Educadores de Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-aberto-12
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê Aberto
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:872222-7@agenda-sesc
+DTSTART:20261001T100000
+SUMMARY:Ateliê Aberto
+LOCATION:Sesc Itaquera
+DESCRIPTION:Com os Educadores de Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-aberto-12
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê Aberto
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:872222-8@agenda-sesc
+DTSTART:20261008T100000
+SUMMARY:Ateliê Aberto
+LOCATION:Sesc Itaquera
+DESCRIPTION:Com os Educadores de Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-aberto-12
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê Aberto
+END:VALARM
+END:VEVENT
+END:VCALENDAR

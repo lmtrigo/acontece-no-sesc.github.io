@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242471-0@agenda-sesc
+DTSTART:20260815T140000
+SUMMARY:Mini Câmera Fotográfica
+LOCATION:Sesc São Caetano 
+DESCRIPTION:Com Matiz Filmes — https://www.sescsp.org.br/programacao/mini-camera-fotografica
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mini Câmera Fotográfica
+END:VALARM
+END:VEVENT
+END:VCALENDAR

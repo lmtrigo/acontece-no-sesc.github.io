@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1138240-0@agenda-sesc
+DTSTART:20260830T070000
+SUMMARY:Clube do Pedal 30 Anos
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com educadoras(es) de atividades físicas do Sesc Avenida Paulista — https://www.sescsp.org.br/programacao/clube-do-pedal-30-anos-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clube do Pedal 30 Anos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1138240-1@agenda-sesc
+DTSTART:20260927T070000
+SUMMARY:Clube do Pedal 30 Anos
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com educadoras(es) de atividades físicas do Sesc Avenida Paulista — https://www.sescsp.org.br/programacao/clube-do-pedal-30-anos-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clube do Pedal 30 Anos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

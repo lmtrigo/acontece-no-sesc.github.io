@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:267340-0@agenda-sesc
+DTSTART:20260812T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:267340-1@agenda-sesc
+DTSTART:20260814T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:267340-2@agenda-sesc
+DTSTART:20260819T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:267340-3@agenda-sesc
+DTSTART:20260821T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:267340-4@agenda-sesc
+DTSTART:20260826T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:267340-5@agenda-sesc
+DTSTART:20260828T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:267340-6@agenda-sesc
+DTSTART:20260902T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:267340-7@agenda-sesc
+DTSTART:20260904T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:267340-8@agenda-sesc
+DTSTART:20260909T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:267340-9@agenda-sesc
+DTSTART:20260911T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:267340-10@agenda-sesc
+DTSTART:20260916T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:267340-11@agenda-sesc
+DTSTART:20260918T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:267340-12@agenda-sesc
+DTSTART:20260923T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:267340-13@agenda-sesc
+DTSTART:20260925T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:267340-14@agenda-sesc
+DTSTART:20260930T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:267340-15@agenda-sesc
+DTSTART:20261002T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:267340-16@agenda-sesc
+DTSTART:20261007T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:267340-17@agenda-sesc
+DTSTART:20261009T193000
+SUMMARY:Esporte Jovem - Voleibol (de 13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com a educadora Giselle Leme e Eduardo Melo — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Voleibol (de 13 a 16 anos)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

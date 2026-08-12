@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247796-0@agenda-sesc
+DTSTART:20260821T193000
+SUMMARY:Giba Reys
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:No show Mais um Jeca na Estrada — https://www.sescsp.org.br/programacao/giba-reys
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Giba Reys
+END:VALARM
+END:VEVENT
+END:VCALENDAR

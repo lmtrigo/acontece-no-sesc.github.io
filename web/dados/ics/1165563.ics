@@ -1,0 +1,77 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1165563-0@agenda-sesc
+DTSTART:20260813T103000
+SUMMARY:Experimentações Sensoriais
+LOCATION:Sesc 14 Bis
+DESCRIPTION:Com educadoras do Sesc. — https://www.sescsp.org.br/programacao/experimentacoes-sensoriais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Experimentações Sensoriais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1165563-1@agenda-sesc
+DTSTART:20260820T103000
+SUMMARY:Experimentações Sensoriais
+LOCATION:Sesc 14 Bis
+DESCRIPTION:Com educadoras do Sesc. — https://www.sescsp.org.br/programacao/experimentacoes-sensoriais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Experimentações Sensoriais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1165563-2@agenda-sesc
+DTSTART:20260827T103000
+SUMMARY:Experimentações Sensoriais
+LOCATION:Sesc 14 Bis
+DESCRIPTION:Com educadoras do Sesc. — https://www.sescsp.org.br/programacao/experimentacoes-sensoriais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Experimentações Sensoriais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1165563-3@agenda-sesc
+DTSTART:20260903T103000
+SUMMARY:Experimentações Sensoriais
+LOCATION:Sesc 14 Bis
+DESCRIPTION:Com educadoras do Sesc. — https://www.sescsp.org.br/programacao/experimentacoes-sensoriais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Experimentações Sensoriais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1165563-4@agenda-sesc
+DTSTART:20260910T103000
+SUMMARY:Experimentações Sensoriais
+LOCATION:Sesc 14 Bis
+DESCRIPTION:Com educadoras do Sesc. — https://www.sescsp.org.br/programacao/experimentacoes-sensoriais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Experimentações Sensoriais
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1165563-5@agenda-sesc
+DTSTART:20260917T103000
+SUMMARY:Experimentações Sensoriais
+LOCATION:Sesc 14 Bis
+DESCRIPTION:Com educadoras do Sesc. — https://www.sescsp.org.br/programacao/experimentacoes-sensoriais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Experimentações Sensoriais
+END:VALARM
+END:VEVENT
+END:VCALENDAR

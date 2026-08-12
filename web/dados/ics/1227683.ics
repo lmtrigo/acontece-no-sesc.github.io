@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1227683-0@agenda-sesc
+DTSTART:20260816T110000
+SUMMARY:Feira agroecológica e da Agricultura Familiar
+LOCATION:Sesc Santana
+DESCRIPTION:com Prato Verde Sustentável e Horta Pro Nobis — https://www.sescsp.org.br/programacao/feira-agroecologica-e-da-agricultura-familiar
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Feira agroecológica e da Agricultura Familiar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

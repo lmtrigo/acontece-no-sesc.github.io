@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241613-0@agenda-sesc
+DTSTART:20260821T200000
+SUMMARY:Selvagens à Procura de Lei
+LOCATION:Sesc Guarulhos — Rua Guilherme Lino dos Santos\, 1.200 | Jardim Flor do Campo | GUARULHOS  | SP | Cep: 07190-010
+DESCRIPTION:https://www.sescsp.org.br/programacao/selvagens-a-procura-de-lei
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Selvagens à Procura de Lei
+END:VALARM
+END:VEVENT
+END:VCALENDAR

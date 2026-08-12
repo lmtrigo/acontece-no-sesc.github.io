@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244957-20260813T120000@agenda-sesc
+DTSTART:20260813T120000
+SUMMARY:Aprendendo a Pedalar de Bicicleta para Pessoas Idosas
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Bike Escola Brasil. — https://www.sescsp.org.br/programacao/aprendendo-a-pedalar-de-bicicleta-para-pessoas-idosas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Aprendendo a Pedalar de Bicicleta para Pessoas Idosas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

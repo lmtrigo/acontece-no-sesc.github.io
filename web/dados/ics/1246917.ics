@@ -1,0 +1,77 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246917-0@agenda-sesc
+DTSTART:20260816T150000
+SUMMARY:Teatro de Sombras
+LOCATION:Sesc Santana
+DESCRIPTION:Com Luiza Moreira Salles e Diego Chilio — https://www.sescsp.org.br/programacao/teatro-de-sombras-7
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Teatro de Sombras
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246917-1@agenda-sesc
+DTSTART:20260823T150000
+SUMMARY:Teatro de Sombras
+LOCATION:Sesc Santana
+DESCRIPTION:Com Luiza Moreira Salles e Diego Chilio — https://www.sescsp.org.br/programacao/teatro-de-sombras-7
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Teatro de Sombras
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246917-2@agenda-sesc
+DTSTART:20260830T150000
+SUMMARY:Teatro de Sombras
+LOCATION:Sesc Santana
+DESCRIPTION:Com Luiza Moreira Salles e Diego Chilio — https://www.sescsp.org.br/programacao/teatro-de-sombras-7
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Teatro de Sombras
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246917-3@agenda-sesc
+DTSTART:20260906T150000
+SUMMARY:Teatro de Sombras
+LOCATION:Sesc Santana
+DESCRIPTION:Com Luiza Moreira Salles e Diego Chilio — https://www.sescsp.org.br/programacao/teatro-de-sombras-7
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Teatro de Sombras
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246917-4@agenda-sesc
+DTSTART:20260913T150000
+SUMMARY:Teatro de Sombras
+LOCATION:Sesc Santana
+DESCRIPTION:Com Luiza Moreira Salles e Diego Chilio — https://www.sescsp.org.br/programacao/teatro-de-sombras-7
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Teatro de Sombras
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246917-5@agenda-sesc
+DTSTART:20260920T150000
+SUMMARY:Teatro de Sombras
+LOCATION:Sesc Santana
+DESCRIPTION:Com Luiza Moreira Salles e Diego Chilio — https://www.sescsp.org.br/programacao/teatro-de-sombras-7
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Teatro de Sombras
+END:VALARM
+END:VEVENT
+END:VCALENDAR

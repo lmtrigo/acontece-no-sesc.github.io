@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242170-20260822T101500@agenda-sesc
+DTSTART:20260822T101500
+SUMMARY:Direção de arte sustentável no Cinema: práticas do imaginário
+LOCATION:Sesc Santo Amaro
+DESCRIPTION:com Liara Pinheiro — https://www.sescsp.org.br/programacao/direcao-de-arte-sustentavel-no-cinema-praticas-do-imaginario
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Direção de arte sustentável no Cinema: práticas do imaginário
+END:VALARM
+END:VEVENT
+END:VCALENDAR

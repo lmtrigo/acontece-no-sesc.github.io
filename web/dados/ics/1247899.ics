@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247899-0@agenda-sesc
+DTSTART:20260815T140000
+SUMMARY:Encontro São José e Taubaté - Esporte criança 3 a 6 anos
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:https://www.sescsp.org.br/programacao/encontro-sao-jose-e-taubate-esporte-crianca-3-a-6-anos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Encontro São José e Taubaté - Esporte criança 3 a 6 anos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

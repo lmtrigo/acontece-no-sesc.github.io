@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243400-0@agenda-sesc
+DTSTART:20260816T150000
+SUMMARY:Sala Pop+: Waacking - Semana da Juventude
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Carol Cof\, dançarina e pesquisadora de danças urbanas. — https://www.sescsp.org.br/programacao/sala-pop-waacking-semana-da-juventude
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala Pop+: Waacking - Semana da Juventude
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1062459-20260820T190000@agenda-sesc
+DTSTART:20260820T190000
+SUMMARY:Faça você mesmo | Gravação e edição de podcast
+LOCATION:Sesc Santo Amaro
+DESCRIPTION:com Fabio Bridges — https://www.sescsp.org.br/programacao/gravacao-e-edicao-de-podcast
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Faça você mesmo | Gravação e edição de podcast
+END:VALARM
+END:VEVENT
+END:VCALENDAR

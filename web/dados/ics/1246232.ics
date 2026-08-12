@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246232-0@agenda-sesc
+DTSTART:20260826T170000
+SUMMARY:Pula Criança Na Ponta Do Pé
+LOCATION:Sesc Franca
+DESCRIPTION:Com educadores em atividades infantojuvenis do Sesc — https://www.sescsp.org.br/programacao/pula-crianca-na-ponta-do-pe-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pula Criança Na Ponta Do Pé
+END:VALARM
+END:VEVENT
+END:VCALENDAR

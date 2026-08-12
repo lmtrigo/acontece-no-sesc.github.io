@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246648-20260822T143000@agenda-sesc
+DTSTART:20260822T143000
+SUMMARY:Encadernação Livre: Costura Exposta como Estrutura Aberta
+LOCATION:Sesc Belenzinho
+DESCRIPTION:https://www.sescsp.org.br/programacao/encadernacao-livre-costura-exposta-como-estrutura-aberta-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Encadernação Livre: Costura Exposta como Estrutura Aberta
+END:VALARM
+END:VEVENT
+END:VCALENDAR

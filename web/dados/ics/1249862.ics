@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249862-0@agenda-sesc
+DTSTART:20260815T140000
+SUMMARY:Jaraguá é Guarani: Lutas Indígenas do Território do Jaraguá
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Txai Suruí e Thiago Guarani. Mediação: Naia Vitória — https://www.sescsp.org.br/programacao/jaragua-e-guarani-lutas-indigenas-do-territorio-do-jaragua
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Jaraguá é Guarani: Lutas Indígenas do Território do Jaraguá
+END:VALARM
+END:VEVENT
+END:VCALENDAR

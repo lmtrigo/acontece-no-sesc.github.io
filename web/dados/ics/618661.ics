@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:618661-0@agenda-sesc
+DTSTART:20260811T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:618661-1@agenda-sesc
+DTSTART:20260813T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:618661-2@agenda-sesc
+DTSTART:20260818T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:618661-3@agenda-sesc
+DTSTART:20260820T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:618661-4@agenda-sesc
+DTSTART:20260825T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:618661-5@agenda-sesc
+DTSTART:20260827T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:618661-6@agenda-sesc
+DTSTART:20260901T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:618661-7@agenda-sesc
+DTSTART:20260903T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:618661-8@agenda-sesc
+DTSTART:20260908T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:618661-9@agenda-sesc
+DTSTART:20260910T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:618661-10@agenda-sesc
+DTSTART:20260915T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:618661-11@agenda-sesc
+DTSTART:20260917T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:618661-12@agenda-sesc
+DTSTART:20260922T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:618661-13@agenda-sesc
+DTSTART:20260924T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:618661-14@agenda-sesc
+DTSTART:20260929T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:618661-15@agenda-sesc
+DTSTART:20261001T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:618661-16@agenda-sesc
+DTSTART:20261006T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:618661-17@agenda-sesc
+DTSTART:20261008T190000
+SUMMARY:Esporte Adulto | Clube do Triatlo
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Educadores(as) do Sesc — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-triatlo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto | Clube do Triatlo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237529-0@agenda-sesc
+DTSTART:20260828T180000
+SUMMARY:Minha Irmã e Eu
+LOCATION:Sesc Osasco
+DESCRIPTION:Cine Sextou (Brasil\, 2023\, 112min) Direção: Susana Garcia — https://www.sescsp.org.br/programacao/minha-irma-e-eu-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Minha Irmã e Eu
+END:VALARM
+END:VEVENT
+END:VCALENDAR

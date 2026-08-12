@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239390-20260822T090000@agenda-sesc
+DTSTART:20260822T090000
+SUMMARY:Reparos da Bioconstrução: técnica de superadobe e barreado
+LOCATION:Sesc Itaquera
+DESCRIPTION:Com Instituto Karawara e Agentes de Educação Ambiental — https://www.sescsp.org.br/programacao/reparos-da-bioconstrucao-tecnica-de-superadobe-e-barreado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Reparos da Bioconstrução: técnica de superadobe e barreado
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237671-20260823T160000@agenda-sesc
+DTSTART:20260823T160000
+SUMMARY:Escrevendo na cova de alguém
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Lena Giuliano — https://www.sescsp.org.br/programacao/escrevendo-na-cova-de-alguem-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Escrevendo na cova de alguém
+END:VALARM
+END:VEVENT
+END:VCALENDAR

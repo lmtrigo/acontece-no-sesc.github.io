@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1108320-0@agenda-sesc
+DTSTART:20260829T140000
+SUMMARY:Bora trocar livros!
+LOCATION:Sesc 14 Bis
+DESCRIPTION:Com Sebo Pura Poesia — https://www.sescsp.org.br/programacao/bora-trocar-livros-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bora trocar livros!
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1108320-1@agenda-sesc
+DTSTART:20260830T140000
+SUMMARY:Bora trocar livros!
+LOCATION:Sesc 14 Bis
+DESCRIPTION:Com Sebo Pura Poesia — https://www.sescsp.org.br/programacao/bora-trocar-livros-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bora trocar livros!
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1234018-0@agenda-sesc
+DTSTART:20260829T103000
+SUMMARY:Clube de Leitura para crianças: Operação risoto\, de Eva Furnari
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com Alan Pablo\, educador do Programa Espaço de Brincar — https://www.sescsp.org.br/programacao/clube-de-leitura-para-criancas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clube de Leitura para crianças: Operação risoto\, de Eva Furnari
+END:VALARM
+END:VEVENT
+END:VCALENDAR

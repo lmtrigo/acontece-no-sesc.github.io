@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239252-0@agenda-sesc
+DTSTART:20260821T160000
+SUMMARY:Pensamento Giratório:  A Lenda e a Cena Teatral
+LOCATION:Sesc Itaquera
+DESCRIPTION:Com Tropa do Balacobaco — https://www.sescsp.org.br/programacao/pensamento-giratorio-a-lenda-e-a-cena-teatral
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pensamento Giratório:  A Lenda e a Cena Teatral
+END:VALARM
+END:VEVENT
+END:VCALENDAR

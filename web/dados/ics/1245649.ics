@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245649-0@agenda-sesc
+DTSTART:20260823T133000
+SUMMARY:Torneio De Futsal Feminino
+LOCATION:Sesc Franca
+DESCRIPTION:https://www.sescsp.org.br/programacao/torneio-de-futsal-feminino-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Torneio De Futsal Feminino
+END:VALARM
+END:VEVENT
+END:VCALENDAR

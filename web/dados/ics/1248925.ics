@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248925-0@agenda-sesc
+DTSTART:20260815T103000
+SUMMARY:Oficina de Palhaçaria
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Circo Dux — https://www.sescsp.org.br/programacao/oficina-de-palhacaria-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Oficina de Palhaçaria
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243580-0@agenda-sesc
+DTSTART:20260815T120000
+SUMMARY:Curumininices: mosaico com papel
+LOCATION:Sesc Ipiranga
+DESCRIPTION:Com equipe educadoras e educador do Programa Curumim — https://www.sescsp.org.br/programacao/curumininices-mosaico-com-papel
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Curumininices: mosaico com papel
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1243580-1@agenda-sesc
+DTSTART:20260816T120000
+SUMMARY:Curumininices: mosaico com papel
+LOCATION:Sesc Ipiranga
+DESCRIPTION:Com equipe educadoras e educador do Programa Curumim — https://www.sescsp.org.br/programacao/curumininices-mosaico-com-papel
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Curumininices: mosaico com papel
+END:VALARM
+END:VEVENT
+END:VCALENDAR

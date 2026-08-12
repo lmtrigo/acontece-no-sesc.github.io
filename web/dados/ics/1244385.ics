@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244385-0@agenda-sesc
+DTSTART:20260816T163000
+SUMMARY:Nhemongueta Mbya Guarani:Conexões entre Saberes e Tecnologias no Cinema Indígena
+LOCATION:Sesc Santos
+DESCRIPTION:https://www.sescsp.org.br/programacao/nhemongueta-mbya-guaraniconexoes-entre-saberes-e-tecnologias-no-cinema-indigena
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nhemongueta Mbya Guarani:Conexões entre Saberes e Tecnologias no Cinema Indígena
+END:VALARM
+END:VEVENT
+END:VCALENDAR

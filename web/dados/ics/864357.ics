@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:864357-0@agenda-sesc
+DTSTART:20260812T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:864357-1@agenda-sesc
+DTSTART:20260814T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:864357-2@agenda-sesc
+DTSTART:20260819T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:864357-3@agenda-sesc
+DTSTART:20260821T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:864357-4@agenda-sesc
+DTSTART:20260826T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:864357-5@agenda-sesc
+DTSTART:20260828T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:864357-6@agenda-sesc
+DTSTART:20260902T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:864357-7@agenda-sesc
+DTSTART:20260904T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:864357-8@agenda-sesc
+DTSTART:20260909T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:864357-9@agenda-sesc
+DTSTART:20260911T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:864357-10@agenda-sesc
+DTSTART:20260916T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:864357-11@agenda-sesc
+DTSTART:20260918T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:864357-12@agenda-sesc
+DTSTART:20260923T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:864357-13@agenda-sesc
+DTSTART:20260925T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:864357-14@agenda-sesc
+DTSTART:20260930T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:864357-15@agenda-sesc
+DTSTART:20261002T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:864357-16@agenda-sesc
+DTSTART:20261007T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:864357-17@agenda-sesc
+DTSTART:20261009T170000
+SUMMARY:Esporte Jovem | Voleibol
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com educadoras(es) do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-voleibol-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem | Voleibol
+END:VALARM
+END:VEVENT
+END:VCALENDAR

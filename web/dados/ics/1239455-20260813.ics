@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239455-20260813T190000@agenda-sesc
+DTSTART:20260813T190000
+SUMMARY:Tecnologias manuais como Ferramenta de Acolhimento - Educadores da Assistência
+LOCATION:Sesc Campinas
+DESCRIPTION:Com Fabriciana Silva\, educadora em tecnologia e artes — https://www.sescsp.org.br/programacao/tecnologias-manuais-como-ferramenta-de-acolhimento-educadores-da-assistencia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tecnologias manuais como Ferramenta de Acolhimento - Educadores da Assistência
+END:VALARM
+END:VEVENT
+END:VCALENDAR

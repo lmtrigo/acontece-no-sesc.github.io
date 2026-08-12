@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248663-0@agenda-sesc
+DTSTART:20260822T210000
+SUMMARY:Nego Bala
+LOCATION:Sesc Pompeia — Rua Clélia\, 93 | Pompeia | SAO PAULO  | SP | Cep: 05042-000
+DESCRIPTION:Show Bonde da Boca do Lixo — https://www.sescsp.org.br/programacao/nego-bala-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nego Bala
+END:VALARM
+END:VEVENT
+END:VCALENDAR

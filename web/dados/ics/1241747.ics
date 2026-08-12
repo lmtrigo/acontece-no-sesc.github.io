@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241747-0@agenda-sesc
+DTSTART:20260826T200000
+SUMMARY:Duas Culturas\, Dois Pianos
+LOCATION:Sesc Santos — Rua Conselheiro Ribas\, 136 | Aparecida | SANTOS  | SP | Cep: 11040-900
+DESCRIPTION:Com Chano Domínguez e Nelson Ayres. Intervenção coreográfica: Ana Marzagão — https://www.sescsp.org.br/programacao/duas-culturas-dois-pianos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Duas Culturas\, Dois Pianos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

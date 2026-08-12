@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246965-20260816T140000@agenda-sesc
+DTSTART:20260816T140000
+SUMMARY:Técnica de cordas: modelagem em argila
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Curusam — https://www.sescsp.org.br/programacao/tecnica-de-cordas-modelagem-em-argila
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Técnica de cordas: modelagem em argila
+END:VALARM
+END:VEVENT
+END:VCALENDAR

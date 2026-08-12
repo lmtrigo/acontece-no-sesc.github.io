@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248874-20260826T193000@agenda-sesc
+DTSTART:20260826T193000
+SUMMARY:Violino e Viola - Iniciação (Noite)
+LOCATION:Sesc Guarulhos
+DESCRIPTION:Com Marina Gama\, Educadora em Atividades Musicais — https://www.sescsp.org.br/programacao/violino-e-viola-iniciacao-noite
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violino e Viola - Iniciação (Noite)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

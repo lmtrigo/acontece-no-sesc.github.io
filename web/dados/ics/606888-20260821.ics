@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:606888-20260821T183000@agenda-sesc
+DTSTART:20260821T183000
+SUMMARY:Prática Vocal
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Solange Assumpção — https://www.sescsp.org.br/programacao/pratica-vocal-o-abre-alas-que-elas-querem-passar-mulheres-no-samba-e-no-choro
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Prática Vocal
+END:VALARM
+END:VEVENT
+END:VCALENDAR

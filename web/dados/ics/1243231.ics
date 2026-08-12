@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243231-0@agenda-sesc
+DTSTART:20260827T140000
+SUMMARY:Comicidades\, Palhaçarias e Bufonarias Dissidentes
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Veronica Pokaropa — https://www.sescsp.org.br/programacao/comicidades-palhacarias-e-bufonarias-dissidentes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Comicidades\, Palhaçarias e Bufonarias Dissidentes
+END:VALARM
+END:VEVENT
+END:VCALENDAR

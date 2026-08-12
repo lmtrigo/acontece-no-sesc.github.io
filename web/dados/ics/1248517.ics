@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248517-0@agenda-sesc
+DTSTART:20260814T140000
+SUMMARY:Colares com Linhas e Tecidos
+LOCATION:Sesc Ipiranga
+DESCRIPTION:Com Ateliê FonFinFan — https://www.sescsp.org.br/programacao/colares-com-linhas-e-tecidos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Colares com Linhas e Tecidos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

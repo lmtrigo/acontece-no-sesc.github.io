@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244104-0@agenda-sesc
+DTSTART:20260828T193000
+SUMMARY:Mutações: Consenso e dissenso artificiais: Democracia selvagem e novos começos
+LOCATION:Sesc Centro de Pesquisa e Formação
+DESCRIPTION:Com Thomás Zicman de Barros — https://www.sescsp.org.br/programacao/mutacoes-consenso-e-dissenso-artificiais-democracia-selvagem-e-novos-comecos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mutações: Consenso e dissenso artificiais: Democracia selvagem e novos começos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

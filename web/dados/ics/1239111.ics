@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239111-0@agenda-sesc
+DTSTART:20260815T143000
+SUMMARY:Expressa aí!
+LOCATION:Sesc Piracicaba
+DESCRIPTION:com Samuel Gachet\, educador em atividades infantojuvenis do Sesc — https://www.sescsp.org.br/programacao/expressa-ai
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Expressa aí!
+END:VALARM
+END:VEVENT
+END:VCALENDAR

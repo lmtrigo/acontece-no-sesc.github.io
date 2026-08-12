@@ -1,0 +1,65 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249098-0@agenda-sesc
+DTSTART:20260910T110000
+SUMMARY:Corpo Sonoro que Canta e Conta
+LOCATION:Sesc Santo André
+DESCRIPTION:Convite à expressão através do canto\, do corpo e do ritmo — https://www.sescsp.org.br/programacao/corpo-sonoro-que-canta-e-conta
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Corpo Sonoro que Canta e Conta
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1249098-1@agenda-sesc
+DTSTART:20260917T110000
+SUMMARY:Corpo Sonoro que Canta e Conta
+LOCATION:Sesc Santo André
+DESCRIPTION:Convite à expressão através do canto\, do corpo e do ritmo — https://www.sescsp.org.br/programacao/corpo-sonoro-que-canta-e-conta
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Corpo Sonoro que Canta e Conta
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1249098-2@agenda-sesc
+DTSTART:20260924T110000
+SUMMARY:Corpo Sonoro que Canta e Conta
+LOCATION:Sesc Santo André
+DESCRIPTION:Convite à expressão através do canto\, do corpo e do ritmo — https://www.sescsp.org.br/programacao/corpo-sonoro-que-canta-e-conta
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Corpo Sonoro que Canta e Conta
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1249098-3@agenda-sesc
+DTSTART:20261001T110000
+SUMMARY:Corpo Sonoro que Canta e Conta
+LOCATION:Sesc Santo André
+DESCRIPTION:Convite à expressão através do canto\, do corpo e do ritmo — https://www.sescsp.org.br/programacao/corpo-sonoro-que-canta-e-conta
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Corpo Sonoro que Canta e Conta
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1249098-4@agenda-sesc
+DTSTART:20261008T110000
+SUMMARY:Corpo Sonoro que Canta e Conta
+LOCATION:Sesc Santo André
+DESCRIPTION:Convite à expressão através do canto\, do corpo e do ritmo — https://www.sescsp.org.br/programacao/corpo-sonoro-que-canta-e-conta
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Corpo Sonoro que Canta e Conta
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:172956-0@agenda-sesc
+DTSTART:20260825T190000
+SUMMARY:Clube de Escrita Sorocaba
+LOCATION:Sesc Sorocaba
+DESCRIPTION:https://www.sescsp.org.br/programacao/clube-de-escrita-sorocaba
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clube de Escrita Sorocaba
+END:VALARM
+END:VEVENT
+END:VCALENDAR

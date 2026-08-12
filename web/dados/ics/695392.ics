@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:695392-0@agenda-sesc
+DTSTART:20260822T153000
+SUMMARY:Ateliê para a família: criando com material reciclável
+LOCATION:Sesc Santo Amaro
+DESCRIPTION:com Fabio Bridges — https://www.sescsp.org.br/programacao/atelie-para-a-familia-criando-com-material-reciclavel
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê para a família: criando com material reciclável
+END:VALARM
+END:VEVENT
+END:VCALENDAR

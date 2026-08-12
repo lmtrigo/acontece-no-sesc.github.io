@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249891-20260815T200000@agenda-sesc
+DTSTART:20260815T200000
+SUMMARY:Fabiana Cozza
+LOCATION:Sesc Pinheiros — Rua Paes Leme\, 195 | Pinheiros | SAO PAULO  | SP | Cep: 05424-150
+DESCRIPTION:apresentação do show "Cozza 50" — https://www.sescsp.org.br/programacao/fabiana-cozza-22
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Fabiana Cozza
+END:VALARM
+END:VEVENT
+END:VCALENDAR

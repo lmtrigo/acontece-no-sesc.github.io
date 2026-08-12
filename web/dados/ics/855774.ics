@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:855774-0@agenda-sesc
+DTSTART:20260823T143000
+SUMMARY:Roda de Paternidades
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com Antonio Carvalho\, educador do Espaço de Brincar — https://www.sescsp.org.br/programacao/roda-de-paternidades-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Roda de Paternidades
+END:VALARM
+END:VEVENT
+END:VCALENDAR

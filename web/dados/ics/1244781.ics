@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244781-0@agenda-sesc
+DTSTART:20260911T093000
+SUMMARY:Contrate Quem Luta - Explorando o cooperativismo de plataforma
+LOCATION:Sesc São Bento
+DESCRIPTION:Com Núcleo de Tecnologia MTST e cooperados da CQL — https://www.sescsp.org.br/programacao/contrate-quem-luta-explorando-o-cooperativismo-de-plataforma
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrate Quem Luta - Explorando o cooperativismo de plataforma
+END:VALARM
+END:VEVENT
+END:VCALENDAR

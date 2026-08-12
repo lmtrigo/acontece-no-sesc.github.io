@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1198317-20260920T120000@agenda-sesc
+DTSTART:20260920T120000
+SUMMARY:Recreação Esportiva: Vôlei Jovem
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Com equipe educadora do Sesc Bom Retiro — https://www.sescsp.org.br/programacao/recreacao-esportiva-volei-jovem
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recreação Esportiva: Vôlei Jovem
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246935-0@agenda-sesc
+DTSTART:20260816T110000
+SUMMARY:Caminho do faz de conta
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras do Espaço de Brincar — https://www.sescsp.org.br/programacao/caminho-do-faz-de-conta
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Caminho do faz de conta
+END:VALARM
+END:VEVENT
+END:VCALENDAR

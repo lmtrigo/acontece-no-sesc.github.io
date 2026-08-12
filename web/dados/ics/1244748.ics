@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244748-0@agenda-sesc
+DTSTART:20260825T190000
+SUMMARY:A Produção Musical de Cidadão Instigado
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Com Fernando Catatau — https://www.sescsp.org.br/programacao/a-producao-musical-de-cidadao-instigado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A Produção Musical de Cidadão Instigado
+END:VALARM
+END:VEVENT
+END:VCALENDAR

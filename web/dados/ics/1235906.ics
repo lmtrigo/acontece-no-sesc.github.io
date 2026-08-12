@@ -1,0 +1,113 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1235906-0@agenda-sesc
+DTSTART:20260815T120000
+SUMMARY:A Gente Faz Junto\, Com os Livros
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Rodas de Leitura — https://www.sescsp.org.br/programacao/a-gente-faz-junto-com-os-livros
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A Gente Faz Junto\, Com os Livros
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235906-1@agenda-sesc
+DTSTART:20260816T120000
+SUMMARY:A Gente Faz Junto\, Com os Livros
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Rodas de Leitura — https://www.sescsp.org.br/programacao/a-gente-faz-junto-com-os-livros
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A Gente Faz Junto\, Com os Livros
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235906-2@agenda-sesc
+DTSTART:20260822T120000
+SUMMARY:A Gente Faz Junto\, Com os Livros
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Rodas de Leitura — https://www.sescsp.org.br/programacao/a-gente-faz-junto-com-os-livros
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A Gente Faz Junto\, Com os Livros
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235906-3@agenda-sesc
+DTSTART:20260823T120000
+SUMMARY:A Gente Faz Junto\, Com os Livros
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Rodas de Leitura — https://www.sescsp.org.br/programacao/a-gente-faz-junto-com-os-livros
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A Gente Faz Junto\, Com os Livros
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235906-4@agenda-sesc
+DTSTART:20260829T120000
+SUMMARY:A Gente Faz Junto\, Com os Livros
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Rodas de Leitura — https://www.sescsp.org.br/programacao/a-gente-faz-junto-com-os-livros
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A Gente Faz Junto\, Com os Livros
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235906-5@agenda-sesc
+DTSTART:20260830T120000
+SUMMARY:A Gente Faz Junto\, Com os Livros
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Rodas de Leitura — https://www.sescsp.org.br/programacao/a-gente-faz-junto-com-os-livros
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A Gente Faz Junto\, Com os Livros
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235906-6@agenda-sesc
+DTSTART:20260905T120000
+SUMMARY:A Gente Faz Junto\, Com os Livros
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Rodas de Leitura — https://www.sescsp.org.br/programacao/a-gente-faz-junto-com-os-livros
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A Gente Faz Junto\, Com os Livros
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235906-7@agenda-sesc
+DTSTART:20260906T120000
+SUMMARY:A Gente Faz Junto\, Com os Livros
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Rodas de Leitura — https://www.sescsp.org.br/programacao/a-gente-faz-junto-com-os-livros
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A Gente Faz Junto\, Com os Livros
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1235906-8@agenda-sesc
+DTSTART:20260907T120000
+SUMMARY:A Gente Faz Junto\, Com os Livros
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Rodas de Leitura — https://www.sescsp.org.br/programacao/a-gente-faz-junto-com-os-livros
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A Gente Faz Junto\, Com os Livros
+END:VALARM
+END:VEVENT
+END:VCALENDAR

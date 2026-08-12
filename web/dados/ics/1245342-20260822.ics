@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245342-20260822T140000@agenda-sesc
+DTSTART:20260822T140000
+SUMMARY:Lina Bo Bardi: olhares através da fotografia pinhole
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Cássia Xavier e Gustavo Falqueiro — https://www.sescsp.org.br/programacao/lina-bo-bardi-olhares-atraves-da-fotografia-pinhole
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Lina Bo Bardi: olhares através da fotografia pinhole
+END:VALARM
+END:VEVENT
+END:VCALENDAR

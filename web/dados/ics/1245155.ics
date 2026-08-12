@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245155-0@agenda-sesc
+DTSTART:20260823T110000
+SUMMARY:Feira Socioambiental
+LOCATION:Sesc Franca
+DESCRIPTION:Com Sítio Santa Terra\, Partilha\, Coorgânica\, Gustavo Leonel Cafés Especiais\, Ayê Natural e Artesanal\, ZAZ e Odara Ecosocial - Terra\, Movimento e Batuque — https://www.sescsp.org.br/programacao/feira-socioambiental-8
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Feira Socioambiental
+END:VALARM
+END:VEVENT
+END:VCALENDAR

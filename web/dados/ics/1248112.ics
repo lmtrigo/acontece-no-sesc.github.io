@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248112-0@agenda-sesc
+DTSTART:20260812T140000
+SUMMARY:Tecer e Prosear: inclusão e protagonismo de pessoas com deficiência
+LOCATION:Sesc Guarulhos
+DESCRIPTION:Com Izael da Mota e Sabrina Gaspar (Projeto Sentir os Fios) — https://www.sescsp.org.br/programacao/tecer-e-prosear-inclusao-e-protagonismo-de-pessoas-com-deficiencia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tecer e Prosear: inclusão e protagonismo de pessoas com deficiência
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237592-0@agenda-sesc
+DTSTART:20260831T120000
+SUMMARY:Sarau Futuro Ancestral: Vozes\, Poesia e Microfone Aberto
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com Vini Preto e trilha sonora do DJ Spin — https://www.sescsp.org.br/programacao/sarau-futuro-ancestral-vozes-poesia-e-microfone-aberto
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sarau Futuro Ancestral: Vozes\, Poesia e Microfone Aberto
+END:VALARM
+END:VEVENT
+END:VCALENDAR

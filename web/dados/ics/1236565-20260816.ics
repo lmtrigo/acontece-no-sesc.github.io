@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1236565-20260816T163000@agenda-sesc
+DTSTART:20260816T163000
+SUMMARY:O Circo Da Lona Torta
+LOCATION:Sesc Vila Mariana — Rua Pelotas\, 141 | Vila Mariana | SAO PAULO  | SP | Cep: 04012-000
+DESCRIPTION:com Trupe Lona Preta — https://www.sescsp.org.br/programacao/o-circo-da-lona-torta-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Circo Da Lona Torta
+END:VALARM
+END:VEVENT
+END:VCALENDAR

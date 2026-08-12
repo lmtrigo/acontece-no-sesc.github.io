@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240158-0@agenda-sesc
+DTSTART:20260822T200000
+SUMMARY:Yago Oproprio
+LOCATION:Sesc Taubaté — Avenida Engenheiro Milton de Alvarenga Peixoto\, 1264 | Esplanada Santa Terezinha | TAUBATE  | SP | Cep: 12052-230
+DESCRIPTION:https://www.sescsp.org.br/programacao/yago-oproprio-18
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Yago Oproprio
+END:VALARM
+END:VEVENT
+END:VCALENDAR

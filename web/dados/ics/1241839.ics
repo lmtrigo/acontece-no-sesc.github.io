@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241839-0@agenda-sesc
+DTSTART:20260827T190000
+SUMMARY:Ignácio de Loyola Brandão e a literatura como resistência
+LOCATION:Sesc Pinheiros
+DESCRIPTION:Com o escritor Ignácio de Loyola Brandão e a crítica literária Iara Biderman. Mediação do jornalista Ygor Kassab — https://www.sescsp.org.br/programacao/ignacio-de-loyola-brandao-e-a-literatura-como-resistencia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ignácio de Loyola Brandão e a literatura como resistência
+END:VALARM
+END:VEVENT
+END:VCALENDAR

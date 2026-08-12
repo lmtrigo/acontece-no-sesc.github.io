@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240089-20260909T190000@agenda-sesc
+DTSTART:20260909T190000
+SUMMARY:Refugi Musical | Médio e Extremo Oriente
+LOCATION:Sesc Consolação
+DESCRIPTION:com Beto Angerosa\, Claudio Kairouz (Brasil/ Líbano)\, Mah Mooni (Irã)\, Nelson Lin (China) e Oula Al Saghir (Palestina) — https://www.sescsp.org.br/programacao/refugi-musical-medio-e-extremo-oriente
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Refugi Musical | Médio e Extremo Oriente
+END:VALARM
+END:VEVENT
+END:VCALENDAR

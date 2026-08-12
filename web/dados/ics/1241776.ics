@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241776-0@agenda-sesc
+DTSTART:20260815T110000
+SUMMARY:Sons da ancestralidade no colo da infância
+LOCATION:Sesc São Caetano 
+DESCRIPTION:Com Auritha Tabajara — https://www.sescsp.org.br/programacao/sons-da-ancestralidade-no-colo-da-infancia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sons da ancestralidade no colo da infância
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1241776-1@agenda-sesc
+DTSTART:20260829T110000
+SUMMARY:Sons da ancestralidade no colo da infância
+LOCATION:Sesc São Caetano 
+DESCRIPTION:Com Auritha Tabajara — https://www.sescsp.org.br/programacao/sons-da-ancestralidade-no-colo-da-infancia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sons da ancestralidade no colo da infância
+END:VALARM
+END:VEVENT
+END:VCALENDAR

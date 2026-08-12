@@ -30,7 +30,7 @@ import re
 import shutil
 import struct
 import zlib
-from datetime import date
+from datetime import date, timedelta
 
 import regras
 
@@ -89,6 +89,97 @@ def png(caminho, tamanho, maskable=False):
 
 
 # ----------------------------------------------------------------- textos
+def esc_ics(s):
+    return (str(s or "").replace("\\", "\\\\").replace(",", "\\,")
+            .replace(";", "\\;").replace("\n", "\\n"))
+
+
+def _ics(linhas):
+    return "\r\n".join(["BEGIN:VCALENDAR", "VERSION:2.0",
+                        "PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR",
+                        "CALSCALE:GREGORIAN"] + linhas + ["END:VCALENDAR"])
+
+
+def _stamp(quando, hora_padrao="09:00"):
+    p = str(quando).split("T")
+    hm = (p[1][:5] if len(p) > 1 and p[1] else hora_padrao).replace(":", "")
+    return p[0].replace("-", "") + "T" + hm + "00"
+
+
+def ics_evento(ev):
+    """O compromisso do evento. Viagem contínua vira um intervalo só."""
+    local = esc_ics("Sesc " + (ev.get("uni") or "") +
+                    (" — " + ev["endereco"] if ev.get("endereco") else ""))
+    desc = esc_ics(((ev.get("sub") + " — ") if ev.get("sub") else "") + (ev.get("link") or ""))
+    tit = esc_ics(ev.get("tit"))
+    dias = ev.get("dias") or []
+
+    if ev.get("continuo") and len(dias) > 1:
+        fim = (date.fromisoformat(dias[-1]) + timedelta(days=1)).isoformat()
+        return _ics(["BEGIN:VEVENT", "UID:%s-viagem@agenda-sesc" % ev["id"],
+                     "DTSTART;VALUE=DATE:" + dias[0].replace("-", ""),
+                     "DTEND;VALUE=DATE:" + fim.replace("-", ""),
+                     "SUMMARY:" + tit, "LOCATION:" + local, "DESCRIPTION:" + desc,
+                     "BEGIN:VALARM", "TRIGGER:-P1D", "ACTION:DISPLAY",
+                     "DESCRIPTION:" + esc_ics("Amanhã: " + (ev.get("tit") or "")),
+                     "END:VALARM", "END:VEVENT"])
+
+    pontos = ([s["quando"] for s in ev["sessoes"]] if ev.get("sessoes")
+              else [d + "T" + (ev.get("hora") or "09:00") for d in dias])
+    corpo = []
+    for i, q in enumerate(pontos):
+        corpo += ["BEGIN:VEVENT", "UID:%s-%d@agenda-sesc" % (ev["id"], i),
+                  "DTSTART:" + _stamp(q), "SUMMARY:" + tit,
+                  "LOCATION:" + local, "DESCRIPTION:" + desc,
+                  "BEGIN:VALARM", "TRIGGER:-PT2H", "ACTION:DISPLAY",
+                  "DESCRIPTION:" + tit, "END:VALARM", "END:VEVENT"]
+    return _ics(corpo) if corpo else None
+
+
+TETO_POR_DATA = 8   # acima disso é curso semanal; não vale 20 arquivos
+
+
+def ics_uma_data(ev, quando):
+    """Uma sessão só, para quem escolheu a data no app."""
+    local = esc_ics("Sesc " + (ev.get("uni") or "") +
+                    (" — " + ev["endereco"] if ev.get("endereco") else ""))
+    desc = esc_ics(((ev.get("sub") + " — ") if ev.get("sub") else "") + (ev.get("link") or ""))
+    return _ics(["BEGIN:VEVENT",
+                 "UID:%s-%s@agenda-sesc" % (ev["id"], _stamp(quando)),
+                 "DTSTART:" + _stamp(quando), "SUMMARY:" + esc_ics(ev.get("tit")),
+                 "LOCATION:" + local, "DESCRIPTION:" + desc,
+                 "BEGIN:VALARM", "TRIGGER:-PT2H", "ACTION:DISPLAY",
+                 "DESCRIPTION:" + esc_ics(ev.get("tit")), "END:VALARM", "END:VEVENT"])
+
+
+def datas_de(ev):
+    """Instantes das sessões, na mesma ordem que o app mostra."""
+    if ev.get("sessoes"):
+        return [s["quando"] for s in ev["sessoes"]]
+    return [d + "T" + (ev.get("hora") or "09:00") for d in (ev.get("dias") or [])]
+
+
+def ics_inscricao(ev):
+    """Só a abertura da inscrição — um compromisso, como pedido."""
+    i = ev.get("inscricao") or {}
+    quando = i.get("inscricao") or ev.get("vendaOnline") or ev.get("vendaPresencial")
+    if not quando:
+        return None
+    extra = []
+    if i.get("inscricaoFim"):
+        extra.append("Encerra em " + i["inscricaoFim"][:10])
+    if i.get("sorteio"):
+        extra.append("Sorteio em " + i["sorteio"][:10])
+    return _ics(["BEGIN:VEVENT", "UID:%s-insc@agenda-sesc" % ev["id"],
+                 "DTSTART:" + _stamp(quando, "10:00"),
+                 "SUMMARY:" + esc_ics("Abrem as inscrições: " + (ev.get("tit") or "")),
+                 "LOCATION:" + esc_ics("Sesc " + (ev.get("uni") or "")),
+                 "DESCRIPTION:" + esc_ics(". ".join(extra + [ev.get("link") or ""])),
+                 "BEGIN:VALARM", "TRIGGER:-PT1H", "ACTION:DISPLAY",
+                 "DESCRIPTION:" + esc_ics("Inscrições abrem em 1h"),
+                 "END:VALARM", "END:VEVENT"])
+
+
 def manifest(base):
     return json.dumps({
         "name": NOME,
@@ -133,6 +224,22 @@ self.addEventListener('fetch', (e) => {
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
+
+  // Um .ics só abre o app de calendario se chegar como text/calendar.
+  // Nem todo host declara esse tipo (o http.server do Python manda
+  // application/octet-stream), entao o proprio worker corrige o cabecalho.
+  if (url.pathname.endsWith('.ics')) {
+    e.respondWith(
+      fetch(req).then((r) => r.blob().then((b) => new Response(b, {
+        status: r.status,
+        headers: {
+          'Content-Type': 'text/calendar; charset=utf-8',
+          'Content-Disposition': 'inline'
+        }
+      })))
+    );
+    return;
+  }
 
   if (url.pathname.endsWith('eventos.json')) {
     e.respondWith(
@@ -228,6 +335,45 @@ def main():
     with open(os.path.join(args.saida, "dados", "eventos.json"), "w", encoding="utf-8") as f:
         json.dump(magro, f, ensure_ascii=False, separators=(",", ":"))
     print("%d descrições em arquivos separados" % n_desc)
+
+    # Arquivos .ics servidos por URL real. É isto que abre o app de
+    # calendário no celular: um blob: não tem endereço que o sistema
+    # reconheça, então o navegador sempre o trata como download.
+    dir_ics = os.path.join(args.saida, "dados", "ics")
+    if os.path.isdir(dir_ics):
+        shutil.rmtree(dir_ics)
+    os.makedirs(dir_ics, exist_ok=True)
+
+    def grava(nome, conteudo):
+        with open(os.path.join(dir_ics, nome), "w", encoding="utf-8", newline="") as f:
+            f.write(conteudo)
+
+    n_ics = n_ins = n_dia = 0
+    for ev in magro["eventos"]:
+        conteudo = ics_evento(ev)
+        if conteudo:
+            grava("%s.ics" % ev["id"], conteudo)
+            n_ics += 1
+
+        conteudo = ics_inscricao(ev)
+        if conteudo:
+            grava("%s-insc.ics" % ev["id"], conteudo)
+            n_ins += 1
+
+        # um arquivo por sessão, para quem escolhe a data no app
+        datas = datas_de(ev)
+        if not ev.get("continuo") and 1 < len(datas) <= TETO_POR_DATA:
+            for q in datas:
+                grava("%s-%s.ics" % (ev["id"], q[:10].replace("-", "")),
+                      ics_uma_data(ev, q))
+                n_dia += 1
+            ev["icsd"] = 1        # o app só linka o que existe
+
+    print("%d .ics de evento · %d por sessão · %d de inscrição" % (n_ics, n_dia, n_ins))
+
+    # regrava o eventos.json com a marca icsd
+    with open(os.path.join(args.saida, "dados", "eventos.json"), "w", encoding="utf-8") as f:
+        json.dump(magro, f, ensure_ascii=False, separators=(",", ":"))
 
     with open(os.path.join(args.saida, "manifest.webmanifest"), "w", encoding="utf-8") as f:
         f.write(manifest(base))

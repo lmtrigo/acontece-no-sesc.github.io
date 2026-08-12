@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240210-0@agenda-sesc
+DTSTART:20260819T140000
+SUMMARY:Prática e História - A Música Afro Originária II
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Daniel Camiranga\, educador do Centro de Música do Sesc Vila Mariana — https://www.sescsp.org.br/programacao/pratica-e-historia-a-musica-afro-originaria-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Prática e História - A Música Afro Originária II
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240210-1@agenda-sesc
+DTSTART:20260826T140000
+SUMMARY:Prática e História - A Música Afro Originária II
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Daniel Camiranga\, educador do Centro de Música do Sesc Vila Mariana — https://www.sescsp.org.br/programacao/pratica-e-historia-a-musica-afro-originaria-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Prática e História - A Música Afro Originária II
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240210-2@agenda-sesc
+DTSTART:20260902T140000
+SUMMARY:Prática e História - A Música Afro Originária II
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Daniel Camiranga\, educador do Centro de Música do Sesc Vila Mariana — https://www.sescsp.org.br/programacao/pratica-e-historia-a-musica-afro-originaria-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Prática e História - A Música Afro Originária II
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240210-3@agenda-sesc
+DTSTART:20260909T140000
+SUMMARY:Prática e História - A Música Afro Originária II
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Daniel Camiranga\, educador do Centro de Música do Sesc Vila Mariana — https://www.sescsp.org.br/programacao/pratica-e-historia-a-musica-afro-originaria-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Prática e História - A Música Afro Originária II
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240210-4@agenda-sesc
+DTSTART:20260916T140000
+SUMMARY:Prática e História - A Música Afro Originária II
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Daniel Camiranga\, educador do Centro de Música do Sesc Vila Mariana — https://www.sescsp.org.br/programacao/pratica-e-historia-a-musica-afro-originaria-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Prática e História - A Música Afro Originária II
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240210-5@agenda-sesc
+DTSTART:20260923T140000
+SUMMARY:Prática e História - A Música Afro Originária II
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Daniel Camiranga\, educador do Centro de Música do Sesc Vila Mariana — https://www.sescsp.org.br/programacao/pratica-e-historia-a-musica-afro-originaria-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Prática e História - A Música Afro Originária II
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240210-6@agenda-sesc
+DTSTART:20260930T140000
+SUMMARY:Prática e História - A Música Afro Originária II
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Daniel Camiranga\, educador do Centro de Música do Sesc Vila Mariana — https://www.sescsp.org.br/programacao/pratica-e-historia-a-musica-afro-originaria-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Prática e História - A Música Afro Originária II
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240210-7@agenda-sesc
+DTSTART:20261007T140000
+SUMMARY:Prática e História - A Música Afro Originária II
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Daniel Camiranga\, educador do Centro de Música do Sesc Vila Mariana — https://www.sescsp.org.br/programacao/pratica-e-historia-a-musica-afro-originaria-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Prática e História - A Música Afro Originária II
+END:VALARM
+END:VEVENT
+END:VCALENDAR

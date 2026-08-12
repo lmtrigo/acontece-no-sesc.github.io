@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245142-0@agenda-sesc
+DTSTART:20260829T100000
+SUMMARY:Clube do livro: Santo de Casa\, de Stefano Volp
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com Larissa Spanó\, bibliotecária do Sesc — https://www.sescsp.org.br/programacao/clube-do-livro-santo-de-casa-de-stefano-volp
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clube do livro: Santo de Casa\, de Stefano Volp
+END:VALARM
+END:VEVENT
+END:VCALENDAR

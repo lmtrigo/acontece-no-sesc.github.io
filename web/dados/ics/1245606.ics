@@ -1,0 +1,53 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245606-0@agenda-sesc
+DTSTART:20260811T170000
+SUMMARY:Painel viagem espacial
+LOCATION:Sesc Birigui
+DESCRIPTION:Com Deva Bhakta e Natasia dos Anjos\, educadores do Sesc — https://www.sescsp.org.br/programacao/painel-viagem-espacial-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Painel viagem espacial
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245606-1@agenda-sesc
+DTSTART:20260812T170000
+SUMMARY:Painel viagem espacial
+LOCATION:Sesc Birigui
+DESCRIPTION:Com Deva Bhakta e Natasia dos Anjos\, educadores do Sesc — https://www.sescsp.org.br/programacao/painel-viagem-espacial-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Painel viagem espacial
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245606-2@agenda-sesc
+DTSTART:20260813T170000
+SUMMARY:Painel viagem espacial
+LOCATION:Sesc Birigui
+DESCRIPTION:Com Deva Bhakta e Natasia dos Anjos\, educadores do Sesc — https://www.sescsp.org.br/programacao/painel-viagem-espacial-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Painel viagem espacial
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245606-3@agenda-sesc
+DTSTART:20260814T170000
+SUMMARY:Painel viagem espacial
+LOCATION:Sesc Birigui
+DESCRIPTION:Com Deva Bhakta e Natasia dos Anjos\, educadores do Sesc — https://www.sescsp.org.br/programacao/painel-viagem-espacial-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Painel viagem espacial
+END:VALARM
+END:VEVENT
+END:VCALENDAR

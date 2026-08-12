@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1170385-20260815T103000@agenda-sesc
+DTSTART:20260815T103000
+SUMMARY:Vivência de Dança de Salão
+LOCATION:Sesc Itaquera
+DESCRIPTION:Com o Professor Gui e Amandinha — https://www.sescsp.org.br/programacao/vivencia-de-danca-de-salao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Vivência de Dança de Salão
+END:VALARM
+END:VEVENT
+END:VCALENDAR

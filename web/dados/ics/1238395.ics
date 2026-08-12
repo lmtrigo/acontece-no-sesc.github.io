@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238395-0@agenda-sesc
+DTSTART:20260813T200000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238395-1@agenda-sesc
+DTSTART:20260814T150000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238395-2@agenda-sesc
+DTSTART:20260814T200000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238395-3@agenda-sesc
+DTSTART:20260815T200000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238395-4@agenda-sesc
+DTSTART:20260816T180000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238395-5@agenda-sesc
+DTSTART:20260820T200000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238395-6@agenda-sesc
+DTSTART:20260821T150000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238395-7@agenda-sesc
+DTSTART:20260821T200000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238395-8@agenda-sesc
+DTSTART:20260822T200000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238395-9@agenda-sesc
+DTSTART:20260823T180000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238395-10@agenda-sesc
+DTSTART:20260827T200000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238395-11@agenda-sesc
+DTSTART:20260828T150000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238395-12@agenda-sesc
+DTSTART:20260828T200000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238395-13@agenda-sesc
+DTSTART:20260829T200000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238395-14@agenda-sesc
+DTSTART:20260830T180000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238395-15@agenda-sesc
+DTSTART:20260903T200000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238395-16@agenda-sesc
+DTSTART:20260904T200000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238395-17@agenda-sesc
+DTSTART:20260905T200000
+SUMMARY:O Funcionário que Pede para Não Ser Identificado
+LOCATION:Sesc Consolação — Rua Dr. Vila Nova\, 245 | Vila Buarque | SAO PAULO  | SP | Cep: 01222-020
+DESCRIPTION:Texto\, Canções e Direção: Michel Melamed — https://www.sescsp.org.br/programacao/o-funcionario-que-pede-para-nao-ser-identificado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Funcionário que Pede para Não Ser Identificado
+END:VALARM
+END:VEVENT
+END:VCALENDAR

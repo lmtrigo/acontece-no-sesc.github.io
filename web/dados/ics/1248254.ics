@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248254-0@agenda-sesc
+DTSTART:20260823T150000
+SUMMARY:Saber\, poder e prazer
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Thais Machado Dias e Hellen Audrey — https://www.sescsp.org.br/programacao/saber-poder-e-prazer
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Saber\, poder e prazer
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237768-20260829T150000@agenda-sesc
+DTSTART:20260829T150000
+SUMMARY:Jogos de Narração
+LOCATION:Sesc Santo André
+DESCRIPTION:com Juliana Thomaz e Tatiane Ramos — https://www.sescsp.org.br/programacao/jogos-de-narracao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Jogos de Narração
+END:VALARM
+END:VEVENT
+END:VCALENDAR

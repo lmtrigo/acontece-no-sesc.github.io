@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:57624-20260927T130000@agenda-sesc
+DTSTART:20260927T130000
+SUMMARY:Futsal Feminino | Recreação Esportiva
+LOCATION:Sesc Pinheiros
+DESCRIPTION:https://www.sescsp.org.br/programacao/futsal-feminino-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Futsal Feminino | Recreação Esportiva
+END:VALARM
+END:VEVENT
+END:VCALENDAR

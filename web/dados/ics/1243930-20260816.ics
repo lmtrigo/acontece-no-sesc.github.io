@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243930-20260816T150000@agenda-sesc
+DTSTART:20260816T150000
+SUMMARY:Colagens magnéticas
+LOCATION:Sesc Ipiranga
+DESCRIPTION:com Ligia Minami\, educadora em Tecnologias e Artes — https://www.sescsp.org.br/programacao/colagens-magneticas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Colagens magnéticas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

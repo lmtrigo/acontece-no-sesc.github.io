@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238643-0@agenda-sesc
+DTSTART:20260822T160000
+SUMMARY:Gulliver: um gigante diferente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:Com Cia Teatral Tertúlia — https://www.sescsp.org.br/programacao/gulliver-um-gigante-diferente-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gulliver: um gigante diferente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238643-1@agenda-sesc
+DTSTART:20260823T160000
+SUMMARY:Gulliver: um gigante diferente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:Com Cia Teatral Tertúlia — https://www.sescsp.org.br/programacao/gulliver-um-gigante-diferente-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gulliver: um gigante diferente
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:632780-0@agenda-sesc
+DTSTART:20260822T153000
+SUMMARY:Brincando ao Ar Livre!
+LOCATION:Sesc Bertioga
+DESCRIPTION:Com Educador(a) Ambiental do Sesc — https://www.sescsp.org.br/programacao/brincando-ao-ar-livre
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Brincando ao Ar Livre!
+END:VALARM
+END:VEVENT
+END:VCALENDAR

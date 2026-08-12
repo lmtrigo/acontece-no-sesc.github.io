@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242527-0@agenda-sesc
+DTSTART:20260816T160000
+SUMMARY:Laia e o Voo da Imaginação
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Com Cia Tu Mateixa — https://www.sescsp.org.br/programacao/laia-e-o-voo-da-imaginacao-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Laia e o Voo da Imaginação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

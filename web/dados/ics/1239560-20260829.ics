@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239560-20260829T153000@agenda-sesc
+DTSTART:20260829T153000
+SUMMARY:Brincadeiras com papel
+LOCATION:Sesc Santo Amaro
+DESCRIPTION:com educadores de Tecnologias e Artes — https://www.sescsp.org.br/programacao/brincadeiras-com-papel-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Brincadeiras com papel
+END:VALARM
+END:VEVENT
+END:VCALENDAR

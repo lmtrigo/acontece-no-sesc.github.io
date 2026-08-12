@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245508-20261008T140000@agenda-sesc
+DTSTART:20261008T140000
+SUMMARY:Bordado: Pintura de Agulha em Folha Seca
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com Adolfo Bortolozzo — https://www.sescsp.org.br/programacao/bordado-pintura-de-agulha-em-folha-seca
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Bordado: Pintura de Agulha em Folha Seca
+END:VALARM
+END:VEVENT
+END:VCALENDAR

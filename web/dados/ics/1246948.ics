@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246948-0@agenda-sesc
+DTSTART:20260812T150000
+SUMMARY:Recortar\, Juntar e Inventar- Experimentações com Colagem Analógica
+LOCATION:Sesc Guarulhos
+DESCRIPTION:Com Lidia Martiniano\, educadora em Tecnologias e Artes — https://www.sescsp.org.br/programacao/recortar-juntar-e-inventar-experimentacoes-com-colagem-analogica
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recortar\, Juntar e Inventar- Experimentações com Colagem Analógica
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246948-1@agenda-sesc
+DTSTART:20260819T150000
+SUMMARY:Recortar\, Juntar e Inventar- Experimentações com Colagem Analógica
+LOCATION:Sesc Guarulhos
+DESCRIPTION:Com Lidia Martiniano\, educadora em Tecnologias e Artes — https://www.sescsp.org.br/programacao/recortar-juntar-e-inventar-experimentacoes-com-colagem-analogica
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recortar\, Juntar e Inventar- Experimentações com Colagem Analógica
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246948-2@agenda-sesc
+DTSTART:20260826T150000
+SUMMARY:Recortar\, Juntar e Inventar- Experimentações com Colagem Analógica
+LOCATION:Sesc Guarulhos
+DESCRIPTION:Com Lidia Martiniano\, educadora em Tecnologias e Artes — https://www.sescsp.org.br/programacao/recortar-juntar-e-inventar-experimentacoes-com-colagem-analogica
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Recortar\, Juntar e Inventar- Experimentações com Colagem Analógica
+END:VALARM
+END:VEVENT
+END:VCALENDAR

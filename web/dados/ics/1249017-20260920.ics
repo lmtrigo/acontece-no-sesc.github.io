@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249017-20260920T101500@agenda-sesc
+DTSTART:20260920T101500
+SUMMARY:Nado livre com orientação
+LOCATION:Sesc Consolação
+DESCRIPTION:Com educadores do Sesc — https://www.sescsp.org.br/programacao/nado-livre-com-orientacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nado livre com orientação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

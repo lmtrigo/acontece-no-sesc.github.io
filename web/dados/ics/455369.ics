@@ -1,0 +1,197 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:455369-0@agenda-sesc
+DTSTART:20260818T201000
+SUMMARY:Contrabaixo Acústico - Iniciante
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-para-iniciantes-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciante
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:455369-1@agenda-sesc
+DTSTART:20260820T201000
+SUMMARY:Contrabaixo Acústico - Iniciante
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-para-iniciantes-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciante
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:455369-2@agenda-sesc
+DTSTART:20260825T201000
+SUMMARY:Contrabaixo Acústico - Iniciante
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-para-iniciantes-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciante
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:455369-3@agenda-sesc
+DTSTART:20260827T201000
+SUMMARY:Contrabaixo Acústico - Iniciante
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-para-iniciantes-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciante
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:455369-4@agenda-sesc
+DTSTART:20260901T201000
+SUMMARY:Contrabaixo Acústico - Iniciante
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-para-iniciantes-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciante
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:455369-5@agenda-sesc
+DTSTART:20260903T201000
+SUMMARY:Contrabaixo Acústico - Iniciante
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-para-iniciantes-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciante
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:455369-6@agenda-sesc
+DTSTART:20260908T201000
+SUMMARY:Contrabaixo Acústico - Iniciante
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-para-iniciantes-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciante
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:455369-7@agenda-sesc
+DTSTART:20260910T201000
+SUMMARY:Contrabaixo Acústico - Iniciante
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-para-iniciantes-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciante
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:455369-8@agenda-sesc
+DTSTART:20260915T201000
+SUMMARY:Contrabaixo Acústico - Iniciante
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-para-iniciantes-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciante
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:455369-9@agenda-sesc
+DTSTART:20260917T201000
+SUMMARY:Contrabaixo Acústico - Iniciante
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-para-iniciantes-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciante
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:455369-10@agenda-sesc
+DTSTART:20260922T201000
+SUMMARY:Contrabaixo Acústico - Iniciante
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-para-iniciantes-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciante
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:455369-11@agenda-sesc
+DTSTART:20260924T201000
+SUMMARY:Contrabaixo Acústico - Iniciante
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-para-iniciantes-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciante
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:455369-12@agenda-sesc
+DTSTART:20260929T201000
+SUMMARY:Contrabaixo Acústico - Iniciante
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-para-iniciantes-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciante
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:455369-13@agenda-sesc
+DTSTART:20261001T201000
+SUMMARY:Contrabaixo Acústico - Iniciante
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-para-iniciantes-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciante
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:455369-14@agenda-sesc
+DTSTART:20261006T201000
+SUMMARY:Contrabaixo Acústico - Iniciante
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-para-iniciantes-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciante
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:455369-15@agenda-sesc
+DTSTART:20261008T201000
+SUMMARY:Contrabaixo Acústico - Iniciante
+LOCATION:Sesc Consolação
+DESCRIPTION:com Lua Bernardo — https://www.sescsp.org.br/programacao/contrabaixo-acustico-para-iniciantes-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciante
+END:VALARM
+END:VEVENT
+END:VCALENDAR

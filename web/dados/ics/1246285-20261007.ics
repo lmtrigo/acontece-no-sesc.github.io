@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246285-20261007T143000@agenda-sesc
+DTSTART:20261007T143000
+SUMMARY:Projetos em tecelagem [avançado]*
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Tiyoko Tomikawa — https://www.sescsp.org.br/programacao/projetos-em-tecelagem-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Projetos em tecelagem [avançado]*
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245146-0@agenda-sesc
+DTSTART:20260829T140000
+SUMMARY:Î t á  m a s í   e  a w a i  m a ' s ó: Mistérios do Povo-Peixe
+LOCATION:Sesc Interlagos
+DESCRIPTION:com Coletivo Kari — https://www.sescsp.org.br/programacao/i-t-a-m-a-s-i-e-a-w-a-i-m-a-s-o-misterios-do-povo-peixe
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Î t á  m a s í   e  a w a i  m a ' s ó: Mistérios do Povo-Peixe
+END:VALARM
+END:VEVENT
+END:VCALENDAR

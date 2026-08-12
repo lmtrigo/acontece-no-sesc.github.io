@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242072-20260827T140000@agenda-sesc
+DTSTART:20260827T140000
+SUMMARY:Ateliê Aberto de Costura\, Reforma e Criação
+LOCATION:Sesc São Caetano 
+DESCRIPTION:Com Weslley Silva (Lelo)\, educador de Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-aberto-de-costura-reforma-e-criacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê Aberto de Costura\, Reforma e Criação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

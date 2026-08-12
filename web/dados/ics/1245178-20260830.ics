@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245178-20260830T110000@agenda-sesc
+DTSTART:20260830T110000
+SUMMARY:Gráfica Popular para Crianças
+LOCATION:Sesc Pompeia
+DESCRIPTION:Gráfica Popular para Crianças com Eduardo Ver — https://www.sescsp.org.br/programacao/grafica-popular-para-criancas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Gráfica Popular para Crianças
+END:VALARM
+END:VEVENT
+END:VCALENDAR

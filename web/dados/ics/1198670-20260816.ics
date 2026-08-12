@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1198670-20260816T103000@agenda-sesc
+DTSTART:20260816T103000
+SUMMARY:CHAVOSOS® - A Barbearia Temporária
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com Wesley Fernandes\, Tele Barber\, Daniel Neto\, Lucas Souza e Everton dos Cortes\, barbeiros — https://www.sescsp.org.br/programacao/chavosos-a-barbearia-temporaria
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:CHAVOSOS® - A Barbearia Temporária
+END:VALARM
+END:VEVENT
+END:VCALENDAR

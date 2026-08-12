@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239631-0@agenda-sesc
+DTSTART:20260813T140000
+SUMMARY:Propósito de vida diminui quando envelhecemos?
+LOCATION:Sesc Campinas
+DESCRIPTION:Com Marcia Guimaraes\, gerontóloga — https://www.sescsp.org.br/programacao/proposito-de-vida-diminui-quando-envelhecemos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Propósito de vida diminui quando envelhecemos?
+END:VALARM
+END:VEVENT
+END:VCALENDAR

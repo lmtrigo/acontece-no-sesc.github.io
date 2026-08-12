@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1235977-20260814T203000@agenda-sesc
+DTSTART:20260814T203000
+SUMMARY:Experimentos Do Invisível
+LOCATION:Sesc Vila Mariana — Rua Pelotas\, 141 | Vila Mariana | SAO PAULO  | SP | Cep: 04012-000
+DESCRIPTION:com Marcelo Moraes — https://www.sescsp.org.br/programacao/experimentos-do-invisivel-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Experimentos Do Invisível
+END:VALARM
+END:VEVENT
+END:VCALENDAR

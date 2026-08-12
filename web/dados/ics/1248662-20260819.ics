@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248662-20260819T190000@agenda-sesc
+DTSTART:20260819T190000
+SUMMARY:Pluralidades Sonoras - Um Coral para Todas as Pessoas
+LOCATION:Sesc Santos
+DESCRIPTION:Com Educadores Musicais do Sesc — https://www.sescsp.org.br/programacao/pluralidades-sonoras-um-coral-para-todas-as-pessoas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pluralidades Sonoras - Um Coral para Todas as Pessoas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

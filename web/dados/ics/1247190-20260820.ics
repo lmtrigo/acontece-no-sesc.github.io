@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247190-20260820T000000@agenda-sesc
+DTSTART:20260820T000000
+SUMMARY:Alucinação Ilustrado: 50 anos do álbum
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com Fernando Pacheco — https://www.sescsp.org.br/programacao/alucinacao-ilustrado-50-anos-do-album
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Alucinação Ilustrado: 50 anos do álbum
+END:VALARM
+END:VEVENT
+END:VCALENDAR

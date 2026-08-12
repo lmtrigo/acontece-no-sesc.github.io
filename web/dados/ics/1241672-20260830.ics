@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241672-20260830T103000@agenda-sesc
+DTSTART:20260830T103000
+SUMMARY:Nordestes: uma viagem que (re)conta histórias
+LOCATION:Sesc Ipiranga
+DESCRIPTION:Com Coletiva Chão Comum — https://www.sescsp.org.br/programacao/nordestes-uma-viagem-que-reconta-historias
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Nordestes: uma viagem que (re)conta histórias
+END:VALARM
+END:VEVENT
+END:VCALENDAR

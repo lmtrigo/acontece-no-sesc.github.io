@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240925-0@agenda-sesc
+DTSTART:20260828T200000
+SUMMARY:Céu de Pêssego
+LOCATION:Sesc Jundiaí — Av. Antônio Frederico Ozanan\, 6600 | Jardim Botânico | JUNDIAI  | SP | Cep: 13214-206
+DESCRIPTION:Com Quasar Cia de Dança — https://www.sescsp.org.br/programacao/ceu-de-pessego-jundiai
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Céu de Pêssego
+END:VALARM
+END:VEVENT
+END:VCALENDAR

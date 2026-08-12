@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238057-0@agenda-sesc
+DTSTART:20260812T203000
+SUMMARY:Orquestra Sinfônica Heliópolis
+LOCATION:Sesc Osasco
+DESCRIPTION:com Regência de Paulo Galvão — https://www.sescsp.org.br/programacao/orquestra-sinfonica-de-heliopolis-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Orquestra Sinfônica Heliópolis
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243474-20260813T183000@agenda-sesc
+DTSTART:20260813T183000
+SUMMARY:Criação de Heroínas Fora do Padrão
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Alanis Lua\, ilustradora e quadrinista — https://www.sescsp.org.br/programacao/criacao-de-heroinas-fora-do-padrao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Criação de Heroínas Fora do Padrão
+END:VALARM
+END:VEVENT
+END:VCALENDAR

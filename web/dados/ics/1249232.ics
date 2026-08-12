@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249232-0@agenda-sesc
+DTSTART:20260902T190000
+SUMMARY:Teste para o curso Pífano brasileiro (continuidade)
+LOCATION:Sesc Consolação
+DESCRIPTION:com Alexandre Rodrigues — https://www.sescsp.org.br/programacao/teste-para-o-curso-pifano-brasileiro-continuidade
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Teste para o curso Pífano brasileiro (continuidade)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

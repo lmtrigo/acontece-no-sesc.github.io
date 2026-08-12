@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239302-0@agenda-sesc
+DTSTART:20260822T163000
+SUMMARY:Um Amigo Não Imaginário
+LOCATION:Sesc São Caetano  — Rua Piauí\, 554 | Santa Paula | SAO CAETANO DO SUL  | SP | Cep: 09541-150
+DESCRIPTION:Com Navega Jangada — https://www.sescsp.org.br/programacao/um-amigo-nao-imaginario-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Um Amigo Não Imaginário
+END:VALARM
+END:VEVENT
+END:VCALENDAR

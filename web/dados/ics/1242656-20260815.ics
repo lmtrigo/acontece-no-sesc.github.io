@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242656-20260815T150000@agenda-sesc
+DTSTART:20260815T150000
+SUMMARY:Pequenos jardins aquáticos
+LOCATION:Sesc Jundiaí
+DESCRIPTION:Com Uli Suadicani — https://www.sescsp.org.br/programacao/pequenos-jardins-aquaticos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pequenos jardins aquáticos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

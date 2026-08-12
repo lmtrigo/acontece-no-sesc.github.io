@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245100-0@agenda-sesc
+DTSTART:20260812T190000
+SUMMARY:Pioneirismo e Futuro - IA e a Nova Era da Fotografia
+LOCATION:Sesc Pinheiros
+DESCRIPTION:com Roger Sassaki\, Leo Saldanha e mediação de Alice Yura — https://www.sescsp.org.br/programacao/pioneirismo-e-futuro-ia-e-a-nova-era-da-fotografia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pioneirismo e Futuro - IA e a Nova Era da Fotografia
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,89 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246356-0@agenda-sesc
+DTSTART:20260826T093000
+SUMMARY:Cerâmica criativa - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Ivone Shirahata — https://www.sescsp.org.br/programacao/ceramica-criativa-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cerâmica criativa - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246356-1@agenda-sesc
+DTSTART:20260902T093000
+SUMMARY:Cerâmica criativa - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Ivone Shirahata — https://www.sescsp.org.br/programacao/ceramica-criativa-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cerâmica criativa - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246356-2@agenda-sesc
+DTSTART:20260909T093000
+SUMMARY:Cerâmica criativa - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Ivone Shirahata — https://www.sescsp.org.br/programacao/ceramica-criativa-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cerâmica criativa - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246356-3@agenda-sesc
+DTSTART:20260916T093000
+SUMMARY:Cerâmica criativa - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Ivone Shirahata — https://www.sescsp.org.br/programacao/ceramica-criativa-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cerâmica criativa - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246356-4@agenda-sesc
+DTSTART:20260923T093000
+SUMMARY:Cerâmica criativa - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Ivone Shirahata — https://www.sescsp.org.br/programacao/ceramica-criativa-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cerâmica criativa - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246356-5@agenda-sesc
+DTSTART:20260930T093000
+SUMMARY:Cerâmica criativa - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Ivone Shirahata — https://www.sescsp.org.br/programacao/ceramica-criativa-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cerâmica criativa - Avançado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246356-6@agenda-sesc
+DTSTART:20261007T093000
+SUMMARY:Cerâmica criativa - Avançado
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Ivone Shirahata — https://www.sescsp.org.br/programacao/ceramica-criativa-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cerâmica criativa - Avançado
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:638955-20260829T110000@agenda-sesc
+DTSTART:20260829T110000
+SUMMARY:Cantinho do Bebê
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com equipe de educadores do Sesc — https://www.sescsp.org.br/programacao/cantinho-do-bebe
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cantinho do Bebê
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244885-0@agenda-sesc
+DTSTART:20260921T140000
+SUMMARY:Quadro de Reboco: arte em alto relevo
+LOCATION:Sesc São Bento
+DESCRIPTION:Com Alexandre Lourenço\, artista visual pernambucano e criador do Quadro de Reboco — https://www.sescsp.org.br/programacao/quadro-de-reboco-arte-em-alto-relevo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Quadro de Reboco: arte em alto relevo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,89 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:978245-0@agenda-sesc
+DTSTART:20260816T130000
+SUMMARY:Esportes de Rebater
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com educadores(as) de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esportes-de-rebater-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esportes de Rebater
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:978245-1@agenda-sesc
+DTSTART:20260823T130000
+SUMMARY:Esportes de Rebater
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com educadores(as) de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esportes-de-rebater-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esportes de Rebater
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:978245-2@agenda-sesc
+DTSTART:20260830T130000
+SUMMARY:Esportes de Rebater
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com educadores(as) de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esportes-de-rebater-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esportes de Rebater
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:978245-3@agenda-sesc
+DTSTART:20260906T130000
+SUMMARY:Esportes de Rebater
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com educadores(as) de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esportes-de-rebater-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esportes de Rebater
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:978245-4@agenda-sesc
+DTSTART:20260913T130000
+SUMMARY:Esportes de Rebater
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com educadores(as) de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esportes-de-rebater-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esportes de Rebater
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:978245-5@agenda-sesc
+DTSTART:20260920T130000
+SUMMARY:Esportes de Rebater
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com educadores(as) de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esportes-de-rebater-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esportes de Rebater
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:978245-6@agenda-sesc
+DTSTART:20260927T130000
+SUMMARY:Esportes de Rebater
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com educadores(as) de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/esportes-de-rebater-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esportes de Rebater
+END:VALARM
+END:VEVENT
+END:VCALENDAR

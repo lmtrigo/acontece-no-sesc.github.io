@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:544519-20260926T091500@agenda-sesc
+DTSTART:20260926T091500
+SUMMARY:Tênis de Mesa
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/tenis-de-mesa-21
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tênis de Mesa
+END:VALARM
+END:VEVENT
+END:VCALENDAR

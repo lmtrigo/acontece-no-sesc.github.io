@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:920775-0@agenda-sesc
+DTSTART:20260815T123000
+SUMMARY:Esporte Adulto - Iniciação Voleibol
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-iniciacao-voleibol
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Iniciação Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920775-1@agenda-sesc
+DTSTART:20260822T123000
+SUMMARY:Esporte Adulto - Iniciação Voleibol
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-iniciacao-voleibol
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Iniciação Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920775-2@agenda-sesc
+DTSTART:20260829T123000
+SUMMARY:Esporte Adulto - Iniciação Voleibol
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-iniciacao-voleibol
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Iniciação Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920775-3@agenda-sesc
+DTSTART:20260905T123000
+SUMMARY:Esporte Adulto - Iniciação Voleibol
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-iniciacao-voleibol
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Iniciação Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920775-4@agenda-sesc
+DTSTART:20260912T123000
+SUMMARY:Esporte Adulto - Iniciação Voleibol
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-iniciacao-voleibol
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Iniciação Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920775-5@agenda-sesc
+DTSTART:20260919T123000
+SUMMARY:Esporte Adulto - Iniciação Voleibol
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-iniciacao-voleibol
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Iniciação Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920775-6@agenda-sesc
+DTSTART:20260926T123000
+SUMMARY:Esporte Adulto - Iniciação Voleibol
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-iniciacao-voleibol
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Iniciação Voleibol
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920775-7@agenda-sesc
+DTSTART:20261003T123000
+SUMMARY:Esporte Adulto - Iniciação Voleibol
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-iniciacao-voleibol
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Iniciação Voleibol
+END:VALARM
+END:VEVENT
+END:VCALENDAR

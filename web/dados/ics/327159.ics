@@ -1,0 +1,77 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:327159-0@agenda-sesc
+DTSTART:20260811T140000
+SUMMARY:Dançando no Salão
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Armando Gonçalves\, professor de dança — https://www.sescsp.org.br/programacao/dancando-no-salao-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Dançando no Salão
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:327159-1@agenda-sesc
+DTSTART:20260813T140000
+SUMMARY:Dançando no Salão
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Armando Gonçalves\, professor de dança — https://www.sescsp.org.br/programacao/dancando-no-salao-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Dançando no Salão
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:327159-2@agenda-sesc
+DTSTART:20260818T140000
+SUMMARY:Dançando no Salão
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Armando Gonçalves\, professor de dança — https://www.sescsp.org.br/programacao/dancando-no-salao-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Dançando no Salão
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:327159-3@agenda-sesc
+DTSTART:20260820T140000
+SUMMARY:Dançando no Salão
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Armando Gonçalves\, professor de dança — https://www.sescsp.org.br/programacao/dancando-no-salao-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Dançando no Salão
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:327159-4@agenda-sesc
+DTSTART:20260825T140000
+SUMMARY:Dançando no Salão
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Armando Gonçalves\, professor de dança — https://www.sescsp.org.br/programacao/dancando-no-salao-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Dançando no Salão
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:327159-5@agenda-sesc
+DTSTART:20260827T140000
+SUMMARY:Dançando no Salão
+LOCATION:Sesc Rio Preto
+DESCRIPTION:com Armando Gonçalves\, professor de dança — https://www.sescsp.org.br/programacao/dancando-no-salao-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Dançando no Salão
+END:VALARM
+END:VEVENT
+END:VCALENDAR

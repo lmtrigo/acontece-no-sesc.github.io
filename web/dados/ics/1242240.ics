@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242240-0@agenda-sesc
+DTSTART:20260823T103000
+SUMMARY:Cozinha da Floresta
+LOCATION:Sesc Taubaté
+DESCRIPTION:Com Ana Carol Thomé e Maura Albergaria\, da iniciativa Ser Criança é Natural — https://www.sescsp.org.br/programacao/cozinha-da-floresta-7
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cozinha da Floresta
+END:VALARM
+END:VEVENT
+END:VCALENDAR

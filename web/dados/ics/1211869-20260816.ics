@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1211869-20260816T091500@agenda-sesc
+DTSTART:20260816T091500
+SUMMARY:Futsal
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/futsal-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Futsal
+END:VALARM
+END:VEVENT
+END:VCALENDAR

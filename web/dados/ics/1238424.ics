@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238424-0@agenda-sesc
+DTSTART:20260816T103000
+SUMMARY:Ateliê de papel reciclado
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Com Isác Luisa — https://www.sescsp.org.br/programacao/atelie-de-papel-reciclado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê de papel reciclado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238424-1@agenda-sesc
+DTSTART:20260823T103000
+SUMMARY:Ateliê de papel reciclado
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Com Isác Luisa — https://www.sescsp.org.br/programacao/atelie-de-papel-reciclado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê de papel reciclado
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238424-2@agenda-sesc
+DTSTART:20260906T103000
+SUMMARY:Ateliê de papel reciclado
+LOCATION:Sesc Casa Verde
+DESCRIPTION:Com Isác Luisa — https://www.sescsp.org.br/programacao/atelie-de-papel-reciclado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê de papel reciclado
+END:VALARM
+END:VEVENT
+END:VCALENDAR

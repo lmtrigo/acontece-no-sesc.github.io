@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242880-0@agenda-sesc
+DTSTART:20260821T143000
+SUMMARY:O Princípio da Criação de Números e Espetáculos Circenses Autorais
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Lu Lopes\, a Palhaça Rubra — https://www.sescsp.org.br/programacao/o-principio-da-criacao-de-numeros-e-espetaculos-circenses-autorais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Princípio da Criação de Números e Espetáculos Circenses Autorais
+END:VALARM
+END:VEVENT
+END:VCALENDAR

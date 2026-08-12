@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242930-0@agenda-sesc
+DTSTART:20260820T190000
+SUMMARY:De volta à lua: a nova era da exploração humana
+LOCATION:Sesc Birigui — Rua Manoel Domingues Ventura\, 121 | Vila Xavier | BIRIGUI  | SP | Cep: 16203-009
+DESCRIPTION:Com Ana Apleiade\, mestranda em física (USP) — https://www.sescsp.org.br/programacao/de-volta-a-lua-a-nova-era-da-exploracao-humana
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:De volta à lua: a nova era da exploração humana
+END:VALARM
+END:VEVENT
+END:VCALENDAR

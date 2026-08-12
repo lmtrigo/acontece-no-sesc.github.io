@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240511-0@agenda-sesc
+DTSTART:20260815T173000
+SUMMARY:O Gato Malhado e a Andorinha Sinhá
+LOCATION:Sesc Jundiaí
+DESCRIPTION:Com Cia Novelo — https://www.sescsp.org.br/programacao/o-gato-malhado-e-a-andorinha-sinha-jundiai
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Gato Malhado e a Andorinha Sinhá
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246253-20260915T190000@agenda-sesc
+DTSTART:20260915T190000
+SUMMARY:Laboratório Analógico PB -Avançado*
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Ricardo Ferreira — https://www.sescsp.org.br/programacao/laboratorio-analogico-pb-avancado
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Laboratório Analógico PB -Avançado*
+END:VALARM
+END:VEVENT
+END:VCALENDAR

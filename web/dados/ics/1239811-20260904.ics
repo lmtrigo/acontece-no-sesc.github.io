@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239811-20260904T173000@agenda-sesc
+DTSTART:20260904T173000
+SUMMARY:Piano/Teclas - Iniciação - Adultos
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Jac Oshima - educadora do Centro de Música — https://www.sescsp.org.br/programacao/piano-teclas-iniciacao-adultos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Piano/Teclas - Iniciação - Adultos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:992299-20260812T173000@agenda-sesc
+DTSTART:20260812T173000
+SUMMARY:Pequenos Experimentos
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com educadores de Infâncias e Juventudes — https://www.sescsp.org.br/programacao/pequenos-experimentos-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pequenos Experimentos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

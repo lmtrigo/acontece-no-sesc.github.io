@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240885-20260926T140000@agenda-sesc
+DTSTART:20260926T140000
+SUMMARY:Orquestra de Cordas
+LOCATION:Sesc Consolação
+DESCRIPTION:Com Pedro Beviláqua — https://www.sescsp.org.br/programacao/orquestra-de-cordas-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Orquestra de Cordas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

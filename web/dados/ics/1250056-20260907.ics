@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1250056-20260907T150000@agenda-sesc
+DTSTART:20260907T150000
+SUMMARY:Poética dos Órgãos Internos: Intestino\, Coração e Cérebro
+LOCATION:Sesc Registro
+DESCRIPTION:com a Cia Talagadá — https://www.sescsp.org.br/programacao/poetica-dos-orgaos-internos-intestino-coracao-e-cerebro
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Poética dos Órgãos Internos: Intestino\, Coração e Cérebro
+END:VALARM
+END:VEVENT
+END:VCALENDAR

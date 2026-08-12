@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248748-0@agenda-sesc
+DTSTART:20260825T193000
+SUMMARY:Ritmos Latinos na Bateria - Reggaeton - Iniciantes
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Matheus Coelho\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/ritmos-latinos-na-bateria-reggaeton-iniciantes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ritmos Latinos na Bateria - Reggaeton - Iniciantes
+END:VALARM
+END:VEVENT
+END:VCALENDAR

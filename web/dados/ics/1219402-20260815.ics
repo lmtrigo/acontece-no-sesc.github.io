@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1219402-20260815T150000@agenda-sesc
+DTSTART:20260815T150000
+SUMMARY:Danças brasileiras
+LOCATION:Sesc Jundiaí
+DESCRIPTION:Com Josiane Dominoni Gomes — https://www.sescsp.org.br/programacao/dancas-brasileiras-jundiai
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Danças brasileiras
+END:VALARM
+END:VEVENT
+END:VCALENDAR

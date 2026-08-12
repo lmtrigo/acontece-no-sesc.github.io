@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241906-0@agenda-sesc
+DTSTART:20260819T183000
+SUMMARY:Do Laço ao Abraço
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Roda de conversa com Leticia Fagundes\, Acacia Lima\, Isabella Correa e Camile Lopes — https://www.sescsp.org.br/programacao/do-laco-ao-abraco
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Do Laço ao Abraço
+END:VALARM
+END:VEVENT
+END:VCALENDAR

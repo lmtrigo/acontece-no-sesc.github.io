@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1237572-0@agenda-sesc
+DTSTART:20260830T140000
+SUMMARY:Entre Histórias e Travessuras: Encontros que Viram Livro
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com Flávia Lins e Silva e Ilan Brenman — https://www.sescsp.org.br/programacao/entre-historias-e-travessuras
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Entre Histórias e Travessuras: Encontros que Viram Livro
+END:VALARM
+END:VEVENT
+END:VCALENDAR

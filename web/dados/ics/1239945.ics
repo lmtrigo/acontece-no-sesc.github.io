@@ -1,0 +1,77 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239945-0@agenda-sesc
+DTSTART:20260811T193000
+SUMMARY:Xilogravura Colorida em Matriz Perdida
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Eduardo Ver — https://www.sescsp.org.br/programacao/xilogravura-colorida-em-matriz-perdida
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Xilogravura Colorida em Matriz Perdida
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239945-1@agenda-sesc
+DTSTART:20260818T193000
+SUMMARY:Xilogravura Colorida em Matriz Perdida
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Eduardo Ver — https://www.sescsp.org.br/programacao/xilogravura-colorida-em-matriz-perdida
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Xilogravura Colorida em Matriz Perdida
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239945-2@agenda-sesc
+DTSTART:20260825T193000
+SUMMARY:Xilogravura Colorida em Matriz Perdida
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Eduardo Ver — https://www.sescsp.org.br/programacao/xilogravura-colorida-em-matriz-perdida
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Xilogravura Colorida em Matriz Perdida
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239945-3@agenda-sesc
+DTSTART:20260901T193000
+SUMMARY:Xilogravura Colorida em Matriz Perdida
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Eduardo Ver — https://www.sescsp.org.br/programacao/xilogravura-colorida-em-matriz-perdida
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Xilogravura Colorida em Matriz Perdida
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239945-4@agenda-sesc
+DTSTART:20260915T193000
+SUMMARY:Xilogravura Colorida em Matriz Perdida
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Eduardo Ver — https://www.sescsp.org.br/programacao/xilogravura-colorida-em-matriz-perdida
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Xilogravura Colorida em Matriz Perdida
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239945-5@agenda-sesc
+DTSTART:20260922T193000
+SUMMARY:Xilogravura Colorida em Matriz Perdida
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Eduardo Ver — https://www.sescsp.org.br/programacao/xilogravura-colorida-em-matriz-perdida
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Xilogravura Colorida em Matriz Perdida
+END:VALARM
+END:VEVENT
+END:VCALENDAR

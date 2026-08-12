@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238544-0@agenda-sesc
+DTSTART:20260822T110000
+SUMMARY:Clube de Leitura - Louças de Família
+LOCATION:Sesc Santo André
+DESCRIPTION:Mediação de Débora Garcia — https://www.sescsp.org.br/programacao/clube-de-leitura-loucas-de-familia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clube de Leitura - Louças de Família
+END:VALARM
+END:VEVENT
+END:VCALENDAR

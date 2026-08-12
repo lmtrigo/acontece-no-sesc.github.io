@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:493332-20260815T100000@agenda-sesc
+DTSTART:20260815T100000
+SUMMARY:Projeto Observando os Rios
+LOCATION:Sesc Interlagos
+DESCRIPTION:Monitoramento da qualidade da água em parceria com a Fundação SOS Mata Atlântica — https://www.sescsp.org.br/programacao/projeto-observando-os-rios-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Projeto Observando os Rios
+END:VALARM
+END:VEVENT
+END:VCALENDAR

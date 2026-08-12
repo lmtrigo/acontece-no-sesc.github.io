@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1164364-0@agenda-sesc
+DTSTART:20260813T160000
+SUMMARY:Lab Impressão: laboratório de experimentações impressas
+LOCATION:Sesc Ipiranga
+DESCRIPTION:Com Ligia Minami — https://www.sescsp.org.br/programacao/lab-impressao-laboratorio-de-experimentacoes-impressas-10
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Lab Impressão: laboratório de experimentações impressas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1164364-1@agenda-sesc
+DTSTART:20260820T160000
+SUMMARY:Lab Impressão: laboratório de experimentações impressas
+LOCATION:Sesc Ipiranga
+DESCRIPTION:Com Ligia Minami — https://www.sescsp.org.br/programacao/lab-impressao-laboratorio-de-experimentacoes-impressas-10
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Lab Impressão: laboratório de experimentações impressas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1164364-2@agenda-sesc
+DTSTART:20260827T160000
+SUMMARY:Lab Impressão: laboratório de experimentações impressas
+LOCATION:Sesc Ipiranga
+DESCRIPTION:Com Ligia Minami — https://www.sescsp.org.br/programacao/lab-impressao-laboratorio-de-experimentacoes-impressas-10
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Lab Impressão: laboratório de experimentações impressas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

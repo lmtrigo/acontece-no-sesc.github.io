@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239883-0@agenda-sesc
+DTSTART:20260814T200000
+SUMMARY:O Retorno
+LOCATION:Sesc Taubaté — Avenida Engenheiro Milton de Alvarenga Peixoto\, 1264 | Esplanada Santa Terezinha | TAUBATE  | SP | Cep: 12052-230
+DESCRIPTION:Com Helena Ranaldi\, Leonardo Medeiros e Pedro Waddington — https://www.sescsp.org.br/programacao/o-retorno-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Retorno
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1239883-1@agenda-sesc
+DTSTART:20260815T200000
+SUMMARY:O Retorno
+LOCATION:Sesc Taubaté — Avenida Engenheiro Milton de Alvarenga Peixoto\, 1264 | Esplanada Santa Terezinha | TAUBATE  | SP | Cep: 12052-230
+DESCRIPTION:Com Helena Ranaldi\, Leonardo Medeiros e Pedro Waddington — https://www.sescsp.org.br/programacao/o-retorno-4
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O Retorno
+END:VALARM
+END:VEVENT
+END:VCALENDAR

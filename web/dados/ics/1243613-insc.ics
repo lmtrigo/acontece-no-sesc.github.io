@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243613-insc@agenda-sesc
+DTSTART:20260818T170000
+SUMMARY:Abrem as inscrições: Bicho Feroz: Tributo a Bezerra da Silva
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/bicho-feroz-tributo-a-bezerra-da-silva
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Inscrições abrem em 1h
+END:VALARM
+END:VEVENT
+END:VCALENDAR

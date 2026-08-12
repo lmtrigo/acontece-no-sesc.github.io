@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239852-20260926T110000@agenda-sesc
+DTSTART:20260926T110000
+SUMMARY:Pequenos Sons\, Grandes Encontros
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Suelen Aureo e Jac Oshima - Educadoras do Centro de Música Vila Mariana — https://www.sescsp.org.br/programacao/pequenos-sons-grandes-encontros
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Pequenos Sons\, Grandes Encontros
+END:VALARM
+END:VEVENT
+END:VCALENDAR

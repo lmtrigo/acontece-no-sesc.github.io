@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244728-0@agenda-sesc
+DTSTART:20260903T090000
+SUMMARY:Afetos Em Contato - Improvisação
+LOCATION:Sesc Franca
+DESCRIPTION:Com Jessica Rodrigues\, mestra em dança — https://www.sescsp.org.br/programacao/afetos-em-contato-improvisacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Afetos Em Contato - Improvisação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244728-1@agenda-sesc
+DTSTART:20260905T090000
+SUMMARY:Afetos Em Contato - Improvisação
+LOCATION:Sesc Franca
+DESCRIPTION:Com Jessica Rodrigues\, mestra em dança — https://www.sescsp.org.br/programacao/afetos-em-contato-improvisacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Afetos Em Contato - Improvisação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244728-2@agenda-sesc
+DTSTART:20260910T090000
+SUMMARY:Afetos Em Contato - Improvisação
+LOCATION:Sesc Franca
+DESCRIPTION:Com Jessica Rodrigues\, mestra em dança — https://www.sescsp.org.br/programacao/afetos-em-contato-improvisacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Afetos Em Contato - Improvisação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244728-3@agenda-sesc
+DTSTART:20260912T090000
+SUMMARY:Afetos Em Contato - Improvisação
+LOCATION:Sesc Franca
+DESCRIPTION:Com Jessica Rodrigues\, mestra em dança — https://www.sescsp.org.br/programacao/afetos-em-contato-improvisacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Afetos Em Contato - Improvisação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244728-4@agenda-sesc
+DTSTART:20260917T090000
+SUMMARY:Afetos Em Contato - Improvisação
+LOCATION:Sesc Franca
+DESCRIPTION:Com Jessica Rodrigues\, mestra em dança — https://www.sescsp.org.br/programacao/afetos-em-contato-improvisacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Afetos Em Contato - Improvisação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244728-5@agenda-sesc
+DTSTART:20260919T090000
+SUMMARY:Afetos Em Contato - Improvisação
+LOCATION:Sesc Franca
+DESCRIPTION:Com Jessica Rodrigues\, mestra em dança — https://www.sescsp.org.br/programacao/afetos-em-contato-improvisacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Afetos Em Contato - Improvisação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244728-6@agenda-sesc
+DTSTART:20260924T090000
+SUMMARY:Afetos Em Contato - Improvisação
+LOCATION:Sesc Franca
+DESCRIPTION:Com Jessica Rodrigues\, mestra em dança — https://www.sescsp.org.br/programacao/afetos-em-contato-improvisacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Afetos Em Contato - Improvisação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244728-7@agenda-sesc
+DTSTART:20260926T090000
+SUMMARY:Afetos Em Contato - Improvisação
+LOCATION:Sesc Franca
+DESCRIPTION:Com Jessica Rodrigues\, mestra em dança — https://www.sescsp.org.br/programacao/afetos-em-contato-improvisacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Afetos Em Contato - Improvisação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

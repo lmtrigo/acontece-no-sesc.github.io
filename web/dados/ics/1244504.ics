@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244504-0@agenda-sesc
+DTSTART:20260816T160000
+SUMMARY:Reprises Pareadas
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:Com a Cia. Circo Rodado — https://www.sescsp.org.br/programacao/reprises-pareadas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Reprises Pareadas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

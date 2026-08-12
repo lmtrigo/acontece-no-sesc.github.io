@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249251-0@agenda-sesc
+DTSTART:20260926T100000
+SUMMARY:Uma praia perto da gente
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:https://www.sescsp.org.br/programacao/uma-praia-perto-da-gente
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Uma praia perto da gente
+END:VALARM
+END:VEVENT
+END:VCALENDAR

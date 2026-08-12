@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248360-0@agenda-sesc
+DTSTART:20260827T190000
+SUMMARY:Da origem à mesa: Feijão
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Daniela Ferreira\, produtora agroecológica e integrante do Coletivo Agroecologia Resistência e com Viviani Leite\, cozinheira e ativista alimentar — https://www.sescsp.org.br/programacao/da-origem-a-mesa-feijao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Da origem à mesa: Feijão
+END:VALARM
+END:VEVENT
+END:VCALENDAR

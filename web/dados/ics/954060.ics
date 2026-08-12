@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:954060-0@agenda-sesc
+DTSTART:20260830T170000
+SUMMARY:Sonzando na natureza
+LOCATION:Sesc Santo Amaro
+DESCRIPTION:com Coletivo Sonzando — https://www.sescsp.org.br/programacao/sonzando-na-natureza
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sonzando na natureza
+END:VALARM
+END:VEVENT
+END:VCALENDAR

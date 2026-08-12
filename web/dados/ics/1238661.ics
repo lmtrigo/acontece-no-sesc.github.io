@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238661-0@agenda-sesc
+DTSTART:20260822T160000
+SUMMARY:Encontro de Realezas - Yabás
+LOCATION:Sesc Santo André
+DESCRIPTION:com Sarau das Pretas — https://www.sescsp.org.br/programacao/encontro-de-realezas-yabas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Encontro de Realezas - Yabás
+END:VALARM
+END:VEVENT
+END:VCALENDAR

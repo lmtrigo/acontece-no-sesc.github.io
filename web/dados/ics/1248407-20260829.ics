@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248407-20260829T123000@agenda-sesc
+DTSTART:20260829T123000
+SUMMARY:Jogos Tradicionais do Mundo Antigo: Estratégia\, Cultura e História
+LOCATION:Sesc Araraquara
+DESCRIPTION:Com Mupa — https://www.sescsp.org.br/programacao/jogos-tradicionais-do-mundo-antigo-estrategia-cultura-e-historia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Jogos Tradicionais do Mundo Antigo: Estratégia\, Cultura e História
+END:VALARM
+END:VEVENT
+END:VCALENDAR

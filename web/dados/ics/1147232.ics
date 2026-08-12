@@ -1,0 +1,437 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1147232-0@agenda-sesc
+DTSTART:20260811T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-1@agenda-sesc
+DTSTART:20260812T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-2@agenda-sesc
+DTSTART:20260813T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-3@agenda-sesc
+DTSTART:20260814T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-4@agenda-sesc
+DTSTART:20260818T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-5@agenda-sesc
+DTSTART:20260819T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-6@agenda-sesc
+DTSTART:20260820T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-7@agenda-sesc
+DTSTART:20260821T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-8@agenda-sesc
+DTSTART:20260825T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-9@agenda-sesc
+DTSTART:20260826T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-10@agenda-sesc
+DTSTART:20260827T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-11@agenda-sesc
+DTSTART:20260828T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-12@agenda-sesc
+DTSTART:20260901T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-13@agenda-sesc
+DTSTART:20260902T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-14@agenda-sesc
+DTSTART:20260903T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-15@agenda-sesc
+DTSTART:20260904T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-16@agenda-sesc
+DTSTART:20260908T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-17@agenda-sesc
+DTSTART:20260909T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-18@agenda-sesc
+DTSTART:20260910T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-19@agenda-sesc
+DTSTART:20260911T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-20@agenda-sesc
+DTSTART:20260915T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-21@agenda-sesc
+DTSTART:20260916T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-22@agenda-sesc
+DTSTART:20260917T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-23@agenda-sesc
+DTSTART:20260918T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-24@agenda-sesc
+DTSTART:20260922T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-25@agenda-sesc
+DTSTART:20260923T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-26@agenda-sesc
+DTSTART:20260924T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-27@agenda-sesc
+DTSTART:20260925T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-28@agenda-sesc
+DTSTART:20260929T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-29@agenda-sesc
+DTSTART:20260930T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-30@agenda-sesc
+DTSTART:20261001T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-31@agenda-sesc
+DTSTART:20261002T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-32@agenda-sesc
+DTSTART:20261006T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-33@agenda-sesc
+DTSTART:20261007T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-34@agenda-sesc
+DTSTART:20261008T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1147232-35@agenda-sesc
+DTSTART:20261009T083000
+SUMMARY:Condicionamento Físico Aquático
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:A partir de 12 anos — https://www.sescsp.org.br/programacao/condicionamento-fisico-aquatico-25
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Condicionamento Físico Aquático
+END:VALARM
+END:VEVENT
+END:VCALENDAR

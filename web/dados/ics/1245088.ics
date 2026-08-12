@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245088-0@agenda-sesc
+DTSTART:20260812T170000
+SUMMARY:Clube Da Horta: Cultivando Saberes E Afetos
+LOCATION:Sesc Franca
+DESCRIPTION:Com Flávia Fina\, agente de educação ambiental do Sesc — https://www.sescsp.org.br/programacao/clube-da-horta-cultivando-saberes-e-afetos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clube Da Horta: Cultivando Saberes E Afetos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245088-1@agenda-sesc
+DTSTART:20260819T170000
+SUMMARY:Clube Da Horta: Cultivando Saberes E Afetos
+LOCATION:Sesc Franca
+DESCRIPTION:Com Flávia Fina\, agente de educação ambiental do Sesc — https://www.sescsp.org.br/programacao/clube-da-horta-cultivando-saberes-e-afetos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clube Da Horta: Cultivando Saberes E Afetos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1245088-2@agenda-sesc
+DTSTART:20260826T170000
+SUMMARY:Clube Da Horta: Cultivando Saberes E Afetos
+LOCATION:Sesc Franca
+DESCRIPTION:Com Flávia Fina\, agente de educação ambiental do Sesc — https://www.sescsp.org.br/programacao/clube-da-horta-cultivando-saberes-e-afetos-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clube Da Horta: Cultivando Saberes E Afetos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

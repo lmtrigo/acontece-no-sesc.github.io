@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240298-20260815T200000@agenda-sesc
+DTSTART:20260815T200000
+SUMMARY:A Professora De Piano
+LOCATION:Sesc CineSesc — Rua Augusta\, 2075 | Cerqueira César | SAO PAULO  | SP | Cep: 01413-000
+DESCRIPTION:Dir.: Michael Haneke — https://www.sescsp.org.br/programacao/a-professora-de-piano
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A Professora De Piano
+END:VALARM
+END:VEVENT
+END:VCALENDAR

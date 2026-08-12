@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246046-20260828T190000@agenda-sesc
+DTSTART:20260828T190000
+SUMMARY:O tempo como invenção e reinvenção: literatura e cinema em diálogo
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com Cícero Santos\, pesquisador em literatura e Pedro Carvalho\, historiador — https://www.sescsp.org.br/programacao/o-tempo-como-invencao-e-reinvencao-literatura-e-cinema-em-dialogo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:O tempo como invenção e reinvenção: literatura e cinema em diálogo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

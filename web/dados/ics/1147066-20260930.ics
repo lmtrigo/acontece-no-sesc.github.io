@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1147066-20260930T143000@agenda-sesc
+DTSTART:20260930T143000
+SUMMARY:Introdução à Costura: Vestido
+LOCATION:Sesc Bertioga
+DESCRIPTION:Com Ana Flora — https://www.sescsp.org.br/programacao/introducao-a-costura-kimono
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Introdução à Costura: Vestido
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,53 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247906-0@agenda-sesc
+DTSTART:20260825T183000
+SUMMARY:Confecção de bolsas de couro
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Atairu Sapatos Artesanais — https://www.sescsp.org.br/programacao/confeccao-de-bolsas-de-couro
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Confecção de bolsas de couro
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1247906-1@agenda-sesc
+DTSTART:20260826T183000
+SUMMARY:Confecção de bolsas de couro
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Atairu Sapatos Artesanais — https://www.sescsp.org.br/programacao/confeccao-de-bolsas-de-couro
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Confecção de bolsas de couro
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1247906-2@agenda-sesc
+DTSTART:20260827T183000
+SUMMARY:Confecção de bolsas de couro
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Atairu Sapatos Artesanais — https://www.sescsp.org.br/programacao/confeccao-de-bolsas-de-couro
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Confecção de bolsas de couro
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1247906-3@agenda-sesc
+DTSTART:20260828T183000
+SUMMARY:Confecção de bolsas de couro
+LOCATION:Sesc São José dos Campos
+DESCRIPTION:Com Atairu Sapatos Artesanais — https://www.sescsp.org.br/programacao/confeccao-de-bolsas-de-couro
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Confecção de bolsas de couro
+END:VALARM
+END:VEVENT
+END:VCALENDAR

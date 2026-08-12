@@ -1,0 +1,89 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246371-0@agenda-sesc
+DTSTART:20260827T143000
+SUMMARY:Tecelagem Intermediário
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Lia Almeida — https://www.sescsp.org.br/programacao/tecelagem-intermediario-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tecelagem Intermediário
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246371-1@agenda-sesc
+DTSTART:20260903T143000
+SUMMARY:Tecelagem Intermediário
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Lia Almeida — https://www.sescsp.org.br/programacao/tecelagem-intermediario-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tecelagem Intermediário
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246371-2@agenda-sesc
+DTSTART:20260910T143000
+SUMMARY:Tecelagem Intermediário
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Lia Almeida — https://www.sescsp.org.br/programacao/tecelagem-intermediario-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tecelagem Intermediário
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246371-3@agenda-sesc
+DTSTART:20260917T143000
+SUMMARY:Tecelagem Intermediário
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Lia Almeida — https://www.sescsp.org.br/programacao/tecelagem-intermediario-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tecelagem Intermediário
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246371-4@agenda-sesc
+DTSTART:20260924T143000
+SUMMARY:Tecelagem Intermediário
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Lia Almeida — https://www.sescsp.org.br/programacao/tecelagem-intermediario-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tecelagem Intermediário
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246371-5@agenda-sesc
+DTSTART:20261001T143000
+SUMMARY:Tecelagem Intermediário
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Lia Almeida — https://www.sescsp.org.br/programacao/tecelagem-intermediario-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tecelagem Intermediário
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1246371-6@agenda-sesc
+DTSTART:20261008T143000
+SUMMARY:Tecelagem Intermediário
+LOCATION:Sesc Pompeia
+DESCRIPTION:com Lia Almeida — https://www.sescsp.org.br/programacao/tecelagem-intermediario-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tecelagem Intermediário
+END:VALARM
+END:VEVENT
+END:VCALENDAR

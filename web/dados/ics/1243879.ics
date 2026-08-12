@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243879-0@agenda-sesc
+DTSTART:20260814T183000
+SUMMARY:OSNIs: Objetos sonoros não identificados
+LOCATION:Sesc Birigui
+DESCRIPTION:Com Caleb Mascarenhas — https://www.sescsp.org.br/programacao/osnis-objetos-sonoros-nao-identificados
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:OSNIs: Objetos sonoros não identificados
+END:VALARM
+END:VEVENT
+END:VCALENDAR

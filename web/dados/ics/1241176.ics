@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241176-0@agenda-sesc
+DTSTART:20260816T154000
+SUMMARY:KOFF – Festival de Cinema Coreano
+LOCATION:Sesc Piracicaba
+DESCRIPTION:Shimmer / Scramble / Welcome Home Freckles / Gyeong-Ae — https://www.sescsp.org.br/programacao/koff-festival-de-cinema-coreano-9
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:KOFF – Festival de Cinema Coreano
+END:VALARM
+END:VEVENT
+END:VCALENDAR

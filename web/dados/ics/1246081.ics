@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246081-0@agenda-sesc
+DTSTART:20260813T100000
+SUMMARY:Ervas no cotidiano: travesseirinhos de ervas
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com Camila Nogueira Rodrigues\, erveira (herbalista) na Botica da Parteira — https://www.sescsp.org.br/programacao/ervas-no-cotidiano-travesseirinhos-de-ervas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ervas no cotidiano: travesseirinhos de ervas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

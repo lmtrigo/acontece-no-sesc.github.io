@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:767991-0@agenda-sesc
+DTSTART:20260815T103000
+SUMMARY:Agricultura Familiar e Dinâmicas Territoriais
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:Com o Geógrafo e professor Frederico Gambardella\, o agroflorestor Anderson Arcanjo\, a nutricionista Laura Rosella\, os produtores de agricultura familiar Cido Maia e Almir\, e mediação do Ribas Dantas do Nascimento\, mestre em geografia e especialista em solos. — https://www.sescsp.org.br/programacao/agricultura-organica-e-certificacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Agricultura Familiar e Dinâmicas Territoriais
+END:VALARM
+END:VEVENT
+END:VCALENDAR

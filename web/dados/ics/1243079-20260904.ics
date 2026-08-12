@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243079-20260904T143000@agenda-sesc
+DTSTART:20260904T143000
+SUMMARY:Joias em Metal
+LOCATION:Sesc Bertioga
+DESCRIPTION:Com Lisete de Carvalho e Sergio Barrero — https://www.sescsp.org.br/programacao/joias-em-metal
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Joias em Metal
+END:VALARM
+END:VEVENT
+END:VCALENDAR

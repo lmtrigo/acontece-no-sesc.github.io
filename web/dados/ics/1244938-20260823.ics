@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244938-20260823T180000@agenda-sesc
+DTSTART:20260823T180000
+SUMMARY:Navalha na Língua: Homenagem a Madame Satã
+LOCATION:Sesc Pompeia — Rua Clélia\, 93 | Pompeia | SAO PAULO  | SP | Cep: 05042-000
+DESCRIPTION:com Linn da Quebrada\, Capoeira para Todes\, Diameyka Odara e Puma Camilê — https://www.sescsp.org.br/programacao/navalha-na-lingua-homenagem-a-madame-sata
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Navalha na Língua: Homenagem a Madame Satã
+END:VALARM
+END:VEVENT
+END:VCALENDAR

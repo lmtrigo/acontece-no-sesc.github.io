@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1174133-20260906T143000@agenda-sesc
+DTSTART:20260906T143000
+SUMMARY:Clima de Brincadeira - Brincadeiras para todas as idades
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com a equipe de educadores do Sesc — https://www.sescsp.org.br/programacao/clima-de-brincadeira-brincadeiras-para-todas-as-idades-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clima de Brincadeira - Brincadeiras para todas as idades
+END:VALARM
+END:VEVENT
+END:VCALENDAR

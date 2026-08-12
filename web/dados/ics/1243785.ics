@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243785-0@agenda-sesc
+DTSTART:20260827T160000
+SUMMARY:"Eu\, Empregada Doméstica"
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Preta Rara. Mediação de Selma Oliveira. — https://www.sescsp.org.br/programacao/eu-empregada-domestica
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:"Eu\, Empregada Doméstica"
+END:VALARM
+END:VEVENT
+END:VCALENDAR

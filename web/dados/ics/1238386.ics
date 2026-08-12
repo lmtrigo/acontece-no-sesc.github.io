@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238386-0@agenda-sesc
+DTSTART:20260826T193000
+SUMMARY:Clube do livro do Sesc Av. Paulista
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Kim Doria — https://www.sescsp.org.br/programacao/clube-do-livro-do-sesc-av-paulista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clube do livro do Sesc Av. Paulista
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238386-1@agenda-sesc
+DTSTART:20260930T193000
+SUMMARY:Clube do livro do Sesc Av. Paulista
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:com Kim Doria — https://www.sescsp.org.br/programacao/clube-do-livro-do-sesc-av-paulista
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clube do livro do Sesc Av. Paulista
+END:VALARM
+END:VEVENT
+END:VCALENDAR

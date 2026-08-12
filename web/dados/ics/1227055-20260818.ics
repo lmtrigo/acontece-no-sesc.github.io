@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1227055-20260818T153000@agenda-sesc
+DTSTART:20260818T153000
+SUMMARY:Improvisos teatrais
+LOCATION:Sesc Catanduva
+DESCRIPTION:Com Cia da Casa Amarela — https://www.sescsp.org.br/programacao/improvisos-teatrais
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Improvisos teatrais
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247810-0@agenda-sesc
+DTSTART:20260830T100000
+SUMMARY:Estratégias de Atração de Abelhas sem Ferrão: Técnicas de Iscagem
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:Com o biólogo Johnny Michael. — https://www.sescsp.org.br/programacao/estrategias-de-atracao-de-abelhas-sem-ferrao-tecnicas-de-iscagem
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Estratégias de Atração de Abelhas sem Ferrão: Técnicas de Iscagem
+END:VALARM
+END:VEVENT
+END:VCALENDAR

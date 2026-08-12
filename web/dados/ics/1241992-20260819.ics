@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241992-20260819T190000@agenda-sesc
+DTSTART:20260819T190000
+SUMMARY:Vem pra Roda! Encontros do Caboclinho
+LOCATION:Sesc Consolação
+DESCRIPTION:com Mestre Paulinho (Caboclinho 7 Flexas) — https://www.sescsp.org.br/programacao/vem-pra-roda-encontros-do-caboclinho
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Vem pra Roda! Encontros do Caboclinho
+END:VALARM
+END:VEVENT
+END:VCALENDAR

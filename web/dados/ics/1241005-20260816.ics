@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241005-20260816T110000@agenda-sesc
+DTSTART:20260816T110000
+SUMMARY:Caminhadas para Encontrar o Saci
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:com Cia do Vô Neco — https://www.sescsp.org.br/programacao/caminhadas-para-encontrar-o-saci
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Caminhadas para Encontrar o Saci
+END:VALARM
+END:VEVENT
+END:VCALENDAR

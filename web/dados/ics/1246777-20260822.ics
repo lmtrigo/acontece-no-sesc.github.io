@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246777-20260822T140000@agenda-sesc
+DTSTART:20260822T140000
+SUMMARY:Criando Ideias: Grafite para crianças
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Nenesurreal — https://www.sescsp.org.br/programacao/criando-ideias-grafite-para-criancas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Criando Ideias: Grafite para crianças
+END:VALARM
+END:VEVENT
+END:VCALENDAR

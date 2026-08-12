@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247100-0@agenda-sesc
+DTSTART:20260825T133000
+SUMMARY:Arte do envelhecer: equilíbrio e emoções (mandala em pontilhismo)
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com Atlântica Produções Criativas - Projeto Tiê-Sangue — https://www.sescsp.org.br/programacao/arte-do-envelhecer-equilibrio-e-emocoes-mandala-em-pontilhismo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Arte do envelhecer: equilíbrio e emoções (mandala em pontilhismo)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

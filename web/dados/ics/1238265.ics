@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238265-0@agenda-sesc
+DTSTART:20260816T160000
+SUMMARY:Roda Aberta de Danças Circulares "Mulheres que me Movem"
+LOCATION:Sesc Casa Verde
+DESCRIPTION:com Adriana Aires — https://www.sescsp.org.br/programacao/roda-aberta-de-dancas-circulares-mulheres-que-me-movem
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Roda Aberta de Danças Circulares "Mulheres que me Movem"
+END:VALARM
+END:VEVENT
+END:VCALENDAR

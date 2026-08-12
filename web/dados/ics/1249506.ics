@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1249506-0@agenda-sesc
+DTSTART:20260818T200000
+SUMMARY:MUNDURUKUYÜ - A Floresta das Mulheres Peixe
+LOCATION:Sesc CineSesc
+DESCRIPTION:Pré-estreia — https://www.sescsp.org.br/programacao/mundurukuyu-a-floresta-das-mulheres-peixe-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:MUNDURUKUYÜ - A Floresta das Mulheres Peixe
+END:VALARM
+END:VEVENT
+END:VCALENDAR

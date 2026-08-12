@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:409362-0@agenda-sesc
+DTSTART:20260811T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:409362-1@agenda-sesc
+DTSTART:20260813T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:409362-2@agenda-sesc
+DTSTART:20260818T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:409362-3@agenda-sesc
+DTSTART:20260820T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:409362-4@agenda-sesc
+DTSTART:20260825T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:409362-5@agenda-sesc
+DTSTART:20260827T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:409362-6@agenda-sesc
+DTSTART:20260901T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:409362-7@agenda-sesc
+DTSTART:20260903T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:409362-8@agenda-sesc
+DTSTART:20260908T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:409362-9@agenda-sesc
+DTSTART:20260910T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:409362-10@agenda-sesc
+DTSTART:20260915T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:409362-11@agenda-sesc
+DTSTART:20260917T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:409362-12@agenda-sesc
+DTSTART:20260922T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:409362-13@agenda-sesc
+DTSTART:20260924T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:409362-14@agenda-sesc
+DTSTART:20260929T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:409362-15@agenda-sesc
+DTSTART:20261001T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:409362-16@agenda-sesc
+DTSTART:20261006T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:409362-17@agenda-sesc
+DTSTART:20261008T193000
+SUMMARY:Esporte Jovem - Basquete (13 a 16 anos)
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com o educadores do Sesc — https://www.sescsp.org.br/programacao/esporte-jovem-basquete-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Jovem - Basquete (13 a 16 anos)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

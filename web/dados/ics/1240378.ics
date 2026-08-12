@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240378-0@agenda-sesc
+DTSTART:20260827T203000
+SUMMARY:Tarântula Transita
+LOCATION:Sesc Bauru — Avenida Aureliano Cardia\, 6-71 | Vila Cardia | BAURU  | SP | Cep: 17013-411
+DESCRIPTION:Com Vulcanica Pokaropa — https://www.sescsp.org.br/programacao/tarantula-transita-12
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Tarântula Transita
+END:VALARM
+END:VEVENT
+END:VCALENDAR

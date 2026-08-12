@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246157-0@agenda-sesc
+DTSTART:20260822T160000
+SUMMARY:Quando eu crescer quero ser avião
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com Grupo Cundê — https://www.sescsp.org.br/programacao/quando-eu-crescer-quero-ser-aviao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Quando eu crescer quero ser avião
+END:VALARM
+END:VEVENT
+END:VCALENDAR

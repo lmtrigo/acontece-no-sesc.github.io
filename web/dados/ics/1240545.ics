@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240545-0@agenda-sesc
+DTSTART:20260819T193000
+SUMMARY:Mutações: Casa\, a beleza do possível
+LOCATION:Sesc Centro de Pesquisa e Formação
+DESCRIPTION:Com Olgária Matos — https://www.sescsp.org.br/programacao/mutacoes-casa-a-beleza-do-possivel
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mutações: Casa\, a beleza do possível
+END:VALARM
+END:VEVENT
+END:VCALENDAR

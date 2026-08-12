@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247186-0@agenda-sesc
+DTSTART:20260816T090000
+SUMMARY:Sonho e poesia: palavras de Belchior
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com Danise Eliom - Letras da Nise — https://www.sescsp.org.br/programacao/sonho-e-poesia-palavras-de-belchior
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sonho e poesia: palavras de Belchior
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,113 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1200175-0@agenda-sesc
+DTSTART:20260814T140000
+SUMMARY:Projetos Livres
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/projetos-livres-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Projetos Livres
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1200175-1@agenda-sesc
+DTSTART:20260821T140000
+SUMMARY:Projetos Livres
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/projetos-livres-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Projetos Livres
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1200175-2@agenda-sesc
+DTSTART:20260828T140000
+SUMMARY:Projetos Livres
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/projetos-livres-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Projetos Livres
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1200175-3@agenda-sesc
+DTSTART:20260904T140000
+SUMMARY:Projetos Livres
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/projetos-livres-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Projetos Livres
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1200175-4@agenda-sesc
+DTSTART:20260911T140000
+SUMMARY:Projetos Livres
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/projetos-livres-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Projetos Livres
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1200175-5@agenda-sesc
+DTSTART:20260918T140000
+SUMMARY:Projetos Livres
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/projetos-livres-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Projetos Livres
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1200175-6@agenda-sesc
+DTSTART:20260925T140000
+SUMMARY:Projetos Livres
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/projetos-livres-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Projetos Livres
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1200175-7@agenda-sesc
+DTSTART:20261002T140000
+SUMMARY:Projetos Livres
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/projetos-livres-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Projetos Livres
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1200175-8@agenda-sesc
+DTSTART:20261009T140000
+SUMMARY:Projetos Livres
+LOCATION:Sesc Santana
+DESCRIPTION:Com Educadores do Sesc — https://www.sescsp.org.br/programacao/projetos-livres-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Projetos Livres
+END:VALARM
+END:VEVENT
+END:VCALENDAR

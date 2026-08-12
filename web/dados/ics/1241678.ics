@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241678-0@agenda-sesc
+DTSTART:20260821T140000
+SUMMARY:Balé 60+
+LOCATION:Sesc Campinas
+DESCRIPTION:Com pessoas idosas participantes do Balé 60+ do Sesc Campinas — https://www.sescsp.org.br/programacao/bale-60
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Balé 60+
+END:VALARM
+END:VEVENT
+END:VCALENDAR

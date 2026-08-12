@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238488-20260902T183000@agenda-sesc
+DTSTART:20260902T183000
+SUMMARY:Fotomontagens Oníricas
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com Natália Tonda\, fotógrafa\, arte-educadora e produtora cultural — https://www.sescsp.org.br/programacao/fotomontagens-oniricas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Fotomontagens Oníricas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

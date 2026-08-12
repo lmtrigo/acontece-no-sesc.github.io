@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243292-0@agenda-sesc
+DTSTART:20260830T110000
+SUMMARY:Brincadeira que Encanta: Cirquinhos das Primeiras Emoções
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Priscila Senegalho — https://www.sescsp.org.br/programacao/brincadeira-que-encanta-cirquinhos-das-primeiras-emocoes
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Brincadeira que Encanta: Cirquinhos das Primeiras Emoções
+END:VALARM
+END:VEVENT
+END:VCALENDAR

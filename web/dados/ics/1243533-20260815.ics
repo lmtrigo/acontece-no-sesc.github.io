@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243533-20260815T143000@agenda-sesc
+DTSTART:20260815T143000
+SUMMARY:Girô: Territórios de Brincar
+LOCATION:Sesc Taubaté
+DESCRIPTION:Com Mandingueiras da Pracinha — https://www.sescsp.org.br/programacao/giro-territorios-de-brincar
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Girô: Territórios de Brincar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

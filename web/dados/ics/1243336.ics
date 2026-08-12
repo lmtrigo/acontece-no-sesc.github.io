@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1243336-0@agenda-sesc
+DTSTART:20260924T200000
+SUMMARY:Um dia por vez faço uma nova história
+LOCATION:Sesc Piracicaba — Rua Ipiranga\, 155  | Centro | PIRACICABA  | SP | Cep: 13400-480
+DESCRIPTION:Cia ComPartilha — https://www.sescsp.org.br/programacao/um-dia-por-vez-faco-uma-nova-historia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Um dia por vez faço uma nova história
+END:VALARM
+END:VEVENT
+END:VCALENDAR

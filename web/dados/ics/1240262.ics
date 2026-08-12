@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240262-0@agenda-sesc
+DTSTART:20260816T150000
+SUMMARY:Mini Rede de Buriti
+LOCATION:Sesc Pinheiros
+DESCRIPTION:Formativa com Kapaí Kalapalo e Kanualu Aweti Nafukua — https://www.sescsp.org.br/programacao/mini-rede-de-buriti
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Mini Rede de Buriti
+END:VALARM
+END:VEVENT
+END:VCALENDAR

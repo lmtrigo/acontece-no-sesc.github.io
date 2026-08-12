@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247069-20260815T150000@agenda-sesc
+DTSTART:20260815T150000
+SUMMARY:Coletiva construção: um jogo colaborativo
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Luiza Sandler\, artista visual\, professora e produtora cultural — https://www.sescsp.org.br/programacao/coletiva-construcao-um-jogo-colaborativo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Coletiva construção: um jogo colaborativo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

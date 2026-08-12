@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244816-0@agenda-sesc
+DTSTART:20260822T110000
+SUMMARY:Ingredientes Que Contam Histórias: A Diáspora Na Mesa Brasileira
+LOCATION:Sesc Franca
+DESCRIPTION:Com Aline Chermoula\, cozinheira e pesquisadora — https://www.sescsp.org.br/programacao/ingredientes-que-contam-historias-a-diaspora-na-mesa-brasileira
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ingredientes Que Contam Histórias: A Diáspora Na Mesa Brasileira
+END:VALARM
+END:VEVENT
+END:VCALENDAR

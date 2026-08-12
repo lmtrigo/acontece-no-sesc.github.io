@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1247497-0@agenda-sesc
+DTSTART:20260826T200000
+SUMMARY:Migra: Os Avanços Da Diversidade
+LOCATION:Sesc Araraquara — Rua Castro Alves\, 1315 | Quitandinha | ARARAQUARA  | SP | Cep: 14800-140
+DESCRIPTION:Cia de Dança Conceito Urbano — https://www.sescsp.org.br/programacao/migra-os-avancos-da-diversidade
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Migra: Os Avanços Da Diversidade
+END:VALARM
+END:VEVENT
+END:VCALENDAR

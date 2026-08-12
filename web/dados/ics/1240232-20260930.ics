@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240232-20260930T173000@agenda-sesc
+DTSTART:20260930T173000
+SUMMARY:História - Matrizes Africanas e Presença Árabe-Moura na Música Nordestina II
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Influência Moura\, Resistência e Ritmo - Com Daniel Camiranga — https://www.sescsp.org.br/programacao/historia-matrizes-africanas-e-presenca-arabe-moura-na-musica-nordestina-ii
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:História - Matrizes Africanas e Presença Árabe-Moura na Música Nordestina II
+END:VALARM
+END:VEVENT
+END:VCALENDAR

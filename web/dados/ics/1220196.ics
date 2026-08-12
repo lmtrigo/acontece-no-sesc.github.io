@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1220196-0@agenda-sesc
+DTSTART:20260826T140000
+SUMMARY:Ponto de Encontro - TSPI
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:https://www.sescsp.org.br/programacao/ponto-de-encontro-tspi-23
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ponto de Encontro - TSPI
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1220196-1@agenda-sesc
+DTSTART:20260930T140000
+SUMMARY:Ponto de Encontro - TSPI
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:https://www.sescsp.org.br/programacao/ponto-de-encontro-tspi-23
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ponto de Encontro - TSPI
+END:VALARM
+END:VEVENT
+END:VCALENDAR

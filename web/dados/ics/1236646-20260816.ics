@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1236646-20260816T103000@agenda-sesc
+DTSTART:20260816T103000
+SUMMARY:Ateliê: Retalhos Coletivos
+LOCATION:Sesc Belenzinho
+DESCRIPTION:com Paula Helena\, educadora em Tecnologias e Artes — https://www.sescsp.org.br/programacao/atelie-retalhos-coletivos-3
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ateliê: Retalhos Coletivos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

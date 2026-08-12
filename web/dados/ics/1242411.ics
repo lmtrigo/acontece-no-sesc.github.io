@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242411-0@agenda-sesc
+DTSTART:20260822T143000
+SUMMARY:Traçando o vazio: Caligrafia do caminho (2)
+LOCATION:Sesc Consolação
+DESCRIPTION:com Ivan Melo — https://www.sescsp.org.br/programacao/tracando-o-vazio-caligrafia-do-caminho-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Traçando o vazio: Caligrafia do caminho (2)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245699-0@agenda-sesc
+DTSTART:20260822T110000
+SUMMARY:Desembale Menos e Descasque Mais
+LOCATION:Sesc Interlagos
+DESCRIPTION:Com Larizza Lazari — https://www.sescsp.org.br/programacao/desembale-menos-e-descasque-mais-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Desembale Menos e Descasque Mais
+END:VALARM
+END:VEVENT
+END:VCALENDAR

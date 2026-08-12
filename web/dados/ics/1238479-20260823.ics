@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238479-20260823T120000@agenda-sesc
+DTSTART:20260823T120000
+SUMMARY:Ocupação Xirezinho - Brincando com a Natureza
+LOCATION:Sesc Santo André
+DESCRIPTION:com Priscila Obaci — https://www.sescsp.org.br/programacao/ocupacao-xirezinho-brincando-com-a-natureza
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ocupação Xirezinho - Brincando com a Natureza
+END:VALARM
+END:VEVENT
+END:VCALENDAR

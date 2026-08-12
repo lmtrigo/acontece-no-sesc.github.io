@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:75196-0@agenda-sesc
+DTSTART:20260813T153000
+SUMMARY:Por Dentro do Smartphone: Tira Dúvidas - Trabalho Social com Pessoas Idosas
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Bruno Müller\, educador de Tecnologias e Artes do Sesc — https://www.sescsp.org.br/programacao/trabalho-social-com-idosos-sociedade-e-cidadania-por-dentro-do-smartphone-facebook
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Por Dentro do Smartphone: Tira Dúvidas - Trabalho Social com Pessoas Idosas
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:75196-1@agenda-sesc
+DTSTART:20260820T153000
+SUMMARY:Por Dentro do Smartphone: Tira Dúvidas - Trabalho Social com Pessoas Idosas
+LOCATION:Sesc Bauru
+DESCRIPTION:Com Bruno Müller\, educador de Tecnologias e Artes do Sesc — https://www.sescsp.org.br/programacao/trabalho-social-com-idosos-sociedade-e-cidadania-por-dentro-do-smartphone-facebook
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Por Dentro do Smartphone: Tira Dúvidas - Trabalho Social com Pessoas Idosas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

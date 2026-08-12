@@ -1,0 +1,605 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1213255-0@agenda-sesc
+DTSTART:20260811T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-1@agenda-sesc
+DTSTART:20260812T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-2@agenda-sesc
+DTSTART:20260813T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-3@agenda-sesc
+DTSTART:20260814T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-4@agenda-sesc
+DTSTART:20260815T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-5@agenda-sesc
+DTSTART:20260816T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-6@agenda-sesc
+DTSTART:20260818T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-7@agenda-sesc
+DTSTART:20260819T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-8@agenda-sesc
+DTSTART:20260820T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-9@agenda-sesc
+DTSTART:20260821T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-10@agenda-sesc
+DTSTART:20260822T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-11@agenda-sesc
+DTSTART:20260823T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-12@agenda-sesc
+DTSTART:20260825T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-13@agenda-sesc
+DTSTART:20260826T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-14@agenda-sesc
+DTSTART:20260827T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-15@agenda-sesc
+DTSTART:20260828T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-16@agenda-sesc
+DTSTART:20260829T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-17@agenda-sesc
+DTSTART:20260830T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-18@agenda-sesc
+DTSTART:20260901T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-19@agenda-sesc
+DTSTART:20260902T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-20@agenda-sesc
+DTSTART:20260903T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-21@agenda-sesc
+DTSTART:20260904T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-22@agenda-sesc
+DTSTART:20260905T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-23@agenda-sesc
+DTSTART:20260906T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-24@agenda-sesc
+DTSTART:20260909T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-25@agenda-sesc
+DTSTART:20260910T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-26@agenda-sesc
+DTSTART:20260911T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-27@agenda-sesc
+DTSTART:20260912T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-28@agenda-sesc
+DTSTART:20260913T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-29@agenda-sesc
+DTSTART:20260915T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-30@agenda-sesc
+DTSTART:20260916T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-31@agenda-sesc
+DTSTART:20260917T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-32@agenda-sesc
+DTSTART:20260918T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-33@agenda-sesc
+DTSTART:20260919T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-34@agenda-sesc
+DTSTART:20260920T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-35@agenda-sesc
+DTSTART:20260922T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-36@agenda-sesc
+DTSTART:20260923T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-37@agenda-sesc
+DTSTART:20260924T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-38@agenda-sesc
+DTSTART:20260925T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-39@agenda-sesc
+DTSTART:20260926T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-40@agenda-sesc
+DTSTART:20260927T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-41@agenda-sesc
+DTSTART:20260929T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-42@agenda-sesc
+DTSTART:20260930T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-43@agenda-sesc
+DTSTART:20261001T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-44@agenda-sesc
+DTSTART:20261002T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-45@agenda-sesc
+DTSTART:20261003T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-46@agenda-sesc
+DTSTART:20261006T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-47@agenda-sesc
+DTSTART:20261007T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-48@agenda-sesc
+DTSTART:20261008T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1213255-49@agenda-sesc
+DTSTART:20261009T133000
+SUMMARY:Sala de Leitura
+LOCATION:Sesc Catanduva
+DESCRIPTION:Leituras e Consultas — https://www.sescsp.org.br/programacao/espaco-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Sala de Leitura
+END:VALARM
+END:VEVENT
+END:VCALENDAR

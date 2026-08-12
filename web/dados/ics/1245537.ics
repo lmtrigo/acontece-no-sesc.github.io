@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245537-0@agenda-sesc
+DTSTART:20260815T170000
+SUMMARY:Replikka
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Direção: Piratá Waurá e Heloisa Passos | Documentário | Brasil/Estados Unidos | 2025 — https://www.sescsp.org.br/programacao/replikka
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Replikka
+END:VALARM
+END:VEVENT
+END:VCALENDAR

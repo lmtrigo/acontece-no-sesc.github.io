@@ -1,0 +1,437 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1128002-0@agenda-sesc
+DTSTART:20260811T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-1@agenda-sesc
+DTSTART:20260812T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-2@agenda-sesc
+DTSTART:20260813T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-3@agenda-sesc
+DTSTART:20260814T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-4@agenda-sesc
+DTSTART:20260818T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-5@agenda-sesc
+DTSTART:20260819T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-6@agenda-sesc
+DTSTART:20260820T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-7@agenda-sesc
+DTSTART:20260821T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-8@agenda-sesc
+DTSTART:20260825T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-9@agenda-sesc
+DTSTART:20260826T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-10@agenda-sesc
+DTSTART:20260827T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-11@agenda-sesc
+DTSTART:20260828T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-12@agenda-sesc
+DTSTART:20260901T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-13@agenda-sesc
+DTSTART:20260902T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-14@agenda-sesc
+DTSTART:20260903T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-15@agenda-sesc
+DTSTART:20260904T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-16@agenda-sesc
+DTSTART:20260908T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-17@agenda-sesc
+DTSTART:20260909T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-18@agenda-sesc
+DTSTART:20260910T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-19@agenda-sesc
+DTSTART:20260911T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-20@agenda-sesc
+DTSTART:20260915T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-21@agenda-sesc
+DTSTART:20260916T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-22@agenda-sesc
+DTSTART:20260917T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-23@agenda-sesc
+DTSTART:20260918T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-24@agenda-sesc
+DTSTART:20260922T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-25@agenda-sesc
+DTSTART:20260923T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-26@agenda-sesc
+DTSTART:20260924T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-27@agenda-sesc
+DTSTART:20260925T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-28@agenda-sesc
+DTSTART:20260929T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-29@agenda-sesc
+DTSTART:20260930T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-30@agenda-sesc
+DTSTART:20261001T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-31@agenda-sesc
+DTSTART:20261002T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-32@agenda-sesc
+DTSTART:20261006T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-33@agenda-sesc
+DTSTART:20261007T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-34@agenda-sesc
+DTSTART:20261008T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1128002-35@agenda-sesc
+DTSTART:20261009T100000
+SUMMARY:Movimento Consciente
+LOCATION:Sesc 24 de Maio
+DESCRIPTION:com educadores físico-esportivos — https://www.sescsp.org.br/programacao/movimento-consciente-90
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Movimento Consciente
+END:VALARM
+END:VEVENT
+END:VCALENDAR

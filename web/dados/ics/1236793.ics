@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1236793-0@agenda-sesc
+DTSTART:20260813T180000
+SUMMARY:Clara Potiguara Apresenta Akajubaté
+LOCATION:Sesc Belenzinho
+DESCRIPTION:https://www.sescsp.org.br/programacao/clara-potiguara-apresenta-akajubate
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Clara Potiguara Apresenta Akajubaté
+END:VALARM
+END:VEVENT
+END:VCALENDAR

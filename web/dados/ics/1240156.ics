@@ -1,0 +1,197 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1240156-0@agenda-sesc
+DTSTART:20260818T113000
+SUMMARY:Contrabaixo Acústico - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Valdir Maia — https://www.sescsp.org.br/programacao/contrabaixo-acustico-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240156-1@agenda-sesc
+DTSTART:20260820T113000
+SUMMARY:Contrabaixo Acústico - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Valdir Maia — https://www.sescsp.org.br/programacao/contrabaixo-acustico-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240156-2@agenda-sesc
+DTSTART:20260825T113000
+SUMMARY:Contrabaixo Acústico - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Valdir Maia — https://www.sescsp.org.br/programacao/contrabaixo-acustico-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240156-3@agenda-sesc
+DTSTART:20260827T113000
+SUMMARY:Contrabaixo Acústico - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Valdir Maia — https://www.sescsp.org.br/programacao/contrabaixo-acustico-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240156-4@agenda-sesc
+DTSTART:20260901T113000
+SUMMARY:Contrabaixo Acústico - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Valdir Maia — https://www.sescsp.org.br/programacao/contrabaixo-acustico-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240156-5@agenda-sesc
+DTSTART:20260903T113000
+SUMMARY:Contrabaixo Acústico - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Valdir Maia — https://www.sescsp.org.br/programacao/contrabaixo-acustico-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240156-6@agenda-sesc
+DTSTART:20260908T113000
+SUMMARY:Contrabaixo Acústico - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Valdir Maia — https://www.sescsp.org.br/programacao/contrabaixo-acustico-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240156-7@agenda-sesc
+DTSTART:20260910T113000
+SUMMARY:Contrabaixo Acústico - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Valdir Maia — https://www.sescsp.org.br/programacao/contrabaixo-acustico-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240156-8@agenda-sesc
+DTSTART:20260915T113000
+SUMMARY:Contrabaixo Acústico - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Valdir Maia — https://www.sescsp.org.br/programacao/contrabaixo-acustico-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240156-9@agenda-sesc
+DTSTART:20260917T113000
+SUMMARY:Contrabaixo Acústico - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Valdir Maia — https://www.sescsp.org.br/programacao/contrabaixo-acustico-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240156-10@agenda-sesc
+DTSTART:20260922T113000
+SUMMARY:Contrabaixo Acústico - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Valdir Maia — https://www.sescsp.org.br/programacao/contrabaixo-acustico-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240156-11@agenda-sesc
+DTSTART:20260924T113000
+SUMMARY:Contrabaixo Acústico - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Valdir Maia — https://www.sescsp.org.br/programacao/contrabaixo-acustico-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240156-12@agenda-sesc
+DTSTART:20260929T113000
+SUMMARY:Contrabaixo Acústico - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Valdir Maia — https://www.sescsp.org.br/programacao/contrabaixo-acustico-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240156-13@agenda-sesc
+DTSTART:20261001T113000
+SUMMARY:Contrabaixo Acústico - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Valdir Maia — https://www.sescsp.org.br/programacao/contrabaixo-acustico-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240156-14@agenda-sesc
+DTSTART:20261006T113000
+SUMMARY:Contrabaixo Acústico - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Valdir Maia — https://www.sescsp.org.br/programacao/contrabaixo-acustico-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1240156-15@agenda-sesc
+DTSTART:20261008T113000
+SUMMARY:Contrabaixo Acústico - Iniciação
+LOCATION:Sesc Vila Mariana
+DESCRIPTION:Com Valdir Maia — https://www.sescsp.org.br/programacao/contrabaixo-acustico-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contrabaixo Acústico - Iniciação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

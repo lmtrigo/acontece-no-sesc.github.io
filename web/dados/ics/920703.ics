@@ -1,0 +1,221 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:920703-0@agenda-sesc
+DTSTART:20260811T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920703-1@agenda-sesc
+DTSTART:20260813T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920703-2@agenda-sesc
+DTSTART:20260818T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920703-3@agenda-sesc
+DTSTART:20260820T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920703-4@agenda-sesc
+DTSTART:20260825T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920703-5@agenda-sesc
+DTSTART:20260827T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920703-6@agenda-sesc
+DTSTART:20260901T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920703-7@agenda-sesc
+DTSTART:20260903T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920703-8@agenda-sesc
+DTSTART:20260908T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920703-9@agenda-sesc
+DTSTART:20260910T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920703-10@agenda-sesc
+DTSTART:20260915T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920703-11@agenda-sesc
+DTSTART:20260917T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920703-12@agenda-sesc
+DTSTART:20260922T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920703-13@agenda-sesc
+DTSTART:20260924T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920703-14@agenda-sesc
+DTSTART:20260929T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920703-15@agenda-sesc
+DTSTART:20261001T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920703-16@agenda-sesc
+DTSTART:20261006T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:920703-17@agenda-sesc
+DTSTART:20261008T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Pompeia
+DESCRIPTION:https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-5
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+END:VCALENDAR

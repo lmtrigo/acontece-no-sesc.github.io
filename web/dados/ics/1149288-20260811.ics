@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1149288-20260811T090000@agenda-sesc
+DTSTART:20260811T090000
+SUMMARY:Frestas - Trienal de Artes: do caminho um rezo
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Curadoria de Khadyg Fares\, Luciara Ribeiro e Naine Terena — https://www.sescsp.org.br/programacao/frestas-trienal-de-artes-do-caminho-um-rezo
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Frestas - Trienal de Artes: do caminho um rezo
+END:VALARM
+END:VEVENT
+END:VCALENDAR

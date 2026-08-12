@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244688-0@agenda-sesc
+DTSTART:20260910T140000
+SUMMARY:A Boca que Narra Memórias: uma viagem pelas histórias de vida e saúde
+LOCATION:Sesc São Bento
+DESCRIPTION:Com Sandra Lessa e Bela Lefévre\, do Núcleo Biografêmeas de Oralidades Femininas do Museu da Pessoa — https://www.sescsp.org.br/programacao/a-boca-que-narra-memorias-uma-viagem-pelas-historias-de-vida-e-saude
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A Boca que Narra Memórias: uma viagem pelas histórias de vida e saúde
+END:VALARM
+END:VEVENT
+END:VCALENDAR

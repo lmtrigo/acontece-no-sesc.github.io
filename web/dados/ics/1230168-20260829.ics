@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1230168-20260829T133000@agenda-sesc
+DTSTART:20260829T133000
+SUMMARY:Memórias Fósseis
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:com equipe educadora do Sesc Bom Retiro — https://www.sescsp.org.br/programacao/memorias-fosseis
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Memórias Fósseis
+END:VALARM
+END:VEVENT
+END:VCALENDAR

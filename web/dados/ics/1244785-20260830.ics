@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244785-20260830T100000@agenda-sesc
+DTSTART:20260830T100000
+SUMMARY:Telhado de Histórias: Mediação de Leitura
+LOCATION:Sesc Mogi das Cruzes
+DESCRIPTION:Com Grupo Raconto — https://www.sescsp.org.br/programacao/telhado-de-historias-mediacao-de-leitura-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Telhado de Histórias: Mediação de Leitura
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248842-0@agenda-sesc
+DTSTART:20260820T133000
+SUMMARY:Violão - do Zero à Canção - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Tita Reis\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/violao-do-zero-a-cancao-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violão - do Zero à Canção - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248842-1@agenda-sesc
+DTSTART:20260827T133000
+SUMMARY:Violão - do Zero à Canção - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Tita Reis\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/violao-do-zero-a-cancao-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violão - do Zero à Canção - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248842-2@agenda-sesc
+DTSTART:20260903T133000
+SUMMARY:Violão - do Zero à Canção - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Tita Reis\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/violao-do-zero-a-cancao-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violão - do Zero à Canção - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248842-3@agenda-sesc
+DTSTART:20260910T133000
+SUMMARY:Violão - do Zero à Canção - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Tita Reis\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/violao-do-zero-a-cancao-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violão - do Zero à Canção - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248842-4@agenda-sesc
+DTSTART:20260917T133000
+SUMMARY:Violão - do Zero à Canção - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Tita Reis\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/violao-do-zero-a-cancao-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violão - do Zero à Canção - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248842-5@agenda-sesc
+DTSTART:20260924T133000
+SUMMARY:Violão - do Zero à Canção - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Tita Reis\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/violao-do-zero-a-cancao-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violão - do Zero à Canção - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248842-6@agenda-sesc
+DTSTART:20261001T133000
+SUMMARY:Violão - do Zero à Canção - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Tita Reis\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/violao-do-zero-a-cancao-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violão - do Zero à Canção - Iniciação
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1248842-7@agenda-sesc
+DTSTART:20261008T133000
+SUMMARY:Violão - do Zero à Canção - Iniciação
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Tita Reis\, Educador em Atividades Musicais — https://www.sescsp.org.br/programacao/violao-do-zero-a-cancao-iniciacao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Violão - do Zero à Canção - Iniciação
+END:VALARM
+END:VEVENT
+END:VCALENDAR

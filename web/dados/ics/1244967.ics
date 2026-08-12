@@ -1,0 +1,65 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1244967-0@agenda-sesc
+DTSTART:20260817T130000
+SUMMARY:Histórias em Sala
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:https://www.sescsp.org.br/programacao/historias-em-sala
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Histórias em Sala
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244967-1@agenda-sesc
+DTSTART:20260818T130000
+SUMMARY:Histórias em Sala
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:https://www.sescsp.org.br/programacao/historias-em-sala
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Histórias em Sala
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244967-2@agenda-sesc
+DTSTART:20260819T130000
+SUMMARY:Histórias em Sala
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:https://www.sescsp.org.br/programacao/historias-em-sala
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Histórias em Sala
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244967-3@agenda-sesc
+DTSTART:20260820T130000
+SUMMARY:Histórias em Sala
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:https://www.sescsp.org.br/programacao/historias-em-sala
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Histórias em Sala
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1244967-4@agenda-sesc
+DTSTART:20260821T130000
+SUMMARY:Histórias em Sala
+LOCATION:Sesc Presidente Prudente
+DESCRIPTION:https://www.sescsp.org.br/programacao/historias-em-sala
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Histórias em Sala
+END:VALARM
+END:VEVENT
+END:VCALENDAR

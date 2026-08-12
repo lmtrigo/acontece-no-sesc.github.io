@@ -1,0 +1,113 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1149680-0@agenda-sesc
+DTSTART:20260813T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Quinta 18h30 - A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1149680-1@agenda-sesc
+DTSTART:20260820T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Quinta 18h30 - A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1149680-2@agenda-sesc
+DTSTART:20260827T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Quinta 18h30 - A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1149680-3@agenda-sesc
+DTSTART:20260903T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Quinta 18h30 - A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1149680-4@agenda-sesc
+DTSTART:20260910T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Quinta 18h30 - A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1149680-5@agenda-sesc
+DTSTART:20260917T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Quinta 18h30 - A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1149680-6@agenda-sesc
+DTSTART:20260924T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Quinta 18h30 - A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1149680-7@agenda-sesc
+DTSTART:20261001T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Quinta 18h30 - A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1149680-8@agenda-sesc
+DTSTART:20261008T183000
+SUMMARY:Esporte Adulto - Clube do Basquete
+LOCATION:Sesc Bom Retiro
+DESCRIPTION:Quinta 18h30 - A partir de 16 anos — https://www.sescsp.org.br/programacao/esporte-adulto-clube-do-basquete-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Esporte Adulto - Clube do Basquete
+END:VALARM
+END:VEVENT
+END:VCALENDAR

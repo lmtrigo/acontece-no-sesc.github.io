@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242933-0@agenda-sesc
+DTSTART:20260818T190000
+SUMMARY:Somos poeira de estrelas: revisitando o Cosmos com Carl Sagan
+LOCATION:Sesc — — Rua Manoel Domingues Ventura\, 121 | Vila Xavier | BIRIGUI  | SP | Cep: 16203-009
+DESCRIPTION:Com Amâncio Cesar Santos Friaça\, astrofísico — https://www.sescsp.org.br/programacao/somos-poeira-de-estrelas-revisitando-o-cosmos-com-carl-sagan
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Somos poeira de estrelas: revisitando o Cosmos com Carl Sagan
+END:VALARM
+END:VEVENT
+END:VCALENDAR

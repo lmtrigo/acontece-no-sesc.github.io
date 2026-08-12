@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1188341-20260813T140000@agenda-sesc
+DTSTART:20260813T140000
+SUMMARY:Lugar de criança é fazendo arte!
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com Alan Pablo\, educador do Programa Espaço de Brincar — https://www.sescsp.org.br/programacao/lugar-de-crianca-e-fazendo-arte-11
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Lugar de criança é fazendo arte!
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242487-0@agenda-sesc
+DTSTART:20260826T193000
+SUMMARY:Muros e Grades são Invenções Humanas
+LOCATION:Sesc Consolação
+DESCRIPTION:com Ariadne Antico — https://www.sescsp.org.br/programacao/muros-e-grades-sao-invencoes-humanas-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Muros e Grades são Invenções Humanas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

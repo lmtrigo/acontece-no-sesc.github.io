@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:77156-20260825T093000@agenda-sesc
+DTSTART:20260825T093000
+SUMMARY:Amigurumi - Trocas de experiências
+LOCATION:Sesc Santo Amaro
+DESCRIPTION:Alexandre Rüger — https://www.sescsp.org.br/programacao/amigurumi-trocas-de-experiencias
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Amigurumi - Trocas de experiências
+END:VALARM
+END:VEVENT
+END:VCALENDAR

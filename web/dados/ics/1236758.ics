@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1236758-0@agenda-sesc
+DTSTART:20260815T100000
+SUMMARY:Eutonia: Corpo e Consciência
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com Lilian Scutti Santos — https://www.sescsp.org.br/programacao/eutonia-corpo-e-consciencia
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Eutonia: Corpo e Consciência
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:598518-0@agenda-sesc
+DTSTART:20260816T103000
+SUMMARY:Minijardim de suculentas
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com Alexandre Anezio\, agente de educação ambiental — https://www.sescsp.org.br/programacao/minijardim-de-suculentas
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Minijardim de suculentas
+END:VALARM
+END:VEVENT
+END:VCALENDAR

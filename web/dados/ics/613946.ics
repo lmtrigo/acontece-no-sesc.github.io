@@ -1,0 +1,89 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:613946-0@agenda-sesc
+DTSTART:20260816T120000
+SUMMARY:Basquete
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/basquete-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:613946-1@agenda-sesc
+DTSTART:20260823T120000
+SUMMARY:Basquete
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/basquete-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:613946-2@agenda-sesc
+DTSTART:20260830T120000
+SUMMARY:Basquete
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/basquete-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:613946-3@agenda-sesc
+DTSTART:20260906T120000
+SUMMARY:Basquete
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/basquete-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:613946-4@agenda-sesc
+DTSTART:20260913T120000
+SUMMARY:Basquete
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/basquete-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:613946-5@agenda-sesc
+DTSTART:20260920T120000
+SUMMARY:Basquete
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/basquete-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Basquete
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:613946-6@agenda-sesc
+DTSTART:20260927T120000
+SUMMARY:Basquete
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com pessoas educadoras de atividades físico-esportivas do Sesc Guarulhos — https://www.sescsp.org.br/programacao/basquete-15
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Basquete
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239082-0@agenda-sesc
+DTSTART:20260829T170000
+SUMMARY:Baile Charme do Jamaica
+LOCATION:Sesc 14 Bis
+DESCRIPTION:https://www.sescsp.org.br/programacao/baile-charme-do-jamaica
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Baile Charme do Jamaica
+END:VALARM
+END:VEVENT
+END:VCALENDAR

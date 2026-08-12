@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1242749-0@agenda-sesc
+DTSTART:20260816T103000
+SUMMARY:Encontro de Mão a Mão | Para a classe
+LOCATION:Sesc Santo Amaro
+DESCRIPTION:Integra a 7ª edição do FESTI MAM — https://www.sescsp.org.br/programacao/encontro-de-mao-a-mao-para-a-classe
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Encontro de Mão a Mão | Para a classe
+END:VALARM
+END:VEVENT
+END:VCALENDAR

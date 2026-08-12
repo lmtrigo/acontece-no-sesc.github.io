@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245618-0@agenda-sesc
+DTSTART:20260815T160000
+SUMMARY:Ratambufe e o mar encantado
+LOCATION:Sesc São Carlos
+DESCRIPTION:Com Grupo Cundê — https://www.sescsp.org.br/programacao/ratambufe-e-o-mar-encantado-2
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Ratambufe e o mar encantado
+END:VALARM
+END:VEVENT
+END:VCALENDAR

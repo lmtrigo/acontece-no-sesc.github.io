@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1228840-20260911T180000@agenda-sesc
+DTSTART:20260911T180000
+SUMMARY:Copa Sesc de Futsal Feminino
+LOCATION:Sesc Belenzinho
+DESCRIPTION:https://www.sescsp.org.br/programacao/copa-sesc-de-futsal-feminino-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Copa Sesc de Futsal Feminino
+END:VALARM
+END:VEVENT
+END:VCALENDAR

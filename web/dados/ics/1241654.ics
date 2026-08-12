@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241654-0@agenda-sesc
+DTSTART:20260815T160000
+SUMMARY:Contos Caipiras\, Capiaus\, Matutos e Caboclos
+LOCATION:Sesc Rio Preto
+DESCRIPTION:Com Projeto Fio da Meada — https://www.sescsp.org.br/programacao/contos-caipiras-capiaus-matutos-e-caboclos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contos Caipiras\, Capiaus\, Matutos e Caboclos
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1241654-1@agenda-sesc
+DTSTART:20260822T160000
+SUMMARY:Contos Caipiras\, Capiaus\, Matutos e Caboclos
+LOCATION:Sesc Rio Preto
+DESCRIPTION:Com Projeto Fio da Meada — https://www.sescsp.org.br/programacao/contos-caipiras-capiaus-matutos-e-caboclos
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Contos Caipiras\, Capiaus\, Matutos e Caboclos
+END:VALARM
+END:VEVENT
+END:VCALENDAR

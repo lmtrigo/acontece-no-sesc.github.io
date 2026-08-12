@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1245505-0@agenda-sesc
+DTSTART:20260815T200000
+SUMMARY:Travessia de corpos mandingueiros
+LOCATION:Sesc Sorocaba
+DESCRIPTION:Com Puma Camillê e artistas convidadas(os) — https://www.sescsp.org.br/programacao/travessia-de-corpos-mandingueiros
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Travessia de corpos mandingueiros
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1248654-20260820T100000@agenda-sesc
+DTSTART:20260820T100000
+SUMMARY:Café com Manualidades
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Isabelle Bianchi\, educadora em Tecnologias e Artes — https://www.sescsp.org.br/programacao/cafe-com-manualidades
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Café com Manualidades
+END:VALARM
+END:VEVENT
+END:VCALENDAR

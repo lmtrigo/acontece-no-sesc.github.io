@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246751-0@agenda-sesc
+DTSTART:20260912T083000
+SUMMARY:Casinhas que Contam Histórias: Urban Sketching na Vila Galvão
+LOCATION:Sesc Guarulhos
+DESCRIPTION:Com Prof. Evanir Penna e Arq. Breno Burrego — https://www.sescsp.org.br/programacao/casinhas-que-contam-historias-urban-sketching-na-vila-galvao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Casinhas que Contam Histórias: Urban Sketching na Vila Galvão
+END:VALARM
+END:VEVENT
+END:VCALENDAR

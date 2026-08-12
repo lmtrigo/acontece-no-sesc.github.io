@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1246713-20260822T140000@agenda-sesc
+DTSTART:20260822T140000
+SUMMARY:Re-Conhecendo Sons e Brincando com Instrumentos Reciclados
+LOCATION:Sesc Registro
+DESCRIPTION:Com Coletivo Sonzando — https://www.sescsp.org.br/programacao/re-conhecendo-sons-e-brincando-com-instrumentos-reciclados
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Re-Conhecendo Sons e Brincando com Instrumentos Reciclados
+END:VALARM
+END:VEVENT
+END:VCALENDAR

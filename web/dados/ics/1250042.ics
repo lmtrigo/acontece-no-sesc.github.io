@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1250042-0@agenda-sesc
+DTSTART:20260815T101500
+SUMMARY:A importância do bem-estar para a produtividade de abelhas sem ferrão
+LOCATION:Sesc Guarulhos
+DESCRIPTION:com Ana Isepan e Celso Barbieri\, Labbees - USP Leste — https://www.sescsp.org.br/programacao/a-importancia-do-bem-estar-para-a-produtividade-de-abelhas-sem-ferrao
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:A importância do bem-estar para a produtividade de abelhas sem ferrão
+END:VALARM
+END:VEVENT
+END:VCALENDAR

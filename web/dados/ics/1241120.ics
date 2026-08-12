@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1241120-0@agenda-sesc
+DTSTART:20260820T200000
+SUMMARY:Cena Ouro - Epide(r)mia
+LOCATION:Sesc Ribeirão Preto — Rua Tibiriça\, 50 | Centro | RIBEIRAO PRETO  | SP | Cep: 14010-090
+DESCRIPTION:Com a Cia. Mungunzá de Teatro — https://www.sescsp.org.br/programacao/cena-ouro-epidermia-6
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Cena Ouro - Epide(r)mia
+END:VALARM
+END:VEVENT
+END:VCALENDAR

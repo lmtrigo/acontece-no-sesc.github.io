@@ -1,0 +1,113 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1238338-0@agenda-sesc
+DTSTART:20260812T200000
+SUMMARY:BIGORNA - Um Thriller Autoficcional
+LOCATION:Sesc Vila Mariana — Rua Pelotas\, 141 | Vila Mariana | SAO PAULO  | SP | Cep: 04012-000
+DESCRIPTION:com Walmick de Holanda — https://www.sescsp.org.br/programacao/bigorna-um-thriller
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BIGORNA - Um Thriller Autoficcional
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238338-1@agenda-sesc
+DTSTART:20260813T200000
+SUMMARY:BIGORNA - Um Thriller Autoficcional
+LOCATION:Sesc Vila Mariana — Rua Pelotas\, 141 | Vila Mariana | SAO PAULO  | SP | Cep: 04012-000
+DESCRIPTION:com Walmick de Holanda — https://www.sescsp.org.br/programacao/bigorna-um-thriller
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BIGORNA - Um Thriller Autoficcional
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238338-2@agenda-sesc
+DTSTART:20260814T220000
+SUMMARY:BIGORNA - Um Thriller Autoficcional
+LOCATION:Sesc Vila Mariana — Rua Pelotas\, 141 | Vila Mariana | SAO PAULO  | SP | Cep: 04012-000
+DESCRIPTION:com Walmick de Holanda — https://www.sescsp.org.br/programacao/bigorna-um-thriller
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BIGORNA - Um Thriller Autoficcional
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238338-3@agenda-sesc
+DTSTART:20260815T180000
+SUMMARY:BIGORNA - Um Thriller Autoficcional
+LOCATION:Sesc Vila Mariana — Rua Pelotas\, 141 | Vila Mariana | SAO PAULO  | SP | Cep: 04012-000
+DESCRIPTION:com Walmick de Holanda — https://www.sescsp.org.br/programacao/bigorna-um-thriller
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BIGORNA - Um Thriller Autoficcional
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238338-4@agenda-sesc
+DTSTART:20260818T200000
+SUMMARY:BIGORNA - Um Thriller Autoficcional
+LOCATION:Sesc Vila Mariana — Rua Pelotas\, 141 | Vila Mariana | SAO PAULO  | SP | Cep: 04012-000
+DESCRIPTION:com Walmick de Holanda — https://www.sescsp.org.br/programacao/bigorna-um-thriller
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BIGORNA - Um Thriller Autoficcional
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238338-5@agenda-sesc
+DTSTART:20260819T200000
+SUMMARY:BIGORNA - Um Thriller Autoficcional
+LOCATION:Sesc Vila Mariana — Rua Pelotas\, 141 | Vila Mariana | SAO PAULO  | SP | Cep: 04012-000
+DESCRIPTION:com Walmick de Holanda — https://www.sescsp.org.br/programacao/bigorna-um-thriller
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BIGORNA - Um Thriller Autoficcional
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238338-6@agenda-sesc
+DTSTART:20260820T200000
+SUMMARY:BIGORNA - Um Thriller Autoficcional
+LOCATION:Sesc Vila Mariana — Rua Pelotas\, 141 | Vila Mariana | SAO PAULO  | SP | Cep: 04012-000
+DESCRIPTION:com Walmick de Holanda — https://www.sescsp.org.br/programacao/bigorna-um-thriller
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BIGORNA - Um Thriller Autoficcional
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238338-7@agenda-sesc
+DTSTART:20260821T150000
+SUMMARY:BIGORNA - Um Thriller Autoficcional
+LOCATION:Sesc Vila Mariana — Rua Pelotas\, 141 | Vila Mariana | SAO PAULO  | SP | Cep: 04012-000
+DESCRIPTION:com Walmick de Holanda — https://www.sescsp.org.br/programacao/bigorna-um-thriller
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BIGORNA - Um Thriller Autoficcional
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1238338-8@agenda-sesc
+DTSTART:20260822T180000
+SUMMARY:BIGORNA - Um Thriller Autoficcional
+LOCATION:Sesc Vila Mariana — Rua Pelotas\, 141 | Vila Mariana | SAO PAULO  | SP | Cep: 04012-000
+DESCRIPTION:com Walmick de Holanda — https://www.sescsp.org.br/programacao/bigorna-um-thriller
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:BIGORNA - Um Thriller Autoficcional
+END:VALARM
+END:VEVENT
+END:VCALENDAR

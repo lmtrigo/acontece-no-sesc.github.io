@@ -1,0 +1,77 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1236396-0@agenda-sesc
+DTSTART:20260827T203000
+SUMMARY:Despalhaço
+LOCATION:Sesc Vila Mariana — Rua Pelotas\, 141 | Vila Mariana | SAO PAULO  | SP | Cep: 04012-000
+DESCRIPTION:com Raul Barretto — https://www.sescsp.org.br/programacao/despalhaco
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Despalhaço
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1236396-1@agenda-sesc
+DTSTART:20260828T203000
+SUMMARY:Despalhaço
+LOCATION:Sesc Vila Mariana — Rua Pelotas\, 141 | Vila Mariana | SAO PAULO  | SP | Cep: 04012-000
+DESCRIPTION:com Raul Barretto — https://www.sescsp.org.br/programacao/despalhaco
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Despalhaço
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1236396-2@agenda-sesc
+DTSTART:20260829T203000
+SUMMARY:Despalhaço
+LOCATION:Sesc Vila Mariana — Rua Pelotas\, 141 | Vila Mariana | SAO PAULO  | SP | Cep: 04012-000
+DESCRIPTION:com Raul Barretto — https://www.sescsp.org.br/programacao/despalhaco
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Despalhaço
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1236396-3@agenda-sesc
+DTSTART:20260903T203000
+SUMMARY:Despalhaço
+LOCATION:Sesc Vila Mariana — Rua Pelotas\, 141 | Vila Mariana | SAO PAULO  | SP | Cep: 04012-000
+DESCRIPTION:com Raul Barretto — https://www.sescsp.org.br/programacao/despalhaco
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Despalhaço
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1236396-4@agenda-sesc
+DTSTART:20260904T203000
+SUMMARY:Despalhaço
+LOCATION:Sesc Vila Mariana — Rua Pelotas\, 141 | Vila Mariana | SAO PAULO  | SP | Cep: 04012-000
+DESCRIPTION:com Raul Barretto — https://www.sescsp.org.br/programacao/despalhaco
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Despalhaço
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1236396-5@agenda-sesc
+DTSTART:20260905T203000
+SUMMARY:Despalhaço
+LOCATION:Sesc Vila Mariana — Rua Pelotas\, 141 | Vila Mariana | SAO PAULO  | SP | Cep: 04012-000
+DESCRIPTION:com Raul Barretto — https://www.sescsp.org.br/programacao/despalhaco
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Despalhaço
+END:VALARM
+END:VEVENT
+END:VCALENDAR

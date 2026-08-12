@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1239971-20260813T193000@agenda-sesc
+DTSTART:20260813T193000
+SUMMARY:Criação de Bonecos Articulados com (e sem) impressão 3D
+LOCATION:Sesc Avenida Paulista
+DESCRIPTION:Com Daniel Seda\, educador de Tecnologias e Artes — https://www.sescsp.org.br/programacao/criacao-de-bonecos-articulados-com-e-sem-impressao-3d
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Criação de Bonecos Articulados com (e sem) impressão 3D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

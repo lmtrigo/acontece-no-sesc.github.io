@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:1236750-0@agenda-sesc
+DTSTART:20260822T130000
+SUMMARY:Espaço Geek - Jogos de Videogame
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com educadores do Espaço de Tecnologias e Artes — https://www.sescsp.org.br/programacao/espaco-geek-jogos-de-videogame
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço Geek - Jogos de Videogame
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1236750-1@agenda-sesc
+DTSTART:20260823T130000
+SUMMARY:Espaço Geek - Jogos de Videogame
+LOCATION:Sesc Ribeirão Preto
+DESCRIPTION:Com educadores do Espaço de Tecnologias e Artes — https://www.sescsp.org.br/programacao/espaco-geek-jogos-de-videogame
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Espaço Geek - Jogos de Videogame
+END:VALARM
+END:VEVENT
+END:VCALENDAR
