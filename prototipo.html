@@ -1971,6 +1971,43 @@
   function esc(s) { return String(s == null ? "" : s).replace(/([,;\\])/g, "\\$1").replace(/\n/g, "\\n"); }
   function stampISO(s) { var p = String(s).split("T"); return p[0].replace(/-/g, "") + "T" + (p[1] ? p[1].slice(0, 5).replace(":", "") : "0900") + "00"; }
 
+  /* ---------------- entrega ao app de calendário ----------------
+     Não há um caminho único. O que cada sistema faz com um .ics:
+
+       iPhone/iPad  Safari abre o Calendário com "Adicionar evento". Serve.
+       Android      o Chrome BAIXA o arquivo e para aí. Não serve.
+       Desktop      baixa, e abrir o arquivo entrega ao app. Serve.
+
+     No Android o que abre o app é uma URL `intent://` com a ação INSERT do
+     calendário: cai na tela de novo evento com os campos preenchidos, que é
+     exatamente o que se quer. `browser_fallback_url` cobre o aparelho sem
+     app de agenda, mandando de volta para o .ics. */
+  function ehAndroid() { return /Android/i.test(navigator.userAgent); }
+
+  function emMilissegundos(quando, somaHoras) {
+    var p = String(quando).split("T");
+    var d = pISO(p[0]);
+    var hm = (p[1] || "09:00").split(":");
+    d.setHours(+hm[0] + (somaHoras || 0), +hm[1] || 0, 0, 0);
+    return d.getTime();
+  }
+
+  function intentCalendario(dados) {
+    var partes = [
+      "action=android.intent.action.INSERT",
+      "type=vnd.android.cursor.dir/event",
+      "S.title=" + encodeURIComponent(dados.titulo),
+      "l.beginTime=" + dados.inicio,
+      "l.endTime=" + dados.fim
+    ];
+    if (dados.diaInteiro) partes.push("B.allDay=true");
+    if (dados.local) partes.push("S.eventLocation=" + encodeURIComponent(dados.local));
+    if (dados.desc) partes.push("S.description=" + encodeURIComponent(dados.desc));
+    if (dados.fallback) partes.push("S.browser_fallback_url=" + encodeURIComponent(dados.fallback));
+    partes.push("end");
+    return "intent:#Intent;" + partes.join(";");
+  }
+
   /* ---------------- escolha do calendário ----------------
      Duas saídas: abrir no app de agenda do aparelho (o caminho normal) ou
      baixar o arquivo, para quando o sistema não reconhecer o tipo. */
@@ -2066,8 +2103,38 @@
     var arquivoPronto = !!urlDoIcs();
     var urlIcs = urlDoIcs();
 
+    /** Data/hora que o Android vai receber, conforme a escolha atual. */
+    function alvoAtual() {
+      if (tipo === "inscricao") return { quando: quando, diaInteiro: false };
+      if (ev.continuo && (ev.dias || []).length > 1) {
+        return { quando: ev.dias[0], fimDia: addDias(ev.dias[ev.dias.length - 1], 1), diaInteiro: true };
+      }
+      var q = Object.keys(escolhidas).sort()[0];
+      return { quando: q || quando, diaInteiro: false };
+    }
+    function hrefAndroid() {
+      var a = alvoAtual();
+      return intentCalendario({
+        titulo: titulo,
+        inicio: a.diaInteiro ? emMilissegundos(a.quando) : emMilissegundos(a.quando),
+        fim: a.diaInteiro ? emMilissegundos(a.fimDia) : emMilissegundos(a.quando, 2),
+        diaInteiro: a.diaInteiro,
+        local: "Sesc " + ev.uni + (ev.endereco ? " — " + ev.endereco : ""),
+        desc: (ev.sub ? ev.sub + " — " : "") + (ev.link || ""),
+        fallback: urlDoIcs() ? location.href.replace(/[^/]*$/, "") + urlDoIcs() : null
+      });
+    }
+
     var app;
-    if (arquivoPronto) {
+    if (ehAndroid()) {
+      // no Android o .ics só baixa; a intent abre a tela de novo evento
+      app = el("a", "btn", "Abrir no calendário");
+      app.href = hrefAndroid();
+      app.addEventListener("click", function () {
+        app.href = hrefAndroid();          // a escolha pode ter mudado
+        toast("Abrindo a agenda — confira e salve");
+      });
+    } else if (arquivoPronto) {
       app = el("a", "btn", "Abrir no calendário");
       app.href = urlIcs;
       app.setAttribute("type", "text/calendar");
@@ -2118,7 +2185,11 @@
 
     // três situações distintas, cada uma com o seu porquê
     var explica;
-    if (arquivoPronto) {
+    if (ehAndroid()) {
+      explica = "“Abrir no calendário” chama o app de agenda do Android com " + oQue +
+        " já preenchido — você confere e salva. Se preferir o arquivo, ou se quiser " +
+        "todas as datas de uma vez, use o download.";
+    } else if (arquivoPronto) {
       explica = "“Abrir no calendário” entrega o evento com " + oQue +
         " ao app de agenda do aparelho — você confere e salva. No iPhone o Calendário abre na hora; " +
         "no Android o arquivo passa pela lista de downloads e o toque nele abre a agenda.";
