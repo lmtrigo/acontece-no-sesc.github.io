@@ -54,21 +54,37 @@ jobs:
           python embutir.py --com-descricao
           python publicar.py --base "/${GITHUB_REPOSITORY#*/}/"
 
-      - name: Guardar os dados no repositório
-        run: |
-          git config user.name "robo da agenda"
-          git config user.email "actions@github.com"
-          git add dados/eventos.json prototipo.html
-          if git diff --staged --quiet; then
-            echo "Nada mudou desde a última coleta."
-          else
-            git commit -m "dados: coleta de $(date -u +%d/%m/%Y)"
-            git push
-          fi
-
+      # Publicar vem ANTES de guardar no git. O site sai do artefato abaixo;
+      # o commit é só contabilidade, e não pode derrubar uma hora de coleta.
       - uses: actions/upload-pages-artifact@v3
         with:
           path: web
+
+      - name: Guardar os dados no repositório
+        # Um re-run parte do commit original, e a main pode ter andado desde
+        # então — foi assim que o push falhou e levou o job junto. Aqui os
+        # dois arquivos gerados são reaplicados sobre a main mais recente, o
+        # que também evita conflito: a saída do robô sempre vence.
+        continue-on-error: true
+        run: |
+          git config user.name "robo da agenda"
+          git config user.email "actions@github.com"
+
+          tmp=$(mktemp -d)
+          cp dados/eventos.json prototipo.html "$tmp/"
+
+          git fetch origin main
+          git checkout -B main origin/main
+          cp "$tmp/eventos.json" dados/eventos.json
+          cp "$tmp/prototipo.html" prototipo.html
+
+          git add dados/eventos.json prototipo.html
+          if git diff --staged --quiet; then
+            echo "Nada mudou desde a última coleta."
+            exit 0
+          fi
+          git commit -m "dados: coleta de $(date -u +%d/%m/%Y)"
+          git push origin HEAD:main || echo "::warning::push recusado; o site foi publicado mesmo assim"
 
   publicar:
     needs: coletar
