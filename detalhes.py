@@ -39,6 +39,8 @@ import urllib.error
 import urllib.request
 from datetime import datetime
 
+import coletor          # o carimbo de hora sai daqui, em horário de Brasília
+
 BILHETERIA = "https://portal.sescsp.org.br/bilheteria/atividade.action?idAtividade=%s"
 PAUSA = 0.25
 TIMEOUT = 30
