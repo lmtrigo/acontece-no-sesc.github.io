@@ -443,6 +443,122 @@
   footer p { margin: 0 0 var(--s3); }
 
   @media (prefers-reduced-motion: reduce) { * { transition-duration: .01ms !important; } }
+
+  /* ==========================================================================
+     COMPUTADOR
+     --------------------------------------------------------------------------
+     O app nasceu para o celular: uma coluna de 460px, menu em gaveta, folha de
+     detalhe subindo do rodapé. Numa tela larga isso vira uma tira no meio de
+     um deserto cinza.
+
+     A adaptação é só de layout — nenhum componente novo, nenhum caminho de
+     código separado. O que muda:
+
+       · a gaveta deixa de ser gaveta. Vira coluna fixa à esquerda, sempre
+         aberta: navegação e filtros passam a ficar à vista, que é a vantagem
+         real de ter largura. Com ela permanente, as abas do topo viram
+         repetição e saem.
+       · os trilhos deixam de rolar na horizontal. Arrastar cartão com mouse é
+         ruim; vira grade de duas fileiras, e "ver todos" continua levando o
+         resto para a agenda.
+       · a lista densa ganha duas colunas a partir de 1240px, com a faixa do
+         dia atravessando as duas — a divisão por dia é o esqueleto da agenda
+         e não podia se perder.
+       · a folha de detalhe encosta à direita em vez de subir do rodapé: numa
+         tela larga, subir do fundo esconde o que a pessoa estava lendo.
+       · a busca fica sempre visível: não há por que escondê-la atrás de um
+         botão quando sobra espaço.
+
+     A condição não é só largura. Largura sozinha erra: um celular grande
+     deitado tem 932px e ganharia a coluna fixa de 286px numa tela de bolso.
+     O que separa computador de celular é o ponteiro — `hover: hover` e
+     `pointer: fine` só valem para mouse ou trackpad. Um iPad com teclado e
+     trackpad entra (e deve entrar); um telefone virado, não.
+
+     O celular não é tocado por nada disto — tudo vive dentro dos media
+     queries daqui para baixo.
+     ========================================================================== */
+  @media (min-width: 900px) and (hover: hover) and (pointer: fine) {
+    body { background: var(--paper-dim); }
+
+    /* a gaveta vira coluna: sem transform, sem véu, sempre aberta */
+    .drawer { transform: none; width: 286px; max-width: 286px; box-shadow: none; }
+    .drawer-scroll { padding-top: var(--s8); }
+    #menuBtn { display: none; }
+    .scrim { left: 286px; }
+
+    .app {
+      max-width: none; margin: 0 0 0 286px; border-left: 0;
+      border-right: 0; min-height: 100vh;
+    }
+    /* o conteúdo não acompanha a tela até o infinito: linha longa demais
+       cansa tanto quanto lista longa demais */
+    .app > .bar, .app > .notice, .app > .stale, .app > .searchrow,
+    .app > .ctxbar, .app > main, .app > footer { max-width: 1180px; margin-left: auto; margin-right: auto; }
+    .app > footer { margin-left: auto; margin-right: auto; max-width: calc(1180px - var(--s5) * 2); }
+
+    /* com a coluna à esquerda, as abas do topo seriam o mesmo menu duas vezes */
+    .mainnav { display: none; }
+    .daybar { top: 57px; }
+
+    .bar { padding-left: var(--s7); padding-right: var(--s7); }
+    #searchBtn { display: none; }
+    .searchrow, .searchrow[hidden] { display: block; padding: var(--s4) var(--s7) 0; }
+    .searchrow input { max-width: 420px; }
+    .ctxbar { padding-left: var(--s7); padding-right: var(--s7); }
+    .greet { padding-left: var(--s7); padding-right: var(--s7); }
+
+    /* trilhos: grade em vez de carrossel */
+    .railhead, .railnota { margin-left: var(--s7); margin-right: var(--s7); }
+    .track {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--s4);
+      overflow: visible; padding: 0 var(--s7) var(--s2);
+    }
+    .tcard { flex: none; min-height: 138px; }
+    .tcard:nth-child(n+5) { display: none; }   /* duas fileiras; o resto em "ver todos" */
+
+    .weekhead, .dica, .chips, .trilhobar { padding-left: var(--s7); padding-right: var(--s7); }
+    .wday { min-height: 74px; }
+    .wday .n { font-size: 19px; }
+    .morebtn { margin-left: var(--s7); margin-right: var(--s7); width: calc(100% - var(--s7) * 2); }
+    .addbtn { margin-left: var(--s7); margin-right: var(--s7); width: calc(100% - var(--s7) * 2); }
+    .daybar { padding-left: var(--s7); padding-right: var(--s7); }
+    .ev { padding-left: var(--s7); padding-right: var(--s7); }
+    .ev:hover { background: var(--wash); }
+    .tcard:hover { border-color: var(--ink-3); }
+
+    /* folha de detalhe encostada à direita */
+    .sheet {
+      left: auto; right: 0; top: 0; bottom: 0; margin: 0;
+      width: 46vw; max-width: 560px; max-height: none;
+      border-top: 0; border-left: 2px solid var(--ink);
+      transform: translateX(101%);
+    }
+    .sheet.on { transform: none; }
+    .closebtn { top: var(--s5); right: var(--s5); }
+  }
+
+  /* a escada dos trilhos: quanto mais largura, mais cartão por fileira —
+     sempre em duas fileiras, para o trilho não virar parede */
+  @media (min-width: 1100px) and (hover: hover) and (pointer: fine) {
+    .track { grid-template-columns: repeat(3, 1fr); }
+    .tcard:nth-child(n+5) { display: flex; }
+    .tcard:nth-child(n+7) { display: none; }
+  }
+
+  /* duas colunas na lista densa: a partir daqui a linha ficaria larga demais */
+  @media (min-width: 1240px) and (hover: hover) and (pointer: fine) {
+    .track { grid-template-columns: repeat(4, 1fr); }
+    .tcard:nth-child(n+7) { display: flex; }
+    .tcard:nth-child(n+9) { display: none; }
+
+    #agendaList, #favList {
+      display: grid; grid-template-columns: 1fr 1fr;
+      column-gap: var(--s7); align-items: start;
+    }
+    #agendaList > .daybar, #favList > .daybar { grid-column: 1 / -1; }
+    #agendaList > .blank, #favList > .blank { grid-column: 1 / -1; }
+  }
 </style>
 
 <div class="app">
@@ -2554,6 +2670,7 @@
   }
   function abrirDrawer() {
     var d = $("#drawer");
+    if (MQ_COMPUTADOR.matches) return;    // já está à vista, é coluna fixa
     if (d.classList.contains("on")) return;
     d.classList.add("on"); d.setAttribute("aria-hidden", "false");
     $("#scrim").classList.add("on"); $("#menuBtn").setAttribute("aria-expanded", "true"); travar();
@@ -2569,6 +2686,28 @@
     if (!voltando && histOK) { try { history.back(); } catch (e) {} }
   }
   function escH(e) { if (e.key !== "Escape") return; if (!$("#sheet").hidden) fecharSheet(); else fecharDrawer(); }
+
+  /* ---------------- computador ----------------
+     Na tela larga a gaveta deixa de ser gaveta: fica sempre visível, como
+     coluna. O CSS já cuida do desenho; o que o JS precisa acertar é o que o
+     CSS não alcança — uma coluna à vista não pode continuar marcada como
+     `aria-hidden`, e o véu e a trava de rolagem não fazem sentido nela. */
+  var MQ_COMPUTADOR = window.matchMedia("(min-width: 900px) and (hover: hover) and (pointer: fine)");
+  function ajustarModo() {
+    var d = $("#drawer");
+    if (MQ_COMPUTADOR.matches) {
+      d.classList.remove("on");
+      d.setAttribute("aria-hidden", "false");
+      $("#menuBtn").setAttribute("aria-expanded", "true");
+      $("#scrim").classList.remove("on");
+      travar();
+    } else if (!d.classList.contains("on")) {
+      d.setAttribute("aria-hidden", "true");
+      $("#menuBtn").setAttribute("aria-expanded", "false");
+    }
+  }
+  if (MQ_COMPUTADOR.addEventListener) MQ_COMPUTADOR.addEventListener("change", ajustarModo);
+  else if (MQ_COMPUTADOR.addListener) MQ_COMPUTADOR.addListener(ajustarModo);
 
   /* ---------------- histórico e gesto de voltar ----------------
      Sem isto o gesto de voltar do celular sai do app, mesmo com uma folha
@@ -2794,6 +2933,7 @@
   $("#impFile").addEventListener("change", function (e) { if (e.target.files && e.target.files[0]) importar(e.target.files[0]); e.target.value = ""; });
 
   notaPersist();
+  ajustarModo();
   irPara("home");
   render();
 

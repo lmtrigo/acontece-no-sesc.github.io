@@ -344,5 +344,42 @@ Favoritos também é separado por dia, como a agenda, com uma diferença: cada
 favorito aparece uma vez só, na sua próxima data. Repetir uma temporada de dois
 meses encheria a aba com o mesmo título.
 
+### 8.1 Computador
+
+O app nasceu para o celular — uma coluna de 460px — e numa tela larga isso vira
+uma tira no meio de um deserto. A versão para computador é **só layout**: media
+queries no fim do CSS, nenhum componente novo, nenhum caminho de código
+separado. O celular não é tocado.
+
+A escada de larguras:
+
+| a partir de | o que muda |
+|---|---|
+| 900px | a gaveta vira coluna fixa à esquerda (286px), as abas do topo somem, a busca fica sempre visível, os trilhos viram grade de 2 colunas |
+| 1100px | trilhos com 3 colunas |
+| 1240px | trilhos com 4 colunas; a lista densa (agenda e favoritos) ganha **duas colunas**, com a faixa do dia atravessando as duas |
+
+Decisões que valem registro:
+
+- **A gaveta deixa de ser gaveta.** Com ela permanente, as abas do topo viram o
+  mesmo menu duas vezes e saem (`.mainnav { display: none }`). Isso muda o
+  grude da faixa de dia, que passa de 99px para 57px.
+- **Trilho vira grade, não carrossel.** Arrastar cartão com mouse é ruim. São
+  sempre **duas fileiras** — o resto continua atrás de "ver todos", senão cada
+  trilho viraria parede.
+- **A folha de detalhe encosta à direita** em vez de subir do rodapé: numa tela
+  larga, subir do fundo esconde o que a pessoa estava lendo. O véu começa em
+  286px, então a coluna da esquerda continua clicável com a folha aberta.
+- **O conteúdo para de crescer em 1180px.** Linha longa demais cansa tanto
+  quanto lista longa demais.
+
+O único JS envolvido é `ajustarModo()`, atrelado a um `matchMedia`: uma coluna à
+vista não pode continuar marcada como `aria-hidden`, e o véu e a trava de
+rolagem não fazem sentido nela.
+
+**Armadilha ao testar:** o site publicado tem service worker, e ele guarda a
+casca. Mudou o CSS e a tela não mudou? O SW está servindo o `index.html`
+antigo — é preciso desregistrar e limpar o cache, não basta recarregar.
+
 O design system está no topo do CSS de `prototipo.html`, em tokens. Trocar os
 valores desse bloco reveste o app inteiro sem tocar em componente.
