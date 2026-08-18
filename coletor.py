@@ -35,7 +35,17 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import date, datetime, timedelta
+from datetime import datetime, timedelta, timezone
+
+# O robô roda em UTC (GitHub Actions) e quem lê está em São Paulo. Sem fixar o
+# fuso, a hora da coleta aparecia três horas adiantada no app e uma execução
+# de madrugada carimbava o dia seguinte. O Brasil não usa mais horário de
+# verão desde 2019, então o desvio é constante.
+FUSO_BR = timezone(timedelta(hours=-3))
+
+
+def agora_br():
+    return datetime.now(FUSO_BR)
 
 BASE = "https://www.sescsp.org.br"
 API_UNIDADES = BASE + "/wp-json/wp/v1/unidades-atividades"
@@ -303,12 +313,15 @@ def coletar(de, ate, regioes):
         lista = [e for e in lista if e["reg"] in regioes]
         print("Filtro de região %s: %d -> %d eventos" % (regioes, antes, len(lista)))
 
-    # descartados: cancelados não interessam a quem está montando o programa,
-    # e "Outros" é o balde do que não tem categoria — polui a navegação
+    # Descartado agora só o cancelado. "Outros" é o balde do que o portal não
+    # categorizou — jogá-lo fora tirava da agenda atividades que existem de
+    # verdade, e a única coisa que faltava nelas era o rótulo.
     antes = len(lista)
     lista = [e for e in lista if not e["cancelado"]]
-    lista = [e for e in lista if e["cat"] not in ("Outros", "", None)]
-    print("Descartados %d cancelados/sem categoria" % (antes - len(lista)))
+    print("Descartados %d cancelados" % (antes - len(lista)))
+    sem_cat = sum(1 for e in lista if e["cat"] == "Outros")
+    if sem_cat:
+        print("Mantidos %d eventos sem categoria (entram como \"Outros\")" % sem_cat)
 
     for e in lista:
         e["dias"].sort()
@@ -317,6 +330,62 @@ def coletar(de, ate, regioes):
 
     lista.sort(key=lambda e: (e["dias"][0] if e["dias"] else "9999", e["tit"]))
     return lista, unidades
+
+
+def carimbar_estreia(lista, caminho_anterior, hoje):
+    """Marca em `visto` o dia em que cada evento apareceu pela primeira vez.
+
+    Novidade só se sabe comparando com a coleta anterior, e o app não guarda
+    histórico — então o carimbo viaja dentro do próprio arquivo: quem já
+    estava lá conserva a data antiga, quem não estava recebe a de hoje.
+
+    A primeira coleta com rastreio não carimba ninguém: ela só estabelece a
+    linha de base e grava `rastreioDesde`. Sem isso o primeiro dia mentiria
+    duas vezes — o catálogo inteiro apareceria como novo, e uma mudança de
+    regra nossa (a entrada dos eventos "Outros", que a coleta antiga jogava
+    fora) entraria como se o Sesc tivesse acabado de publicar 359 atividades.
+
+    Quem já estava na base e não tem carimbo fica **sem** carimbo: é anterior
+    ao rastreio e não dá para inventar uma data.
+
+    Ressalvas conhecidas: um evento que suma da listagem por um dia e volte
+    depois é carimbado de novo, e a janela que anda um dia por vez carimba a
+    borda (medido: 3 eventos em 5 dias). Preferimos isso a guardar um
+    histórico de ids que cresceria para sempre.
+
+    Devolve a data em que o rastreio começou, para gravar no arquivo.
+    """
+    try:
+        with open(caminho_anterior, encoding="utf-8") as f:
+            anterior = json.load(f)
+    except (OSError, ValueError):
+        anterior = None
+
+    if not anterior:
+        print("Sem coleta anterior: linha de base, nenhuma novidade marcada")
+        return hoje
+
+    desde = anterior.get("rastreioDesde")
+    if not desde:
+        print("Primeira coleta com rastreio: linha de base com %d eventos, "
+              "nenhuma novidade marcada" % len(anterior.get("eventos") or []))
+        return hoje
+
+    antigos = {}
+    for e in anterior.get("eventos") or []:
+        if e.get("id") is not None:
+            antigos[e["id"]] = (e.get("visto") or "")[:10]
+
+    novos = 0
+    for e in lista:
+        if e["id"] not in antigos:
+            e["visto"] = hoje
+            novos += 1
+        elif antigos[e["id"]]:
+            e["visto"] = antigos[e["id"]]
+        # já estava lá e não tem carimbo: é anterior ao rastreio
+    print("Novidades desta coleta: %d eventos que não estavam na anterior" % novos)
+    return desde
 
 
 def main():
@@ -329,17 +398,21 @@ def main():
     p.add_argument("--saida", default=os.path.join("dados", "eventos.json"))
     args = p.parse_args()
 
-    de = datetime.strptime(args.de, "%Y-%m-%d").date() if args.de else date.today()
+    hoje = agora_br().date()
+    de = datetime.strptime(args.de, "%Y-%m-%d").date() if args.de else hoje
     ate = (datetime.strptime(args.ate, "%Y-%m-%d").date() if args.ate
            else de + timedelta(days=args.dias - 1))
 
     print("Coletando de %s a %s" % (de, ate))
     inicio = time.time()
     eventos, unidades = coletar(de, ate, set(args.regioes))
+    rastreio = carimbar_estreia(eventos, args.saida, hoje.isoformat())
 
     saida = {
         "fonte": "Sesc São Paulo — portal público (wp-json)",
-        "geradoEm": datetime.now().isoformat(timespec="seconds"),
+        "geradoEm": agora_br().isoformat(timespec="seconds"),
+        # desde quando dá para dizer o que é novidade (ver carimbar_estreia)
+        "rastreioDesde": rastreio,
         "janela": {"de": de.isoformat(), "ate": ate.isoformat()},
         "unidades": [{"nome": k, "regiao": v} for k, v in sorted(unidades.items())],
         "categorias": sorted({e["cat"] for e in eventos}),

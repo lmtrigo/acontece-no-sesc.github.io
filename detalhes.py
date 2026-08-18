@@ -566,7 +566,7 @@ def main():
                   % (i, len(quer_html), n_desc, n_insc, n_sorteio))
         time.sleep(PAUSA)
 
-    d["enriquecidoEm"] = datetime.now().isoformat(timespec="seconds")
+    d["enriquecidoEm"] = coletor.agora_br().isoformat(timespec="seconds")
     with open(args.dados, "w", encoding="utf-8") as f:
         json.dump(d, f, ensure_ascii=False, separators=(",", ":"))
 

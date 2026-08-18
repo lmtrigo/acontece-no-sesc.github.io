@@ -17,8 +17,8 @@ import argparse
 import json
 import os
 import re
-from datetime import date
 
+import coletor
 import regras
 
 MARCADOR = re.compile(
@@ -34,7 +34,10 @@ CAMPOS = ("id", "tit", "sub", "uni", "reg", "cat", "subcat", "publico",
           # segunda passada (detalhes.py)
           "precos", "sessoes", "vendaOnline", "vendaPresencial", "vendaOnlineFim",
           "urlCompra", "maxPorPessoa", "classificacao", "endereco", "geo", "continuo", "icsd",
-          "inscricao", "sorteados")
+          "inscricao", "sorteados",
+          # dia em que o evento apareceu pela primeira vez na base: é o que
+          # sustenta o trilho de novidades
+          "visto")
 # `desc` fica de fora de propósito: 2,5 mil textos pesariam no download de
 # todo mundo para serem lidos um de cada vez. O app busca por evento, em
 # dados/desc/<id>.json, e descarta ao fechar.
@@ -94,7 +97,7 @@ def main():
     sorteaveis = regras.indice_sorteios(eventos)
 
     if not args.sem_retencao:
-        hoje = max(date.today().isoformat(), d["janela"]["de"])
+        hoje = max(coletor.agora_br().date().isoformat(), d["janela"]["de"])
         eventos = regras.aplicar(eventos, hoje, args.horizonte)
 
     # Eventos de projeto são temporadas e programas recorrentes que repetem a

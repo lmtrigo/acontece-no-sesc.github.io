@@ -226,6 +226,7 @@
   .ev .txt .l2 .free { color: var(--pos); font-weight: 700; }
   .ev .txt .l2 .out { color: var(--neg); font-weight: 700; }
   .ev .txt .l2 .hot { color: var(--warn); font-weight: 700; }
+  .ev .txt .l3 { color: var(--ink-3); font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .01em; }
   .ev .fav { border: 0; background: none; cursor: pointer; color: var(--rule); padding: 0; display: grid; place-items: start center; padding-top: 2px; }
   .ev .fav[aria-pressed="true"] { color: var(--cat-shows); }
   .ev .fav[aria-pressed="true"] svg { fill: currentColor; }
@@ -584,6 +585,20 @@
   var REGIOES = [{k:"",nome:"Todas"},{k:"capital",nome:"Capital"},{k:"interior",nome:"Interior"},{k:"litoral",nome:"Litoral"}];
 
   /* ==================================================================
+     Fuso
+     ------------------------------------------------------------------
+     "Hoje" e "agora" no app são sempre o horário de Brasília. Os dados vêm
+     de um robô que roda em UTC e a programação é de São Paulo: usar o
+     relógio do aparelho fazia a agenda virar o dia na hora errada para quem
+     está fora do fuso, e mostrava a coleta três horas adiantada.
+     O Brasil não usa mais horário de verão desde 2019 — o desvio é fixo.
+     ================================================================== */
+  var FUSO_BR = -180;                     // minutos em relação a UTC
+  function emBR(d) { return new Date(d.getTime() + (d.getTimezoneOffset() + FUSO_BR) * 60000); }
+  function agoraBR() { return emBR(new Date()); }
+  function p2(n) { return String(n).padStart(2, "0"); }
+
+  /* ==================================================================
      Fonte dos dados
      ------------------------------------------------------------------
      O arquivo já vem com um instantâneo embutido, para abrir instantâneo
@@ -630,12 +645,12 @@
       .filter(function (v, i, a) { return v && a.indexOf(v) === i; })
       .sort(function (a, b) { return a.localeCompare(b, "pt-BR"); });
 
-    var d = new Date();
-    var s = d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+    var d = agoraBR();
+    var s = d.getFullYear() + "-" + p2(d.getMonth() + 1) + "-" + p2(d.getDate());
     var j = DADOS.janela || {};
     HOJE = (j.de && s < j.de) ? j.de : (j.ate && s > j.ate) ? j.ate : s;
-    AGORA = HOJE + "T" + String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0");
-    COLETA = (DADOS.geradoEm || "").slice(0, 16);
+    AGORA = HOJE + "T" + p2(d.getHours()) + ":" + p2(d.getMinutes());
+    COLETA = DADOS.geradoEm || "";
 
     MES_ATUAL = HOJE.slice(0, 7);
     var a = +HOJE.slice(0, 4), m = +HOJE.slice(5, 7) + 1;
@@ -680,14 +695,30 @@
      O app é um instantâneo: os dados foram coletados por um script e ficam
      embutidos na página. Não há consulta ao Sesc em tempo real — e não dá
      para haver a partir do navegador, porque o portal não libera CORS. */
+  var TEM_FUSO = /[zZ]$|[+-]\d{2}:?\d{2}$/;
+  /** A coleta como relógio de parede de Brasília, "AAAA-MM-DDTHH:MM". */
+  function coletaBR() {
+    if (!COLETA) return null;
+    // carimbo antigo, sem fuso: já era a hora local de quem coletou
+    if (!TEM_FUSO.test(COLETA)) return COLETA.slice(0, 16);
+    var d = new Date(COLETA);
+    if (isNaN(d.getTime())) return COLETA.slice(0, 16);
+    var b = emBR(d);
+    return b.getFullYear() + "-" + p2(b.getMonth() + 1) + "-" + p2(b.getDate()) +
+           "T" + p2(b.getHours()) + ":" + p2(b.getMinutes());
+  }
   function coletaFmt() {
-    if (!COLETA) return "—";
-    var p = COLETA.split("T");
+    var c = coletaBR();
+    if (!c) return "—";
+    var p = c.split("T");
     return p[0].split("-").reverse().join("/") + (p[1] ? " às " + p[1] : "");
   }
+  function coletaDia() { var c = coletaBR(); return c ? c.slice(0, 10).split("-").reverse().join("/") : "—"; }
   function diasDesdeColeta() {
     if (!COLETA) return null;
-    return Math.floor((new Date() - new Date(COLETA)) / 86400000);
+    var d = new Date(COLETA);
+    if (isNaN(d.getTime())) return null;
+    return Math.floor((new Date() - d) / 86400000);
   }
 
   /** Troca a base de dados em memória e redesenha tudo. */
@@ -742,7 +773,7 @@
     h.appendChild(pill);
     box.appendChild(h);
     var bd = el("div", "body");
-    bd.appendChild(el("p", null, coletaFmt()));
+    bd.appendChild(el("p", null, coletaFmt() + " (horário de Brasília)"));
     bd.appendChild(el("p", null, DADOS.eventos.length.toLocaleString("pt-BR") + " eventos · janela de " +
       (DADOS.janela.de || "").split("-").reverse().join("/") + " a " +
       (DADOS.janela.ate || "").split("-").reverse().join("/")));
@@ -954,14 +985,62 @@
       .sort(function (a, b) { return (horaNoDia(a, dia) || "99").localeCompare(horaNoDia(b, dia) || "99"); });
   }
 
+  /* A agenda mostra uma data e cala a outra: quem olha pelo dia do evento
+     precisa saber quando dá para se inscrever, e quem olha pela abertura da
+     inscrição precisa saber quando a coisa acontece. A linha carrega sempre
+     a que está faltando. */
+  function notaInscricao(ev) {
+    var i = ev.inscricao || {};
+    if (i.inscricao) {
+      var est = estadoInscricao(ev);
+      var f = fimInscricao(ev);
+      var ate = f ? " até " + curta(f.dia) + (f.presumido ? " (estimado)" : "") : "";
+      if (est === "futura") return "inscrição abre " + dh(i.inscricao);
+      if (est === "aberta") return "inscrição aberta" + ate;
+      if (est === "encerrada") return "inscrição encerrada" + (f ? " em " + curta(f.dia) : "");
+      return "inscrições a partir de " + dh(i.inscricao);
+    }
+    var v = vendaAbre(ev);
+    if (v) return "venda abre " + dh(v);
+    if (vendaEmCurso(ev)) return "venda aberta desde " + dh(ev.vendaOnline || ev.vendaPresencial);
+    if (i.sorteio) return "sorteio em " + curta(i.sorteio.slice(0, 10));
+    if (ev.sorteados) return "resultado do sorteio já publicado";
+    // A maioria das atividades não publica data de entrada — muitas têm só um
+    // parágrafo em prosa, que a folha de detalhe mostra por inteiro. Repetir
+    // "sem data" em quase toda linha viraria ruído: aqui fica em branco.
+    return "";
+  }
+  function notaEvento(ev) {
+    var ds = ev.dias || [];
+    if (!ds.length) return "sem data de realização publicada";
+    if (ev.continuo && ds.length > 1) return "viagem de " + curta(ds[0]) + " a " + curta(ds[ds.length - 1]);
+    var prox = ds.filter(function (d) { return d >= HOJE; })[0] || ds[0];
+    var h = horaNoDia(ev, prox);
+    var txt = "acontece " + curta(prox) + (h ? " às " + h : "");
+    if (ds.length > 1) txt += " · " + ds.length + " datas até " + curta(ds[ds.length - 1]);
+    return txt;
+  }
+  /** A informação complementar à régua em uso. */
+  function notaCruzada(ev, modo) {
+    return modo === "inscricao" ? notaEvento(ev) : notaInscricao(ev);
+  }
+  /** A hora que a régua mostra: a da sessão, ou a da abertura da inscrição. */
+  function horaBase(ev, dia, modo) {
+    if (modo === "inscricao") return (dataDeEntrada(ev) || "").slice(11, 16);
+    return horaNoDia(ev, dia);
+  }
+
   /* ---------------- linha densa ---------------- */
-  function linha(ev, dia) {
+  function linha(ev, dia, modo) {
+    modo = modo || state.baseData;
     var row = el("div", "ev");
     row.style.setProperty("--c", corDe(ev.cat));
     row.setAttribute("role", "button"); row.tabIndex = 0;
 
     var h = el("div", "h");
-    var hora = horaNoDia(ev, dia);
+    // A goteira acompanha a régua: pela data do evento mostra a hora da
+    // sessão; pela data da inscrição, a hora em que a inscrição abre.
+    var hora = horaBase(ev, dia, modo);
     h.appendChild(document.createTextNode(hora || "—"));
     // passeio de vários dias: dizer em que dia da viagem estamos
     var pos = ev.continuo && dia ? (ev.dias || []).indexOf(dia) : -1;
@@ -983,6 +1062,8 @@
     else if (typeof ev.ingressosWeb === "number" && ev.ingressosWeb > 0 && ev.ingressosWeb < 30) l2.appendChild(el("span", "hot", "últimos"));
     if (sorteioAberto(ev)) l2.appendChild(el("span", "hot", "sorteio"));
     t.appendChild(l2);
+    var cruz = notaCruzada(ev, modo);
+    if (cruz) t.appendChild(el("div", "l3", cruz));
     row.appendChild(t);
 
     var f = el("button", "fav");
@@ -1018,7 +1099,11 @@
     if (rot) {
       var w = el("div", "when u-data" + (rot.forte ? " forte" : ""), rot.t);
       c.appendChild(w);
-      if (prox) c.appendChild(el("div", "when u-data", "passeio " + curta(prox)));
+      // "passeio" só vale para o que é viagem; num show a palavra mentia — e
+      // o rótulo de inscrição é usado por vários trilhos, não só o turismo
+      if (prox) c.appendChild(el("div", "when u-data",
+        (ev.cat === "Turismo Social" || ev.continuo ? "passeio " : "") + curta(prox) +
+        (ev.cat === "Turismo Social" || ev.continuo || !horaNoDia(ev, prox) ? "" : " · " + horaNoDia(ev, prox))));
     } else {
       c.appendChild(el("div", "when u-data", prox ? curta(prox) + (horaNoDia(ev, prox) ? " · " + horaNoDia(ev, prox) : "") : ""));
     }
@@ -1077,6 +1162,33 @@
     return true;
   }
 
+  /* ---------------- novidades ----------------
+     Quem entrou na programação depois da última vez. O carimbo vem do
+     coletor (`visto`), que compara cada coleta com a anterior — o navegador
+     não teria como saber sozinho, porque só enxerga a base de hoje.
+     Base antiga, sem carimbo: o trilho simplesmente não aparece. */
+  var DIAS_NOVIDADE = 7;
+  function ehNovidade(ev) {
+    var v = ev.visto;
+    return !!v && v <= HOJE && v >= addDias(HOJE, -DIAS_NOVIDADE);
+  }
+  function rotuloNovidade(ev) {
+    if (!ev.visto) return null;
+    var q = pISO(HOJE) - pISO(ev.visto);
+    var d = Math.round(q / 86400000);
+    return { t: d <= 0 ? "entrou hoje" : d === 1 ? "entrou ontem" : "entrou há " + d + " dias",
+             forte: true };
+  }
+
+  /** Segunda a domingo da semana em que HOJE cai. */
+  function semanaSegADom(ref) {
+    var w = pISO(ref).getDay();                 // 0 = domingo
+    var seg = addDias(ref, w === 0 ? -6 : 1 - w);
+    var out = [];
+    for (var i = 0; i < 7; i++) out.push(addDias(seg, i));
+    return out;
+  }
+
   function proximoFimDeSemana() {
     var d = pISO(HOJE), out = [];
     for (var i = 0; i < 8; i++) {
@@ -1110,13 +1222,50 @@
     var tCrianca = function (e) { return ehInfantil(e) && e.gratis; };
     var comVagaT = function (f) { return function (e) { return acessivel(e) && f(e); }; };
 
+    // A semana inteira, de segunda a domingo. A contagem embaixo do título
+    // cobre os sete dias — é a leitura da semana; já os cartões começam em
+    // hoje, porque segunda-feira não dá mais para assistir na quinta.
+    var semana = semanaSegADom(HOJE);
+    var contagem = semana.map(function (d) {
+      return DOW[pISO(d).getDay()] + " " + noDia(b, d).length;
+    }).join(" · ");
+    var tSemana = function (e) {
+      return (e.dias || []).some(function (d) { return semana.indexOf(d) > -1; });
+    };
+    var tSemanaAdiante = function (e) {
+      return (e.dias || []).some(function (d) { return d >= HOJE && semana.indexOf(d) > -1; });
+    };
+    var diaNaSemana = function (e) {
+      return (e.dias || []).filter(function (d) { return d >= HOJE && semana.indexOf(d) > -1; })[0] ||
+             (e.dias || []).filter(function (d) { return semana.indexOf(d) > -1; })[0];
+    };
+    var temNovidade = EVENTOS.some(function (e) { return !!e.visto; });
+
     return [
       { id: "turismo", titulo: "Turismo Social",
         itens: turismo.filter(acessivel), rotulo: rotuloTurismo, sempre: true,
         teste: function (e) { return e.cat === "Turismo Social"; } },
+      { id: "novos", titulo: "Novidades na programação",
+        nota: "entraram na base nos últimos " + DIAS_NOVIDADE + " dias",
+        itens: temNovidade ? comVaga.filter(ehNovidade).sort(function (x, y) {
+          return (y.visto || "").localeCompare(x.visto || "")
+              || ((x.dias || [])[0] || "9999").localeCompare((y.dias || [])[0] || "9999");
+        }) : [],
+        teste: comVagaT(ehNovidade), rotulo: rotuloNovidade },
       { id: "hoje", titulo: "Hoje e amanhã",
         diaDe: function (e) { return (e.dias || []).filter(function (d) { return d === HOJE || d === addDias(HOJE, 1); })[0]; },
         itens: comVaga.filter(tHoje), teste: comVagaT(tHoje) },
+      { id: "semana", titulo: "Agenda da semana",
+        nota: "de " + curta(semana[0]) + " a " + curta(semana[6]) + " · " + contagem,
+        diaDe: diaNaSemana,
+        itens: comVaga.filter(tSemanaAdiante).sort(function (x, y) {
+          var dx = diaNaSemana(x) || "9999", dy = diaNaSemana(y) || "9999";
+          return dx.localeCompare(dy)
+              || (horaNoDia(x, dx) || "99").localeCompare(horaNoDia(y, dy) || "99");
+        }),
+        // na agenda o recorte fica preso aos sete dias: sem isso uma
+        // temporada longa reapareceria em todas as datas até dezembro
+        dias: semana, teste: comVagaT(tSemana) },
       { id: "venda", titulo: "Abre a venda em breve",
         nota: "com data confirmada pela bilheteria",
         itens: comVaga.filter(vendaAbre).sort(function (a, b2) { return vendaAbre(a).localeCompare(vendaAbre(b2)); }),
@@ -1147,7 +1296,7 @@
 
   /** Leva o recorte do trilho para a Agenda, para a lista bater com o card. */
   function aplicarTrilho(t) {
-    state.trilho = { id: t.id, nome: t.titulo, teste: t.teste };
+    state.trilho = { id: t.id, nome: t.titulo, teste: t.teste, dias: t.dias || null };
     state.dia = null;
     state.chip = "";
     state.lote = LOTE;
@@ -1201,7 +1350,8 @@
   /* ---------------- agenda ---------------- */
   var CHIPS = [
     { k: "", nome: "Tudo" },
-    { k: "novo", nome: "Novo" },
+    { k: "novidade", nome: "Novidades" },
+    { k: "novo", nome: "Abre este mês" },
     { k: "gratis", nome: "Grátis" },
     { k: "vaga", nome: "Com vaga" },
     { k: "inscricao", nome: "Inscrição aberta" },
@@ -1233,7 +1383,10 @@
     }
 
     var c = $("#chips"); c.innerHTML = "";
-    CHIPS.forEach(function (x) {
+    // base antiga, sem o carimbo `visto`: o chip de novidades não teria o que
+    // filtrar, então nem aparece
+    var temNovidade = EVENTOS.some(function (e) { return !!e.visto; });
+    CHIPS.filter(function (x) { return x.k !== "novidade" || temNovidade; }).forEach(function (x) {
       var b = el("button", "chip", x.nome);
       b.type = "button";
       b.setAttribute("aria-pressed", state.chip === x.k ? "true" : "false");
@@ -1243,6 +1396,7 @@
   }
   function aplicaChip(lista, dia) {
     if (state.trilho && state.trilho.teste) lista = lista.filter(state.trilho.teste);
+    if (state.chip === "novidade") return lista.filter(ehNovidade);
     if (state.chip === "novo") return lista.filter(inscricaoNaJanela);
     if (state.chip === "gratis") return lista.filter(function (e) { return e.gratis; });
     if (state.chip === "vaga") return lista.filter(function (e) { return !e.esgotado; });
@@ -1260,12 +1414,20 @@
       var d = dataDeEntrada(ev);
       return d ? [d.slice(0, 10)] : [];
     }
-    return ev.dias || [];
+    var dias = ev.dias || [];
+    // recorte com faixa própria (a semana, por exemplo): fora dela o evento
+    // não é listado, senão uma temporada longa apareceria em todo dia futuro
+    if (state.trilho && state.trilho.dias) {
+      var faixa = state.trilho.dias;
+      dias = dias.filter(function (d) { return faixa.indexOf(d) > -1; });
+    }
+    return dias;
   }
   function noDiaBase(lista, dia) {
     return lista.filter(function (e) { return diasPara(e).indexOf(dia) > -1; })
       .sort(function (a, b2) {
-        return (horaNoDia(a, dia) || "99").localeCompare(horaNoDia(b2, dia) || "99");
+        return (horaBase(a, dia, state.baseData) || "99")
+          .localeCompare(horaBase(b2, dia, state.baseData) || "99");
       });
   }
 
@@ -1273,7 +1435,10 @@
     var b = base();
     if (!state.semana) state.semana = HOJE;
     var ancora = state.semana;
-    var inicioSemana = addDias(ancora, -pISO(ancora).getDay());
+    // A régua começa na segunda, como a semana da agenda impressa — e como o
+    // trilho "Agenda da semana", que vai de segunda a domingo.
+    var wd = pISO(ancora).getDay();
+    var inicioSemana = addDias(ancora, wd === 0 ? -6 : 1 - wd);
     var g = $("#weekGrid"); g.innerHTML = "";
     var m1 = pISO(inicioSemana), m2 = pISO(addDias(inicioSemana, 6));
     $("#weekLabel").textContent = m1.getMonth() === m2.getMonth()
@@ -1363,7 +1528,8 @@
     var totalOcor = 0, emitidos = 0;
     chaves.forEach(function (k) {
       mapa[k] = aplicaChip(mapa[k], k).sort(function (x, y) {
-        return (horaNoDia(x, k) || "99").localeCompare(horaNoDia(y, k) || "99");
+        return (horaBase(x, k, state.baseData) || "99")
+          .localeCompare(horaBase(y, k, state.baseData) || "99");
       });
       totalOcor += mapa[k].length;
     });
@@ -1397,10 +1563,39 @@
     var lista = state.favs.map(evPorId).filter(Boolean);
     $("#favSub").textContent = lista.length ? lista.length + (lista.length === 1 ? " evento salvo" : " eventos salvos") : "Nada salvo ainda.";
     if (!lista.length) { box.appendChild(blank("Nenhum favorito", "Toque no coração de qualquer atração.")); return; }
+
+    /* Separado por dia, como na agenda — com uma diferença: aqui cada
+       favorito aparece uma vez só, na sua próxima data. Repetir uma
+       temporada de dois meses encheria a aba com o mesmo título. */
+    var mapa = {}, sem = [];
     lista.forEach(function (ev) {
-      var prox = (ev.dias || []).filter(function (d) { return d >= HOJE; })[0] || (ev.dias || [])[0];
-      box.appendChild(linha(ev, prox));
+      var prox = (ev.dias || []).filter(function (d) { return d >= HOJE; })[0];
+      if (prox) (mapa[prox] = mapa[prox] || []).push(ev);
+      else sem.push(ev);
     });
+
+    function faixa(titulo, n) {
+      var bar = el("div", "daybar");
+      bar.appendChild(el("b", null, titulo));
+      bar.appendChild(el("em", null, n + (n === 1 ? " atração" : " atrações")));
+      return bar;
+    }
+
+    Object.keys(mapa).sort().forEach(function (d) {
+      var doDia = mapa[d].sort(function (a, b2) {
+        return (horaNoDia(a, d) || "99").localeCompare(horaNoDia(b2, d) || "99");
+      });
+      box.appendChild(faixa(longa(d), doDia.length));
+      doDia.forEach(function (ev) { box.appendChild(linha(ev, d, "evento")); });
+    });
+
+    if (sem.length) {
+      box.appendChild(faixa("Sem data futura", sem.length));
+      sem.forEach(function (ev) {
+        var ds = ev.dias || [];
+        box.appendChild(linha(ev, ds[ds.length - 1], "evento"));
+      });
+    }
   }
 
   /* ---------------- sorteios ---------------- */
@@ -2545,7 +2740,8 @@
     p1.appendChild(document.createTextNode(
       "API pública do portal do Sesc São Paulo (capital, interior e litoral) para a listagem, " +
       "e a API de bilheteria para preços, sessões exatas e datas de venda. " +
-      "Coleta de " + ((DADOS.geradoEm || "").slice(0, 10).split("-").reverse().join("/") || "—") + "."));
+      "Coleta de " + coletaDia() + ", às " + (coletaFmt().split(" às ")[1] || "—") +
+      " (horário de Brasília)."));
     f.appendChild(p1);
     var p2 = el("p");
     p2.appendChild(document.createTextNode("Favoritos, unidades e códigos de sorteio ficam só neste aparelho. A conferência do sorteio é feita aqui dentro, comparando com a lista pública — seu código nunca é enviado."));

@@ -32,6 +32,7 @@ import struct
 import zlib
 from datetime import date, timedelta
 
+import coletor
 import regras
 
 NOME = "Agenda Sesc SP"
@@ -312,7 +313,7 @@ def main():
     with open(args.dados, encoding="utf-8") as f:
         bruto = json.load(f)
 
-    hoje = max(date.today().isoformat(), bruto["janela"]["de"])
+    hoje = max(coletor.agora_br().date().isoformat(), bruto["janela"]["de"])
     bruto["sorteaveis"] = regras.indice_sorteios(bruto["eventos"])
     bruto["eventos"] = regras.aplicar(bruto["eventos"], hoje, args.horizonte)
 

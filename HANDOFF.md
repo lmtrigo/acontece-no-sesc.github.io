@@ -123,6 +123,11 @@ passeio de novembro abre em agosto. Fica no app quem satisfaz uma destas:
 Mais: **Turismo Social sem data de inscrição sai** (ou já passou da fase, ou não
 dá para saber como entrar).
 
+O coletor descarta apenas os **cancelados**. A categoria **"Outros"** — o balde
+do que o portal não classificou — passou a ser mantida: jogá-la fora tirava da
+agenda atividades reais, cujo único defeito era não ter rótulo. No app ela
+aparece como qualquer outra categoria, com a cor neutra de reserva.
+
 Ponto delicado: "barreira fechada" só conta com **data**. Centenas de eventos
 têm bloco de inscrição em prosa sem data ("inscrições no local", "lista de
 espera"); tratá-los como fechados descartava 62% do catálogo.
@@ -155,6 +160,49 @@ Procura 40% (ingressos restantes), custo 35% (gratuidade), raridade 25%
 assistir é frustração.
 
 ---
+
+### 4.5 O que é novidade
+
+"Entrou agora na programação" não se descobre olhando só a base de hoje. Quem
+compara é o **coletor**: antes de gravar, ele lê a coleta anterior e carimba
+cada evento com `visto` — a data em que apareceu pela primeira vez. Quem já
+estava lá conserva o carimbo antigo; quem não estava recebe a data de hoje.
+
+- A primeira coleta com rastreio **não carimba ninguém**: ela estabelece a
+  linha de base e grava `rastreioDesde` no arquivo. É esse campo que separa
+  "base anterior ao rastreio" de "base sem novidades", e é o que faz o dia 2
+  já valer.
+- Sem essa trava o primeiro dia mentiria duas vezes. Medido no ensaio de
+  18/08 contra a base de 13/08: **607 eventos** seriam marcados como novos,
+  e **359 deles eram os "Outros"** — atividades que sempre estiveram no
+  portal e que só entraram porque *nós* mudamos a regra. O trilho abriria com
+  59% de entulho retroativo.
+- Quem já estava na base e não tem carimbo fica **sem** carimbo: é anterior
+  ao rastreio e não dá para inventar uma data. Herdar a data da coleta
+  anterior também seria armadilha — a base de 13/08 estava a seis dias da
+  primeira rodada, dentro da janela de sete.
+- Ressalvas: um evento que suma da listagem por um dia e volte é carimbado de
+  novo, e a janela que anda um dia por vez carimba a borda — medido, 3 eventos
+  em 5 dias. É o preço de não guardar um histórico de ids que cresceria para
+  sempre.
+
+O app mostra o que tem `visto` nos últimos **7 dias** (`DIAS_NOVIDADE`), no
+trilho "Novidades na programação" e no chip "Novidades" da agenda.
+
+### 4.6 Fuso horário
+
+Tudo o que é "hoje" e "agora" é **horário de Brasília**, fixo em UTC−3 (o Brasil
+não usa mais horário de verão desde 2019).
+
+O robô roda em UTC no GitHub Actions: `geradoEm` saía sem fuso e o app exibia a
+coleta três horas adiantada, além de arriscar carimbar o dia seguinte numa
+execução de madrugada. Agora `coletor.agora_br()` grava com o deslocamento
+explícito (`2026-08-18T05:10:00-03:00`) e o app converte para Brasília antes de
+mostrar — inclusive carimbos antigos, sem fuso, que são lidos como já sendo
+hora local da coleta.
+
+No app, `HOJE` e `AGORA` também vêm de `agoraBR()`: com o relógio do aparelho,
+quem estivesse fora do fuso via a agenda virar o dia na hora errada.
 
 ## 5. Arquitetura
 
@@ -279,6 +327,22 @@ Arquitetura de informação: **contexto antes de catálogo**. Na primeira abertu
 o app pergunta as unidades — isso corta o universo de 2.119 para ~100. A home
 responde perguntas em trilhos ("Inscrição abre em breve", "Grátis no fim de
 semana"), e a agenda é lista densa com hora na goteira.
+
+A semana começa na **segunda** — na régua da agenda e no trilho "Agenda da
+semana", cuja nota conta os sete dias (seg a dom) e cujos cartões começam em
+hoje, porque segunda-feira já não dá para assistir na quinta. O recorte que
+esse trilho leva para a agenda carrega a própria faixa de dias (`trilho.dias`):
+sem isso, uma temporada longa reapareceria em todas as datas até dezembro.
+
+Cada linha da agenda mostra **a data que a régua está calando**: vendo pelo dia
+do evento, ela traz a inscrição; vendo pela abertura da inscrição, ela traz
+quando a coisa acontece — e a hora na goteira acompanha a régua. Quando não há
+nada publicado sobre a entrada (o caso da maioria), a linha fica em branco:
+repetir "sem data" em quase toda linha só viraria textura.
+
+Favoritos também é separado por dia, como a agenda, com uma diferença: cada
+favorito aparece uma vez só, na sua próxima data. Repetir uma temporada de dois
+meses encheria a aba com o mesmo título.
 
 O design system está no topo do CSS de `prototipo.html`, em tokens. Trocar os
 valores desse bloco reveste o app inteiro sem tocar em componente.
