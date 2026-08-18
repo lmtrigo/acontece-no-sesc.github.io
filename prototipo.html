@@ -501,6 +501,30 @@
     .mainnav { display: none; }
     .daybar { top: 57px; }
 
+    /* ---- navegação principal ----
+       No celular estes quatro itens são um menu que se abre e se fecha; aqui
+       eles SÃO a navegação, sempre à vista, e precisam ter peso disso. Ganham
+       corpo de aba: alvo alto, estado ativo em bloco cheio e contador à
+       direita. O resto da coluna (filtros, categorias, dados) fica em texto
+       miúdo, para a hierarquia dizer o que é navegação e o que é ajuste. */
+    .drawer .dgroup:first-child { padding-bottom: var(--s5); border-bottom: 1px solid var(--rule); }
+    .drawer .dgroup:first-child h4 { margin-bottom: var(--s3); }
+    .ditem[data-go] {
+      border-bottom: 0; border-radius: var(--r-sm);
+      padding: var(--s3) var(--s4); margin-bottom: 3px; min-height: 42px;
+      font-size: var(--fs-head); font-weight: 600; color: var(--ink-2);
+      border-left: 3px solid transparent; transition: background var(--dur-fast), color var(--dur-fast);
+    }
+    .ditem[data-go]:hover { background: var(--wash); color: var(--ink); }
+    .ditem[data-go][aria-current="true"] {
+      background: var(--ink); color: var(--on-ink); font-weight: 700;
+      border-left-color: var(--cat-shows);
+    }
+    .ditem[data-go][aria-current="true"] .n { color: var(--on-ink); opacity: .7; }
+    .ditem[data-go] .n {
+      min-width: 20px; text-align: right; font-size: var(--fs-data); font-weight: 700;
+    }
+
     .bar { padding-left: var(--s7); padding-right: var(--s7); }
     #searchBtn { display: none; }
     .searchrow, .searchrow[hidden] { display: block; padding: var(--s4) var(--s7) 0; }
@@ -2303,6 +2327,49 @@
     return d.getTime();
   }
 
+  /* ---------------- calendário no computador ----------------
+     No celular o alvo é o app de agenda do aparelho, e o .ics é o que o
+     sistema entende. No computador esse caminho não existe: o navegador
+     baixa o arquivo e ele morre na pasta de downloads — foi exatamente o
+     "não acontece nada" relatado. Quem usa computador vive no calendário da
+     web, então é para lá que o botão leva, com os campos preenchidos.
+
+     O fuso vai explícito (`ctz`): sem ele, o Google interpreta a hora no
+     fuso da conta, e quem estiver fora do Brasil agenda na hora errada. */
+  function carimboGoogle(ms) {
+    var d = new Date(ms);
+    return d.getFullYear() + p2(d.getMonth() + 1) + p2(d.getDate()) +
+           "T" + p2(d.getHours()) + p2(d.getMinutes()) + "00";
+  }
+  function carimboOutlook(ms) {
+    var d = new Date(ms);
+    return d.getFullYear() + "-" + p2(d.getMonth() + 1) + "-" + p2(d.getDate()) +
+           "T" + p2(d.getHours()) + ":" + p2(d.getMinutes()) + ":00-03:00";
+  }
+  function linkGoogleAgenda(a, dados) {
+    var datas = a.diaInteiro
+      ? semTraco(a.quando) + "/" + semTraco(a.fimDia)
+      : carimboGoogle(emMilissegundos(a.quando)) + "/" + carimboGoogle(emMilissegundos(a.quando, 2));
+    return "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+      "&text=" + encodeURIComponent(dados.titulo) +
+      "&dates=" + datas +
+      "&ctz=America/Sao_Paulo" +
+      "&location=" + encodeURIComponent(dados.local) +
+      "&details=" + encodeURIComponent(dados.desc);
+  }
+  function linkOutlook(a, dados) {
+    var base = "https://outlook.live.com/calendar/0/deeplink/compose" +
+               "?path=/calendar/action/compose&rru=addevent";
+    var quando = a.diaInteiro
+      ? "&allday=true&startdt=" + String(a.quando).slice(0, 10) + "&enddt=" + String(a.fimDia).slice(0, 10)
+      : "&startdt=" + encodeURIComponent(carimboOutlook(emMilissegundos(a.quando))) +
+        "&enddt=" + encodeURIComponent(carimboOutlook(emMilissegundos(a.quando, 2)));
+    return base + quando +
+      "&subject=" + encodeURIComponent(dados.titulo) +
+      "&location=" + encodeURIComponent(dados.local) +
+      "&body=" + encodeURIComponent(dados.desc);
+  }
+
   function intentCalendario(dados) {
     var partes = [
       "action=android.intent.action.INSERT",
@@ -2436,8 +2503,54 @@
       });
     }
 
-    var app;
-    if (ehAndroid()) {
+    /** Monta o arquivo aqui mesmo, sem depender do que está no servidor. */
+    function gerarAqui(forcarDownload) {
+      forcarArquivoUmaVez = !!forcarDownload;
+      if (tipo === "inscricao") { icsInscricao(ev); forcarArquivoUmaVez = false; return; }
+      if (opcoes.length > 1) {
+        var quais = Object.keys(escolhidas).sort();
+        if (!quais.length) { toast("Escolha ao menos uma data"); forcarArquivoUmaVez = false; return; }
+        icsEvento(ev, quais);
+      } else {
+        icsEvento(ev);
+      }
+      forcarArquivoUmaVez = false;
+    }
+
+    /* O arquivo servido só existe se o deploy tiver ido inteiro. Quando ele
+       falta, o botão vira link morto e o clique não faz nada — foi o que
+       aconteceu. Conferimos antes; faltando, montamos no aparelho. */
+    var arquivoOK = true;
+    if (urlIcs) {
+      fetch(urlIcs, { method: "HEAD" })
+        .then(function (r) { arquivoOK = r.ok; })
+        .catch(function () { arquivoOK = false; });
+    }
+
+    var dadosDoEvento = {
+      titulo: titulo,
+      local: "Sesc " + ev.uni + (ev.endereco ? " — " + ev.endereco : ""),
+      desc: (ev.sub ? ev.sub + " — " : "") + (ev.link || "")
+    };
+
+    var app, appAlt;
+    if (MQ_COMPUTADOR.matches) {
+      // no computador o calendário é a web, não um arquivo
+      app = el("a", "btn", "Adicionar no Google Agenda");
+      app.target = "_blank"; app.rel = "noopener noreferrer";
+      app.href = linkGoogleAgenda(alvoAtual(), dadosDoEvento);
+      app.addEventListener("click", function () {
+        app.href = linkGoogleAgenda(alvoAtual(), dadosDoEvento);   // a escolha pode ter mudado
+        toast("Abrindo o Google Agenda — confira e salve");
+      });
+      appAlt = el("a", "btn ghost", "Adicionar no Outlook");
+      appAlt.target = "_blank"; appAlt.rel = "noopener noreferrer";
+      appAlt.href = linkOutlook(alvoAtual(), dadosDoEvento);
+      appAlt.addEventListener("click", function () {
+        appAlt.href = linkOutlook(alvoAtual(), dadosDoEvento);
+        toast("Abrindo o Outlook — confira e salve");
+      });
+    } else if (ehAndroid()) {
       // no Android o .ics só baixa; a intent abre a tela de novo evento
       app = el("a", "btn", "Abrir no calendário");
       app.href = hrefAndroid();
@@ -2450,7 +2563,12 @@
       app.href = urlIcs;
       app.setAttribute("type", "text/calendar");
       app.rel = "noopener";
-      app.addEventListener("click", function () {
+      app.addEventListener("click", function (e) {
+        if (!arquivoOK) {        // o servidor não tem o arquivo: monta aqui
+          e.preventDefault();
+          gerarAqui();
+          return;
+        }
         var u = urlDoIcs();      // a escolha pode ter mudado
         if (u) app.href = u;
         toast("Abrindo na agenda — confira os dados e salve");
@@ -2458,18 +2576,10 @@
     } else {
       app = el("button", "btn", "Abrir no calendário");
       app.type = "button";
-      app.addEventListener("click", function () {
-        if (tipo === "inscricao") { icsInscricao(ev); return; }
-        if (opcoes.length > 1) {
-          var quais = Object.keys(escolhidas);
-          if (!quais.length) { toast("Escolha ao menos uma data"); return; }
-          icsEvento(ev, quais.sort());
-        } else {
-          icsEvento(ev);
-        }
-      });
+      app.addEventListener("click", function () { gerarAqui(); });
     }
     acts.appendChild(app);
+    if (appAlt) acts.appendChild(appAlt);
 
 
     var volta = el("button", "btn ghost", "Voltar ao evento");
@@ -2484,19 +2594,21 @@
     var arq = el("button", "btn ghost", "Baixar o arquivo (.ics)");
     arq.type = "button";
     arq.addEventListener("click", function () {
-      forcarArquivoUmaVez = true;
-      if (tipo === "inscricao") icsInscricao(ev);
-      else if (opcoes.length > 1) {
-        var q2 = Object.keys(escolhidas).sort();
-        icsEvento(ev, q2.length ? q2 : null);
-      } else icsEvento(ev);
-      forcarArquivoUmaVez = false;
+      gerarAqui(true);
+      // no computador o arquivo cai na pasta de downloads sem nenhum aviso
+      // do app; sem esta frase, "baixar" também parece "não aconteceu nada"
+      if (MQ_COMPUTADOR.matches) toast("Arquivo .ics baixado — abra-o para cair na sua agenda");
     });
     acts.insertBefore(arq, volta);
 
     // três situações distintas, cada uma com o seu porquê
     var explica;
-    if (ehAndroid()) {
+    if (MQ_COMPUTADOR.matches) {
+      explica = "No computador o arquivo .ics só cairia na pasta de downloads, então o botão leva " +
+        "direto ao calendário da web com " + oQue + " já preenchido — você confere e salva. " +
+        "Se a sua agenda for um programa instalado (Outlook de mesa, Thunderbird, Calendário do " +
+        "Windows), baixe o arquivo e abra: é ele que o programa entende.";
+    } else if (ehAndroid()) {
       explica = "“Abrir no calendário” chama o app de agenda do Android com " + oQue +
         " já preenchido — você confere e salva. Se preferir o arquivo, ou se quiser " +
         "todas as datas de uma vez, use o download.";

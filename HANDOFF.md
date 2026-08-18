@@ -364,6 +364,13 @@ Decisões que valem registro:
 - **A gaveta deixa de ser gaveta.** Com ela permanente, as abas do topo viram o
   mesmo menu duas vezes e saem (`.mainnav { display: none }`). Isso muda o
   grude da faixa de dia, que passa de 99px para 57px.
+- **Os quatro destinos são a navegação, e precisam ter peso disso.** Na
+  primeira versão eles ficaram com a aparência de item de menu do celular e
+  não foram lidos como abas — o relato foi "faltou uma aba para cada opção".
+  Agora têm corpo de aba: alvo de 42px, tipo maior, estado ativo em bloco
+  cheio de tinta com marcador de cor, e contador à direita. Filtros,
+  categorias e dados seguem em texto miúdo, para a hierarquia dizer o que é
+  navegação e o que é ajuste.
 - **Trilho vira grade, não carrossel.** Arrastar cartão com mouse é ruim. São
   sempre **duas fileiras** — o resto continua atrás de "ver todos", senão cada
   trilho viraria parede.
@@ -380,6 +387,33 @@ rolagem não fazem sentido nela.
 **Armadilha ao testar:** o site publicado tem service worker, e ele guarda a
 casca. Mudou o CSS e a tela não mudou? O SW está servindo o `index.html`
 antigo — é preciso desregistrar e limpar o cache, não basta recarregar.
+
+### 8.2 Calendário: o computador é outro bicho
+
+A seção 5.3 descreve a entrega do `.ics` ao app de agenda. Isso vale para
+celular. **No computador não existe esse caminho**: o navegador baixa o arquivo
+e ele morre na pasta de downloads. O botão parecia não fazer nada.
+
+No computador, então, o alvo é o calendário da **web**, onde a pessoa já está:
+
+- primário: **Google Agenda** (`calendar.google.com/render?action=TEMPLATE`),
+  com `ctz=America/Sao_Paulo` explícito — sem o fuso, o Google usa o da conta e
+  quem estiver fora do Brasil agenda na hora errada;
+- secundário: **Outlook** (`outlook.live.com/.../compose`), com o
+  deslocamento `-03:00` nas datas;
+- terciário: baixar o `.ics`, para quem usa agenda instalada — e aí o toast
+  diz onde o arquivo foi parar, senão "baixar" também parece "não aconteceu
+  nada".
+
+Viagem contínua vira compromisso de dia inteiro (`dates=AAAAMMDD/AAAAMMDD`,
+fim exclusivo); o resto vira bloco de duas horas, a mesma convenção da intent
+do Android.
+
+**E uma armadilha corrigida:** o botão do celular aponta para um `.ics`
+servido, e o código assumia que, havendo servidor, o arquivo existiria. Num
+deploy incompleto ele dá 404 e o link fica morto — clique sem efeito. Agora um
+`HEAD` confere antes; faltando o arquivo, o `.ics` é montado no próprio
+aparelho.
 
 O design system está no topo do CSS de `prototipo.html`, em tokens. Trocar os
 valores desse bloco reveste o app inteiro sem tocar em componente.
