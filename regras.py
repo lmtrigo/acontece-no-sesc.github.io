@@ -12,7 +12,8 @@ Fica no app quem satisfaz uma destas condições:
   2. a inscrição ou a venda está ABERTA agora;
   3. o evento acontece dentro do horizonte e não exige inscrição nem compra.
 
-Sai do app o que já encerrou e o que só acontece (e só abre) muito adiante.
+Sai do app o que já encerrou, o que só acontece (e só abre) muito adiante, e
+o que já aconteceu. Esgotado fica — com a etiqueta dizendo que esgotou.
 """
 
 from datetime import date, timedelta
@@ -38,14 +39,18 @@ def fim_inscricao(ev):
 
 
 def barreira_fechada(ev, hoje):
-    """Há evidência de que já não dá para entrar.
+    """Há evidência de que o PRAZO de entrada já passou.
 
     Só conta como fechada o que tem DATA. Um bloco de inscrição em prosa
     ("inscrições no local", "lista de espera") não diz nada sobre prazo, e
     tratá-lo como fechado apagaria centenas de atividades que estão de pé.
+
+    Esgotado NÃO entra aqui. Ingresso esgotado é estado do ingresso, não fim
+    da atividade: ela acontece, pode liberar devolução, e quem procura o
+    evento que viu ontem precisa achá-lo — com a etiqueta dizendo que
+    esgotou. Enquanto isto contava como barreira, os 41 esgotados com data
+    futura sumiam da base inteira, sem explicação nenhuma na tela.
     """
-    if ev.get("esgotado"):
-        return True
     f = fim_inscricao(ev)
     if f and f < hoje:
         return True
@@ -74,6 +79,13 @@ SO_COM_INSCRICAO = ("Turismo Social",)
 def manter(ev, hoje, horizonte):
     """`hoje` e `horizonte` são strings YYYY-MM-DD."""
     i = ev.get("inscricao") or {}
+
+    # Nada que já aconteceu. As regras abaixo olham a data de ENTRADA (a
+    # inscrição de um passeio abre meses antes), e por isso deixavam passar
+    # temporada encerrada com venda ainda aberta no papel. Não há o que fazer
+    # com um evento cuja última data ficou para trás.
+    if not any(d >= hoje for d in (ev.get("dias") or [])):
+        return False
 
     # Passeio sem data de inscrição publicada não é oferta: ou já passou da
     # fase (caso dos que só têm o resultado do sorteio na página) ou não dá
@@ -116,18 +128,21 @@ def indice_sorteios(eventos):
             continue
         if not e.get("link"):
             continue
-        out.append({
-            "id": e["id"],
-            "tit": e["tit"],
-            "uni": e.get("uni"),
-            "cat": e.get("cat"),
-            "link": e["link"],
-            "precos": e.get("precos"),
-            "sorteio": i.get("sorteio"),
-            "inscricao": i.get("inscricao"),
-            "inscricaoFim": i.get("inscricaoFim"),
-            "sorteados": e.get("sorteados"),
-        })
+        # Cópia com os mesmos campos de um evento: a aba de sorteios mostra
+        # foto e abre a folha de detalhe, e o passeio já saiu da base quando o
+        # resultado sai. Guardar só título e link deixava a aba cega.
+        copia = {c: e.get(c) for c in (
+            "id", "tit", "sub", "uni", "reg", "cat", "subcat", "publico",
+            "publicos", "projeto", "gratis", "pago", "esgotado", "ingressosWeb",
+            "temporada", "continuo", "hora", "dias", "link", "thumb", "img",
+            "capa", "precos", "sessoes", "classificacao", "endereco", "geo",
+            "urlCompra", "sorteados") if e.get(c) is not None}
+        copia["inscricao"] = e.get("inscricao")
+        # forma plana que o formulário de sorteio consome
+        copia["sorteio"] = i.get("sorteio")
+        copia["inscricaoAbre"] = i.get("inscricao")
+        copia["inscricaoFim"] = i.get("inscricaoFim")
+        out.append(copia)
     out.sort(key=lambda x: x["tit"])
     return out
 
