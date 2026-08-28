@@ -56,9 +56,27 @@ jobs:
         run: python extras.py
 
       - name: Montar o arquivo único e o site
+        env:
+          # Preencha para usar domínio próprio (ex.: agenda.exemplo.com.br).
+          # Vazio = endereço do github.io.
+          DOMINIO: ""
         run: |
           python embutir.py --com-descricao
-          python publicar.py --base "/${GITHUB_REPOSITORY#*/}/"
+          # O Pages serve na RAIZ quando o repositório se chama
+          # <dono>.github.io, e também quando há domínio próprio; nos demais
+          # casos serve numa subpasta com o nome do repositório. Passar a
+          # subpasta errada quebra todos os caminhos do site de uma vez.
+          repo="${GITHUB_REPOSITORY#*/}"
+          dono="${GITHUB_REPOSITORY_OWNER}"
+          if [ -n "$DOMINIO" ] || [ "${repo,,}" = "${dono,,}.github.io" ]; then
+            base="/"
+          else
+            base="/$repo/"
+          fi
+          python publicar.py --base "$base"
+          # O Pages só assume o domínio próprio se este arquivo estiver na
+          # saída publicada — e o web/ é refeito do zero a cada rodada.
+          if [ -n "$DOMINIO" ]; then echo "$DOMINIO" > web/CNAME; fi
 
       # Publicar vem ANTES de guardar no git. O site sai do artefato abaixo;
       # o commit é só contabilidade, e não pode derrubar uma hora de coleta.
