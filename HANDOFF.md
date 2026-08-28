@@ -140,6 +140,14 @@ passeio de novembro abre em agosto. Fica no app quem satisfaz uma destas:
 Mais: **Turismo Social sem data de inscrição sai** (ou já passou da fase, ou não
 dá para saber como entrar).
 
+**Esgotado e prazo vencido não excluem mais.** Os dois eram tratados como
+"barreira fechada" e tiravam o evento da base inteira — 41 esgotados e 306
+inscrições encerradas que *acontecem* nas próximas semanas sumiam da agenda
+sem nenhuma explicação na tela. São estado da entrada, não fim da atividade.
+Agora ficam, com as etiquetas **"Esgotado"** e **"Inscrição encerrada"**; quem
+decide se vale a pena é quem lê, não o corte. Isso trouxe a base de 1.324 para
+1.644 eventos, 242 deles cursos e oficinas.
+
 O coletor descarta apenas os **cancelados**. A categoria **"Outros"** — o balde
 do que o portal não classificou — passou a ser mantida: jogá-la fora tirava da
 agenda atividades reais, cujo único defeito era não ter rótulo. No app ela
@@ -253,6 +261,38 @@ prévia por link (sem servidor) e ao site hospedado.
 Ficam fora do pacote principal, em `dados/desc/<id>.json`, buscadas ao abrir o
 evento e descartadas ao fechar. Na prévia por link não há servidor — por isso
 ela é gerada com `embutir.py --com-descricao`.
+
+### 5.2.1 O que o navegador consegue buscar do portal (e o que não)
+
+Testado, e vale registrar porque define o que é possível em tempo real:
+
+| endereço | CORS | serve para |
+|---|---|---|
+| `www.sescsp.org.br/wp-json/wp/v1/atividades/filter` | **liberado** | disponibilidade de ingressos ao vivo |
+| `portal.sescsp.org.br/bilheteria/...` | bloqueado | — |
+| `www.sescsp.org.br/programacao/<evento>` (HTML) | bloqueado | — |
+
+Consequências diretas:
+
+- **Disponibilidade** é conferida a cada abertura, direto do navegador, pela
+  API de listagem: ela traz `qtdeIngressosWeb` e `esgotado`, que são os campos
+  que o app mostra. Não é a base inteira — 1.644 eventos seriam doze páginas
+  de 300 por abertura, e o portal não é nosso. Confere **hoje, amanhã e as
+  próximas datas dos favoritos**, no máximo seis dias, e falha em silêncio.
+- **Resultado de sorteio não dá para consultar na hora.** Os códigos dos
+  contemplados estão no HTML da página da atividade, que é justamente o que o
+  portal bloqueia. A automação possível é a que está no ar: o robô lê a lista
+  todo dia e grava em `sorteados`; o app confere a cada abertura, dentro do
+  aparelho. A defasagem máxima é de um dia.
+
+### 5.2.2 O cache do service worker é o resumo da casca
+
+Era o carimbo da **coleta** (`geradoEm`). Como o robô só coleta uma vez por
+dia, qualquer mudança no app entre duas coletas não trocava o nome do cache: o
+worker seguia servindo o `index.html` antigo e quem já tinha instalado nunca
+via a mudança. O sintoma era sempre o mesmo — "mexi no CSS e a tela não
+mudou". Agora é o **sha1 do `index.html` publicado**: mudou o app, muda o
+cache.
 
 ### 5.3 Calendário
 

@@ -24,6 +24,7 @@ Uso:
 """
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -482,8 +483,13 @@ def main():
     png(os.path.join(args.saida, "icon-512.png"), 512)
     png(os.path.join(args.saida, "icon-maskable.png"), 512, maskable=True)
 
-    d = magro
-    versao = (d.get("geradoEm") or "0").replace(":", "").replace("-", "").replace("T", "")
+    # A versão do cache é o resumo do HTML publicado, não a data da coleta.
+    # Enquanto era `geradoEm`, qualquer mudança no app entre duas coletas não
+    # trocava o nome do cache: o worker seguia servindo a casca antiga, e quem
+    # já tinha instalado nunca via a mudança. O sintoma era sempre o mesmo —
+    # "mexi no CSS e a tela não mudou".
+    with open(os.path.join(args.saida, "index.html"), "rb") as f:
+        versao = hashlib.sha1(f.read()).hexdigest()[:12]
 
     casca = ", ".join("'%s%s'" % (base, n) for n in
                       ["", "index.html", "manifest.webmanifest",
@@ -497,7 +503,7 @@ def main():
     tam = sum(os.path.getsize(os.path.join(dp, n))
               for dp, _, ns in os.walk(args.saida) for n in ns)
     print("web/ pronto · %d eventos · %.0f KB no total · base %s"
-          % (len(d["eventos"]), tam / 1024, base))
+          % (len(magro["eventos"]), tam / 1024, base))
     print("Teste local:  python -m http.server 8000 --directory web")
 
 

@@ -10,10 +10,15 @@ Fica no app quem satisfaz uma destas condições:
 
   1. a inscrição ou a venda ABRE dentro do horizonte (padrão: 60 dias);
   2. a inscrição ou a venda está ABERTA agora;
-  3. o evento acontece dentro do horizonte e não exige inscrição nem compra.
+  3. o evento ACONTECE dentro do horizonte.
 
-Sai do app o que já encerrou, o que só acontece (e só abre) muito adiante, e
-o que já aconteceu. Esgotado fica — com a etiqueta dizendo que esgotou.
+Sai do app o que já aconteceu e o que só acontece (e só abre) muito adiante.
+
+O que NÃO é motivo de exclusão: ingresso esgotado e prazo de inscrição
+vencido. Os dois são estado da entrada, não fim da atividade — ela acontece
+de todo jeito, e quem olha a agenda de quinta quer ver o que vai ter. A tela
+diz o que dá para fazer, com as etiquetas "Esgotado" e "Inscrição encerrada";
+o corte não decide isso por ninguém.
 """
 
 from datetime import date, timedelta
@@ -105,11 +110,17 @@ def manter(ev, hoje, horizonte):
     if aberta_agora(ev, hoje):
         return True
 
-    # 3. acontece no horizonte e nada indica que a entrada fechou
-    if not barreira_fechada(ev, hoje):
-        for d in ev.get("dias") or []:
-            if hoje <= d <= horizonte:
-                return True
+    # 3. acontece dentro do horizonte
+    #
+    # Antes esta regra exigia `not barreira_fechada`: prazo de inscrição
+    # vencido tirava o evento da base. Eram 320 atividades — 242 delas cursos
+    # e oficinas — que ACONTECEM nas próximas semanas e sumiam da agenda sem
+    # explicação, do mesmo jeito que os esgotados sumiam. Quem quer saber o
+    # que vai ter no Sesc quinta-feira quer ver o que vai ter, com a etiqueta
+    # dizendo se ainda dá para entrar. Quem decide isso é a tela, não o corte.
+    for d in ev.get("dias") or []:
+        if hoje <= d <= horizonte:
+            return True
 
     return False
 
