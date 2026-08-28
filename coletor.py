@@ -131,6 +131,39 @@ def dia_de(iso):
     return None
 
 
+def melhor_foto(a):
+    """URL da foto do evento em três tamanhos, do menor ao maior.
+
+    A listagem traz a original em `imagem` — que chega a 3 MB — e as variantes
+    só com o nome do arquivo, na mesma pasta. Uma tela inicial com quarenta
+    cartões carregando originais seria inviável no celular, então monta-se a
+    URL da variante do tamanho certo para cada uso:
+
+      thumb  linha da agenda, 62px na tela
+      img    cartão do trilho, ~240px na tela
+      capa   topo da folha de detalhe, largura inteira
+    """
+    cheia = (a.get("imagem") or "").strip()
+    if not cheia:
+        return None, None, None
+    pasta = cheia.rsplit("/", 1)[0] + "/"
+    tam = a.get("imagens") or {}
+
+    def variante(*nomes):
+        for n in nomes:
+            v = tam.get(n)
+            if isinstance(v, dict) and v.get("file"):
+                return pasta + v["file"]
+        return None
+
+    thumb = variante("medium", "projeto-thumb", "sites-card-img",
+                     "homepage-thumb", "thumbnail")
+    img = variante("atividade-img", "sites-card-img", "destacada",
+                   "carousel-img", "medium_large")
+    capa = variante("banner-img", "large", "destacada", "medium_large")
+    return thumb or img or cheia, img or capa or cheia, capa or img or cheia
+
+
 def normalizar(a, unidades):
     """Achata um item da API no formato que o app consome."""
     uni = primeiro(a.get("unidade")) or "—"
@@ -143,6 +176,9 @@ def normalizar(a, unidades):
             sub = filhos[0].get("titulo")
 
     gratuito = (a.get("gratuito") or "").strip()
+    thumb, img, capa = melhor_foto(a)
+    publicos = [p.get("titulo") for p in (a.get("publico_tag") or [])
+                if isinstance(p, dict) and p.get("titulo")]
     link = a.get("link") or ""
     if link.startswith("/"):
         link = BASE + link
@@ -158,6 +194,11 @@ def normalizar(a, unidades):
         "cat": cat or "Outros",
         "subcat": sub,
         "publico": primeiro(a.get("publico_tag"), "titulo"),
+        "publicos": publicos,
+        # foto do cartão e capa da folha de detalhe
+        "thumb": thumb,
+        "img": img,
+        "capa": capa,
         "projeto": primeiro(a.get("conjunto")),
         "gratis": gratuito == "Atividade gratuita",
         "pago": gratuito == "Atividade paga",

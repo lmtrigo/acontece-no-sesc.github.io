@@ -49,6 +49,12 @@ jobs:
       - name: Reprocessar datas e intervalos de viagem
         run: python reparse.py --mostrar 0
 
+      # O coletor já grava as fotos; o que só o extras traz é o endereço das
+      # 43 unidades, raspado da página de cada uma. Sem ele o .ics sai sem
+      # local nas 9 unidades que não vendem ingresso.
+      - name: Endereços das unidades
+        run: python extras.py
+
       - name: Montar o arquivo único e o site
         run: |
           python embutir.py --com-descricao

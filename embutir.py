@@ -29,8 +29,11 @@ MARCADOR = re.compile(
 # Campos que o app realmente lê. Tudo o que não estiver aqui fica de fora do
 # arquivo publicado — o eventos.json completo continua no disco.
 CAMPOS = ("id", "tit", "sub", "uni", "reg", "cat", "subcat", "publico",
-          "projeto", "gratis", "pago", "online", "esgotado", "ingressosWeb",
-          "temporada", "hora", "inicio", "fim", "link", "dias",
+          "publicos", "projeto", "gratis", "pago", "online", "esgotado",
+          "ingressosWeb", "temporada", "hora", "inicio", "fim", "link", "dias",
+          # as três URLs de foto: miniatura da lista, cartão do trilho e capa
+          # do detalhe. São só endereços — a imagem não entra no arquivo.
+          "thumb", "img", "capa",
           # segunda passada (detalhes.py)
           "precos", "sessoes", "vendaOnline", "vendaPresencial", "vendaOnlineFim",
           "urlCompra", "maxPorPessoa", "classificacao", "endereco", "geo", "continuo", "icsd",

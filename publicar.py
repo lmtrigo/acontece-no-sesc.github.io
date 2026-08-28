@@ -30,7 +30,7 @@ import re
 import shutil
 import struct
 import zlib
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 
 import coletor
 import regras
@@ -101,56 +101,119 @@ def _ics(linhas):
                         "CALSCALE:GREGORIAN"] + linhas + ["END:VCALENDAR"])
 
 
+# ---------------------------------------------------------------------- .ics
+# As regras são as mesmas do app (ver o bloco "Calendário" no prototipo.html),
+# e precisam continuar iguais: o arquivo servido e o montado no aparelho são
+# o mesmo compromisso, só que por caminhos diferentes.
+#
+#   fim         término publicado > início + duração > início + 30 minutos
+#   endereço    sempre o da unidade (as 43 têm), não o que vinha na bilheteria
+#   alertas     1 hora, 30 minutos e 5 minutos antes
+#   fuso        gravado em UTC a partir de Brasília (−03:00, fixo desde 2019),
+#               porque hora flutuante seria lida no fuso do aparelho
+DUR_PADRAO = 30            # minutos, quando nada é publicado
+ALARMES = [("-PT1H", "1 hora"), ("-PT30M", "30 minutos"), ("-PT5M", "5 minutos")]
+FUSO_SP = timezone(timedelta(hours=-3))
+
+ENDERECOS = {}             # preenchido em main(), a partir de unidades[]
+
+
+def _quando(s, hora_padrao="09:00"):
+    """Texto ISO local -> datetime com fuso de Brasília."""
+    p = str(s).split("T")
+    hm = (p[1][:5] if len(p) > 1 and p[1] else hora_padrao)
+    a, m, d = (int(x) for x in p[0].split("-"))
+    h, mi = (int(x) for x in hm.split(":"))
+    return datetime(a, m, d, h, mi, tzinfo=FUSO_SP)
+
+
 def _stamp(quando, hora_padrao="09:00"):
-    p = str(quando).split("T")
-    hm = (p[1][:5] if len(p) > 1 and p[1] else hora_padrao).replace(":", "")
-    return p[0].replace("-", "") + "T" + hm + "00"
+    """Instante de Brasília gravado em UTC, como o iCalendar pede."""
+    return _quando(quando, hora_padrao).astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
 
 
-def ics_evento(ev):
-    """O compromisso do evento. Viagem contínua vira um intervalo só."""
-    local = esc_ics("Sesc " + (ev.get("uni") or "") +
-                    (" — " + ev["endereco"] if ev.get("endereco") else ""))
-    desc = esc_ics(((ev.get("sub") + " — ") if ev.get("sub") else "") + (ev.get("link") or ""))
-    tit = esc_ics(ev.get("tit"))
+def _agora():
+    return datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+
+
+def _local(ev):
+    end = ENDERECOS.get(ev.get("uni")) or ev.get("endereco") or ""
+    return esc_ics("Sesc " + (ev.get("uni") or "") + (" — " + end if end else ""))
+
+
+def _fim(ev, inicio):
+    """Término, na ordem da regra."""
+    for s in ev.get("sessoes") or []:
+        if s.get("quando") == inicio and s.get("fim") and s["fim"] > inicio:
+            return _stamp(s["fim"])
+    dur = ev.get("duracaoMin") or 0
+    return _stamp((_quando(inicio) + timedelta(minutes=dur or DUR_PADRAO)).strftime("%Y-%m-%dT%H:%M"))
+
+
+def _alarmes(titulo):
+    saida = []
+    for gatilho, quanto in ALARMES:
+        saida += ["BEGIN:VALARM", "TRIGGER:" + gatilho, "ACTION:DISPLAY",
+                  "DESCRIPTION:" + esc_ics("Em %s: %s" % (quanto, titulo)), "END:VALARM"]
+    return saida
+
+
+def _vevent(ev, inicio, uid, titulo=None):
+    tit = titulo or (ev.get("tit") or "")
+    corpo = ["BEGIN:VEVENT", "UID:" + uid, "DTSTAMP:" + _agora(),
+             "DTSTART:" + _stamp(inicio), "DTEND:" + _fim(ev, inicio),
+             "SUMMARY:" + esc_ics(tit), "LOCATION:" + _local(ev),
+             "DESCRIPTION:" + esc_ics(((ev.get("sub") + " — ") if ev.get("sub") else "") +
+                                      (ev.get("link") or ""))]
+    if ev.get("geo"):
+        corpo.append("GEO:%s;%s" % (ev["geo"][0], ev["geo"][1]))
+    if ev.get("link"):
+        corpo.append("URL:" + esc_ics(ev["link"]))
+    return corpo + _alarmes(tit) + ["END:VEVENT"]
+
+
+def ics_evento(ev, hoje):
+    """Um compromisso só: a próxima sessão. Viagem contínua vira o intervalo.
+
+    A versão anterior despejava TODAS as sessões num arquivo — uma temporada
+    de dois meses entrava na agenda de alguém como sessenta compromissos que
+    ele teria de apagar um a um. O app agenda uma sessão de cada vez, e o
+    arquivo servido tem de dizer a mesma coisa. Como o robô republica todo
+    dia, "a próxima" nunca fica velha por mais de um dia.
+    """
     dias = ev.get("dias") or []
+    if not dias:
+        return None
 
     if ev.get("continuo") and len(dias) > 1:
         fim = (date.fromisoformat(dias[-1]) + timedelta(days=1)).isoformat()
+        tit = ev.get("tit") or ""
         return _ics(["BEGIN:VEVENT", "UID:%s-viagem@agenda-sesc" % ev["id"],
+                     "DTSTAMP:" + _agora(),
                      "DTSTART;VALUE=DATE:" + dias[0].replace("-", ""),
                      "DTEND;VALUE=DATE:" + fim.replace("-", ""),
-                     "SUMMARY:" + tit, "LOCATION:" + local, "DESCRIPTION:" + desc,
+                     "SUMMARY:" + esc_ics(tit), "LOCATION:" + _local(ev),
+                     "DESCRIPTION:" + esc_ics(((ev.get("sub") + " — ") if ev.get("sub") else "") +
+                                              (ev.get("link") or "")),
+                     # num compromisso de dias inteiros, alerta de 5 minutos
+                     # não quer dizer nada: a véspera é o que importa
                      "BEGIN:VALARM", "TRIGGER:-P1D", "ACTION:DISPLAY",
-                     "DESCRIPTION:" + esc_ics("Amanhã: " + (ev.get("tit") or "")),
+                     "DESCRIPTION:" + esc_ics("Amanhã começa: " + tit),
                      "END:VALARM", "END:VEVENT"])
 
-    pontos = ([s["quando"] for s in ev["sessoes"]] if ev.get("sessoes")
-              else [d + "T" + (ev.get("hora") or "09:00") for d in dias])
-    corpo = []
-    for i, q in enumerate(pontos):
-        corpo += ["BEGIN:VEVENT", "UID:%s-%d@agenda-sesc" % (ev["id"], i),
-                  "DTSTART:" + _stamp(q), "SUMMARY:" + tit,
-                  "LOCATION:" + local, "DESCRIPTION:" + desc,
-                  "BEGIN:VALARM", "TRIGGER:-PT2H", "ACTION:DISPLAY",
-                  "DESCRIPTION:" + tit, "END:VALARM", "END:VEVENT"]
-    return _ics(corpo) if corpo else None
+    pontos = [q for q in datas_de(ev) if q[:10] >= hoje] or datas_de(ev)
+    if not pontos:
+        return None
+    q = pontos[0]
+    return _ics(_vevent(ev, q, "%s-%s@agenda-sesc" % (ev["id"], q[:10].replace("-", ""))))
 
 
 TETO_POR_DATA = 8   # acima disso é curso semanal; não vale 20 arquivos
 
 
 def ics_uma_data(ev, quando):
-    """Uma sessão só, para quem escolheu a data no app."""
-    local = esc_ics("Sesc " + (ev.get("uni") or "") +
-                    (" — " + ev["endereco"] if ev.get("endereco") else ""))
-    desc = esc_ics(((ev.get("sub") + " — ") if ev.get("sub") else "") + (ev.get("link") or ""))
-    return _ics(["BEGIN:VEVENT",
-                 "UID:%s-%s@agenda-sesc" % (ev["id"], _stamp(quando)),
-                 "DTSTART:" + _stamp(quando), "SUMMARY:" + esc_ics(ev.get("tit")),
-                 "LOCATION:" + local, "DESCRIPTION:" + desc,
-                 "BEGIN:VALARM", "TRIGGER:-PT2H", "ACTION:DISPLAY",
-                 "DESCRIPTION:" + esc_ics(ev.get("tit")), "END:VALARM", "END:VEVENT"])
+    """Uma sessão só, a que a pessoa abriu no app."""
+    return _ics(_vevent(ev, quando, "%s-%s@agenda-sesc" % (ev["id"], quando[:10].replace("-", ""))))
 
 
 def datas_de(ev):
@@ -161,24 +224,35 @@ def datas_de(ev):
 
 
 def ics_inscricao(ev):
-    """Só a abertura da inscrição — um compromisso, como pedido."""
+    """Só a abertura da inscrição ou da venda — um compromisso, como pedido.
+
+    Para quem lê é a mesma pergunta ("quando abre?"), então inscrição e venda
+    entram pela mesma porta; encerramento e sorteio ficam na descrição, e não
+    viram compromissos extras que ninguém pediu.
+    """
     i = ev.get("inscricao") or {}
     quando = i.get("inscricao") or ev.get("vendaOnline") or ev.get("vendaPresencial")
     if not quando:
         return None
+    titulo = ("Abrem as inscrições: " if i.get("inscricao") else "Abre a venda: ") + (ev.get("tit") or "")
     extra = []
     if i.get("inscricaoFim"):
         extra.append("Encerra em " + i["inscricaoFim"][:10])
     if i.get("sorteio"):
         extra.append("Sorteio em " + i["sorteio"][:10])
-    return _ics(["BEGIN:VEVENT", "UID:%s-insc@agenda-sesc" % ev["id"],
-                 "DTSTART:" + _stamp(quando, "10:00"),
-                 "SUMMARY:" + esc_ics("Abrem as inscrições: " + (ev.get("tit") or "")),
-                 "LOCATION:" + esc_ics("Sesc " + (ev.get("uni") or "")),
-                 "DESCRIPTION:" + esc_ics(". ".join(extra + [ev.get("link") or ""])),
-                 "BEGIN:VALARM", "TRIGGER:-PT1H", "ACTION:DISPLAY",
-                 "DESCRIPTION:" + esc_ics("Inscrições abrem em 1h"),
-                 "END:VALARM", "END:VEVENT"])
+    if ev.get("vendaOnline"):
+        extra.append("Venda on-line " + ev["vendaOnline"][:16].replace("T", " "))
+
+    inicio = quando if "T" in str(quando) else str(quando) + "T10:00"
+    fim = (_quando(inicio) + timedelta(minutes=DUR_PADRAO)).astimezone(timezone.utc)
+    corpo = ["BEGIN:VEVENT", "UID:%s-insc@agenda-sesc" % ev["id"],
+             "DTSTAMP:" + _agora(),
+             "DTSTART:" + _stamp(inicio), "DTEND:" + fim.strftime("%Y%m%dT%H%M%SZ"),
+             "SUMMARY:" + esc_ics(titulo), "LOCATION:" + _local(ev),
+             "DESCRIPTION:" + esc_ics(". ".join(extra + [ev.get("urlCompra") or ev.get("link") or ""]))]
+    if ev.get("link"):
+        corpo.append("URL:" + esc_ics(ev["link"]))
+    return _ics(corpo + _alarmes(titulo))
 
 
 def manifest(base):
@@ -349,9 +423,16 @@ def main():
         with open(os.path.join(dir_ics, nome), "w", encoding="utf-8", newline="") as f:
             f.write(conteudo)
 
+    # endereço por unidade: é o mesmo para toda a casa e cobre as 43,
+    # inclusive as que não vendem ingresso e por isso não tinham endereço
+    ENDERECOS.clear()
+    for u in bruto.get("unidades") or []:
+        if u.get("endereco"):
+            ENDERECOS[u["nome"]] = u["endereco"]
+
     n_ics = n_ins = n_dia = 0
     for ev in magro["eventos"]:
-        conteudo = ics_evento(ev)
+        conteudo = ics_evento(ev, hoje)
         if conteudo:
             grava("%s.ics" % ev["id"], conteudo)
             n_ics += 1

@@ -161,12 +161,20 @@ def da_bilheteria(idjava):
         ini = s.get("dataInicialSessaoFmt")
         if not ini:
             continue
-        ses.append({
+        item = {
             "quando": ini,
             "status": s.get("statusSessaoSesc") or s.get("dscStatusEvento"),
             "web": s.get("qtdeIngressosWeb"),
             "rede": s.get("qtdeIngressosRede"),
-        })
+        }
+        # Hora de término. Na maioria das atividades a bilheteria repete a
+        # hora de início em `dataFinalSessaoFmt` — aí não há término
+        # publicado e o app aplica a regra de duração. Só guardamos quando o
+        # campo diz algo de verdade.
+        fim = s.get("dataFinalSessaoFmt")
+        if fim and fim > ini:
+            item["fim"] = fim
+        ses.append(item)
     if ses:
         ses.sort(key=lambda x: x["quando"])
         out["sessoes"] = ses

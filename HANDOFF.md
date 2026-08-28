@@ -45,6 +45,17 @@ Campos úteis: `id`, `id_java`, `titulo`, `complemento`, `link`, `unidade[]`,
 (projeto), `gratuito`, `esgotado`, `qtdeIngressosWeb`, `dataPrimeiraSessao`,
 `dataUltimaSessao`, `quantDatas`.
 
+**E `imagem` + `imagens{}`** — a foto da atividade. `imagem` é a original (chega
+a 3 MB); `imagens` traz as variantes **só com o nome do arquivo**, na mesma
+pasta. O coletor monta três URLs a partir daí (`thumb`, `img`, `capa`), uma
+para cada uso na tela. Ficou um ano fora do coletor por não ter sido notada.
+
+**Armadilha da paginação:** a listagem vem com `null` no meio, então uma
+página cheia devolve **299** e não 300. Parar em "menos que `ppp`" cortava a
+varredura na primeira página — o fim é a página **vazia**. Foi isso que fez a
+primeira passada de fotos achar 1.569 de 2.342; corrigido, achou 3.582 itens e
+só 14 eventos futuros ficaram sem foto.
+
 **Armadilha conhecida:** o filtro de data **omite eventos**. "Ecos da
 Independência" (12/09) não volta na consulta de 12/09, mas aparece na listagem
 sem filtro. Por isso `coletor.py` faz uma varredura geral depois do dia a dia —
@@ -57,7 +68,13 @@ GET https://www.sescsp.org.br/wp-json/wp/v1/unidades-atividades
 ```
 
 O campo `description` já traz `capital` | `interior` | `litoral`. São 43
-unidades: 25 capital, 16 interior, 2 litoral.
+unidades: 25 capital, 16 interior, 2 litoral. **Endereço não vem aqui.**
+
+O endereço está no HTML da página da unidade, em `data-geo-address` (e o link
+do mapa em `data-como-chegar`), em `/unidades/<group_slug>/`. `extras.py`
+raspa as 43 e grava em `unidades[].endereco`. Antes o endereço vinha só da
+bilheteria, que cobre 32 unidades — as 9 que não vendem ingresso (Interlagos,
+Itaquera, Osasco, Bertioga…) ficavam sem, e o `.ics` saía sem local.
 
 ### 2.3 Bilheteria — preços, sessões exatas e datas de venda
 
@@ -209,10 +226,17 @@ quem estivesse fora do fuso via a agenda virar o dia na hora errada.
 ```
 coletor.py   → dados/eventos.json          (listagem, dia a dia + varredura)
 detalhes.py  → enriquece o mesmo arquivo   (bilheteria + HTML)
+extras.py    → acrescenta foto e endereço  (backfill; o coletor já grava)
 reparse.py   → reprocessa sem rede         (usa o texto já guardado)
 embutir.py   → prototipo.html              (arquivo único, prévia por link)
 publicar.py  → web/                        (site hospedável, PWA)
 ```
+
+`extras.py` existe porque `coletor.py` reescreve o arquivo do zero e
+`detalhes.py` leva 70 minutos para reenriquecer: quando um campo novo aparece,
+ele é acrescentado ao que já está no disco. `--fotos` pula a raspagem das
+unidades. Numa coleta nova ele é dispensável para as fotos (o coletor já as
+grava) mas continua sendo quem traz os endereços.
 
 `reparse.py` é importante: `detalhes.py` guarda o texto bruto em
 `inscricao.texto`, então melhorias no extrator se aplicam em segundos, sem
@@ -234,17 +258,51 @@ ela é gerada com `embutir.py --com-descricao`.
 
 **Um `blob:` nunca abre o app de calendário** — não tem endereço que o sistema
 reconheça, então o navegador sempre trata como download. O que funciona é um
-`.ics` servido por **URL real** com `Content-Type: text/calendar`.
+`.ics` servido por **URL real** com `Content-Type: text/calendar`. O service
+worker reescreve o Content-Type: nem todo host declara esse tipo (o
+`http.server` do Python manda `application/octet-stream`) e sem isso o celular
+não entrega ao app de agenda.
 
-`publicar.py` gera: um `.ics` por evento (viagem = intervalo único com
-`DTEND` exclusivo), um por sessão para eventos com até 8 datas, e um da
-abertura da inscrição. Total ~5.900 arquivos.
+O `.ics` é montado nos dois lugares — no aparelho (`prototipo.html`) e no
+servidor (`publicar.py`) — e as **duas implementações têm de dizer a mesma
+coisa**. As regras, uma a uma:
 
-O **service worker reescreve o Content-Type** para `text/calendar`: nem todo
-host declara esse tipo (o `http.server` do Python manda
-`application/octet-stream`) e sem isso o celular não entrega ao app de agenda.
+| campo | regra |
+|---|---|
+| início | a sessão que a pessoa abriu; sem dia aberto, a próxima |
+| **fim** | término publicado pela bilheteria > início + duração > **início + 30 min** |
+| endereço | sempre o da **unidade** (`unidades[].endereco`), nunca só o nome |
+| alertas | **1 hora, 30 minutos e 5 minutos** antes |
+| fuso | gravado em **UTC** a partir de Brasília (−03:00) |
 
----
+Sobre o fim: `dataFinalSessaoFmt` quase sempre **repete a hora de início** —
+não é término publicado, é campo vazio disfarçado. `detalhes.py` só guarda
+`sessoes[].fim` quando o valor é maior que o início. Duração não existe em
+lugar nenhum da fonte (procurada nas 2,3 mil descrições: zero ocorrências), o
+que faz do bloco de 30 minutos o caso comum. É deliberado: um bloco curto e
+honesto ocupa menos a tarde de alguém do que duas horas inventadas.
+
+Sobre o fuso: hora flutuante (sem `Z`) é lida no fuso do **aparelho**. Quem
+abrisse a agenda fora do Brasil marcava na hora errada. Agora sai `Z`.
+
+**Um compromisso por vez.** A versão anterior despejava todas as sessões num
+arquivo só: uma temporada de dois meses entrava na agenda como sessenta
+compromissos para apagar um a um. Hoje é sempre um. Viagem contínua é a
+exceção — vira um único compromisso de dias inteiros (`DTEND` exclusivo), com
+alerta de véspera em vez dos três, porque "em 5 minutos" não quer dizer nada
+num evento de dia inteiro.
+
+`publicar.py` gera: `<id>.ics` com a **próxima** sessão, `<id>-AAAAMMDD.ics`
+por sessão para quem tem até 8 datas, e `<id>-insc.ics` da abertura. O app só
+usa o arquivo servido quando ele é do **mesmo instante** que o botão está
+agendando; fora disso monta no aparelho. Um `HEAD` confere antes — num deploy
+incompleto o arquivo falta e o link ficaria morto.
+
+**Sem tela intermediária.** A escolha de calendário (app / Google / Outlook /
+baixar) virava uma folha inteira entre o toque e o resultado. O botão agora
+faz o que diz. No computador sobra um botão **ao lado** — não no lugar — para
+o Google Agenda, porque lá o `.ics` cai na pasta de downloads e parece que
+nada aconteceu.
 
 ## 6. Estado atual e pendências
 
@@ -294,6 +352,7 @@ instalado nesta máquina.**
 python coletor.py --de 2026-08-11 --ate 2026-10-09   # ~5 min
 python detalhes.py --html                            # ~70 min (descrições)
 python reparse.py                                    # instantâneo
+python extras.py                                     # ~4 min (fotos + endereços)
 python embutir.py --com-descricao                    # arquivo único
 python publicar.py                                   # pasta web/
 python -m http.server 8100 --directory web           # testar
@@ -314,35 +373,80 @@ python publicar.py --base /agenda-sesc/  # subpasta do GitHub Pages
 
 ## 8. Decisões de design
 
-Direção **papel e tinta**: guia de programação impresso. Fios finos no lugar de
-cartões, serifa nos títulos de seção e da folha de detalhe, sans na lista
-(serifa em lista longa vira textura), monoespaçada nos dados. Raio máximo 4px.
-Tema claro por decisão de projeto.
+### 8.0 v4 — "Cartaz" (o design em vigor)
 
-**A cor pertence ao conteúdo**: o cromo é preto-e-papel, e o único colorido é a
-categoria do evento. Sete tintas separadas no círculo cromático, escolhidas para
-não evocar a marca do Sesc.
+A v3 era **papel e tinta**: guia impresso, fios finos no lugar de cartões,
+serifa nos títulos, sans na lista, monoespaçada nos dados, raio máximo 4px,
+tema claro. Ela resolvia o volume — 2,3 mil eventos, 500 por dia — mas
+escondia o que faz alguém escolher um espetáculo: **a foto**. O portal publica
+uma imagem para cada atividade e o app jogava fora.
 
-Arquitetura de informação: **contexto antes de catálogo**. Na primeira abertura
-o app pergunta as unidades — isso corta o universo de 2.119 para ~100. A home
-responde perguntas em trilhos ("Inscrição abre em breve", "Grátis no fim de
-semana"), e a agenda é lista densa com hora na goteira.
+A v4 mantém a densidade e parte da foto. Três mudanças de fundo:
 
-A semana começa na **segunda** — na régua da agenda e no trilho "Agenda da
-semana", cuja nota conta os sete dias (seg a dom) e cujos cartões começam em
-hoje, porque segunda-feira já não dá para assistir na quinta. O recorte que
-esse trilho leva para a agenda carrega a própria faixa de dias (`trilho.dias`):
-sem isso, uma temporada longa reapareceria em todas as datas até dezembro.
+1. **A foto é o convite.** Cartão com imagem 16:9, linha da agenda com
+   miniatura de 62px, folha de detalhe com capa sangrada e título por cima.
+   Sem foto (12 de 1.320 no publicado), o lugar vira um cartaz desenhado com a
+   tinta da categoria e a inicial do título — um retângulo cinza vazio se lê
+   como falha de carregamento.
+2. **As respostas viram etiqueta.** Três perguntas se repetem em toda decisão:
+   *ainda dá para entrar* (Últimos ingressos / Esgotado), *é para mim*
+   (Público) e *onde é* (Local). Viraram um componente só, `.tag`, com a mesma
+   forma no cartão, na lista e no detalhe. Na linha densa o texto abrevia
+   (`opc.curto`): sai o "a partir de" e o "Sesc", que não cabem em 185px.
+3. **O filtro sai da gaveta.** Ver "Filtros" abaixo.
 
-Cada linha da agenda mostra **a data que a régua está calando**: vendo pelo dia
-do evento, ela traz a inscrição; vendo pela abertura da inscrição, ela traz
-quando a coisa acontece — e a hora na goteira acompanha a régua. Quando não há
-nada publicado sobre a entrada (o caso da maioria), a linha fica em branco:
-repetir "sem data" em quase toda linha só viraria textura.
+Tipografia: **Bricolage Grotesque** nos títulos (voz de cartaz, com caráter) e
+**Archivo** no texto, com pilha de reserva do sistema — sem rede o app cai em
+sans-serif e nada quebra de layout. Monoespaçada continua em hora e número.
 
-Favoritos também é separado por dia, como a agenda, com uma diferença: cada
-favorito aparece uma vez só, na sua próxima data. Repetir uma temporada de dois
-meses encheria a aba com o mesmo título.
+Cor: papel morno (`#FAF8F4`), tinta quente quase preta, **um** azul de ação e
+as oito tintas de categoria. A regra da v3 continua valendo — o cromo é
+neutro, a cor pertence ao conteúdo — só que agora quem colore é a foto. Raio:
+6px em controle, 12px em mídia e caixa, 20px na folha, pílula em botão e
+etiqueta.
+
+Os tokens estão no topo do CSS de `prototipo.html`. Trocar os valores desse
+bloco reveste o app inteiro sem tocar em componente.
+
+**"Para você" tem quatro trilhos, nesta ordem**, e cada um é uma pergunta:
+
+1. Novidades na programação — o que é novo
+2. Hoje e amanhã — o que dá para fazer agora
+3. Agenda da semana — como está a semana
+4. Inscrição ou venda abre em breve — do que cuidar antes que abra
+
+A v3 tinha doze. A tela virava corredor e a mesma atividade aparecia em
+quatro deles. Inscrição e venda viraram um trilho só porque, para quem lê, a
+pergunta é uma só: *quando abre?* — separá-las obrigava a olhar os dois para
+não perder nada. O trilho de novidades **não aparece** numa base sem o carimbo
+`visto` (ver 4.5): ali ele seria permanentemente vazio na primeira dobra.
+
+**Filtros.** Antes eram quatro lugares com quatro gramáticas: a barra de
+contexto (unidades), a gaveta (projetos e categorias), a folha de unidades e a
+fileira de chips da agenda. Quem tinha três filtros ligados não tinha onde ver
+os três juntos, e desligar um exigia lembrar de onde tinha vindo.
+
+Agora é um lugar só: uma **barra sempre visível** com o que está ligado, em
+pastilha que se desliga com um toque, e uma **folha única** com região,
+unidades (com busca), categorias, público, preço, situação da entrada e
+projetos. As contagens continuam facetadas — cada opção é contada com todos os
+outros filtros aplicados, **menos o dela própria**. Até três unidades aparecem
+pelo nome na barra, porque "3 unidades" não diz se Pompeia está entre elas.
+
+Consequência importante: a situação da entrada (grátis, com ingressos,
+inscrição aberta, por sorteio…) **deixou de ser um chip só da agenda** e virou
+faceta global — agora vale também nos trilhos e nas contagens.
+
+**Duas colisões de nome que custaram depuração:**
+
+- A miniatura da lista chamava-se `.mini` e a fileira compacta de etiquetas,
+  `.tags.mini`. A regra `.ev .mini { width: 62px; height: 62px }` casava com as
+  duas, e a fileira de etiquetas virava um quadrado de 62px: `Esg…`,
+  `a parti…`, `Ses…`. A miniatura agora é `.thumb`.
+- `regiaoDaUnidade()` era chamada em `abrirUnidades()` e **nunca existiu** —
+  trocar a aba de região com unidades marcadas quebrava a folha inteira com
+  `ReferenceError`. Bug antigo, exposto ao reaproveitar o código na folha de
+  filtros. Definida.
 
 ### 8.1 Computador
 
@@ -390,30 +494,28 @@ antigo — é preciso desregistrar e limpar o cache, não basta recarregar.
 
 ### 8.2 Calendário: o computador é outro bicho
 
-A seção 5.3 descreve a entrega do `.ics` ao app de agenda. Isso vale para
-celular. **No computador não existe esse caminho**: o navegador baixa o arquivo
-e ele morre na pasta de downloads. O botão parecia não fazer nada.
+No celular o alvo é o app de agenda do aparelho, e o `.ics` é o que o sistema
+entende. No computador esse caminho não existe: o navegador baixa o arquivo e
+ele morre na pasta de downloads — foi exatamente o "não acontece nada"
+relatado. Por isso, no computador, aparece um botão **ao lado** do principal
+para o **Google Agenda** (`calendar.google.com/render?action=TEMPLATE`), com
+`ctz=America/Sao_Paulo` explícito: sem o fuso, o Google usa o da conta e quem
+estiver fora do Brasil agenda na hora errada. E o aviso diz onde o arquivo foi
+parar, senão "baixar" também parece "não aconteceu nada".
 
-No computador, então, o alvo é o calendário da **web**, onde a pessoa já está:
+O que **saiu** na v4: a folha de escolha de calendário (app / Google / Outlook
+/ baixar / escolher datas). Ela era uma tela inteira entre o toque e o
+resultado, para uma decisão que quase sempre tem uma resposta só. O botão faz
+o que diz; o resto é escolhido pelo contexto.
 
-- primário: **Google Agenda** (`calendar.google.com/render?action=TEMPLATE`),
-  com `ctz=America/Sao_Paulo` explícito — sem o fuso, o Google usa o da conta e
-  quem estiver fora do Brasil agenda na hora errada;
-- secundário: **Outlook** (`outlook.live.com/.../compose`), com o
-  deslocamento `-03:00` nas datas;
-- terciário: baixar o `.ics`, para quem usa agenda instalada — e aí o toast
-  diz onde o arquivo foi parar, senão "baixar" também parece "não aconteceu
-  nada".
+### 8.3 Como rodar o backfill de fotos e endereços
 
-Viagem contínua vira compromisso de dia inteiro (`dates=AAAAMMDD/AAAAMMDD`,
-fim exclusivo); o resto vira bloco de duas horas, a mesma convenção da intent
-do Android.
-
-**E uma armadilha corrigida:** o botão do celular aponta para um `.ics`
-servido, e o código assumia que, havendo servidor, o arquivo existiria. Num
-deploy incompleto ele dá 404 e o link fica morto — clique sem efeito. Agora um
-`HEAD` confere antes; faltando o arquivo, o `.ics` é montado no próprio
-aparelho.
+```bash
+python extras.py            # fotos + públicos + endereços das 43 unidades
+python extras.py --fotos    # só as fotos (quando muda o critério de tamanho)
+python embutir.py --com-descricao
+python publicar.py
+```
 
 O design system está no topo do CSS de `prototipo.html`, em tokens. Trocar os
 valores desse bloco reveste o app inteiro sem tocar em componente.
