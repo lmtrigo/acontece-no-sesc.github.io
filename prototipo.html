@@ -1,6 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sesc SP — agregador de eventos</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2316130E'/%3E%3Crect x='4.6' y='6.6' width='3.4' height='1.7' rx='.85' fill='%23FAF8F4'/%3E%3Crect x='4.6' y='11.2' width='3.4' height='1.7' rx='.85' fill='%23FAF8F4'/%3E%3Crect x='4.6' y='15.8' width='3.4' height='1.7' rx='.85' fill='%23FAF8F4'/%3E%3Crect x='10.2' y='6' width='9.2' height='12' rx='2.2' fill='%23C0521A'/%3E%3C/svg%3E">
 
 <!-- Fontes da web com pilha de reserva do sistema: sem rede (ou no
      primeiro carregamento offline do PWA) o app cai em sans-serif e
@@ -136,6 +137,10 @@
     border-radius: var(--r-full);
   }
   .iconbtn:hover { background: var(--surface-2); }
+  /* Marca própria: a linha da agenda reduzida a glifo — a goteira de hora à
+     esquerda, a foto à direita. O app é declaradamente não oficial e não pode
+     imitar a identidade do Sesc, então precisa de uma que seja dele. */
+  .logo { flex: 0 0 auto; }
   .wordmark { margin-right: auto; display: flex; flex-direction: column; gap: 0; min-width: 0; }
   .wordmark b { font-family: var(--font-display); font-size: 21px; font-weight: 800; line-height: 1.05; letter-spacing: -.02em; }
   .wordmark span { color: var(--ink-3); font-size: var(--fs-label); letter-spacing: .1em; text-transform: uppercase; font-weight: 600; }
@@ -322,12 +327,17 @@
   }
   .tag > span { overflow: hidden; text-overflow: ellipsis; }
   .tag svg { flex: 0 0 auto; opacity: .75; }
-  .tag.alerta { background: var(--neg-soft); color: var(--neg); font-weight: 700; }
-  .tag.esgotado { background: var(--surface-2); color: var(--ink-3); font-weight: 700; }
-  .tag.gratis { background: var(--pos-soft); color: var(--pos); font-weight: 700; }
-  .tag.prazo { background: var(--warn-soft); color: var(--warn); font-weight: 700; }
-  .tag.preco { background: var(--surface-2); color: var(--ink); font-weight: 700; }
-  .tag.local svg { opacity: .55; }
+  /* As variantes levam prefixo `t-` porque nomes curtos colidem: `.tag.preco`
+     casava com `.preco`, a célula da tabela de preços do detalhe, que tem
+     `flex: 1 1 0` — a etiqueta de valor esticava por toda a linha e empurrava
+     o local para a outra ponta. Segunda colisão do tipo (a primeira foi
+     `.mini`, da miniatura), então o prefixo vale para todas. */
+  .tag.t-alerta { background: var(--neg-soft); color: var(--neg); font-weight: 700; }
+  .tag.t-esgotado { background: var(--surface-2); color: var(--ink-3); font-weight: 700; }
+  .tag.t-gratis { background: var(--pos-soft); color: var(--pos); font-weight: 700; }
+  .tag.t-prazo { background: var(--warn-soft); color: var(--warn); font-weight: 700; }
+  .tag.t-valor { background: var(--surface-2); color: var(--ink); font-weight: 700; }
+  .tag.t-local svg { opacity: .55; }
   .tags.mini .tag { height: 20px; font-size: 11px; padding: 0 7px; }
 
   /* ---------------- lista densa com miniatura ---------------- */
@@ -682,9 +692,10 @@
        permanente, o cabeçalho do conteúdo só repetia o nome do app à
        direita, e a coluna começava num rótulo miúdo, sem identidade. */
     .dbrand {
-      display: flex; flex-direction: column; gap: 1px;
+      display: flex; align-items: center; gap: var(--s4);
       padding: var(--s7) var(--s4) var(--s6);
     }
+    .dbrand > div { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
     .dbrand b {
       font-family: var(--font-display); font-size: 22px; font-weight: 800;
       line-height: 1.05; letter-spacing: -.025em;
@@ -829,6 +840,7 @@
     <button class="iconbtn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2.5 5.5h15M2.5 10h15M2.5 14.5h15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
     </button>
+    <svg class="logo" width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="1" y="2" width="22" height="20" rx="4.5" fill="var(--ink)"/><rect x="4.6" y="6.6" width="3.4" height="1.7" rx=".85" fill="var(--on-ink)"/><rect x="4.6" y="11.2" width="3.4" height="1.7" rx=".85" fill="var(--on-ink)"/><rect x="4.6" y="15.8" width="3.4" height="1.7" rx=".85" fill="var(--on-ink)"/><rect x="10.2" y="6" width="9.2" height="12" rx="2.2" fill="var(--cat-shows)"/></svg>
     <div class="wordmark"><b>Sesc SP</b><span>agregador de eventos</span></div>
     <button class="iconbtn" id="searchBtn" aria-label="Buscar" aria-expanded="false">
       <svg width="19" height="19" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="5.4" stroke="currentColor" stroke-width="1.7"/><path d="M12.2 12.2L16 16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
@@ -905,8 +917,11 @@
          passa a ser o canto superior esquerdo da página; no celular ela fica
          na faixa do topo, e esta some. -->
     <div class="dbrand">
-      <b>Sesc SP</b>
-      <span>agregador de eventos</span>
+      <svg class="logo" width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="1" y="2" width="22" height="20" rx="4.5" fill="var(--ink)"/><rect x="4.6" y="6.6" width="3.4" height="1.7" rx=".85" fill="var(--on-ink)"/><rect x="4.6" y="11.2" width="3.4" height="1.7" rx=".85" fill="var(--on-ink)"/><rect x="4.6" y="15.8" width="3.4" height="1.7" rx=".85" fill="var(--on-ink)"/><rect x="10.2" y="6" width="9.2" height="12" rx="2.2" fill="var(--cat-shows)"/></svg>
+      <div>
+        <b>Sesc SP</b>
+        <span>agregador de eventos</span>
+      </div>
     </div>
     <div class="dgroup dnav">
       <h4 class="u-label">Navegar</h4>
@@ -1516,25 +1531,25 @@
     opc = opc || {};
     var box = el("div", "tags" + (opc.mini ? " mini" : ""));
     if (!opc.semIngresso) {
-      if (ev.esgotado) box.appendChild(etiqueta("esgotado", "ingresso", "Esgotado"));
-      else if (poucosIngressos(ev)) box.appendChild(etiqueta("alerta", "ingresso", "Últimos ingressos"));
+      if (ev.esgotado) box.appendChild(etiqueta("t-esgotado", "ingresso", "Esgotado"));
+      else if (poucosIngressos(ev)) box.appendChild(etiqueta("t-alerta", "ingresso", "Últimos ingressos"));
     }
     if (!opc.semPreco) {
-      if (ev.gratis) box.appendChild(etiqueta("gratis", null, "Grátis"));
+      if (ev.gratis) box.appendChild(etiqueta("t-gratis", null, "Grátis"));
       else {
         var p = precoMin(ev);
         // na linha densa não cabe "a partir de": o valor sozinho já é o piso
         if (p != null && isFinite(p) && p > 0) {
-          box.appendChild(etiqueta("preco", null, (opc.curto ? "" : "a partir de ") + reais(p)));
+          box.appendChild(etiqueta("t-valor", null, (opc.curto ? "" : "a partir de ") + reais(p)));
         }
       }
     }
     if (!opc.semPublico) {
       var pu = publicoTxt(ev);
-      if (pu) box.appendChild(etiqueta("publico", "publico", pu));
+      if (pu) box.appendChild(etiqueta("t-publico", "publico", pu));
     }
     // na linha densa o "Sesc" é redundante — todas as atividades são do Sesc
-    if (!opc.semLocal) box.appendChild(etiqueta("local", "local", (opc.curto ? "" : "Sesc ") + ev.uni));
+    if (!opc.semLocal) box.appendChild(etiqueta("t-local", "local", (opc.curto ? "" : "Sesc ") + ev.uni));
     return box;
   }
 

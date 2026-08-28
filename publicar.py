@@ -38,44 +38,62 @@ import regras
 NOME = "Agenda Sesc SP"
 NOME_CURTO = "Agenda Sesc"
 DESC = "Agregador não oficial da programação do Sesc São Paulo."
-TEMA = "#15171A"
-FUNDO = "#F2F2F0"
+TEMA = "#16130E"
+FUNDO = "#FAF8F4"
 
 
 # ----------------------------------------------------------------- ícones
 def png(caminho, tamanho, maskable=False):
-    """Escreve um PNG sem dependências: fundo tinta e uma marca de agenda."""
-    fundo = (0x15, 0x17, 0x1A)
-    tinta = (0xF2, 0xF2, 0xF0)
-    acento = (0xC2, 0x57, 0x1E)
+    """Escreve um PNG sem dependências, com a marca do app.
+
+    A marca é a própria linha da agenda reduzida a glifo: a goteira de hora à
+    esquerda, em três traços, e a foto à direita, em bloco. O app é
+    declaradamente não oficial e não pode imitar a identidade do Sesc — a
+    marca precisa ser dele. Tudo aqui é retângulo com canto arredondado, o
+    que cabe num gerador de PNG escrito à mão.
+    """
+    fundo = (0x16, 0x13, 0x0E)      # --ink
+    tinta = (0xFA, 0xF8, 0xF4)      # --on-ink
+    acento = (0xC0, 0x52, 0x1A)     # --cat-shows
 
     s = tamanho
-    # área segura menor quando maskable (o sistema recorta as bordas)
-    m = int(s * (0.28 if maskable else 0.18))
-    topo = int(s * 0.10)
+    # área segura menor quando maskable: o sistema recorta as bordas
+    m = s * (0.28 if maskable else 0.16)
+    w = s - 2 * m
+
+    def caixa(x0, y0, x1, y1, r):
+        """Teste de pertencimento a um retângulo de cantos arredondados."""
+        def dentro(x, y):
+            if not (x0 <= x < x1 and y0 <= y < y1):
+                return False
+            for cx, cy in ((x0 + r, y0 + r), (x1 - r, y0 + r),
+                           (x0 + r, y1 - r), (x1 - r, y1 - r)):
+                if ((x < x0 + r or x > x1 - r) and (y < y0 + r or y > y1 - r)
+                        and abs(x - cx) <= r and abs(y - cy) <= r):
+                    return (x - cx) ** 2 + (y - cy) ** 2 <= r * r
+            return True
+        return dentro
+
+    # três traços da goteira e o bloco da foto, na mesma proporção do SVG
+    traco_r = w * 0.035
+    # o grupo de traços é centrado contra o bloco: 0,235 a 0,765 dá o mesmo
+    # meio que 0,12 a 0,88, senão a goteira fica pendurada mais alto
+    tracos = [caixa(m + w * 0.04, m + w * (0.235 + i * 0.23),
+                    m + w * 0.20, m + w * (0.305 + i * 0.23), traco_r)
+              for i in range(3)]
+    bloco = caixa(m + w * 0.30, m + w * 0.12, m + w * 0.94, m + w * 0.88, w * 0.09)
 
     linhas = bytearray()
     for y in range(s):
-        linhas.append(0)  # filtro None
+        linhas.append(0)                       # filtro None
         for x in range(s):
-            c = fundo
-            dentro = m <= x < s - m and m <= y < s - m
-            if dentro:
-                borda = max(2, s // 64)
-                na_borda = (x < m + borda or x >= s - m - borda or
-                            y < m + borda or y >= s - m - borda)
-                faixa = y < m + borda + topo
-                if faixa:
-                    c = acento
-                elif na_borda:
-                    c = tinta
-                else:
-                    # três "linhas de programação"
-                    passo = (s - 2 * m - topo) // 4
-                    rel = y - (m + borda + topo)
-                    if passo > 0 and rel % passo < max(2, passo // 5) and rel > 0:
-                        if m + borda * 3 <= x < s - m - borda * 3:
-                            c = tinta
+            px, py = x + 0.5, y + 0.5
+            if bloco(px, py):
+                c = acento
+            elif any(t(px, py) for t in tracos):
+                c = tinta
+            else:
+                c = fundo
             linhas.extend(c)
 
     def chunk(tipo, dados):
