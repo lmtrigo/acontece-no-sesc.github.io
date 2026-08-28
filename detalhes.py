@@ -65,7 +65,15 @@ RE_DATA_EXT = re.compile(
     r"agosto|setembro|outubro|novembro|dezembro)(?:\s+de\s+(\d{4}))?"
     r"(?:\s*,)?(?:\s*[àa]s\s*(\d{1,2})(?:h|:)(\d{2})?)?", re.I)
 RE_INFO_LOCAL = re.compile(r'class="info_local"[^>]*>(.*?)</div>', re.S)
-RE_RESULTADO = re.compile(r"Resultado do Sorteio\s*:?", re.I)
+# O cabeçalho da lista de contemplados não é um só. "Resultado do Sorteio:"
+# cobria o Turismo Social clássico; "Minas em Cena" publica sob um
+# "CONTEMPLADOS" seco, logo depois de "Compartilhe:" — e o app dizia que a
+# lista não tinha saído quando ela estava na tela.
+RE_RESULTADO = re.compile(
+    r"(?:resultado\s+d[oa]\s+sorteio"
+    r"|lista\s+d[eo]s?\s+contemplad[oa]s"
+    r"|contemplad[oa]s"
+    r"|sortead[oa]s)\s*:?", re.I)
 RE_CODIGO = re.compile(r"[A-Z]{6,12}")
 RE_DATA_HORA = re.compile(
     r"(\d{1,2})/(\d{1,2})(?:/(\d{2,4}))?(?:\s*,)?(?:\s*[àa]s\s*(\d{1,2})(?:h|:)(\d{2})?)?")
@@ -524,14 +532,24 @@ def regras_de_inscricao(pagina):
         if dia is None:
             continue
 
-        # de quem é esta janela: a menção mais próxima antes dela vence
-        contexto = corpo[max(0, m.start() - 320):m.start()]
-        p, g = RE_PLENA.search(contexto), RE_GERAL.search(contexto)
+        # De quem é esta janela. O público tanto vem antes ("para portadores
+        # de Credencial Plena na 1ª e na 3ª quinta...") quanto depois ("...a
+        # partir das 18h, para quem possui credencial plena"). Olhar só para
+        # trás fazia a segunda forma virar "todos".
+        antes_ctx = corpo[max(0, m.start() - 320):m.start()]
+        depois_ctx = corpo[m.end():m.end() + 160]
         quem = "todos"
+        p, g = RE_PLENA.search(antes_ctx), RE_GERAL.search(antes_ctx)
         if p and (not g or p.start() > g.start()):
             quem = "plena"
         elif g:
             quem = "geral"
+        else:
+            p2, g2 = RE_PLENA.search(depois_ctx), RE_GERAL.search(depois_ctx)
+            if p2 and (not g2 or p2.start() < g2.start()):
+                quem = "plena"
+            elif g2:
+                quem = "geral"
 
         saida.append({
             "quem": quem,
@@ -548,6 +566,29 @@ def regras_de_inscricao(pagina):
         vistas.add(chave)
         unicas.append(r)
     return unicas or None
+
+
+def sorteados_do_corpo(corpo):
+    """Códigos contemplados, a partir de qualquer um dos cabeçalhos.
+
+    Percorre TODAS as ocorrências e fica com a maior lista: as palavras
+    "sorteados" e "contemplados" também aparecem em prosa ("os sorteados
+    poderão efetivar o pagamento"), e ali não vem código nenhum. A trava é
+    exigir que o código apareça nos dois primeiros tokens depois do cabeçalho
+    -- em prosa isso nunca acontece.
+    """
+    melhor = []
+    for m in RE_RESULTADO.finditer(corpo):
+        codigos = []
+        for k, tok in enumerate(corpo[m.end():m.end() + 4000].split()):
+            t = tok.strip(".,;:()")
+            if RE_CODIGO.fullmatch(t):
+                codigos.append(t)
+            elif codigos or k >= 2:
+                break
+        if len(codigos) > len(melhor):
+            melhor = codigos
+    return melhor
 
 
 def da_pagina(pagina, ano_ref, dia_evento):
@@ -570,17 +611,9 @@ def da_pagina(pagina, ano_ref, dia_evento):
     out = datas_do_texto(texto, ano_ref, dia_evento)
 
     corpo = limpar(pagina)
-    m = RE_RESULTADO.search(corpo)
-    if m:
-        codigos = []
-        for tok in corpo[m.end():m.end() + 4000].split():
-            t = tok.strip(".,;:")
-            if RE_CODIGO.fullmatch(t):
-                codigos.append(t)
-            elif codigos:
-                break
-        if codigos:
-            out["sorteados"] = codigos
+    codigos = sorteados_do_corpo(corpo)
+    if codigos:
+        out["sorteados"] = codigos
 
     # `out` É o dicionário de inscrição do evento (main faz
     # `ev["inscricao"] = info`), então as regras entram aqui direto. A duração

@@ -3696,7 +3696,9 @@
         (d.favoritos || []).forEach(function (id) { if (state.favs.indexOf(id) === -1) { state.favs.push(id); nf++; } });
         var ids = state.sorteios.map(function (s) { return s.id; });
         (d.sorteios || []).forEach(function (s) { if (ids.indexOf(s.id) === -1) { state.sorteios.push(s); ns++; } });
-        saveUnits(); saveFavs(); saveSorteios(); render(); fecharDrawer();
+        // a credencial só entra se ainda não houver uma escolha neste aparelho
+        if (d.credencial && !state.credencial) { state.credencial = d.credencial; saveCredencial(); }
+        saveUnits(); saveFavs(); saveSorteios(); conferirTodos(); render(); fecharDrawer();
         toast("Importado: " + nf + " favoritos, " + ns + " sorteios");
       } catch (e) { toast("Arquivo inválido"); }
     };
