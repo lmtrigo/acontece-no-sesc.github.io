@@ -458,6 +458,98 @@ def limpar_servico(texto):
     return " ".join(ficam).strip(" ·-–—")
 
 
+# ------------------------------------------------- duração e regra de entrada
+# "Duração: 50 minutos" fica no cabeçalho da página, não na API. É o segundo
+# degrau da regra de término do .ics (fim publicado > início + duração >
+# início + 30 min); sem ele, quase toda atividade caía no bloco de 30 minutos.
+RE_DURACAO = re.compile(
+    r"Dura[çc][ãa]o\s*:?\s*(?:(\d{1,2})\s*h(?:oras?)?\s*(?:e\s*)?(\d{1,2})?\s*(?:min\w*)?"
+    r"|(\d{1,3})\s*(?:min\w*|')" r")", re.I)
+
+
+def duracao_minutos(pagina):
+    m = RE_DURACAO.search(limpar(pagina))
+    if not m:
+        return None
+    if m.group(3):
+        v = int(m.group(3))
+    else:
+        v = int(m.group(1)) * 60 + int(m.group(2) or 0)
+    # 5 minutos a 12 horas: fora disso é outra coisa que casou por acaso
+    return v if 5 <= v <= 720 else None
+
+
+# Parte das inscrições não tem data: tem REGRA, em prosa, e ela se repete todo
+# mês. O caso que motivou isto:
+#
+#   "As vagas disponíveis são liberadas prioritariamente para pessoas
+#    portadoras de Credencial Plena na 1ª e na 3ª quinta feira de cada mês a
+#    partir das 18h. Caso estas vagas não sejam preenchidas, serão
+#    disponibilizadas para o público em geral na 2ª e na 4ª quarta feira de
+#    cada mês a partir das 14h."
+#
+# São duas datas diferentes para duas pessoas diferentes, e nenhuma delas
+# aparece em lugar nenhum como data. Quem tem Credencial Plena que se
+# programar para a quinta; quem não tem, para a quarta seguinte.
+DOW = {"domingo": 0, "segunda": 1, "terca": 2, "terça": 2, "quarta": 3,
+       "quinta": 4, "sexta": 5, "sabado": 6, "sábado": 6}
+
+RE_DIA_DO_MES = re.compile(
+    r"(segunda|ter[çc]a|quarta|quinta|sexta|s[áa]bado|domingo)"
+    r"[\s\-]*(?:feira)?[\s,]*(?:de|do)\s+cada\s+m[êe]s", re.I)
+RE_ORDINAL = re.compile(r"(\d)\s*[ªa°ºo]")
+RE_HORA_REGRA = re.compile(
+    r"a\s+partir\s+d[ao]s?\s+(\d{1,2})\s*(?:h|:)\s*(\d{2})?", re.I)
+RE_PLENA = re.compile(r"credencial\s+plena", re.I)
+RE_GERAL = re.compile(r"p[úu]blico\s+(?:em\s+)?geral|demais\s+p[úu]blicos", re.I)
+
+
+def regras_de_inscricao(pagina):
+    """Janelas recorrentes de inscrição, uma por público.
+
+    Devolve [{quem, semanas, dow, hora}], onde `dow` segue a convenção do
+    JavaScript (0 = domingo) porque quem consome é o app.
+    """
+    corpo = limpar(pagina)
+    saida = []
+    for m in RE_DIA_DO_MES.finditer(corpo):
+        antes = corpo[max(0, m.start() - 110):m.start()]
+        semanas = sorted({int(x) for x in RE_ORDINAL.findall(antes) if 1 <= int(x) <= 5})
+        if not semanas:
+            continue
+        h = RE_HORA_REGRA.search(corpo[m.end():m.end() + 90])
+        if not h:
+            continue
+        dia = DOW.get(m.group(1).lower())
+        if dia is None:
+            continue
+
+        # de quem é esta janela: a menção mais próxima antes dela vence
+        contexto = corpo[max(0, m.start() - 320):m.start()]
+        p, g = RE_PLENA.search(contexto), RE_GERAL.search(contexto)
+        quem = "todos"
+        if p and (not g or p.start() > g.start()):
+            quem = "plena"
+        elif g:
+            quem = "geral"
+
+        saida.append({
+            "quem": quem,
+            "semanas": semanas,
+            "dow": dia,
+            "hora": "%02d:%02d" % (int(h.group(1)), int(h.group(2) or 0)),
+        })
+    # sem público distinto, uma regra só basta
+    unicas, vistas = [], set()
+    for r in saida:
+        chave = (r["quem"], tuple(r["semanas"]), r["dow"], r["hora"])
+        if chave in vistas:
+            continue
+        vistas.add(chave)
+        unicas.append(r)
+    return unicas or None
+
+
 def da_pagina(pagina, ano_ref, dia_evento):
     """Inscrição/sorteio no texto e os códigos contemplados."""
     blocos = [limpar(b) for b in RE_INFO_LOCAL.findall(pagina)]
@@ -489,6 +581,14 @@ def da_pagina(pagina, ano_ref, dia_evento):
                 break
         if codigos:
             out["sorteados"] = codigos
+
+    dur = duracao_minutos(pagina)
+    if dur:
+        out["duracaoMin"] = dur
+
+    regras = regras_de_inscricao(pagina)
+    if regras:
+        out.setdefault("inscricao", {})["regras"] = regras
 
     return out or None
 

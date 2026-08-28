@@ -35,7 +35,7 @@ CAMPOS = ("id", "tit", "sub", "uni", "reg", "cat", "subcat", "publico",
           # do detalhe. São só endereços — a imagem não entra no arquivo.
           "thumb", "img", "capa",
           # segunda passada (detalhes.py)
-          "precos", "sessoes", "vendaOnline", "vendaPresencial", "vendaOnlineFim",
+          "precos", "sessoes", "duracaoMin", "vendaOnline", "vendaPresencial", "vendaOnlineFim",
           "urlCompra", "maxPorPessoa", "classificacao", "endereco", "geo", "continuo", "icsd",
           "inscricao", "sorteados",
           # dia em que o evento apareceu pela primeira vez na base: é o que

@@ -294,7 +294,8 @@
     padding: 3px 7px; font-size: var(--fs-label); letter-spacing: .07em;
     text-transform: uppercase; font-weight: 700;
   }
-  .shot .flag.esg { background: var(--ink-2); }
+  .shot .flag { background: var(--warn); }        /* acabando */
+  .shot .flag.esg { background: var(--neg); }     /* fechou */
   .tcard .fav {
     position: absolute; top: var(--s2); right: var(--s2); z-index: 3;
     width: 32px; height: 32px; cursor: pointer; padding: 0; border: 0;
@@ -332,8 +333,12 @@
      `flex: 1 1 0` — a etiqueta de valor esticava por toda a linha e empurrava
      o local para a outra ponta. Segunda colisão do tipo (a primeira foi
      `.mini`, da miniatura), então o prefixo vale para todas. */
-  .tag.t-alerta { background: var(--neg-soft); color: var(--neg); font-weight: 700; }
-  .tag.t-esgotado { background: var(--surface-2); color: var(--ink-3); font-weight: 700; }
+  /* Escala de gravidade: âmbar avisa que está acabando, vermelho cheio diz
+     que fechou. "Esgotado" era cinza e sumia — a informação mais decisiva da
+     linha era a mais apagada dela. */
+  .tag.t-alerta { background: var(--warn-soft); color: var(--warn); font-weight: 700; }
+  .tag.t-esgotado { background: var(--neg); color: #fff; font-weight: 700; }
+  .tag.t-esgotado svg { opacity: .9; }
   .tag.t-gratis { background: var(--pos-soft); color: var(--pos); font-weight: 700; }
   .tag.t-prazo { background: var(--warn-soft); color: var(--warn); font-weight: 700; }
   .tag.t-valor { background: var(--surface-2); color: var(--ink); font-weight: 700; }
@@ -470,6 +475,29 @@
   .codes { display: flex; flex-wrap: wrap; gap: var(--s1); }
   .codes code { font-family: var(--font-mono); font-size: var(--fs-xs); background: var(--surface-2); border-radius: var(--r-1); padding: 3px 8px; }
   .codes code.hit { background: var(--pos-soft); color: var(--pos); font-weight: 700; }
+  .codelist { display: flex; flex-direction: column; gap: var(--s2); }
+  .codeitems { display: flex; flex-direction: column; gap: var(--s2); }
+  .codeitem { display: flex; gap: var(--s2); align-items: center; }
+  .codeitem input {
+    flex: 1 1 auto; min-width: 0; padding: var(--s3) var(--s4);
+    border-radius: var(--r-1); border: 1px solid var(--line); background: var(--surface);
+    font-family: var(--font-mono); font-size: 15px; letter-spacing: .06em; text-transform: uppercase;
+  }
+  .codeitem input:focus { border-color: var(--accent); outline: none; }
+  .codelist.bad .codeitem input { border-color: var(--neg); }
+  .codex {
+    flex: 0 0 auto; width: 34px; height: 34px; cursor: pointer; padding: 0;
+    border: 0; background: transparent; color: var(--ink-3);
+    border-radius: var(--r-full); display: grid; place-items: center;
+  }
+  .codex:hover { background: var(--surface-2); color: var(--neg); }
+  .addcode {
+    align-self: flex-start; display: inline-flex; align-items: center; gap: var(--s2);
+    cursor: pointer; border: 1px dashed var(--line); background: transparent;
+    color: var(--accent); border-radius: var(--r-full);
+    padding: var(--s2) var(--s4); font-size: var(--fs-sm); font-weight: 700; min-height: 36px;
+  }
+  .addcode:hover { border-style: solid; border-color: var(--accent); }
   .rowacts { display: flex; gap: var(--s2); flex-wrap: wrap; }
   .minibtn { cursor: pointer; border: 1px solid var(--line); background: var(--surface); border-radius: var(--r-full); padding: var(--s2) var(--s4); font-size: var(--fs-xs); font-weight: 600; color: var(--ink-2); text-decoration: none; }
   .minibtn:hover { border-color: var(--ink); color: var(--ink); }
@@ -563,6 +591,21 @@
   .box p { margin: 0; font-size: var(--fs-sm); color: var(--ink-2); line-height: 1.5; }
   .box p.aviso { background: var(--warn-soft); color: var(--warn); padding: var(--s3); border-radius: var(--r-1); font-size: var(--fs-xs); }
   .box p.aviso b { font-weight: 700; }
+
+  .regras { display: flex; flex-direction: column; gap: var(--s3); }
+  .regra {
+    display: flex; flex-direction: column; gap: 2px;
+    padding: var(--s3) var(--s4); border-radius: var(--r-1);
+    background: var(--surface-2); border-left: 3px solid transparent;
+  }
+  .regra.minha { background: var(--accent-soft); border-left-color: var(--accent); }
+  .regra b { font-size: var(--fs-sm); font-weight: 700; }
+  .regra span { font-size: var(--fs-sm); color: var(--ink-2); line-height: 1.45; }
+  .regra em {
+    font-style: normal; font-family: var(--font-mono); font-size: var(--fs-data);
+    color: var(--ink-3); margin-top: 2px;
+  }
+  .regra.minha em { color: var(--accent); font-weight: 700; }
 
   .precos { display: flex; border: 1px solid var(--line); border-radius: var(--r-2); overflow: hidden; }
   .preco { flex: 1 1 0; padding: var(--s4) var(--s2); text-align: center; border-right: 1px solid var(--line); }
@@ -1122,6 +1165,7 @@
     baseData: "evento",   // "evento" = quando acontece | "inscricao" = quando abre
     trilho: null,         // recorte herdado de um trilho de "Para você"
     dispEm: null,         // hora da última conferência de ingressos
+    credencial: LS.read("agenda.credencial", null),   // "plena" | "geral"
     pub: [],              // público-alvo
     preco: "",            // "" | "gratis" | "pago"
     sit: "",              // situação da entrada (ver SITUACOES)
@@ -1132,6 +1176,7 @@
   function saveFavs() { LS.write("agenda.favs", state.favs); }
   function saveSorteios() { LS.write("agenda.sorteios", state.sorteios); }
   function saveUnits() { LS.write("agenda.unidades", state.units); }
+  function saveCredencial() { LS.write("agenda.credencial", state.credencial); }
 
   var persistOK = null;
   if (navigator.storage && navigator.storage.persist) {
@@ -1465,6 +1510,73 @@
   function ehInfantil(ev) {
     var p = (ev.publico || "") + " " + (ev.classificacao || "");
     return /crian|infan|livre|diversas idades|A[0-9]\b/i.test(p);
+  }
+
+  /* ==================================================================
+     Regras recorrentes de inscrição
+     ------------------------------------------------------------------
+     Parte das inscrições não tem data: tem REGRA, em prosa, e ela se repete
+     todo mês. O caso que motivou isto, num curso de natação:
+
+       "As vagas são liberadas prioritariamente para portadores de Credencial
+        Plena na 1ª e na 3ª quinta-feira de cada mês a partir das 18h. Caso
+        não sejam preenchidas, vão para o público em geral na 2ª e na 4ª
+        quarta-feira a partir das 14h."
+
+     São duas datas diferentes para duas pessoas diferentes, e nenhuma delas
+     existe como data em lugar nenhum. Por isso o app precisa saber de quem é
+     a vez — e a pergunta só faz sentido onde ela aparece, dentro da atividade
+     que tem a regra. A resposta fica guardada e vale para as próximas.
+     ================================================================== */
+  var NOME_CRED = { plena: "Credencial Plena", geral: "Público em geral", todos: "Todos os públicos" };
+  var DOW_LONGO = ["domingo", "segunda-feira", "terça-feira", "quarta-feira",
+                   "quinta-feira", "sexta-feira", "sábado"];
+  var ORD = ["", "1ª", "2ª", "3ª", "4ª", "5ª"];
+
+  /** A n-ésima ocorrência de um dia da semana no mês de `base`. */
+  function nEsimoDoMes(base, dow, n) {
+    var mes = base.getMonth();
+    var dia = 1 + ((dow - base.getDay() + 7) % 7) + (n - 1) * 7;
+    var t = new Date(base.getFullYear(), mes, dia);
+    return t.getMonth() === mes ? iso(t) : null;
+  }
+
+  /** A próxima vez que esta janela abre, daqui para a frente. */
+  function proximaDaRegra(r) {
+    var hoje = pISO(HOJE);
+    for (var k = 0; k < 4; k++) {
+      var base = new Date(hoje.getFullYear(), hoje.getMonth() + k, 1);
+      var cands = (r.semanas || []).map(function (n) { return nEsimoDoMes(base, r.dow, n); })
+        .filter(Boolean).sort();
+      for (var i = 0; i < cands.length; i++) {
+        var q = cands[i] + "T" + r.hora;
+        if (q > AGORA) return q;
+      }
+    }
+    return null;
+  }
+
+  function textoRegra(r) {
+    return r.semanas.map(function (n) { return ORD[n]; }).join(" e ") + " " +
+           DOW_LONGO[r.dow] + " do mês, a partir das " + r.hora.replace(":", "h");
+  }
+
+  /** A janela que vale para esta pessoa, e quando ela abre. */
+  function regraDaPessoa(ev) {
+    var rs = ((ev.inscricao || {}).regras) || [];
+    if (!rs.length) return null;
+    var minhas = rs.filter(function (r) {
+      return r.quem === "todos" || (state.credencial && r.quem === state.credencial);
+    });
+    // Sem a escolha feita, vale a janela que abre primeiro — é a resposta
+    // menos errada para quem ainda não disse qual é o seu caso.
+    var lista = minhas.length ? minhas : rs;
+    var melhor = null;
+    lista.forEach(function (r) {
+      var q = proximaDaRegra(r);
+      if (q && (!melhor || q < melhor.quando)) melhor = { quando: q, regra: r };
+    });
+    return melhor;
   }
 
   /* ---------------- filtros ----------------
@@ -2307,12 +2419,11 @@
         var l = el("button", "minibtn", "Lembrete"); l.type = "button";
         l.addEventListener("click", function () { icsSorteio(s, ev); }); acts.appendChild(l);
       }
-      if (!st.auto && s.divulga && HOJE >= s.divulga) {
-        var w = el("button", "minibtn", "Fui sorteado"); w.type = "button";
-        w.addEventListener("click", function () { marcar(s.id, "win"); }); acts.appendChild(w);
-        var lo = el("button", "minibtn", "Não fui"); lo.type = "button";
-        lo.addEventListener("click", function () { marcar(s.id, "lose"); }); acts.appendChild(lo);
-      }
+      // "Fui sorteado / Não fui" pedia à pessoa a resposta que ela veio
+      // buscar. Consultar força a busca da coleta mais nova e reconfere.
+      var cs = el("button", "minibtn", "Consultar"); cs.type = "button";
+      cs.addEventListener("click", function () { consultarSorteio(s); });
+      acts.appendChild(cs);
       var del = el("button", "minibtn danger", "Excluir"); del.type = "button";
       del.addEventListener("click", function () {
         state.sorteios = state.sorteios.filter(function (x) { return x.id !== s.id; });
@@ -2338,18 +2449,16 @@
 
     var f = el("div", "field");
     f.appendChild(el("label", "u-label", "Novos códigos"));
-    var ta = document.createElement("textarea");
-    ta.placeholder = "ABCDEFGH";
-    f.appendChild(ta);
-    f.appendChild(el("span", "help", "Um por linha, ou separados por vírgula. Quantos quiser."));
+    var campos = camposCodigo([]);
+    f.appendChild(campos.el);
+    f.appendChild(el("span", "help", "Quantos quiser."));
     b.appendChild(f);
 
     var acts = el("div", "acts");
     var ok = el("button", "btn", "Adicionar"); ok.type = "button";
     ok.addEventListener("click", function () {
-      var novos = ta.value.split(/[\n,;\s]+/).map(function (x) { return x.trim().toUpperCase(); }).filter(Boolean);
-      novos = novos.filter(function (c) { return s.codigos.indexOf(c) === -1; });
-      if (!novos.length) { f.classList.add("bad"); toast("Nenhum código novo"); return; }
+      var novos = campos.valores().filter(function (c) { return s.codigos.indexOf(c) === -1; });
+      if (!novos.length) { campos.marcarVazio(); toast("Nenhum código novo"); return; }
       s.codigos = s.codigos.concat(novos);
       saveSorteios(); conferirTodos(); fecharSheet(); render();
       toast(novos.length === 1 ? "Código adicionado" : novos.length + " códigos adicionados");
@@ -2361,7 +2470,21 @@
     abrirSheet();
   }
 
-  function marcar(id, r) { state.sorteios.forEach(function (s) { if (s.id === id) s.resultado = r; }); saveSorteios(); render(); }
+  /* Consulta à mão: busca a coleta mais nova e reconfere na hora. O que
+     chega de novo é a lista pública de contemplados; a comparação continua
+     acontecendo dentro do aparelho. */
+  function consultarSorteio(s) {
+    toast("Consultando a lista…");
+    var fim = function () {
+      conferirTodos();
+      render();
+      var r = conferir(s);
+      if (r.k === "win") toast("Sorteado! " + (r.hits.length === 1 ? "O código " + r.hits[0] + " está na lista." : r.hits.length + " códigos na lista."));
+      else if (r.auto) toast("Seus códigos não estão na lista de contemplados.");
+      else toast("A lista deste sorteio ainda não foi publicada.");
+    };
+    buscarDados(false).then(fim, fim);
+  }
 
   /* ---------------- detalhe ---------------- */
   function abrirEvento(ev, dia) {
@@ -2474,9 +2597,49 @@
       if (ins.sorteio) ibd.appendChild(el("p", null, "Resultado: " + dh(ins.sorteio)));
       if (ins.pagamento) ibd.appendChild(el("p", null, "Pagamento a partir de " + dh(ins.pagamento)));
       if (!ins.inscricao && ins.texto) ibd.appendChild(el("p", null, ins.texto));
+
+      /* A regra em prosa vira data. E como a data depende de quem a pessoa
+         é, a pergunta vem junto: sem ela o app mostraria a quinta-feira da
+         Credencial Plena para quem só pode entrar na quarta seguinte. */
+      if (ins.regras && ins.regras.length) {
+        var cx = el("div", "regras");
+        var temDois = ins.regras.some(function (r) { return r.quem === "plena"; }) &&
+                      ins.regras.some(function (r) { return r.quem === "geral"; });
+        if (temDois) {
+          var seg = el("div", "seg");
+          [["plena", "Tenho Credencial Plena"], ["geral", "Público em geral"]].forEach(function (o) {
+            var t = el("button", "segbtn", o[1]); t.type = "button";
+            t.setAttribute("aria-pressed", state.credencial === o[0] ? "true" : "false");
+            t.addEventListener("click", function () {
+              state.credencial = (state.credencial === o[0]) ? null : o[0];
+              saveCredencial();
+              fecharSheet(true);
+              trocarPara(function () { abrirEvento(ev, dia); });
+            });
+            seg.appendChild(t);
+          });
+          cx.appendChild(seg);
+        }
+
+        var minha = regraDaPessoa(ev);
+        ins.regras.forEach(function (r) {
+          var ehMinha = !!(minha && minha.regra === r);
+          var li = el("div", "regra" + (ehMinha ? " minha" : ""));
+          li.appendChild(el("b", null, NOME_CRED[r.quem] || "Inscrição"));
+          li.appendChild(el("span", null, textoRegra(r)));
+          var q = proximaDaRegra(r);
+          if (q) li.appendChild(el("em", null, "próxima: " + dh(q)));
+          cx.appendChild(li);
+        });
+
+        if (!state.credencial && temDois) {
+          cx.appendChild(el("p", "aviso", "Escolha acima para o app saber qual das duas datas é a sua."));
+        }
+        ibd.appendChild(cx);
+      }
       if (ev.sorteados) ibd.appendChild(el("p", null, "Lista de contemplados já publicada: " + ev.sorteados.length + " códigos."));
 
-      if (ins.inscricao || ins.sorteio) {
+      if (ins.inscricao || ins.sorteio || (ins.regras && ins.regras.length)) {
         var lb2 = el("button", "btn ghost");
         lb2.type = "button";
         lb2.appendChild(sv(ICO.sino, 16));
@@ -2592,6 +2755,74 @@
     abrirSheet();
   }
 
+  /* ---------------- campos de código ----------------
+     Uma caixa de texto pedindo "um por linha, ou separados por vírgula"
+     transfere para a pessoa um trabalho de formatação que o app pode fazer:
+     ela acabou de copiar um código do e-mail e quer colar. Um campo por
+     código, com um botão para somar outro. Enter também soma. */
+  function camposCodigo(iniciais) {
+    var caixa = el("div", "codelist");
+    var lista = el("div", "codeitems");
+    caixa.appendChild(lista);
+
+    function linhaCodigo(valor) {
+      var row = el("div", "codeitem");
+      var i = document.createElement("input");
+      i.type = "text";
+      i.placeholder = "ABCDEFGH";
+      i.autocapitalize = "characters";
+      i.spellcheck = false;
+      i.value = valor || "";
+      i.addEventListener("keydown", function (e) {
+        if (e.key !== "Enter") return;
+        e.preventDefault();
+        if (row === lista.lastChild) somar();
+        else if (row.nextSibling) row.nextSibling.querySelector("input").focus();
+      });
+      row.appendChild(i);
+
+      var x = el("button", "codex"); x.type = "button";
+      x.setAttribute("aria-label", "Remover este código");
+      x.appendChild(sv(ICO.x, 12));
+      x.addEventListener("click", function () {
+        if (lista.children.length === 1) { i.value = ""; i.focus(); return; }
+        row.remove();
+      });
+      row.appendChild(x);
+      return row;
+    }
+
+    function somar(valor) {
+      var row = linhaCodigo(valor);
+      lista.appendChild(row);
+      row.querySelector("input").focus();
+      return row;
+    }
+
+    (iniciais && iniciais.length ? iniciais : [""]).forEach(function (c) {
+      lista.appendChild(linhaCodigo(c));
+    });
+
+    var mais = el("button", "addcode"); mais.type = "button";
+    mais.appendChild(sv('<path d="M8 3.4v9.2M3.4 8h9.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>', 13));
+    mais.appendChild(el("span", null, "Adicionar outro código"));
+    mais.addEventListener("click", function () { somar(); });
+    caixa.appendChild(mais);
+
+    return {
+      el: caixa,
+      valores: function () {
+        var vistos = [], out = [];
+        [].forEach.call(lista.querySelectorAll("input"), function (i) {
+          var v = i.value.trim().toUpperCase();
+          if (v && vistos.indexOf(v) === -1) { vistos.push(v); out.push(v); }
+        });
+        return out;
+      },
+      marcarVazio: function () { caixa.classList.add("bad"); }
+    };
+  }
+
   /* ---------------- formulário de sorteio ----------------
      O link do passeio é o mesmo da página da atividade, então ele já é chave
      suficiente: título e data da divulgação saem dos dados coletados. */
@@ -2674,11 +2905,10 @@
     b.appendChild(achado);
 
     var fC = el("div", "field");
-    fC.appendChild(el("label", "u-label", "Código (ou códigos)"));
-    var iC = document.createElement("textarea");
-    iC.placeholder = "ABCDEFGH";
-    fC.appendChild(iC);
-    fC.appendChild(el("span", "help", "Um por linha, ou separados por vírgula."));
+    fC.appendChild(el("label", "u-label", "Códigos"));
+    var campos = camposCodigo([]);
+    fC.appendChild(campos.el);
+    fC.appendChild(el("span", "help", "Um campo por código — dá para inscrever a família inteira."));
     b.appendChild(fC);
 
     var atual = ev ? normalizaSorteavel(ev) : null;
@@ -2731,8 +2961,8 @@
     var save = el("button", "btn", "Guardar sorteio");
     save.type = "button";
     save.addEventListener("click", function () {
-      var codigos = iC.value.split(/[\n,;\s]+/).map(function (s) { return s.trim().toUpperCase(); }).filter(Boolean);
-      fC.classList.toggle("bad", !codigos.length);
+      var codigos = campos.valores();
+      if (!codigos.length) campos.marcarVazio();
       if (!iL.value.trim()) { fL.classList.add("bad"); toast("Cole o link do passeio"); return; }
       if (!ehLinkSesc(iL.value)) { fL.classList.add("bad"); toast("O link precisa ser do site do Sesc"); return; }
       if (!atual) { fL.classList.add("bad"); toast("Não reconheci esse passeio — confira o link"); return; }
@@ -3370,12 +3600,17 @@
      mesma porta: para quem lê, a pergunta é uma só — quando abre. */
   function icsInscricao(ev) {
     var i = ev.inscricao || {};
-    var quando = i.inscricao || ev.vendaOnline || ev.vendaPresencial;
+    // Data publicada primeiro; sem ela, a próxima janela da regra recorrente
+    // que vale para esta pessoa; só então a venda.
+    var reg = regraDaPessoa(ev);
+    var quando = i.inscricao || (reg && reg.quando) || ev.vendaOnline || ev.vendaPresencial;
     if (!quando) { toast("Sem data de inscrição ou venda publicada"); return; }
     if (quando.indexOf("T") === -1) quando += "T10:00";
-    var titulo = (i.inscricao ? "Abrem as inscrições: " : "Abre a venda: ") + ev.tit;
+    var titulo = (i.inscricao ? "Abrem as inscrições: "
+                 : reg ? "Abrem as vagas: " : "Abre a venda: ") + ev.tit;
     var fim = somaMinutos(quando, DUR_PADRAO);
-    var detalhe = (i.inscricaoFim ? "Encerra em " + dh(i.inscricaoFim) + ". " : "") +
+    var detalhe = (reg && !i.inscricao ? NOME_CRED[reg.regra.quem] + ": " + textoRegra(reg.regra) + ". " : "") +
+                  (i.inscricaoFim ? "Encerra em " + dh(i.inscricaoFim) + ". " : "") +
                   (i.sorteio ? "Sorteio em " + dh(i.sorteio) + ". " : "") +
                   (ev.vendaOnline ? "Venda on-line " + dh(ev.vendaOnline) + ". " : "") +
                   (ev.urlCompra || ev.link || "");
@@ -3390,7 +3625,11 @@
     if (ev.link) L.push("URL:" + esc(ev.link));
     L = L.concat(alarmes(titulo));
     L.push("END:VEVENT", "END:VCALENDAR");
-    entregar("inscricao-" + ev.id + ".ics", FONTE_ICS + ev.id + "-insc.ics", L,
+    // O arquivo servido só existe para data publicada: a data da regra
+    // depende da credencial de quem está olhando, e não dá para servir uma
+    // versão de cada.
+    entregar("inscricao-" + ev.id + ".ics",
+      i.inscricao ? FONTE_ICS + ev.id + "-insc.ics" : null, L,
       "Lembrete criado: " + dh(quando));
   }
 
@@ -3438,7 +3677,8 @@
 
   /* ---------------- backup ---------------- */
   function exportar() {
-    var d = { versao: 3, exportadoEm: HOJE, unidades: state.units, favoritos: state.favs, sorteios: state.sorteios };
+    var d = { versao: 4, exportadoEm: HOJE, unidades: state.units, credencial: state.credencial,
+              favoritos: state.favs, sorteios: state.sorteios };
     var blob = new Blob([JSON.stringify(d, null, 2)], { type: "application/json" });
     var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "agenda-sesc-backup.json";
     document.body.appendChild(a); a.click(); document.body.removeChild(a);
@@ -3730,7 +3970,12 @@
 
   notaPersist();
   ajustarModo();
-  conferirTodos();
+  // Uma vez por dia. O que muda o resultado é a coleta do robô, que roda de
+  // madrugada; reconferir a cada abertura só repetiria a mesma conta.
+  if (LS.read("agenda.conferidoDia", "") !== HOJE) {
+    conferirTodos();
+    LS.write("agenda.conferidoDia", HOJE);
+  }
   irPara("home");
   render();
 
