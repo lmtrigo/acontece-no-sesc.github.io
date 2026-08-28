@@ -106,6 +106,11 @@ apoiada em classes estáveis:
 - Corpo da página → "Cronograma:" ou "INSCRIÇÕES" (Turismo Social)
 - Fim da página, após "Resultado do Sorteio:" → códigos contemplados
 - Descrição → texto entre "Compartilhe:" e o primeiro bloco de serviço
+- Cabeçalho → **"Duração: 50 minutos"**. Está na página e não na API; é o
+  segundo degrau da regra de término do `.ics`. Ficou de fora por muito tempo
+  porque foi procurada nas *descrições já coletadas*, que vêm truncadas — e lá
+  ela não aparece nunca.
+- Corpo → **regras recorrentes de inscrição** (`inscricao.regras`), ver 4.7
 
 ---
 
@@ -213,6 +218,42 @@ estava lá conserva o carimbo antigo; quem não estava recebe a data de hoje.
 
 O app mostra o que tem `visto` nos últimos **7 dias** (`DIAS_NOVIDADE`), no
 trilho "Novidades na programação" e no chip "Novidades" da agenda.
+
+### 4.7 Inscrição sem data, com regra
+
+Parte das inscrições não publica data nenhuma: publica uma **regra**, em
+prosa, que se repete todo mês. O caso que motivou o suporte, num curso de
+natação do Bom Retiro:
+
+> As vagas disponíveis são liberadas prioritariamente para pessoas portadoras
+> de **Credencial Plena na 1ª e na 3ª quinta-feira** de cada mês a partir das
+> **18h**. Caso estas vagas não sejam preenchidas, serão disponibilizadas para
+> o **público em geral na 2ª e na 4ª quarta-feira** a partir das **14h**.
+
+São **duas datas diferentes para duas pessoas diferentes**, e nenhuma das duas
+existe como data em lugar nenhum da fonte. `detalhes.py` extrai isso em
+`inscricao.regras`:
+
+```json
+[{"quem": "plena", "semanas": [1, 3], "dow": 4, "hora": "18:00"},
+ {"quem": "geral", "semanas": [2, 4], "dow": 3, "hora": "14:00"}]
+```
+
+`dow` segue a convenção do JavaScript (0 = domingo) porque quem consome é o
+app. O extrator ancora no trecho "<dia da semana> de cada mês", lê os
+ordinais nos 110 caracteres anteriores, a hora nos 90 seguintes, e decide o
+público pela menção mais próxima antes dele ("Credencial Plena" ou "público em
+geral").
+
+O app calcula a próxima ocorrência de cada janela e **pergunta uma vez** se a
+pessoa tem Credencial Plena, guardando a resposta em `agenda.credencial`. Sem
+a resposta ele mostra as duas e marca a que abre primeiro, com o aviso de que
+falta escolher — mostrar a quinta-feira da Credencial Plena para quem só entra
+na quarta seguinte seria pior do que não mostrar nada.
+
+O `.ics` do lembrete usa a data que é **daquela pessoa**. Por isso ele nunca
+vem de arquivo servido: `publicar.py` só gera `-insc.ics` para data publicada,
+já que não dá para servir uma versão por credencial.
 
 ### 4.6 Fuso horário
 

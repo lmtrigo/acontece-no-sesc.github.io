@@ -146,8 +146,8 @@ def indice_sorteios(eventos):
             "id", "tit", "sub", "uni", "reg", "cat", "subcat", "publico",
             "publicos", "projeto", "gratis", "pago", "esgotado", "ingressosWeb",
             "temporada", "continuo", "hora", "dias", "link", "thumb", "img",
-            "capa", "precos", "sessoes", "classificacao", "endereco", "geo",
-            "urlCompra", "sorteados") if e.get(c) is not None}
+            "capa", "precos", "sessoes", "duracaoMin", "classificacao",
+            "endereco", "geo", "urlCompra", "sorteados") if e.get(c) is not None}
         copia["inscricao"] = e.get("inscricao")
         # forma plana que o formulário de sorteio consome
         copia["sorteio"] = i.get("sorteio")

@@ -1557,8 +1557,10 @@
   }
 
   function textoRegra(r) {
+    // "18h", não "18h00": hora redonda em português não leva minuto
+    var h = r.hora.slice(3) === "00" ? r.hora.slice(0, 2) + "h" : r.hora.replace(":", "h");
     return r.semanas.map(function (n) { return ORD[n]; }).join(" e ") + " " +
-           DOW_LONGO[r.dow] + " do mês, a partir das " + r.hora.replace(":", "h");
+           DOW_LONGO[r.dow] + " do mês, a partir das " + h;
   }
 
   /** A janela que vale para esta pessoa, e quando ela abre. */

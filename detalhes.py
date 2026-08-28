@@ -582,13 +582,12 @@ def da_pagina(pagina, ano_ref, dia_evento):
         if codigos:
             out["sorteados"] = codigos
 
-    dur = duracao_minutos(pagina)
-    if dur:
-        out["duracaoMin"] = dur
-
+    # `out` É o dicionário de inscrição do evento (main faz
+    # `ev["inscricao"] = info`), então as regras entram aqui direto. A duração
+    # não: ela é do evento, e main a busca à parte.
     regras = regras_de_inscricao(pagina)
     if regras:
-        out.setdefault("inscricao", {})["regras"] = regras
+        out["regras"] = regras
 
     return out or None
 
@@ -622,7 +621,7 @@ def main():
           % (len(eventos), len(com_java), len(quer_html)))
 
     inicio = time.time()
-    n_preco = n_sessao = n_venda = n_insc = n_sorteio = n_desc = 0
+    n_preco = n_sessao = n_venda = n_insc = n_sorteio = n_desc = n_dur = 0
 
     for i, ev in enumerate(com_java, 1):
         b = da_bilheteria(ev["idJava"])
@@ -664,6 +663,11 @@ def main():
         # o parâmetro é o ÚLTIMO dia do evento: comparar com o início faria a
         # correção de ano disparar em temporada longa, cuja inscrição abre
         # meses depois do primeiro encontro
+        dur = duracao_minutos(pagina)
+        if dur:
+            ev["duracaoMin"] = dur
+            n_dur += 1
+
         info = da_pagina(pagina, int((ev.get("inicio") or "2026")[:4]),
                          ev.get("fim") or ev.get("inicio"))
         if info:
@@ -672,8 +676,13 @@ def main():
             if info:
                 ev["inscricao"] = info; n_insc += 1
         if i % 100 == 0 or i == len(quer_html):
-            print("  html %4d/%d · descrições=%d inscrições=%d sorteios=%d"
-                  % (i, len(quer_html), n_desc, n_insc, n_sorteio))
+            print("  html %4d/%d · descrições=%d inscrições=%d sorteios=%d durações=%d"
+                  % (i, len(quer_html), n_desc, n_insc, n_sorteio, n_dur))
+            # Gravar pelo caminho: uma exceção perto do fim já custou meia
+            # hora de varredura inteira uma vez.
+            d["enriquecidoEm"] = coletor.agora_br().isoformat(timespec="seconds")
+            with open(args.dados, "w", encoding="utf-8") as f:
+                json.dump(d, f, ensure_ascii=False, separators=(",", ":"))
         time.sleep(PAUSA)
 
     d["enriquecidoEm"] = coletor.agora_br().isoformat(timespec="seconds")
