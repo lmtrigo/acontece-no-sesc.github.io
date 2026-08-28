@@ -502,9 +502,13 @@ def duracao_minutos(pagina):
 DOW = {"domingo": 0, "segunda": 1, "terca": 2, "terça": 2, "quarta": 3,
        "quinta": 4, "sexta": 5, "sabado": 6, "sábado": 6}
 
+# "de cada mês", "do mês", "no mês" — a mesma regra escrita de três jeitos.
+# Os ordinais ficam em algarismo de propósito: por extenso, "segunda", "quarta"
+# e "quinta" são também dias da semana, e ler "primeira e segunda quinta-feira"
+# como ordinal daria uma data errada — pior do que não dar data nenhuma.
 RE_DIA_DO_MES = re.compile(
     r"(segunda|ter[çc]a|quarta|quinta|sexta|s[áa]bado|domingo)"
-    r"[\s\-]*(?:feira)?[\s,]*(?:de|do)\s+cada\s+m[êe]s", re.I)
+    r"[\s\-]*(?:feira)?[\s,]*(?:de|do|no)\s+(?:cada\s+)?m[êe]s", re.I)
 RE_ORDINAL = re.compile(r"(\d)\s*[ªa°ºo]")
 RE_HORA_REGRA = re.compile(
     r"a\s+partir\s+d[ao]s?\s+(\d{1,2})\s*(?:h|:)\s*(\d{2})?", re.I)

@@ -104,7 +104,15 @@ apoiada em classes estáveis:
 - `.evento--sessao--entrada--preco` → pares `<span class="valor">` + `.label`
 - `.info_local` → "Inscrições: 7/8 às 14h a 12/8 · Sorteio: 13/8 às 15h"
 - Corpo da página → "Cronograma:" ou "INSCRIÇÕES" (Turismo Social)
-- Fim da página, após "Resultado do Sorteio:" → códigos contemplados
+- Lista de contemplados → o cabeçalho **não é um só**. `Resultado do Sorteio:`
+  cobria o Turismo Social clássico; "Minas em Cena" publica sob um
+  `CONTEMPLADOS` seco, logo depois de "Compartilhe:". Enquanto o extrator
+  conhecia só a primeira forma, o app afirmava que a lista não tinha saído com
+  ela na tela. Hoje reconhece quatro formas, percorre **todas** as ocorrências
+  e fica com a maior lista — "sorteados" e "contemplados" também aparecem em
+  prosa ("os sorteados poderão efetivar o pagamento"), e a trava é exigir um
+  código nos dois primeiros tokens depois do cabeçalho, o que em prosa nunca
+  acontece.
 - Descrição → texto entre "Compartilhe:" e o primeiro bloco de serviço
 - Cabeçalho → **"Duração: 50 minutos"**. Está na página e não na API; é o
   segundo degrau da regra de término do `.ics`. Ficou de fora por muito tempo
@@ -240,10 +248,22 @@ existe como data em lugar nenhum da fonte. `detalhes.py` extrai isso em
 ```
 
 `dow` segue a convenção do JavaScript (0 = domingo) porque quem consome é o
-app. O extrator ancora no trecho "<dia da semana> de cada mês", lê os
-ordinais nos 110 caracteres anteriores, a hora nos 90 seguintes, e decide o
-público pela menção mais próxima antes dele ("Credencial Plena" ou "público em
-geral").
+app. O extrator ancora no trecho "<dia da semana> de/do/no mês", lê os ordinais nos
+110 caracteres anteriores e a hora nos 90 seguintes.
+
+**O público vem antes ou depois da regra**, e ler só para trás não basta:
+
+- antes — "para portadores de Credencial Plena **na 1ª e na 3ª quinta-feira**…"
+- depois — "As vagas são liberadas na 1ª e 3ª quinta-feira de cada mês, a
+  partir das 18h, **para quem possui credencial plena**"
+
+A segunda forma virava `todos`, e com isso quem **não** tem Credencial Plena
+via uma data que não era dele. Agora olha nos dois sentidos.
+
+**Os ordinais ficam em algarismo de propósito.** Por extenso, "segunda",
+"quarta" e "quinta" são também dias da semana: ler "primeira e segunda
+quinta-feira" como ordinal daria uma data errada, que é pior do que não dar
+data nenhuma.
 
 O app calcula a próxima ocorrência de cada janela e **pergunta uma vez** se a
 pessoa tem Credencial Plena, guardando a resposta em `agenda.credencial`. Sem
