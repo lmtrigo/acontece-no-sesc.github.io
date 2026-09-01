@@ -1507,10 +1507,6 @@
     var i = ev.inscricao || {};
     return i.inscricao || ev.vendaOnline || ev.vendaPresencial || null;
   }
-  function ehInfantil(ev) {
-    var p = (ev.publico || "") + " " + (ev.classificacao || "");
-    return /crian|infan|livre|diversas idades|A[0-9]\b/i.test(p);
-  }
 
   /* ==================================================================
      Regras recorrentes de inscrição
@@ -1942,13 +1938,6 @@
     var v = ev.visto;
     return !!v && v <= HOJE && v >= addDias(HOJE, -DIAS_NOVIDADE);
   }
-  function rotuloNovidade(ev) {
-    if (!ev.visto) return null;
-    var q = pISO(HOJE) - pISO(ev.visto);
-    var d = Math.round(q / 86400000);
-    return { t: d <= 0 ? "entrou hoje" : d === 1 ? "entrou ontem" : "entrou há " + d + " dias",
-             forte: true };
-  }
 
   /** Segunda a domingo da semana em que HOJE cai. */
   function semanaSegADom(ref) {
@@ -1967,6 +1956,135 @@
       if (out.length >= 2) break;
     }
     return out;
+  }
+
+  /* ==================================================================
+     Curadoria
+     ------------------------------------------------------------------
+     O pedido era ordenar os destaques por avaliação do espetáculo, avaliação
+     do elenco e custo-benefício. Os dois primeiros NÃO EXISTEM em fonte
+     nenhuma do Sesc: a listagem tem 24 campos e nenhum de nota; a bilheteria
+     traz só um `destaqueNewsletter` booleano, e para 10% dos eventos. Não há
+     crítica, não há estrela, não há elenco avaliado. Fabricar isso — ou pedir
+     a um modelo que "avalie" a peça lendo o texto de divulgação — seria dar
+     cara de nota a um palpite sobre material publicitário, que é exatamente o
+     que este projeto recusa desde a primeira versão.
+
+     O que existe, e é com isso que a curadoria é feita:
+
+       CUSTO-BENEFÍCIO  30%  preço por hora (a duração vem da página) contra a
+                             mediana da mesma subcategoria, mais a
+                             profundidade do desconto da Credencial Plena
+       PROCURA          30%  ingressos restantes na bilheteria
+       RARIDADE         20%  sessão única vale mais que temporada de dois meses
+       CURADORIA SESC   20%  pertencer a um projeto/festival (agrupamento
+                             editorial feito por eles) e trazer crédito de
+                             direção ou elenco no complemento — o que separa um
+                             espetáculo produzido de uma atividade genérica
+
+     Esgotado e inscrição encerrada não somem: pesam 35% do que pesariam.
+     Recomendar o que não dá para pegar é frustração, mas esconder também.
+     ================================================================== */
+  var CAT_PALCO = {
+    "Shows, Espetáculos e Performances": 1,
+    "Turismo Social": .95,
+    "Cinema": .9,
+    "Exposições": .85
+  };
+  var SUB_PALCO = { "Teatro": 1, "Dança": .95, "Circo": .95, "Música": .9 };
+  var RE_CREDITO = /Dire[çc][ãa]o|Dir\.|^Com\s|Coreografia|Regência/i;
+  var DUR_TIPICA = 90;                 // minutos, quando a página não publica
+
+  function ehPalco(ev) { return !!(CAT_PALCO[ev.cat] || SUB_PALCO[ev.subcat]); }
+
+  function precoPorHora(ev) {
+    if (ev.gratis) return 0;
+    var p = precoMin(ev);
+    if (p == null || !isFinite(p)) return null;
+    return p / ((ev.duracaoMin || DUR_TIPICA) / 60);
+  }
+
+  /** Mediana do preço por hora, por subcategoria: comparar teatro com
+      teatro, não com um passeio de ônibus de doze horas. */
+  function medianasPorHora(lista) {
+    var por = {};
+    lista.forEach(function (e) {
+      var v = precoPorHora(e);
+      if (v == null || !isFinite(v) || v <= 0) return;
+      var k = e.subcat || e.cat;
+      (por[k] = por[k] || []).push(v);
+    });
+    var m = {};
+    for (var k in por) {
+      por[k].sort(function (a, b) { return a - b; });
+      m[k] = por[k][Math.floor(por[k].length / 2)];
+    }
+    return m;
+  }
+
+  function notaCuradoria(ev, med) {
+    // custo-benefício
+    var cb;
+    if (ev.gratis) cb = 1;
+    else {
+      var v = precoPorHora(ev), ref = med[ev.subcat || ev.cat];
+      cb = (v == null || !ref) ? .5 : Math.max(0, Math.min(1, 1 - v / (ref * 2)));
+    }
+    // quanto a inteira cai para quem tem credencial
+    if (ev.precos && ev.precos.length > 1) {
+      var vals = ev.precos.map(function (p) { return p.valor; });
+      var lo = Math.min.apply(null, vals), hi = Math.max.apply(null, vals);
+      if (hi > 0) cb = Math.min(1, cb + .15 * (1 - lo / hi));
+    }
+    // procura: pouco ingresso restante é sinal de que a cidade já escolheu
+    var pr = .5;
+    if (typeof ev.ingressosWeb === "number") {
+      pr = ev.ingressosWeb <= 0 ? 0 : Math.max(0, Math.min(1, 1 - ev.ingressosWeb / 200));
+    }
+    // raridade
+    var n = (ev.dias || []).length;
+    var ra = n <= 1 ? 1 : n <= 3 ? .8 : n <= 8 ? .55 : n <= 20 ? .3 : .15;
+    // curadoria do próprio Sesc
+    var cu = 0;
+    if (ev.projeto) cu += .6;
+    if (RE_CREDITO.test(ev.sub || "")) cu += .4;
+
+    var nota = .30 * cb + .30 * pr + .20 * ra + .20 * Math.min(1, cu);
+    nota *= (CAT_PALCO[ev.cat] || SUB_PALCO[ev.subcat] || .5);
+    if (ev.esgotado || inscricaoEncerrada(ev)) nota *= .35;
+    return nota;
+  }
+
+  /** Uma volta por projeto antes de começar a segunda.
+      Sem isto o topo dos destaques vinha com seis sessões da mesma mostra de
+      cinema: elas dividem projeto, preço, raridade e procura, então pontuam
+      quase igual e empilham. Isso é a lista de um projeto só, não curadoria. */
+  function diversificar(lista, chave) {
+    var baldes = {}, ordem = [];
+    lista.forEach(function (e) {
+      var k = chave(e) || ("#" + e.id);
+      if (!baldes[k]) { baldes[k] = []; ordem.push(k); }
+      baldes[k].push(e);
+    });
+    var saida = [], falta = true;
+    while (falta) {
+      falta = false;
+      for (var i = 0; i < ordem.length; i++) {
+        var b = baldes[ordem[i]];
+        if (b.length) saida.push(b.shift());
+        if (b.length) falta = true;
+      }
+    }
+    return saida;
+  }
+
+  /** Ordena por nota, sem sujar o evento com campo de cálculo. */
+  function porCuradoria(lista) {
+    var med = medianasPorHora(lista);
+    var nota = {};
+    lista.forEach(function (e) { nota[e.id] = notaCuradoria(e, med); });
+    var ordenada = lista.slice().sort(function (a, b) { return nota[b.id] - nota[a.id]; });
+    return diversificar(ordenada, function (e) { return e.projeto; });
   }
 
   /* "Para você" responde a quatro perguntas, nesta ordem: o que é novo, o
@@ -2002,19 +2120,54 @@
     // Separá-las em dois trilhos obrigava a olhar os dois para não perder.
     var tAbrir = function (e) { return inscricaoFutura(e) || !!vendaAbre(e); };
     var quandoAbre = function (e) { return dataDeEntrada(e) || vendaAbre(e) || "9999"; };
+    /* ---- Destaques do mês ----
+       O mês corrente, e não "os próximos 30 dias", porque é assim que se fala
+       de programação. No fim do mês isso rareia, então o trilho estende para
+       o mês seguinte quando sobra pouco — e a nota diz o que está mostrando. */
+    var mesAtual = HOJE.slice(0, 7);
+    var noMes = function (e, m) {
+      return (e.dias || []).some(function (d) { return d >= HOJE && d.slice(0, 7) === m; });
+    };
+    var destaques = futuros.filter(function (e) { return ehPalco(e) && noMes(e, mesAtual); });
+    var mesesDestaque = [mesAtual];
+    if (destaques.length < 8) {
+      var a = +mesAtual.slice(0, 4), m2 = +mesAtual.slice(5, 7) + 1;
+      if (m2 > 12) { m2 = 1; a++; }
+      var seguinte = a + "-" + String(m2).padStart(2, "0");
+      mesesDestaque.push(seguinte);
+      destaques = destaques.concat(futuros.filter(function (e) { return ehPalco(e) && noMes(e, seguinte); }));
+    }
+    var tDestaque = function (e) {
+      return ehPalco(e) && mesesDestaque.some(function (m) { return noMes(e, m); });
+    };
+    var nomeMes = function (m) { return MESES[+m.slice(5, 7) - 1]; };
+
+    /* ---- Para crianças ----
+       A tag de público do portal é confiável e específica: 457 atividades
+       marcadas para "Crianças". Grátis primeiro, porque programa com criança
+       costuma ser em grupo e o preço multiplica. */
+    // Só a etiqueta explícita do portal, que são 456 atividades. Aceitar
+    // também "diversas idades" e "livre" levava a 1.477 — quase metade do
+    // catálogo — e nenhuma das duas quer dizer "para criança".
+    var tCrianca = function (e) { return (e.publicos || []).indexOf("Crianças") > -1; };
+    var paraCrianca = porCuradoria(futuros.filter(tCrianca)).sort(function (x, y) {
+      if (!!x.gratis !== !!y.gratis) return x.gratis ? -1 : 1;
+      return 0;                                  // estável: mantém a curadoria
+    });
+
     var temNovidade = EVENTOS.some(function (e) { return !!e.visto; });
 
     return [
-      { id: "novos", titulo: "Novidades na programação",
-        nota: "entraram na base nos últimos " + DIAS_NOVIDADE + " dias",
-        itens: temNovidade ? futuros.filter(ehNovidade).sort(function (x, y) {
-          return (y.visto || "").localeCompare(x.visto || "")
-              || ((x.dias || [])[0] || "9999").localeCompare((y.dias || [])[0] || "9999");
-        }) : [],
-        // base anterior ao rastreio: sem carimbo não há o que mostrar, e um
-        // trilho permanentemente vazio só ocuparia a primeira dobra
-        oculto: !temNovidade,
-        teste: ehNovidade, rotulo: rotuloNovidade },
+      { id: "destaques", titulo: "Destaques do mês",
+        nota: "teatro, música, dança, circo, cinema, exposições e viagens de " +
+              mesesDestaque.map(nomeMes).join(" e ") +
+              " · ordenados por custo-benefício, procura, raridade e curadoria do Sesc",
+        itens: porCuradoria(destaques),
+        teste: tDestaque },
+
+      { id: "criancas", titulo: "Sugestão para crianças",
+        nota: "marcadas pelo portal para o público infantil · grátis primeiro",
+        itens: paraCrianca, teste: tCrianca },
 
       { id: "hoje", titulo: "Hoje e amanhã",
         nota: "o que ainda dá para pegar sem se programar",
