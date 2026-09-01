@@ -1934,6 +1934,13 @@
      não teria como saber sozinho, porque só enxerga a base de hoje.
      Base antiga, sem carimbo: o trilho simplesmente não aparece. */
   var DIAS_NOVIDADE = 7;
+  function rotuloNovidade(ev) {
+    if (!ev.visto) return null;
+    var q = pISO(HOJE) - pISO(ev.visto);
+    var d = Math.round(q / 86400000);
+    return { t: d <= 0 ? "entrou hoje" : d === 1 ? "entrou ontem" : "entrou há " + d + " dias",
+             forte: true };
+  }
   function ehNovidade(ev) {
     var v = ev.visto;
     return !!v && v <= HOJE && v >= addDias(HOJE, -DIAS_NOVIDADE);
@@ -2185,6 +2192,17 @@
         // na agenda o recorte fica preso aos sete dias: sem isso uma
         // temporada longa reapareceria em todas as datas até dezembro
         dias: semana, teste: tSemana },
+
+      { id: "novos", titulo: "Novidades na programação",
+        nota: "entraram na base nos últimos " + DIAS_NOVIDADE + " dias",
+        itens: temNovidade ? futuros.filter(ehNovidade).sort(function (x, y) {
+          return (y.visto || "").localeCompare(x.visto || "")
+              || ((x.dias || [])[0] || "9999").localeCompare((y.dias || [])[0] || "9999");
+        }) : [],
+        // base anterior ao rastreio: sem carimbo não há o que mostrar, e um
+        // trilho permanentemente vazio só ocuparia espaço
+        oculto: !temNovidade,
+        teste: ehNovidade, rotulo: rotuloNovidade },
 
       { id: "inscrever", titulo: "Inscrição ou venda abre em breve",
         nota: "o que exige estar pronto na hora que abrir",
