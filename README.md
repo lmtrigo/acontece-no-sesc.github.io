@@ -1,4 +1,4 @@
-# Agenda Sesc SP — agregador não oficial
+# Acontece no SESC — agregador não oficial
 
 Reúne a programação do Sesc São Paulo (capital, interior e litoral) num app de
 celular instalável, com destaques, agenda, favoritos e acompanhamento de

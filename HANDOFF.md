@@ -1,4 +1,4 @@
-# Handoff — Agenda Sesc SP
+# Handoff — Acontece no SESC
 
 Documento de contexto para retomar o projeto em outra conversa. Contém as
 decisões, as descobertas sobre a fonte de dados e as armadilhas já resolvidas,

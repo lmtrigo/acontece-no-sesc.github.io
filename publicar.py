@@ -36,8 +36,10 @@ from datetime import date, datetime, timedelta, timezone
 import coletor
 import regras
 
-NOME = "Agenda Sesc SP"
-NOME_CURTO = "Agenda Sesc"
+# O nome curto é o que cabe embaixo do ícone na tela inicial do celular:
+# o sistema corta o resto sem avisar.
+NOME = "Acontece no SESC"
+NOME_CURTO = "Acontece"
 DESC = "Agregador não oficial da programação do Sesc São Paulo."
 TEMA = "#16130E"
 FUNDO = "#FAF8F4"
@@ -116,7 +118,7 @@ def esc_ics(s):
 
 def _ics(linhas):
     return "\r\n".join(["BEGIN:VCALENDAR", "VERSION:2.0",
-                        "PRODID:-//Agenda Sesc SP (nao oficial)//PT-BR",
+                        "PRODID:-//Acontece no SESC (nao oficial)//PT-BR",
                         "CALSCALE:GREGORIAN"] + linhas + ["END:VCALENDAR"])
 
 
@@ -295,7 +297,7 @@ def manifest(base):
     }, ensure_ascii=False, indent=2)
 
 
-SW = """/* Service worker do Agenda Sesc SP.
+SW = """/* Service worker do Acontece no SESC.
    Casca: cache primeiro (abre offline e instantâneo).
    Dados: rede primeiro, cache como reserva (sempre o mais novo que houver). */
 const VERSAO = 'agenda-sesc-%(versao)s';
