@@ -2002,7 +2002,23 @@
   var RE_CREDITO = /Dire[çc][ãa]o|Dir\.|^Com\s|Coreografia|Regência/i;
   var DUR_TIPICA = 90;                 // minutos, quando a página não publica
 
+  /* Uma seleção precisa CORTAR. Sem teto, "Destaques do mês" ficava com 1.051
+     itens e o "ver todos" despejava a programação inteira do mês reordenada —
+     que é o catálogo com outro nome. Vinte e quatro é número de curadoria: dá
+     uma escolha por dia útil, cabe numa tela de rolagem, e obriga a nota a
+     ganhar de alguma coisa em vez de só ordenar tudo. */
+  var TETO_DESTAQUES = 24;
+  var TETO_CRIANCAS = 18;
+
   function ehPalco(ev) { return !!(CAT_PALCO[ev.cat] || SUB_PALCO[ev.subcat]); }
+
+  /** Recorte fechado: o trilho e o "ver todos" mostram o MESMO conjunto. */
+  function selecao(lista, teto) {
+    var escolhidos = lista.slice(0, teto);
+    var ids = {};
+    escolhidos.forEach(function (e) { ids[e.id] = 1; });
+    return { itens: escolhidos, teste: function (e) { return !!ids[e.id]; } };
+  }
 
   function precoPorHora(ev) {
     if (ev.gratis) return 0;
@@ -2144,10 +2160,9 @@
       mesesDestaque.push(seguinte);
       destaques = destaques.concat(futuros.filter(function (e) { return ehPalco(e) && noMes(e, seguinte); }));
     }
-    var tDestaque = function (e) {
-      return ehPalco(e) && mesesDestaque.some(function (m) { return noMes(e, m); });
-    };
     var nomeMes = function (m) { return MESES[+m.slice(5, 7) - 1]; };
+    var universoDestaque = destaques.length;
+    var selDestaques = selecao(porCuradoria(destaques), TETO_DESTAQUES);
 
     /* ---- Para crianças ----
        A tag de público do portal é confiável e específica: 457 atividades
@@ -2157,24 +2172,28 @@
     // também "diversas idades" e "livre" levava a 1.477 — quase metade do
     // catálogo — e nenhuma das duas quer dizer "para criança".
     var tCrianca = function (e) { return (e.publicos || []).indexOf("Crianças") > -1; };
-    var paraCrianca = porCuradoria(futuros.filter(tCrianca)).sort(function (x, y) {
-      if (!!x.gratis !== !!y.gratis) return x.gratis ? -1 : 1;
-      return 0;                                  // estável: mantém a curadoria
-    });
+    var universoCrianca = futuros.filter(tCrianca).length;
+    var selCriancas = selecao(
+      porCuradoria(futuros.filter(tCrianca)).sort(function (x, y) {
+        if (!!x.gratis !== !!y.gratis) return x.gratis ? -1 : 1;
+        return 0;                                // estável: mantém a curadoria
+      }), TETO_CRIANCAS);
 
     var temNovidade = EVENTOS.some(function (e) { return !!e.visto; });
 
     return [
       { id: "destaques", titulo: "Destaques do mês",
-        nota: "teatro, música, dança, circo, cinema, exposições e viagens de " +
+        nota: selDestaques.itens.length + " escolhas entre as " +
+              universoDestaque.toLocaleString("pt-BR") + " atrações de palco, cinema e viagem de " +
               mesesDestaque.map(nomeMes).join(" e ") +
-              " · ordenados por custo-benefício, procura, raridade e curadoria do Sesc",
-        itens: porCuradoria(destaques),
-        teste: tDestaque },
+              " · custo-benefício, procura, raridade e curadoria do Sesc",
+        itens: selDestaques.itens, teste: selDestaques.teste },
 
       { id: "criancas", titulo: "Sugestão para crianças",
-        nota: "marcadas pelo portal para o público infantil · grátis primeiro",
-        itens: paraCrianca, teste: tCrianca },
+        nota: selCriancas.itens.length + " sugestões entre as " + universoCrianca +
+              " marcadas pelo portal para crianças · grátis primeiro · " +
+              "a lista inteira está no filtro de público",
+        itens: selCriancas.itens, teste: selCriancas.teste },
 
       { id: "hoje", titulo: "Hoje e amanhã",
         nota: "o que ainda dá para pegar sem se programar",
