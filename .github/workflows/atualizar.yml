@@ -16,7 +16,8 @@ on:
         default: true
 
 permissions:
-  contents: write
+  # O robo nao commita mais nada: escreve o site (pages) e nada no repositorio.
+  contents: read
   pages: write
   id-token: write
 
@@ -84,31 +85,23 @@ jobs:
         with:
           path: web
 
-      - name: Guardar os dados no repositório
-        # Um re-run parte do commit original, e a main pode ter andado desde
-        # então — foi assim que o push falhou e levou o job junto. Aqui os
-        # dois arquivos gerados são reaplicados sobre a main mais recente, o
-        # que também evita conflito: a saída do robô sempre vence.
-        continue-on-error: true
-        run: |
-          git config user.name "robo da agenda"
-          git config user.email "actions@github.com"
-
-          tmp=$(mktemp -d)
-          cp dados/eventos.json prototipo.html "$tmp/"
-
-          git fetch origin main
-          git checkout -B main origin/main
-          cp "$tmp/eventos.json" dados/eventos.json
-          cp "$tmp/prototipo.html" prototipo.html
-
-          git add dados/eventos.json prototipo.html
-          if git diff --staged --quiet; then
-            echo "Nada mudou desde a última coleta."
-            exit 0
-          fi
-          git commit -m "dados: coleta de $(date -u +%d/%m/%Y)"
-          git push origin HEAD:main || echo "::warning::push recusado; o site foi publicado mesmo assim"
+      # Os dados NAO sao mais versionados. Cada coleta acrescentava ~10,6 MB
+      # de conteudo novo (eventos.json 5,4 MB + prototipo.html 5,2 MB), pouco
+      # compressivel entre versoes: em 8 rodadas o .git ja estava em 49 MB, e
+      # a projecao de um ano de execucao diaria era da ordem de 1 a 2 GB - o
+      # GitHub avisa a partir de 1 GB.
+      #
+      # O commit sempre foi so contabilidade: o site sai do artefato do passo
+      # acima, nunca do repositorio. Quem quiser a base de um dia especifico
+      # baixa o artefato da execucao correspondente.
+      - name: Guardar a base como artefato da execução
+        uses: actions/upload-artifact@v4
+        with:
+          name: base-${{ github.run_number }}
+          path: |
+            dados/eventos.json
+          retention-days: 30
+          compression-level: 9
 
   publicar:
     needs: coletar
