@@ -2053,13 +2053,149 @@
     return ev._busca;
   }
 
+
+  /* ---------------- quando a palavra chega torta ----------------
+     O vocabulário é fechado, e casamento exato quer dizer que "teatru",
+     "expozição", "oficinas" e "paulista" não encontram nada — a pessoa
+     escreveu o que queria e o app fingiu não entender.
+
+     Três tolerâncias, nesta ordem de confiança:
+
+       1. plural e singular. "cursos", "oficinas", "filmes" e "passeios"
+          são a mesma coisa que o termo do catálogo;
+       2. parte do nome de uma unidade. "paulista" é Avenida Paulista e
+          "pompeia" é Pompéia — mas só quando UMA unidade casa. "santo"
+          casa com Santo Amaro e Santo André, então não decide sozinho;
+       3. erro de digitação, por distância de edição. Só para palavra de
+          cinco letras ou mais, no máximo uma troca (duas a partir de
+          oito letras), e só quando um único termo do catálogo está
+          àquela distância. Sem a trava de unicidade isto vira chute.
+
+     E a trava que importa mais: a correção só é TENTADA quando a leitura
+     exata não devolveu nada. Assim ela nunca estraga uma busca que já
+     funcionava — o pior caso é continuar vazia. Quando corrige, a linha
+     abaixo do campo diz o que leu, porque adivinhar em silêncio é como o
+     "mostra" que virava filtro de exposição sem ninguém pedir. */
+
+  function semPlural(p) {
+    if (p.length > 4 && /(oes|aes|ais|eis|ois)$/.test(p)) return p.slice(0, -3) + "ao";
+    if (p.length > 4 && p.slice(-2) === "es") return p.slice(0, -2);
+    if (p.length > 3 && p.slice(-1) === "s") return p.slice(0, -1);
+    return p;
+  }
+
+  /** Distância de edição, com desistência assim que passa do teto. */
+  function distancia(a, b, teto) {
+    if (Math.abs(a.length - b.length) > teto) return teto + 1;
+    var linha = [], i, j;
+    for (j = 0; j <= b.length; j++) linha[j] = j;
+    for (i = 1; i <= a.length; i++) {
+      var ant = linha[0], menor = (linha[0] = i);
+      for (j = 1; j <= b.length; j++) {
+        var atual = Math.min(linha[j] + 1, linha[j - 1] + 1,
+                             ant + (a.charAt(i - 1) === b.charAt(j - 1) ? 0 : 1));
+        ant = linha[j];
+        linha[j] = atual;
+        if (atual < menor) menor = atual;
+      }
+      if (menor > teto) return teto + 1;
+    }
+    return linha[b.length];
+  }
+
+  /** Um único termo do vocabulário para esta palavra, ou nada. */
+  function aproximar(palavra) {
+    var i, t;
+    var base = semPlural(palavra);
+    if (base !== palavra) {
+      for (i = 0; i < VOCAB.length; i++) {
+        if (VOCAB[i].n === base) return { termo: VOCAB[i], lido: palavra };
+      }
+    }
+    // parte do nome de uma unidade, quando só uma casa
+    if (palavra.length >= 4) {
+      var achou = null, quantas = 0;
+      for (i = 0; i < VOCAB.length; i++) {
+        t = VOCAB[i];
+        if (t.tipo !== "uni") continue;
+        if ((" " + t.n + " ").indexOf(" " + palavra) > -1) { achou = t; quantas++; }
+      }
+      if (quantas === 1) return { termo: achou, lido: palavra };
+    }
+    // erro de digitação, com unicidade obrigatória
+    if (palavra.length < 5) return null;
+    var teto = palavra.length >= 8 ? 2 : 1;
+    var melhor = null, melhorD = teto + 1, empate = false;
+    for (i = 0; i < VOCAB.length; i++) {
+      t = VOCAB[i];
+      if (t.n.indexOf(" ") > -1) continue;          // termo composto não entra
+      var dd = distancia(palavra, t.n, teto);
+      if (dd > teto) continue;
+      if (dd < melhorD) { melhorD = dd; melhor = t; empate = false; }
+      else if (dd === melhorD && t.valor !== melhor.valor) empate = true;
+    }
+    return (melhor && !empate) ? { termo: melhor, lido: palavra } : null;
+  }
+
+  /** Segunda passada: tenta ler as sobras como termos do catálogo. */
+  function corrigir(r) {
+    var achados = r.achados.slice(), correcoes = [], resto = [];
+    r.sobra.forEach(function (p) {
+      var a = aproximar(p);
+      if (!a) { resto.push(p); return; }
+      var repetido = achados.some(function (x) {
+        return x.tipo === a.termo.tipo && x.valor === a.termo.valor;
+      });
+      if (!repetido) achados.push(a.termo);
+      if (fold(a.termo.txt) !== p) correcoes.push({ de: p, para: a.termo.txt });
+    });
+    return { achados: achados, sobra: resto, sobraTxt: resto.join(" "), correcoes: correcoes };
+  }
+
+  /** Quantos eventos uma leitura devolveria, parando no teto pedido. */
+  function quantosPara(r, teto) {
+    teto = teto || 1;
+    var n = 0;
+    for (var i = 0; i < EVENTOS.length; i++) {
+      var e = EVENTOS[i], ok = true;
+      for (var k = 0; k < r.achados.length; k++) {
+        if (!casaTermo(e, r.achados[k])) { ok = false; break; }
+      }
+      if (ok && r.sobraTxt && textoDe(e).indexOf(r.sobraTxt) === -1) ok = false;
+      if (ok && ++n >= teto) return n;
+    }
+    return n;
+  }
+
   /** O que a busca entendeu agora. Recalculado só quando o texto muda. */
-  var QLIDO = { txt: "", achados: [], sobraTxt: "" };
+  var QLIDO = { txt: "", achados: [], sobraTxt: "", correcoes: [] };
   function lerBusca() {
     if (!VOCAB || !VOCAB.length) montarVocab();
     if (QLIDO.txt === state.q) return QLIDO;
-    var r = state.q ? analisar(state.q) : { achados: [], sobraTxt: "" };
-    QLIDO = { txt: state.q, achados: r.achados, sobraTxt: r.sobraTxt };
+    if (!state.q) {
+      QLIDO = { txt: state.q, achados: [], sobraTxt: "", correcoes: [] };
+      return QLIDO;
+    }
+    var r = analisar(state.q);
+    /* A correcao entra quando a leitura exata devolveu pouco ou nada.
+       "Nada" sozinho era criterio fraco demais: "filmes" achava UM evento
+       por texto - o titulo tinha a palavra - e com isso a leitura como
+       categoria Cinema, que traz 176, nunca era tentada. Um punhado de
+       acertos de texto e sinal fraco; termo do catalogo e sinal forte.
+
+       A adocao continua condicionada a melhorar: se a correcao devolver
+       menos que a leitura exata, ela e descartada. O pior caso e ficar
+       como estava. */
+    var correcoes = [];
+    var exato = r.sobra.length ? quantosPara(r, 5) : 5;
+    if (exato < 5) {
+      var r2 = corrigir(r);
+      if (r2.correcoes.length || r2.achados.length > r.achados.length) {
+        if (quantosPara(r2, exato + 1) > exato) { r = r2; correcoes = r2.correcoes; }
+      }
+    }
+    QLIDO = { txt: state.q, achados: r.achados, sobraTxt: r.sobraTxt,
+              correcoes: correcoes };
     return QLIDO;
   }
 
@@ -3437,7 +3573,7 @@
     if (navigator.clipboard && navigator.clipboard.writeText) {
       medir("compartilha", "copia");
       navigator.clipboard.writeText(txt)
-        .then(function () { toast("Programa copiado — é só colar"); })
+        .then(function () { toast("Copiado: título, data, local e link"); })
         .catch(function () { toast("Não consegui copiar aqui"); });
       return;
     }
@@ -3722,7 +3858,10 @@
       bs.appendChild(sv(ICO.compartilhar, 15));
       bs.appendChild(el("span", null, "Compartilhar"));
       bs.addEventListener("click", function () { compartilhar(ev, dia); });
-      bs.querySelector("span").textContent = navigator.share ? "Compartilhar" : "Copiar o programa";
+      // "programa" tambem quer dizer software: o rotulo precisa dizer o que
+      // vai parar na area de transferencia, e nao um apelido para isso
+      bs.querySelector("span").textContent = navigator.share
+        ? "Compartilhar" : "Copiar data, local e link";
       acts.appendChild(bs);
 
       // sem folha do sistema, o destino mais provavel vira botao proprio
@@ -4318,9 +4457,18 @@
     if (r.achados.length) {
       dica.appendChild(document.createTextNode("Entendi "));
       dica.appendChild(el("b", null, r.achados.map(function (t) { return t.txt; }).join(" · ")));
-      dica.appendChild(document.createTextNode(
-        r.sobraTxt ? " — e o resto como texto. Toque numa pastilha acima para soltar."
-                   : " — toque numa pastilha acima para soltar."));
+      if (r.correcoes && r.correcoes.length) {
+        // adivinhar em silêncio é o erro; dizer o que leu é o conserto
+        dica.appendChild(document.createTextNode(" — li "));
+        dica.appendChild(el("b", null, r.correcoes.map(function (c) {
+          return "“" + c.de + "” como " + c.para;
+        }).join(", ")));
+        dica.appendChild(document.createTextNode("."));
+      } else {
+        dica.appendChild(document.createTextNode(
+          r.sobraTxt ? " — e o resto como texto. Toque numa pastilha acima para soltar."
+                     : " — toque numa pastilha acima para soltar."));
+      }
       return;
     }
     dica.appendChild(document.createTextNode(
