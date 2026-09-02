@@ -203,6 +203,14 @@
 
   .tag.t-valor.meu { color: var(--pos); border-color: var(--pos); }
 
+  /* ---------------- o que a gaveta guarda ----------------
+     No celular os quatro destinos ja estao na faixa do topo e o filtro ja
+     tem botao proprio, sempre visivel: a gaveta repetia quatro itens que
+     estavam a 60px dali e guardava, de unico, cinco. Aqui ela e ajuste e
+     dado. Na tela larga ela deixa de ser gaveta e vira A navegacao - e os
+     dois grupos voltam, no bloco COMPUTADOR. */
+  .drawer .dnav, .drawer .dfiltro { display: none; }
+
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
   body {
@@ -894,6 +902,7 @@
        abas de região: a coluna passa a ser um controle segmentado vertical.
        O ícone é o que dá âncora ao olho; quatro linhas de texto puro não
        davam onde pousar. */
+    .drawer .dnav, .drawer .dfiltro { display: block; }
     .drawer .dnav { padding-bottom: var(--s5); border-bottom: 1px solid var(--line); }
     /* com a marca acima e ícone em cada linha, "Navegar" só ocupava espaço */
     .drawer .dnav h4 { display: none; }
@@ -1052,6 +1061,10 @@
         <div class="modetabs" role="group" aria-label="Base das datas">
           <button class="modetab" id="baseEvento" aria-pressed="true">Data do evento</button>
           <button class="modetab" id="baseInscricao" aria-pressed="false">Data da inscrição</button>
+        </div>
+        <div class="modetabs" role="group" aria-label="Alcance da lista">
+          <button class="modetab" id="escopoSemana" aria-pressed="true">Só esta semana</button>
+          <button class="modetab" id="escopoTudo" aria-pressed="false">Todas as datas</button>
         </div>
         <p class="dica" id="dicaDia"></p>
       </div>
@@ -1283,6 +1296,7 @@
     dia: null,            // null = todas as datas; uma data = só aquele dia
     semana: null,         // âncora da régua, independente do dia selecionado
     baseData: "evento",   // "evento" = quando acontece | "inscricao" = quando abre
+    escopo: LS.read("agenda.escopo", "semana"),   // "semana" (segue a régua) | "tudo"
     trilho: null,         // recorte herdado de um trilho de "Para você"
     dispEm: null,         // hora da última conferência de ingressos
     credencial: LS.read("agenda.credencial", null),   // "plena" | "geral"
@@ -2977,11 +2991,24 @@
 
     $("#baseEvento").setAttribute("aria-pressed", state.baseData === "evento" ? "true" : "false");
     $("#baseInscricao").setAttribute("aria-pressed", state.baseData === "inscricao" ? "true" : "false");
+    $("#escopoSemana").setAttribute("aria-pressed", state.escopo === "semana" ? "true" : "false");
+    $("#escopoTudo").setAttribute("aria-pressed", state.escopo === "tudo" ? "true" : "false");
+
+    /* A regua mostrava sete dias e a lista abaixo mostrava sessenta: dois
+       aparelhos de navegacao com escopos diferentes na mesma tela. O botao
+       "Carregar mais" chegava a oferecer 16.637 linhas, 40 por vez - 416
+       toques ate o fim. Agora a lista segue a regua, e ver o periodo inteiro
+       virou uma escolha explicita ao lado. */
+    var porInscricao = state.baseData === "inscricao";
     $("#dicaDia").textContent = state.dia
-      ? "Mostrando " + longa(state.dia) + ". Toque no dia de novo para ver todas as datas."
-      : (state.baseData === "inscricao"
-          ? "Todas as datas, pela abertura da inscrição ou da venda. Toque num dia para filtrar."
-          : "Todas as datas, pelo dia do evento. Toque num dia para filtrar.");
+      ? "Mostrando " + longa(state.dia) + ". Toque no dia de novo para ver a semana."
+      : (state.escopo === "semana"
+          ? (porInscricao
+              ? "A semana da régua, pela abertura da inscrição ou da venda. Toque num dia para filtrar."
+              : "A semana da régua, pelo dia do evento. Toque num dia para filtrar.")
+          : (porInscricao
+              ? "Todo o período coletado, pela abertura da inscrição ou da venda."
+              : "Todo o período coletado, do dia de hoje em diante."));
 
     var out = $("#agendaList"); out.innerHTML = "";
 
@@ -3031,10 +3058,14 @@
     // ---- todas as datas: percorre dia a dia a partir de hoje ----
     // O corte é por CARD, não por dia: um único dia passa de 400 atrações,
     // e paginar por dia montaria milhares de nós de uma vez.
+    var limite = state.escopo === "semana"
+      ? { de: inicioSemana, ate: addDias(inicioSemana, 6) }
+      : null;
     var mapa = {};
     b.forEach(function (ev) {
       diasPara(ev).forEach(function (d) {
         if (d < HOJE) return;
+        if (limite && (d < limite.de || d > limite.ate)) return;
         (mapa[d] = mapa[d] || []).push(ev);
       });
     });
@@ -3049,7 +3080,23 @@
     chaves = chaves.filter(function (k) { return mapa[k].length; });
 
     if (!chaves.length) {
-      out.appendChild(blank("Nada daqui para a frente", "Troque o filtro acima ou as unidades no topo."));
+      var vazio = blank(
+        state.escopo === "semana" ? "Nada nesta semana" : "Nada daqui para a frente",
+        state.escopo === "semana"
+          ? "Use a seta para a próxima semana, ou veja todas as datas."
+          : "Troque o filtro acima ou as unidades no topo.");
+      if (state.escopo === "semana") {
+        var verTudo = el("button", "morebtn", "Ver todas as datas");
+        verTudo.type = "button";
+        verTudo.style.maxWidth = "260px";
+        verTudo.style.margin = "18px auto 0";
+        verTudo.addEventListener("click", function () {
+          state.escopo = "tudo"; LS.write("agenda.escopo", "tudo");
+          state.lote = LOTE; render();
+        });
+        vazio.appendChild(verTudo);
+      }
+      out.appendChild(vazio);
       $("#loadMore").hidden = true;
       return;
     }
@@ -3286,14 +3333,23 @@
     if (ev.link) linhas.push(ev.link);
     return linhas.join("\n");
   }
+  function linkWhatsApp(ev, dia) {
+    return "https://wa.me/?text=" + encodeURIComponent(textoCompartilhar(ev, dia));
+  }
+  /* No celular a folha do sistema ja lista o WhatsApp em primeiro lugar, e
+     duplicar isso seria dois botoes para a mesma coisa. No computador a
+     folha nao existe: sobrava copiar para a area de transferencia, que e o
+     mesmo "nao aconteceu nada" que o .ics tinha antes de ganhar o botao do
+     Google Agenda ao lado. Mesma decisao, mesmo lugar. */
   function compartilhar(ev, dia) {
     var txt = textoCompartilhar(ev, dia);
-    medir("compartilha");
     if (navigator.share) {
+      medir("compartilha", "sistema");
       navigator.share({ title: ev.tit, text: txt, url: ev.link }).catch(function () {});
       return;
     }
     if (navigator.clipboard && navigator.clipboard.writeText) {
+      medir("compartilha", "copia");
       navigator.clipboard.writeText(txt)
         .then(function () { toast("Programa copiado — é só colar"); })
         .catch(function () { toast("Não consegui copiar aqui"); });
@@ -3580,7 +3636,17 @@
       bs.appendChild(sv(ICO.compartilhar, 15));
       bs.appendChild(el("span", null, "Compartilhar"));
       bs.addEventListener("click", function () { compartilhar(ev, dia); });
+      bs.querySelector("span").textContent = navigator.share ? "Compartilhar" : "Copiar o programa";
       acts.appendChild(bs);
+
+      // sem folha do sistema, o destino mais provavel vira botao proprio
+      if (!navigator.share) {
+        var bw = el("a", "btn ghost", "Enviar no WhatsApp");
+        bw.href = linkWhatsApp(ev, dia);
+        bw.target = "_blank"; bw.rel = "noopener noreferrer";
+        bw.addEventListener("click", function () { medir("compartilha", "whatsapp"); });
+        acts.appendChild(bw);
+      }
     }
     if (ev.link) {
       var a = el("a", "btn ghost", "Ver página oficial");
@@ -4995,6 +5061,14 @@
   });
   $("#baseInscricao").addEventListener("click", function () {
     state.baseData = "inscricao"; state.dia = null; state.lote = LOTE; render();
+  });
+  $("#escopoSemana").addEventListener("click", function () {
+    state.escopo = "semana"; LS.write("agenda.escopo", "semana");
+    state.dia = null; state.lote = LOTE; medir("agenda-escopo", "semana"); render();
+  });
+  $("#escopoTudo").addEventListener("click", function () {
+    state.escopo = "tudo"; LS.write("agenda.escopo", "tudo");
+    state.dia = null; state.lote = LOTE; medir("agenda-escopo", "tudo"); render();
   });
   // a régua anda sozinha: mover a semana não deve selecionar um dia
   $("#prevW").addEventListener("click", function () { state.semana = addDias(state.semana, -7); state.lote = LOTE; render(); });
