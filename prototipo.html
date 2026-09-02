@@ -231,6 +231,10 @@
   }
   .searchex button:hover { border-style: solid; color: var(--ink); }
 
+  .modelinha { display: flex; align-items: center; gap: var(--s4); padding: 0 var(--s5) var(--s3); }
+  .modelinha > .u-label { color: var(--ink-3); flex: 0 0 62px; }
+  .modelinha .modetabs { flex: 1 1 auto; margin: 0; padding: 0; }
+
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
   body {
@@ -646,6 +650,13 @@
   .dbrand { display: none; }          /* só na tela larga (ver o bloco COMPUTADOR) */
   .dgroup h4 { margin: 0 0 var(--s2); color: var(--ink-3); }
   .ditem { width: 100%; text-align: left; cursor: pointer; border: 0; background: transparent; border-bottom: 1px solid var(--line-soft); padding: var(--s4) 0; font-size: var(--fs-body); display: flex; align-items: center; gap: var(--s3); min-height: var(--tap); }
+  /* `display: flex` acima e regra de autor e ganha do `[hidden]` do
+     navegador, que e regra de agente do usuario. Sem esta linha, esconder um
+     item da gaveta pelo atributo nao surtia efeito nenhum - foi o que
+     manteve "Meus Sorteios" na tela com zero sorteios guardados. Nao da
+     para resolver com um `[hidden]` global: a busca depende de ser
+     reexibida na tela larga justamente sobrescrevendo o atributo. */
+  .ditem[hidden], .navbtn[hidden] { display: none; }
   /* Cor só no ícone, nunca no texto: o rótulo continua sendo tinta, e a
      coluna continua sendo cromo. Cada destino puxa uma tinta da paleta de
      categorias, bem separadas entre si — é o que dá âncora ao olho numa
@@ -922,8 +933,10 @@
        abas de região: a coluna passa a ser um controle segmentado vertical.
        O ícone é o que dá âncora ao olho; quatro linhas de texto puro não
        davam onde pousar. */
-    .drawer .dnav, .drawer .dfiltro { display: block; }
-    .drawer .dnav { padding-bottom: var(--s5); border-bottom: 1px solid var(--line); }
+    /* Só a navegação volta. O grupo de filtros continua fora: a barra de
+       filtros é permanente também na tela larga, com o mesmo botão e a
+       vantagem de mostrar o que está ligado ao lado dele. */
+    .drawer .dnav { display: block; padding-bottom: var(--s5); border-bottom: 1px solid var(--line); }
     /* com a marca acima e ícone em cada linha, "Navegar" só ocupava espaço */
     .drawer .dnav h4 { display: none; }
     .ditem[data-go] {
@@ -1084,13 +1097,22 @@
           <button class="wnav" id="nextW" aria-label="Próxima semana"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         </div>
         <div class="weekgrid" id="weekGrid"></div>
-        <div class="modetabs" role="group" aria-label="Base das datas">
-          <button class="modetab" id="baseEvento" aria-pressed="true">Data do evento</button>
-          <button class="modetab" id="baseInscricao" aria-pressed="false">Data da inscrição</button>
+        <!-- Dois controles com a mesma forma, empilhados, liam-se como um só
+             de quatro opções. São perguntas diferentes: qual data conta, e
+             até onde a lista vai. O rótulo à esquerda separa as duas. -->
+        <div class="modelinha">
+          <span class="u-label">Contar por</span>
+          <div class="modetabs" role="group" aria-label="Qual data conta">
+            <button class="modetab" id="baseEvento" aria-pressed="true">Data do evento</button>
+            <button class="modetab" id="baseInscricao" aria-pressed="false">Data da inscrição</button>
+          </div>
         </div>
-        <div class="modetabs" role="group" aria-label="Alcance da lista">
-          <button class="modetab" id="escopoSemana" aria-pressed="true">Só esta semana</button>
-          <button class="modetab" id="escopoTudo" aria-pressed="false">Todas as datas</button>
+        <div class="modelinha">
+          <span class="u-label">Mostrar</span>
+          <div class="modetabs" role="group" aria-label="Até onde a lista vai">
+            <button class="modetab" id="escopoSemana" aria-pressed="true">Só esta semana</button>
+            <button class="modetab" id="escopoTudo" aria-pressed="false">Todas as datas</button>
+          </div>
         </div>
         <p class="dica" id="dicaDia"></p>
       </div>
@@ -2866,16 +2888,34 @@
     var tSemana = function (e) {
       return (e.dias || []).some(function (d) { return semana.indexOf(d) > -1; });
     };
+    /* "Hoje e amanha" e "Agenda da semana" chegaram a dividir 8 dos 10
+       cartoes visiveis: com a curadoria aplicada dia a dia, os primeiros
+       cartoes da semana passaram a ser os melhores de hoje - que e
+       exatamente o trilho anterior. E a doenca da v3, em que a mesma
+       atividade aparecia em quatro trilhos. A divisao de trabalho agora e
+       explicita: um cobre hoje e amanha, o outro comeca em seguida. */
+    var DEPOIS = addDias(HOJE, 2);
     var tSemanaAdiante = function (e) {
-      return (e.dias || []).some(function (d) { return d >= HOJE && semana.indexOf(d) > -1; });
+      return (e.dias || []).some(function (d) { return d >= DEPOIS && semana.indexOf(d) > -1; });
     };
     var diaNaSemana = function (e) {
-      return (e.dias || []).filter(function (d) { return d >= HOJE && semana.indexOf(d) > -1; })[0] ||
+      return (e.dias || []).filter(function (d) { return d >= DEPOIS && semana.indexOf(d) > -1; })[0] ||
              (e.dias || []).filter(function (d) { return semana.indexOf(d) > -1; })[0];
+    };
+    var abreHoje = function (e) {
+      var i = e.inscricao || {};
+      return (i.inscricao || "").slice(0, 10) === HOJE ||
+             (vendaAbre(e) || "").slice(0, 10) === HOJE;
     };
     // Inscrição e venda são a mesma pergunta para quem lê: "quando abre?".
     // Separá-las em dois trilhos obrigava a olhar os dois para não perder.
-    var tAbrir = function (e) { return inscricaoFutura(e) || !!vendaAbre(e); };
+    /* O que abre HOJE tem trilho proprio, no topo. Deixa-lo tambem aqui
+       faria a mesma urgencia aparecer duas vezes, e a segunda diluida no
+       meio de duzias que abrem semana que vem. */
+    var tAbrir = function (e) {
+      if (!(inscricaoFutura(e) || vendaAbre(e))) return false;
+      return !abreHoje(e);
+    };
     var quandoAbre = function (e) { return dataDeEntrada(e) || vendaAbre(e) || "9999"; };
     /* ---- Destaques do mês ----
        O mês corrente, e não "os próximos 30 dias", porque é assim que se fala
@@ -2922,12 +2962,6 @@
        de downloads e pode nunca acontecer. Este trilho responde a mesma
        pergunta sem depender de nada: e calculado no aparelho, a cada
        abertura, e so aparece quando ha o que avisar. */
-    var abreHoje = function (e) {
-      var i = e.inscricao || {};
-      var quando = (i.inscricao || "").slice(0, 10);
-      var venda = (vendaAbre(e) || "").slice(0, 10);
-      return quando === HOJE || venda === HOJE;
-    };
     var doDia = futuros.filter(abreHoje).sort(function (x, y) {
       return (dataDeEntrada(x) || vendaAbre(x) || "").localeCompare(dataDeEntrada(y) || vendaAbre(y) || "");
     });
@@ -2960,8 +2994,10 @@
         diaDe: function (e) { return (e.dias || []).filter(function (d) { return d === HOJE || d === addDias(HOJE, 1); })[0]; },
         itens: porCuradoria(futuros.filter(tHoje)), teste: tHoje },
 
-      { id: "semana", titulo: "Agenda da semana",
-        nota: "de " + curta(semana[0]) + " a " + curta(semana[6]) + " · " + contagem,
+      { id: "semana", titulo: "O resto da semana",
+        nota: (DEPOIS <= semana[6]
+                ? "de " + curta(DEPOIS) + " a " + curta(semana[6]) + " · "
+                : "") + contagem,
         diaDe: diaNaSemana,
         /* Ordenado por hora, o trilho abria com cinco aulas de 07:00 -
            corrida, hidroginastica, hidroginastica. Agora o dia continua
@@ -3857,18 +3893,22 @@
       bs.type = "button";
       bs.appendChild(sv(ICO.compartilhar, 15));
       bs.appendChild(el("span", null, "Compartilhar"));
-      bs.addEventListener("click", function () { compartilhar(ev, dia); });
-      // "programa" tambem quer dizer software: o rotulo precisa dizer o que
-      // vai parar na area de transferencia, e nao um apelido para isso
-      bs.querySelector("span").textContent = navigator.share
-        ? "Compartilhar" : "Copiar data, local e link";
-      acts.appendChild(bs);
-
-      // sem folha do sistema, o destino mais provavel vira botao proprio
-      if (!navigator.share) {
-        var bw = el("a", "btn ghost", "Enviar no WhatsApp");
+      /* Um botao de compartilhar, nunca dois. No celular a folha do sistema
+         ja escolhe o destino; no computador ela nao existe, e ali o destino
+         provavel vira o proprio botao. "Copiar data, local e link" ficou ao
+         lado do WhatsApp por uma versao e nao se sustentou: quem quer colar
+         em outro lugar tem "Ver pagina oficial" e a barra de endereco, e
+         dois botoes para a mesma intencao num empilhamento de sete e o
+         mesmo excesso que a v3 tinha nos trilhos. */
+      if (navigator.share) {
+        bs.addEventListener("click", function () { compartilhar(ev, dia); });
+        acts.appendChild(bs);
+      } else {
+        var bw = el("a", "btn ghost");
         bw.href = linkWhatsApp(ev, dia);
         bw.target = "_blank"; bw.rel = "noopener noreferrer";
+        bw.appendChild(sv(ICO.compartilhar, 15));
+        bw.appendChild(el("span", null, "Enviar no WhatsApp"));
         bw.addEventListener("click", function () { medir("compartilha", "whatsapp"); });
         acts.appendChild(bw);
       }
