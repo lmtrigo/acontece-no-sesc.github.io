@@ -36,10 +36,14 @@ from datetime import date, datetime, timedelta, timezone
 import coletor
 import regras
 
-# O nome curto é o que cabe embaixo do ícone na tela inicial do celular:
-# o sistema corta o resto sem avisar.
+# `short_name` é o que aparece embaixo do ícone na tela inicial — e é ele que
+# ganha do `name` quando os dois existem. Encurtar para "Acontece" cabia melhor
+# na grade do lançador, mas o ícone deixava de dizer de que app se trata, que é
+# a única coisa que aquele rótulo tem para fazer. Nome inteiro nos dois: onde
+# não couber, o sistema corta com reticências, e "Acontece no…" ainda diz mais
+# do que "Acontece".
 NOME = "Acontece no SESC"
-NOME_CURTO = "Acontece"
+NOME_CURTO = "Acontece no SESC"
 DESC = "Agregador não oficial da programação do Sesc São Paulo."
 TEMA = "#16130E"
 FUNDO = "#FAF8F4"
