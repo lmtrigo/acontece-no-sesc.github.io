@@ -211,6 +211,26 @@
      dois grupos voltam, no bloco COMPUTADOR. */
   .drawer .dnav, .drawer .dfiltro { display: none; }
 
+  /* ---------------- a busca precisa dizer o que sabe fazer ----------------
+     O campo entende frase inteira desde a v4.1, mas continuava com cara de
+     caixa de palavra-chave: mesma altura, mesma borda, e um placeholder que
+     ensinava a escrever uma palavra so. Capacidade que a interface nega e
+     capacidade que ninguem usa. Aqui ela se apresenta em tres tempos: o
+     placeholder e uma frase de verdade, a linha abaixo diz como funciona (e
+     que da para ditar), e os exemplos sao atalhos que ja devolvem resultado. */
+  .searchdica {
+    margin: var(--s2) 0 0; font-size: var(--fs-xs); color: var(--ink-3);
+    line-height: 1.45;
+  }
+  .searchdica b { color: var(--ink-2); font-weight: 600; }
+  .searchex { display: flex; flex-wrap: wrap; gap: var(--s2); margin-top: var(--s3); }
+  .searchex button {
+    border: 1px dashed var(--line); background: transparent; cursor: pointer;
+    color: var(--ink-2); font-size: var(--fs-xs); font-family: var(--font-ui);
+    padding: var(--s2) var(--s4); border-radius: var(--r-full); min-height: 32px;
+  }
+  .searchex button:hover { border-style: solid; color: var(--ink); }
+
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
   body {
@@ -1029,7 +1049,13 @@
   <button class="stale" id="staleBar" hidden></button>
 
   <div class="searchrow" id="searchRow" hidden>
-    <input id="q" type="search" placeholder="Buscar título, artista, projeto…" aria-label="Buscar">
+    <!-- O placeholder é o professor mais barato que a busca tem: enquanto
+         dizia "título, artista, projeto" ele ensinava a escrever UMA
+         palavra, que é justamente o que o analisador deixou de exigir. -->
+    <input id="q" type="search" enterkeyhint="search"
+           placeholder="o que você quer fazer?" aria-label="Buscar">
+    <p class="searchdica" id="searchDica"></p>
+    <div class="searchex" id="searchEx"></div>
   </div>
 
   <nav class="mainnav" aria-label="Seções">
@@ -1278,6 +1304,7 @@
        ninguem busca nada antes de a tela estar de pe. */
     VOCAB = null;
     QLIDO = { txt: null, achados: [], sobraTxt: "" };
+    exemplosPintados = false;      // outra base, outros exemplos que funcionam
   }
   derivar();
 
@@ -1866,52 +1893,76 @@
     .forEach(function (w) { MULETAS[w] = 1; });
 
   var VOCAB = [];
-  function addTermo(texto, tipo, rotulo, valor) {
+  /* `texto` e o que casa (normalizado); `mostra` e o que a pastilha exibe.
+     Os dois se separam porque os sinonimos sao escritos como as pessoas
+     digitam - sem acento, no singular - e devolver "de graca" ou "sabado"
+     numa pastilha pareceria erro do app. A pastilha mostra a forma
+     canonica: "Gratis", "Criancas", "sabado" com acento. */
+  function addTermo(texto, tipo, rotulo, valor, mostra) {
     var n = fold(texto).trim();
     if (!n || n.length < 3) return;
     for (var i = 0; i < VOCAB.length; i++) {
       if (VOCAB[i].n === n) return;              // o primeiro a entrar manda
     }
-    VOCAB.push({ n: n, tipo: tipo, rotulo: rotulo, valor: valor, txt: texto });
+    VOCAB.push({ n: n, tipo: tipo, rotulo: rotulo, valor: valor,
+                 txt: mostra || texto });
   }
 
-  // sinônimos: como as pessoas falam, e não como o portal rotula
+  // sinônimos: como as pessoas falam, e não como o portal rotula.
+  // [termo que casa, tipo, rótulo da faceta, valor, o que a pastilha mostra]
   var SINONIMOS = [
-    ["teatro", "sub", "tipo", "Teatro"], ["peca", "sub", "tipo", "Teatro"],
-    ["show", "cat", "categoria", "Shows, Espetáculos e Performances"],
-    ["shows", "cat", "categoria", "Shows, Espetáculos e Performances"],
-    ["espetaculo", "cat", "categoria", "Shows, Espetáculos e Performances"],
-    ["musica", "sub", "tipo", "Música"], ["danca", "sub", "tipo", "Dança"],
-    ["circo", "sub", "tipo", "Circo"], ["filme", "cat", "categoria", "Cinema"],
-    ["exposicao", "cat", "categoria", "Exposições"],
-    ["exposicoes", "cat", "categoria", "Exposições"],
-    ["curso", "cat", "categoria", "Cursos e Oficinas"],
-    ["oficina", "cat", "categoria", "Cursos e Oficinas"],
-    ["palestra", "cat", "categoria", "Encontros e Palestras"],
-    ["esporte", "cat", "categoria", "Esporte e Atividade Física"],
-    ["passeio", "cat", "categoria", "Turismo Social"],
-    ["viagem", "cat", "categoria", "Turismo Social"],
-    ["excursao", "cat", "categoria", "Turismo Social"],
-    ["crianca", "pub", "público", "Crianças"], ["criancas", "pub", "público", "Crianças"],
-    ["infantil", "pub", "público", "Crianças"], ["filhos", "pub", "público", "Crianças"],
-    ["idoso", "pub", "público", "Pessoas idosas"], ["idosa", "pub", "público", "Pessoas idosas"],
-    ["idosos", "pub", "público", "Pessoas idosas"],
-    ["terceira idade", "pub", "público", "Pessoas idosas"],
-    ["jovem", "pub", "público", "Jovens"],
-    ["gratis", "preco", "preço", "gratis"], ["gratuito", "preco", "preço", "gratis"],
-    ["gratuita", "preco", "preço", "gratis"], ["de graca", "preco", "preço", "gratis"],
-    ["graca", "preco", "preço", "gratis"], ["sem pagar", "preco", "preço", "gratis"],
-    ["pago", "preco", "preço", "pago"], ["ingresso", "preco", "preço", "pago"],
-    ["manha", "per", "período", "manha"], ["cedo", "per", "período", "manha"],
-    ["tarde", "per", "período", "tarde"], ["noite", "per", "período", "noite"],
-    ["capital", "reg", "região", "capital"], ["interior", "reg", "região", "interior"],
-    ["litoral", "reg", "região", "litoral"],
-    ["hoje", "dia", "quando", "hoje"], ["amanha", "dia", "quando", "amanha"],
-    ["fim de semana", "dia", "quando", "fds"],
-    ["domingo", "dow", "dia da semana", 0], ["segunda", "dow", "dia da semana", 1],
-    ["terca", "dow", "dia da semana", 2], ["quarta", "dow", "dia da semana", 3],
-    ["quinta", "dow", "dia da semana", 4], ["sexta", "dow", "dia da semana", 5],
-    ["sabado", "dow", "dia da semana", 6]
+    ["teatro", "sub", "tipo", "Teatro", "Teatro"],
+    ["peca", "sub", "tipo", "Teatro", "Teatro"],
+    ["show", "cat", "categoria", "Shows, Espetáculos e Performances", "Shows"],
+    ["shows", "cat", "categoria", "Shows, Espetáculos e Performances", "Shows"],
+    ["espetaculo", "cat", "categoria", "Shows, Espetáculos e Performances", "Shows"],
+    ["musica", "sub", "tipo", "Música", "Música"],
+    ["danca", "sub", "tipo", "Dança", "Dança"],
+    ["circo", "sub", "tipo", "Circo", "Circo"],
+    ["filme", "cat", "categoria", "Cinema", "Cinema"],
+    ["exposicao", "cat", "categoria", "Exposições", "Exposições"],
+    ["exposicoes", "cat", "categoria", "Exposições", "Exposições"],
+    ["curso", "cat", "categoria", "Cursos e Oficinas", "Cursos e Oficinas"],
+    ["oficina", "cat", "categoria", "Cursos e Oficinas", "Cursos e Oficinas"],
+    ["palestra", "cat", "categoria", "Encontros e Palestras", "Encontros"],
+    ["esporte", "cat", "categoria", "Esporte e Atividade Física", "Esporte"],
+    ["passeio", "cat", "categoria", "Turismo Social", "Turismo Social"],
+    ["viagem", "cat", "categoria", "Turismo Social", "Turismo Social"],
+    ["excursao", "cat", "categoria", "Turismo Social", "Turismo Social"],
+    ["crianca", "pub", "público", "Crianças", "Crianças"],
+    ["criancas", "pub", "público", "Crianças", "Crianças"],
+    ["infantil", "pub", "público", "Crianças", "Crianças"],
+    ["filhos", "pub", "público", "Crianças", "Crianças"],
+    ["idoso", "pub", "público", "Pessoas idosas", "Pessoas idosas"],
+    ["idosa", "pub", "público", "Pessoas idosas", "Pessoas idosas"],
+    ["idosos", "pub", "público", "Pessoas idosas", "Pessoas idosas"],
+    ["terceira idade", "pub", "público", "Pessoas idosas", "Pessoas idosas"],
+    ["jovem", "pub", "público", "Jovens", "Jovens"],
+    ["gratis", "preco", "preço", "gratis", "Grátis"],
+    ["gratuito", "preco", "preço", "gratis", "Grátis"],
+    ["gratuita", "preco", "preço", "gratis", "Grátis"],
+    ["de graca", "preco", "preço", "gratis", "Grátis"],
+    ["graca", "preco", "preço", "gratis", "Grátis"],
+    ["sem pagar", "preco", "preço", "gratis", "Grátis"],
+    ["pago", "preco", "preço", "pago", "Pago"],
+    ["ingresso", "preco", "preço", "pago", "Pago"],
+    ["manha", "per", "período", "manha", "Manhã"],
+    ["cedo", "per", "período", "manha", "Manhã"],
+    ["tarde", "per", "período", "tarde", "Tarde"],
+    ["noite", "per", "período", "noite", "Noite"],
+    ["capital", "reg", "região", "capital", "Capital"],
+    ["interior", "reg", "região", "interior", "Interior"],
+    ["litoral", "reg", "região", "litoral", "Litoral"],
+    ["hoje", "dia", "quando", "hoje", "Hoje"],
+    ["amanha", "dia", "quando", "amanha", "Amanhã"],
+    ["fim de semana", "dia", "quando", "fds", "Fim de semana"],
+    ["domingo", "dow", "dia da semana", 0, "Domingo"],
+    ["segunda", "dow", "dia da semana", 1, "Segunda"],
+    ["terca", "dow", "dia da semana", 2, "Terça"],
+    ["quarta", "dow", "dia da semana", 3, "Quarta"],
+    ["quinta", "dow", "dia da semana", 4, "Quinta"],
+    ["sexta", "dow", "dia da semana", 5, "Sexta"],
+    ["sabado", "dow", "dia da semana", 6, "Sábado"]
   ];
 
   /** Monta o vocabulário a partir da base carregada. Os longos primeiro. */
@@ -1930,7 +1981,7 @@
     Object.keys(subs).forEach(function (s) { addTermo(s, "sub", "tipo", s); });
     Object.keys(cats).forEach(function (c) { addTermo(c, "cat", "categoria", c); });
     Object.keys(pubs).forEach(function (x) { addTermo(x, "pub", "público", x); });
-    SINONIMOS.forEach(function (t) { addTermo(t[0], t[1], t[2], t[3]); });
+    SINONIMOS.forEach(function (t) { addTermo(t[0], t[1], t[2], t[3], t[4]); });
     VOCAB.sort(function (a, b) { return b.n.length - a.n.length; });
   }
 
@@ -4184,6 +4235,98 @@
   }
   var NOME_PRECO = { gratis: "Grátis", pago: "Pago" };
 
+
+  /* ---------------- a busca se apresenta ----------------
+     Três tempos, do mais barato ao mais caro de ignorar:
+
+       1. o placeholder é uma frase de verdade, não uma instrução;
+       2. a linha abaixo diz como funciona e lembra que dá para ditar —
+          o ditado do teclado escreve neste mesmo campo e passa pelo
+          mesmo analisador, então a busca por voz já existe;
+       3. os exemplos são atalhos, e só entram os que hoje devolvem
+          resultado. Exemplo que devolve zero ensina que não funciona.
+
+     Com texto escrito, a linha troca de papel e vira devolutiva: diz o
+     que foi reconhecido do catálogo, ou avisa quando nada foi — que é a
+     fronteira do vocabulário fechado, e esconder isso seria pior. */
+
+  var EXEMPLOS_BUSCA = [
+    "teatro infantil de graça no sábado",
+    "show de música à noite",
+    "cinema à tarde",
+    "exposição de graça na capital",
+    "curso para pessoas idosas",
+    "passeio no fim de semana"
+  ];
+
+  function contaDe(frase) {
+    var r = analisar(frase);
+    var n = 0;
+    for (var i = 0; i < EVENTOS.length; i++) {
+      var e = EVENTOS[i], ok = true;
+      for (var k = 0; k < r.achados.length; k++) {
+        if (!casaTermo(e, r.achados[k])) { ok = false; break; }
+      }
+      if (ok && r.sobraTxt && textoDe(e).indexOf(r.sobraTxt) === -1) ok = false;
+      if (ok && ++n >= 3) return n;          // basta saber que não é vazio
+    }
+    return n;
+  }
+
+  var exemplosPintados = false;
+  function pintarExemplosBusca() {
+    var caixa = $("#searchEx");
+    if (!caixa || exemplosPintados) return;
+    // na versao publicada o primeiro render acontece antes de o JSON chegar:
+    // marcar como pintado ali deixaria os exemplos vazios para sempre
+    if (!EVENTOS.length) return;
+    exemplosPintados = true;
+    caixa.innerHTML = "";
+    var postos = 0;
+    EXEMPLOS_BUSCA.forEach(function (t) {
+      if (postos >= 3 || contaDe(t) < 3) return;
+      postos++;
+      var b = el("button", null, t);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        var campo = $("#q");
+        campo.value = t;
+        state.q = t; state.lote = LOTE;
+        medir("busca-exemplo");
+        render();
+        campo.focus();
+      });
+      caixa.appendChild(b);
+    });
+  }
+
+  function pintarDicaBusca() {
+    var dica = $("#searchDica"), caixa = $("#searchEx");
+    if (!dica) return;
+    dica.innerHTML = "";
+    if (!state.q) {
+      caixa.hidden = false;
+      dica.appendChild(document.createTextNode("Escreva como você falaria — "));
+      dica.appendChild(el("b", null, "categoria, unidade, público, preço, dia e hora"));
+      dica.appendChild(document.createTextNode(
+        " na mesma frase. O microfone do teclado também serve."));
+      pintarExemplosBusca();
+      return;
+    }
+    caixa.hidden = true;
+    var r = lerBusca();
+    if (r.achados.length) {
+      dica.appendChild(document.createTextNode("Entendi "));
+      dica.appendChild(el("b", null, r.achados.map(function (t) { return t.txt; }).join(" · ")));
+      dica.appendChild(document.createTextNode(
+        r.sobraTxt ? " — e o resto como texto. Toque numa pastilha acima para soltar."
+                   : " — toque numa pastilha acima para soltar."));
+      return;
+    }
+    dica.appendChild(document.createTextNode(
+      "Nenhuma palavra do catálogo reconhecida: estou procurando pelo texto, no título e no artista."));
+  }
+
   function montarBarraFiltros() {
     var bar = $("#filterBar"); bar.innerHTML = "";
     var n = filtrosAtivos();
@@ -5042,6 +5185,7 @@
 
     atualizaDrawer();
     montarBarraFiltros();
+    pintarDicaBusca();
     montarBarraTrilho();
     renderHome();
     renderAgenda();
@@ -5113,7 +5257,8 @@
     var r = $("#searchRow"), abrir = r.hidden;
     r.hidden = !abrir;
     $("#searchBtn").setAttribute("aria-expanded", abrir ? "true" : "false");
-    if (abrir) $("#q").focus(); else { $("#q").value = ""; state.q = ""; render(); }
+    if (abrir) { pintarDicaBusca(); $("#q").focus(); }
+    else { $("#q").value = ""; state.q = ""; render(); }
   });
   var tq;
   $("#q").addEventListener("input", function (e) {
