@@ -2748,7 +2748,7 @@
     return [
       { id: "abrehoje", titulo: "Abre hoje",
         nota: "inscrição ou venda que começa hoje — depois de hoje não dá para voltar atrás",
-        itens: doDia, oculto: !doDia.length, teste: abreHoje, rotulo: rotuloTurismo },
+        itens: doDia, teste: abreHoje, rotulo: rotuloTurismo },
 
       { id: "destaques", titulo: "Destaques do mês",
         nota: selDestaques.itens.length + " escolhas entre as " +
@@ -2796,15 +2796,16 @@
         // temporada longa reapareceria em todas as datas até dezembro
         dias: semana, teste: tSemana },
 
+      /* "Novidades" tem duas maneiras de ficar vazio, e as duas sao normais:
+         base anterior ao rastreio (nenhum carimbo `visto`) e semana sem
+         nada novo no portal - que acontece, e nao e defeito. Nos dois casos
+         o trilho some, pela regra geral aplicada no filtro abaixo. */
       { id: "novos", titulo: "Novidades na programação",
         nota: "entraram na base nos últimos " + DIAS_NOVIDADE + " dias",
         itens: temNovidade ? futuros.filter(ehNovidade).sort(function (x, y) {
           return (y.visto || "").localeCompare(x.visto || "")
               || ((x.dias || [])[0] || "9999").localeCompare((y.dias || [])[0] || "9999");
         }) : [],
-        // base anterior ao rastreio: sem carimbo não há o que mostrar, e um
-        // trilho permanentemente vazio só ocuparia espaço
-        oculto: !temNovidade,
         teste: ehNovidade, rotulo: rotuloNovidade },
 
       { id: "inscrever", titulo: "Inscrição ou venda abre em breve",
@@ -2813,7 +2814,14 @@
           return quandoAbre(x).localeCompare(quandoAbre(y));
         }),
         teste: tAbrir, rotulo: rotuloTurismo }
-    ].filter(function (t) { return !t.oculto; });
+    ]
+      /* Regra geral: trilho sem item nao aparece. Um titulo com contador
+         zero e a frase "nada com os filtros atuais" ocupa a mesma altura de
+         um trilho cheio para dizer que nao ha nada - e a home tem quatro
+         dobras, entao o custo e alto. A pergunta que o trilho faz so vale a
+         pena quando ha resposta; sem resposta, ela some inteira, e a barra
+         de filtros logo acima continua explicando o porque. */
+      .filter(function (t) { return !t.oculto && t.itens.length; });
   }
 
   /** Leva o recorte do trilho para a Agenda, para a lista bater com o card. */
@@ -2854,9 +2862,43 @@
       return;
     }
 
+    /* Com trilho vazio sumindo, o caso de TODOS sumirem passa a acontecer -
+       e ai o silencio precisaria ser explicado. Antes esta tela era
+       inalcancavel, porque sempre havia trilho, ainda que vazio. */
     var trilhos = definirTrilhos();
     if (!trilhos.length) {
-      box.appendChild(blank("Nada com esses filtros", "Troque as unidades no topo ou solte alguma categoria no menu."));
+      /* Duas causas possiveis, e confundi-las e caro: se ha filtro ou busca,
+         a culpa e do recorte e existe saida; se nao ha nada ligado, o vazio
+         e da base, e ai a data da coleta no rodape e o que importa.
+         `filtrosAtivos()` conta as facetas que o analisador reconheceu -
+         palavra que ele NAO reconheceu tambem esta filtrando, e precisa
+         contar aqui, senao um erro de digitacao vira "o robo parou". */
+      var n = filtrosAtivos();
+      var comBusca = !!state.q;
+      var recortado = n > 0 || comBusca;
+      var v = blank(
+        recortado ? "Nada com esse recorte" : "Nada daqui para a frente",
+        recortado
+          ? "Nenhuma das seções de “Para você” tem sugestão dentro do que está " +
+            "selecionado agora. Solte um item na barra acima, ou limpe tudo."
+          : "A coleta não trouxe nenhuma atividade futura. Se isso persistir, o robô pode " +
+            "estar parado — veja a data da coleta no rodapé.");
+      if (recortado) {
+        var rotulo = n && comBusca ? "Limpar busca e filtros"
+                   : comBusca ? "Limpar a busca"
+                   : "Limpar os " + n + (n === 1 ? " filtro" : " filtros");
+        var limpar = el("button", "morebtn", rotulo);
+        limpar.type = "button";
+        limpar.style.maxWidth = "260px";
+        limpar.style.margin = "18px auto 0";
+        limpar.addEventListener("click", function () {
+          limparFiltros();
+          state.q = ""; var campo = $("#q"); if (campo) campo.value = "";
+          render();
+        });
+        v.appendChild(limpar);
+      }
+      box.appendChild(v);
       return;
     }
     trilhos.forEach(function (t) {
@@ -2864,20 +2906,13 @@
       var h = el("div", "railhead");
       h.appendChild(el("h3", null, t.titulo));
       h.appendChild(el("span", "n", String(t.itens.length)));
-      if (t.itens.length) {
-        var all = el("button", "all", "ver todos");
-        all.type = "button";
-        all.addEventListener("click", function () { aplicarTrilho(t); });
-        h.appendChild(all);
-      }
+      var all = el("button", "all", "ver todos");
+      all.type = "button";
+      all.addEventListener("click", function () { aplicarTrilho(t); });
+      h.appendChild(all);
       r.appendChild(h);
       if (t.nota) r.appendChild(el("p", "railnota", t.nota));
 
-      if (!t.itens.length) {
-        r.appendChild(el("p", "railnota", "Nada com os filtros atuais."));
-        box.appendChild(r);
-        return;
-      }
       var tr = el("div", "track");
       t.itens.slice(0, 10).forEach(function (ev) {
         tr.appendChild(cartao(ev, t.diaDe ? t.diaDe(ev) : null, t.rotulo));
