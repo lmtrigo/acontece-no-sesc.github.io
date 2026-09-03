@@ -36,6 +36,58 @@ jobs:
         with:
           python-version: "3.12"
 
+      # A coleta anterior precisa sobreviver de uma execucao para a outra.
+      # Nao e capricho: `coletor.carimbar_estreia` descobre o que e novidade
+      # comparando com ela, e o carimbo `visto` viaja dentro do proprio
+      # arquivo - o app nao guarda historico. Sem a base de ontem, toda
+      # execucao vira "linha de base", ninguem e carimbado, e o trilho de
+      # novidades some para sempre, em silencio.
+      #
+      # Isso funcionava por acidente enquanto `dados/eventos.json` era
+      # versionado: o checkout trazia a base junto. Ao tirar o arquivo do
+      # historico (para o repositorio parar de crescer 10 MB por dia), o
+      # rastreio foi junto sem que nada reclamasse.
+      #
+      # O cache resolve sem devolver o peso ao git: a chave usa o id da
+      # execucao, entao nunca ha acerto exato e o `restore-keys` traz a mais
+      # recente; ao fim do job o arquivo novo e salvo sob a chave nova.
+      - name: Recuperar a base da coleta anterior
+        uses: actions/cache@v4
+        with:
+          path: dados/eventos.json
+          key: eventos-${{ github.run_id }}
+          restore-keys: |
+            eventos-
+
+      # O modo de falhar deste rastreio e silencioso: sem a base anterior o
+      # coletor apenas informa "linha de base" e segue. Um aviso na aba
+      # Actions torna visivel a diferenca entre "primeira execucao" e
+      # "cache evaporou e o rastreio reiniciou sem ninguem notar".
+      # Rede de seguranca: se o cache estiver vazio - primeira execucao depois
+      # da mudanca, ou eviccao por desuso - a base de ontem ainda esta
+      # publicada no proprio site. Baixa-la evita perder um dia inteiro de
+      # rastreio a cada tropeco do cache.
+      #
+      # O arquivo publicado passou pela retencao e perdeu as descricoes, mas
+      # `carimbar_estreia` so le `id`, `visto` e `rastreioDesde` - que sobrevivem
+      # inteiros. O preco e pequeno e conhecido: evento cortado pela retencao e
+      # que volte depois sera carimbado como novo outra vez.
+      - name: Sem cache, buscar a base publicada
+        env:
+          SITE: "https://acontece-no-sesc.github.io"
+        run: |
+          if [ -f dados/eventos.json ]; then
+            echo "Base anterior veio do cache: $(du -h dados/eventos.json | cut -f1)"
+            exit 0
+          fi
+          mkdir -p dados
+          if curl -fsSL --max-time 120 "$SITE/dados/eventos.json" -o dados/eventos.json; then
+            echo "Base anterior baixada do site publicado: $(du -h dados/eventos.json | cut -f1)"
+          else
+            rm -f dados/eventos.json
+            echo "::warning::Sem base anterior (cache vazio e site indisponivel). Esta coleta vira linha de base e nao marca novidade; o trilho de novidades reaparece na proxima execucao."
+          fi
+
       - name: Coletar a listagem
         run: python coletor.py --dias "${{ inputs.dias || '60' }}"
 
