@@ -1625,15 +1625,51 @@
      analisador reconheceu - termos do proprio catalogo - mais quantas
      palavras sobraram. O que a pessoa escreveu nunca e transmitido.
      ================================================================== */
+  /* O script do contador é `async`: quando o app termina de montar, ele quase
+     sempre ainda não chegou. Sem fila, o primeiro evento de cada sessão —
+     justamente "abriu o app" — cairia no vazio, e a medida mais básica seria
+     a única a faltar.
+
+     A fila espera o script aparecer e então esvazia. Cada evento tem prazo
+     próprio de dez segundos: num aparelho offline, ou com o contador
+     bloqueado, ela descarta em vez de acumular. E o reagendamento não
+     depende de ser a primeira vez — a primeira versão usava um prazo global
+     e, depois de escoar uma vez, nunca mais marcava novo relógio: evento
+     enfileirado mais tarde ficava parado para sempre. */
+  var filaMedida = [];
+  var drenando = false;
+
+  function escoarMedidas() {
+    drenando = false;
+    if (!filaMedida.length) return;
+    if (window.goatcounter && window.goatcounter.count) {
+      var pendentes = filaMedida;
+      filaMedida = [];
+      pendentes.forEach(function (item) {
+        try { window.goatcounter.count(item.m); } catch (e) { /* nunca derruba o app */ }
+      });
+      return;
+    }
+    var agora = Date.now();
+    filaMedida = filaMedida.filter(function (item) { return agora - item.t < 10000; });
+    if (filaMedida.length) { drenando = true; setTimeout(escoarMedidas, 400); }
+  }
+
   function medir(evento, detalhe) {
     try {
-      if (!window.goatcounter || !window.goatcounter.count) return;
-      window.goatcounter.count({
+      var m = {
         path: detalhe ? evento + "/" + detalhe : evento,
         title: evento,
         event: true
-      });
-    } catch (e) { /* medicao nunca pode derrubar o app */ }
+      };
+      if (window.goatcounter && window.goatcounter.count) {
+        window.goatcounter.count(m);
+        return;
+      }
+      if (filaMedida.length >= 20) return;        // teto: medição não vira memória
+      filaMedida.push({ m: m, t: Date.now() });
+      if (!drenando) { drenando = true; setTimeout(escoarMedidas, 400); }
+    } catch (e) { /* medição nunca pode derrubar o app */ }
   }
 
   function el(t, c, x) { var n = document.createElement(t); if (c) n.className = c; if (x != null) n.textContent = x; return n; }

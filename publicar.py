@@ -366,12 +366,16 @@ self.addEventListener('fetch', (e) => {
 # nao exige banner de consentimento, e o rodape do app diz o que e medido.
 #
 # O script entra SO aqui, na saida publicada. Se fosse parar no prototipo.html,
-# cada teste local e cada abertura da previa por link entrariam na contagem, e
-# os primeiros numeros do painel seriam quase todos nossos. Vazio desliga.
+# a previa por link entraria na contagem. Vazio desliga tudo.
+#
+# Verificado no navegador: o count.js recusa contar em localhost por conta
+# propria ("not counting because of: localhost"), entao teste local nao suja
+# o painel nem por acidente. O endereco vai com https explicito - relativo a
+# protocolo virava http:// numa pagina servida por http, e o Pages e https.
 GOATCOUNTER = "https://acontecesesc.goatcounter.com/count"
 
 MEDICAO = """
-<script data-goatcounter="%(gc)s" async src="//gc.zgo.at/count.js"></script>
+<script data-goatcounter="%(gc)s" async src="https://gc.zgo.at/count.js"></script>
 """
 
 
