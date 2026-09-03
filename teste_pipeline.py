@@ -319,5 +319,108 @@ class Publicacao(unittest.TestCase):
                          "VERSAO precisa derivar do sha1 do index.html")
 
 
+
+class Acessibilidade(unittest.TestCase):
+    """O que a auditoria de teclado e leitor de tela encontrou.
+
+    Não dá para rodar navegador na CI sem dependência nova, então aqui as
+    verificações são sobre o código que liga as peças — que é onde estes
+    defeitos moravam: a folha declarava `aria-modal` e não prendia nada, e
+    a gaveta fechada levava sete controles para dentro de uma subárvore
+    `aria-hidden="true"`.
+    """
+
+    def setUp(self):
+        self.html = ler(PROTOTIPO)
+        self.css = css_de(self.html)
+        self.js = js_de(self.html)
+
+    def test_folha_modal_prende_o_foco(self):
+        """Com a folha aberta, 105 dos 112 focáveis ficavam fora dela.
+
+        Oito toques em Tab saíam para os exemplos de busca; um Shift+Tab
+        caía em "Importar backup", na gaveta fechada e fora da tela.
+        """
+        self.assertIn("function lacoDeFoco", self.js,
+                      "sumiu o laço de foco da camada aberta")
+        self.assertRegex(self.js, r'lacoDeFoco[^)]*\)?,\s*true\s*\)',
+                         "o laço precisa escutar na fase de captura")
+        self.assertIn("marcarInerte", self.js,
+                      "falta marcar o resto da página como inerte")
+
+    def test_gaveta_fechada_sai_do_percurso(self):
+        """`translateX(-101%)` tira da vista e não do Tab.
+
+        `visibility: hidden` tira dos dois — e é o que também a remove do
+        leitor de tela, que é o ponto: focável dentro de `aria-hidden` é a
+        combinação que a ARIA proíbe.
+        """
+        i = self.css.index(".drawer {")
+        bloco = self.css[i:self.css.index("}", i)]
+        self.assertIn("visibility: hidden", bloco,
+                      "a gaveta fechada continua no percurso do Tab")
+        i2 = self.css.index(".drawer.on {")
+        self.assertIn("visibility: visible", self.css[i2:self.css.index("}", i2)])
+
+    def test_favoritar_nao_perde_o_lugar(self):
+        """`render()` destrói o botão que tinha o foco.
+
+        Medido antes: `activeElement` virava `document.body`, e quem
+        favoritava o trigésimo item voltava para o começo da página.
+        """
+        self.assertIn("comFocoPreservado(render)", self.js,
+                      "toggleFav voltou a chamar render() direto")
+        self.assertIn('setAttribute("data-fav"', self.js,
+                      "sem o id no botão não há como reencontrá-lo")
+
+    def test_alvos_de_toque_chegam_a_44px(self):
+        """O token --tap existia e só era aplicado na gaveta.
+
+        O coração da lista densa media 26x18 — alvo primário de favoritar,
+        na tela mais usada, colado a um alvo enorme (a linha abre o
+        detalhe). Errar o toque abria a folha em vez de salvar.
+        """
+        self.assertRegex(
+            self.css, r"\.ev \.fav::after[^{]*\{[^}]*min-width:\s*var\(--tap\)",
+            "o coração da lista voltou a ter alvo menor que o dedo")
+
+    def test_mudanca_de_resultado_e_anunciada(self):
+        """Só existia uma região viva no app inteiro: o toast.
+
+        Buscar e não achar nada trocava a tela em silêncio para quem usa
+        leitor de tela.
+        """
+        self.assertRegex(self.html, r'id="greetSub"[^>]*aria-live="polite"',
+                         "a contagem de resultados não é anunciada")
+        i = self.js.index("function blank(")
+        self.assertIn('"role", "status"', self.js[i:i + 400],
+                      "os estados vazios não são anunciados")
+
+    def test_atualizar_eventos_aguenta_base_vazia(self):
+        """A tela que serve para consertar a falha era a que quebrava.
+
+        `DADOS.eventos.length` sem guarda lançava TypeError e a folha ficava
+        meio montada, sem abrir — justamente quando a coleta falhou.
+        """
+        i = self.js.index("function abrirAtualizar(")
+        bloco = self.js[i:i + 2600]
+        self.assertNotIn("DADOS.eventos.length", bloco,
+                         "acesso sem guarda a DADOS.eventos")
+        self.assertNotIn("DADOS.janela.de", bloco,
+                         "acesso sem guarda a DADOS.janela")
+
+    def test_contador_de_favoritos_conta_o_que_existe(self):
+        """Dava para ver "Favoritos 2" no topo e "Nada salvo ainda" abaixo.
+
+        A base é reescrita a cada coleta e o que passou é cortado, então id
+        guardado não garante evento vivo.
+        """
+        self.assertIn("function favsVivos", self.js)
+        i = self.js.index("function render() {")
+        bloco = self.js[i:i + 500]
+        self.assertNotIn("$(\"#dFavN\").textContent = state.favs.length", bloco,
+                         "o distintivo voltou a contar favoritos fantasma")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

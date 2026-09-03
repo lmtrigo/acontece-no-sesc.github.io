@@ -235,6 +235,27 @@
   .modelinha > .u-label { color: var(--ink-3); flex: 0 0 62px; }
   .modelinha .modetabs { flex: 1 1 auto; margin: 0; padding: 0; }
 
+  /* ---------------- alvos de toque ----------------
+     O token `--tap: 44px` existia e só era aplicado na gaveta. Medido em
+     375px: o coração da lista densa tinha 26x18 — o alvo primário de
+     favoritar, na tela que mais se usa, e vizinho imediato de um alvo
+     enorme (a linha inteira abre o detalhe). Errar o toque abria a folha
+     em vez de salvar. As setas de semana tinham 32x32; o fechar da folha,
+     34x34; os ícones do topo, 38x38.
+
+     O alvo cresce sem empurrar o desenho: a área clicável se estende por
+     pseudo-elemento, e o que se vê continua do mesmo tamanho. */
+  .ev .fav::after, .wnav::after, .sheet .closebtn::after,
+  .iconbtn::after, .modetab::after, .fbtn::after {
+    content: ""; position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 100%; height: 100%;
+    min-width: var(--tap); min-height: var(--tap);
+  }
+  .ev .fav, .wnav, .sheet .closebtn, .iconbtn, .modetab, .fbtn { position: relative; }
+  /* o coração encosta na borda do cartão: o alvo cresce para dentro */
+  .tcard .fav { min-width: var(--tap); min-height: var(--tap); }
+
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
   body {
@@ -643,9 +664,20 @@
   .drawer {
     position: fixed; top: 0; bottom: 0; left: 0; z-index: 51; width: 292px; max-width: 88vw;
     background: var(--surface); border-right: 1px solid var(--line);
-    transform: translateX(-101%); transition: transform var(--dur) var(--ease); display: flex; flex-direction: column;
+    transform: translateX(-101%); display: flex; flex-direction: column;
+    /* Fora da tela por transform, ela continuava `visibility: visible` — e
+       com isso os 7 controles de dentro seguiam no percurso do Tab, dentro
+       de uma subárvore `aria-hidden="true"`. Um Shift+Tab a partir do botão
+       de fechar da folha caía em "Importar backup", invisível. A
+       `visibility` some ao fim da transição e volta na hora de abrir, então
+       a animação continua igual. */
+    visibility: hidden;
+    transition: transform var(--dur) var(--ease), visibility 0s var(--dur);
   }
-  .drawer.on { transform: none; }
+  .drawer.on {
+    transform: none; visibility: visible;
+    transition: transform var(--dur) var(--ease), visibility 0s;
+  }
   .drawer-scroll { overflow-y: auto; padding: var(--s7) var(--s6) var(--s9); }
   .dbrand { display: none; }          /* só na tela larga (ver o bloco COMPUTADOR) */
   .dgroup h4 { margin: 0 0 var(--s2); color: var(--ink-3); }
@@ -883,7 +915,8 @@
        conteúdo, e a hierarquia saía invertida — a coluna avançava e o
        catálogo recuava. */
     .drawer {
-      transform: none; width: 292px; max-width: 292px; box-shadow: none;
+      transform: none; visibility: visible; transition: none;
+      width: 292px; max-width: 292px; box-shadow: none;
       background: var(--surface-2); border-right: 1px solid var(--line);
     }
     /* coluna em pilha: os dados ficam presos no rodapé, não no meio */
@@ -1084,7 +1117,11 @@
     <section class="view" id="v-home">
       <div class="greet">
         <h2 id="greetTitle">—</h2>
-        <p id="greetSub">—</p>
+        <!-- A contagem é o único texto que muda quando a busca ou o filtro
+             mudam. Sem região viva, quem usa leitor de tela digitava e não
+             recebia nada: a tela inteira trocava em silêncio. O `toast` era
+             a única região viva do app. -->
+        <p id="greetSub" role="status" aria-live="polite" aria-atomic="true">—</p>
       </div>
       <div id="rails"></div>
     </section>
@@ -1548,9 +1585,18 @@
     box.appendChild(h);
     var bd = el("div", "body");
     bd.appendChild(el("p", null, coletaFmt() + " (horário de Brasília)"));
-    bd.appendChild(el("p", null, DADOS.eventos.length.toLocaleString("pt-BR") + " eventos · janela de " +
-      (DADOS.janela.de || "").split("-").reverse().join("/") + " a " +
-      (DADOS.janela.ate || "").split("-").reverse().join("/")));
+    /* Sem estas guardas a folha morria no meio: com a base vazia — fetch que
+       falhou, ou JSON sem eventos — o clique em "Atualizar eventos" lançava
+       TypeError, a folha ficava meio montada e nunca abria. Justamente a tela
+       que serve para consertar o problema era a que quebrava por causa dele.
+       O resto do arquivo já usa `DADOS.eventos || []`; só aqui não usava. */
+    var jn = DADOS.janela || {};
+    var nEv = (DADOS.eventos || []).length;
+    bd.appendChild(el("p", null, nEv
+      ? nEv.toLocaleString("pt-BR") + " eventos · janela de " +
+        (jn.de || "").split("-").reverse().join("/") + " a " +
+        (jn.ate || "").split("-").reverse().join("/")
+      : "Nenhum evento carregado. Se isto persistir, a coleta pode ter falhado."));
     bd.appendChild(el("p", null, origemDados === "servidor"
       ? "Origem: arquivo do servidor — este app se atualiza sozinho."
       : "Origem: cópia embutida na página."));
@@ -2505,6 +2551,7 @@
 
     var f = el("button", "fav");
     f.type = "button";
+    f.setAttribute("data-fav", ev.id);
     f.setAttribute("aria-label", "Favoritar " + ev.tit);
     f.setAttribute("aria-pressed", state.favs.indexOf(ev.id) > -1 ? "true" : "false");
     f.appendChild(sv(ICO.coracao, 15));
@@ -2683,13 +2730,26 @@
 
   function toggleFav(id) {
     medir("favorita", state.favs.indexOf(id) > -1 ? "tira" : "poe");
+    /* `render()` reconstrói as listas e destrói o botão que tinha o foco:
+       medido, `activeElement` virava `document.body`, e quem favoritou o
+       trigésimo item voltava para o começo da página. O id no botão permite
+       reencontrá-lo depois do render. */
     var i = state.favs.indexOf(id);
     if (i === -1) { state.favs.unshift(id); toast("Salvo nos favoritos"); }
     else { state.favs.splice(i, 1); toast("Removido dos favoritos"); }
-    saveFavs(); render();
+    saveFavs();
+    comFocoPreservado(render);
   }
   function evPorId(id) { for (var i = 0; i < EVENTOS.length; i++) if (EVENTOS[i].id === id) return EVENTOS[i]; return null; }
-  function blank(t, p) { var d = el("div", "blank"); d.appendChild(el("b", null, t)); d.appendChild(el("p", null, p)); return d; }
+  function blank(t, p) {
+    var d = el("div", "blank");
+    // "Nada com esse recorte" é a resposta à ação de quem buscou: precisa
+    // ser anunciada como qualquer outro resultado
+    d.setAttribute("role", "status");
+    d.appendChild(el("b", null, t));
+    d.appendChild(el("p", null, p));
+    return d;
+  }
 
   /* ---------------- home: trilhos ---------------- */
   /* Turismo Social gira em torno da inscrição, não da data da viagem. */
@@ -5203,6 +5263,95 @@
   }
 
   var timerFechar = null;
+
+  /* ==================================================================
+     FOCO EM CAMADA SOBREPOSTA
+     ------------------------------------------------------------------
+     A folha declarava `role="dialog" aria-modal="true"` e não prendia o
+     foco em nada: com ela aberta, 105 dos 112 controles tabuláveis do
+     documento estavam FORA dela. Oito toques em Tab saíam da folha e
+     caíam nos exemplos de busca; catorze, na régua da semana. O véu
+     barra o mouse (`pointer-events`), e o teclado atravessava inteiro.
+
+     Pior era a gaveta fechada: ela sai de cena só por `translateX(-101%)`,
+     continua `visibility: visible`, e leva 7 controles tabuláveis junto —
+     dentro de uma subárvore marcada `aria-hidden="true"`. Foco focável
+     dentro de `aria-hidden` é a combinação que a ARIA proíbe: o leitor de
+     tela fica com foco fantasma, anunciando nada ou o rótulo errado. Um
+     único Shift+Tab a partir do botão de fechar levava a "Importar
+     backup", fora da tela.
+
+     Duas defesas, porque `inert` ainda não está em todo lugar:
+     `inert` no resto da página onde houver suporte, e o laço de Tab
+     escrito à mão sempre. A gaveta fechada some do percurso pelo CSS
+     (`visibility: hidden`), que é o que também a tira do leitor de tela.
+     ================================================================== */
+
+  var FOCAVEIS = 'a[href], button:not([disabled]), input:not([disabled]), ' +
+                 'select:not([disabled]), textarea:not([disabled]), ' +
+                 '[tabindex]:not([tabindex="-1"])';
+
+  function focaveisDe(caixa) {
+    return Array.prototype.filter.call(
+      caixa.querySelectorAll(FOCAVEIS),
+      function (n) { return n.offsetParent !== null || n === document.activeElement; });
+  }
+
+  /** A camada de cima agora, ou nada. */
+  function camadaAberta() {
+    if (!$("#sheet").hidden) return $("#sheet");
+    var d = $("#drawer");
+    // na tela larga a gaveta é coluna fixa, não camada: não prende nada
+    if (d.classList.contains("on") && !MQ_COMPUTADOR.matches) return d;
+    return null;
+  }
+
+  function marcarInerte(ligado) {
+    var app = document.querySelector(".app");
+    if (!app || !("inert" in HTMLElement.prototype)) return;
+    app.inert = !!ligado;
+  }
+
+  /** Tab não sai da camada aberta. */
+  function lacoDeFoco(e) {
+    if (e.key !== "Tab") return;
+    var caixa = camadaAberta();
+    if (!caixa) return;
+    var itens = focaveisDe(caixa);
+    if (!itens.length) return;
+    var primeiro = itens[0], ultimo = itens[itens.length - 1];
+    var dentro = caixa.contains(document.activeElement);
+    if (!dentro) {
+      e.preventDefault();
+      (e.shiftKey ? ultimo : primeiro).focus();
+      return;
+    }
+    if (e.shiftKey && document.activeElement === primeiro) {
+      e.preventDefault(); ultimo.focus();
+    } else if (!e.shiftKey && document.activeElement === ultimo) {
+      e.preventDefault(); primeiro.focus();
+    }
+  }
+  document.addEventListener("keydown", lacoDeFoco, true);
+
+  /* ---------------- o foco depois de um render ----------------
+     `toggleFav` chama `render()`, que reconstrói as listas inteiras e
+     destrói o botão que tinha o foco — medido: `activeElement` virava
+     `document.body`. Quem favoritava o 30º item da lista voltava para o
+     começo e tinha de tabular sessenta vezes para retomar o lugar. O
+     `toast` anuncia a ação; o lugar é que se perdia.
+
+     Cada coração carrega o id do evento, então depois do render dá para
+     reencontrar o correspondente e devolver o foco a ele. */
+  function comFocoPreservado(fn) {
+    var ativo = document.activeElement;
+    var marca = ativo && ativo.getAttribute && ativo.getAttribute("data-fav");
+    fn();
+    if (!marca) return;
+    var novo = document.querySelector('[data-fav="' + marca + '"]');
+    if (novo && novo.offsetParent !== null) novo.focus();
+  }
+
   function abrirSheet() {
     foco = document.activeElement;
     var s = $("#sheet");
@@ -5212,11 +5361,13 @@
     if (timerFechar) { clearTimeout(timerFechar); timerFechar = null; }
     s.hidden = false; $("#sheetBody").scrollTop = 0;
     if (!jaAberta && !pularPush) empilhar("sheet");
+    marcarInerte(true);
     requestAnimationFrame(function () { s.classList.add("on"); $("#scrim").classList.add("on"); $("#sheetClose").focus(); travar(); });
     document.addEventListener("keydown", escH);
   }
   /** voltando=true quando quem fechou foi o gesto de voltar. */
   function fecharSheet(voltando) {
+    marcarInerte(!$("#drawer").classList.contains("on") ? false : !MQ_COMPUTADOR.matches);
     var s = $("#sheet");
     if (s.hidden) return;
     s.classList.remove("on");
@@ -5234,6 +5385,7 @@
     if (d.classList.contains("on")) return;
     d.classList.add("on"); d.setAttribute("aria-hidden", "false");
     $("#scrim").classList.add("on"); $("#menuBtn").setAttribute("aria-expanded", "true"); travar();
+    marcarInerte(true);
     empilhar("drawer");
     document.addEventListener("keydown", escH);
   }
@@ -5241,7 +5393,7 @@
     var d = $("#drawer");
     if (!d.classList.contains("on")) return;
     d.classList.remove("on"); d.setAttribute("aria-hidden", "true");
-    if ($("#sheet").hidden) $("#scrim").classList.remove("on");
+    if ($("#sheet").hidden) { $("#scrim").classList.remove("on"); marcarInerte(false); }
     $("#menuBtn").setAttribute("aria-expanded", "false"); travar();
     if (!voltando && histOK) { try { history.back(); } catch (e) {} }
   }
@@ -5256,6 +5408,7 @@
   function ajustarModo() {
     var d = $("#drawer");
     if (MQ_COMPUTADOR.matches) {
+      if ($("#sheet").hidden) marcarInerte(false);
       d.classList.remove("on");
       d.setAttribute("aria-hidden", "false");
       $("#menuBtn").setAttribute("aria-expanded", "true");
@@ -5405,12 +5558,27 @@
     if (!ver && state.view === "sorteios") irPara("home");
   }
 
+  /* Favorito cujo evento saiu da base não conta.
+     A base é reescrita a cada coleta e `derivar()` corta o que já passou,
+     então guardar o id não garante que ele ainda exista. Os distintivos
+     usavam `state.favs.length` cru enquanto a aba Favoritos filtrava por
+     `evPorId` — dava para ver "Favoritos 2" no topo e "Nada salvo ainda"
+     no corpo, ao mesmo tempo, sem jeito de zerar.
+
+     Contar o que existe, e não podar o que está guardado: o evento pode
+     voltar na próxima coleta, e apagar o favorito de alguém porque a
+     temporada acabou seria pior do que um contador otimista. */
+  function favsVivos() {
+    return state.favs.filter(function (id) { return !!evPorId(id); });
+  }
+
   function render() {
     ajustarSorteios();
-    $("#dFavN").textContent = state.favs.length || "";
+    var nFav = favsVivos().length;
+    $("#dFavN").textContent = nFav || "";
     var fb = $("#favBadge");
-    fb.hidden = !state.favs.length;
-    fb.textContent = state.favs.length;
+    fb.hidden = !nFav;
+    fb.textContent = nFav;
 
     var d = diasDesdeColeta();
     $("#nAtt").textContent = coletaFmt().slice(0, 5);
