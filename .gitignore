@@ -7,3 +7,12 @@ __pycache__/
 # repositório crescer alguns MB por dia sem necessidade.
 web/
 web.zip
+
+# Gerado por embutir.py: o app com o instantâneo dentro, para prévia por
+# link. Pesa alguns MB e muda a cada coleta — o fonte é o prototipo.html.
+previa.html
+
+# A base coletada. Deixou de ser versionada: cada coleta acrescentava ~5 MB
+# pouco compressível, e o site sai do artefato da Action, não do repositório.
+# Para ter uma base local: python coletor.py --dias 60
+dados/eventos.json

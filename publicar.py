@@ -220,6 +220,9 @@ def ics_evento(ev, hoje):
                      "SUMMARY:" + esc_ics(tit), "LOCATION:" + _local(ev),
                      "DESCRIPTION:" + esc_ics(((ev.get("sub") + " — ") if ev.get("sub") else "") +
                                               (ev.get("link") or "")),
+                     # o app põe URL: no ramo contínuo e este não punha: as duas
+                     # implementações têm de dizer a mesma coisa (HANDOFF §5.3)
+                     ] + (["URL:" + esc_ics(ev["link"])] if ev.get("link") else []) + [
                      # num compromisso de dias inteiros, alerta de 5 minutos
                      # não quer dizer nada: a véspera é o que importa
                      "BEGIN:VALARM", "TRIGGER:-P1D", "ACTION:DISPLAY",
@@ -361,6 +364,24 @@ self.addEventListener('fetch', (e) => {
 """
 
 
+# ------------------------------------------------------------------ medicao
+# Sem cookie, sem impressao digital do navegador e sem guardar IP - por isso
+# nao exige banner de consentimento, e o rodape do app diz o que e medido.
+#
+# O script entra SO aqui, na saida publicada. Se fosse parar no prototipo.html,
+# a previa por link entraria na contagem. Vazio desliga tudo.
+#
+# Verificado no navegador: o count.js recusa contar em localhost por conta
+# propria ("not counting because of: localhost"), entao teste local nao suja
+# o painel nem por acidente. O endereco vai com https explicito - relativo a
+# protocolo virava http:// numa pagina servida por http, e o Pages e https.
+GOATCOUNTER = "https://acontecesesc.goatcounter.com/count"
+
+MEDICAO = """
+<script data-goatcounter="%(gc)s" async src="https://gc.zgo.at/count.js"></script>
+"""
+
+
 CABECA = """<link rel="manifest" href="%(base)smanifest.webmanifest">
 <meta name="theme-color" content="%(tema)s">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -400,7 +421,28 @@ def main():
         html = f.read()
 
     # o embutido continua ali como reserva offline; o JSON servido é que manda
+    # ---- o instantaneo embutido sai da versao publicada ----
+    # `embutir.py` grava a base inteira dentro do HTML para que a previa por
+    # link funcione sem servidor. No site isso e peso puro: o app busca
+    # `dados/eventos.json` na abertura e substitui o embutido segundos depois.
+    # Medido: index.html 1,07 MB + eventos.json 0,47 MB comprimidos, dos quais
+    # 1,02 MB eram baixados so para serem descartados. Sem o instantaneo a
+    # casca sozinha sao 53 KB, e a primeira carga cai a cerca de um terco.
+    #
+    # A costura ja existia: embutir.py delimita os dados entre marcadores.
+    ini = html.find("/* DADOS:INICIO */")
+    fim = html.find("/* DADOS:FIM */")
+    if ini == -1 or fim == -1 or fim < ini:
+        raise SystemExit("Marcadores /* DADOS:INICIO */ ... /* DADOS:FIM */ nao "
+                         "encontrados em %s - rode embutir.py antes." % args.html)
+    html = (html[:ini]
+            + "/* DADOS:INICIO */" + chr(10)
+            + "  var DADOS = {};   /* a base vem de dados/eventos.json */" + chr(10)
+            + "  " + html[fim:])
+
     cab = CABECA % {"base": base, "tema": TEMA, "curto": NOME_CURTO, "desc": DESC}
+    if GOATCOUNTER:
+        cab += MEDICAO % {"gc": GOATCOUNTER}
     html = re.sub(r"(<title>.*?</title>)", lambda m: m.group(1) + "\n" + cab, html, count=1)
     html += REGISTRO % {"base": base}
 

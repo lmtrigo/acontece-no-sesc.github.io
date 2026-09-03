@@ -1,0 +1,54 @@
+name: Testes
+
+# Separado do robô de propósito. A coleta diária não pode ser bloqueada por
+# um teste: dado novo no ar vale mais do que uma invariante da casca. Aqui a
+# checagem roda a cada push, em segundos, e falha alto quando algo que não
+# grita sozinho for quebrado.
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  testar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # O runner já traz Node. Não é dependência do projeto — é só o que
+      # permite conferir a sintaxe do JS do app, que nesta máquina fica de
+      # fora. Um erro ali derruba o app inteiro e o HTML segue servindo bem,
+      # então é o tipo de falha que passa despercebida até alguém abrir.
+      - name: Versões
+        run: |
+          python --version
+          node --version
+
+      # A pasta web/ não é versionada, e metade das invariantes é sobre ela.
+      # Gerar aqui custa segundos e é a única forma de testar a publicação de
+      # verdade. Precisa de uma base: usa a que está publicada.
+      - name: Montar web/ com a base publicada
+        env:
+          SITE: "https://acontece-no-sesc.github.io"
+        run: |
+          mkdir -p dados
+          if curl -fsSL --max-time 120 "$SITE/dados/eventos.json" -o dados/eventos.json; then
+            python publicar.py
+          else
+            echo "::notice::Site indisponível; os testes de publicação vão se pular sozinhos."
+          fi
+
+      - name: Pipeline e casca
+        run: python teste_pipeline.py
+
+      - name: Extratores
+        run: python teste_extratores.py

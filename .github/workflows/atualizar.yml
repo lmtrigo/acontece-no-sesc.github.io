@@ -16,7 +16,8 @@ on:
         default: true
 
 permissions:
-  contents: write
+  # O robo nao commita mais nada: escreve o site (pages) e nada no repositorio.
+  contents: read
   pages: write
   id-token: write
 
@@ -34,6 +35,58 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      # A coleta anterior precisa sobreviver de uma execucao para a outra.
+      # Nao e capricho: `coletor.carimbar_estreia` descobre o que e novidade
+      # comparando com ela, e o carimbo `visto` viaja dentro do proprio
+      # arquivo - o app nao guarda historico. Sem a base de ontem, toda
+      # execucao vira "linha de base", ninguem e carimbado, e o trilho de
+      # novidades some para sempre, em silencio.
+      #
+      # Isso funcionava por acidente enquanto `dados/eventos.json` era
+      # versionado: o checkout trazia a base junto. Ao tirar o arquivo do
+      # historico (para o repositorio parar de crescer 10 MB por dia), o
+      # rastreio foi junto sem que nada reclamasse.
+      #
+      # O cache resolve sem devolver o peso ao git: a chave usa o id da
+      # execucao, entao nunca ha acerto exato e o `restore-keys` traz a mais
+      # recente; ao fim do job o arquivo novo e salvo sob a chave nova.
+      - name: Recuperar a base da coleta anterior
+        uses: actions/cache@v4
+        with:
+          path: dados/eventos.json
+          key: eventos-${{ github.run_id }}
+          restore-keys: |
+            eventos-
+
+      # O modo de falhar deste rastreio e silencioso: sem a base anterior o
+      # coletor apenas informa "linha de base" e segue. Um aviso na aba
+      # Actions torna visivel a diferenca entre "primeira execucao" e
+      # "cache evaporou e o rastreio reiniciou sem ninguem notar".
+      # Rede de seguranca: se o cache estiver vazio - primeira execucao depois
+      # da mudanca, ou eviccao por desuso - a base de ontem ainda esta
+      # publicada no proprio site. Baixa-la evita perder um dia inteiro de
+      # rastreio a cada tropeco do cache.
+      #
+      # O arquivo publicado passou pela retencao e perdeu as descricoes, mas
+      # `carimbar_estreia` so le `id`, `visto` e `rastreioDesde` - que sobrevivem
+      # inteiros. O preco e pequeno e conhecido: evento cortado pela retencao e
+      # que volte depois sera carimbado como novo outra vez.
+      - name: Sem cache, buscar a base publicada
+        env:
+          SITE: "https://acontece-no-sesc.github.io"
+        run: |
+          if [ -f dados/eventos.json ]; then
+            echo "Base anterior veio do cache: $(du -h dados/eventos.json | cut -f1)"
+            exit 0
+          fi
+          mkdir -p dados
+          if curl -fsSL --max-time 120 "$SITE/dados/eventos.json" -o dados/eventos.json; then
+            echo "Base anterior baixada do site publicado: $(du -h dados/eventos.json | cut -f1)"
+          else
+            rm -f dados/eventos.json
+            echo "::warning::Sem base anterior (cache vazio e site indisponivel). Esta coleta vira linha de base e nao marca novidade; o trilho de novidades reaparece na proxima execucao."
+          fi
 
       - name: Coletar a listagem
         run: python coletor.py --dias "${{ inputs.dias || '60' }}"
@@ -84,31 +137,23 @@ jobs:
         with:
           path: web
 
-      - name: Guardar os dados no repositório
-        # Um re-run parte do commit original, e a main pode ter andado desde
-        # então — foi assim que o push falhou e levou o job junto. Aqui os
-        # dois arquivos gerados são reaplicados sobre a main mais recente, o
-        # que também evita conflito: a saída do robô sempre vence.
-        continue-on-error: true
-        run: |
-          git config user.name "robo da agenda"
-          git config user.email "actions@github.com"
-
-          tmp=$(mktemp -d)
-          cp dados/eventos.json prototipo.html "$tmp/"
-
-          git fetch origin main
-          git checkout -B main origin/main
-          cp "$tmp/eventos.json" dados/eventos.json
-          cp "$tmp/prototipo.html" prototipo.html
-
-          git add dados/eventos.json prototipo.html
-          if git diff --staged --quiet; then
-            echo "Nada mudou desde a última coleta."
-            exit 0
-          fi
-          git commit -m "dados: coleta de $(date -u +%d/%m/%Y)"
-          git push origin HEAD:main || echo "::warning::push recusado; o site foi publicado mesmo assim"
+      # Os dados NAO sao mais versionados. Cada coleta acrescentava ~10,6 MB
+      # de conteudo novo (eventos.json 5,4 MB + prototipo.html 5,2 MB), pouco
+      # compressivel entre versoes: em 8 rodadas o .git ja estava em 49 MB, e
+      # a projecao de um ano de execucao diaria era da ordem de 1 a 2 GB - o
+      # GitHub avisa a partir de 1 GB.
+      #
+      # O commit sempre foi so contabilidade: o site sai do artefato do passo
+      # acima, nunca do repositorio. Quem quiser a base de um dia especifico
+      # baixa o artefato da execucao correspondente.
+      - name: Guardar a base como artefato da execução
+        uses: actions/upload-artifact@v4
+        with:
+          name: base-${{ github.run_number }}
+          path: |
+            dados/eventos.json
+          retention-days: 30
+          compression-level: 9
 
   publicar:
     needs: coletar

@@ -215,7 +215,17 @@ def normalizar(a, unidades):
     }
 
 
-CONTINUOS = ("Turismo Social",)
+# A categoria mora aqui porque três arquivos dependem dela de formas
+# diferentes: `CONTINUOS` abaixo (a viagem acontece em todos os dias do
+# intervalo), `regras.SO_COM_INSCRICAO` (passeio sem data de inscrição sai
+# da base) e o padrão de `detalhes --html-cats` (é o único jeito de raspar,
+# porque passeio não tem id_java). O portal renomear a categoria produziria
+# três efeitos diferentes e todos silenciosos: as viagens deixariam de ser
+# contínuas, os passeios parariam de ser raspados e parariam de ser
+# descartados. Com um nome só, o teste de sanidade abaixo pega os três.
+CAT_TURISMO = "Turismo Social"
+
+CONTINUOS = (CAT_TURISMO,)
 
 
 def expandir_viagens(lista, de, ate):
@@ -353,6 +363,25 @@ def coletar(de, ate, regioes):
         antes = len(lista)
         lista = [e for e in lista if e["reg"] in regioes]
         print("Filtro de região %s: %d -> %d eventos" % (regioes, antes, len(lista)))
+        # `normalizar` põe "outra" em toda unidade que não bate EXATAMENTE com
+        # um `name` de /unidades-atividades, e o filtro então a descarta. Basta
+        # o portal renomear uma unidade, ou trocar o vocabulário de
+        # `description`, para isso virar exclusão em massa — com uma linha
+        # informativa de log como único sinal. Hoje são zero; a trava existe
+        # para que continue sendo notícia quando deixar de ser.
+        fora = antes - len(lista)
+        if antes and fora > antes * 0.1:
+            raise SystemExit(
+                "ABORTADO: o filtro de região descartou %d de %d eventos (%.0f%%). "
+                "Provavelmente uma unidade mudou de nome ou a região deixou de "
+                "vir como capital/interior/litoral. Nada foi gravado."
+                % (fora, antes, 100.0 * fora / antes))
+        if not any(e["cat"] == CAT_TURISMO for e in lista):
+            raise SystemExit(
+                "ABORTADO: nenhum evento de %s na coleta. A categoria é usada "
+                "por três regras diferentes (viagem contínua, retenção e "
+                "raspagem de HTML); se ela mudou de nome, as três se apagam em "
+                "silêncio. Nada foi gravado." % CAT_TURISMO)
 
     # Descartado agora só o cancelado. "Outros" é o balde do que o portal não
     # categorizou — jogá-lo fora tirava da agenda atividades que existem de
@@ -371,6 +400,49 @@ def coletar(de, ate, regioes):
 
     lista.sort(key=lambda e: (e["dias"][0] if e["dias"] else "9999", e["tit"]))
     return lista, unidades
+
+
+# Piso de volume. 3.3 mil eventos numa janela de 60 dias e a norma; qualquer
+# coisa abaixo de algumas centenas so acontece se a fonte mudou de forma.
+MINIMO_ABSOLUTO = 200
+FRACAO_MINIMA = 0.6
+
+
+def conferir_volume(eventos, caminho_anterior):
+    """Recusa gravar uma coleta que desabou em relação à anterior.
+
+    Toda a degradação deste pipeline é silenciosa por construção: uma coleta
+    vazia atravessa `carimbar_estreia` ("0 novidades"), `regras.aplicar`
+    ("0 de 0") e `publicar.py` ("web/ pronto · 0 eventos"), e os três terminam
+    com sucesso. O app publicado fica vazio e nada avisa.
+
+    Pior: o arquivo vazio vira a coleta anterior do dia seguinte, e aí os
+    3.300 eventos de volta são todos carimbados como novidade — o trilho
+    "Novidades na programação" passa a mostrar o catálogo inteiro.
+
+    O envelope da API não distingue "não há nada nesse dia" de "a resposta
+    mudou de forma": as duas chegam como lista vazia. Quem distingue é o
+    tamanho da coleta anterior. Sem base anterior não há o que comparar, e
+    aí só o piso absoluto vale — é o caso da primeira execução.
+    """
+    if len(eventos) < MINIMO_ABSOLUTO:
+        raise SystemExit(
+            "ABORTADO: %d eventos coletados, abaixo do piso de %d. A resposta "
+            "da API provavelmente mudou de forma. Nada foi gravado — a base "
+            "anterior continua no lugar." % (len(eventos), MINIMO_ABSOLUTO))
+
+    try:
+        with open(caminho_anterior, encoding="utf-8") as f:
+            antes = len(json.load(f).get("eventos") or [])
+    except (OSError, ValueError):
+        return
+
+    if antes and len(eventos) < antes * FRACAO_MINIMA:
+        raise SystemExit(
+            "ABORTADO: %d eventos contra %d da coleta anterior (%.0f%%, "
+            "mínimo %.0f%%). Nada foi gravado. Se a queda for real, rode com "
+            "--sem-piso." % (len(eventos), antes, 100.0 * len(eventos) / antes,
+                             100 * FRACAO_MINIMA))
 
 
 def carimbar_estreia(lista, caminho_anterior, hoje):
@@ -437,6 +509,8 @@ def main():
     p.add_argument("--regioes", nargs="*", default=list(REGIOES_VALIDAS),
                    help="capital interior litoral")
     p.add_argument("--saida", default=os.path.join("dados", "eventos.json"))
+    p.add_argument("--sem-piso", action="store_true",
+                   help="grava mesmo com a coleta muito menor que a anterior")
     args = p.parse_args()
 
     hoje = agora_br().date()
@@ -447,6 +521,8 @@ def main():
     print("Coletando de %s a %s" % (de, ate))
     inicio = time.time()
     eventos, unidades = coletar(de, ate, set(args.regioes))
+    if not args.sem_piso:
+        conferir_volume(eventos, args.saida)
     rastreio = carimbar_estreia(eventos, args.saida, hoje.isoformat())
 
     saida = {

@@ -40,7 +40,11 @@ CAMPOS = ("id", "tit", "sub", "uni", "reg", "cat", "subcat", "publico",
           "inscricao", "sorteados",
           # dia em que o evento apareceu pela primeira vez na base: é o que
           # sustenta o trilho de novidades
-          "visto")
+          "visto",
+          # a agenda deste evento veio da varredura de segurança, que só
+          # conhece o primeiro e o último dia. Sem este campo o app mostrava
+          # duas datas como se fossem a programação inteira.
+          "parcial")
 # `desc` fica de fora de propósito: 2,5 mil textos pesariam no download de
 # todo mundo para serem lidos um de cada vez. O app busca por evento, em
 # dados/desc/<id>.json, e descarta ao fechar.
@@ -73,6 +77,8 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--dados", default=os.path.join("dados", "eventos.json"))
     p.add_argument("--html", default="prototipo.html")
+    p.add_argument("--saida", default="previa.html",
+                   help="arquivo de saida com os dados embutidos")
     p.add_argument("--max", type=int, default=0, help="0 = todos")
     p.add_argument("--sem-projeto", action="store_true",
                    help="remove os eventos que pertencem a um projeto "
@@ -162,12 +168,18 @@ def main():
 
     novo = MARCADOR.sub(lambda _: js, html, count=1)
 
-    with open(args.html, "w", encoding="utf-8", newline="\n") as f:
+    # A previa por link e um arquivo A PARTE. Antes o instantaneo era gravado
+    # de volta no proprio prototipo.html, o que fazia o arquivo-fonte pesar
+    # 5 MB e entrar inteiro no historico do git a cada coleta - 8 rodadas ja
+    # tinham levado o .git a 49 MB. O fonte fica com `var DADOS = {}` e o
+    # pesado vira saida gerada, ignorada pelo git.
+    with open(args.saida, "w", encoding="utf-8", newline="\n") as f:
         f.write(novo)
 
     ocorr = sum(len(e.get("dias", [])) for e in pacote["eventos"])
-    print("Embutidos %d eventos · %d ocorrências · HTML com %.0f KB"
-          % (len(pacote["eventos"]), ocorr, os.path.getsize(args.html) / 1024))
+    print("Embutidos %d eventos - %d ocorrencias - %s com %.0f KB"
+          % (len(pacote["eventos"]), ocorr, args.saida,
+             os.path.getsize(args.saida) / 1024))
 
 
 if __name__ == "__main__":
