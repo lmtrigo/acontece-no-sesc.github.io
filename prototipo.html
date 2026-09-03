@@ -1838,14 +1838,26 @@
   }
 
   /** A janela que vale para esta pessoa, e quando ela abre. */
+  /* A janela que é DAQUELA pessoa, ou nada.
+
+     Antes, quando ninguém casava, isto devolvia a janela mais próxima de
+     qualquer público — e a consequência era exatamente o que a regra existe
+     para evitar: quem declarou "público em geral" recebia lembrete na
+     quinta-feira da Credencial Plena, um dia em que não pode se inscrever.
+     Ficava escondido porque a extração só entregava a janela "plena" (o
+     sufixo "de cada mês" era exigido em toda ocorrência, e a segunda janela
+     do texto padrão não o repete), então o caso era a norma, não a exceção.
+
+     Sem escolha feita, o palpite pela janela mais próxima continua sendo a
+     resposta menos errada, e a tela avisa que falta escolher. Com escolha
+     feita e nenhuma janela dela, o certo é não afirmar data nenhuma. */
   function regraDaPessoa(ev) {
     var rs = ((ev.inscricao || {}).regras) || [];
     if (!rs.length) return null;
     var minhas = rs.filter(function (r) {
       return r.quem === "todos" || (state.credencial && r.quem === state.credencial);
     });
-    // Sem a escolha feita, vale a janela que abre primeiro — é a resposta
-    // menos errada para quem ainda não disse qual é o seu caso.
+    if (!minhas.length && state.credencial) return null;
     var lista = minhas.length ? minhas : rs;
     var melhor = null;
     lista.forEach(function (r) {
@@ -1853,6 +1865,11 @@
       if (q && (!melhor || q < melhor.quando)) melhor = { quando: q, regra: r };
     });
     return melhor;
+  }
+  /** Há regra publicada, mas nenhuma para o público que a pessoa declarou. */
+  function regraDeOutroPublico(ev) {
+    var rs = ((ev.inscricao || {}).regras) || [];
+    return !!(rs.length && state.credencial && !regraDaPessoa(ev));
   }
 
   /* ---------------- filtros ----------------
@@ -3809,6 +3826,15 @@
 
         if (!state.credencial && temDois) {
           cx.appendChild(el("p", "aviso", "Escolha acima para o app saber qual das duas datas é a sua."));
+        } else if (regraDeOutroPublico(ev)) {
+          var av2 = el("p", "aviso");
+          av2.appendChild(el("b", null, "Nenhuma destas janelas é a sua. "));
+          av2.appendChild(document.createTextNode(
+            "A página publica a regra de " +
+            ins.regras.map(function (r) { return NOME_CRED[r.quem] || "outro público"; }).join(" e ") +
+            ", e você marcou " + (CRED_ROTULO[state.credencial] || "outro caso") +
+            ". Confirme no site do Sesc quando abre para você."));
+          cx.appendChild(av2);
         }
         ibd.appendChild(cx);
       }
@@ -5078,6 +5104,10 @@
     // que vale para esta pessoa; só então a venda.
     var reg = regraDaPessoa(ev);
     var quando = i.inscricao || (reg && reg.quando) || ev.vendaOnline || ev.vendaPresencial;
+    if (!quando && regraDeOutroPublico(ev)) {
+      toast("A regra publicada não é do seu público — confira no site do Sesc");
+      return;
+    }
     if (!quando) { toast("Sem data de inscrição ou venda publicada"); return; }
     if (quando.indexOf("T") === -1) quando += "T10:00";
     var titulo = (i.inscricao ? "Abrem as inscrições: "

@@ -1,5 +1,17 @@
 # -*- coding: utf-8 -*-
-"""Confere os extratores contra páginas reais."""
+"""Diagnóstico manual dos extratores contra páginas reais — NÃO é teste.
+
+Chamava-se `teste_detalhes.py` e não tinha uma asserção sequer: buscava cinco
+páginas na rede, imprimia o resultado e terminava com sucesso acontecesse o
+que acontecesse. Um arquivo com "teste" no nome que nunca falha é pior do que
+nenhum, porque dá a impressão de que alguém está olhando.
+
+Serve para inspecionar a olho o que o extrator devolve de uma página nova, ou
+depois de mexer num padrão. As verificações que falham de verdade, e que
+rodam na CI sem tocar na rede, estão em `teste_extratores.py`.
+
+    python diagnostico_detalhes.py
+"""
 import json
 import detalhes
 

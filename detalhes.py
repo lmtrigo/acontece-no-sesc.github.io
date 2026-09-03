@@ -509,6 +509,20 @@ DOW = {"domingo": 0, "segunda": 1, "terca": 2, "terça": 2, "quarta": 3,
 RE_DIA_DO_MES = re.compile(
     r"(segunda|ter[çc]a|quarta|quinta|sexta|s[áa]bado|domingo)"
     r"[\s\-]*(?:feira)?[\s,]*(?:de|do|no)\s+(?:cada\s+)?m[êe]s", re.I)
+# A SEGUNDA janela quase nunca repete o "de cada mês" — o texto padrão diz
+# "…na 1ª e na 3ª quinta-feira de cada mês a partir das 18h. Caso estas vagas
+# não sejam preenchidas, serão disponibilizadas para o público em geral na 2ª
+# e na 4ª quarta-feira a partir das 14h." Exigindo o sufixo em toda ocorrência,
+# só a primeira era lida, e a janela do público geral simplesmente não existia:
+# medido, os 5 eventos com regra na base tinham 1 janela cada, todas "plena".
+#
+# Aceitar o sufixo opcional em qualquer lugar do texto abriria a porta para
+# "a 1ª sexta-feira do festival, a partir das 20h" virar regra de inscrição.
+# Por isso a forma frouxa só vale COMO COMPANHIA: um texto precisa ter ao
+# menos uma ocorrência com o sufixo para que as demais contem.
+RE_DIA_SEM_MES = re.compile(
+    r"(segunda|ter[çc]a|quarta|quinta|sexta|s[áa]bado|domingo)"
+    r"[\s\-]*(?:feira)?", re.I)
 RE_ORDINAL = re.compile(r"(\d)\s*[ªa°ºo]")
 RE_HORA_REGRA = re.compile(
     r"a\s+partir\s+d[ao]s?\s+(\d{1,2})\s*(?:h|:)\s*(\d{2})?", re.I)
@@ -524,7 +538,10 @@ def regras_de_inscricao(pagina):
     """
     corpo = limpar(pagina)
     saida = []
-    for m in RE_DIA_DO_MES.finditer(corpo):
+    # Só quando o texto já se identificou como regra recorrente é que as
+    # ocorrências sem "de cada mês" passam a valer (ver RE_DIA_SEM_MES).
+    padrao = RE_DIA_SEM_MES if RE_DIA_DO_MES.search(corpo) else RE_DIA_DO_MES
+    for m in padrao.finditer(corpo):
         antes = corpo[max(0, m.start() - 110):m.start()]
         semanas = sorted({int(x) for x in RE_ORDINAL.findall(antes) if 1 <= int(x) <= 5})
         if not semanas:
