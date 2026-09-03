@@ -3860,14 +3860,10 @@
     b1.addEventListener("click", function () { icsEvento(ev, dia); });
     acts.appendChild(b1);
 
-    if (MQ_COMPUTADOR.matches) {
-      var gl = linkGoogleAgenda(ev, dia);
-      if (gl) {
-        var bg = el("a", "btn ghost", "Abrir no Google Agenda");
-        bg.href = gl; bg.target = "_blank"; bg.rel = "noopener noreferrer";
-        acts.appendChild(bg);
-      }
-    }
+    /* O botao do Google Agenda saiu: um botao por intencao. No computador o
+       .ics cai na pasta de downloads, e a mitigacao passa a ser inteira do
+       aviso - ele diz onde o arquivo foi parar, senao "baixar" tambem
+       parece "nao aconteceu nada". */
 
     if (ev.urlCompra && !ev.esgotado) {
       var bc = el("a", "btn ghost", "Comprar ingresso");
@@ -3898,8 +3894,8 @@
          provavel vira o proprio botao. "Copiar data, local e link" ficou ao
          lado do WhatsApp por uma versao e nao se sustentou: quem quer colar
          em outro lugar tem "Ver pagina oficial" e a barra de endereco, e
-         dois botoes para a mesma intencao num empilhamento de sete e o
-         mesmo excesso que a v3 tinha nos trilhos. */
+         dois botoes para a mesma intencao eram o mesmo excesso que a v3
+         tinha nos trilhos. Um botao por intencao, em toda a folha. */
       if (navigator.share) {
         bs.addEventListener("click", function () { compartilhar(ev, dia); });
         acts.appendChild(bs);
@@ -4963,7 +4959,9 @@
     var txt = linhas.join("\r\n");
     function local() {
       baixar(nome, txt, MQ_COMPUTADOR.matches);
-      toast(msg + (MQ_COMPUTADOR.matches ? " · arquivo .ics baixado" : ""));
+      toast(msg + (MQ_COMPUTADOR.matches
+        ? " · baixei o .ics — abra o arquivo para o calendário receber"
+        : ""));
     }
     if (!urlServida || origemDados !== "servidor" || MQ_COMPUTADOR.matches) { local(); return; }
     fetch(urlServida, { method: "HEAD" })
@@ -5097,22 +5095,6 @@
     var p = String(quando).split("T");
     var hm = (p[1] || "09:00").split(":");
     return p[0].replace(/-/g, "") + "T" + p2(+hm[0]) + p2(+hm[1] || 0) + "00";
-  }
-  function linkGoogleAgenda(ev, dia) {
-    var q = new URLSearchParams();
-    q.set("action", "TEMPLATE");
-    q.set("ctz", "America/Sao_Paulo");
-    q.set("text", ev.tit);
-    q.set("location", localDe(ev));
-    q.set("details", (ev.sub ? ev.sub + " — " : "") + (ev.link || ""));
-    if (ev.continuo && (ev.dias || []).length > 1) {
-      q.set("dates", semTraco(ev.dias[0]) + "/" + semTraco(addDias(ev.dias[ev.dias.length - 1], 1)));
-    } else {
-      var ini = quandoDoEvento(ev, dia);
-      if (!ini) return null;
-      q.set("dates", carimboGoogle(ini) + "/" + carimboGoogle(fimDe(ev, ini)));
-    }
-    return "https://calendar.google.com/calendar/render?" + q.toString();
   }
 
   /* ---------------- backup ---------------- */
