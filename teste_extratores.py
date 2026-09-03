@@ -313,5 +313,57 @@ class FaltantesNaoCongelaPreco(unittest.TestCase):
                         "--faltantes, senão a bilheteria congela")
 
 
+
+class CategoriaComNomeUnico(unittest.TestCase):
+    """"Turismo Social" governava três regras a partir de três arquivos.
+
+    `coletor.CONTINUOS` (a viagem acontece em todos os dias do intervalo),
+    `regras.SO_COM_INSCRICAO` (passeio sem data de inscrição sai da base) e
+    o padrão de `detalhes --html-cats` (é o único jeito de raspar, porque
+    passeio não tem id_java). O portal renomear a categoria produziria três
+    efeitos diferentes e todos silenciosos.
+    """
+
+    def test_uma_constante_governa_as_tres(self):
+        import coletor
+        import regras
+        self.assertEqual(coletor.CONTINUOS, (coletor.CAT_TURISMO,))
+        self.assertEqual(regras.SO_COM_INSCRICAO, (coletor.CAT_TURISMO,))
+        self.assertIn("default=[coletor.CAT_TURISMO]", ler_fonte("detalhes.py"))
+
+    def test_literal_nao_reaparece_em_codigo(self):
+        """Prosa pode citar a categoria; código, não."""
+        for nome in ("regras.py", "publicar.py", "embutir.py", "reparse.py"):
+            fonte = ler_fonte(nome)
+            for linha in fonte.split("\n"):
+                nu = linha.strip()
+                if nu.startswith("#") or nu.startswith('"""'):
+                    continue
+                self.assertNotIn('"Turismo Social"', linha,
+                                 "%s tem a categoria em código: use "
+                                 "coletor.CAT_TURISMO" % nome)
+
+
+class TravaDeRegiao(unittest.TestCase):
+    """`normalizar` põe "outra" em unidade que não bate exatamente.
+
+    Basta o portal renomear uma unidade, ou trocar o vocabulário de
+    `description`, para o filtro de região virar exclusão em massa — com
+    uma linha informativa de log como único sinal.
+    """
+
+    def test_coletor_trava_exclusao_em_massa(self):
+        fonte = ler_fonte("coletor.py")
+        i_filtro = fonte.index('lista = [e for e in lista if e["reg"] in regioes]')
+        trecho = fonte[i_filtro:i_filtro + 1400]
+        self.assertIn("fora > antes * 0.1", trecho,
+                      "o filtro de região descarta em massa sem travar")
+        self.assertIn('if not any(e["cat"] == CAT_TURISMO for e in lista)', trecho,
+                      "sem conferir a categoria, renomeá-la apaga três regras "
+                      "de uma vez, todas em silêncio")
+        self.assertEqual(trecho.count("ABORTADO"), 2,
+                         "as duas travas precisam abortar, não avisar")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

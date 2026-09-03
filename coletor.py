@@ -215,7 +215,17 @@ def normalizar(a, unidades):
     }
 
 
-CONTINUOS = ("Turismo Social",)
+# A categoria mora aqui porque três arquivos dependem dela de formas
+# diferentes: `CONTINUOS` abaixo (a viagem acontece em todos os dias do
+# intervalo), `regras.SO_COM_INSCRICAO` (passeio sem data de inscrição sai
+# da base) e o padrão de `detalhes --html-cats` (é o único jeito de raspar,
+# porque passeio não tem id_java). O portal renomear a categoria produziria
+# três efeitos diferentes e todos silenciosos: as viagens deixariam de ser
+# contínuas, os passeios parariam de ser raspados e parariam de ser
+# descartados. Com um nome só, o teste de sanidade abaixo pega os três.
+CAT_TURISMO = "Turismo Social"
+
+CONTINUOS = (CAT_TURISMO,)
 
 
 def expandir_viagens(lista, de, ate):
@@ -353,6 +363,25 @@ def coletar(de, ate, regioes):
         antes = len(lista)
         lista = [e for e in lista if e["reg"] in regioes]
         print("Filtro de região %s: %d -> %d eventos" % (regioes, antes, len(lista)))
+        # `normalizar` põe "outra" em toda unidade que não bate EXATAMENTE com
+        # um `name` de /unidades-atividades, e o filtro então a descarta. Basta
+        # o portal renomear uma unidade, ou trocar o vocabulário de
+        # `description`, para isso virar exclusão em massa — com uma linha
+        # informativa de log como único sinal. Hoje são zero; a trava existe
+        # para que continue sendo notícia quando deixar de ser.
+        fora = antes - len(lista)
+        if antes and fora > antes * 0.1:
+            raise SystemExit(
+                "ABORTADO: o filtro de região descartou %d de %d eventos (%.0f%%). "
+                "Provavelmente uma unidade mudou de nome ou a região deixou de "
+                "vir como capital/interior/litoral. Nada foi gravado."
+                % (fora, antes, 100.0 * fora / antes))
+        if not any(e["cat"] == CAT_TURISMO for e in lista):
+            raise SystemExit(
+                "ABORTADO: nenhum evento de %s na coleta. A categoria é usada "
+                "por três regras diferentes (viagem contínua, retenção e "
+                "raspagem de HTML); se ela mudou de nome, as três se apagam em "
+                "silêncio. Nada foi gravado." % CAT_TURISMO)
 
     # Descartado agora só o cancelado. "Outros" é o balde do que o portal não
     # categorizou — jogá-lo fora tirava da agenda atividades que existem de

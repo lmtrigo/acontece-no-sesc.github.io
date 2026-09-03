@@ -422,5 +422,50 @@ class Acessibilidade(unittest.TestCase):
                          "o distintivo voltou a contar favoritos fantasma")
 
 
+
+class TemporadaParcial(unittest.TestCase):
+    """`parcial` marca o evento que veio da varredura de segurança.
+
+    Ela só conhece a primeira e a última data, nunca os dias do meio — e o
+    app mostrava essas datas como se fossem a programação inteira. A
+    informação existia no coletor e era jogada fora antes de chegar à tela.
+    """
+
+    def test_campo_chega_ao_app(self):
+        import embutir
+        self.assertIn("parcial", embutir.CAMPOS,
+                      "`parcial` não entra no pacote e o app nunca o vê")
+
+    def test_app_avisa_que_a_lista_esta_incompleta(self):
+        js = js_de(ler(PROTOTIPO))
+        self.assertIn("não é a lista completa", js,
+                      "o detalhe voltou a mostrar datas parciais como certas")
+        # o aviso precisa estar preso ao campo, e não solto em qualquer lugar
+        i = js.index("não é a lista completa")
+        trecho = js[max(0, i - 700):i + 200]
+        self.assertIn("ev.parcial", trecho)
+        self.assertIn('fato("Quando"', trecho)
+
+
+class BuscaLivreDeVariasPalavras(unittest.TestCase):
+    """As muletas saem da frase e o que sobra deixa de ser trecho contíguo.
+
+    "fragmentos da vida" virava "fragmentos vida" — que não existe em texto
+    nenhum. A busca por título de mais de uma palavra parou de funcionar no
+    dia em que a lista de muletas entrou, e só apareceu por acaso, ao
+    procurar um evento para testar outra coisa.
+    """
+
+    def test_sobra_e_casada_palavra_a_palavra(self):
+        js = js_de(ler(PROTOTIPO))
+        i = js.index("q: function (ev) {")
+        trecho = js[i:i + 900]
+        self.assertNotIn("indexOf(r.sobraTxt)", trecho,
+                         "voltou a exigir o trecho contíguo: título de mais "
+                         "de uma palavra deixa de ser encontrado")
+        self.assertIn("r.sobra[j]", trecho,
+                      "a sobra precisa ser casada palavra a palavra")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

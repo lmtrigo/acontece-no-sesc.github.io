@@ -40,7 +40,11 @@ CAMPOS = ("id", "tit", "sub", "uni", "reg", "cat", "subcat", "publico",
           "inscricao", "sorteados",
           # dia em que o evento apareceu pela primeira vez na base: é o que
           # sustenta o trilho de novidades
-          "visto")
+          "visto",
+          # a agenda deste evento veio da varredura de segurança, que só
+          # conhece o primeiro e o último dia. Sem este campo o app mostrava
+          # duas datas como se fossem a programação inteira.
+          "parcial")
 # `desc` fica de fora de propósito: 2,5 mil textos pesariam no download de
 # todo mundo para serem lidos um de cada vez. O app busca por evento, em
 # dados/desc/<id>.json, e descarta ao fechar.

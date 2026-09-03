@@ -1937,8 +1937,19 @@
       for (var i = 0; i < r.achados.length; i++) {
         if (!casaTermo(ev, r.achados[i])) return false;
       }
-      if (!r.sobraTxt) return true;
-      return textoDe(ev).indexOf(r.sobraTxt) > -1;
+      if (!r.sobra.length) return true;
+      /* Palavra a palavra, não trecho contíguo. As muletas saem da frase
+         ("me mostra", "de", "da"), e o que sobra deixa de ser um pedaço do
+         título: "fragmentos da vida" virava "fragmentos vida", que não
+         existe em texto nenhum — a busca por título de mais de uma palavra
+         parou de funcionar no dia em que a lista de muletas entrou.
+         Exigir todas as palavras também torna a ordem indiferente, que é
+         como as pessoas lembram de nome. */
+      var t = textoDe(ev);
+      for (var j = 0; j < r.sobra.length; j++) {
+        if (t.indexOf(r.sobra[j]) === -1) return false;
+      }
+      return true;
     },
     per: function (ev) { return !state.per || periodoDe(ev) === state.per; },
     faixa: function (ev) {
@@ -2282,19 +2293,24 @@
       for (var k = 0; k < r.achados.length; k++) {
         if (!casaTermo(e, r.achados[k])) { ok = false; break; }
       }
-      if (ok && r.sobraTxt && textoDe(e).indexOf(r.sobraTxt) === -1) ok = false;
+      if (ok && r.sobra && r.sobra.length) {
+        var tx = textoDe(e);
+        for (var j = 0; j < r.sobra.length; j++) {
+          if (tx.indexOf(r.sobra[j]) === -1) { ok = false; break; }
+        }
+      }
       if (ok && ++n >= teto) return n;
     }
     return n;
   }
 
   /** O que a busca entendeu agora. Recalculado só quando o texto muda. */
-  var QLIDO = { txt: "", achados: [], sobraTxt: "", correcoes: [] };
+  var QLIDO = { txt: "", achados: [], sobraTxt: "", sobra: [], correcoes: [] };
   function lerBusca() {
     if (!VOCAB || !VOCAB.length) montarVocab();
     if (QLIDO.txt === state.q) return QLIDO;
     if (!state.q) {
-      QLIDO = { txt: state.q, achados: [], sobraTxt: "", correcoes: [] };
+      QLIDO = { txt: state.q, achados: [], sobraTxt: "", sobra: [], correcoes: [] };
       return QLIDO;
     }
     var r = analisar(state.q);
@@ -2316,7 +2332,7 @@
       }
     }
     QLIDO = { txt: state.q, achados: r.achados, sobraTxt: r.sobraTxt,
-              correcoes: correcoes };
+              sobra: r.sobra || [], correcoes: correcoes };
     return QLIDO;
   }
 
@@ -2534,7 +2550,7 @@
     var pos = ev.continuo && dia ? (ev.dias || []).indexOf(dia) : -1;
     if (pos > -1 && (ev.dias || []).length > 1) {
       h.appendChild(el("small", null, "dia " + (pos + 1) + "/" + ev.dias.length));
-    } else if (ev.temporada && !hora) {
+    } else if ((ev.temporada || ev.parcial) && !hora) {
       h.appendChild(el("small", null, "temporada"));
     }
     row.appendChild(h);
@@ -3962,8 +3978,29 @@
         ev.dias.length + " dias de viagem");
     } else if (!ses || !ses.length) {
       var prox = (ev.dias || []).filter(function (d) { return d >= HOJE; });
-      fato("Quando", (prox.length ? prox : ev.dias || []).slice(0, 5).map(curta).join(" · ") || "—",
-        (prox.length || 0) > 5 ? "e mais " + (prox.length - 5) + " datas" : null);
+      /* `parcial` marca o evento que veio da varredura de segurança — a
+         que recupera o que o filtro de data omite. Ela só conhece a
+         primeira e a última data, nunca os dias do meio. O app mostrava
+         essas duas como se fossem a programação inteira, e o coletor já
+         sabia que não eram: a informação existia e era jogada fora.
+
+         Aqui ela vira uma temporada com as bordas conhecidas, e o texto
+         diz para conferir no site — que é o único lugar que tem a lista
+         completa. Melhor do que duas datas com cara de certeza. */
+      if (ev.parcial && (ev.dias || []).length) {
+        /* Duas formas do mesmo aviso. Com duas bordas, é um intervalo cujo
+           meio não se conhece. Com uma só, a temporada segue além do
+           período coletado e nem a borda de trás se sabe — 10 dos 24
+           parciais estão assim hoje, todos de cinema. */
+        var muitos = ev.dias.length > 1;
+        fato("Quando",
+          muitos ? curta(ev.dias[0]) + " a " + curta(ev.dias[ev.dias.length - 1])
+                 : "a partir de " + curta(ev.dias[0]),
+          "temporada · esta não é a lista completa, confira na página oficial");
+      } else {
+        fato("Quando", (prox.length ? prox : ev.dias || []).slice(0, 5).map(curta).join(" · ") || "—",
+          (prox.length || 0) > 5 ? "e mais " + (prox.length - 5) + " datas" : null);
+      }
     }
     fato("Onde", "Sesc " + ev.uni,
       (enderecoDaUnidade(ev.uni) || ev.endereco || nomeReg(ev.reg)));
@@ -4564,7 +4601,12 @@
       for (var k = 0; k < r.achados.length; k++) {
         if (!casaTermo(e, r.achados[k])) { ok = false; break; }
       }
-      if (ok && r.sobraTxt && textoDe(e).indexOf(r.sobraTxt) === -1) ok = false;
+      if (ok && r.sobra && r.sobra.length) {
+        var tx = textoDe(e);
+        for (var j = 0; j < r.sobra.length; j++) {
+          if (tx.indexOf(r.sobra[j]) === -1) { ok = false; break; }
+        }
+      }
       if (ok && ++n >= 3) return n;          // basta saber que não é vazio
     }
     return n;

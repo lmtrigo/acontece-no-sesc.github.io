@@ -23,6 +23,8 @@ o corte não decide isso por ninguém.
 
 from datetime import date, timedelta
 
+import coletor
+
 DIAS_SEM_PRAZO = 3       # mesma presunção do app quando a página não publica
 
 
@@ -78,7 +80,7 @@ def aberta_agora(ev, hoje):
     return False
 
 
-SO_COM_INSCRICAO = ("Turismo Social",)
+SO_COM_INSCRICAO = (coletor.CAT_TURISMO,)
 
 
 def manter(ev, hoje, horizonte):

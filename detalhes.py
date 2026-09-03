@@ -654,7 +654,7 @@ def main():
     p.add_argument("--html", action="store_true", help="varrer HTML de todos")
     p.add_argument("--faltantes", action="store_true",
                    help="só os que ainda não têm descrição — enriquecimento incremental")
-    p.add_argument("--html-cats", nargs="*", default=["Turismo Social"],
+    p.add_argument("--html-cats", nargs="*", default=[coletor.CAT_TURISMO],
                    help="categorias que também levam varredura de HTML")
     args = p.parse_args()
 
