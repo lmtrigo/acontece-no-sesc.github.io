@@ -14,11 +14,23 @@ na rede, então serve para a CI.
     python teste_extratores.py
 """
 
+import json
+import os
+import shutil
+import tempfile
 import unittest
 
 import detalhes
 
 ANO = 2026
+RAIZ = os.path.dirname(os.path.abspath(__file__))
+
+
+def ler_fonte(nome):
+    """Alguns defeitos são de fiação, não de lógica: a função certa existe e
+    ninguém a chama. Esses só se pegam olhando o código que liga as peças."""
+    with open(os.path.join(RAIZ, nome), encoding="utf-8") as f:
+        return f.read()
 
 
 class DatasDeInscricao(unittest.TestCase):
@@ -177,6 +189,128 @@ class LimpezaDeTexto(unittest.TestCase):
         for vazamento in ("var x", "alert", "color:red"):
             self.assertNotIn(vazamento, limpo)
         self.assertIn("memória", limpo)
+
+
+
+class ReprocessamentoSemRede(unittest.TestCase):
+    """`reparse.py` relê as datas sobre o texto guardado.
+
+    Ele substituía o bloco `inscricao` inteiro e enumerava o que preservar.
+    A enumeração citava `sorteados` (que vive no topo do evento, não ali) e
+    esquecia `regras` — as janelas recorrentes de credencial, extraídas do
+    HTML por `detalhes.regras_de_inscricao` e destruídas um passo depois, no
+    mesmo workflow, sem contador nenhum acusar.
+
+    Ficava invisível por acaso: os eventos com `regras` não têm
+    `inscricao.texto`, então o laço os pula antes de chegar lá.
+    """
+
+    def reprocessar(self, ins, ano=2026, dia="2026-09-20"):
+        """Exercita `reparse.reler`, que é o que `main` chama.
+
+        A primeira versão deste teste reimplementava a lógica aqui dentro, e
+        por isso continuava passando com o bug de volta — testava a minha
+        cópia, não o código. Uma verificação que não falha quando o defeito
+        retorna não é verificação.
+        """
+        import reparse
+        return reparse.reler(ins, ano, dia)
+
+    def test_regras_sobrevivem_a_releitura(self):
+        regra = [{"quem": "plena", "semanas": [1, 3], "dow": 4, "hora": "18:00"}]
+        saida = self.reprocessar({
+            "texto": "Inscrições: 7/8 às 14h a 12/8",
+            "regras": regra,
+            "temSorteio": False,
+        })
+        self.assertEqual(saida.get("regras"), regra,
+                         "o reprocessamento apagou as janelas de credencial")
+        self.assertEqual(saida["inscricao"], "2026-08-07T14:00",
+                         "e ainda assim precisa reler a data")
+
+    def test_main_usa_a_funcao_que_preserva(self):
+        """A função certa não adianta se `main` não a chamar."""
+        fonte = ler_fonte("reparse.py")
+        self.assertIn("novo = reler(ins,", fonte,
+                      "reparse.main deixou de usar reler(): a preservação das "
+                      "chaves que não são data some junto")
+
+    def test_chave_desconhecida_tambem_sobrevive(self):
+        """Lista positiva: o que a releitura não produz, ela não apaga."""
+        saida = self.reprocessar({
+            "texto": "Inscrições de 2/7 a 7/7.",
+            "campoFuturo": "algo que ainda não existe",
+        })
+        self.assertEqual(saida.get("campoFuturo"), "algo que ainda não existe")
+
+
+class PisosDeVolume(unittest.TestCase):
+    """Degradação silenciosa é a assinatura deste pipeline.
+
+    Coleta vazia atravessava tudo — carimbo, retenção, publicação — e saía
+    com sucesso, publicando um app vazio. E o arquivo vazio virava a coleta
+    anterior do dia seguinte, marcando o catálogo inteiro como novidade.
+    """
+
+    def setUp(self):
+        import coletor
+        self.coletor = coletor
+        self.tmp = tempfile.mkdtemp()
+        self.anterior = os.path.join(self.tmp, "ant.json")
+        with open(self.anterior, "w", encoding="utf-8") as f:
+            json.dump({"eventos": [{"id": str(i)} for i in range(3000)]}, f)
+
+    def tearDown(self):
+        shutil.rmtree(self.tmp, ignore_errors=True)
+
+    def test_coleta_vazia_aborta(self):
+        with self.assertRaises(SystemExit):
+            self.coletor.conferir_volume([], self.anterior)
+
+    def test_desabamento_aborta(self):
+        with self.assertRaises(SystemExit):
+            self.coletor.conferir_volume([{"id": str(i)} for i in range(500)],
+                                         self.anterior)
+
+    def test_coleta_normal_passa(self):
+        self.coletor.conferir_volume([{"id": str(i)} for i in range(3100)],
+                                     self.anterior)
+
+    def test_primeira_execucao_passa(self):
+        """Sem base anterior só o piso absoluto vale."""
+        self.coletor.conferir_volume([{"id": str(i)} for i in range(3000)],
+                                     os.path.join(self.tmp, "nao_existe.json"))
+
+    def test_main_confere_antes_de_gravar(self):
+        """O piso só serve se `main` o consultar antes do json.dump.
+
+        A primeira versão deste teste chamava `conferir_volume` direto e
+        passava mesmo com a chamada removida de `main` — testava a função,
+        não a proteção.
+        """
+        fonte = ler_fonte("coletor.py")
+        i_piso = fonte.find("conferir_volume(eventos, args.saida)")
+        i_grava = fonte.find("json.dump(saida, f")
+        self.assertGreater(i_piso, 0, "coletor.main não confere o volume")
+        self.assertLess(i_piso, i_grava,
+                        "o piso precisa vir ANTES de gravar o arquivo")
+
+
+class FaltantesNaoCongelaPreco(unittest.TestCase):
+    """`--faltantes` é sobre descrição, e só.
+
+    Aplicado à lista inteira, tirava da fila da bilheteria todo evento que já
+    tem `desc` — quase todos —, congelando preço, sessões e datas de venda,
+    com mensagem final de sucesso.
+    """
+
+    def test_fila_da_bilheteria_ignora_faltantes(self):
+        fonte = ler_fonte("detalhes.py")
+        i_java = fonte.index("com_java = [e for e in eventos")
+        i_falt = fonte.index("if args.faltantes:")
+        self.assertLess(i_java, i_falt,
+                        "com_java precisa ser derivado ANTES do filtro de "
+                        "--faltantes, senão a bilheteria congela")
 
 
 if __name__ == "__main__":

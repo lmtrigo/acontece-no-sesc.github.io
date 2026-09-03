@@ -373,6 +373,49 @@ def coletar(de, ate, regioes):
     return lista, unidades
 
 
+# Piso de volume. 3.3 mil eventos numa janela de 60 dias e a norma; qualquer
+# coisa abaixo de algumas centenas so acontece se a fonte mudou de forma.
+MINIMO_ABSOLUTO = 200
+FRACAO_MINIMA = 0.6
+
+
+def conferir_volume(eventos, caminho_anterior):
+    """Recusa gravar uma coleta que desabou em relação à anterior.
+
+    Toda a degradação deste pipeline é silenciosa por construção: uma coleta
+    vazia atravessa `carimbar_estreia` ("0 novidades"), `regras.aplicar`
+    ("0 de 0") e `publicar.py` ("web/ pronto · 0 eventos"), e os três terminam
+    com sucesso. O app publicado fica vazio e nada avisa.
+
+    Pior: o arquivo vazio vira a coleta anterior do dia seguinte, e aí os
+    3.300 eventos de volta são todos carimbados como novidade — o trilho
+    "Novidades na programação" passa a mostrar o catálogo inteiro.
+
+    O envelope da API não distingue "não há nada nesse dia" de "a resposta
+    mudou de forma": as duas chegam como lista vazia. Quem distingue é o
+    tamanho da coleta anterior. Sem base anterior não há o que comparar, e
+    aí só o piso absoluto vale — é o caso da primeira execução.
+    """
+    if len(eventos) < MINIMO_ABSOLUTO:
+        raise SystemExit(
+            "ABORTADO: %d eventos coletados, abaixo do piso de %d. A resposta "
+            "da API provavelmente mudou de forma. Nada foi gravado — a base "
+            "anterior continua no lugar." % (len(eventos), MINIMO_ABSOLUTO))
+
+    try:
+        with open(caminho_anterior, encoding="utf-8") as f:
+            antes = len(json.load(f).get("eventos") or [])
+    except (OSError, ValueError):
+        return
+
+    if antes and len(eventos) < antes * FRACAO_MINIMA:
+        raise SystemExit(
+            "ABORTADO: %d eventos contra %d da coleta anterior (%.0f%%, "
+            "mínimo %.0f%%). Nada foi gravado. Se a queda for real, rode com "
+            "--sem-piso." % (len(eventos), antes, 100.0 * len(eventos) / antes,
+                             100 * FRACAO_MINIMA))
+
+
 def carimbar_estreia(lista, caminho_anterior, hoje):
     """Marca em `visto` o dia em que cada evento apareceu pela primeira vez.
 
@@ -437,6 +480,8 @@ def main():
     p.add_argument("--regioes", nargs="*", default=list(REGIOES_VALIDAS),
                    help="capital interior litoral")
     p.add_argument("--saida", default=os.path.join("dados", "eventos.json"))
+    p.add_argument("--sem-piso", action="store_true",
+                   help="grava mesmo com a coleta muito menor que a anterior")
     args = p.parse_args()
 
     hoje = agora_br().date()
@@ -447,6 +492,8 @@ def main():
     print("Coletando de %s a %s" % (de, ate))
     inicio = time.time()
     eventos, unidades = coletar(de, ate, set(args.regioes))
+    if not args.sem_piso:
+        conferir_volume(eventos, args.saida)
     rastreio = carimbar_estreia(eventos, args.saida, hoje.isoformat())
 
     saida = {

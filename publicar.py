@@ -220,6 +220,9 @@ def ics_evento(ev, hoje):
                      "SUMMARY:" + esc_ics(tit), "LOCATION:" + _local(ev),
                      "DESCRIPTION:" + esc_ics(((ev.get("sub") + " — ") if ev.get("sub") else "") +
                                               (ev.get("link") or "")),
+                     # o app põe URL: no ramo contínuo e este não punha: as duas
+                     # implementações têm de dizer a mesma coisa (HANDOFF §5.3)
+                     ] + (["URL:" + esc_ics(ev["link"])] if ev.get("link") else []) + [
                      # num compromisso de dias inteiros, alerta de 5 minutos
                      # não quer dizer nada: a véspera é o que importa
                      "BEGIN:VALARM", "TRIGGER:-P1D", "ACTION:DISPLAY",

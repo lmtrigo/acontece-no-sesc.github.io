@@ -20,6 +20,40 @@ from datetime import datetime
 import coletor
 import detalhes
 
+# O que `detalhes.datas_do_texto` sabe produzir — e portanto o que ele tem
+# autoridade para substituir. Qualquer outra chave de `inscricao` veio de
+# outro extrator e precisa sobreviver à releitura.
+CHAVES_DE_DATA = ("texto", "inscricao", "inscricaoFim", "sorteio", "sorteioFim",
+                  "pagamento", "pagamentoFim", "temSorteio")
+
+
+def reler(ins, ano, dia_ref):
+    """Relê as datas de `ins` sobre o texto guardado, preservando o resto.
+
+    A versão anterior trocava o bloco `inscricao` inteiro pelo que o extrator
+    de datas devolvia, e enumerava o que preservar. A enumeração citava
+    `sorteados` — que de fato vive no topo do evento, não aqui — e esquecia
+    `regras`, as janelas recorrentes de credencial da §4.7 do HANDOFF. Elas
+    são extraídas do HTML por `detalhes.regras_de_inscricao` e morriam um
+    passo depois, no mesmo workflow, sem contador nenhum acusar.
+
+    Ficava invisível por acaso: os eventos com `regras` não têm
+    `inscricao.texto`, então o laço os pula antes de chegar aqui. Bastava uma
+    página trazer as duas coisas para a regra sumir.
+
+    Agora é lista positiva: só o que a releitura sabe produzir é substituído.
+    Devolve None quando não há o que reler.
+    """
+    novo = detalhes.datas_do_texto(ins["texto"], ano, dia_ref)
+    if not novo:
+        return None
+    saida = dict(ins)
+    for chave in CHAVES_DE_DATA:
+        saida.pop(chave, None)
+    saida.update(novo)
+    saida.setdefault("temSorteio", False)
+    return saida
+
 
 def main():
     p = argparse.ArgumentParser()
@@ -51,14 +85,10 @@ def main():
 
         antes = {k: ins.get(k) for k in
                  ("inscricao", "inscricaoFim", "sorteio", "pagamento", "pagamentoFim")}
-        novo = detalhes.datas_do_texto(
-            ins["texto"], int((ev.get("inicio") or "2026")[:4]),
-            ev.get("fim") or ev.get("inicio"))
-        if not novo:
+        novo = reler(ins, int((ev.get("inicio") or "2026")[:4]),
+                     ev.get("fim") or ev.get("inicio"))
+        if novo is None:
             continue
-
-        # preserva o que não é data (sorteados vive fora daqui)
-        novo.setdefault("temSorteio", ins.get("temSorteio", False))
         ev["inscricao"] = novo
 
         depois = {k: novo.get(k) for k in antes}

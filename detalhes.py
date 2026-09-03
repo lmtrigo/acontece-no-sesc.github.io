@@ -664,10 +664,14 @@ def main():
     if args.max:
         eventos = eventos[:args.max]
 
+    # `--faltantes` é sobre DESCRIÇÃO, e só. Aplicado à lista inteira, ele
+    # também tirava da fila da bilheteria todo evento que já tem `desc` — ou
+    # seja, quase todos —, congelando preço, sessões e datas de venda na
+    # última passada completa, com mensagem final de sucesso. O HANDOFF §7
+    # oferece a opção como atalho dos 70 minutos; quem a usasse pagaria caro.
+    com_java = [e for e in eventos if e.get("idJava")]
     if args.faltantes:
         eventos = [e for e in eventos if not e.get("desc")]
-
-    com_java = [e for e in eventos if e.get("idJava")]
     quer_html = [e for e in eventos
                  if args.html or e.get("cat") in set(args.html_cats)]
 

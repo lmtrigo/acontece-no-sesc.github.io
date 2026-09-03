@@ -196,6 +196,21 @@ def main():
         elif reserva.get(u["nome"]):
             u["endereco"] = reserva[u["nome"]]
 
+    # O passo promete endereço e, antes disto, entregava exit 0 sem nenhum:
+    # `enderecos()` imprime "SEM ENDEREÇO" e segue, e `main` não conferia.
+    # As 11 unidades que não vendem ingresso (Itaquera, Interlagos, Bertioga,
+    # Registro…) não têm endereço de reserva vindo da bilheteria — são 486
+    # eventos cujo .ics sairia com "Sesc Itaquera" e mais nada. É exatamente
+    # a regressão que a §2.2 do HANDOFF diz ter sido corrigida.
+    if not so_fotos:
+        esperadas = len(api or [])
+        if esperadas and len(ends) < esperadas * 0.9:
+            raise SystemExit(
+                "ABORTADO: só %d das %d unidades devolveram endereço. Nada foi "
+                "gravado — a base anterior continua no lugar. Se a queda for "
+                "real, confira /wp-json/wp/v1/unidades-atividades."
+                % (len(ends), esperadas))
+
     base["extrasEm"] = time.strftime("%Y-%m-%dT%H:%M:%S-03:00")
     json.dump(base, open(caminho, "w", encoding="utf-8"),
               ensure_ascii=False, separators=(",", ":"))
